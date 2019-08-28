@@ -1,0 +1,134 @@
+---
+description: Seguono alcune informazioni di riferimento per le metriche e le dimensioni predefinite di Mobile.
+keywords: dispositivi mobili
+seo-description: Seguono alcune informazioni di riferimento per le metriche e le dimensioni predefinite di Mobile.
+seo-title: Riferimento per le metriche e le dimensioni di Mobile
+solution: Marketing Cloud, Analytics
+title: Riferimento per le metriche e le dimensioni di Mobile
+topic: Metrics (Metriche)
+uuid: 96170 ae 7-8553-4 f 3 e-ae 01-65 e 5 b 664 adf 4
+translation-type: tm+mt
+source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+
+---
+
+
+# Mobile metrics and dimensions reference {#mobile-metrics-and-dimensions-reference}
+
+Queste informazioni sono utili per comprendere meglio le metriche e le dimensioni predefinite di Mobile.
+
+>[!TIP]
+>
+>Le autorizzazioni di dimensione e metrica impostate in Adobe Analytics si applicano a Mobile Services. Quando tentate di eseguire un rapporto senza le autorizzazioni corrette, si verifica un errore.
+
+## Metriche {#section_6704C815147D44AF96151D626BEB813C}
+
+Elenco delle metriche predefinite per dispositivi mobili:
+
+* **Primi avvii**
+
+   Attivazione alla prima esecuzione dopo un'installazione o reinstallazione.
+
+* **Aggiornamenti**
+
+   Attivazione alla prima esecuzione dopo un aggiornamento o quando cambia il numero di versione.
+
+* **Utenti giornalieri coinvolti**
+
+   Attivazione quando l'applicazione viene utilizzata in un giorno particolare.
+
+   >[!TIP]
+   >L'evento Utenti giornalieri coinvolti non viene memorizzato automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
+
+* **Utenti mensili coinvolti**
+
+   Attivazione quando l'applicazione viene utilizzata durante un mese.
+
+   >[!TIP]
+   >L'evento Utenti mensili coinvolti non viene memorizzato automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
+
+* **Avvii**
+
+   Attivazione a un'esecuzione che non è un'installazione o un aggiornamento. L'attivazione ha luogo anche quando l'applicazione viene portata in primo piano. Per impostazione predefinita, viene attivato un nuovo avvio dopo che l'applicazione sia rimasta in background per almeno cinque minuti. The amount of background time before triggering a new launch can be configured in **[!UICONTROL SDK Analytics Options]** on the Manage App Settings page. Per ulteriori informazioni, vedi la riga Timeout *sessione (secondi)* in [Configura opzioni SDK Analytics](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+
+   >[!IMPORTANT]
+   >Because how visits in [!UICONTROL Adobe Analytics] and mobile app launches in [!UICONTROL Adobe Mobile Services] are calculated, you might see different results in reporting. Per maggiori informazioni, vedi [Confrontare visite e avvii di app mobili](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
+
+* **Arresti anomali**
+
+   Attivazione quando l'applicazione non si chiude correttamente. L'evento è inviato all'avvio dell'applicazione dopo un arresto anomalo.
+
+   >[!TIP]
+   >Se non viene chiamato, l'applicazione viene considerata bloccata.
+
+* **Lunghezza totale della sessione**
+
+   Totale aggregato della lunghezza della sessione.
+
+## Dimensioni {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
+
+Elenco delle dimensioni predefinite per dispositivi mobili:
+
+* **Data di installazione**
+
+   Data del primo avvio dopo l'installazione. Il formato della data è *MM/GG/AAAA*.
+
+* **ID app**
+
+   Memorizza il nome e la versione dell'applicazione nel seguente formato: `[AppName] [BundleVersion]`. Ad esempio, `myapp 1.1`.
+
+* **Numero di avvii**
+
+   Numero di volte per cui l'applicazione è stata avviata o portata in primo piano.
+
+* **Giorni dal primo utilizzo**
+
+   Numero di giorni dalla prima esecuzione.
+
+* **Giorni dall'ultimo utilizzo**
+
+   Numero di giorni dall'ultimo utilizzo.
+
+* **Ora del giorno**
+
+   Misura l'ora in cui è stata avviata l'app (nel formato numerico a 24 ore). Questa dimensione viene utilizzata anche per la suddivisione del tempo per determinare le ore di utilizzo di picco.
+
+* **Giorno della settimana**
+
+   Numero del giorno della settimana in cui è stata avviata l'app.
+
+* **Versione**
+
+   Sistema operativo del dispositivo.
+
+* **Versione sistema operativo**
+
+   Versione del sistema operativo.
+
+* **Giorni dall'ultimo aggiornamento**
+
+   Numero di giorni dalla modifica del numero di versione dell'applicazione.
+
+   >[!TIP]
+   >
+   >I giorni dall'ultimo aggiornamento non vengono memorizzati automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+
+* **Avvii dall'ultimo aggiornamento**
+
+   Numero di avvii dalla modifica del numero di versione dell'applicazione.
+
+   >[!TIP]
+   >
+   >Gli avvii dall'ultimo aggiornamento non vengono memorizzati automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+
+* **Nome del dispositivo**
+
+   Memorizza il nome del dispositivo. In iOS, una stringa di due cifre separate da virgola identifica il dispositivo iOS. Il primo numero rappresenta la generazione del dispositivo e il secondo numero di membri della famiglia di dispositivi. Per un elenco completo dei nomi dei dispositivi più comuni, vedi [Versioni dei dispositivi iOS](/help/ios/reference/device-versions.md).
+
+* **Nome gestore**
+
+   Memorizza il nome del provider di servizi mobili.
+
+* **Risoluzione**
+
+   Larghezza e altezza in pixel reali.
