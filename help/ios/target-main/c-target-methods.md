@@ -1,0 +1,327 @@
+---
+description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
+seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
+seo-title: Metodi di iOS Target per Adobe Mobile Services
+solution: Marketing Cloud, Analytics
+title: Metodi di Target per iOS
+topic: Sviluppatore e implementazione
+uuid: 692 bcda 1-02 ba -4902-bd 65-15888 adf 1952
+translation-type: tm+mt
+source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+
+---
+
+
+# Metodi di Target per iOS {#target-methods}
+
+Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
+
+L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service. Ai metodi è applicato il prefisso della relativa soluzione. Ad esempio, i metodi di hanno il prefisso `target`target.
+
+>[!TIP]
+>
+>Le metriche del ciclo di vita sono inviate come parametri a ciascun caricamento Mbox. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md).
+
+## Riferimento classe: Adbtargetlocationrequest
+
+### Proprietà
+
+```objective-c
+NSString *name; 
+NSString *defaultContent; 
+NSMutableDictionary *parameters;
+```
+
+### Costanti stringa
+
+>[!TIP]
+>
+>Le seguenti costanti sono per maggiore facilità di utilizzo quando imposti le chiavi per i parametri personalizzati.
+
+```iOS
+NSString *const ADBTargetParameterOrderId; 
+NSString *const ADBTargetParameterOrderTotal; 
+NSString *const ADBTargetParameterProductPurchasedId; 
+NSString *const ADBTargetParameterCategoryId; 
+NSString *const ADBTargetParameterMbox3rdPartyId; 
+NSString *const ADBTargetParameterMboxPageValue; 
+NSString *const ADBTargetParameterMboxPc; 
+NSString *const ADBTargetParameterMboxSessionId; 
+NSString *const ADBTargetParameterMboxHost;
+```
+
+>[!IMPORTANT]
+>
+>* If you are using SDKs **before** version 4.14.0, see [Input Parameters](https://developers.adobetarget.com/api/#input-parameters) for parameters limitations.
+   >
+   >
+* If you are using SDKs version 4.14.0 **or after**, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters) for parameters limitations.
+
+
+### Metodi
+
+* **targetLoadRequest:&#x200B;callback**
+
+   Invia la richiesta al server di Target configurato e restituisce il valore della stringa dell'offerta generato in un blocco `callback`.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (void) targetLoadRequest:(ADBTargetLocationRequest *)request
+                        callback:(void (^)(NSString *content))callback;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      [ADBMobile targetLoadRequest:myRequest
+                          callback:^(NSString *content) {
+                            // do something with content
+                          }];
+      ```
+
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell'offerta generata in una funzione callback di un blocco.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (void) targetLoadRequestWithName:(nullable NSString *)name
+                          defaultContent:(nullable NSString *)defaultContent
+                      profileParameters:(nullable NSDictionary *)profileParameters
+                        orderParameters:(nullable NSDictionary *)orderParameters
+                         mboxParameters:(nullable NSDictionary *)mboxParameters
+                requestLocationParameters:(nullable NSDictionary *)requestLocationParameters
+                                 callback:(nullable void (^)(NSString
+                                 * __nullable content))callback;
+      ```
+
+   * Restituisce: N/D
+
+   * I parametri di questo metodo sono:
+
+      * **`name`**
+
+         Nome dell'Mbox/posizione Target che desideri recuperare.
+
+         * **Tipo**: NSString*
+      * **`defaultContent`**
+
+         Valore restituito nella callback se il server di Target non è raggiungibile, oppure se l'utente non è qualificato per la campagna.
+
+         * **Tipo**: NSString*
+      * **`profileParameters`**
+
+         I valori in questo dizionario entrano nell'oggetto "profileParameters" nella richiesta a Target.
+
+         * **Tipo**: NSDictionary*
+      * **`orderParameters`**
+
+         I valori in questo dizionario entrano nell'oggetto "order" nella richiesta a Target.
+
+         * **Tipo**: NSDictionary
+      * **`mboxParameters`**
+
+         I valori in questo dizionario entrano nell'oggetto "mboxParameters" nella richiesta a Target.
+
+         * **Tipo**: NSDictionary*
+      * **`requestLocationParameters`**
+
+         I valori in questo dizionario entrano nell'oggetto "requestLocation" nella richiesta a Target.
+
+         **Tipo**: NSDictionary*
+
+      * **`callback`**
+
+         Questo metodo sarà chiamato con il contenuto dell'offerta dal server di Target. Se non è possibile accedere al server di Target o se l'utente non è idoneo per la campagna, viene restituito defaultContent.
+      **Tipo**: Funzione
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      [ADBMobile targetLoadRequestWithName:@"myHeroBanner"
+                            defaultContent:@"defaultHeroBanner.png"
+                        profileParameters:@{@"age":@"20-29"}
+                          orderParameters:nil
+                           mboxParameters:@{@"customParam":@"customValue"}
+                requestLocationParameters:@{@"host":@"my.hostname.com"}
+                                 callback:^(NSString *content){
+                                   // do something with content
+                                   myImageView.image = [UIImage imageNamed:content];
+                                 }];
+      ```
+
+      Per ulteriori informazioni sull'API di Target sottostante, vedi [Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+
+
+
+
+
+
+
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell'offerta generata in un callback di un blocco.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (void) targetLoadRequestWithName:(nullable NSString *)name
+                          defaultContent:(nullable NSString *)defaultContent
+                      profileParameters:(nullable NSDictionary *)profileParameters
+                        orderParameters:(nullable NSDictionary *)orderParameters
+                         mboxParameters:(nullable NSDictionary *)mboxParameters
+                               callback:(nullable void (^)(NSString * __nullable content))callback;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      [ADBMobile targetLoadRequestWithName:@"mboxName"
+                            defaultContent:@"defaultContent"
+                         profileParameters:{@"profile-parameter-key": @"profile-parameter-value"}
+                           orderParameters:@{@"order-parameter-key": @"order-parameter-value"}
+                            mboxParameters:@{@"mbox-parameter-key": @"mbox-parameter-value"}
+                                   callback:^(NSString * content) {
+                                           //do something with content 
+                                 }
+                               }];
+      ```
+
+* **targetCreateOrder&#x200B;ConfirmRequestWithName:&#x200B;orderId:&#x200B;orderTotal:&#x200B;productPurchasedId:&#x200B;parameters**
+
+   Crea un `ADBTargetLocationRequest`.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (ADBTargetLocationRequest *)
+      targetCreateOrderConfirmRequestWithName:(NSString *)name
+                                      orderId:(NSString *)orderId
+                                  orderTotal:(NSString *)orderTotal
+                          productPurchasedId:(NSString *)productPurchasedId
+                              parameters:(NSDictionary *)parameters;
+      ```
+
+* **targetCreateRequestWithName:&#x200B;&#x200B;defaultContent:&#x200B;parameters**
+
+   Costruttore di convenienza per creare un oggetto ADBTargetLocationRequest con i parametri indicati.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (ADBTargetLocationRequest *)
+      targetCreateRequestWithName:(NSString *)name
+                           defaultContent:(NSString *)defaultContent
+                               parameters:(NSDictionary *)parameters;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      ADBTargetLocationRequest *myRequest =  
+      [ADBMobile targetCreateRequestWithName:@"heroBanner"
+                              defaultContent:@"default.png"
+                                  parameters:nil];
+      ```
+
+* **targetThirdPartyID**
+
+   Restituisce l'ID di terze parti.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (nullable NSString *) targetThirdPartyID;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      NSString *thirdPartyId = [ADBMobile targetThirdPartyID];
+      ```
+
+* **targetSetThirdPartyID**
+
+   Imposta l'ID di terze parti.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (void) targetSetThirdPartyID:(nullable NSString *)thirdPartyID;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      [ADBMobile targetSetThirdPartyID:@"thirdPartyID"];
+      ```
+
+* **targetClearCookies**
+
+   Elimina tutti i cookie di Target dall'applicazione.
+
+   >[!TIP]
+   >
+   >A partire dalla versione 4.10.0 dell'SDK, Target non utilizza più i cookie. Questo metodo reimposta gli ID thirdPartyID e sessionID.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (void) targetClearCookies;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      [ADBMobile targetClearCookies];
+      ```
+
+* **targetPcID**
+
+   Restituisce il PcID.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (nullable NSString *) targetPcID;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      NSString *myTargetPcID = [ADBMobile targetPcID];
+      ```
+
+* **targetSessionID**
+
+   Restituisce l'ID SessionID.
+
+   * Di seguito è riportata la sintassi per questo metodo:
+
+      ```objective-c
+      + (nullable NSString *) targetPcID;
+      ```
+
+   * Di seguito è riportato un esempio di codice per questo metodo:
+
+      ```objective-c
+      NSString *myTargetSessionID = [ADBMobile targetSessionID];
+      ```
+
+### Esempio
+
+```objective-c
+// make your request 
+ADBTargetLocationRequest *myRequest =  
+ [ADBMobile targetCreateRequestWithName:@"heroBanner"  
+                         defaultContent:@"default.png"  
+                          parameters:nil]; 
+// load your request 
+[ADBMobile targetLoadRequest:myRequest  
+                    callback:^(NSString *content) { 
+                        // do something with content 
+                        heroImage.image = [UIImage imageNamed:content];
+                    }];
+```
