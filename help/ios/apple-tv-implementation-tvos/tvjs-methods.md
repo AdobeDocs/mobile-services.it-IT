@@ -798,9 +798,10 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * ID di terze parti da usare per le richieste di Target.
    * Di seguito è riportato un esempio di codice per questo metodo:
-   ```objective-c
-   ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
-   ```
+
+      ```objective-c
+      ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
+      ```
 
 * **targetPcID**
 

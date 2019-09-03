@@ -145,6 +145,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Versione SDK minima: 4.0
+
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
