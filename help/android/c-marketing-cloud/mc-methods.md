@@ -8,7 +8,7 @@ title: Metodi del servizio Identità Adobe Experience Platform
 topic: Sviluppatore e implementazione
 uuid: c 5107 a 7 e -273 b -4 f 71-8738-4 c 603479 b 24 c
 translation-type: tm+mt
-source-git-commit: a54a969bb6abedfeb0fc20276d260664b68c1d66
+source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
@@ -25,14 +25,14 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo, occorre avere Mobile SDK 4.12+. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
 
-   >[! Importante]
+   >[!IMPORTANT]
    >
    >Questo metodo può provocare una chiamata di rete di blocco. Non invocare questa chiamata su thread sensibili a fattori temporali.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
-      URL java.lang.String  
+      public static String appendToURL(final String URL) 
       ```
 
       Una stringa URL obbligatoria alla quale vengono collegate le informazioni dei visitatori.
