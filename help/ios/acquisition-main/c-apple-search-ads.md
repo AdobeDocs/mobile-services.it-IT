@@ -2,12 +2,12 @@
 description: L'SDK di Adobe sfrutta le API di attribuzione app di Apple Search Ads per consentire agli sviluppatori e ai professionisti del marketing di tracciare e attribuire i download delle app derivanti da campagne Search Ads nell'Apple App Store.
 seo-description: L'SDK di Adobe sfrutta le API di attribuzione app di Apple Search Ads per consentire agli sviluppatori e ai professionisti del marketing di tracciare e attribuire i download delle app derivanti da campagne Search Ads nell'Apple App Store.
 seo-title: Apple Search Ads
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Apple Search Ads
 topic: Sviluppatore e implementazione
-uuid: 790080 e 8-067 e -4 bfd-a 169-0027 db 4 fdff 3
+uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 9c6923d14d1a5f30e5873299def61b0734e52429
+source-git-commit: 215ad01507a541096e6951a2138c47af50bc1b87
 
 ---
 
@@ -33,7 +33,7 @@ Per abilitare l'app all'attribuzione Search Ad:
 
 1. Implementa la versione SDK Adobe 4.13.2 o successiva.
 
-   Per ulteriori informazioni, consulta [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
 
 1. Aggiungi il framework iAd al file del progetto Xcode per la tua app.
 
@@ -45,9 +45,9 @@ Per abilitare l'app all'attribuzione Search Ad:
 
    Inoltre, i seguenti valori saranno mappati dal dizionario "`iad`" ai nostri tipici campi per dati contestuali per l'acquisizione:
 
-   * " `iad-campaign-id`" --&gt; " `a.referrer.campaign.trackingcode`"
-   * " `iad-campaign-name`" --&gt;" `a.referrer.campaign.name``"
-   * " `iad-adgroup-id`" --&gt; " `a.referrer.campaign.content`"
-   * " `iad-keyword`" --&gt; " `a.referrer.campaign.term`"
+   * "`iad-campaign-id`" --&gt; "`a.referrer.campaign.trackingcode`"
+   * "`iad-campaign-name`" --&gt; "`a.referrer.campaign.name`"
+   * "`iad-adgroup-id`" --&gt; "`a.referrer.campaign.content`"
+   * "`iad-keyword`" --&gt; "`a.referrer.campaign.term`"
    Con questa mappatura, i valori diventano disponibili per le nostre funzioni standard di generazione dei rapporti.
 
