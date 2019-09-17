@@ -3,11 +3,11 @@ description: Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experien
 keywords: Xamarin
 seo-description: Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 seo-title: Metodi iOS
-solution: Marketing Cloud, Sviluppatore
+solution: Marketing Cloud,Sviluppatore
 title: Metodi iOS
-uuid: d 6 a 056 db -80 c 1-44 d 0-970 f-c 961 ad 01 b 0 bc
+uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 
 ---
 
@@ -57,13 +57,15 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```objective-c
-      public static void SetDebugLogging(bool enabled); 
-      
+      public static void SetDebugLogging(bool enabled);
+      ```
+
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
       ADBMobile.SetDebugLogging(true);
-      
+      ```
+
 * **LifetimeValue**
 
    Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente.
@@ -71,21 +73,21 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```objective-c
-      public static double LifetimeValue(); 
+      public static double LifetimeValue();
       ```
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-      var lifetimeValue = ADBMobile.LifetimeValue(); 
+      var lifetimeValue = ADBMobile.LifetimeValue();
       ```
 
 * **PrivacyStatus**
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
-   * ADBMobilePrivacyStatus.Unknown: Se è abilitato il monitoraggio offline, gli hit vengono salvati fino alla modifica dello stato di privacy, in opt-in (gli hit vengono inviati) o in opt-out (gli hit vengono scartati). Se il tracciamento offline è disabilitato, gli hit vengono eliminati finché lo stato di privacy non cambia in optedin.
+   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono scartati.
+   * ADBMobilePrivacyStatus.Unknown: Se è abilitato il monitoraggio offline, gli hit vengono salvati fino alla modifica dello stato di privacy, in opt-in (gli hit vengono inviati) o in opt-out (gli hit vengono scartati). Se il tracciamento offline è disattivato, gli hit vengono scartati fino a quando lo stato di privacy non cambia quando l’utente acconsente.
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -97,15 +99,15 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-       var privacyStatus = ADBMobile.PrivacyStatus(); 
+      var privacyStatus = ADBMobile.PrivacyStatus();
       ```
 
 
-* **Setprivacystatus**
+* **SetPrivacyStatus**
 
    Imposta lo stato di privacy per l'utente corrente sullo stato. Imposta uno dei valori seguenti:
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono scartati.
    * `ADBMobilePrivacyStatus.Unknown`  - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -174,12 +176,12 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
    >[!TIP]
    >
-   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l'app è in background.
+   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l’app è in background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```objective-c
-       public static void KeepLifecycleSessionAlive();
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * Di seguito è riportato un esempio di codice per questo metodo:
@@ -203,12 +205,12 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-       var trackingId = ADBMobile.TrackingIdentifier();
+      var trackingId = ADBMobile.TrackingIdentifier();
       ```
 
 * **TrackState**
 
-   Monitora lo stato di un'app con dati di contesto facoltativi. Gli stati sono le visualizzazioni disponibili nell'applicazione, come "schermata del titolo", "livello 1", "pausa" e così via. Questi stati sono simili alle pagine di un sito Web e `TrackState` le chiamate incrementano le visualizzazioni di pagina. Se state è vuota, viene visualizzata come "app name app version (build)" nei report. Se visualizzi questo valore nel report, assicurati che lo stato in ogni chiamata sia impostato su `TrackState`.
+   Monitora lo stato di un'app con dati di contesto facoltativi. Gli stati sono le visualizzazioni disponibili nell'applicazione, come "schermata del titolo", "livello 1", "pausa" e così via. Questi stati sono simili alle pagine di un sito Web e `TrackState` le chiamate incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come "app name app version (build)". Se visualizzi questo valore nel report, assicurati che lo stato in ogni chiamata sia impostato su `TrackState`.
 
    [!TIP]
    >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
@@ -321,7 +323,7 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
-      public nbsp; static void tracklifetimevalueincrease (double amount, nsdictionary cdata);
+      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -383,11 +385,12 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("level2", (double  arg1,  double  arg2,  NSMutableDictionary  arg3)  =>  { 
       return  Convert.ToSByte(true); 
-      }); 
-      
+      });
+      ```
+
 * **TrackingTimedActionExists**
 
-   Restituisce se un'azione temporizzata è (o non è) in corso.
+   Restituisce un valore che indica se un’azione temporizzata è in corso o meno.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -483,8 +486,8 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-       NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
-       ADBMobile.VisitorSyncIdentifiers(ids); 
+      NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
+      ADBMobile.VisitorSyncIdentifiers(ids); 
       ```
 
 ## Target methods {#section_C1E4121CAF9D43538511D857A1F549A7}
@@ -502,11 +505,11 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
-       ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
-       ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
-       Console.WriteLine  (context); 
-       });
+      NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
+      ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
+      ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
+      Console.WriteLine  (context); 
+      });
       ```
 
 * **TargetCreateRequest**
@@ -534,7 +537,8 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
       ```objective-c
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters);
-      
+      ```
+
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -774,7 +778,7 @@ Per ulteriori informazioni, vedete [Analisi del Video](/help/ios/getting-started
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-       ADBMobile.MediaStop (settings.Name, 3);
+      ADBMobile.MediaStop (settings.Name, 3);
       ```
 
 * **MediaClick**
