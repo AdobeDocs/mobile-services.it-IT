@@ -2,12 +2,12 @@
 description: Queste informazioni sono utili per implementare la libreria iOS e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-description: Queste informazioni sono utili per implementare la libreria iOS e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-title: Implementazione e ciclo di vita di base
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Sviluppatore e implementazione
-uuid: 96 d 06325-e 424-4770-8659-4 b 5431318 ee 3
+uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
+source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 ---
 
@@ -24,15 +24,15 @@ Queste informazioni sono utili per implementare la libreria iOS e raccogliere me
 
 **Prerequisito**
 
-Prima di scaricare l'SDK, completa i passaggi descritti in *Crea una suite di rapporti* in [implementazione e ciclo di vita core](/help/ios/getting-started/requirements.md) per impostare una suite di rapporti per la fase di sviluppo e scaricare una versione precompilata del file di configurazione.
+Before you download the SDK, complete the steps in *Create a Report Suite* in [Core implementation and lifecycle](/help/ios/getting-started/requirements.md) to set up a development report suite and download a pre-populated version of the configuration file.
 
-Per scaricare l'SDK:
+To download the SDK:
 
 1. Download, unzip the `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` file and verify that you have the following software components:
 
    * `ADBMobile.h`, file di intestazione Objective-C usato per iOS AppMeasurement.
    * `ADBMobileConfig.json`, file di configurazione dell’SDK personalizzato per la tua app.
-   * `AdobeMobileLibrary.a`, fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv 7, armv 7 s, arm 64) e simulatori (i 386, x 86_ 64) iOS.
+   * `AdobeMobileLibrary.a`, un fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
 
       Se la destinazione sarà un'app iOS, il fat binary deve essere collegato.
 
@@ -44,7 +44,7 @@ Per scaricare l'SDK:
 
       Se la destinazione sarà un'app estensione Apple Watch (watchOS 2), il fat binary deve essere collegato.
 
-   * `AdobeMobileLibrary_TV.a`, fat binary abilitato per bitcode contenente le build della libreria per dispositivi (arm 64) e simulatore (x 86_ 64) Apple TV.
+   * `AdobeMobileLibrary_TV.a`, un fat binary abilitato per bitcode contenente le build della libreria per i nuovi dispositivi Apple TV (arm64) e simulatori (x86_64).
 
       Se la destinazione sarà un'app estensione Apple TV (tvOS), il fat binary deve essere collegato.
 
@@ -75,6 +75,7 @@ Per scaricare l'SDK:
    1. Nella scheda **[!UICONTROL Generale]**, seleziona le destinazioni e collega le librerie e i framework necessari nelle sezioni **[!UICONTROL Framework collegati]e** Librerie **.**
    * **Destinazioni di app iOS**
       * `SystemConfiguration.framework`
+      * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
    * **Destinazioni di estensioni iOS**
@@ -105,7 +106,7 @@ Per scaricare l'SDK:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Aggiungi una `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` chiamata in `application:didFinishLaunchingWithOptions`:
+Add a `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` call in `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -114,7 +115,7 @@ Aggiungi una `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` ch
 }
 ```
 
-### Includere dati aggiuntivi con le chiamate lifecycle
+### Includi dati aggiuntivi con le chiamate del ciclo di vita
 
 Per includere dati aggiuntivi con le chiamate delle metriche "lifecycle", usa `collectLifecycleDataWithAdditionalData`:
 
