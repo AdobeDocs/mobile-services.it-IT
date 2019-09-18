@@ -2,12 +2,12 @@
 description: L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le applicazioni native per Apple iPhone e iPad, inviare contenuti mirati all'interno delle app, nonché sfruttare e raccogliere i dati sul pubblico tramite Audience Manager.
 seo-description: L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le applicazioni native per Apple iPhone e iPad, inviare contenuti mirati all'interno delle app, nonché sfruttare e raccogliere i dati sul pubblico tramite Audience Manager.
 seo-title: SDK 4.x per iOS per le soluzioni Experience Cloud
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: SDK 4.x per iOS per le soluzioni Experience Cloud
 topic: Sviluppatore e implementazione
-uuid: 8 b 374 cee -1432-460 b-aac 2-70623 dd 80 a 04
+uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1070450065776fdb7d13e9b21ce62ceeee55b80e
 
 ---
 
@@ -18,7 +18,11 @@ L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le appl
 
 >[!IMPORTANT]
 >
->Lo SKU di Adobe Analytics Mobile Marketing Add-on è richiesto per abilitare Mobile Services ad accedere alle funzionalità di acquisizione mobile, collegamenti profondi, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contatta il tuo Adobe CSM.
+>Lo SKU Adobe Analytics Mobile Marketing Add-on è richiesto per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento profondo, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contattate il vostro Adobe CSM.
+
+>[!IMPORTANT]
+>
+>L'SDK di Adobe Experience Platform Mobile ora supporta [iOS 13 e Xcode 11][https://developer.apple.com/ios/]. Per garantire la compatibilità diretta, usa le versioni [più recenti dell’estensione](https://app.gitbook.com/@aep-sdks/s/docs/resources/frequently-asked-questions/current-sdk-versions)SDK di Experience Platform Mobile.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
@@ -41,13 +45,13 @@ Alcune considerazioni da tenere a mente:
 
 * Nella versione 4.2 dell'SDK e nelle versioni successive, tutti gli hit vengono inviati tramite HTTP POST.
 
-   Questo non ha alcun impatto sui dati raccolti o segnalati, ma è necessario utilizzare un analizzatore di pacchetti che supporti l'ispezione dei dati POST per visualizzare gli hit.
+   Questo non ha alcun impatto sui dati raccolti o segnalati, ma per visualizzare gli hit è necessario utilizzare un analizzatore di pacchetti che supporti l’ispezione dei dati POST.
 
 * If you are upgrading from a previous version (2.x or 3.x), see the [4.x Migration Guide](/help/ios/getting-started/migration-v3.md).
 
 ## Documentazione di Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services fornisce una nuova interfaccia utente che riunisce le funzionalità di mobile marketing per applicazioni mobile da Adobe Experience Cloud. Inizialmente, Mobile Services fornisce un'integrazione perfetta delle funzionalità di analisi e targeting delle app dalle soluzioni Adobe Analytics, Adobe Audience Manager e Adobe Target e Adobe Experience Platform Identity Service.
+Adobe Mobile Services fornisce una nuova interfaccia utente che riunisce le funzionalità di mobile marketing per applicazioni mobile da Adobe Experience Cloud. Inizialmente, Mobile Services fornisce un'integrazione perfetta delle funzionalità di analisi e targeting delle app dalle soluzioni Adobe Analytics, Adobe Audience Manager e Adobe Target, nonché Adobe Experience Platform Identity Service.
 
 Per ulteriori informazioni sull'interfaccia utente di Mobile Services e per consultare la documentazione, vedi [Adobe Mobile Services](/help/using/home.md).
 
