@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
-product: mobile-services
-solution-title: Mobile Services
+product: servizi mobili
+solution-title: Informazioni e supporto
 solution-hub-url: https://helpx.adobe.com/it/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Introduzione
@@ -11,7 +11,7 @@ tutorials-url: https://helpx.adobe.com/it/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
 translation-type: tm+mt
-source-git-commit: d9cb2a642393a26ee5530beb0491649248b86286
+source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
 
@@ -33,7 +33,7 @@ Il file metadata.md include metadati a livello di repository che passano attrave
 | tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o KT |
 | mini-toc-levels | Determina il numero di livelli di intestazione visualizzati nella barra laterale destra. Il valore predefinito è 2 |
 | git-repo | Specifica la posizione del repository collaborativo. Usa il mirror di github.com per i documenti rivolti al pubblico |
-| index | set index = no for software launch |
+| index | set index=no for soft launch |
 
 Nel file TOC.md
 
