@@ -7,7 +7,7 @@ title: SDK 4.x per iOS per le soluzioni Experience Cloud
 topic: Sviluppatore e implementazione
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: 1070450065776fdb7d13e9b21ce62ceeee55b80e
+source-git-commit: 0f6eec995626f4c93f56d59b682083bd0428d9e1
 
 ---
 
@@ -22,7 +22,7 @@ L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le appl
 
 >[!IMPORTANT]
 >
->L'SDK di Adobe Experience Platform Mobile ora supporta [iOS 13 e Xcode 11][https://developer.apple.com/ios/]. Per garantire la compatibilità diretta, usa le versioni [più recenti dell’estensione](https://app.gitbook.com/@aep-sdks/s/docs/resources/frequently-asked-questions/current-sdk-versions)SDK di Experience Platform Mobile.
+>L’SDK 4.x per iOS per le soluzioni Experience Cloud ora supporta [iOS 13 e Xcode 11][https://developer.apple.com/ios/]. Per garantire la compatibilità diretta, usa le versioni più recenti degli SDK iOS 4.x. Per ulteriori informazioni sull’ultima versione, consulta le note sulla [versione](/help/ios/rel-notes.md).
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
