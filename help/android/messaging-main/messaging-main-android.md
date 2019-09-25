@@ -1,11 +1,11 @@
 ---
 description: Queste informazioni aiutano nell'utilizzo della messaggistica nelle app Android.
 seo-description: Queste informazioni aiutano nell'utilizzo della messaggistica nelle app Android.
-seo-title: Panoramica dei messaggi
-solution: Marketing Cloud, Analytics
-title: Panoramica dei messaggi
+seo-title: Panoramica sulla messaggistica
+solution: Marketing Cloud,Analytics
+title: Panoramica sulla messaggistica
 topic: Sviluppatore e implementazione
-uuid: c 6475 ab 4-015 d -46 b 0-af 28-5 d 0 df 3 f 4459 e
+uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Messaging overview {#messaging}
 
-Le informazioni contenute in questa sezione consentono di utilizzare i messaggi nelle app Android.
+The information in this section helps you use messaging in your Android apps.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
