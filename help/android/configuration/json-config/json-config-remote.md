@@ -2,10 +2,10 @@
 description: È possibile caricare un diverso file di configurazione ADBMobile JSON all'avvio dell'applicazione.
 seo-description: È possibile caricare un diverso file di configurazione ADBMobile JSON all'avvio dell'applicazione.
 seo-title: Escludere il percorso del file di configurazione ADBMobile JSON
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Escludere il percorso del file di configurazione ADBMobile JSON
 topic: Sviluppatore e implementazione
-uuid: 6872 a 5 d 7-0 c 5 a -4 fdc-b 7 bf-ad 1534763 a 6 a
+uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
