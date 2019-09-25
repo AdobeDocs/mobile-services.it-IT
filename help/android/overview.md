@@ -1,12 +1,12 @@
 ---
 description: L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all'interno dell'app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell'audience.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all'interno dell'app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell'audience.
 seo-title: SDK 4.x per Android per le soluzioni Experience Cloud
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: SDK 4.x per Android per le soluzioni Experience Cloud
 topic: Sviluppatore e implementazione
-uuid: 56 f 1 ff 41-0365-41 dd-bdde -245 c 823 dff 07
+uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -19,7 +19,7 @@ L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le 
 
 >[!IMPORTANT]
 >
->Lo SKU di Adobe Analytics Mobile Marketing Add-on è richiesto per abilitare Mobile Services ad accedere alle funzionalità di acquisizione mobile, collegamenti profondi, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contatta il tuo Adobe CSM.
+>Lo SKU Adobe Analytics Mobile Marketing Add-on è richiesto per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento profondo, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contattate il vostro Adobe CSM.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
@@ -38,7 +38,7 @@ Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di
 
 >[!IMPORTANT]
 >
->Anche se puoi configurare le funzionalità nell'interfaccia utente, queste funzioni non funzioneranno finché non scaricate il file di configurazione generato e aggiungete questo file all'SDK. Per informazioni sul download e la configurazione degli SDK, vedi [Implementazione di base e ciclo di vita](/help/android/getting-started/dev-qs.md).
+>Anche se puoi configurare le funzionalità nell’interfaccia utente, queste funzioni non funzioneranno finché non avrai scaricato il file di configurazione generato e aggiunto il file all’SDK. Per informazioni sul download e la configurazione degli SDK, vedi Implementazione e ciclo di vita [di base](/help/android/getting-started/dev-qs.md).
 
 Gli SDK supportano le seguenti versioni di Android:
 
@@ -49,7 +49,7 @@ Alcune considerazioni da tenere a mente:
 
 * Nella versione 4.2 dell'SDK e nelle versioni successive, tutti gli hit vengono inviati tramite HTTP POST.
 
-   Questo non ha alcun impatto sui dati raccolti o segnalati, ma è necessario utilizzare un analizzatore di pacchetti che supporti l'ispezione dei dati POST per visualizzare gli hit.
+   Questo non ha alcun impatto sui dati raccolti o segnalati, ma per visualizzare gli hit è necessario utilizzare un analizzatore di pacchetti che supporti l’ispezione dei dati POST.
 
 * If you are upgrading from a previous version, see the [4.x Migration Guide](/help/android/getting-started/migration-v3.md).
 
