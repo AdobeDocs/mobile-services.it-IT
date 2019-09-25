@@ -1,11 +1,11 @@
 ---
 description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: Variabile Products
-solution: Marketing Cloud, Analytics
-title: Variabile Products
+seo-title: Variabile "products"
+solution: Marketing Cloud,Analytics
+title: Variabile "products"
 topic: Sviluppatore e implementazione
-uuid: 607983 d 6-48 ac -4274-bfc 8-b 1 ca 4 e 5 dad 1 b
+uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,7 +46,7 @@ The *`products`* is set directly on the image request, and the other variables a
 
 ![](assets/products-procrules.png)
 
-Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, poiché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
+Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, poiché viene impostata direttamente nella richiesta dell’immagine dall’SDK.
 
 ## Products variable with merchandising eVars and product-specific events {#section_685D53AD3D064F9A8E225F995A9BA545}
 
@@ -73,5 +73,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Se attivate un evento specifico per un prodotto utilizzando la *`&&products`* variabile, dovete anche impostare tale evento nella *`&&events`* variabile, in caso contrario l'evento verrà escluso durante l'elaborazione.
+>Se si attiva un evento specifico per il prodotto utilizzando la *`&&products`* variabile, è necessario impostare tale evento anche nella *`&&events`* variabile, altrimenti l'evento viene escluso durante l'elaborazione.
 
