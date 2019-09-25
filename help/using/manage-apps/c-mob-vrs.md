@@ -3,7 +3,7 @@ description: Una suite di rapporti virtuale (VRS) è suite di rapporti che è st
 seo-description: Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. In questo modo gli utenti possono mantenere i propri dati in una singola suite di rapporti ma gestirli come se fossero contenuti in suite di rapporti separate.
 seo-title: Suite di rapporti virtuali
 title: Suite di rapporti virtuali
-uuid: 3 f 467 cad -43 e 7-4 cd 0-889 b -89 f 8 c 61 febbd
+uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -12,19 +12,19 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # Virtual report suites {#virtual-report-suites}
 
-Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. Questo consente agli utenti di mantenere i propri dati in una suite di rapporti, ma gestirli come se fossero in suite di rapporti separate.
+Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. Questo consente agli utenti di mantenere i propri dati in una singola suite di rapporti, ma di gestirli come se fossero in suite di rapporti separate.
 
-Le app che utilizzano le VRS eseguono le stesse operazioni di quelle che utilizzano una suite di rapporti regolare, fatta eccezione per la gestione delle seguenti funzioni:
+Le app che utilizzano le VRS eseguono le stesse operazioni delle app che utilizzano una normale suite di rapporti, fatta eccezione per la gestione delle seguenti funzionalità:
 
 * Regole di elaborazione
 * eVar/prop/listVar/eventi
-* Opzione abilitata per marca temporale
+* Opzione con funzione Timestamp
 * Flag di dimensioni (ciclo di vita, posizione ecc.)
 * Classificazioni
 
 Questi valori vengono gestiti nella suite di rapporti principale e sono condivisi con le VRS che appartengono alla stessa suite di rapporti principale.
 
-Le aree seguenti sono accessibili nell'interfaccia utente di Adobe Mobile Services indipendentemente dalla suite di rapporti principale:
+Le aree seguenti sono accessibili nell’interfaccia utente di Adobe Mobile Services indipendentemente dalla suite di rapporti principale:
 
 * Il file di configurazione
 * Gestire i punti di interesse
@@ -33,19 +33,19 @@ Le aree seguenti sono accessibili nell'interfaccia utente di Adobe Mobile Servic
 * Collegamenti ai messaggi
 * Acquisizione
 
-Una VRS può aiutarti a completare le attività seguenti:
+Una VRS può aiutarti a completare le seguenti attività:
 
 * Limitare l'accesso ai dati
 
-   Prendiamo il caso di un'app di un'azienda multinazionale che consente di inviare dati a una suite di rapporti per tutte le geolocalità. Tuttavia, l'azienda vuole fare in modo che l'utente aziendale di una determinata regione non possa visualizzare i dati di una regione diversa. L'amministratore della società può creare una VRS per segmentare gli utenti per regione e autorizzare la VRS solo all'utente aziendale che gestisce l'area.
+   Prendiamo il caso di un'app di un'azienda multinazionale che consente di inviare dati a una suite di rapporti per tutte le geolocalità. Tuttavia, l'azienda vuole fare in modo che l'utente aziendale di una determinata regione non possa visualizzare i dati di una regione diversa. L'amministratore della società può creare una VRS per segmentare gli utenti per regione e concedere l'autorizzazione alla VRS solo all'utente aziendale che gestisce la regione.
 
    Questa limitazione impedisce agli utenti aziendali di visualizzare i dati che non riguardano la propria regione. Ad esempio, un utente aziendale della regione EMEA non ha necessità di vedere i dati della regione APAC.
 
-* Consente il controllo di messaggi in-app/push, punti di interesse di posizione, acquisizione e postback, con l'invio di tutti i dati a una singola suite di rapporti.
+* Consentite il controllo dei messaggi in-app/push, dei punti di interesse di posizione, dell'acquisizione e dei postback, con l'invio di tutti i dati a una singola suite di rapporti.
 
    Prendiamo il caso di un'azienda multinazionale che vuole inviare tutti i dati alla stessa suite di rapporti per tutte le geolocalità. Tuttavia, l'azienda vuole fare in modo che il team di marketing di ogni regione provveda alla gestione dei messaggi in-app e push solo della propria regione. L'amministratore dell'azienda può quindi creare delle VRS regionali e dare così la possibilità a ciascun team di gestire la propria app in base alla rispettiva VRS.
 
-   Più specificamente, il team regionale crea la propria app utilizzando il file di configurazione della VRS. I dati vengono inviati alla suite di rapporti principale, ma i messaggi in-app/push, i punti di interesse di posizione, l'acquisizione e i postback sono controllati dall'app creata dalla VRS.
+   Più specificamente, il team regionale crea la propria app utilizzando il file di configurazione della VRS. I dati vengono inviati alla suite di rapporti principale, ma i messaggi in-app/push, i POI di posizione, l'acquisizione e i postback sono controllati nell'app creata dalla VRS.
 
 ## Create a virtual report suite in Adobe Analytics {#section_D56B90B2653847D68ECA1F9B39204330}
 
@@ -53,7 +53,7 @@ Una VRS può aiutarti a completare le attività seguenti:
 >
 >Solo gli amministratori di Adobe Analytics possono creare e modificare suite di rapporti virtuali in Adobe Analytics. To create a virtual report suite, see [Create virtual report suites](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
 
-Ogni VRS ha un ID univoco. Per visualizzare l'ID suite di rapporti principale nell'interfaccia utente di Adobe Mobile Services, nella pagina Gestione impostazioni app, fai **[!UICONTROL clic su]** **[!UICONTROL Maggiori dettagli nella sezione Gestione impostazioni app]**.
+Ogni VRS ha un ID univoco. Per visualizzare l'ID suite di rapporti principale nell'interfaccia utente di Adobe Mobile Services, nella pagina Gestione impostazioni app, nella sezione Informazioni **** app, fai clic su **[!UICONTROL Maggiori dettagli]**.
 
 Nell'interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un'app e segmentare i dati per un gruppo specifico dell'organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati relativi a un utente aziendale in Giappone.
 
@@ -65,17 +65,17 @@ Una VRS è una definizione di segmento lato server che è associata a una suite 
 
 ## Virtual report suite in Adobe Mobile Services and data collection {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
-In Adobe Mobile Services, puoi creare un'app basata su una suite di rapporti principale o su una suite di rapporti virtuale. Quando crei un'app basata su una suite di rapporti virtuale, ti consigliamo di allineare il segmento VRS con la definizione dell'app.
+In Adobe Mobile Services, puoi creare un'app basata su una suite di rapporti principale o virtuale. Quando crei un'app basata su una suite di rapporti virtuale, ti consigliamo di allineare il segmento VRS con la definizione dell'app.
 
 >[!TIP]
 >
->Le certificazioni push sono associate al livello dell'app nell'interfaccia utente di Mobile Services.
+>Le certificazioni push sono associate a livello di app nell'interfaccia utente di Mobile Services.
 
 Per assicurare che i messaggi push vengano inviati correttamente, è necessario definire correttamente il segmento di pubblico. Per ulteriori informazioni, vedi [Pubblico: definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## Understanding time zones {#section_498E1EED22D741C3BDED44F01FACA72A}
 
-La proprietà Fuso orario della pagina Gestione impostazioni app è diversa dalla proprietà del fuso orario utilizzata per creare la VRS in Adobe Analytics. La proprietà della pagina Gestione impostazioni viene ereditata dalla suite di rapporti principale, che viene utilizzata per inviare i dati a Adobe Analytics. La proprietà specificata quando crei la VRS in Adobe Analytics viene utilizzata per visualizzare i rapporti nell'interfaccia utente di Mobile Services e potrebbe essere diversa dalla suite di rapporti principale.
+La proprietà Fuso orario nella pagina Gestione impostazioni app è diversa dalla proprietà Fuso orario utilizzata per creare la VRS in Adobe Analytics. La proprietà della pagina Gestione impostazioni viene ereditata dalla suite di rapporti principale, che viene utilizzata per inviare i dati a Adobe Analytics. La proprietà specificata al momento della creazione della VRS in Adobe Analytics viene utilizzata per visualizzare i rapporti nell'interfaccia utente di Mobile Services e potrebbe essere diversa dalla suite di rapporti principale.
 
 ## Select a virtual report suite in the Mobile Services UI {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
