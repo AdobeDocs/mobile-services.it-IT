@@ -1,11 +1,11 @@
 ---
 description: Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
 seo-description: Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
-seo-title: Migrazione alla libreria iOS 4. x
-solution: Marketing Cloud, Analytics
-title: Migrazione alla libreria iOS 4. x
+seo-title: Migrating to the 4.x iOS library
+solution: Marketing Cloud,Analytics
+title: Migrazione alla libreria iOS 4.x
 topic: Sviluppatore e implementazione
-uuid: 5668972 b-f 355-4 e 03-9 df 0-8 c 82 ddf 6809 b
+uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -20,7 +20,7 @@ Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della librer
 >
 >The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  Se modifichi o rimuovi i valori di `NSUserDefaults` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
 
-Nella versione 4. x della libreria SDK per iOS, i metodi pubblici sono consolidati in un unico header. Inoltre, la funzionalità è ora accessibile tramite metodi a livello di classe, pertanto non è necessario tenere traccia di puntatori, istanze o singleton.
+Nella versione 4.x della libreria SDK iOS, i metodi pubblici sono consolidati in un unico header. Inoltre, la funzionalità ora è accessibile tramite metodi a livello di classe, pertanto non è necessario tenere traccia di puntatori, istanze o singleton.
 
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
@@ -106,7 +106,7 @@ Sposta il valore riportato nella prima colonna alla variabile della seconda colo
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server", rimuovete il `"https://"` prefisso. Il prefisso del protocollo viene aggiunto in automatico in base all'impostazione "ssl". |
+| trackingServer | "server", remove the `"https://"` prefix. Il prefisso del protocollo viene aggiunto in automatico in base all'impostazione "ssl". |
 | trackingServerSecure | Rimuovi. Per connessioni sicure, definisci "server" e quindi abilita "ssl". |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -119,22 +119,22 @@ Sposta il valore riportato nella prima colonna alla variabile della seconda colo
 | dynamicVariablePrefix | Rimuovi, non è più utilizzata. |
 | visitorNamespace | Rimuovi, non è più utilizzata. |
 | usePlugins | Rimuovi, non è più utilizzata. |
-| useBestPractices  tutte le chiamate alla misurazione churn (getChurnInstance ) | Rimuovi, sostituita dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
+| useBestPractices  tutte le chiamate alla misurazione churn (getChurnInstance ) | Remove, replaced by lifecycle metrics. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
 
 
 ## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 Invece di usare le chiamate `track` e `trackLink` incentrate sul web, la versione 4 dell'SDK usa i metodi seguenti:
 
-* `trackState:data:` gli stati sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard``app settings`, `cart`e così via.
+* `trackState:data:` states are the views that are available in your app, such as , , , and so on.`home dashboard``app settings``cart`
 
    Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
-* `trackAction:data:` azioni, ad esempio `logons`, `banner taps`e `feed subscriptions`altre metriche che si verificano nell'app e che desideri misurare.
+* `trackAction:data:` actions , such as , , , and other metrics that occur in your app and that you want to measure.`logons``banner taps``feed subscriptions`
 
 Il parametro `data` di entrambi questi metodi è un dizionario `NSDictionary` contenente coppie nome-valore che vengono inviate come dati contestuali.
 
-### Eventi, prop, evar
+### Eventi, prop, eVar
 
 Nella versione 4, non è più possibile assegnare direttamente nell'app variabili quali eventi, eVar, prop, eredi ed elenchi. L'SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell'app sulle variabili di Analytics a scopo di reportistica.
 
@@ -148,7 +148,7 @@ Le regole di elaborazione offrono i seguenti vantaggi:
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti al dizionario   `data``NSDictionary`. This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
 
-### Appsection/Server, geozip, transaction ID, Campaign e altre variabili standard
+### AppSection/Server, GeoZip, transaction ID, Campaign, and other standard variables
 
 I dati che precedentemente impostavi sull'oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti al dizionario `data``NSDictionary` . L'unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
 
