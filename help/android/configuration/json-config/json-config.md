@@ -2,10 +2,10 @@
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-title: File di configurazione ADBMobile JSON
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Sviluppatore e implementazione
-uuid: 1 decf 605-7 bc 3-4 e 73-ad 52-1 ecd 5821599 e
+uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,9 +14,9 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # ADBMobile JSON config file {#adbmobile-json-config}
 
-Queste informazioni sono utili per comprendere le variabili nel file di configurazione adbmobile. json.
+Queste informazioni sono utili per comprendere le variabili presenti nel file di configurazione ADBMobile.json.
 
-## `ADBMobileConfig.json` riferimento file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` riferimento del file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Lo stesso file di configurazione può essere utilizzato per l'app su più piattaforme:
 
@@ -24,17 +24,17 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 >
 >In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
 
-Di seguito è riportato un elenco delle variabili nel file JSON e la versione minima SDK necessaria per ogni variabile:
+Elenco delle variabili nel file JSON e della versione SDK minima necessaria per ciascuna variabile:
 
-* **acquisition**
+* **acquisizione**
    * Versione SDK minima: 4.1
    * Abilita l'acquisizione dell'app mobile.
       * `server`, server di acquisizione controllato all'avvio iniziale per individuare un referente di acquisizione.
       * `appid`, ID generato che identifica l'app in modo univoco sul server di acquisizione.
-   Se manca questa sezione, abilita l'acquisizione da app mobile e scarica di nuovo il file di configurazione dell'SDK. Per ulteriori informazioni, vedi *referrertimeout* in questo elenco di variabili.
+   Se manca questa sezione, abilita l'acquisizione da app mobile e scarica di nuovo il file di configurazione dell'SDK. Per ulteriori informazioni, vedi *referrerTimeout* in questo elenco di variabili.
 
 * **analyticsForwardingEnabled**
-   * La versione minima dell'SDK è 4.8.0.
+   * La versione SDK minima è 4.8.0.
    * Il valore predefinito è `false`.
 
       Proprietà nell'oggetto `audienceManager`. Se Audience Manager è configurato e `analyticsForwardingEnabled` è impostato su `true`, anch tutto il traffico Analytics viene inoltrato ad Audience Manager.
@@ -53,7 +53,7 @@ Di seguito è riportato un elenco delle variabili nel file JSON e la versione mi
 
          >[!IMPORTANT]
          >
-         >Le informazioni di hit della sessione retrodatata vengono inviate in una chiamata al server informazioni sessione e potrebbero essere applicabili chiamate server aggiuntive.
+         >Backdated session hit information is sent in a session info server call and additional server calls might apply.
 
 * **batchLimit**
    * Versione SDK minima: 4.1
@@ -64,7 +64,7 @@ Di seguito è riportato un elenco delle variabili nel file JSON e la versione mi
       Considerazioni da ricordare:
 
       * Il valore predefinito è `0` e indica che la gestione degli hit in batch non è abilitata.
-      * `offlineEnabled = true`Richiede.
+      * Richiede `offlineEnabled = true`.
 
 * **charset**
    * Versione SDK minima: 4.0
@@ -236,7 +236,7 @@ Di seguito è riportato un elenco delle variabili nel file JSON e la versione mi
    * Determina per quanto tempo Target può aspettare di ricevere una risposta.
 
 
-## `ADBMobileConfig.json` File di esempio {#section_4655EF79744649E5A5AE19E3224C472C}
+## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
