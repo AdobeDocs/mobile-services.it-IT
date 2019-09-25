@@ -2,11 +2,11 @@
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
-seo-title: Risoluzione dei problemi relativi ai messaggi in-app
-solution: Marketing Cloud, Analytics
-title: Risoluzione dei problemi relativi ai messaggi in-app
+seo-title: Risoluzione dei problemi dei messaggi in-app
+solution: Marketing Cloud,Analytics
+title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics (Metriche)
-uuid: 39 c 3 a 21 d -92 c 2-4004-b 00 f -99 b 6 f 91 d 3696
+uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
@@ -35,11 +35,11 @@ Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissi
 
 Per verificare se il messaggio è attivo, nella pagina Gestisci messaggi in-app, nella colonna **Stato**, controlla l'elenco dei messaggi.
 
-## Osserva *una volta*, *mostra sempre*, *mostra* le impostazioni offline nella scheda Pubblico.
+## Osservare *la visualizzazione una volta*, *mostrare sempre*, *mostrare le impostazioni offline* nella scheda Pubblico.
 
 Verifica che queste impostazioni siano impostate nel modo desiderato. Nella scheda **[!UICONTROL Pubblico]**, controlla le opzioni **Attivatore], che consentono di specificare la frequenza con cui viene mostrato il messaggio.[!UICONTROL **
 
-## Se utilizzate un evento di avvio come attivatore…
+## Se si utilizza un evento di avvio come trigger...
 
 L'avvio viene attivato solo su una nuova sessione. Per ulteriori informazioni sull'inizio di una sessione, vedi la riga `lifecycleTimeout` nel [file di configurazione JSON](/help/android/configuration/json-config/json-config.md).
 
