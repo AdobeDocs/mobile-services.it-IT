@@ -3,9 +3,9 @@ description: Informazioni che consentono di eseguire chiamate al plug-in dagli s
 keywords: Xamarin
 seo-description: Informazioni che consentono di eseguire chiamate al plug-in dagli script.
 seo-title: Esecuzione di chiamate alla libreria
-solution: Marketing Cloud, Sviluppatore
+solution: Marketing Cloud,Developer
 title: Esecuzione di chiamate alla libreria
-uuid: a 480201 a -4090-4662-8 dd 8-56 f 62144 cd 93
+uuid: a480201a-4090-4662-8dd8-56f62144cd93
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,9 +18,9 @@ Queste informazioni sono utili per effettuare chiamate al plug-in dagli script.
 
 Per eseguire chiamate al plug-in dagli script, è necessario importare lo spazio dei nomi.
 
-`Com.Adobe.Mobile`Utilizzando:
+By using :`Com.Adobe.Mobile`
 
-* **iOS**: Dopo aver importato lo spazio nomi, è possibile effettuare chiamate direttamente all'SDK tramite i metodi statici delle `ADBMobile` classi.
+* **iOS**: Dopo aver importato lo spazio dei nomi, puoi effettuare chiamate direttamente all'SDK tramite i metodi statici nelle `ADBMobile` classi.
 
-* **Android**: È possibile effettuare chiamate direttamente all'SDK tramite i metodi statici delle `Config/Analytics/Target/AudienceManager/Media`classi.
+* **Android**: Puoi effettuare chiamate direttamente all'SDK tramite i metodi statici nelle `Config/Analytics/Target/AudienceManager/Media`classi.
 
