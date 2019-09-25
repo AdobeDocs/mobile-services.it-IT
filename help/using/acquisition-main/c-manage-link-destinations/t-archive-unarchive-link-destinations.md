@@ -3,10 +3,10 @@ description: Puoi usare la pagina Destinazioni collegamenti per creare, modifica
 keywords: dispositivi mobili
 seo-description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall'archivio o eliminare una destinazione esistente.
 seo-title: Gestire le destinazioni dei collegamenti
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Gestire le destinazioni dei collegamenti
 topic: Metrics (Metriche)
-uuid: 3 a 38 d 40 d-b 4 c 7-4 f 9 f-aa 6 e -979613 faamy 2
+uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -20,7 +20,7 @@ Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviar
 Per visualizzare la pagina Gestione destinazioni collegamenti:
 
 1. In the Mobile Services UI, click **[!UICONTROL Manage Apps]**.
-1. Nella pagina Informazioni app dell'app, fai clic **[!UICONTROL su Gestione destinazioni collegamenti]**.
+1. Nella pagina Informazioni app dell'app, fai clic su **[!UICONTROL Gestione destinazioni]** collegamenti.
 
    ![Destinazioni collegamenti](assets/link_destinations_list.png)
 
@@ -28,17 +28,17 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
 
    * **Modifica**
 
-      Per modificare una destinazione di collegamento, fai clic sul nome corrispondente nell'elenco, quindi apporta le modifiche necessarie nei vari campi. Per ulteriori informazioni, consultate [Creare una nuova destinazione di collegamento](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+      Per modificare una destinazione di collegamento, fai clic sul nome corrispondente nell'elenco, quindi apporta le modifiche necessarie nei vari campi. Per ulteriori informazioni, vedi [Creare una nuova destinazione](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)di collegamento.
 
       >[!IMPORTANT]
       >
-      >Queste modifiche potrebbero avere effetto fino a 15 minuti.
+      >Potrebbero essere necessari fino a 15 minuti per rendere effettive le modifiche.
 
    * **Archivia**
 
       You can archive link destinations that you want to retain, but you want to remove from the **[!UICONTROL Link Destinations]** list.
 
-      To archive link destinations, select one or more check boxes next to the link names and click **[!UICONTROL Archive Selected]**. Poiché la destinazione di collegamento è archiviata e può essere annullata in qualsiasi momento, non è necessario confermare l'azione.
+      To archive link destinations, select one or more check boxes next to the link names and click **[!UICONTROL Archive Selected]**. Poiché la destinazione del collegamento è archiviata e può essere annullata in qualsiasi momento, non è necessario confermare l'azione.
 
    * **Annulla archiviazione**
 
@@ -47,8 +47,8 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
       Per annullare l'archiviazione di una destinazione di collegamento:
 
       1. click **[!UICONTROL View Archive]**.
-      1. Seleziona una o più caselle di controllo accanto ai nomi dei collegamenti che desideri rimuovere dall'archivio.
-      1. Fate clic su **[!UICONTROL Annulla archiviazione selezionati]**.
+      1. Seleziona una o più caselle di controllo accanto ai nomi dei collegamenti da rimuovere dall'archivio.
+      1. Fai clic su **[!UICONTROL Annulla archiviazione selezionati]**.
       L'opzione **[!UICONTROL Visualizza archivio]è visibile solo se hai precedentemente archiviato delle destinazioni di collegamenti.**
 
    * **Elimina**
@@ -57,7 +57,7 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
 
       >[!IMPORTANT]
       >
-      >L'eliminazione di una destinazione di collegamento **è permanente**. Se non sei sicuro di volerla eliminare, usa l'opzione di archiviazione.
+      >L'eliminazione di una destinazione di collegamento è **permanente**. Se non sei sicuro di volerla eliminare, usa l'opzione di archiviazione.
 
 
 
