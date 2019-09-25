@@ -3,10 +3,10 @@ description: Visualizza un elenco dei messaggi in-app e push con dettagli sull'u
 keywords: dispositivi mobili
 seo-description: Visualizza un elenco dei messaggi in-app e push con dettagli sull'ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
 seo-title: Gestire i messaggi
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Gestire i messaggi
 topic: Metrics (Metriche)
-uuid: 4 d 934 ede -0 c 68-4 dd 5-ba 37-9 caf 727 cc 717
+uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -15,11 +15,11 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 # Gestire i messaggi{#manage-messages}
 
-Visualizza un elenco dei messaggi in-app e push con dettagli sull'ultimo aggiornamento di ciascun messaggio e se i messaggi sono live o se sono stati disattivati.
+Visualizza un elenco dei messaggi in-app e push con dettagli sull'ultimo aggiornamento di ciascun messaggio e se i messaggi sono live o sono stati disattivati.
 
 Puoi duplicare i messaggi, attivarli o disattivarli e archiviarli o annullarne l'archiviazione. Puoi anche visualizzare un rapporto con il numero di utenti che hanno visualizzato il messaggio e il numero di utenti che hanno fatto clic su di esso.
 
-Per gestire i messaggi, fai clic su ***your_ app_ name*** &gt; **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]**.
+Per gestire i messaggi, fai clic su ***your_app_name*** &gt; **[!UICONTROL Messaggi]** &gt; **[!UICONTROL Gestione messaggi]**.
 
 ![](assets/manage_messages.png)
 
@@ -27,9 +27,9 @@ Seguono alcune informazioni aggiuntive sulle attività relative ai messaggi che 
 
 * **Cercare e filtrare messaggi**
 
-   Utilizzate la casella di ricerca nella parte superiore dell'elenco per cercare e filtrare i messaggi. Quando inserisci un testo nella casella di ricerca, vengono visualizzati i messaggi dell'elenco corrispondenti a quel testo. La ricerca ha effetto su tutte le colonne della tabella. Ad esempio, puoi digitare `Draft`per visualizzare solo i messaggi che sono nello stato di bozza, oppure puoi immettere il nome di un utente per mostrare solo i messaggi che sono stati aggiornati da quell'utente.
+   Utilizzare la casella di ricerca nella parte superiore dell'elenco per cercare e filtrare i messaggi. Quando inserisci un testo nella casella di ricerca, vengono visualizzati i messaggi dell'elenco corrispondenti a quel testo. La ricerca ha effetto su tutte le colonne della tabella. Ad esempio, puoi digitare `Draft`per visualizzare solo i messaggi che sono nello stato di bozza, oppure puoi immettere il nome di un utente per mostrare solo i messaggi che sono stati aggiornati da quell'utente.
 
-   Oltre alla casella di ricerca, potete fare clic su qualsiasi intestazione di colonna per ordinare l'elenco in ordine crescente o decrescente in base al contenuto della colonna.
+   In addition to the search box, you can also click any column header to sort the list in ascending or descending order by the contents of that column.
 
    Ad esempio, se ordini la colonna **[!UICONTROL Tipo di messaggio]in ordine crescente, tutti i messaggi in-app saranno visualizzati prima dei messaggi push.** Se ordini la colonna **[!UICONTROL Ultimo aggiornamento]in ordine decrescente, vengono visualizzati per primi i messaggi aggiornati più di recente.**
 
@@ -51,7 +51,7 @@ Seguono alcune informazioni aggiuntive sulle attività relative ai messaggi che 
 
 * **Archiviare messaggi**
 
-   Per archiviare i messaggi e cancellare l'elenco dei messaggi:
+   Per archiviare i messaggi e ripulire l'elenco dei messaggi:
 
    >[!TIP]
    >
