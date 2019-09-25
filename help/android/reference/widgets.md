@@ -1,12 +1,12 @@
 ---
 description: I widget Android possono essere tracciati utilizzando gli stessi metodi dell'app. I widget condividono il contesto dell'applicazione con l'app, pertanto l'ordine degli hit e l'identificazione dei visitatori sono mantenuti.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: I widget Android possono essere tracciati utilizzando gli stessi metodi dell'app. I widget condividono il contesto dell'applicazione con l'app, pertanto l'ordine degli hit e l'identificazione dei visitatori sono mantenuti.
 seo-title: Widget Android
-solution: Marketing Cloud, Analytics
-title: Widget Android
+solution: Marketing Cloud,Analytics
+title: Android widgets
 topic: Sviluppatore e implementazione
-uuid: 1 a 3718 ff -967 b -4 c 8 e-ae 0 b-ba 15 bddbda 0 a
+uuid: 1a3718ff-967b-4c8e-ae0b-ba15bdbda0a
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
