@@ -2,8 +2,8 @@
 description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD) overview
-title: Panoramica sulla privacy e sulla protezione generale dei dati
-uuid: 56 d 6 f 155-efec -4 b 3 f-a 972-a 63155729167
+title: Privacy e Regolamento generale sulla protezione dei dati
+uuid: 56d6f155-efec-4b3f-a972-a63155729167
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -37,10 +37,10 @@ Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile,
 
 * Per recuperare i dati dagli SDK e inviarli ai tuoi server, utilizza il metodo `getAllIdentifiersAsync`.
 
-   Per ulteriori informazioni, consultate [Ottenimento di identificatori memorizzati](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md).
+   For more information, see Retrieving Stored Identifiers.[](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
 
 * Per impostare lo stato di consenso o diniego e poter dare seguito alle richieste di cancellazione dati in conformità ai requisiti RGPD, utilizza le impostazioni seguenti:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Per ulteriori informazioni, consultate [Impostazione dello stato di consenso dell'utente](/help/android/c-mob-privacy-gdpr-android/privacy.md).
+   For more information, see Setting the User's Opt Status.[](/help/android/c-mob-privacy-gdpr-android/privacy.md)
