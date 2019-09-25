@@ -1,20 +1,20 @@
 ---
 description: 'Queste informazioni sono utili per configurare l''SDK per Android. Alcuni degli argomenti trattati sono la configurazione JSON, la gestione degli hit in batch e i metodi SDK '
 seo-description: 'Queste informazioni sono utili per configurare l''SDK per Android. Alcuni degli argomenti trattati sono la configurazione JSON, la gestione degli hit in batch e i metodi SDK '
-seo-title: Panoramica di configurazione
-solution: Marketing Cloud, Analytics
-title: Panoramica di configurazione
+seo-title: Configuration overview
+solution: Marketing Cloud,Analytics
+title: Panoramica della configurazione
 topic: Sviluppatore e implementazione
-uuid: 207 d 6 eae -7 fc 5-449 d-b 92 b-c 2 d 83 e 8 e 82 b 4
+uuid: 207d6eae-7fc5-449d-b92b-c2d83e8e82b4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Panoramica di configurazione {#configuration}
+# Configuration overview {#configuration}
 
-Le informazioni contenute in questa sezione sono utili per configurare l'SDK per Android, compresa la configurazione JSON e la gestione degli hit in batch e per ulteriori informazioni sui metodi SDK.
+Le informazioni contenute in questa sezione sono utili per configurare l’SDK per Android, inclusa la configurazione JSON e la gestione degli hit in batch, e per ulteriori informazioni sui metodi SDK.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
