@@ -2,11 +2,11 @@
 description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
 keywords: dispositivi mobili
 seo-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
-seo-title: Messaggio in-app pubblico
-solution: Marketing Cloud, Analytics
-title: Messaggio in-app pubblico
+seo-title: Audience  In-App Message
+solution: Marketing Cloud,Analytics
+title: Audience  In-App Message
 topic: Metrics (Metriche)
-uuid: 6 c 815 d 4 c -7626-4 cf 4-9158-3 f 059 c 79317 a
+uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -41,10 +41,9 @@ Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso 
 
       >[!IMPORTANT]
       >
-      >Se selezioni più attivatori, per visualizzare il messaggio tutti gli attivatori devono verificarsi sullo stesso hit.
+      >Se selezioni più attivatori, affinché il messaggio possa essere visualizzato, devono verificarsi tutti sullo stesso hit.
 
-   * **[!UICONTROL Caratteristiche]**
-Puoi determinare chi deve visualizzare il messaggio in-app quando viene attivato e filtrare (segmentare) il pubblico in base a hit con dati specifici. Ad esempio, puoi definire una regola in cui i punti di interesse contengono Denver. Questo filtro consente di mostrare il messaggio a clienti che rientrano in uno dei tuoi punti di interesse il cui nome contiene Denver, al momento dell'attivazione.
+   * **[!UICONTROL Caratteristiche]**&#x200B;È possibile determinare chi deve visualizzare il messaggio in-app quando viene attivato e filtrare (segmentare) l'audience in base agli hit con dati specifici. Ad esempio, puoi definire una regola in cui i punti di interesse contengono Denver. Questo filtro consente di mostrare il messaggio a clienti che rientrano in uno dei tuoi punti di interesse il cui nome contiene Denver, al momento dell'attivazione.
 
 
 
@@ -64,9 +63,9 @@ Convalida la mappatura, quindi seleziona la corrispondenza o l’operatore logic
 
 ### Selecting metrics and variables {#example_AB126F03BD1C4094B791E230B3DB1189}
 
-![opzioni trigger](assets/custom_trigger_matcher_options.png)
+![trigger options](assets/custom_trigger_matcher_options.png)
 
-Gli scenari seguenti ti aiutano a determinare se selezionare una metrica o una variabile come attivatore:
+The following scenarios help you determine whether to select a metric or a variable as your trigger:
 
 ### Metrics (Metriche)
 
