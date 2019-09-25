@@ -2,10 +2,10 @@
 description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 seo-title: Impostazione dello stato di consenso dell'utente
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Impostazione dello stato di consenso dell'utente
 topic: Sviluppatore e implementazione
-uuid: f 8 a 3 e 6 be -44 dd -494 e -9 cda-dbbac 86 d 6772
+uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -22,7 +22,7 @@ Queste informazioni aiutano a gestire una richiesta di cancellazione dati in con
 
 Puoi verificare se l'attività di Analytics, Target e Audience Manager è consentita su un dispositivo utilizzando le seguenti impostazioni:
 
-* `privacyDefault` nel [file di configurazione adbmobile JSON](/help/android/configuration/json-config/json-config.md).
+* `privacyDefault` nel file di configurazione [ADBMobile JSON](/help/android/configuration/json-config/json-config.md).
 
    Questa impostazione controlla l'impostazione iniziale che persiste finché non viene modificata nel codice.
 
@@ -50,7 +50,7 @@ La seguente tabella descrive ogni stato di privacy:
 
 * **Sconosciuto**
 
-   * **Analytics**: Se il tracciamento offline **è abilitato**, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (optedin, gli hit vengono inviati) o rinuncia (gli hit vengono eliminati).
+   * **Analytics**: Se il tracciamento offline è **abilitato**, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono scartati).
 
       Se il tracciamento offline <b>non è</b> abilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin.
    * **Target**: le richieste Mbox vengono inviate.
