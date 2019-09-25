@@ -1,12 +1,12 @@
 ---
-description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
+description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
 keywords: dispositivi mobili
-seo-description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
-seo-title: Creare manualmente collegamenti di acquisizione
-solution: Marketing Cloud, Analytics
+seo-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+seo-title: Manually create Acquisition links
+solution: Marketing Cloud,Analytics
 title: Creare manualmente collegamenti di acquisizione
 topic: Metrics (Metriche)
-uuid: d 7709203-f 793-4982-adaa -9 c 3 c 914 aca 2 b
+uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
@@ -15,13 +15,13 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 # Creare manualmente collegamenti di acquisizione {#create-acquisition-link-manually}
 
-Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
+You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
 
 >[!IMPORTANT]
 >
->Questa funzione richiede la versione SDK 4.6 o successiva. Per ulteriori informazioni, consulta [Prerequisiti sull'acquisizione](/help/using/acquisition-main/c-acquisition-prerequisites.md).
+>Questa funzione richiede la versione SDK 4.6 o successiva. Per ulteriori informazioni, consulta [Prerequisiti](/help/using/acquisition-main/c-acquisition-prerequisites.md)per l’acquisizione.
 
-Il diagramma seguente illustra i componenti di un collegamento di tracciamento creato manualmente e visualizza i diversi parametri URL che devi configurare correttamente quando crei manualmente dei collegamenti di acquisizione.
+Nel diagramma seguente sono illustrati i componenti di un collegamento di tracciamento creato manualmente e sono visualizzati i diversi parametri URL da configurare quando crei manualmente dei collegamenti di acquisizione.
 
 ![](assets/acquisition_url.png)
 
@@ -42,7 +42,7 @@ Per iOS, assicurati di usare il protocollo corretto:
 
 Se si verificano le seguenti condizioni:
 
-* `{mobile-services-app-hash}` corrisponde all'identificatore dell'applicazione nel `acquisition:appid ` file di configurazione.
+* `{mobile-services-app-hash}` matches the application identifier in the configuration  file.`acquisition:appid `
 
    You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
@@ -80,7 +80,7 @@ Segue l'elenco dei parametri:
 
    Store predefinito per reindirizzamento automatico.
 
-   * Valore di esempio: `i | g`
+   * Sample value: `i | g`
 
 * **`a_cid`**
 
@@ -100,7 +100,7 @@ Segue l'elenco dei parametri:
 
    Questo parametro è necessario per i rapporti se vuoi confrontare le prestazioni di diversi collegamenti di acquisizione.
 
-   * Valore di esempio: 2015 Summit Conference
+   * Valore di esempio: Summit 2015
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -112,9 +112,9 @@ Segue l'elenco dei parametri:
 
 * **`ctxa.referrer.campaign.source`**
 
-   L'origine.
+   La fonte.
 
-   * Valore di esempio: Rete annunci pubblicitari
+   * Valore di esempio: Rete pubblicitaria
 
 * **`ctxa.referrer.campaign.medium`**
 
@@ -126,19 +126,19 @@ Segue l'elenco dei parametri:
 
    Contenuto
 
-   * Valore di esempio: Image # 325689
+   * Valore di esempio: Immagine # 325689
 
 * **`ctxa.referrer.campaign.term`**
 
    Termine
 
-   * Valore di esempio: hiking + boots
+   * Valore di esempio: hiking+boots
 
 
-Quando crei manualmente i collegamenti di acquisizione, tieni presente quanto segue:
+Quando crei manualmente dei collegamenti di acquisizione, tieni presente quanto segue:
 
 * Tutti i parametri che non corrispondono a quelli della tabella vengono passati come parte del reindirizzamento all'app store.
-* Tutti i parametri sono tecnicamente opzionali, anche se il collegamento non funzionerà se non viene specificato almeno un ID store.
+* Tutti i parametri sono tecnicamente opzionali, anche se il collegamento non funzionerà, se viene specificato almeno un ID store.
 
    An example of a store ID is `a_g_id`/ `a_i_id`.
 
