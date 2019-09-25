@@ -4,7 +4,7 @@ keywords: Xamarin
 seo-description: Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 seo-title: Metodi iOS
 solution: Marketing Cloud,Sviluppatore
-title: Metodi iOS
+title: iOS methods
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
 source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
@@ -87,7 +87,7 @@ Metodi iOS per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono scartati.
-   * ADBMobilePrivacyStatus.Unknown: Se è abilitato il monitoraggio offline, gli hit vengono salvati fino alla modifica dello stato di privacy, in opt-in (gli hit vengono inviati) o in opt-out (gli hit vengono scartati). Se il tracciamento offline è disattivato, gli hit vengono scartati fino a quando lo stato di privacy non cambia quando l’utente acconsente.
+   * ADBMobilePrivacyStatus.Unknown: Se è abilitato il monitoraggio offline, gli hit vengono salvati fino alla modifica dello stato di privacy, in opt-in (gli hit vengono inviati) o in opt-out (gli hit vengono scartati). If offline tracking is disabled, hits are discarded until the privacy status changes to opt in.
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
