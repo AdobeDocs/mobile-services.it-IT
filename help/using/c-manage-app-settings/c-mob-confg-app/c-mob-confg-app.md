@@ -3,7 +3,7 @@ description: 'Nella pagina Gestione impostazioni app puoi effettuare i seguenti 
 seo-description: 'Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifiche '
 seo-title: Configurazione dell'app
 title: Configurazione dell'app
-uuid: c 088 e 12 d -73 b 6-40 c 4-b 8 cc-ec 3 bb 3 d 3 aa 4 a
+uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -59,7 +59,7 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
    >[!IMPORTANT]
    >
-   >Prima di scaricare gli SDK e gli strumenti, devi configurare le opzioni SDK Analytics. Per ulteriori informazioni, consulta [Configurare le opzioni SDK Analytics](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   >Before you download the SDKs and tools, you must configure the SDK Analytics options. For more information, see Configure the SDK Analytics Options.[](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
 
    Quando sei pronto ad eseguire l'aggiornamento agli SDK 4.x o se lavori su una nuova app, scarica gli SDK e gli strumenti di sviluppo più recenti dalla parte inferiore della pagina Gestione impostazioni app.
 
