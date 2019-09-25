@@ -2,10 +2,10 @@
 description: Queste informazioni sono utili per usare i collegamenti di tracciamento per l'acquisizione nelle app iOS.
 seo-description: Queste informazioni sono utili per usare i collegamenti di tracciamento per l'acquisizione nelle app iOS.
 seo-title: Acquisizione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Acquisizione
 topic: Sviluppatore e implementazione
-uuid: e 22 d 2785-58 f 1-4841-9163-912 c 5 e 0 f 5 d 61
+uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -14,7 +14,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Acquisizione {#acquisition}
 
-Le informazioni contenute in questa sezione consentono di utilizzare i collegamenti di tracciamento acquisizione nelle app iOS.
+Le informazioni in questa sezione sono utili per usare i collegamenti di tracciamento dell’acquisizione nelle app iOS.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
