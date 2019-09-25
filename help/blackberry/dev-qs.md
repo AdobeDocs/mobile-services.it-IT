@@ -1,15 +1,15 @@
 ---
 title: Guida introduttiva per sviluppatori
-seo-title: Blackberry Developer Quick Start for Adobe Mobile Services
-description: La Guida di avvio rapido blackberry Developer spiega come implementare la libreria blackberry per Adobe Mobile Services.
-seo-description: La Guida di avvio rapido blackberry Developer spiega come implementare la libreria blackberry per Adobe Mobile Services.
+seo-title: Avvio rapido sviluppatore BlackBerry per Adobe Mobile Services
+description: La Guida di avvio rapido per sviluppatori BlackBerry aiuta a comprendere il processo di implementazione della libreria BlackBerry per Adobe Mobile Services.
+seo-description: La Guida di avvio rapido per sviluppatori BlackBerry aiuta a comprendere il processo di implementazione della libreria BlackBerry per Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# Avvio rapido per sviluppatori
+# Guida rapida per sviluppatori
 
 Queste informazioni sono utili per comprendere come implementare la libreria BlackBerry.
 
@@ -55,14 +55,14 @@ Dopo aver decompresso l'SDK scaricato, controlla che i seguenti file si trovino 
 1. Verifica che **[!UICONTROL (Tutte le configurazioni)]** sia selezionato, quindi fai clic su **[!UICONTROL Aggiungi file]nella sezione** Risorse] della finestra.**[!UICONTROL **
    >[!TIP]
    >
-   >In QNX Momentics IDE è presente un bug che a volte impedisce la visualizzazione di tali pulsanti. Se i pulsanti non sono visibili, ridimensionate le finestre finché non vengono visualizzate.
+   >Esiste un bug nell'IDE Momentics QNX che a volte impedisce la visualizzazione di tali pulsanti. Se i pulsanti non sono visibili, ridimensionare le finestre finché non vengono visualizzate.
 
-1. Fate clic su **[!UICONTROL Area di lavoro]**.
+1. Fare clic su **[!UICONTROL Workspace]**.
 1. Individua il file `ADBMobileConfig.json`**nel progetto e fai clic su[!UICONTROL OK]**.
 
 Your application can import the classes/interfaces from the `adobeMobileLibrary.jar` library by using `#include <ADBMobile.hpp>`.
 
-## Aggiungere autorizzazioni per l'app
+## Aggiungi autorizzazioni app
 
 In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
 
@@ -87,6 +87,6 @@ Di seguito viene indicato un esempio del file `ADBMobileConfig.json`:
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. Per ulteriori dettagli, consulta [Riferimento alla classe e al metodo Adobe Mobile](/help/blackberry/methods.md).
+You must at least update the `rsids` and `server` parameters. Per ulteriori dettagli, consultate Guida di riferimento [di classe e metodo per](/help/blackberry/methods.md)Adobe Mobile.
 
 A questo punto puoi implementare Analytics nella tua app BlackBerry 10.
