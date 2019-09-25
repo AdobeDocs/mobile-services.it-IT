@@ -1,9 +1,9 @@
 ---
-description: Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo e degli esempi di codice.
-seo-description: Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo e degli esempi di codice.
+description: Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+seo-description: Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 seo-title: Analisi del video
 title: Analisi del video
-uuid: 0 d 2731 f 3-77 a 9-4 db 1-9 a 8 c -1 e 56 c 212 ecb 4
+uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
@@ -12,11 +12,11 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 # Analisi del video {#video-analytics}
 
-Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo e degli esempi di codice.
+Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
-Per ulteriori informazioni sulla misurazione video, consultate [Misurazione audio e video nella](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guida Adobe Analytics. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati di contesto della colonna "Variabile dati di contesto" su una variabile di Analytics, come descritto nella colonna "Tipo di variabile".
+Per ulteriori informazioni sulla misurazione dei video, consultate la guida [Misurazione audio e video nella guida di Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .  Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati di contesto della colonna "Variabile dati di contesto" su una variabile di Analytics, come descritto nella colonna "Tipo di variabile".
 
-## Mappare gli eventi del lettore sulle variabili Analytics
+## Mappare gli eventi del lettore alle variabili di Analytics
 
 * **a.media.name**
 
@@ -24,7 +24,7 @@ Per ulteriori informazioni sulla misurazione video, consultate [Misurazione audi
 
    **(Facoltativo)** La variabile Custom Insight fornisce informazioni sul percorso del video.
 
-   * Nome variabile: Evar
+   * Nome variabile: eVar
       * Scadenza predefinita: visita
       * Insight personalizzato (s.prop, usato per il percorso del video)
 
@@ -39,18 +39,18 @@ Per ulteriori informazioni sulla misurazione video, consultate [Misurazione audi
 
    (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l'ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato.
 
-   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Il metodo di raccolta dati predefinito raccoglie dati ai punti inizio video (play), inizio del segmento e fine del video (stop).
+   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Il metodo di raccolta dei dati video predefinito raccoglie i dati ai punti di inizio video (riproduzione), inizio segmento e fine video (arresto).
 
    Analytics conta la visualizzazione del primo segmento all'inizio del segmento, quando il visitatore inizia la visualizzazione. Il segmento successivo viene visualizzato quando inizia il segmento.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.contentType**
 
    Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto “video”. Non è necessario riservare questa variabile esclusivamente al tracciamento video. Se la stessa variabile viene usata anche per ottenere il tipo di altri contenuti, è possibile analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali "articolo" o "pagina prodotto" ad altri tipi di contenuti. Dal punto di vista della misurazione dei video, il tipo di contenuto permette di individuare i visitatori che guardano un video e quindi calcolare i tassi di conversioni derivanti dal video.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.media.timePlayed**
@@ -199,7 +199,7 @@ To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` method
       ADBMediaAnalytics::sharedInstance()->close("name", 0);
       ```
 
-* **track**
+* **Codice**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
 
