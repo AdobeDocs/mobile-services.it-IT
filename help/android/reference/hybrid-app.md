@@ -1,11 +1,11 @@
 ---
 description: Se la tua app apre contenuto web per mobile, accertati che i visitatori non vengano identificati separatamente mentre si spostano tra contenuto nativo e web per mobile.
 seo-description: Se la tua app apre contenuto web per mobile, accertati che i visitatori non vengano identificati separatamente mentre si spostano tra contenuto nativo e web per mobile.
-seo-title: Tracciamento dei visitatori tra un'app e un Web per dispositivi mobili
-solution: Marketing Cloud, Analytics
-title: Tracciamento dei visitatori tra un'app e un Web per dispositivi mobili
+seo-title: Visitor Tracking between an app and mobile web
+solution: Marketing Cloud,Analytics
+title: Visitor Tracking between an app and mobile web
 topic: Sviluppatore e implementazione
-uuid: 073572 e 4-4 c 55-4 b 27-b 4 a 7-e 4349 ccde 7 bf
+uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ L'SDK per Android genera un ID visitatore univoco quando viene installata un'app
 
 >[!TIP]
 >
->Gli ID visitatore dell'app restano invariati.
+>Gli ID visitatore dell’app restano costanti anche negli aggiornamenti.
 
 ## ID visitatore nel Web per dispositivi mobili
 
@@ -34,7 +34,7 @@ Per usare lo stesso ID visitatore nell'app e nel contenuto Web per dispositivi m
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto intellij IDEA o Eclipse* nell'implementazione [e nel ciclo di vita principali](/help/android/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
 
 1. Per aggiungere le informazioni sul visitatore all'URL con cui si apre la visualizzazione Web, invoca `visitorAppendToURL`:
 
@@ -90,5 +90,5 @@ Se questi passaggi non consentono di risolvere i problemi, contatta l'assistenza
 
 >[!IMPORTANT]
 >
->Per consentire ad Adobe di convalidare l'implementazione, devi condividere un'applicazione di esempio e il sito associato.
+>To allow Adobe can validate the implementation, you need to share a sample application and the associated site.
 
