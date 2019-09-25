@@ -3,7 +3,7 @@ description: Per iniziare a utilizzare Experience Cloud Device Co-op, contatta i
 seo-description: Per iniziare a utilizzare Experience Cloud Device Co-op, contatta il tuo rappresentante Adobe.
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
-uuid: 434 a 6 f 8 f-ec 24-439 d -95 f 0-a 246 b 384 b 3 b 5
+uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,13 +24,13 @@ A partire dalla versione 4.16.1 dell’SDK, i membri Device Co-op possono scegli
 
 1. Implementa l'SDK di Adobe Mobile.
 
-   Per ulteriori informazioni, vedi [Implementazione di base e ciclo di vita](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, vedi Implementazione e ciclo di vita [di base](/help/ios/getting-started/dev-qs.md).
 1. Abilita il tuo servizio Experience Cloud ID.
 
    For more information, see [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 1. Passa le identità autenticate, come ad esempio gli ID CRM o indirizzi e-mail con hash, utilizzando uno dei metodi di sincronizzazione qui descritti.
 
-   Per ulteriori informazioni, vedi [Metodi del servizio identità Adobe Experience Platform](/help/ios/marketing-cloud/mc-methods.md).
+   Per ulteriori informazioni, vedi Metodi [del servizio identità](/help/ios/marketing-cloud/mc-methods.md)Adobe Experience Platform.
 
 ## `coopUnsafe` flag
 
