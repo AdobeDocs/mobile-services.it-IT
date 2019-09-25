@@ -2,10 +2,10 @@
 description: Le azioni temporizzate consentono di misurare il tempo trascorso all'interno dell'app e il tempo totale dall'inizio alla fine di un'azione. L'SDK calcola il tempo necessario a completare l'azione, per ogni sessione e complessivamente per più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
 seo-description: Le azioni temporizzate consentono di misurare il tempo trascorso all'interno dell'app e il tempo totale dall'inizio alla fine di un'azione. L'SDK calcola il tempo necessario a completare l'azione, per ogni sessione e complessivamente per più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
 seo-title: Azioni temporizzate
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Azioni temporizzate
 topic: Sviluppatore e implementazione
-uuid: 5 a 48 a 580-b 942-4 e 49-9 f 1 b -078 fea 7 fccdb
+uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
@@ -31,7 +31,7 @@ Un callback facoltativo consente di intraprendere azioni aggiuntive al completam
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, consultate *Aggiungere l'SDK e il file di configurazione al vostro progetto intellij IDEA o Eclipse* in [Implementazione core e lifeycle](/help/android/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifeycle.**[](/help/android/getting-started/dev-qs.md)
 1. Importa la libreria:
 
    ```java
