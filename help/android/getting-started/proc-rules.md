@@ -2,10 +2,10 @@
 description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-title: Regole di elaborazione e dati contestuali
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
 topic: Sviluppatore e implementazione
-uuid: ea 892228-86 f 5-4980-acb 8-45 ae 43 c 6996 d
+uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -14,7 +14,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 # Processing rules and context data {#processing-rules-and-context-data}
 
-Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica. Per ulteriori informazioni, vedi [Regole di elaborazione](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 
@@ -54,5 +54,5 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
 
 >[!TIP]
 >
->Adobe riserva lo spazio nomi `"a."`. A parte questa piccola restrizione, per evitare conflitti l'unico requisito consiste nell'usare variabili di dati di contesto univoche per la società di accesso.
+>Adobe riserva lo spazio dei nomi `"a."`. A parte questa piccola restrizione, per evitare conflitti l'unico requisito consiste nell'usare variabili di dati di contesto univoche per la società di accesso.
 
