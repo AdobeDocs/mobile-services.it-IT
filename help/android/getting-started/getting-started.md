@@ -2,10 +2,10 @@
 description: 'Le seguenti informazioni sono utili per iniziare a usare l''SDK per Android per le soluzioni Experience Cloud '
 seo-description: 'Le seguenti informazioni sono utili per iniziare a usare l''SDK per Android per le soluzioni Experience Cloud '
 seo-title: Introduzione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Introduzione
 topic: Sviluppatore e implementazione
-uuid: 39 c 642 e 2-60 f 0-4 bbe-b 0 d 1-2635 ee 2 c 6 d 01
+uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Getting started {#getting-started}
 
-Le informazioni in questa sezione sono utili per iniziare a usare l'SDK per Android per le soluzioni Experience Cloud.
+Le informazioni presenti in questa sezione sono utili per iniziare a usare l’SDK per Android per le soluzioni Experience Cloud.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
