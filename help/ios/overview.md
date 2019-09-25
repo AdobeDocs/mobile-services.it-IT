@@ -18,7 +18,7 @@ L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le appl
 
 >[!IMPORTANT]
 >
->Lo SKU Adobe Analytics Mobile Marketing Add-on è richiesto per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento profondo, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contattate il vostro Adobe CSM.
+>The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. Per ulteriori informazioni, contattate il vostro Adobe CSM.
 
 >[!IMPORTANT]
 >
