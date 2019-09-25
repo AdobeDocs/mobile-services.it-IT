@@ -2,18 +2,18 @@
 description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l'app.
 keywords: dispositivi mobili
 seo-description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l'app.
-seo-title: Report tecnologia
-solution: Marketing Cloud, Analytics
-title: Report tecnologia
+seo-title: Rapporto sulla tecnologia
+solution: Marketing Cloud,Analytics
+title: Rapporto sulla tecnologia
 topic: Rapporti, Metriche
-uuid: 4 b 7322 c 4-8920-43 cd-bb 72-5 a 5 bd 515 ae 84
+uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Report tecnologia {#technology}
+# Rapporto sulla tecnologia {#technology}
 
 Il rapporto **[!UICONTROL Tecnologia]ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l'app.**
 
@@ -25,7 +25,7 @@ Questa visualizzazione fornisce, ad esempio, il rapporto di base insieme alle su
 
 >[!TIP]
 >
->Oltre a queste informazioni, puoi visualizzare un'esercitazione interna al prodotto che descrive come interagire con il grafico sunburst. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>In addition to this information, you can view an in-product tutorial that describes how to interact with the sunburst chart. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
 
 ![](assets/report_technology.png)
 
@@ -51,7 +51,7 @@ La tabella seguente descrive i rapporti standard e come vengono compilati in Mob
 
 >[!TIP]
 >
->Nel report **[!UICONTROL Carrier]** , gli utenti Wi-Fi sono indicati come `none`.
+>Nel rapporto **[!UICONTROL Carrieri]** , gli utenti Wi-Fi sono segnalati come `none`.
 
 
 ## Aggiungere suddivisioni e metriche {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,7 +60,7 @@ Puoi aggiungere suddivisioni e metriche secondarie, che modificano l'altezza di 
 
 >[!IMPORTANT]
 >
->Più anelli vengono aggiunti al grafico sunburst, più tempo necessario per elaborare.
+>Più anelli si aggiungono al grafico sunburst, più tempo di elaborazione sarà necessario.
 
 Per aggiungere suddivisioni e metriche secondarie, fai clic su **[!UICONTROL Suddivisione tecnologia]** nella barra del titolo del rapporto, quindi fai clic su **[!UICONTROL Personalizza]**.
 
