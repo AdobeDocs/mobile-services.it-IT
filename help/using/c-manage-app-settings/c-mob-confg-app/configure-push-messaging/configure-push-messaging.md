@@ -3,10 +3,10 @@ description: Puoi utilizzare queste informazioni per configurare le opzioni Serv
 keywords: dispositivi mobili
 seo-description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 seo-title: Configurare i messaggi push
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Configurare i messaggi push
 topic: Metrics (Metriche)
-uuid: 6763858 d -6046-4 d 36-87 c 0-cf 3600 a 44 fb 1
+uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 translation-type: tm+mt
 source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
@@ -15,9 +15,9 @@ source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
 # Configure push messaging{#configure-push-messaging}
 
-Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
+Puoi usare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 
-Prima di configurare i messaggi push, completa le attività preliminari nei [prerequisiti per abilitare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
+Before you configure push messaging, complete the prerequisite tasks in Prerequisites to Enable Push Messaging.[](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
 
 * **Considerazioni sulle suite di rapporti**
 
@@ -40,13 +40,13 @@ Prima di configurare i messaggi push, completa le attività preliminari nei [pre
 
    * **[!UICONTROL Certificato]**
 
-      Specifica un certificato valido. Questa opzione è necessaria solo se la **[!UICONTROL chiave privata]** che hai specificato **non** contiene già un certificato. Per ulteriori informazioni su come ottenere il certificato SSL e la chiave privata, consulta [Configurare app per l'uso di APNS o FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Specifica un certificato valido. Questa opzione è necessaria solo se la **[!UICONTROL chiave privata]** che hai specificato **non** contiene già un certificato. For more information about obtaining the SSL certificate and private key, see Configure App to use APNS or FCM.[](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)
 
    * Google
 
       **[!UICONTROL Chiave API]**
 
-      Specifica una chiave API valida. Per ulteriori informazioni su come ottenere la chiave API, consulta [Configurare app per l'uso di APNS o FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Specifica una chiave API valida. Per ulteriori informazioni su come ottenere la chiave API, consultate [Configurare l'app per l'utilizzo di APNS o FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
       Per maggiori informazioni, vedi i seguenti argomenti:
 
