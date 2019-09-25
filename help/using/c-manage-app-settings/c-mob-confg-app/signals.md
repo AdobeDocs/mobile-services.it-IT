@@ -3,7 +3,7 @@ description: I postback consentono di inviare i dati raccolti da Adobe Mobile a 
 seo-description: I postback consentono di inviare i dati raccolti da Adobe Mobile a un altro server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare Mobile Services per l'invio di dati personalizzati a una destinazione terza.
 seo-title: Configurare i postback
 title: Configurare i postback
-uuid: a 026575 c -057 b -4868-b 6 c 8-9514 cbc 32 b 4 d
+uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -16,7 +16,7 @@ I postback consentono di inviare i dati raccolti da Adobe Mobile a un altro serv
 
 >[!IMPORTANT]
 >
->Per utilizzare i postback, devi installare l'SDK 4.6 o successivo. Per maggiori informazioni, vedi [Android - Postback](/help/android/analytics-main/postbacks/postbacks.md) o [iOS - Postback](/help/ios/analytics-main/postback/postback.md).
+>Per utilizzare i postback, devi installare l’SDK 4.6 o successivo. Per maggiori informazioni, vedi [Android - Postback](/help/android/analytics-main/postbacks/postbacks.md) o [iOS - Postback](/help/ios/analytics-main/postback/postback.md).
 
 1. Fai clic sul nome dell'app desiderata per passare alla relativa pagina Gestione impostazioni app, quindi fai clic sul collegamento **Gestione postback** in alto a destra.
 1. Fai clic su **[!UICONTROL Crea postback]**.
@@ -32,11 +32,11 @@ I postback consentono di inviare i dati raccolti da Adobe Mobile a un altro serv
 
    * **[!UICONTROL URL]**
 
-      Specifica un URL di endpoint valido (con i parametri di query appropriati per le richieste GET). Puoi ottenere questo URL dalla parte a cui stai inviando i dati (server di annunci pubblicitari o il tuo proprio endpoint). Ad esempio `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Specificate un URL endpoint valido (con i parametri di query appropriati, in base alle esigenze, per le richieste GET). Puoi ottenere questo URL dalla parte a cui stai inviando i dati (server di annunci pubblicitari o il tuo proprio endpoint). Ad esempio `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Variabile di contesto]**
 
-      Evidenzia parti dell'URL e seleziona la variabile di contesto desiderata dall'elenco a discesa. Puoi anche inserire variabili di contesto nell'URL e l'URL sostituirà tutte le variabili di modello con i valori dell'hit.
+      Evidenzia parti dell'URL e seleziona la variabile di contesto desiderata dall'elenco a discesa. You can also insert context variables into the URL, and the URL will replace all template variables with values from the hit.
 
    * **[!UICONTROL Aggiungi corpo del post]**
 
