@@ -2,10 +2,10 @@
 description: Elenco di metodi forniti dalla libreria iOS.
 seo-description: Elenco di metodi forniti dalla libreria iOS.
 seo-title: Metodi di configurazione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di configurazione
 topic: Sviluppatore e implementazione
-uuid: 623 c 7 b 07-fbb 3-4 d 39-a 5 c 4-e 64 faec 4 ca 29
+uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -16,7 +16,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Elenco di metodi forniti dalla libreria iOS.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service.
+The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 * **setAppExtensionType**
 
@@ -64,7 +64,7 @@ L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analyt
    Restituisce la rappresentazione enum dello stato di privacy per l'utente corrente:
 
    * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
    * `ADBMobilePrivacyStatusUnknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
@@ -86,8 +86,8 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    Imposta uno dei valori seguenti:
 
-   * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
    * `ADBMobilePrivacyStatusUnknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -124,7 +124,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3. x alla versione 4. x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta la riga `userIdentifier` di seguito. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento.
+   >Se l’app viene aggiornata dall’SDK Experience Cloud 3.x alla versione 4.x, l’ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta la riga `userIdentifier` di seguito. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -144,7 +144,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3. x alla versione 4. x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK.
+   >Se l’app viene aggiornata dall’SDK Experience Cloud 3.x alla versione 4.x, l’ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK.
 
    Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` finché non viene impostato.
 
@@ -214,7 +214,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l'app è in background.
+   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l’app è in background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -252,7 +252,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    Consente di passare dati aggiuntivi durante la raccolta delle metriche "lifecycle" sul ciclo di vita.
 
-   Questo metodo deve essere invocato dal punto di ingresso dell'app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   This method must be called from the entry point of your app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
 
    >[!IMPORTANT]
    >
