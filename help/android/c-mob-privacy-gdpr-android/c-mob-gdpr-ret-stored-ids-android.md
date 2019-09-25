@@ -1,9 +1,9 @@
 ---
 description: Queste informazioni spiegano come recuperare identità SDK memorizzate localmente dalla tua app Android e come gestire le richieste di accesso ai dati in conformità ai requisiti RGPD.
 seo-description: Queste informazioni spiegano come recuperare identità SDK memorizzate localmente dalla tua app Android e come gestire le richieste di accesso ai dati in conformità ai requisiti RGPD.
-seo-title: Recupero di identificatori memorizzati
-title: Recupero di identificatori memorizzati
-uuid: 6 fd 3 d 202-b 0 a 1-4 c 80-96 f 4-369 fc 24 ac 0 a 3
+seo-title: Retrieving stored identifiers
+title: Retrieving stored identifiers
+uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
