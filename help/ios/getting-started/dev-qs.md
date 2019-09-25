@@ -24,9 +24,9 @@ Queste informazioni sono utili per implementare la libreria iOS e raccogliere me
 
 **Prerequisito**
 
-Before you download the SDK, complete the steps in *Create a Report Suite* in [Core implementation and lifecycle](/help/ios/getting-started/requirements.md) to set up a development report suite and download a pre-populated version of the configuration file.
+Prima di scaricare l’SDK, completa i passaggi descritti in *Creare una suite* di rapporti in Implementazione e ciclo di vita [](/help/ios/getting-started/requirements.md) principali per impostare una suite di rapporti per lo sviluppo e scaricare una versione precompilata del file di configurazione.
 
-To download the SDK:
+Per scaricare l’SDK:
 
 1. Download, unzip the `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` file and verify that you have the following software components:
 
@@ -106,7 +106,7 @@ To download the SDK:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Add a `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` call in `application:didFinishLaunchingWithOptions`:
+Add a /  call in :`collectLifecycleData``collectLifecycleDataWithAdditionalData``application:didFinishLaunchingWithOptions`
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
