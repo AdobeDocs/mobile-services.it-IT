@@ -3,10 +3,10 @@ description: Il rapporto Percorsi azione è basato sull'analisi dei percorsi e v
 keywords: dispositivi mobili
 seo-description: Il rapporto Percorsi azione è basato sull'analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell'app a un altro stato.
 seo-title: Rapporto Action Paths (Percorsi azione)
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Rapporto Action Paths (Percorsi azione)
 topic: Rapporti, Metriche
-uuid: a 21 e 5 d 9 e-fd 57-4178-9 d 64-87181 b 7 f 988 b
+uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ I rapporti **[!UICONTROL Percorsi di visualizzazione]** e **Percorsi azione]sono
 
 >[!TIP]
 >
->Puoi usare un rapporto funnel per combinare la navigazione e le azioni in un unico rapporto. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>You can use a funnel report to combine navigation and actions in one report. For more information, see [Funnel](/help/using/usage/reports-funnel.md).
 
 ![](assets/action_paths.png)
 
@@ -40,7 +40,7 @@ To expand, click the **[!UICONTROL +]** icon. Con questa opzione vengono visuali
 
 L'espansione di uno stato è simile alla creazione di un funnel.
 
-![path path expand](assets/action_paths_expand.png)
+![action path expand](assets/action_paths_expand.png)
 
 To isolate the node and show paths that come into, and go out of the selected node, click the  ![focus icon](assets/icon_focus.png) icon. Nell'immagine seguente, i percorsi seguenti sono stati completati **prima** che gli utenti abbiano selezionato una foto:
 
@@ -56,11 +56,11 @@ Per gli utenti che hanno selezionato una foto, i percorsi seguenti sono stati co
 * Trascinamento di un elemento
 * Ridimensionamento di un elemento
 
-![evidenziazione percorso azione](assets/action_paths_focus.png)
+![action path focus](assets/action_paths_focus.png)
 
 Puoi rendere attivi o espandere più nodi per ottenere una vista dettagliata dei percorsi seguiti dagli utenti nell'app. Ad esempio:
 
-![percorso azione multipla](assets/action_paths_mult.png)
+![percorso azione multiplo](assets/action_paths_mult.png)
 
 Per questo rapporto puoi configurare le seguenti opzioni:
 
@@ -70,11 +70,11 @@ Per questo rapporto puoi configurare le seguenti opzioni:
 
 * **[!UICONTROL Personalizza]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. Per ulteriori informazioni, consultate [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
+   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. Per ulteriori informazioni, vedere [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
-   Fai clic su **[!UICONTROL Filtro]per creare un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili.** Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso. Per ulteriori informazioni, consultate [Aggiungere un filtro fisso](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Fai clic su **[!UICONTROL Filtro]per creare un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili.** Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Scarica]**
 
