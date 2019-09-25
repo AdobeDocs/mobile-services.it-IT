@@ -1,19 +1,19 @@
 ---
 description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
-seo-title: Panoramica del plug-in phonegap
-solution: Marketing Cloud, Analytics
-title: Panoramica del plug-in phonegap
+seo-title: Panoramica del plug-in PhoneGap
+solution: Marketing Cloud,Analytics
+title: PhoneGap plug-in overview
 topic: Sviluppatore e implementazione
-uuid: c 5 c 32357-d 8 df -458 a-b 0 e 8-e 0 c 56040241 d
+uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Panoramica del plug-in phonegap {#phonegap-plug-in}
+# Panoramica del plug-in PhoneGap {#phonegap-plug-in}
 
 Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap. To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 
@@ -45,7 +45,7 @@ cordova plugin add adobe-mobile-services
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
-1. Trascinare il `ADB_Helper.js` file nella cartella contenente il `index.html` file
+1. Trascinare il `ADB_Helper.js` file nella cartella che contiene il `index.html` file
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
@@ -63,10 +63,10 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## Includere la libreria appmeasurement
+## Includere la libreria AppMeasurement
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. Trascinate il `adobeMobileLibrary.jar` file nella `src` cartella.
+1. Drag the the `adobeMobileLibrary.jar` file to your `src` folder.
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
@@ -77,7 +77,7 @@ cordova plugin add adobe-mobile-services
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
-## Aggiungere autorizzazioni per l'app
+## Aggiungi autorizzazioni app
 
 La libreria AppMeasurement richiede le seguenti autorizzazioni per inviare dati e registrare le chiamate di tracciamento offline:
 
