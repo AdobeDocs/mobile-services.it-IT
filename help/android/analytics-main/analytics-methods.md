@@ -1,12 +1,12 @@
 ---
 description: Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
 seo-title: Metodi di Analytics
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Analytics
 topic: Sviluppatore e implementazione
-uuid: ac 7 c 640 e -9 dcc -4724-b 561-019 cc 025 d 5 a 7
+uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,7 +17,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud], tra cui Analytics], Target], Audience Manager] e Adobe Experience Platform Identity Service]. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
 
 Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rapporti di Adobe Analytics:
 
@@ -43,8 +43,7 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
       Analytics.trackState("loginScreen",null);
       ```
 
-* **Trackaction**
-Tieni traccia di un'azione nell'app.
+* **trackAction** Monitora un’azione nell’app.
 
    Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
 
@@ -60,8 +59,7 @@ Tieni traccia di un'azione nell'app.
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **Gettrackingidentifier**
-Restituisce l'identificatore visitatore generato automaticamente per Analytics.
+* **getTrackingIdentifier** Restituisce l’identificatore visitatore generato automaticamente per Analytics.
 
    Si tratta di un ID visitatore univoco specifico per l'app, che viene generato all'avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. L'ID viene conservato durante gli aggiornamenti dell'app e rimosso quando l'app viene disinstallata.
 
@@ -79,7 +77,7 @@ Restituisce l'identificatore visitatore generato automaticamente per Analytics.
 
 * **trackLocation**
 
-   Invia la latitudine, la longitudine e la posizione correnti in un punto di interesse definito. Per ulteriori informazioni, consulta [Geolocalità e punti di interesse](/help/android/location/geo-poi.md).
+   Invia la latitudine, la longitudine e la posizione correnti in un punto di interesse definito. Per ulteriori informazioni, vedi [Geolocalità e punti di interesse](/help/android/location/geo-poi.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -120,10 +118,9 @@ Restituisce l'identificatore visitatore generato automaticamente per Analytics.
    >Questa chiamata non invia un hit.
 
    * Di seguito è riportata la sintassi per questo metodo:
-
-      ```java
-      publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
-      ```
+   ```java
+   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+   ```
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -146,7 +143,7 @@ Restituisce l'identificatore visitatore generato automaticamente per Analytics.
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Di seguito è riportato un esempio di codice per questo metodo:
+   * Esempio di codice per questo metodo:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
