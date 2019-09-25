@@ -1,9 +1,9 @@
 ---
 description: Classi e metodi forniti dalla libreria BlackBerry.
 seo-description: Classi e metodi forniti dalla libreria BlackBerry.
-seo-title: Guida di riferimento delle classi e dei metodi per Adobe Mobile
-title: Guida di riferimento delle classi e dei metodi per Adobe Mobile
-uuid: 1 e 42 d 759-be 43-4 bb 3-ac 1 a-c 7 d 64133 d 61 c
+seo-title: Guida di riferimento di classe e metodi per Adobe Mobile
+title: Guida di riferimento di classe e metodi per Adobe Mobile
+uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -14,7 +14,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 Classi e metodi forniti dalla libreria BlackBerry.
 
-L'SDK supporta attualmente Adobe Analytics e i metodi si trovano in classi separate in base alla soluzione.
+The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
 
 ## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -45,7 +45,7 @@ L'SDK supporta attualmente Adobe Analytics e i metodi si trovano in classi separ
    Imposta lo stato di privacy per l'utente corrente su `status`. Imposta uno dei valori seguenti:
 
    * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
    * Per `ADBMobilePrivacyStatusUnknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -199,15 +199,15 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` riferimento file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` riferimento del file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-`ADBMobileConfig.json` Il file deve essere posizionato nella cartella *delle risorse* .
+The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
    (Obbligatorio) Una o più suite di rapporti che dovrà ricevere i dati Analytics. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
 
-   Di seguito è riportato l'esempio di codice per questa variabile:
+   Esempio di codice per questa variabile:
 
    ```js
    "rsids" : "rsid"
@@ -235,7 +235,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta [Supporto Enterprise](https://helpx.adobe.com/contact/enterprise-support.ec.html).
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
 
    Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
@@ -245,16 +245,16 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    Specifica l’intervallo di tempo, in secondi, che deve trascorrere tra un avvio dell’app e quello successivo affinché questo sia considerato come una nuova sessione. Il timeout viene applicato anche quando l’applicazione viene lasciata in background e poi riattivata. Il tempo durante il quale l’app rimane in background non viene incluso nella durata della sessione.
 
-   Il valore predefinito è 300 secondi.
+   The default value is 300 seconds.
 
 * **batchLimit**
 
-   Numero massimo di hit offline memorizzati nella coda. Il valore predefinito è 0 (nessun limite).
+   Numero massimo di hit offline memorizzati nella coda. The default value is 0 (No limit).
 
 * **privacyDefault**
 
    * `optedin` - gli hit vengono inviati immediatamente.
-   * `optedout` - gli hit vengono eliminati.
+   * `optedout` - gli hit vengono scartati.
    * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). 
 
       Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
