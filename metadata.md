@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: servizi mobili
-solution-title: Informazioni e supporto
+solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/it/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Introduzione
