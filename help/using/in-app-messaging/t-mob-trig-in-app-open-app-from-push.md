@@ -3,7 +3,7 @@ description: È possibile impostare come attivatore del messaggio in-app l'ID de
 seo-description: È possibile impostare come attivatore del messaggio in-app l'ID del messaggio push che viene inviato quando un utente apre l'app dal messaggio push.
 seo-title: Attivare un messaggio in-app quando l'app viene aperta da un messaggio push
 title: Attivare un messaggio in-app quando l'app viene aperta da un messaggio push
-uuid: e 1 c 8 e 29 d -1 c 2 b -47 b 2-8 ab 2-6 b 6 e 15 df 86 f 6
+uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 translation-type: tm+mt
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
@@ -28,7 +28,7 @@ source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
    >[!TIP]
    >
-   >L'ID messaggio push è l'ID che hai posizionato al passaggio 1.
+   >L'ID messaggio push è l'ID che hai trovato al punto 1.
 
    Questo attivatore deve essere aggiunto manualmente perché non è disponibile nell'elenco a discesa **[!UICONTROL Attivatore].**
 
