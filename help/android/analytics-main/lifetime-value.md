@@ -2,10 +2,10 @@
 description: Il valore del ciclo di vita consente di misurare e focalizzare un valore dei ciclo di vita per ciascun utente Android. Il valore può essere utilizzato per archiviare gli acquisti del ciclo di vita, le visualizzazioni di annunci, i completamenti di video, le condivisioni su social network, i caricamenti di foto e così via.
 seo-description: Il valore del ciclo di vita consente di misurare e focalizzare un valore dei ciclo di vita per ciascun utente Android. Il valore può essere utilizzato per archiviare gli acquisti del ciclo di vita, le visualizzazioni di annunci, i completamenti di video, le condivisioni su social network, i caricamenti di foto e così via.
 seo-title: Valore "lifetime" del ciclo di vita del visitatore
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Valore "lifetime" del ciclo di vita del visitatore
 topic: Sviluppatore e implementazione
-uuid: ba 0308 de -282 e -46 f 9-a 14 c -19 fb 6 d 5 c 363 e
+uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -20,9 +20,9 @@ Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale va
 
 ## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. Aggiungi la [libreria al progetto e implementa il ciclo di vita.
+1. Aggiungi la [libreria] al progetto e implementa il ciclo di vita.
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto intellij IDEA o Eclipse* nell'implementazione [e nel ciclo di vita principali](/help/android/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 1. Importa la libreria:
 
    ```java
