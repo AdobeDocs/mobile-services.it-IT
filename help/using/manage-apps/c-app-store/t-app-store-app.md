@@ -3,10 +3,10 @@ description: Puoi aggiungere un'app da Apple App Store o Google Play.
 keywords: dispositivi mobili
 seo-description: Puoi aggiungere un'app da Apple App Store o Google Play.
 seo-title: Aggiungere un'app da un app store.
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aggiungere un'app da un app store.
 topic: Metrics (Metriche)
-uuid: 94 c 8 a 924-5156-4742-8 b 5 b -88 d 9 ea 13 bfed
+uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -21,9 +21,9 @@ Puoi aggiungere un'app da Apple App Store o Google Play.
 
    * Esegui l'accesso a Adobe Mobile Services e fai clic su **[!UICONTROL Crea nuovo]**.
 
-      Per ulteriori informazioni sull'accesso all'interfaccia utente di Mobile Services, consulta [Accesso](/help/using/gs/gs-signin.md).
+      For more information about signing in to the Mobile Services UI, see Sign in.[](/help/using/gs/gs-signin.md)
 
-   * Per aggiungere app, nel menu di navigazione a sinistra fate clic **[!UICONTROL su Gestione app]** e fate clic **[!UICONTROL su Aggiungi]**.
+   * Per aggiungere app, nel menu di navigazione a sinistra, fai clic su **[!UICONTROL Gestione app]** e fai clic su **[!UICONTROL Aggiungi]**.
 
 1. Click **[!UICONTROL Add App Store App]**.
 1. Completa le attività seguenti:
@@ -33,7 +33,7 @@ Puoi aggiungere un'app da Apple App Store o Google Play.
       * **[!UICONTROL Google Play]**
    * Cerca in base al nome dell'app store e seleziona l'app.
 
-      Potete visualizzare in anteprima le informazioni sull'app selezionata, per determinare se è stata selezionata l'app corretta.
+      Potete visualizzare in anteprima le informazioni sull'app selezionata, per determinare se l'app selezionata è stata corretta.
 
    * Digita l'ID dell'app.
 
