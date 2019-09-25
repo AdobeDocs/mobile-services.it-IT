@@ -3,10 +3,10 @@ description: Nell'interfaccia di Adobe Mobile Services puoi pianificare un messa
 keywords: dispositivi mobili
 seo-description: Nell'interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l'invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
 seo-title: Pianificazione messaggio push
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Pianificazione messaggio push
 topic: Metrics (Metriche)
-uuid: 6810 e 27 a -016 f -4286-8 fe 2-9972 d 85 fa 326
+uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,11 +19,11 @@ Nell'interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per
 
 >[!TIP]
 >
->Gli utenti possono modificare le impostazioni di pianificazione per un messaggio push in qualsiasi momento. Se non esiste una data valida per l'invio di un messaggio ricorrente (ad esempio il 31 febbraio, per un lavoro ricorrente pianificato per il 31° giorno del mese, oppure il 5° martedì del mese), il messaggio non viene inviato.
+>Users can modify the scheduling settings for a push message job at any time. Se non esiste una data valida per l'invio di un messaggio ricorrente (ad esempio il 31 febbraio, per un lavoro ricorrente pianificato per il 31° giorno del mese, oppure il 5° martedì del mese), il messaggio non viene inviato.
 
 Considerazioni da ricordare:
 
-* Il formato corretto per data e ora è `hh:mm` e `mm/dd/yyyy`.
+* Il formato di data e ora corretto è `hh:mm` e `mm/dd/yyyy`.
 
 * Puoi modificare un messaggio pianificato nei modi seguenti:
 
@@ -32,7 +32,7 @@ Considerazioni da ricordare:
 
       Ad esempio, se il messaggio originale veniva inviato ogni giorno, puoi impostare la ricorrenza settimanale.
 
-## Prima di pianificare i messaggi push ricorrenti
+## Prima di pianificare messaggi push ricorrenti
 
 È **fondamentale** comprendere le informazioni seguenti prima di pianificare dei messaggi push ricorrenti:
 
@@ -59,7 +59,7 @@ Considerazioni da ricordare:
 
 ## Schedule a recurring push message {#section_675BD754E5A04423A1751193698A978F}
 
-1. Nella pagina Pianificazione per un nuovo messaggio push, seleziona **[!UICONTROL Pianificato]** o **[!UICONTROL Ora]**.
+1. Nella pagina Pianifica per un nuovo messaggio push, seleziona **[!UICONTROL Pianificato]** o **[!UICONTROL Ora]**.
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -88,7 +88,7 @@ Considerazioni da ricordare:
 
       Il messaggio viene inviato in formato bozza. Puoi scegliere questa opzione per salvare un messaggio non ancora completato oppure per salvarne una versione provvisoria che dovrà essere modificata e approvata prima dell'attivazione.
 
-      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Se hai selezionato una data e un'ora in cui inviare il messaggio push, il messaggio viene inviato in base a questa pianificazione.
+      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Se hai selezionato una data e un'ora per inviare il messaggio push, il messaggio viene inviato in base a questa pianificazione.
 
    * **[!UICONTROL Salva e pianifica]**
 
