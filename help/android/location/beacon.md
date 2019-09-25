@@ -1,12 +1,12 @@
 ---
 description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 seo-title: Tracciamento dei beacon
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Tracciamento dei beacon
 topic: Sviluppatore e implementazione
-uuid: 16 c 1 d 267-85 f 4-4 a 6 a-a 6 d 3-d 6 ffb 0 f 80 b 29
+uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -19,7 +19,7 @@ Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utili
 
 Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad Analytics e Target:
 
-* `a.beacon.uuid` - Proximityuuid del beacon
+* `a.beacon.uuid` - ProximityUUID del beacon
 * `a.beacon.major` - Numero principale del beacon (come numero dello store).
 * `a.beacon.minor` - Numero secondario del beacon (come numero univoco all'interno dello store).
 * `a.beacon.prox` - Valori da 0 a 3 che rappresentano la vicinanza dell'utente al beacon.
@@ -33,11 +33,11 @@ Significato dei valori:
 
 Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
 
-## Tenere traccia dei beacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Tracciare i beacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto intellij IDEA o Eclipse* nell'implementazione [e nel ciclo di vita principali](/help/android/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
 
 1. Importa la libreria:
 
