@@ -3,10 +3,10 @@ description: L'integrazione del connettore dati appFigures combina la potenza de
 keywords: dispositivi mobili
 seo-description: L'integrazione del connettore dati appFigures combina la potenza delle analisi integrate appFigures per app store con la funzionalità di tracciamento delle app di Adobe Analytics per offrire alle aziende sofisticate capacità analitiche e opzioni di ottimizzazione.
 seo-title: App store
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: App store
 topic: Metrics (Metriche)
-uuid: a 194364 d-faaf -4995-befd-cf 48 f 9 c 1 f 11 b
+uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ The `appFigures` data connector integration combines the power of the appFigures
 
 >[!TIP]
 >
->Nell'interfaccia utente di Mobile Services, dopo aver configurato l'integrazione, la **[!UICONTROL voce di menu App store]** e i relativi rapporti vengono visualizzati nel riquadro di navigazione a sinistra.
+>Nell'interfaccia di Mobile Services, dopo aver configurato l'integrazione, nel riquadro di navigazione a sinistra vengono visualizzati la voce di menu **[!UICONTROL App Store]** e i relativi rapporti.
 
 [Il Connettore dati appFigures per Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/connectors/appfigures/) contiene le informazioni seguenti:
 <!--REKHA: no idea where this guide lives-->
