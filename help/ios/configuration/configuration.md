@@ -2,10 +2,10 @@
 description: 'Queste informazioni sono utili per configurare l''SDK per iOS. Alcuni degli argomenti trattati sono la configurazione JSON, la gestione degli hit in batch e i metodi SDK '
 seo-description: 'Queste informazioni sono utili per configurare l''SDK per iOS. Alcuni degli argomenti trattati sono la configurazione JSON, la gestione degli hit in batch e i metodi SDK '
 seo-title: Configurazione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Configurazione
 topic: Sviluppatore e implementazione
-uuid: 63261 b 61-e 70 a -42 be-a 56 f -5943173 c 041 e
+uuid: 63261b61-e70a-42be-a56f-5943173c041e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Configurazione{#configuration}
 
-Le informazioni contenute in questa sezione sono utili per configurare l'SDK per iOS, compresa la configurazione JSON, la gestione degli hit in batch e i metodi SDK.
+Le informazioni contenute in questa sezione sono utili per configurare l’SDK per iOS, inclusi la configurazione JSON, la gestione degli hit in batch e i metodi SDK.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
