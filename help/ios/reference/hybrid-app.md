@@ -2,10 +2,10 @@
 description: Se l'app apre contenuti Web per dispositivi mobili, è necessario che i visitatori non vengano identificati separatamente quando passano dai contenuti nativi a quelli Web.
 seo-description: Se l'app apre contenuti Web per dispositivi mobili, è necessario che i visitatori non vengano identificati separatamente quando passano dai contenuti nativi a quelli Web.
 seo-title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 topic: Sviluppatore e implementazione
-uuid: 2 d 951 de 6-3954-4379-a 4 ff -99 b 9695 b 9869
+uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
@@ -22,19 +22,19 @@ L'SDK per iOS genera un ID visitatore univoco quando viene installata un'app. Qu
 
 >[!TIP]
 >
->Gli ID visitatore dell'app restano invariati.
+>App visitor IDs persist through upgrades.
 
 ## ID visitatore nel Web per dispositivi mobili
 
 Le implementazioni web per mobile tipiche usano lo stesso codice standard per Analytics `s_code.js` o `AppMeasurement.js` che viene utilizzato nei siti per desktop. Poiché le librerie JavaScript hanno metodi propri per la generazione di ID visitatore univoci, quando dall'app si aprono contenuti Web per dispositivi mobili viene generato un diverso ID visitatore.
 
-Per utilizzare lo stesso ID visitatore nell'app e nel Web per dispositivi mobili e passare l'ID visitatore dell'app al Web per dispositivi mobili nell'URL:
+Per utilizzare lo stesso ID visitatore nell’app e nel Web per dispositivi mobili e passare l’ID visitatore dell’app al Web per dispositivi mobili nell’URL:
 
 ## Implement visitor tracking between an app and mobile web {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
 1. Per aggiungere le informazioni sul visitatore all'URL con cui si apre la visualizzazione Web, invoca `visitorAppendToURL`:
 
    ```objective-c
@@ -60,7 +60,7 @@ Invece di inviare ad Adobe la richiesta di un nuovo ID, il codice del servizio I
 
 Negli hit da contenuti Web per dispositivi mobili, verifica che il parametro `mid` sia presente in ciascun hit e che il suo valore corrisponda al `mid` inviato dal codice dell'app.
 
-## Risoluzione dei problemi del tracciamento dei visitatori {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
+## Risoluzione dei problemi di tracciamento dei visitatori {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
 ### I do not see `[ADBMobile visitorAppendToURL:]`.
 
