@@ -1,18 +1,18 @@
 ---
 description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 seo-description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-seo-title: Configurazione adbmobileconfig. json
-solution: Marketing Cloud, Analytics
-title: Configurazione adbmobileconfig. json
+seo-title: Configurazione ADBMobileConfig.json
+solution: Marketing Cloud,Analytics
+title: Configurazione ADBMobileConfig.json
 topic: Sviluppatore e implementazione
-uuid: cbcb 54 a 3-4 b 8 f -4651-8 ce 9-2731 ac 988545
+uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# File di configurazione adbmobileconfig. json {#adbmobileconfig-json-config}
+# File di configurazione ADBMobileConfig.json {#adbmobileconfig-json-config}
 
 Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 
@@ -52,7 +52,7 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere `false`.
 
-   Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se una suite di rapporti sia abilitata o meno, contatta l'Assistenza clienti. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   Se questo non viene configurato correttamente, i dati andranno perduti. If you are unsure whether a report suite is timestamp enabled, contact Customer Care. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Il valore predefinito è `false`.
 
@@ -66,14 +66,14 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    Invia gli hit in batch 
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Richiede `offlineEnabled=true`, e il valore predefinito è `0` (Nessuna gestione batch).
+   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Richiede `offlineEnabled=true`e il valore predefinito è `0` (nessun invio in batch).
 
 * **privacyDefault**
 
    Le opzioni sono:
 
    * `optedin` - gli hit vengono inviati immediatamente.
-   * `optedout` - gli hit vengono eliminati.
+   * `optedout` - gli hit vengono scartati.
    * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
 
       Questo imposta solo il valore predefinito. Se questo valore è impostato o modificato nel codice, il valore impostato dal codice viene salvato nello spazio di archiviazione locale e utilizzato fino a quando non viene modificato o l’app non viene disinstallata e reinstallata.
@@ -84,7 +84,7 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
-   * Ecco l'esempio di codice per questa variabile:
+   * Here is the code sample for this variable:
 
       ```js
        "poi" [ 
