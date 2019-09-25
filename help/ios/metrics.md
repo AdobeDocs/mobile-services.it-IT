@@ -2,10 +2,10 @@
 description: Nelle tabelle che seguono sono elencate le metriche e dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo l'implementazione delle funzioni "lifecycle" sul ciclo di vita.
 seo-description: Nelle tabelle che seguono sono elencate le metriche e dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo l'implementazione delle funzioni "lifecycle" sul ciclo di vita.
 seo-title: Metriche del ciclo di vita
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metriche del ciclo di vita
 topic: Sviluppatore e implementazione
-uuid: b 795 e 383-d 59 b -4 a 3 c -9 e 14-ffe 8 fb 58412 c
+uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -38,7 +38,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 >[!TIP]
 >
->Le eccezioni sono fornite nella descrizione.
+>Exceptions are provided in the description.
 
 ### Metrics (Metriche)
 
@@ -93,13 +93,13 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 >[!IMPORTANT]
 >
-> Le *metriche Utenti* giornalieri coinvolti e *Utenti* mensili coinvolti non vengono memorizzate automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per acquisire queste metriche.
+> The Daily Engaged Users and Monthly Engaged Users metrics are not automatically stored in an Analytics metric. **** È necessario creare una regola di elaborazione che imposti un evento personalizzato per acquisire queste metriche.
 
 ### Dimensioni
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l'installazione.  Il formato della data `MM/DD/YYYY`è.
+   Data del primo avvio dopo l'installazione.  The date format is .`MM/DD/YYYY`
 
    * Dati contestuali di Analytics/Target: `a.InstallDate`
    * Gestione dell'audience: `c_a_InstallDate`
@@ -189,12 +189,12 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Gestione dell'audience: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >*I giorni dall'ultimo aggiornamento*, *gli avvii dall'ultimo aggiornamento* e *le dimensioni Nome* gestore non vengono memorizzate automaticamente in una variabile Analytics. Devi creare una regola di elaborazione per copiare i valori in una variabile di Analytics a scopo di reportistica.
+   >Le dimensioni *Giorni dall'ultimo aggiornamento*, *Avvii dall'ultimo aggiornamento* e Nome ** gestore non vengono memorizzate automaticamente in una variabile Analytics. Devi creare una regola di elaborazione per copiare i valori in una variabile di Analytics per il reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni mobili in base al metodo indicato.
+Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzione mobile tramite il metodo elencato.
 
 ### Metrics (Metriche)
 
@@ -226,11 +226,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Populated by `trackLocation` methods.
 
-   * Parametro dati contestuali/Target di Analytics:
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caratteristica Gestione dell'audience:
+   * Audience Management trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -240,11 +240,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Viene compilata dai metodi trackLocation.
 
-   * Parametro dati contestuali/Target di Analytics:
+   * Dati contestuali di Analytics/parametro Target:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caratteristica Gestione dell'audience:
+   * Caratteristiche di Gestione dell'audience:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -254,11 +254,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Populated by `trackLocation` methods.
 
-   * Parametro dati contestuali/Target di Analytics:
+   * Dati contestuali di Analytics/parametro Target:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caratteristica Gestione dell'audience:
+   * Caratteristiche di Gestione dell'audience:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -294,7 +294,7 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
 * **Campaign**
 
-   Nome della campagna, memorizzato anche nella variabile della campagna. Viene compilata dalla funzione Acquisizione da app mobile.
+   Name of the campaign, also stored in the  campaign variable. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Analytics Context Data/Target parameter: `a.referrer.campaign.name`
    * Audience Management trait: `c_a_referrer_campaign_name`
