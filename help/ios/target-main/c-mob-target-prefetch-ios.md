@@ -3,7 +3,7 @@ description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per
 seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili iOS per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
 seo-title: Preacquisizione del contenuto delle offerte in iOS
 title: Preacquisizione del contenuto delle offerte in iOS
-uuid: fef 58042-65 e 2-4579-b 8 f 1-d 21554 d 2 af 57
+uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 
 >[!IMPORTANT]
 >
->La funzionalità di preacquisizione negli SDK Mobile per iOS non è supportata per i tipi di attività Automatica di Target, Allocazione automatica e Automated Personalization (Personalizzazione automatizzata) in Adobe Target.
+>La funzionalità di recupero preventivo negli SDK Mobile per iOS non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
 Questo processo consente di ridurre il tempo di caricamento, evita l'esecuzione di più chiamate di rete e permette di notificare ad Adobe Target quale elemento mbox è stato visitato dall'utente dell'app mobile. Tutto il contenuto viene recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e da qual momento viene richiamato dalla cache per tutte le chiamate future che includono quel contenuto per il nome di mbox specificato.
 
@@ -55,7 +55,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * I parametri di questo metodo sono:
+   * I parametri di questo metodo sono i seguenti:
 
       * **`targetPrefetchArray`**
 
@@ -75,7 +75,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
 
    >[!IMPORTANT]
    >
-   >Se il contenuto delle posizioni richieste è già memorizzato nella cache, verrà restituito immediatamente nel callback fornito. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
+   >Se il contenuto delle posizioni richieste è già presente nella cache, verrà restituito immediatamente nel callback fornito. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -84,7 +84,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
                withProfileParameters:(nullableNSDictionary*)profileParameters;
       ```
 
-   * I parametri di questo metodo sono:
+   * I parametri di questo metodo sono i seguenti:
 
       * **`requests`**
 
@@ -104,7 +104,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
       (void) targetPrefetchClearCache; 
       ```
 
-   * Non esistono parametri per questo metodo.
+   * Nessun parametro per questo metodo.
 
 * **targetRequestObjectWithName**
 
@@ -119,7 +119,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
       callback:(nullablevoid(^)(NSString*__nullablecontent))callback;
       ```
 
-   * Non esistono parametri per questo metodo.
+   * Nessun parametro per questo metodo.
 
 * **createTargetPrefetchObject**
 
@@ -136,13 +136,13 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
 
 Di seguito sono indicate le classi pubbliche che supportano la preacquisizione in iOS:
 
-### Riferimento classe: Targetprefetchobject
+### Riferimento classe: TargetPreFetchObject
 
 Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbox.
 
 * **`name`**
 
-   Nome della posizione/mbox che desiderate recuperare.
+   Nome della posizione/mbox da recuperare.
 
    * **Tipo**: NSString*
 
@@ -164,7 +164,7 @@ Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbo
 
    * **Tipo**: NSDictionary*
 
-### Riferimento classe: Targetrequestobject
+### Riferimento classe: TargetRequestObject
 
 Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox e il callback di ritorno utilizzati per le richieste di posizioni Target.
 
