@@ -3,7 +3,7 @@ description: Dopo aver aggiunto la libreria al progetto, puoi eseguire qualsiasi
 seo-description: Dopo aver aggiunto la libreria al progetto, puoi eseguire qualsiasi chiamata dei metodi di Analytics ovunque nell’app (assicurati di importare ADBMobile.h nella classe).
 seo-title: Analytics
 title: Analytics
-uuid: de 018 eda-b 37 d -4 afe -83 a 0-8011381 d 7 aff
+uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -50,7 +50,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 ## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Se hai esaminato la Guida di riferimento delle classi [e dei metodi adbmobile](/help/blackberry/methods.md), ti chiederai probabilmente dove impostare eventi, evar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
+Se hai esaminato la Guida di riferimento [per le classi e i metodi di](/help/blackberry/methods.md)ADBMobile, probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 L’elaborazione di regole offre diversi vantaggi:
 
@@ -106,14 +106,14 @@ Per le variabili di contesto che definiscono eventi di incremento, puoi usare l'
 
 >[!TIP]
 >
->Adobe riserva lo spazio nomi `a.`. Con l'eccezione di questo vincolo, le variabili di dati di contesto devono essere univoche per la società di accesso in modo da evitare collisioni.
+>Adobe riserva lo spazio dei nomi `a.`. Con l'eccezione di questo vincolo, le variabili di dati di contesto devono essere univoche per la società di accesso in modo da evitare collisioni.
 
-## Abilitare il tracciamento offline {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
+## Abilita tracciamento offline {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
 To store hits when the device is offline, you can optionally enable offline tracking in the `ADBMobileConfig.json` file.
 
 Prima di attivare il tracciamento offline, fai molta attenzione ai requisiti del timestamp descritti nei riferimenti del file di configurazione.
 
-## Metodi di Analytics
+## Metodi di analisi
 
-Per un elenco dei metodi di Analytics disponibili per blackberry, consultate Metodi *di Analytics* nella [Guida di riferimento delle classi e dei metodi per Adobe Mobile](/help/blackberry/methods.md).
+Per un elenco dei metodi di Analytics disponibili per BlackBerry, consultate Metodi *di* Analytics in Guida di riferimento [delle classi e dei metodi di](/help/blackberry/methods.md)Adobe Mobile.
