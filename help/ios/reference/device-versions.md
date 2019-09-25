@@ -2,10 +2,10 @@
 description: Nella tabella seguente sono riportate le stringhe relative alla versione di iOS inviate da diversi dispositivi iOS.
 seo-description: Nella tabella seguente sono riportate le stringhe relative alla versione di iOS inviate da diversi dispositivi iOS.
 seo-title: Versioni dei dispositivi iOS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Versioni dei dispositivi iOS
 topic: Sviluppatore e implementazione
-uuid: 8 b 8 a 9 bc 3-0737-4 de 2-9792-0 b 112 aa 4 cf 65
+uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,7 +18,7 @@ Nella tabella seguente sono riportate le stringhe relative alla versione di iOS 
 
 >[!IMPORTANT]
 >
->Questo elenco si basa su test interni e informazioni online e potrebbe contenere inesattezze o informazioni incomplete.
+>Questo elenco è basato su test interni e informazioni online e potrebbe contenere inesattezze o informazioni incomplete.
 
 Per ulteriori informazioni sui dispositivi iOS, consulta i siti dedicati, come ad esempio [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
