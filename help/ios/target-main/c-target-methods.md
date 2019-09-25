@@ -1,28 +1,28 @@
 ---
 description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
 seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
-seo-title: Metodi di iOS Target per Adobe Mobile Services
-solution: Marketing Cloud, Analytics
-title: Metodi di Target per iOS
+seo-title: Metodi di destinazione iOS per Adobe Mobile Services
+solution: Marketing Cloud,Analytics
+title: Metodi di destinazione per iOS
 topic: Sviluppatore e implementazione
-uuid: 692 bcda 1-02 ba -4902-bd 65-15888 adf 1952
+uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
 
-# Metodi di Target per iOS {#target-methods}
+# Metodi di destinazione per iOS {#target-methods}
 
 Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service. Ai metodi è applicato il prefisso della relativa soluzione. Ad esempio, i metodi di hanno il prefisso `target`target.
+Al momento l’SDK supporta più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio identità della piattaforma Adobe Experience. Ai metodi è applicato il prefisso della relativa soluzione. Ad esempio, i metodi di hanno il prefisso `target`target.
 
 >[!TIP]
 >
->Le metriche del ciclo di vita sono inviate come parametri a ciascun caricamento Mbox. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md). Se state inviando richieste Target all'interno del metodo `didFinishLaunching` delegate, aggiungete una `[ADBMobile trackAction:data:]` o `[ADBMobile trackState:data:]` più chiamate prima del codice di implementazione di Target. In tal modo, le richieste di Target includeranno i dati del ciclo di vita completi.
+>Le metriche del ciclo di vita sono inviate come parametri a ciascun caricamento Mbox. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md). Se invii richieste Target all'interno del metodo `didFinishLaunching` delegato, aggiungi una `[ADBMobile trackAction:data:]` chiamata o una `[ADBMobile trackState:data:]` chiamata prima del codice di implementazione di Target. In questo modo, le richieste Target conterranno tutti i dati del ciclo di vita.
 
-## Riferimento classe: Adbtargetlocationrequest
+## Riferimento classe: ADBTargetLocationRequest
 
 ### Proprietà
 
@@ -36,7 +36,7 @@ NSMutableDictionary *parameters;
 
 >[!TIP]
 >
->Le seguenti costanti sono per maggiore facilità di utilizzo quando imposti le chiavi per i parametri personalizzati.
+>Le seguenti costanti sono utili per semplificare l'utilizzo quando si impostano le chiavi per i parametri personalizzati.
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -99,7 +99,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    * Restituisce: N/D
 
-   * I parametri di questo metodo sono:
+   * I parametri di questo metodo sono i seguenti:
 
       * **`name`**
 
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Per ulteriori informazioni sull'API di Target sottostante, vedi [Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      Per ulteriori informazioni sull'API Target sottostante, vedete Sviluppatori [](https://docs.adobe.com/dev/products/target/reference/delivery.html)Adobe Target.
 
 
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >A partire dalla versione 4.10.0 dell'SDK, Target non utilizza più i cookie. Questo metodo reimposta gli ID thirdPartyID e sessionID.
+   >Dalla versione 4.10.0 dell’SDK, Target non utilizza più i cookie. Questo metodo reimposta gli ID thirdPartyID e sessionID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
