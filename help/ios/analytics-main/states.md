@@ -2,10 +2,10 @@
 description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell'app viene visualizzato un nuovo stato, ad esempio, quando un utente passa dalla home page al feed delle notizie, è utile inviare una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
 seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell'app viene visualizzato un nuovo stato, ad esempio, quando un utente passa dalla home page al feed delle notizie, è utile inviare una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
 seo-title: Tracciare gli stati dell'app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Tracciare gli stati dell'app
 topic: Sviluppatore e implementazione
-uuid: 12 cca 4 eb -1 f 15-4 cec-a 58 f -76 b 69 eaff 99 d
+uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,7 +24,7 @@ Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
 1. Importa la libreria.
 
    ```objective-c
@@ -50,7 +50,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Home Screen" data:contextData];
 ```
 
-I valori dei dati contestuali devono essere mappati su variabili personalizzate:
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-state.png)
 
