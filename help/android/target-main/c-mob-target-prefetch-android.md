@@ -3,7 +3,7 @@ description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per
 seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili Android per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
 seo-title: Preacquisizione del contenuto delle offerte in Android
 title: Preacquisizione del contenuto delle offerte in Android
-uuid: 063451 b 8-e 191-4 d 58-8 ed 8-1723 e 310 ad 1 a
+uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 
 >[!IMPORTANT]
 >
->La funzionalità di preacquisizione negli SDK Mobile per Android non è supportata per i tipi di attività Automatica di Target, Allocazione automatica e Automated Personalization (Personalizzazione automatizzata) in Adobe Target.
+>Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 Questo processo consente di ridurre il tempo di caricamento, evita l'esecuzione di più chiamate di rete e permette di notificare ad Adobe Target quale elemento mbox è stato visitato dall'utente dell'app mobile. Tutto il contenuto viene recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e da qual momento viene richiamato dalla cache per tutte le chiamate future che includono quel contenuto per il nome di mbox specificato.
 
@@ -56,7 +56,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       final TargetCallback<Boolean> callback)
       ```
 
-   * I parametri di questo metodo sono:
+   * Here are the parameters for this method:
 
       * **targetPrefetchArray**
 
@@ -76,7 +76,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
    >[!IMPORTANT]
    >
-   >Se il contenuto delle posizioni richieste è già memorizzato nella cache, verrà restituito immediatamente nel callback fornito. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
+   >If the content for the requested locations is already cached, it will be returned immediately in the provided callback. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -84,7 +84,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * I parametri di questo metodo sono:
+   * Here are the parameters for this method:
 
       * **requestArray**
 
@@ -104,7 +104,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       public static void clearPrefetchCache();
       ```
 
-   * Non esistono parametri per questo metodo.
+   * There are no parameters for this method.
 
 * **createTargetRequestObject**
 
@@ -140,7 +140,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
 Di seguito sono elencate le classi pubbliche che supportano la preacquisizione in Android:
 
-### Riferimento classe: Targetprefetchobject
+### Riferimento classe: TargetPrefetchObject
 
 Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbox.
 
@@ -152,21 +152,21 @@ Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbo
 * `mboxParameters`
 
    Raccolta di coppie chiave-valore che verranno aggiunte come `mboxParameters` a questa richiesta `TargetPrefetchObject`.
-   * **Tipo**: Mappa`<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 * **`orderParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo order.
-   * **Tipo**: Mappa `<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 * **`productParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo product.
 
-   * **Tipo**: Mappa `<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 
-### Riferimento classe: Targetrequestobject
+### Riferimento classe: TargetRequestObject
 
 Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox e il callback di ritorno utilizzati per le richieste di posizioni Target.
 
@@ -180,7 +180,7 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
 
    Raccolta di coppie chiave-valore che verranno aggiunte come `mboxParameters` a questa richiesta  `TargetRequestObject`.
 
-   * **Tipo: Mappa`<String, Object>`**
+   * **Type: Map`<String, Object>`**
 
 * **`orderParameters`**
 
@@ -204,7 +204,7 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
 
    Puntatore di funzione che viene chiamato quando è disponibile il contenuto per la richiesta `TargetRequestObject` specificata.
 
-   * **Tipo**: Target. targetcallback`<String>`
+   * **Tipo**: Target.TargetCallback`<String>`
 
 
 ## Code sample {#section_BF7F49763D254371B4656E17953D520C}
