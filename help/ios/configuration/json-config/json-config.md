@@ -1,11 +1,11 @@
 ---
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
-seo-title: Configurazione adbmobile JSON
-solution: Marketing Cloud, Analytics
-title: Configurazione adbmobile JSON
+seo-title: Configurazione ADBMobile JSON
+solution: Marketing Cloud,Analytics
+title: Configurazione ADBMobile JSON
 topic: Sviluppatore e implementazione
-uuid: d 9708 d 59-e 30 a -4 f 6 c-ab 1 b-d 9499855 d 0 c 2
+uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -24,7 +24,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 >
 >Su **iOS**, il file `ADBMobileConfig.json` può trovarsi ovunque possa essere accessibile nel pacchetto.
 
-* **acquisition**
+* **acquisizione**
 
    Abilita l'acquisizione dell'app mobile.
 
@@ -57,7 +57,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Versione SDK minima: 4.6
    >[!IMPORTANT]
    >
-   >Le informazioni di hit di sessione retrodatate vengono inviate in una chiamata al server di informazioni sulle sessioni, e potrebbero essere applicabili chiamate server aggiuntive.
+   >Backdated session hit information is sent in a session info server call, and additional server calls might apply.
 
 
 * **batchLimit**
@@ -65,7 +65,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    Soglia per il numero di hit da inviare in chiamate consecutive. Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. Quando arriva il 10° hit, tutti i 10 hit in coda vengono inviati consecutivamente.
 
    * Default value is `0`, which means that batching is not enabled.
-   * `offlineEnabled = true`Richiede.
+   * Richiede `offlineEnabled = true`.
    * Versione SDK minima: 4.1
 
 * **charset**
@@ -136,7 +136,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **org**
 
-   Specifica l'ID organizzazione Experience Cloud per il servizio identità Adobe Experience Platform.
+   Specifica l’ID organizzazione di Experience Cloud per il servizio di identità della piattaforma Adobe Experience Cloud.
 
    * Versione SDK minima: 4.3
 
@@ -145,7 +145,6 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Versione SDK minima: 4.0
-
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
@@ -175,7 +174,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   `payload` L'oggetto nel codice è un payload di esempio per la definizione di un messaggio che si desidera inserire nel `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Versione SDK minima: 4.6
 
@@ -225,7 +224,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   >Questa variabile è obbligatoria per Analytics.
+   >This variable is required by Analytics.
 
    * Versione SDK minima: 4.0
 
@@ -239,7 +238,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   >Questa variabile è obbligatoria per Analytics e/o Gestione dell'audience.
+   >This variable is required by Analytics and/or Audience Management.
 
    * Versione SDK minima: 4.0
 
@@ -268,7 +267,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Versione SDK minima: 4.0
 
 
-## `ADBMobileConfig.json` File di esempio {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
