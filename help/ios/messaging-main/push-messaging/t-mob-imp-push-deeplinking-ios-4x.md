@@ -3,7 +3,7 @@ description: Dopo aver configurato l'URL di collegamento profondo (deep linking)
 seo-description: Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave adb_deeplink.
 seo-title: Implementare i messaggi push con collegamenti profondi
 title: Implementare i messaggi push con collegamenti profondi
-uuid: ee 9590 fc -8 bd 3-4111-9221-9011 d 9 edbd 84
+uuid: e9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
