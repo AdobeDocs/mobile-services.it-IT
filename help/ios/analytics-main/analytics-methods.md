@@ -1,11 +1,11 @@
 ---
 description: Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
 seo-description: Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
-seo-title: Metodi di Analytics
-solution: Marketing Cloud, Analytics
-title: Metodi di Analytics
+seo-title: Metodi di analisi
+solution: Marketing Cloud,Analytics
+title: Metodi di analisi
 topic: Sviluppatore e implementazione
-uuid: d 49 fe 6 de-cb 32-4 b 96-9891-c 567310 e 59 a 6
+uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
 
 Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di Adobe Analytics.
 
@@ -44,7 +44,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackAction:&#x200B;data:**
 
-   Tiene traccia di un'azione nell'applicazione. Le azioni che desideri misurare, ad esempio `logons`, `banner taps`e `feed subscriptions`altre metriche, sono incluse nell'app.
+   Tiene traccia di un'azione nell'applicazione. Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
 
    >[!TIP]
    >
@@ -86,7 +86,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!TIP]
    >
-   >Questo metodo dovrebbe essere invocato solo nel codice in esecuzione mentre l'app è in background.
+   >This method should only be called in code that runs while your app is in the background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -263,7 +263,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackingSendQueuedHits**
 
-   Richiede SDK 4.1. A prescindere da quanti hit sono attualmente in coda, forza la libreria a inviare tutti gli hit nella coda offline.
+   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -299,7 +299,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!CAUTION]
    >
-   >Utilizzate cautela quando cancellate la coda manualmente. Questo processo non può essere annullato.
+   >Prestate attenzione quando cancellate la coda manualmente. Questo processo non può essere annullato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
