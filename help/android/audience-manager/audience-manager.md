@@ -1,21 +1,21 @@
 ---
 description: Queste informazioni sono utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni sono utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
-seo-title: Panoramica di Audience Manager
-solution: Marketing Cloud, Analytics
-title: Panoramica di Audience Manager
+seo-title: Audience Manager overview
+solution: Marketing Cloud,Analytics
+title: Audience Manager overview
 topic: Sviluppatore e implementazione
-uuid: cfa 4106 d -13 c 1-45 ba-bee 6-6 f 992 aaf 9919
+uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Panoramica di Audience Manager {#audience-manager}
+# Audience Manager overview {#audience-manager}
 
-Le informazioni riportate in questa sezione consentono di inviare segnali e recuperare segmenti di visitatori da Audience Manager.
+The information in this section helps you send signals and retrieve visitor segments from Audience Manager.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
