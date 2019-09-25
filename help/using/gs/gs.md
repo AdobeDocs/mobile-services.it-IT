@@ -3,10 +3,10 @@ description: Queste informazioni sono utili per comprendere e utilizzare Adobe M
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per comprendere e utilizzare Adobe Mobile Services.
 seo-title: Introduzione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Introduzione
 topic: Metrics (Metriche)
-uuid: a 7 ae 7 c 5 a-dab 8-4603-b 4 cd-af 73 a 2 f 09 f 71
+uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -41,7 +41,7 @@ Adobe Mobile Services permette di promuovere il coinvolgimento degli utenti di u
 
 Nel componente *Acquisisci* puoi utilizzare media di tipo paid, owned e earned per promuovere l'acquisizione di utenti e i download dell'app in tutti i principali app store. Utilizzando Adobe Mobile Services, puoi accelerare il processo di acquisizione degli utenti dell'app.
 
-Adobe Mobile Services fornisce flussi di lavoro di acquisizione, ad esempio per il tracciamento dell'acquisizione e per i collegamenti profondi, che consentono di misurare l'efficacia dei tuoi canali nell'acquisire utenti dell'app. Con collegamenti di marketing che tengono traccia degli utenti provenienti da quale canale, puoi ottenere visibilità sui canali di acquisizione più efficaci nell'attirare utenti redditizi e interattivi.
+Adobe Mobile Services fornisce flussi di lavoro di acquisizione, ad esempio per il tracciamento dell'acquisizione e per i collegamenti profondi, che consentono di misurare l'efficacia dei tuoi canali nell'acquisire utenti dell'app. Con i collegamenti di marketing che tengono traccia degli utenti provenienti da quale canale, puoi ottenere la visibilità dei canali di acquisizione più efficaci per attirare utenti redditizi e interattivi.
 
 Inoltre, con i collegamenti profondi, puoi indirizzare gli utenti direttamente al contenuto dell'app che desideri mostrare loro, e invitarli a installare l'app se necessario.
 
@@ -82,7 +82,7 @@ La funzionalità *Coinvolgi* offre le seguenti caratteristiche principali:
 * Messaggi in-app attivati da analisi in tempo reale, avvisi e nuove offerte/contenuti.
 * Comprensione delle viste, dei tassi di click-through e dei comportamenti a valle degli utenti
 
-### Messaggi Adobe Mobile
+### Adobe Mobile messaging
 
 Puoi utilizzare le notifiche push e i messaggi in-app per comunicare con i tuoi utenti. Le notifiche push sono inviate tramite il sistema operativo del dispositivo, mentre i messaggi in-app vengono visualizzati nell'app mentre l'utente interagisce attivamente con essa. Solitamente, i messaggi in-app possono includere vari formati, come pop-up e interstiziali.
 
