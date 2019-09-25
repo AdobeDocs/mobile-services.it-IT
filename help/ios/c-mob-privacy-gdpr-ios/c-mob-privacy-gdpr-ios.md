@@ -3,7 +3,7 @@ description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i 
 seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
 title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
-uuid: 69 bb 82 de -1993-440 c-a 1 b 0-8 d 37919 b 48 b 6
+uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -40,13 +40,13 @@ Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile,
 
 * Per recuperare i dati dagli SDK e inviarli ai tuoi server, utilizza il metodo `getAllIdentifiersAsync`.
 
-   Per ulteriori informazioni, consultate [Ottenimento di identificatori memorizzati](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md).
+   Per ulteriori informazioni, vedere [Recupero degli identificatori](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)memorizzati.
 
 * Per impostare lo stato di consenso o diniego e poter dare seguito alle richieste di cancellazione dati in conformità ai requisiti RGPD, utilizza le impostazioni seguenti:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Per ulteriori informazioni, consultate [Impostazione dello stato di consenso dell'utente](/help/ios/c-mob-privacy-gdpr-ios/privacy.md).
+   Per ulteriori informazioni, consultate [Impostazione dello stato](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)di consenso dell'utente.
 
 ## Informazioni aggiuntive {#section_7C7124C50D85469C8C8714533FB1A37D}
 
