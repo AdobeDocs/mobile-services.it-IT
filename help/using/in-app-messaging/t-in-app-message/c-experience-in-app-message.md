@@ -2,11 +2,11 @@
 description: Configura le opzioni relative all'esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
 keywords: dispositivi mobili
 seo-description: Configura le opzioni relative all'esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
-seo-title: Messaggio in-app Esperienza
-solution: Marketing Cloud, Analytics
-title: Messaggio in-app Esperienza
+seo-title: Experience  In-App Message
+solution: Marketing Cloud,Analytics
+title: Messaggio in-app esperienza
 topic: Metrics (Metriche)
-uuid: 4 c 6 d 6756-47 fb -4 f 1 b -8338-0 b 0 c 9 b 0 fceb 0
+uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,8 +21,8 @@ Configura le opzioni relative all'esperienza per i messaggi in-app, incluso tipo
 1. Nella pagina Esperienza, specifica un nome per il messaggio.
 1. Compila i campi nella sezione **[!UICONTROL Tipo]:**
 
-   * **[!UICONTROL Tipo]**
-Seleziona il tipo di messaggio per la campagna messaggi in-app:
+   * **[!UICONTROL Type
+Select the message type for your in-app message campaign:]**
 
       * **[!UICONTROL Schermo intero]**
       * **[!UICONTROL Avviso]**
@@ -79,7 +79,7 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
    * **[!UICONTROL Pulsante Click-through]**
 
-      Etichetta per il pulsante di **[!UICONTROL click-through].** Toccando questo pulsante viene visualizzato un click-through con esito positivo. L'utente viene reindirizzato alla destinazione.
+      Etichetta per il pulsante di **[!UICONTROL click-through].** Tapping this button counts as a successful click-through. L'utente viene reindirizzato alla destinazione.
 
    * **[!UICONTROL Destinazione]**
 
@@ -87,10 +87,10 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
       Questo URL potrebbe contenere le seguenti informazioni:
 
-      * `{userId}`, che viene sostituito con l'identificatore utente o lasciato vuoto quando l'identificatore utente non è impostato.
-      * `{trackingId}`, che viene sostituito con l'aid (correlato al *cookie s_ vi* ).
+      * `{userId}`, che viene sostituito con l'identificatore utente o lasciato vuoto se l'identificatore utente non è impostato.
+      * `{trackingId}`, che viene sostituito con l'aiuto (correlato con il cookie *s_vi* ).
       * `{messageId}`, che viene sostituito con l'ID univoco per il messaggio in-app.
-      * `{lifetimeValue}`, che viene sostituito con il valore del ciclo di vita o con 0 se non esiste alcun valore del ciclo di vita.
+      * `{lifetimeValue}`, which is replaced with the lifetime value or 0 if no lifetime value exists.
       Ecco un esempio di tracciamento dell'ID utente: `https://www.mysite.com?uid={userId}`.
 
       If the click-through URL uses `https://` or `https://`, the URL opens in the device browser outside the app. In caso contrario, ogni piattaforma supporta schemi che consentono di aprire l'app o farvi riferimento se l'app è stata sviluppata per supportare lo schema personalizzato.
@@ -108,19 +108,19 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
    * **[!UICONTROL Modificare l'orientamento]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). Per gli orologi, l'orientamento cambia da rotondo a quadrante quadrato.
+      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). Per gli orologi, l'orientamento cambia da rotondo a quadrato.
 
-   * **[!UICONTROL Anteprima sull'orologio di un utente]**
+   * **[!UICONTROL Anteprima sull’orologio di un utente]**
 
-      Per visualizzare l'anteprima del messaggio così come apparirà sull'orologio di un utente, fai clic sull'icona ![del visualizzatore](assets/icon_watch.png).
+      Per visualizzare l'anteprima del messaggio così come apparirà sull'orologio di un utente, fai clic sull'icona ![dell'](assets/icon_watch.png)orologio.
 
    * **[!UICONTROL Anteprima sul cellulare di un utente]**
 
-      Per visualizzare l'anteprima del messaggio così come apparirà sul cellulare di un utente, fai clic ![sull'icona](assets/icon_phone.png)del telefono.
+      Per visualizzare l'anteprima del messaggio così come apparirà sul telefono cellulare di un utente, fai clic sull'icona ![del](assets/icon_phone.png)telefono.
 
    * **[!UICONTROL Anteprima sul tablet di un utente]**
 
-      Per visualizzare l'anteprima del messaggio nel tablet di un utente, fai clic ![sull'icona tablet](assets/icon_tablet.png).
+      Per visualizzare l'anteprima del messaggio sul tablet di un utente, fai clic sull'icona ![del](assets/icon_tablet.png)tablet.
 
       Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggi precedente. Puoi anche visualizzare, nella parte inferiore del riquadro di anteprima, una descrizione del pubblico che hai selezionato nel passaggio precedente.
 
