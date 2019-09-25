@@ -3,10 +3,10 @@ description: Puoi visualizzare una mappa interattiva con i tuoi punti di interes
 keywords: dispositivi mobili
 seo-description: Puoi visualizzare una mappa interattiva con i tuoi punti di interesse e altri marcatori dati.
 seo-title: Mappa
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mappa
 topic: Metrics (Metriche)
-uuid: 3 c 271738-eb 8 d -4 c 26-baaf -54 b 247 bfc 4 da
+uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -15,13 +15,13 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 # Mappa {#map}
 
-Puoi visualizzare una mappa interattiva che mostra i tuoi POI e altri marcatori dati.
+You can view an interactive map that displays your POI and other data markers.
 
 ![](assets/map.png)
 
 Seguono alcune informazioni importanti da ricordare:
 
-* È possibile aumentare o diminuire le dimensioni della mappa.
+* Puoi aumentare o diminuire la dimensione della mappa.
 
    Questa funzione è utile, ad esempio, se hai due punti di interesse vicini tra loro. Ingrandendo la mappa ne puoi osservare meglio i dettagli.
 * I punti di interesse sono visualizzati in blu.
@@ -34,8 +34,7 @@ Click ![layers](assets/map_layers.png) to select the following options:
 
    Visualizza una mappa semplice.
 
-* **[!UICONTROL Satellite]**
-Consente di visualizzare la mappa in modalità satellitare.
+* **[!UICONTROL Satellite]** Visualizza la mappa in modalità satellitare.
 
 * **[!UICONTROL Marcatori dati]**
 
@@ -57,11 +56,11 @@ Per questo rapporto puoi configurare le seguenti opzioni:
 
 * **[!UICONTROL Personalizza]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. Per ulteriori informazioni, consultate [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
+   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. Per ulteriori informazioni, vedere [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
-   Fai clic su **[!UICONTROL Filtro]per creare un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili.** Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso. Per ulteriori informazioni, consultate [Aggiungere un filtro fisso](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Fai clic su **[!UICONTROL Filtro]per creare un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili.** Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Scarica]**
 
