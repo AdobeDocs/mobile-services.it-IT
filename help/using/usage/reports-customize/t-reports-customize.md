@@ -3,10 +3,10 @@ description: Queste informazioni sono utili per personalizzare i rapporti incorp
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
 seo-title: Aggiungere filtri ai rapporti
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aggiungere filtri ai rapporti
 topic: Rapporti, Metriche
-uuid: 19 c 395 cc -2 e 07-4588-825 b-f 2 f 8 b 10 a 87 c 1
+uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 >[!IMPORTANT]
 >
->Le metriche delle app mobile sono disponibili anche in reporting e analisi di marketing, nelle analisi ad hoc, nei data warehouse e in altre interfacce di reporting di Analytics. Se una suddivisione o un tipo di rapporto non è disponibile in Adobe Mobile, può essere generato utilizzando un'altra interfaccia di reporting.
+>Le metriche delle app mobili sono disponibili anche in reporting e analisi di marketing, analisi ad hoc, data warehouse e altre interfacce di reporting di Analytics. Se una suddivisione o un tipo di rapporto non è disponibile in Adobe Mobile, può essere generato utilizzando un'altra interfaccia di reporting.
 
 In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni], ma le istruzioni sono valide per qualsiasi tipo di rapporto.**
 
@@ -39,7 +39,7 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni],
 
    ![](assets/customize3.png)
 
-   Per aggiungere Android come filtro, è necessario ripetere questo passaggio.
+   To add Android as a filter, you need to repeat this step.
 
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL Android]**.
 
@@ -54,7 +54,7 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni],
 
    ![](assets/customize5.png)
 
-   Potete personalizzare ulteriormente il rapporto. Da iOS 8.3, potete aggiungere la metrica Primi avvii con un filtro di versione del sistema operativo iOS 8.3 per vedere quanti clienti iOS 8.3 hanno aggiornato le app ed eseguito un primo avvio.
+   Puoi personalizzare ulteriormente il rapporto. Da iOS 8.3, potete aggiungere la metrica Primi avvii con un filtro di versione del sistema operativo iOS 8.3 per vedere quanti clienti iOS 8.3 hanno aggiornato le app ed eseguito un primo avvio.
 1. Under **[!UICONTROL First Launches]**, click **[!UICONTROL Add Filter]**, click **[!UICONTROL Add Rule]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL iOS]**.
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating System Versions]** from the drop-down list, and select **[!UICONTROL iOS 8.3]**.
 
