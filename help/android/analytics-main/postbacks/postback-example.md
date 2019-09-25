@@ -1,12 +1,12 @@
 ---
 description: Puoi usare queste informazioni per comprendere cosa sono i postback e come funzionano.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Puoi usare queste informazioni per comprendere cosa sono i postback e come funzionano.
 seo-title: Esempi di postback
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Esempi di postback
 topic: Sviluppatore e implementazione
-uuid: 8010 cd 00-d 42 b -4 e 16-8403-692 fab 2550 f 1
+uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -15,13 +15,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Postbacks example {#postbacks-example}
 
-Puoi utilizzare queste informazioni per comprendere quali postback sono e come funzionano.
+Potete utilizzare queste informazioni per comprendere cosa sono i postback e come funzionano.
 
 >[!CAUTION]
 >
->Questo esempio viene fornito solo a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
+>Questo esempio è fornito solo a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
 
-## `ADBMobileConfig.json` definizione {#section_8751E8176F3546C09420341A39758AFF}
+## `ADBMobileConfig.json` definition {#section_8751E8176F3546C09420341A39758AFF}
 
 ```js
 "messages": [ 
@@ -61,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L'URL sostituirà tutte le variabili di modello con i valori dell'hit. Presupponendo che la sessione precedente dell'utente abbia avuto una durata di 132 secondi e che l'utente sia nella versione 4.6.0 di Android SDK, l'URL risultante si presenta così:
+Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L'URL sostituirà tutte le variabili di modello con i valori dell'hit. Presupponendo che la sessione precedente dell'utente sia durata 132 secondi e che l'utente sia sulla versione SDK 4.6.0 per Android, l'URL risultante sarà simile al seguente:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`
