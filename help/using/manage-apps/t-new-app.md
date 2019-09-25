@@ -3,10 +3,10 @@ description: 'Puoi usare queste informazioni per: creare una nuova app e configu
 keywords: dispositivi mobili
 seo-description: 'Puoi usare queste informazioni per: creare una nuova app e configurarne le metriche chiave; configurare le opzioni SDK per Adobe Analytics e Adobe Audience Manager; configurare le opzioni di acquisizione e del servizio ID; scaricare il file di configurazione, gli SDK e gli strumenti per sviluppatori e tester.'
 seo-title: Aggiungere una nuova app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aggiungere una nuova app
 topic: Metrics (Metriche)
-uuid: 706 b 5 e 4 d -1318-4 a 9 e -8 c 69-ffabf 51 fa 02 c
+uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -26,11 +26,11 @@ Per poter configurare un'app, devi prima aggiungerla nell'interfaccia utente di 
    * Click **[!UICONTROL Crea nuovo]per creare un'app.**
    * Per aggiungere altre app, fai clic su Gestione app nel menu di navigazione a sinistra, quindi fai clic su **[!UICONTROL Aggiungi]**.
 
-      Per ulteriori informazioni sull'accesso, consulta [Accesso](/help/using/gs/gs-signin.md).
+      For more information about signing in, see Sign in.[](/help/using/gs/gs-signin.md)
 
       >[!TIP]
       >
-      >Per gestire le app esistenti, fai clic su Gestione app nel menu di navigazione a sinistra e fai clic sull'app che desideri modificare. Puoi apportare le modifiche desiderate nella pagina Informazioni app.
+      >Per gestire le app esistenti, fai clic su Gestione app nel menu di navigazione a sinistra, quindi fai clic sull'app da modificare. Puoi apportare le modifiche desiderate nella pagina Informazioni app.
 
 1. Digita le informazioni nei campi seguenti:
 
@@ -46,26 +46,26 @@ Per poter configurare un'app, devi prima aggiungerla nell'interfaccia utente di 
 
    * **[!UICONTROL Copia impostazioni da]**
 
-      Le variabili, gli eventi, le regole di elaborazione e altre impostazioni sono configurate nella nuova suite di rapporti esattamente come in questa suite di rapporti. Una suite di rapporti creata in Mobile Services è abilitata offline (o contrassegnata dall'indicazione di data e ora) solo se la suite di rapporti **Copia impostazioni da** utilizzata era Modello per app mobile oppure se crei una suite di rapporti abilitata per l'uso offline.
+      The variables, events, processing rules, and other settings are set up in the new report suite exactly like they are in this report suite. Una suite di rapporti creata in Mobile Services è abilitata offline (o contrassegnata dall'indicazione di data e ora) solo se la suite di rapporti **Copia impostazioni da** utilizzata era Modello per app mobile oppure se crei una suite di rapporti abilitata per l'uso offline.
 
    * **[!UICONTROL Fuso orario]**
 
-      Tutte le date dei rapporti si trovano in questo fuso orario. Questa impostazione cerca di utilizzare un fuso orario prossimo a quello utilizzato dal browser.
+      Tutte le date di reporting sono in questo fuso orario. Questa impostazione cerca di utilizzare un fuso orario prossimo a quello utilizzato dal browser.
 
    * **[!UICONTROL Valuta]**
 
       Le entrate vengono tracciate e riportate come questo tipo di valuta.
    >[!TIP]
    >
-   >Per utilizzare una suite di rapporti virtuale (VRS), vedi [Suite di rapporti virtuali](/help/using/manage-apps/c-mob-vrs.md).
+   >Per utilizzare una suite di rapporti virtuale (VRS), vedi Suite di rapporti [virtuali](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Icona]**
 
-      **(Facoltativo**) Per cercare e selezionare un'icona per l'app, fai clic **[!UICONTROL su Icona]**.
+      (**Optional**) To browse to and select an icon for your app, click **[!UICONTROL Icon]**.
 
    * **[!UICONTROL Nome]**
 
-      **(Facoltativo**) Digitate un nome descrittivo per l'app. Questo nome ti aiuta a individuare rapidamente un'app e un nome significativo può aiutarti a capire rapidamente lo scopo e le impostazioni dell'app.
+      (**Optional**) Type a descriptive name for the app. Questo nome consente di individuare rapidamente un'app e un nome significativo può consentirvi di comprendere rapidamente lo scopo e le impostazioni dell'app.
 
    * **[!UICONTROL Tipo]**
 
@@ -86,7 +86,7 @@ Per poter configurare un'app, devi prima aggiungerla nell'interfaccia utente di 
          Questa opzione è simile a **[!UICONTROL Standard]**, con la differenza che la terminologia utilizzata nei rapporti viene aggiornata con i termini tipici dei giochi. **** Ad esempio, gli utenti vengono modificati in lettori. I rapporti specifici per i giochi vengono visualizzati automaticamente per le app di giochi.
    * **[!UICONTROL Descrizione]**
 
-      **(Facoltativo**) Digitate una descrizione per l'app.
+      (**Optional**) Type a description for the app.
 
 
 
