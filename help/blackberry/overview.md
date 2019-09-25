@@ -3,7 +3,7 @@ description: SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud consent
 seo-description: SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud consente di utilizzare per Adobe Analytics per misurare le applicazioni native BlackBerry 10
 seo-title: SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud
 title: SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud
-uuid: c 336 db 33-2 cb 5-48 fe-a 3 f 5-2 d 3 ced 6 c 3966
+uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
 translation-type: tm+mt
 source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
 
@@ -16,10 +16,10 @@ SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud consente di utilizza
 
 ## Getting started {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
-Per iniziare a usare gli SDK blackberry:
+Per iniziare a usare gli SDK BlackBerry:
 
 1. Per aggiungere gli SDK al progetto, completa le attività descritte nella [Guida rapida per sviluppatori](/help/blackberry/dev-qs.md).
-1. Consulta la [Guida di riferimento delle classi e dei metodi per adbmobile](/help/blackberry/methods.md).
+1. Consulta la Guida di riferimento [per la classe e il metodo](/help/blackberry/methods.md)ADBMobile.
 1. Implement [Analytics](/help/blackberry/analytics.md).
 
 ## Supported versions {#section_45978BF5C62E4986AAB7FFD96402BF2D}
