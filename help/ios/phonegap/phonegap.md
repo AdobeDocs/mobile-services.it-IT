@@ -3,10 +3,10 @@ description: Questo plug-in consente di inviare chiamate iOS AppMeasurement da u
 keywords: phonegap
 seo-description: Questo plug-in consente di inviare chiamate iOS AppMeasurement da un progetto PhoneGap.
 seo-title: Plug-in PhoneGap
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Plug-in PhoneGap
 topic: Sviluppatore e implementazione
-uuid: f 88 bcf 10-1 f 9 e -4 c 97-b 348-40 db 797 c 9923
+uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -42,7 +42,7 @@ To create a PhoneGap project, see [PhoneGap](https://helpx.adobe.com/experience-
 
 ## Installare il plug-in manualmente {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
-### Includere la libreria appmeasurement
+### Includere la libreria AppMeasurement
 
 Per includere la libreria AppMeasurement:
 
@@ -61,7 +61,7 @@ Per includere la libreria AppMeasurement:
    </feature>
    ```
 
-### Aggiungere autorizzazioni per l'app
+### Aggiungi autorizzazioni app
 
 La libreria AppMeasurement richiede quanto segue:
 
@@ -71,7 +71,7 @@ La libreria AppMeasurement richiede quanto segue:
    1. Select **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Seleziona **[!UICONTROL Crea gruppi per le cartelle aggiunte]**.
    1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement Code e fai clic su **[!UICONTROL Fine]**.
-   ![](assets/xcode-settings.png){width = "672"}
+   ![](assets/xcode-settings.png){width="672"}
 
 1. Nella scheda **[!UICONTROL Fasi build]** della destinazione del progetto, espandi la sezione **Collega binario a librerie]e aggiungi le seguenti librerie:[!UICONTROL **
 
