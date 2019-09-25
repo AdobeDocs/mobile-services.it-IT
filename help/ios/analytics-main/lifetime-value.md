@@ -1,11 +1,11 @@
 ---
 description: Il valore "lifetime" permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente.
 seo-description: Il valore "lifetime" permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente.
-seo-title: Valore del ciclo di vita del visitatore
-solution: Marketing Cloud, Analytics
-title: Valore del ciclo di vita del visitatore
+seo-title: Visitor lifetime value
+solution: Marketing Cloud,Analytics
+title: Visitor lifetime value
 topic: Sviluppatore e implementazione
-uuid: d 830 d 18 b -4313-43 bb -8 d 75-3789869 d 0 f 1 d
+uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale va
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
 1. Importa la libreria:
 
    ```objective-c
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-I valori dei dati contestuali devono essere mappati su variabili personalizzate:
+I valori dei dati di contesto devono essere mappati su variabili personalizzate:
 
 ![](assets/map-variable-context-ltv.png)
 
