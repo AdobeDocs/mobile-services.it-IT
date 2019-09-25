@@ -2,10 +2,10 @@
 description: Questo materiale di riferimento è utile per usare l'SDK per iOS per le soluzioni Experience Cloud.
 seo-description: Questo materiale di riferimento è utile per usare l'SDK per iOS per le soluzioni Experience Cloud.
 seo-title: Guida di riferimento dell'SDK per iOS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Guida di riferimento dell'SDK per iOS
 topic: Sviluppatore e implementazione
-uuid: 4 e 80 b 0 ce-d 36 e -440 e -96 ff-de 5 df 6804 e 3 e
+uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # iOS SDK reference {#ios-sdk-reference}
 
-Le informazioni contenute in questa sezione aiutano a usare l'SDK per iOS per le soluzioni Experience Cloud.
+Le informazioni presenti in questa sezione sono utili per usare l’SDK per iOS per le soluzioni Experience Cloud.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
