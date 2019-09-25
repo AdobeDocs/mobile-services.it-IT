@@ -3,9 +3,9 @@ description: nulle
 keywords: Unity
 seo-description: nulle
 seo-title: Esecuzione di chiamate alla libreria
-solution: Marketing Cloud, Sviluppatore
+solution: Marketing Cloud,Sviluppatore
 title: Esecuzione di chiamate alla libreria
-uuid: 74 c 30379-6 cdf -4318-9 db 8-e 14 fb 63 aa 18 a
+uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
 source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
 
@@ -14,7 +14,7 @@ source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
 
 # Making calls to the library{#making-calls-to-the-library}
 
-Per eseguire chiamate al plug-in dagli script, importare lo spazio dei nomi:
+Per effettuare chiamate al plug-in dagli script, importare lo spazio dei nomi:
 
 * **C#:** utilizzando `com.adobe.mobile;`
 
@@ -22,4 +22,4 @@ Per eseguire chiamate al plug-in dagli script, importare lo spazio dei nomi:
 
 * **boo:** importate `com.adobe.mobile;`
 
-Dopo aver importato lo spazio nomi, puoi effettuare chiamate direttamente al plug-in tramite i metodi statici della classe adbmobile.
+After you import the namespace, you can make calls directly to the plug-in via the static methods of the ADBMobile class.
