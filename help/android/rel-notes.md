@@ -14,11 +14,11 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 # Note sulla versione {#release-notes}
 
-Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulla correzione per l’SDK 4.x per Android per le soluzioni Experience Cloud:
+Here is the release notes, known issues, and hot fix information for Android SDK 4.x for Experience Cloud Solutions:
 
-**20 settembre 2019: Versione 4.17.10**
+**September 20, 2019: Version 4.17.10**
 
-* Generale: Corretta la generazione di stringhe internazionali per alcune aree dell'API Android livello 21 o successivo.
+* General: Fixed locale string generation for some regions on Android API level 21 or newer.
 
 **18 luglio 2019: Versione 4.17.8**
 
