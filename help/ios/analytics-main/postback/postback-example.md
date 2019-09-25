@@ -2,10 +2,10 @@
 description: Definizione ed esempi di codice sorgente per la funzione Postback.
 seo-description: Definizione ed esempi di codice sorgente per la funzione Postback.
 seo-title: Esempio di postback
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Esempio di postback
 topic: Sviluppatore e implementazione
-uuid: 809 c 5646-7 a 80-40 df -984 b -0 af 89 d 854259
+uuid: 809c5646-7a80-40df-984b-0af89d854259
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ Definizione ed esempi di codice sorgente per la funzione Postback.
 
 >[!CAUTION]
 >
->Questo esempio viene fornito solo a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
+>Questo esempio è fornito solo a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
 
 ## ADBMobileConfig.json definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -58,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L'URL sostituisce tutte le variabili di modello con i valori dell'hit. Presupponendo che la sessione precedente dell'utente sia durata di 132 secondi e che l'utente sia sulla versione SDK 4.6.0 per iOS, ecco un esempio dell'URL risultante:
+Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L’URL sostituisce tutte le variabili di modello con i valori dell’hit. Presupponendo che la sessione precedente dell'utente sia durata 132 secondi e che l'utente sia sulla versione SDK 4.6.0 per iOS, ecco un esempio dell'URL risultante:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
