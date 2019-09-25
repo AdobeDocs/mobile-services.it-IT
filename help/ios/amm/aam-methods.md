@@ -2,10 +2,10 @@
 description: Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 seo-title: Metodi di Audience Manager
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Audience Manager
 topic: Sviluppatore e implementazione
-uuid: 97658 bd 6-4 c 4 f -4875-abe 9-36 dad 4 ec 8 bae
+uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Manager hanno il prefisso "`audience`audience".
+The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Manager hanno il prefisso "`audience`audience".
 
 Se Audience Manager è configurato nel file JSON, viene inviato un segnale contenente le metriche sul ciclo di vita con `application:didFinishLaunchingWithOptions:`.
 
@@ -30,7 +30,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Di seguito è riportato l'esempio di codice per il menu:
+   * Esempio di codice per questo menu:
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
@@ -77,7 +77,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
       >[!IMPORTANT]
       >
-      >Prima della versione 4.13. x, DPUUID non veniva codificato automaticamente. A partire dalla versione 4.13.x, l'SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Questo processo assicura che l'SDK non interrompa la compatibilità con le versioni precedenti.
+      >Prima della versione 4.13.x, DPUUID non era codificato automaticamente. A partire dalla versione 4.13.x, l'SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Questo processo assicura che l'SDK non interrompa la compatibilità con le versioni precedenti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
