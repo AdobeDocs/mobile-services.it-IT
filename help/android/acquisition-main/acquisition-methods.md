@@ -1,12 +1,12 @@
 ---
 description: 'I seguenti metodi di acquisizione sono forniti dalla libreria di Android '
-keywords: android; libreria; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: 'I seguenti metodi di acquisizione sono forniti dalla libreria di Android '
 seo-title: Metodi di acquisizione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di acquisizione
 topic: Sviluppatore e implementazione
-uuid: 22 ec 432 f-e 7 ae -4 e 89-be 07-26206 bbeacf 8
+uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -15,7 +15,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 # Acquisition methods{#acquisition-methods}
 
-Il seguente metodo di acquisizione viene fornito dalla libreria Android:
+The following Acquisition method is provided by the Android library:
 
 * **campaignStartForApp**
 
