@@ -3,17 +3,17 @@ description: Puoi creare una nuova destinazione di collegamento che indirizza gl
 keywords: dispositivi mobili
 seo-description: Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un collegamento web o a un collegamento profondo all'interno dell'app.
 seo-title: Creare una nuova destinazione di collegamento
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Creare una nuova destinazione di collegamento
 topic: Metrics (Metriche)
-uuid: 390 e 3 dea -0221-4 f 97-980 d-a 90 ca 9 f 162 fa
+uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Creare una nuova destinazione di collegamento {#create-new-link-destination}
+# Create a new link destination {#create-new-link-destination}
 
 Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un collegamento web o a un collegamento profondo all'interno dell'app.
 
@@ -24,7 +24,7 @@ Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un
 1. Digita le informazioni nei campi seguenti:
    * **[!UICONTROL Titolo]**
 
-      Digita un nome descrittivo per la destinazione Collegamento app. Il titolo viene visualizzato solo sulla pagina Gestione destinazioni collegamenti dell'interfaccia utente di Adobe Mobile Services. Un nome descrittivo può essere utile per trovare rapidamente una destinazione di collegamento specifica e può fornire indicazioni sulla sua funzione.
+      Type a descriptive name for your App Link destination. Il titolo viene visualizzato solo sulla pagina Gestione destinazioni collegamenti dell'interfaccia utente di Adobe Mobile Services. Un nome descrittivo può essere utile per trovare rapidamente una destinazione di collegamento specifica e può fornire indicazioni sulla sua funzione.
 
    * **[!UICONTROL Tipo di collegamento]**
 
@@ -41,8 +41,7 @@ Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un
       * **[!UICONTROL Collegamento ibrido]**
 
          Type an iOS Universal Link or an Android App Link (for example, `https://yourwebsite.com`). I collegamenti ibridi supportano i collegamenti universali iOS o i collegamenti ad app Android.
-   * **[!UICONTROL App]**
-Seleziona l'app associata al collegamento che stai impostando.
+   * **[!UICONTROL App]** Selezionate l'app associata al collegamento che desiderate fornire.
 
       >[!TIP]
       >
@@ -50,7 +49,7 @@ Seleziona l'app associata al collegamento che stai impostando.
 
    * **[!UICONTROL Tipo di collegamento]**
 
-      Digitate l'URL effettivo per il collegamento selezionato. L'etichetta di questo campo dipende dal tipo di collegamento selezionato.
+      Type the actual URL for the link you selected. L'etichetta di questo campo varia a seconda del tipo di collegamento selezionato.
 
    * **[!UICONTROL Note]**
 
