@@ -1,23 +1,23 @@
 ---
 description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
-seo-title: Metodi del servizio Identità Adobe Experience Platform
-solution: Marketing Cloud, Analytics
-title: Metodi del servizio Identità Adobe Experience Platform
+seo-title: Metodi di Adobe Experience Platform Identity
+solution: Marketing Cloud,Analytics
+title: Metodi di Adobe Experience Platform Identity
 topic: Sviluppatore e implementazione
-uuid: c 5107 a 7 e -273 b -4 f 71-8738-4 c 603479 b 24 c
+uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
 source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
 
-# Metodi del servizio Identità Adobe Experience Platform{#experience-cloud-id-service-methods}
+# Metodi di Adobe Experience Platform Identity{#experience-cloud-id-service-methods}
 
 Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e Adobe Experience Platform Identity Service.
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 
@@ -86,7 +86,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       Visitor.syncIdentifiers(identifiers);
       ```
 
-* **Syncidentifier**
+* **syncIdentifier**
 
    Sincronizza con il servizio ID visitatori il tipo e il valore dell’identificatore fornito.
 
@@ -147,9 +147,9 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       List<VisitorID> myVisitorIDs = Visitor.getIdentifiers(); 
       ```
 
-* **Geturlvariablesasync**
+* **getUrlVariablesAsync**
 
-   Introdotto nella versione 4.16.0, questo metodo restituisce una stringa formata correttamente contenente variabili URL del servizio ID visitatore. Per ulteriori informazioni sull'utilizzo di questo metodo, vedi [Metodi di servizio identità Adobe Experience Platform](/help/android/reference/hybrid-app.md).
+   Introdotto nella versione 4.16.0, questo metodo restituisce una stringa con formato appropriato che contiene le variabili URL del servizio ID visitatore. Per ulteriori informazioni sull’utilizzo di questo metodo, consulta Metodi [del servizio identità](/help/android/reference/hybrid-app.md)Adobe Experience Platform.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
