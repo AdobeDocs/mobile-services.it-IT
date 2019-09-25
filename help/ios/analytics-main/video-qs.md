@@ -2,10 +2,10 @@
 description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-title: Analisi del video
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Analisi del video
 topic: Sviluppatore e implementazione
-uuid: d 75 fa 415-78 f 6-4 f 50-a 563-76949 f 040138
+uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,13 +18,13 @@ Queste informazioni spiegano come misurare i video su iOS mediante la misurazion
 
 >[!TIP]
 >
->Durante la riproduzione di un video, al servizio vengono inviate frequenti chiamate "heartbeat" per misurare il tempo riprodotto. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni, consultate [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Durante la riproduzione video, vengono inviate a questo servizio frequenti chiamate "heartbeat" per misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni, consultate [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
 Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali su una variabile di Analytics.
+Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali a una variabile Analytics.
 
 * **a.media.name**
 
@@ -32,7 +32,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Facoltativo) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visita
    * Insight personalizzato (s.prop, usato per il percorso del video)
 
@@ -40,7 +40,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Facoltativo) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile dall'Assistenza clienti.
 
-   * Tipo di variabile: Custom Insight (s. prop)
+   * Tipo di variabile: Custom Insight (s.prop)
    * Tipo evento: Insight personalizzato (s.prop)
 
 * **a.media.segment**
@@ -54,7 +54,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
    * fine del video (stop)
    Analytics conta la visualizzazione del primo segmento all'inizio del segmento, quando il visitatore inizia la visualizzazione. Il segmento successivo viene visualizzato quando inizia il segmento.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 
@@ -62,7 +62,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione è assegnato il tipo di contenuto `video`video. Non è necessario riservare questa variabile esclusivamente al tracciamento video. Se la stessa variabile viene usata anche per ottenere il tipo di altri contenuti, è possibile analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali "articolo" o "pagina prodotto" ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.media.timePlayed**
@@ -86,7 +86,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
    * Tipo di variabile: Evento
    * Tipo: contatore
 
-* **a. media. complete**
+* **a.media.complete**
 
    Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l'evento completo è misurato 1 secondo prima della fine del video. Durante l'implementazione, puoi specificare quanti secondi dalla fine del video considerare come una visualizzazione dell'intero video. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete, ad esempio, dopo che il video è stato visualizzato per una data quantità di tempo.
 
