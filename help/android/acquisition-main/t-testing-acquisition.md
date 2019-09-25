@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione legacy su un dispositivo Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione legacy su un dispositivo Android.
 seo-title: Verifica dell'acquisizione legacy
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Verifica dell'acquisizione legacy
 topic: Sviluppatore e implementazione
-uuid: bb 7 ace 96-68 eb -4 f 43-b 3 cf-af 80730 b 9 eec
+uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
