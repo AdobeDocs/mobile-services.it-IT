@@ -1,11 +1,11 @@
 ---
 description: Le azioni temporizzate consentono di misurare il tempo trascorso all'interno dell'app e il tempo totale dall'inizio alla fine di un'azione. L'SDK calcola il tempo necessario a completare l'azione, per ogni sessione e complessivamente per più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
 seo-description: Le azioni temporizzate consentono di misurare il tempo trascorso all'interno dell'app e il tempo totale dall'inizio alla fine di un'azione. L'SDK calcola il tempo necessario a completare l'azione, per ogni sessione e complessivamente per più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
-seo-title: Azioni temporizzate
-solution: Marketing Cloud, Analytics
-title: Azioni temporizzate
+seo-title: Timed actions
+solution: Marketing Cloud,Analytics
+title: Timed actions
 topic: Sviluppatore e implementazione
-uuid: dbcbac 5 a -6345-49 f 6-b 050-0 db 05292 f 005
+uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -31,7 +31,7 @@ Un callback facoltativo consente di intraprendere azioni aggiuntive al completam
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importa la libreria:
 
    ```objective-c
@@ -70,7 +70,7 @@ Oltre al nome dell'azione temporizzata, con le chiamate di inizio azione e aggio
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-I valori dei dati contestuali devono essere mappati su variabili personalizzate:
+I valori dei dati di contesto devono essere mappati su variabili personalizzate:
 
 ![](assets/map-variable-context-ltv.png)
 
