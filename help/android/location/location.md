@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni aiutano nell'utilizzo della funzione di Posizione nelle app Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni aiutano nell'utilizzo della funzione di Posizione nelle app Android.
 seo-title: Panoramica sulla posizione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Panoramica sulla posizione
 topic: Sviluppatore e implementazione
-uuid: 15180 bd 6-616 b -477 d-a 106-96 a 52 c 974 d 7 d
+uuid: 15180bd6-616b-477d-a106-96a52c974d7d
 translation-type: tm+mt
 source-git-commit: a290a0fb4bc5eccae6c7d7065e82b70671f067b0
 
@@ -15,7 +15,7 @@ source-git-commit: a290a0fb4bc5eccae6c7d7065e82b70671f067b0
 
 # Panoramica sulla posizione {#location}
 
-Le informazioni contenute in questa sezione consentono di utilizzare la funzione Posizione nelle app Android.
+Le informazioni presenti in questa sezione sono utili per usare la funzione Posizione nelle app Android.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
