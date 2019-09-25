@@ -2,10 +2,10 @@
 description: Puoi fornire messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
 seo-description: Puoi fornire messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
 seo-title: Messaggistica in-app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Messaggistica in-app
 topic: Sviluppatore e implementazione
-uuid: 351 ee 3 d 2-80 b 9-4 f 2 d -9696-21 f 274 d 89 f 5 a
+uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -41,7 +41,7 @@ Puoi creare messaggi e regole in Adobe Mobile Services per definire il momento i
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto intellij IDEA o Eclipse* nell'implementazione [e nel ciclo di vita principali](/help/android/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
 
 1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
 
@@ -86,7 +86,7 @@ Puoi creare messaggi e regole in Adobe Mobile Services per definire il momento i
 
    >[!IMPORTANT]
    >
-   >`messages` o `remotes` è richiesto.
+   >`messages` o `remotes` è obbligatorio.
 
    Affinché i messaggi in-app vengano aggiornati dinamicamente all'avvio, l'oggetto `remotes` deve essere presente e configurato correttamente:
 
@@ -122,15 +122,15 @@ Gli SDK per dispositivi mobili Android tengono traccia delle metriche seguenti p
 * Per messaggi in-app a schermo intero e in stile avviso:
 
    * **Impression**: quando l'utente attiva un messaggio in-app.
-   * **Click through: quando l'utente preme****Click.**
+   * **Click throughs: when user presses Click through.******
    * **Annulla**: quando l'utente preme **[!UICONTROL Annulla]**.
 
 * Per i messaggi in-app personalizzati a schermo intero, nel contenuto HTML del messaggio deve essere presente il codice corretto per trasmettere informazioni alla funzione di tracciamento dell'SDK per i seguenti pulsanti:
 
-   * **Tracciamento degli esempi di click-through** (reindirizzamento):
+   * **Monitoraggio degli esempi di click-through** (reindirizzamento):
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Annulla** tracciamento degli esempi (chiudi):
+   * **Cancel (close) example tracking:**
 
       `adbinapp://cancel`
 
@@ -140,7 +140,7 @@ Quando crei un messaggio a schermo intero, puoi specificare facoltativamente un'
 
 >[!IMPORTANT]
 >
->Il nome della risorsa di fallback viene specificato quando configuri il messaggio in Adobe Mobile Services, e devi accertarti che la risorsa specificata sia disponibile.
+>Il nome della risorsa dell'immagine di fallback viene specificato quando configuri il messaggio in Adobe Mobile Services e devi accertarti che la risorsa specificata sia disponibile.
 
 ## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
@@ -156,7 +156,7 @@ I seguenti metodi di consentono di configurare l'icona piccola e l'icona grande 
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * Esempio di codice per questo metodo:
+   * Here is the code example for this method:
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -164,7 +164,7 @@ I seguenti metodi di consentono di configurare l'icona piccola e l'icona grande 
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   Imposta l'icona grande che verrà utilizzata per le notifiche create dall'SDK. Questa icona è l'immagine principale visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
+   Imposta l'icona grande che verrà utilizzata per le notifiche create dall'SDK. Questa icona è l'immagine principale che viene visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
