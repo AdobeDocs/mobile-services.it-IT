@@ -1,12 +1,12 @@
 ---
-description: Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing su un dispositivo Android.
-keywords: android; libreria; mobile; sdk
-seo-description: Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing su un dispositivo Android.
+description: Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+keywords: android;library;mobile;sdk
+seo-description: Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 seo-title: Verifica dell'acquisizione da collegamenti marketing
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Verifica dell'acquisizione da collegamenti marketing
 topic: Sviluppatore e implementazione
-uuid: d 0933 dcc -8 fc 3-4 f 60-987 f -7 a 54559 aacf 5
+uuid: d0933dcc-8fc3-4f60-987f-7a5459aacf5
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,13 +15,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing su un dispositivo Android.
+Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 
-Se la tua app mobile non è ancora disponibile in Google Play, puoi selezionare qualsiasi app mobile come destinazione quando crei il collegamento marketing. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento di acquisizione. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se la tua app mobile non è ancora disponibile in Google Play, puoi selezionare come destinazione qualsiasi app mobile al momento della creazione del collegamento di marketing. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento di acquisizione. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
 
-1. Completa le attività preliminari nell'acquisizione da app [mobile](/help/android/acquisition-main/acquisition.md) e accertati di aver implementato correttamente il destinatario della trasmissione.`INSTALL_REFERRER`
+1. Completa le attività preliminari nell’acquisizione [da app](/help/android/acquisition-main/acquisition.md) Mobile e assicurati di aver implementato correttamente il ricevitore di trasmissione per `INSTALL_REFERRER`.
 1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -38,7 +38,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   Nell'esempio precedente, l'ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`è.
+   Nell’esempio precedente, l’ID è `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
    Se non riesci a ottenere l'ID univoco sul dispositivo, esegui il seguente comando `CURL` sul desktop per ottenere l'ID univoco dalla stringa di risposta.
 
@@ -69,7 +69,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisition | Il server dovrebbe essere `c00.adobe.com`e *`appid`* deve corrispondere al `appid` collegamento di acquisizione. |
+   | acquisizione | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
    | analytics | A fini di test, imposta il timeout di riferimento in modo tale da fornire il tempo necessario (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l'impostazione di timeout originale dopo il test. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l'app.
@@ -114,7 +114,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    | Analytics - Unable to decode response(`<string>`). | La risposta è formata in modo errato. |
    | Analytics - Unable to parse response (`a JSON Response`). | La stringa JSON è formata in modo errato. |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | La risposta non contiene il parametro `contextData`. |
-   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` non è incluso in contextdata. |
+   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` non è incluso in contextData. |
    | Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell'intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l'app. |
 
 Considerazioni da ricordare:
@@ -138,4 +138,4 @@ Ad esempio:
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-I collegamenti di marketing sono memorizzati nella cache sul lato server con una scadenza di dieci minuti. Quando apporti modifiche ai collegamenti di marketing, attendi 10 minuti prima di riutilizzarli, per accertarti che le modifiche siano state applicate.
+I collegamenti marketing sono memorizzati nella cache lato server con un tempo di scadenza di dieci minuti. Quando apporti modifiche ai collegamenti di marketing, attendi 10 minuti prima di riutilizzarli, per accertarti che le modifiche siano state applicate.
