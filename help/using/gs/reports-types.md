@@ -3,10 +3,10 @@ description: Quando si personalizzano i rapporti, l'ampia flessibilità può far
 keywords: dispositivi mobili
 seo-description: Quando si personalizzano i rapporti, l'ampia flessibilità può far sorgere alcune domande rispetto al tipo di rapporto più adatto per ottenere i dati necessari.
 seo-title: Tipi di rapporti
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Tipi di rapporti
 topic: Rapporti, Metriche
-uuid: 8747 b 11 e -31 b 1-47 bc-ad 55-db 5 ab 4 ef 7078
+uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,11 +21,11 @@ Prima di iniziare a personalizzare i rapporti, è importante avere compreso la d
 
 * Metrica
 
-   La metrica viene utilizzata per misurare i dati. Le metriche sono valori che possono essere contati e sommati; sono utilizzate per sapere con quale frequenza si verificano azioni specifiche nell'app. Alcune metriche comuni sono installazioni, avvii, ricavi, valore del ciclo di vita e accessi. Ad esempio, ogni volta che l’app viene avviata, gli _ launches_ value viene incrementato di uno.
+   La metrica viene utilizzata per misurare i dati. Le metriche sono valori che possono essere contati e sommati; sono utilizzate per sapere con quale frequenza si verificano azioni specifiche nell'app. Alcune metriche comuni sono installazioni, avvii, ricavi, valore del ciclo di vita e accessi. Ad esempio, ogni volta che l’app viene avviata, gli _launches_value is increased by one.
 
 * Dimensione
 
-   La dimensione viene utilizzata per descrivere i dati. Le dimensioni sono rappresentate utilizzando una stringa o un numero che funge da stringa (ad esempio un codice postale, e viene utilizzato per organizzare e segmentare i dati. Esempi comuni di dimensioni sono la versione del sistema operativo, il nome della campagna, il nome del prodotto e l'operatore di telefonia mobile. Ciascuna dimensione presenta un numero di valori specifici che sono associati a essa. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   La dimensione viene utilizzata per descrivere i dati. Le dimensioni sono rappresentate da una stringa o un numero che funge da stringa (ad esempio, un codice postale) ed è utilizzato per organizzare e segmentare i dati. Esempi comuni di dimensioni sono la versione del sistema operativo, il nome della campagna, il nome del prodotto e l'operatore di telefonia mobile. Ciascuna dimensione presenta un numero di valori specifici che sono associati a essa. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
 
 Di seguito sono elencati i tipi d rapporti che è possibile generare nell'interfaccia utente di Mobile:
 
