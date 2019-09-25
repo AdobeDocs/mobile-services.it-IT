@@ -3,10 +3,10 @@ description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccoglie
 keywords: dispositivi mobili
 seo-description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere le metriche di cui desideri tenere traccia per la tua app.
 seo-title: Metriche di Mobile
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metriche di Mobile
 topic: Metrics (Metriche)
-uuid: c 4457 f 4 a -9 d 1 c -4 fe 9-ad 4 a -9 eb 2 e 37 feab 7
+uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -31,7 +31,7 @@ Vengono misurati i tipi di metriche seguenti:
 
 * **Ricavi**
 
-   Puoi visualizzare i ricavi raccolti dagli app store e i ricavi misurati direttamente mediante eventi di acquisto in-app. Altre metriche del carrello sono disponibili [tramite Personalizza rapporti](/help/using/usage/reports-customize/reports-customize.md).
+   Puoi visualizzare i ricavi raccolti dagli app store e i ricavi misurati direttamente tramite eventi di acquisto in-app. Altre metriche del carrello sono disponibili tramite [Personalizza rapporti](/help/using/usage/reports-customize/reports-customize.md).
 
 * **Eventi delle app**
 
@@ -43,7 +43,7 @@ Vengono misurati i tipi di metriche seguenti:
 
 * **Posizione e punti di interesse**
 
-   Se nella suite di rapporti Analytics è abilitato GeoReporting, sono disponibili numerosi rapporti basati sulla posizione. Su Wi-Fi, la precisione di georeporting è simile a quella di un browser Web desktop. Su una connessione dati, la precisione varia secondo il provider e il modo in cui vengono instradate le richieste.
+   Se nella suite di rapporti Analytics è abilitato GeoReporting, sono disponibili numerosi rapporti basati sulla posizione. Sul Wi-Fi, la precisione di GeoReporting è simile a quella di un browser Web per desktop. Su una connessione dati, la precisione varia secondo il provider e il modo in cui vengono instradate le richieste.
 
    Per una precisione maggiore puoi aggiungere il tracciamento di posizioni e punti di interesse nell'app. Queste opzioni ti consentono di registrare dati di longitudine e latitudine dettagliati e utilizzare il geofencing per determinare quando un utente si trova entro un raggio da un punto di interesse predefinito.
 
