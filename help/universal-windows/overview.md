@@ -2,10 +2,10 @@
 description: L’SDK 4.x della piattaforma UWP (Universal Windows Platform) per soluzioni Experience Cloud consente di misurare le applicazioni Windows 10 native, di fornire contenuto mirato all’interno dell’app e di raccogliere e utilizzare dati di audience tramite la gestione dell'audience.
 seo-description: L’SDK 4.x della piattaforma UWP (Universal Windows Platform) per soluzioni Experience Cloud consente di misurare le applicazioni Windows 10 native, di fornire contenuto mirato all’interno dell’app e di raccogliere e utilizzare dati di audience tramite la gestione dell'audience.
 seo-title: SDK 4.x della piattaforma UWP (Universal Windows Platform) per soluzioni Experience Cloud
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: SDK 4.x della piattaforma UWP (Universal Windows Platform) per soluzioni Experience Cloud
 topic: Sviluppatore e implementazione
-uuid: 23 a 5 bc 0 a -54 f 0-42 a 7-af 1 e-c 8 cbb 509 dfce
+uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
 translation-type: tm+mt
 source-git-commit: 9e796f590cf7717592ff3f41fa61829599264a4f
 
