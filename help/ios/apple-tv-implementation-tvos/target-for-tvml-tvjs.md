@@ -3,7 +3,7 @@ description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostitu
 seo-description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con i contenuti Target, usa l'elemento XML personalizzato ADBTarget.
 seo-title: Adobe Target per TVML/TVJS
 title: Adobe Target per TVML/TVJS
-uuid: afd 5 a 583-5266-43 f 2-8 cb 0-0 ace 89 c 53 a 57
+uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -16,7 +16,7 @@ Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. Per ulteriori informazioni, consultate [Implementazione Apple TV con tvos](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
+>Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. For more information, see Apple TV Implementation with tvOS.[](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
 
 ## Getting started {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -30,11 +30,11 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
 >[!TIP]
 >
->Pianificate il contenuto da sostituire di conseguenza.
+>Pianificare di conseguenza ciò che si desidera sostituire.
 
 Potrebbe trattarsi della semplice sostituzione di un valore stringa in un'etichetta o della più complessa sostituzione di un'intera pagina.
 
-## Configurare l'elemento adbtarget {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## Configure your ADBTarget element {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
 Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
 
@@ -42,56 +42,56 @@ Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. You
 
    Nome della posizione Mbox.
 
-   * Tipo proprietà: Stringa
+   * Property type: String
    * Questa proprietà è obbligatoria.
 
 * **`id`**
 
-   L'ID ordine.
+   The Order ID.
 
-   * Tipo proprietà: Stringa
-   * Questa proprietà **non** è necessaria.
+   * Property type: String
+   * Questa proprietà **non** è obbligatoria.
 
 * **`total`**
 
    Totale ordine.
 
-   * Tipo proprietà: Stringa
-   * Questa proprietà **non** è necessaria.
+   * Tipo di proprietà: Stringa
+   * Questa proprietà **non** è obbligatoria.
 
 * **`purchasedProductIds`**
 
    Elenco degli ID, separati da virgola, dei prodotti acquistati per questo ordine.
 
-   * Ecco l'esempio di codice per questa proprietà:
+   * Esempio di codice per questa proprietà:
 
 
       ```objective-c
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * Tipo proprietà: Stringa
-   * Questa proprietà **non** è necessaria.
+   * Tipo di proprietà: Stringa
+   * Questa proprietà **non** è obbligatoria.
 
 * **`mboxParameters`**
 
    Elenco di coppie chiave-valore per `mboxParameters`. Ogni voce di questa stringa è separata da un punto e virgola e i valori chiave sono separati da due punti.
 
-   * Ecco l'esempio di codice per questa proprietà:
+   * Esempio di codice per questa proprietà:
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
-   * Tipo proprietà: Stringa
-   * Questa proprietà **non** è necessaria.
+   * Tipo di proprietà: Stringa
+   * Questa proprietà **non** è obbligatoria.
 
 * **`customParameterName`**
 
-   Il valore di questa proprietà `customParameterValue`è.
+   Il valore di questa proprietà è `customParameterValue`.
 
-   * Tipo proprietà: Stringa
-   * Questa proprietà **non** è necessaria.
+   * Tipo di proprietà: Stringa
+   * Questa proprietà **non** è obbligatoria.
 
 
 ## Esempi {#section_6D6D6E8C7FE147168FC30D83CBC06985}
