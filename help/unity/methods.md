@@ -2,10 +2,10 @@
 description: nulle
 keywords: Unity
 seo-description: nulle
-seo-title: Metodi adbmobile. cs
-solution: Marketing Cloud, Sviluppatore
-title: Metodi adbmobile. cs
-uuid: af 504934-febd -45 d 9-81 e 2-2 a 310 f 4 c 65 dc
+seo-title: Metodi ADBMobile.cs
+solution: Marketing Cloud,Developer
+title: Metodi ADBMobile.cs
+uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -84,7 +84,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Gli hit vengono inviati immediatamente.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Gli hit vengono eliminati.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Gli hit vengono scartati.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati).
 
       Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente. Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
@@ -139,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l'app è in background.
+   >This method is intended to be used for apps that register for notifications while in the background and should only be called from your code that runs while your app is in the background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -171,7 +171,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **SetContext (solo Android)**
 
-   Indica all'SDK di impostare il proprio contesto dell'applicazione dall'attività corrente di unityplayer.
+   Indica all'SDK di impostare il proprio contesto dell'applicazione dall'attività corrente di UnityPlayer.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -201,12 +201,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetDebugLogging(true); 
       ```
 
-* **Setprivacystatus**
+* **SetPrivacyStatus**
 
    Imposta lo stato di privacy per l'utente corrente sullo stato. Imposta uno dei valori seguenti:
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Gli hit vengono inviati immediatamente.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Gli hit vengono eliminati.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -215,7 +215,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
       ```
 
-   * Esempio di codice per questa sintassi:
+   * Here is the code sample for this syntax:
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -237,7 +237,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetUserIdentifier("myCustomUserId"); 
       ```
 
-## Metodi di Analytics
+## Metodi di analisi
 
 * **GetTrackingIdentifier**
 
@@ -305,7 +305,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Questo metodo dovrebbe essere invocato solo nel codice in esecuzione mentre l'app è in background.
+   >This method should only be called in code that runs while your app is in the background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -499,7 +499,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Metodi ID di Experience Cloud
+## Metodi Experience Cloud ID
 
 * **GetMarketingCloudID**
 
