@@ -1,11 +1,11 @@
 ---
 description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 seo-description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
-seo-title: Tenere traccia degli arresti anomali delle app
-solution: Marketing Cloud, Analytics
+seo-title: Track App crashes
+solution: Marketing Cloud,Analytics
 title: Tracciare gli arresti anomali dell'app
 topic: Sviluppatore e implementazione
-uuid: 4 f 81988 b -198 a -4 ba 9-ad 53-78 af 90 e 43856
+uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Queste informazioni sono utili per capire come vengono tracciati gli arresti ano
 
 >[!IMPORTANT]
 >
->È necessario effettuare l'aggiornamento alla versione 4.8.6 dell'SDK per iOS, contenente modifiche importanti che impediscono la segnalazione di falsi arresti anomali.
+>Devi eseguire l'aggiornamento alla versione SDK 4.8.6 per iOS, che contiene modifiche importanti che impediscono la segnalazione di falsi arresti anomali.
 
 ## Quando viene segnalato un arresto anomalo?
 
@@ -44,7 +44,7 @@ Nelle seguenti condizioni, l'SDK può segnalare falsi arresti anomali:
 
    >[!TIP]
    >
-   >In questo scenario, in background potete evitare un arresto anomalo prima di avviare nuovamente l'app da Xcode.
+   >You can avoid a crash in this scenario by backgrounding the app before launching the app again from Xcode.
 
 * If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
 
@@ -66,5 +66,5 @@ Le pratiche descritte di seguito permettono di evitare la segnalazione di falsi 
 * Assicurati di eseguire le operazioni di sviluppo con suite di report non destinate alla versione di produzione, per evitare il caso di falsi allarmi descritto al punto 1.
 * Non eliminare e non modificare i valori inseriti dall'SDK di Adobe Mobile in `NSUserDefaults`.
 
-   Se tali valori vengono modificati al di fuori dell'SDK, i dati segnalati non saranno validi.
+   Se questi valori vengono modificati al di fuori dell’SDK, i dati segnalati non saranno validi.
 
