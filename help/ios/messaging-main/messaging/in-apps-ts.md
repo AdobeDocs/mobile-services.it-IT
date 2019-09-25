@@ -3,10 +3,10 @@ description: Queste informazioni sono utili per risolvere eventuali problemi dei
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics (Metriche)
-uuid: 58533 aa 3-2 eb 2-4597-8525-77 e 4 e 5975 e 56
+uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
@@ -35,13 +35,13 @@ Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissi
 
 Nella visualizzazione a elenco della pagina Manage In-App Message (Gestisci messaggio in-app), nella colonna dello stato, verifica che il messaggio sia attivo.
 
-## Osserva *una volta*, *mostra sempre*, *mostra* le impostazioni offline nella scheda Pubblico.
+## Osservare *la visualizzazione una volta*, *mostrare sempre*, *mostrare le impostazioni offline* nella scheda Pubblico.
 
 Verifica che queste impostazioni siano impostate nel modo desiderato. Nella scheda **[!UICONTROL Pubblico]**, controlla le opzioni **Attivatore], che consentono di specificare la frequenza con cui viene mostrato il messaggio.[!UICONTROL **
 
 ## Se utilizzi l'evento di avvio come attivatore...
 
-L'avvio viene attivato solo su una nuova sessione. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Per ulteriori informazioni, vedi [Configurazione adbmobile JSON](/help/ios/configuration/json-config/json-config.md).
+L'avvio viene attivato solo su una nuova sessione. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Per ulteriori informazioni, vedi Configurazione [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
 
 ## Ho aggiornato il mio messaggio in remoto, ma l'app visualizza ancora il messaggio precedente.
 
