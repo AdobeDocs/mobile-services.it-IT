@@ -1,12 +1,12 @@
 ---
 description: I postback consentono di inviare i dati raccolti dall'SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l'SDK per l'invio di dati personalizzati a una destinazione terza.
-keywords: android; libreria; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: I postback consentono di inviare i dati raccolti dall'SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l'SDK per l'invio di dati personalizzati a una destinazione terza.
 seo-title: Postback
-solution: Marketing Cloud, Analytics
-title: Panoramica dei postback
+solution: Marketing Cloud,Analytics
+title: Postbacks overview
 topic: Sviluppatore e implementazione
-uuid: 8 bfd 4374-2767-421 d -891 d-e 1 e 9 a 99 b 6977
+uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
 translation-type: tm+mt
 source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
 
