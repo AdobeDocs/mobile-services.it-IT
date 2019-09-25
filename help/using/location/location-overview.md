@@ -2,7 +2,7 @@
 description: Panoramica della sezione Posizione.
 keywords: dispositivi mobili
 seo-description: Panoramica della sezione Posizione.
-seo-title: Panoramica sulla posizione
+seo-title: Location overview
 title: Panoramica sulla posizione
 translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
@@ -10,7 +10,7 @@ source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
 ---
 
 
-# Panoramica sulla posizione {#location-overview}
+# Location overview {#location-overview}
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
