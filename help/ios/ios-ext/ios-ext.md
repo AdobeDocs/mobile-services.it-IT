@@ -2,10 +2,10 @@
 description: L'uso di un'estensione iOS facilita la raccolta dei dati di utilizzo dalle app per Apple Watch (WatchOS 1), dai widget Oggi, dai widget per ritocco foto e da altre app di estensione iOS.
 seo-description: L'uso di un'estensione iOS facilita la raccolta dei dati di utilizzo dalle app per Apple Watch (WatchOS 1), dai widget Oggi, dai widget per ritocco foto e da altre app di estensione iOS.
 seo-title: Implementazione di un'estensione iOS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione di un'estensione iOS
 topic: Sviluppatore e implementazione
-uuid: 8 afc 03 fe -403 e -4643-ada 1-30 e 403 ede 238
+uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -33,7 +33,7 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Q
 
 >[!IMPORTANT]
 >
->Si consiglia vivamente di utilizzare l'SDK per iOS invece del wrapper.
+>È consigliabile utilizzare l’SDK per iOS invece del wrapper.
 
 Apple fornisce un set di API che permette all'app Watch di comunicare con l'app contenitore inviando richieste e ricevendo risposte. Benché sia possibile inviare dati di tracciamento come dizionario dall'app Watch all'app contenitore e invocare qualsiasi metodo di tracciamento nell'app contenitore per l'invio dei dati, questa soluzione presenta alcune limitazioni.
 
@@ -45,7 +45,7 @@ Anche se questi tre metodi di tracciamento soddisfano le tue esigenze, usa comun
 
 >[!IMPORTANT]
 >
->Assicurati di disporre di un progetto con almeno i seguenti target:
+>Accertatevi di disporre di un progetto con almeno le seguenti destinazioni:
 >
 >* Una destinazione che dovrà contenere l'app.
 >* Una destinazione per l'estensione.
@@ -78,7 +78,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. Conferma che l'app possa essere generata senza errori imprevisti.
 
-## Configurare l'estensione {#section_28C994B7892340AC8D1F07AF26FF3946}
+## Configura l'estensione {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
 1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell'estensione, espandi la sezione **Collega binario a librerie]e aggiungi le seguenti librerie:[!UICONTROL **
