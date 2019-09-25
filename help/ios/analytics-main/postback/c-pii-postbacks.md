@@ -3,7 +3,7 @@ description: Puoi usare Adobe SDK per raccogliere informazioni di identificazion
 seo-description: Puoi usare Adobe SDK per raccogliere informazioni di identificazione personale (PII) e inviarle a un endpoint di terze parti.
 seo-title: Postback PII
 title: Postback PII
-uuid: 08 f 76 a 52-75 dd -4 fc 1-b 4 cc -4 f 5 eef 93 d 0 f 7
+uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -24,7 +24,7 @@ Se desideri utilizzare Adobe SDK per raccogliere PII, invia una chiamata PII di 
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
 1. Importa la libreria:
 
    ```objective-c
