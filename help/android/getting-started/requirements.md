@@ -2,10 +2,10 @@
 description: 'Prima di configurare una suite di rapporti e raccogliere dati dell''app Android, completa le seguenti attività di prerequisito '
 seo-description: 'Prima di configurare una suite di rapporti e raccogliere dati dell''app Android, completa le seguenti attività di prerequisito '
 seo-title: Prima di iniziare
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Prima di iniziare
 topic: Sviluppatore e implementazione
-uuid: 0 ca 9 e 937-8 d 40-4570-9 dbf -9 acu 6 ecedf 6
+uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -50,11 +50,11 @@ Puoi accedere all'interfaccia utente di Adobe Mobile Services in uno dei seguent
 
 ### Experience Cloud
 
-Accedi a [Experience Cloud](https://marketing.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che sia stato eseguito il provisioning della tua società in Experience Cloud e che sia stato effettuato il collegamento all'account di Analytics. Per ulteriori informazioni, vedi [Gestire utenti e prodotti Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Accedi a [Experience Cloud](https://marketing.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che sia stato eseguito il provisioning della tua società in Experience Cloud e che sia stato effettuato il collegamento all'account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)Experience Cloud.
 
 >[!TIP]
 >
->Se non sei sicuro se in Experience Cloud è stato eseguito il provisioning della tua società, usa il tuo account Adobe Analytics esistente.
+>Se non sei sicuro se per la tua società sia stato eseguito il provisioning in Experience Cloud, usa il tuo account Adobe Analytics esistente.
 
 ### Adobe Analytics
 
@@ -95,7 +95,7 @@ Per scaricare l'SDK di Mobile:
 
 >[!TIP]
 >
->Un file di configurazione per l'app viene incluso automaticamente nel download dell'SDK, quindi non è necessario scaricare il file separatamente. Tuttavia, se hai scaricato l'SDK in precedenza e ora desideri ottenere le impostazioni aggiornate, dovrai scaricare nuovamente il file di configurazione.
+>A config file for your app is automatically included in the SDK download, so you do not need to download that file separately. Tuttavia, se hai scaricato l'SDK in precedenza e ora desideri ottenere le impostazioni aggiornate, dovrai scaricare nuovamente il file di configurazione.
 
 Se usi Android Studio, puoi anche aggiungere la riga seguente al file `build.gradle` dell'app:
 
