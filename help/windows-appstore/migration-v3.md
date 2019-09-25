@@ -1,18 +1,18 @@
 ---
 description: Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
 seo-description: Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
-seo-title: Migrazione agli SDK 4. x
-solution: Marketing Cloud, Analytics
-title: Migrazione agli SDK 4. x
+seo-title: Migrazione agli SDK 4.x
+solution: Marketing Cloud,Analytics
+title: Migrazione agli SDK 4.x
 topic: Sviluppatore e implementazione
-uuid: e 0 fe 3 b 7 b-cda 5-4 a 91-834 c -2 c 7 e 17 a 501 a 3
+uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# Migrazione agli SDK 4. x {#migrate-to-the-x-sdks}
+# Migrazione agli SDK 4.x {#migrate-to-the-x-sdks}
 
 Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
 
@@ -22,7 +22,7 @@ Le sezioni seguenti illustrano la procedura per migrare dalla versione 3.x alla 
 
 ## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Avrai probabilmente notato il nuovo file `ADBMobileConfig.json` incluso nel download. Questo file contiene impostazioni globali specifiche per l'applicazione e sostituisce la maggior parte delle variabili di configurazione utilizzate nelle versioni precedenti. Ecco un esempio di file `ADBMobileConfig.json`:
+Avrai probabilmente notato il nuovo file `ADBMobileConfig.json` incluso nel download. Questo file contiene impostazioni globali specifiche per le applicazioni e sostituisce la maggior parte delle variabili di configurazione utilizzate nelle versioni precedenti. Ecco un esempio di file `ADBMobileConfig.json`:
 
 ```js
 { 
@@ -52,7 +52,7 @@ Avrai probabilmente notato il nuovo file `ADBMobileConfig.json` incluso nel down
 
 Nella tabella seguente sono elencate le variabili di configurazione che devi spostare al file di configurazione. Sposta il set di valori della variabile nella prima colonna alla variabile nella seconda colonna, quindi elimina la variabile di configurazione precedente dal codice.
 
-## Migrazione da 3. x
+## Migrazione da 3.x
 
 | Variabile/Metodo di configurazione | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
@@ -78,7 +78,7 @@ Il parametro `contextData` di entrambi questi metodi contiene coppie nome-valore
 
 ## Eventi, prop, eVar
 
-Se hai esaminato i metodi [SDK](/help/windows-appstore/c-configuration/methods.md), ti chiederai probabilmente dove impostare eventi, evar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
+Se hai esaminato i metodi [](/help/windows-appstore/c-configuration/methods.md)SDK, probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 L’elaborazione di regole offre diversi vantaggi:
 
@@ -100,7 +100,7 @@ Per dirla semplicemente, gli unici dati inviati con una chiamata `TrackState` o 
 
 Nell’intero codice, sostituisci i metodi seguenti con una chiamata a `trackState` o `trackAction`:
 
-### Migrazione da 3. x
+### Migrazione da 3.x
 
 * `TrackAppState` (TrackState)
 * `TrackEvents` (TrackAction)
@@ -113,11 +113,11 @@ Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Il tracciamento offline è attivato nel `ADBMobileConfig.json` file. Tutte le altre configurazioni offline vengono eseguite automaticamente.
+Il tracciamento offline è abilitato nel `ADBMobileConfig.json` file. Tutte le altre configurazioni offline vengono eseguite automaticamente.
 
 Nell’intero codice, devi rimuovere le chiamate ai seguenti metodi:
 
-### Migrazione da 3. x
+### Migrazione da 3.x
 
 * `SetOnline`
 * `SetOffline`
