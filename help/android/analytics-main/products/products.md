@@ -1,12 +1,12 @@
 ---
 description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
-keywords: android; libreria; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 seo-title: Variabile "products"
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variabile "products"
 topic: Sviluppatore e implementazione
-uuid: f 4484022-cb 8 b -4 dea -9209-5 a 110 ba 607 df
+uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,4 +46,4 @@ The *products* variable is set on the image request, and the other variables are
 
 ![](assets/map-products.png)
 
-Non è necessario mappare la variabile *product* variable utilizzando le regole di elaborazione perché questa variabile viene impostata direttamente nella richiesta dell'immagine dall'SDK.
+Non è necessario mappare la variabile *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
