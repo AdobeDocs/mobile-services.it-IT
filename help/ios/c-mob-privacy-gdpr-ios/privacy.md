@@ -2,10 +2,10 @@
 description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 seo-title: Impostazione dello stato di consenso o diniego dell'utente
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Impostazione dello stato di consenso o diniego dell'utente
 topic: Sviluppatore e implementazione
-uuid: 44 a 09 a 25-93 c 6-4 e 1 a-b 69 e -710018 e 8 b 6 c 3
+uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -22,7 +22,7 @@ Queste informazioni aiutano a gestire una richiesta di cancellazione dati in con
 
 Per definire se le attività di Analytics, Target e Audience Manager sono consentite su un dispositivo, usa le seguenti impostazioni:
 
-* `privacyDefault` nel [file di configurazione adbmobile JSON](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` nel file di configurazione [ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
    Questa impostazione controlla l'impostazione iniziale che viene mantenuta finché non viene modificata nel codice.
 
@@ -32,7 +32,7 @@ Per definire se le attività di Analytics, Target e Audience Manager sono consen
 
    Per ulteriori informazioni sui metodi, vedi [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
 
-Seguono informazioni su ciascun stato di privacy:
+Informazioni su ogni stato di privacy:
 
 * **Consenso accordato**
 
