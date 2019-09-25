@@ -2,16 +2,16 @@
 description: I postback consentono di inviare i dati raccolti dall'SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l'SDK per l'invio di dati personalizzati a una destinazione terza.
 seo-description: I postback consentono di inviare i dati raccolti dall'SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l'SDK per l'invio di dati personalizzati a una destinazione terza.
 seo-title: Postback
-solution: Marketing Cloud, Analytics
-title: Panoramica dei postback
-uuid: 25 e 2 a 5 fb -1203-40 dd -96 cd-b 23 e 0 f 23376 d
+solution: Marketing Cloud,Analytics
+title: Panoramica sui postback
+uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 ---
 
 
-# Panoramica dei postback {#postbacks}
+# Panoramica sui postback {#postbacks}
 
 I postback consentono di inviare i dati raccolti dall'SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l'SDK per l'invio di dati personalizzati a una destinazione terza.
 
@@ -33,7 +33,7 @@ L'elenco comprende:
 |--- |--- |
 | `{%sdkver%}` | Restituisce la versione SDK. |
 | `{%cachebust%}` | Viene risolto su un numero casuale compreso tra 1 e 100000000. |
-| `{%adid%}` | Restituisce IDFA. Questo token funziona solo `setAdvertisingIdentifier`se utilizzato. |
-| `{%pushid%}` | Restituisce il token dell'identificatore push. Questo token funziona solo `setPushIdentifier`se utilizzato. |
+| `{%adid%}` | Restituisce IDFA. Questo token funziona solo se è stato utilizzato `setAdvertisingIdentifier`. |
+| `{%pushid%}` | Restituisce il token dell'identificatore push. Questo token funziona solo se è stato utilizzato `setPushIdentifier`. |
 | `{%timestampu%}` | Restituisce la marca temporale corrente sotto forma di tempo Unix (o tempo epoca). |
 | `{%timestampz%}` | Restituisce la marca temporale corrente in formato JavaScript (ISO 8601). |
