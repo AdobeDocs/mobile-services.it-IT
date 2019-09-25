@@ -1,18 +1,18 @@
 ---
-product: mobile-services
+product: servizi mobili
 audience: utente finale
-user-guide-title: Guida di Mobile Services blackberry
+user-guide-title: Guida di Mobile Services BlackBerry
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Guida di Mobile Services blackberry {#blackberry}
+# Guida di Mobile Services BlackBerry {#blackberry}
 
 + [SDK 4.x per BlackBerry 10 per le soluzioni Experience Cloud](overview.md)
-+ [Avvio rapido per sviluppatori](dev-qs.md)
-+ [Guida di riferimento delle classi e dei metodi per Adobe Mobile](methods.md)
++ [Guida rapida per sviluppatori](dev-qs.md)
++ [Guida di riferimento di classe e metodi per Adobe Mobile](methods.md)
 + [Analytics](analytics.md)
 + [Analisi del video](video-qs.md)
 + [Metriche del ciclo di vita](metrics.md)
