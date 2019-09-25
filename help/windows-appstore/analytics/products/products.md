@@ -1,11 +1,11 @@
 ---
 description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: Variabile Products
-solution: Marketing Cloud, Analytics
-title: Variabile Products
+seo-title: Variabile "products"
+solution: Marketing Cloud,Analytics
+title: Variabile "products"
 topic: Sviluppatore e implementazione
-uuid: 2057 a 564-06 ae -4171-bbe 7-0 baffa 71608 b
+uuid: 2057a564-06ae-4171-be7-0baffa71608b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, poiché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
+Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, poiché viene impostata direttamente nella richiesta dell’immagine dall’SDK.
