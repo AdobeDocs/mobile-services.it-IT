@@ -2,11 +2,11 @@
 description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
 keywords: dispositivi mobili
 seo-description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
-seo-title: Pianificazione messaggio in-app
-solution: Marketing Cloud, Analytics
-title: Pianificazione messaggio in-app
+seo-title: Pianificazione del messaggio in-app
+solution: Marketing Cloud,Analytics
+title: Pianificazione del messaggio in-app
 topic: Metrics (Metriche)
-uuid: d 10 e 691 b -105 a -4165-a 49 d-d 046 ce 250 acd
+uuid: d10e691b-105a-4165-a49d-d046ce250acd
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso dur
 
 >[!TIP]
 >
->Gli intervalli di date sono definiti dal vostro fuso orario. Gli intervalli di giorni e di ore specifici dipendono dal dispositivo dell'utente.
+>Gli intervalli di date sono definiti dal tuo fuso orario. Gli intervalli di giorni e di ore specifici dipendono dal dispositivo dell'utente.
 
 1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
 1. Fai clic su **[!UICONTROL Pianifica]**.
