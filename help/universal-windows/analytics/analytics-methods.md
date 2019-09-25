@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
 seo-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
-seo-title: Metodi di Analytics
-solution: Marketing Cloud, Analytics
-title: Metodi di Analytics
+seo-title: Metodi di analisi
+solution: Marketing Cloud,Analytics
+title: Metodi di analisi
 topic: Sviluppatore e implementazione
-uuid: cc 299 bb 5-ec 61-49 bf -869 a-f 3 c 3 bc 83359 f
+uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,7 +24,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **Trackstate (winjs: Trackstate)**
+* **TrackState (winJS: trackState)**
 
    Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio “dashboard iniziale”, “impostazioni dell'app”, “carrello” e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
 Se `state` è vuoto, nei rapporti viene visualizzato come “app name app version (build)”. Se vedi questo valore nei rapporti, assicurati che `state` sia impostato in ogni chiamata `TrackState`.
@@ -46,7 +46,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **Trackaction (winjs: Trackaction)**
+* **TrackAction (winJS: trackAction)**
 
    Tiene traccia di un'azione nell'applicazione. Le azioni sono gli eventi che avvengono nell’applicazione e che desideri misurare, come “accessi”, “tap sui banner”, “abbonamenti ai feed” e altre metriche.
 
@@ -63,7 +63,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackAction("ButtonClick",null); 
       ```
 
-* **Gettrackingidentifierasync (winjs: Gettrackingidentifierasync)**
+* **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
    Restituisce l’ID visitatore generato automaticamente per Analytics. Si tratta di un ID visitatore univoco specifico per l'app, che viene generato all'avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene conservato tra un aggiornamento e l’altro dell’applicazione, e rimosso alla disinstallazione.
 
@@ -82,7 +82,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       });
       ```
 
-* **Tracklocation (winjs: Tracklocation)**
+* **TrackLocation (winJS: trackLocation)**
 
    Invia le coordinate x,y correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all'interno di un POI. Se le coordinate correnti si trovano all'interno di un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
@@ -99,7 +99,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackLocation(47.60621,-122.33207,null);
       ```
 
-* **Tracklifetimevalueincrease (winjs: Tracklifetimevalueincrease)**
+* **TrackLifetime &#x200B; ValueIncrease (winJS: trackLifetime &#x200B; ValueIncrease)**
 
    Aggiunge al valore "lifetime" del ciclo di vita dell'utente un incremento pari a `amount`.
 
@@ -116,7 +116,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackLifetimeValueIncrease(10,null);
       ```
 
-* **Tracktimedactionstart (winjs: Tracktimedactionstart)**
+* **TrackTimed &#x200B; ActionStart (winJS: trackTimed &#x200B; ActionStart)**
 
    Avvia un'azione temporizzata con il nome `action`. Se invochi questo metodo per un'azione già avviata, l'azione temporizzata precedente viene sovrascritta.
 
@@ -137,7 +137,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **Tracktimedactionupdate (winjs: Tracktimedactionupdate)**
+* **TrackTimed&#x200B;ActionUpdate (winJS: trackTimed&#x200B;ActionUpdate)**
 
    Passa i dati `contextData` per aggiornare i dati contestuali associati all'azione `action`. I dati `data` passati vengono aggiunti alla fine dei dati esistenti per l'azione, e li sovrascrivono se per l'azione è già definita la stessa chiave per `action`.
 
@@ -160,7 +160,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **Tracktimedactionexistsasync (winjs: Tracktimedactionexistsasync)**
+* **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
    Restituisce true se l'azione temporizzata specificata esiste e false se non esiste.
 
@@ -178,7 +178,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       });
       ```
 
-* **Tracktimedactionend (winjs: Tracktimedactionend)**
+* **TrackTimed &#x200B; ActionEnd (winJS: trackTimed &#x200B; ActionEnd)**
 
    Termina un'azione temporizzata.
 
@@ -195,7 +195,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackTimedActionEnd("cartToCheckout"); 
       ```
 
-* **Cleartrackingqueue (winjs: Cleartrackingqueue)**
+* **ClearTrackingQueue (winJS: clearTrackingQueue)**
 
    Cancella tutti gli hit memorizzati dalla coda di tracciamento di Analytics.
 
@@ -211,7 +211,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **Getqueuesizeasync (winjs: Getqueuesizeasync)**
+* **GetQueueSizeAsync (winJS: getQueueSizeAsync)**
 
    Restituisce il numero di hit attualmente memorizzati nella coda di Analytics.
 
