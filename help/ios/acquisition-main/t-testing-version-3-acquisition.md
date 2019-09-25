@@ -2,9 +2,9 @@
 description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 seo-description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 seo-title: Verifica dell'acquisizione V3
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Verifica dell'acquisizione V3
-uuid: 89137 ccf -4839-4 b 37-926 e -303 cf 8 e 511 a 5
+uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,12 +17,12 @@ Queste informazioni sono utili per eseguire un ciclo completo di verifica per il
 
 >[!IMPORTANT]
 >
->La sezione Acquisizione V 3 fa riferimento ai collegamenti di acquisizione creati con Acquisition Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi passare alla versione SDK 4.6.0 o successiva per iOS.
+> per "acquisizione V3" si intendono i collegamenti di acquisizione creati con Acquisition Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi passare alla versione SDK 4.6.0 o successiva per iOS.
 
-Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, seleziona una qualsiasi app mobile da usare come destinazione al momento di creare il collegamento della campagna. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non la capacità di verificare il funzionamento del collegamento.
+Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, seleziona una qualsiasi app mobile da usare come destinazione al momento di creare il collegamento della campagna. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento.
 
-1. Completa le attività preliminari in [Acquisizione app mobile](/help/ios/acquisition-main/acquisition.md).
-1. Navigate to the **[!UICONTROL Acquisition Builder]** in the Adobe Mobile Services UI and generate an acquisition campaign URL.
+1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/ios/acquisition-main/acquisition.md).
+1. Passa ad **[!UICONTROL Acquisition Builder]nell'interfaccia utente di Adobe Mobile Services e genera un URL per una campagna di acquisizione.**
 
    Ad esempio:
 
@@ -32,7 +32,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
 
    Se il collegamento di acquisizione fa riferimento a un'app per iOS e una per Android, usa Apple Store come store predefinito.
-1. Open the generated link in a desktop browser and go to `https://c00.adobe.com/v3/<appid>/end`.
+1. Apri il collegamento generato in un browser desktop e passa a `https://c00.adobe.com/v3/<appid>/end`.
 
    Nella risposta JSON dovresti trovare i dati contestuali `contextData`:
 
@@ -45,12 +45,12 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. *`appid`* deve corrispondere al *`appid`* collegamento di acquisizione. |
+   | acquisizione | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` dovrebbe essere un valore maggiore di 0. |
 
 
 1. (Condizionale) Se l'impostazione `ssl` nel file di configurazione dell'app è "true", aggiorna il collegamento di acquisizione, impostandolo per l'utilizzo del protocollo HTTPS.
-1. Fai clic sul collegamento generato dal dispositivo mobile su cui intendi installare l'app.
+1. Fate clic sul collegamento generato dal dispositivo mobile sul quale intendete installare l'app.
 
    I server di Adobe (`c00.adobe.com`) memorizzano l'impronta digitale ed eseguono il reindirizzamento all'App Store. Non è necessario scaricare l'app per eseguire la verifica.
 1. Sullo stesso dispositivo mobile utilizzato al punto 6, avvia l'applicazione per la prima volta.
@@ -65,7 +65,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
    In caso contrario, assicurati di aver completato i passaggi 4 e 5.
 
-   Seguono alcune informazioni su possibili errori:
+   Here is some information about possible errors:
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`(Impossibile recuperare la risposta del servizio di acquisizione) - Si è verificato un errore di rete.
 
@@ -79,7 +79,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` non è incluso `contextData`.
+      `a.referrer.campaign.name` is not included in .`contextData`
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -93,11 +93,11 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
       * Utilizzando strumenti di monitoraggio HTTP, è possibile monitorare gli hit inviati dall'app per fornire elementi utili alla verifica dell'attribuzione dell'acquisizione.
 
-         You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request sent to the acquisition server. Eventuali varianti nell'agente utente inviato potrebbero provocare errori di attribuzione.
+         Dovresti trovare una richiesta `/v3/<appid>/start` e una richiesta `/v3/<appid>/end`, entrambe inviate al server di acquisizione. Eventuali varianti nell'agente utente inviato potrebbero provocare errori di attribuzione.
 
          >[!TIP]
          >
-         >Assicuratevi che `https://c00.adobe.com/v3/<appid>/start` e `https://c00.adobe.com/v3/<appid>/end` abbiano gli stessi valori agente utente.
+         >Accertatevi che `https://c00.adobe.com/v3/<appid>/start` e `https://c00.adobe.com/v3/<appid>/end` abbiate gli stessi valori agente utente.
 
       * Il collegamento di acquisizione e l'hit dell'SDK dovrebbero usare lo stesso protocollo, HTTP o HTTPS.
 
