@@ -3,10 +3,10 @@ description: Queste informazioni possono essere utili per risolvere eventuali pr
 keywords: dispositivi mobili
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics (Metriche)
-uuid: 8813 e 8 d 8-bb 1 e -46 ad -83 cd -98 cd ae 6 f 73
+uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -37,13 +37,13 @@ Verifica che nel file manifesto sia dichiarato il destinatario della trasmission
 
 Nella vista a elenco della colonna **[!UICONTROL Stato]**, nella pagina Manage In-App Message (Gestisci messaggio in-app), verifica che il messaggio sia attivo.
 
-## Osserva *una volta*, *mostra sempre*, *mostra* le impostazioni offline nella pagina Pubblico.
+## Look at show once, show always, show offline settings on the Audience page.******
 
 Verifica che le seguenti impostazioni siano corrette. Nella pagina Pubblico, controlla le opzioni della scheda **Attivatore**, che consentono di specificare la frequenza con cui viene visualizzato il messaggio.
 
 ## Se utilizzi l'evento di avvio come attivatore...
 
-L'avvio viene attivato solo su una nuova sessione. Per informazioni su quando ha inizio una sessione, vedi `lifecycleTimeout` nel file [di configurazione](/help/ios/configuration/json-config/json-config.md) adbmobile JSON.
+L'avvio viene attivato solo su una nuova sessione. Per informazioni su quando ha inizio una sessione, vedi  in the ADBMobile JSON config file.`lifecycleTimeout`[](/help/ios/configuration/json-config/json-config.md)
 
 ## Ho aggiornato il mio messaggio in remoto, ma l'app visualizza ancora il messaggio precedente.
 
@@ -77,7 +77,7 @@ L'SDK richiama i messaggi nuovi e aggiornati al momento dell'avvio di un ciclo d
 
 Completa i seguenti passaggi:
 
-1. L'URL dei messaggi viene inserito nel file di configurazione per verificare che il messaggio remoto sia aggiornato (ad esempio `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`,)
+1. Curl your messages URL in your config file to verify the remote message is updated (for example, )`curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`
 1. Chiudi l'applicazione.
 1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
 1. Apri l'app, vai nel punto in cui dovrebbe essere visualizzato il messaggio e verifica che sia stato aggiornato.
