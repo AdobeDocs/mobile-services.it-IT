@@ -2,10 +2,10 @@
 description: A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può essere distribuita senza la relativa app contenitore. Con questa estensione, non è necessario un gruppo di app e i dati non devono essere condivisi con alcuna app contenitore.
 seo-description: A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può essere distribuita senza la relativa app contenitore. Con questa estensione, non è necessario un gruppo di app e i dati non devono essere condivisi con alcuna app contenitore.
 seo-title: Implementazione di un'estensione autonoma
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione di un'estensione autonoma
 topic: Sviluppatore e implementazione
-uuid: 9 b 47 f 082-b 78 f -4611-968 d -014 c 32 ede 6 bc
+uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può 
 
 >[!IMPORTANT]
 >
->Per utilizzare le estensioni autonome, devi disporre della versione SDK di Mobile 4.13.0 o successiva.
+>Per utilizzare le estensioni autonome, è necessario disporre della versione SDK 4.13.0 o successiva di Mobile.
 
 ## Configurare l'estensione autonoma da usare con l'SDK {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
