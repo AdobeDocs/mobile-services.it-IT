@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
 seo-title: Analisi del video
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Analisi del video
 topic: Sviluppatore e implementazione
-uuid: a 137 cc 27-dc 28-48 c 0-b 08 e -2 ca 17 d 2 c 7 e 1 d
+uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -19,30 +19,30 @@ Queste informazioni spiegano come misurare i video su Android con la soluzione d
 
 >[!TIP]
 >
->Durante la riproduzione di un video, al servizio vengono inviate frequenti chiamate "heartbeat" per misurare il tempo riprodotto. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, vedi [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Durante la riproduzione video, vengono inviate a questo servizio frequenti chiamate "heartbeat" per misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consultate [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali su una variabile di Analytics.
+Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali a una variabile Analytics.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
       * Scadenza predefinita: visita
       * Insight personalizzato (s.prop, usato per il percorso del video)
    * (**Obbligatorio**) Quando un visitatore visualizza il video in qualche modo, questa variabile dati di contesto raccoglie il nome del video, in base a quanto specificato nell'implementazione. Per questa variabile puoi aggiungere delle classificazioni.
    * (**Facoltativo**) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
 
 * **a.media.name**
-   * Tipo di variabile: Custom Insight (s. prop)
+   * Variable type: Custom Insight (s.prop)
    * (**Facoltativo**) Fornisce informazioni sul percorso del video.
 
       >[!IMPORTANT]
       >
-      >Il percorso deve essere abilitato per questa variabile da expcare.
+      >Il percorso deve essere abilitato per questa variabile da ExpCare.
    * Tipo evento: Insight personalizzato (s.prop)
 
 * **a.media.segment**
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
    * (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l'ordine in cui il segmento appare nel video.
 
@@ -57,7 +57,7 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
 
 
 * **a.contentType**
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
    * Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore.
 
@@ -151,7 +151,7 @@ public boolean eventFirstTime;
 
 ## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-Di seguito sono descritti i metodi della classe Media Measurement:
+Di seguito sono riportati i metodi della classe Media Measurement:
 
 * **settingsWith**
 
@@ -248,7 +248,7 @@ Di seguito sono descritti i metodi della classe Media Measurement:
       public static void stop(String name, double offset); 
       ```
 
-   * Di seguito è riportato l'esempio di codice o questo metodo:
+   * Here is the code sample or this method:
 
       ```java
       Media.stop("name", 0);
@@ -270,7 +270,7 @@ Di seguito sono descritti i metodi della classe Media Measurement:
       Media.click("name", 0);
       ```
 
-* **track**
+* **Codice**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
 
