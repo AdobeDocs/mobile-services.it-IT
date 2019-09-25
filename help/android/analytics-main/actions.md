@@ -1,11 +1,11 @@
 ---
 description: Per “azioni” si intendono gli eventi che si verificano nell'app Android oggetto delle misurazioni.
 seo-description: Per “azioni” si intendono gli eventi che si verificano nell'app Android oggetto delle misurazioni.
-seo-title: Tracciamento delle azioni dell'app
-solution: Marketing Cloud, Analytics
-title: Tracciamento delle azioni dell'app
+seo-title: Track app actions
+solution: Marketing Cloud,Analytics
+title: Tracciare le azioni dell'app
 topic: Sviluppatore e implementazione
-uuid: fe 01 c 1 df-f 6 bb -4 b 32-b 3 ef -959 d 2 c 724 af 6
+uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -22,7 +22,7 @@ A ogni azione corrispondono una o più metriche che vengono incrementate ogni vo
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto intellij IDEA o Eclipse* nell'implementazione [e nel ciclo di vita principali](/help/android/getting-started/dev-qs.md).
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
 
 1. Importa la libreria:
 
