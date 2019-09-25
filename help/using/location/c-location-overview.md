@@ -3,10 +3,10 @@ description: Il rapporto di panoramica Posizione permette di visualizzare vari p
 keywords: dispositivi mobili
 seo-description: Il rapporto di panoramica Posizione permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l'app viene utilizzata.
 seo-title: Panoramica (Posizione)
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Panoramica (Posizione)
 topic: Rapporti, Metriche
-uuid: a 701 abc 3-001 b -4015-843 f -5 fb 2 c 6 c 80 d 17
+uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -59,7 +59,7 @@ Puoi aggiungere suddivisioni e metriche secondarie, che modificano l'altezza di 
 
 >[!TIP]
 >
->Più anelli vengono aggiunti al grafico sunburst, più tempo necessario per elaborare.
+>Più anelli si aggiungono al grafico sunburst, più tempo di elaborazione sarà necessario.
 
 Per aggiungere suddivisioni e metriche secondarie, fai clic su **[!UICONTROL Suddivisione luoghi]** nella barra del titolo del rapporto, quindi fai clic su **Personalizza]per aprire la barra laterale destra.[!UICONTROL **
 
