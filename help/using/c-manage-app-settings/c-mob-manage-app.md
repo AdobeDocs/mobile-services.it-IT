@@ -3,10 +3,10 @@ description: Puoi tracciare e gestire i dati che ricevi dall'app configurando un
 keywords: dispositivi mobili
 seo-description: Puoi tracciare e gestire i dati che ricevi dall'app configurando una serie di variabili e metriche.
 seo-title: Gestione dell'app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Gestione dell'app
 topic: Metrics (Metriche)
-uuid: 0 cc 356 c 3-8457-40 a 7-8 c 97-7 cbc 68 a 5 dc 0 c
+uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -47,9 +47,9 @@ L'elenco seguente contiene le variabili personalizzate che puoi configurare:
    Quando viene impostato un valore per una proprietà di una chiamata di tracciamento (o hit), esso vale solo per tale chiamata.
 
 * The **[!UICONTROL Custom Variables]** (or evars) also answer the question "which one?" Tuttavia, un valore eVar può essere applicato non solo all'hit in cui viene inviato ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all'impostazione di un nuovo valore.
-* The **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** behave the same as variables except they allow you to capture multiple values on one hit. Per ulteriori informazioni, consulta [Variabili elenco](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
+* The **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** behave the same as variables except they allow you to capture multiple values on one hit. Per ulteriori informazioni, vedere Variabili [](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html)elenco.
 
-Le seguenti mappature vengono visualizzate in Analytics come create in Mobile Services.
+Le mappature seguenti vengono visualizzate in Analytics come create in Mobile Services.
 
 * **[!UICONTROL Nome]**
 
@@ -61,7 +61,7 @@ Le seguenti mappature vengono visualizzate in Analytics come create in Mobile Se
 
    Fai clic sulla colonna dei dati di contesto e seleziona la variabile di dati di contesto da mappare. L'elenco a discesa contiene le variabili ricevute negli ultimi 30 giorni; se i dati di contesto che desideri mappare non si trovano nell'elenco, puoi immetterli.
 
-* **[!UICONTROL Persistenza (variabili personalizzate e variabili elenco personalizzate)]**
+* **[!UICONTROL Permanenza (variabili personalizzate e variabili elenco personalizzate)]**
 
    La persistenza determina il punto in cui il valore di una variabile personalizzata (eVar) scade o non viene più associato a ulteriori hit. Se una eVar risulta scaduta nel momento in cui viene attivato un hit, il valore Nessuno viene associato a tale hit per la eVar in questione. Ciò significa che nessun valore eVar era attivo al momento dell'attivazione dell'hit.
 
@@ -69,28 +69,28 @@ Le seguenti mappature vengono visualizzate in Analytics come create in Mobile Se
 
    * **[!UICONTROL Sessione]**
 
-      Il valore evar persiste per tutta la durata della visita di Analytics.
+      Il valore eVar persiste per tutta la durata della visita di Analytics.
 
    * **[!UICONTROL Chiamata di tracciamento]**
 
-      Il valore evar persiste solo per la chiamata di tracciamento o per hit in cui è stato incluso.
+      Il valore eVar persiste solo per la chiamata di tracciamento o per l'hit in cui è stata inclusa.
 
    * **[!UICONTROL Senza scadenza]**
 
-      Il valore evar persiste per tutte le chiamate di tracciamento successive.
+      Il valore eVar persiste per tutte le chiamate di tracciamento successive.
    * **[!UICONTROL Avanzate]**
 
-      Adobe Analytics offre un'interfaccia utente più avanzata per impostare la persistenza delle eVar. Se per la evar viene impostato un valore di persistenza che non è supportato in Mobile Services, questo valore viene visualizzato nell'interfaccia utente di Mobile Services.
+      Adobe Analytics offre un'interfaccia utente più avanzata per impostare la persistenza delle eVar. Se per l'eVar è impostato un valore di persistenza che non è supportato in Mobile Services, tale valore viene visualizzato nell'interfaccia di Mobile Services.
 
       To manage eVars, click **[!UICONTROL Adobe Analytics Report Suite Manager]** &gt; **[!UICONTROL Conversion Variables UI]**.
 
    * **[!UICONTROL Supporto elenco]**
 
-      Abilita il passaggio di più valori da associare alla proprietà in una chiamata di tracciamento. Il delimitatore deve essere un carattere e non può essere uno zero o uno spazio.
+      Abilita il passaggio di più valori da associare alla proprietà in una chiamata di tracciamento. Il carattere di delimitazione deve essere un carattere e non può essere uno zero o uno spazio.
 
    * **[!UICONTROL Delimitatore]**
 
-      Il delimitatore deve essere un carattere e non può essere uno zero o uno spazio.
+      Il carattere di delimitazione deve essere un carattere e non può essere uno zero o uno spazio.
 
 ### Variabili Analytics supplementari
 
@@ -102,9 +102,9 @@ Seleziona un numero di variabile non utilizzato e specifica un nome. Se necessar
 
 * **Metriche personalizzate**
 
-   Le metriche (o eventi) rispondono alle domande *?* o *quanti?*. Gli eventi possono essere incrementati ogni volta che l'utente esegue un'azione, oppure contenere valori numerici come prezzi. Le metriche personalizzate includono eventi quali la creazione di un'app, il download o l'esportazione di un file PDF o CSV, il salvataggio di una campagna, il download dell'SDK, la generazione di un rapporto, l'aggiunta di un collegamento all'app store, l'attivazione di un messaggio in-app e così via.
+   *Le metriche (o eventi) rispondono alle domande* quanto? o *quanti?*. Gli eventi possono essere incrementati ogni volta che l'utente esegue un'azione, oppure contenere valori numerici come prezzi. Le metriche personalizzate includono eventi quali la creazione di un'app, il download o l'esportazione di un file PDF o CSV, il salvataggio di una campagna, il download dell'SDK, la generazione di un rapporto, l'aggiunta di un collegamento all'app store, l'attivazione di un messaggio in-app e così via.
 
-   Seleziona uno dei tipi di metriche personalizzati seguenti:
+   Seleziona uno dei seguenti tipi di metriche personalizzate:
 
    * **[!UICONTROL Numero intero]**
    * **[!UICONTROL Numero decimale]**
@@ -112,11 +112,11 @@ Seleziona un numero di variabile non utilizzato e specifica un nome. Se necessar
 
 ## Gestire i punti di interesse {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6}
 
-I punti di interesse ti consentono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest'ultimo è associato all'hit. Per ulteriori informazioni sui punti di interesse, vedi [Gestire i punti di interesse](/help/using/location/t-manage-points.md).
+I punti di interesse consentono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest'ultimo è associato all'hit. Per ulteriori informazioni sui punti di interesse, vedi [Gestire i punti di interesse](/help/using/location/t-manage-points.md).
 
 ## Gestione destinazioni collegamenti {#section_F722A387E22A430187B063D358A87711}
 
-Puoi creare, modificare, archiviare o annullare l'archiviazione ed eliminare le destinazioni dei collegamenti. Queste destinazioni possono essere richiamate in linea quando crei collegamenti di marketing, notifiche push o messaggi in-app. Per ulteriori informazioni sulle destinazioni dei collegamenti, consulta [Gestione destinazioni collegamenti](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
+Puoi creare, modificare, archiviare o annullare l'archiviazione ed eliminare le destinazioni dei collegamenti. Tali destinazioni possono essere richiamate in linea quando crei collegamenti marketing, notifiche push o messaggi in-app. Per ulteriori informazioni sulle destinazioni dei collegamenti, consulta [Gestione delle destinazioni](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)dei collegamenti.
 
 ## Gestione postback {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
