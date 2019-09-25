@@ -3,10 +3,10 @@ description: I rapporti sull'utilizzo visualizzano la lunghezza di sessione medi
 keywords: dispositivi mobili
 seo-description: I rapporti sull'utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l'app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall'avvio iniziale.
 seo-title: Rapporti
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Rapporti
 topic: Rapporti, Metriche
-uuid: 2 abc 2 bd 1-dbae -4 af 1-9 b 8 d -1 df 2 f 6 d 3 a 81 f
+uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
