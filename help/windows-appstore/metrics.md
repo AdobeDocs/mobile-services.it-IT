@@ -1,12 +1,12 @@
 ---
 description: Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
-keywords: android; libreria; mobile; sdk
+keywords: android;library;mobile;sdk
 seo-description: Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
 seo-title: Metriche del ciclo di vita
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metriche del ciclo di vita
 topic: Sviluppatore e implementazione
-uuid: c 483271 f-f 620-46 f 4-aad 8-d 5 f 02 d 763 f 7 d
+uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,13 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
 
-Per ulteriori informazioni, vedi [Risoluzione dei problemi relativi ai dati del ciclo di vita](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Per ulteriori informazioni, consulta [Risoluzione dei problemi dei dati](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)del ciclo di vita.
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Audience Manager. Analytics e Target usano lo stesso formato e Audience Manager usa un prefisso diverso per ogni metrica.
+Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Audience Manager. Analytics e Target usano lo stesso formato, e Audience Manager usa un prefisso diverso per ogni metrica.
 
-Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione elencata di seguito, e le eccezioni vengono indicate.
+Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione indicata di seguito, e vengono annotate le eccezioni.
 
 ### Metrics (Metriche)
 
@@ -88,7 +88,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l'installazione. Il formato della data `MM/DD/YYYY`è.
+   Data del primo avvio dopo l'installazione. Il formato della data è `MM/DD/YYYY`.
 
    * Analytics context data/Target: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
@@ -137,7 +137,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Versione sistema operativo**
 
-   La versione del sistema operativo.
+   The OS version.
 
    * Analytics context data/Target: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
@@ -148,7 +148,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Analytics context data/Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -159,7 +159,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Analytics context data/Target: `a.LaunchesSinceUpgrade`
    * Audience Manager: `c_a_LaunchesSinceUpgrade`
@@ -177,7 +177,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Analytics context data/Target: `a.CarrierName`
    * Audience Manager: `c_a_CarrierName`
@@ -192,7 +192,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni mobili dai metodi elencati nella descrizione.
+Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzione mobile dai metodi elencati nella descrizione.
 
 ### Metrics (Metriche)
 
@@ -201,21 +201,21 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.total`
-   * Caratteristica Audience Manager: `c_a_action_time_total`
+   * Audience Manager trait: `c_a_action_time_total`
 
 * **Tempo azione in-app**
 
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.inapp`
-   * Caratteristica Audience Manager: `c_a_action_time_inapp`
+   * Caratteristiche di Audience Manager: `c_a_action_time_inapp`
 
 * **Valore "lifetime" del ciclo di vita (evento)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Caratteristica Audience Manager: `c_a_ltv_amount`
+   * Caratteristiche di Audience Manager: `c_a_ltv_amount`
 
 ## Dimensioni
 
@@ -223,11 +223,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Populated by `trackLocation` methods.
 
-   * Parametro di dati contestuali/Target di Analytics:
+   * Dati contestuali di Analytics/parametro Target:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caratteristica Audience Manager:
+   * Audience Manager trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -237,11 +237,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Populated by `trackLocation` methods.
 
-   * Parametro di dati contestuali/Target di Analytics:
+   * Dati contestuali di Analytics/parametro Target:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caratteristica Audience Manager:
+   * Caratteristiche di Audience Manager:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -251,11 +251,11 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
 
    Populated by `trackLocation` methods.
 
-   * Parametro di dati contestuali/Target di Analytics:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caratteristica Audience Manager:
+   * Audience Manager trait:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -266,18 +266,18 @@ Le metriche e le dimensioni seguenti vengono acquisite in variabili di soluzioni
    Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
 
    * Analytics context data/Target parameter: `a.loc.poi`
-   * Caratteristica Audience Manager: `c_a_loc_poi`
+   * Audience Manager trait: `c_a_loc_poi`
 
 * **Distanza dal centro del punto di interesse**
 
    Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
 
    * Analytics context data/Target parameter: `a.loc.dist`
-   * Caratteristica Audience Manager: `c_a_loc_dist`
+   * Caratteristiche di Audience Manager: `c_a_loc_dist`
 
 * **Valore "lifetime" del ciclo di vita (variabile di conversione)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Caratteristica Audience Manager: `c_a_ltv_amount`
+   * Caratteristiche di Audience Manager: `c_a_ltv_amount`
