@@ -1,11 +1,11 @@
 ---
 description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
 seo-description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
-seo-title: Guida introduttiva ad Android Wearable
-solution: Marketing Cloud, Analytics
-title: Guida introduttiva ad Android Wearable
+seo-title: Guida introduttiva sulle indossabili Android
+solution: Marketing Cloud,Analytics
+title: Guida introduttiva sulle indossabili Android
 topic: Sviluppatore e implementazione
-uuid: bfe 5 d 41 e-b 17 c -4634-80 ac -7 a 38671 ecb 81
+uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova e
 
 ## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-Per ulteriori informazioni sull'importazione dell'SDK nel progetto, vedi [Implementazione di base e ciclo di vita](/help/android/getting-started/dev-qs.md).
+For more information about importing the SDK into your project, see [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
 
 1. Aggiungi il file `ADBMobileConfig.json` alla cartella assets del progetto.
 1. Aggiungi il file `adobeMobileLibrary-*.jar` alla cartella libs oppure accertati che il progetto faccia riferimento a tale file.
@@ -40,7 +40,7 @@ Per ulteriori informazioni sull'importazione dell'SDK nel progetto, vedi [Implem
    }
    ```
 
-1. Aggiungete il codice seguente al `AndroidManifest.xml` file:
+1. Add the following code to the  file:`AndroidManifest.xml`
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -88,7 +88,7 @@ Per ulteriori informazioni sull'importazione dell'SDK nel progetto, vedi [Implem
    }
    ```
 
-1. Aggiungete `WearListenerService` al `AndroidManifest.xml` file:
+1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -175,7 +175,7 @@ Per ulteriori informazioni sull'importazione dell'SDK nel progetto, vedi [Implem
    }
    ```
 
-1. Aggiungete `WearListenerService` al `AndroidManifest.xml` file:
+1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
 
    ```java
    If you are using Google Play Services  < 8.2 
