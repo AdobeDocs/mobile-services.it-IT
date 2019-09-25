@@ -2,18 +2,18 @@
 description: Il rapporto Versioni è un rapporto temporale che presenta informazioni sulle diverse versioni dell'app eseguite sui dispositivi degli utenti.
 keywords: dispositivi mobili
 seo-description: Il rapporto Versioni è un rapporto temporale che presenta informazioni sulle diverse versioni dell'app eseguite sui dispositivi degli utenti.
-seo-title: Rapporto versioni
-solution: Marketing Cloud, Analytics
-title: Rapporto versioni
+seo-title: Versions report
+solution: Marketing Cloud,Analytics
+title: Versions report
 topic: Rapporti, Metriche
-uuid: 67 e 759 d 3-7 e 4 f -4985-9 e 74-61 c 782 f 0 fbb 5
+uuid: 67e759d3-7e4f-4985-9e74-61c782f0fbb5
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Rapporto versioni {#versions}
+# Versions report {#versions}
 
 Il rapporto Versioni è un rapporto temporale che presenta informazioni sulle diverse versioni dell'app eseguite sui dispositivi degli utenti.
 
