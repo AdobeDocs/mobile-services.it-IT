@@ -2,20 +2,20 @@
 description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
 keywords: dispositivi mobili
 seo-description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
-seo-title: Messaggi
-solution: Marketing Cloud, Analytics
-title: Messaggi
+seo-title: Messaggistica
+solution: Marketing Cloud,Analytics
+title: Messaggistica
 topic: Metrics (Metriche)
-uuid: e 32 d 3 e 35-2 d 09-4 ddf -8919-75 dc 895 abcb 3
+uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ---
 
 
-# Messaggi {#messaging}
+# Messaggistica {#messaging}
 
-Puoi creare, gestire e generare rapporti sui messaggi in-app e push.
+Puoi creare, gestire e includere nei rapporti i messaggi in-app e push.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
@@ -41,12 +41,12 @@ Sono supportati i tipi di messaggi seguenti:
 * Avvisi nativi
 * Notifiche locali
 
-Per capire come funzionano i messaggi in-app, ecco alcune informazioni aggiuntive:
+To help you understand how in-app messaging works, here is some additional information:
 
-* I messaggi in-app richiedono la versione SDK 4.2 o successiva.
+* In-app messages require SDK version 4.2 or later.
 * Devi specificare gli utenti con diritti di amministratore delle app mobili.
 
-   Tali diritti consentono di accedere ai collegamenti di acquisizione e ai messaggi in-app. Per ulteriori informazioni, consultate [Ruoli e autorizzazioni](/help/using/gs/c-mob-roles-and-permissions.md).
+   Questi diritti consentono l'accesso ai collegamenti di acquisizione e ai messaggi in-app. Per ulteriori informazioni, vedere [Ruoli e autorizzazioni](/help/using/gs/c-mob-roles-and-permissions.md).
 * Dopo essere stato approvato, il messaggio viene pubblicato automaticamente nell'applicazione.
 * L'SDK presenta il messaggio agli utenti quando i parametri del messaggio (caratteristiche, attivatore e pianificazione) sono soddisfatti.
 * I messaggi possono contenere un HTML personalizzato o un'immagine che utilizzano un URL online.
@@ -59,4 +59,4 @@ Per capire come funzionano i messaggi in-app, ecco alcune informazioni aggiuntiv
 
 I messaggi push vengono inviati agli utenti che hanno acconsentito alla ricezione di notifiche. Puoi impostare come destinatari di questi messaggi gli utenti dei segmenti Analytics o di segmenti personalizzati. I messaggi push vengono recapitati al di fuori dell'app e sono quindi molto utili per coinvolgere di nuovo utenti passivi o per inviare informazioni specifiche in base all'ora e alla posizione.
 
-Prima di configurare i messaggi push, consulta [Prerequisiti per abilitare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Una volta eseguite tali operazioni, devi configurare i messaggi push nelle impostazioni dell'app. Per ulteriori informazioni, vedi [Configurare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Prima di configurare i messaggi push, consulta [Prerequisiti per abilitare i messaggi](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)push. Una volta eseguite tali operazioni, devi configurare i messaggi push nelle impostazioni dell'app. Per ulteriori informazioni, vedi [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
