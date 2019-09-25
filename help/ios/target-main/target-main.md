@@ -2,10 +2,10 @@
 description: Queste informazioni sono utili per trasmettere contenuti mirati nelle applicazioni iOS.
 seo-description: Queste informazioni sono utili per trasmettere contenuti mirati nelle applicazioni iOS.
 seo-title: Target
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Target
 topic: Sviluppatore e implementazione
-uuid: c 2 b 134 bb -1 c 29-4617-bd 9 e-fa 3940483361
+uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Target{#target}
 
-Le informazioni contenute in questa sezione consentono di fornire contenuti mirati nelle applicazioni iOS.
+The information in this section helps you deliver targeted content in iOS applications.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
