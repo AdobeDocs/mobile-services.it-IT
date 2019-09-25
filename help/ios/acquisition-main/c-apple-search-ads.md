@@ -43,7 +43,7 @@ Per abilitare l'app all'attribuzione Search Ad:
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
+   Inoltre, i seguenti valori saranno mappati dal dizionario `"iad"` ai nostri tipici campi per dati contestuali per l'acquisizione:
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
