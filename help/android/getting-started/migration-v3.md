@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
 seo-title: Migrazione alla libreria Android 4.x
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Migrazione alla libreria Android 4.x
 topic: Sviluppatore e implementazione
-uuid: 906 e 83 bb -2 faf -4 aa 2-ac 9 b -3 fba 6 b 833 c 7 e
+uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -80,9 +80,9 @@ Nella tabella seguente sono elencate le variabili di configurazione che devi spo
 
 ### Migrazione dalla versione 3.x
 
-Per effettuare la migrazione dalla versione 3. x alla 4, sposta il valore variabile/metodo di configurazione nella `ADBMobileConfig.json` variabile.
+Per eseguire la migrazione dalla versione 3.x alla versione 4, spostare la variabile di configurazione/il valore del metodo nella `ADBMobileConfig.json` variabile.
 
-| Variabile di configurazione o metodo | Variable in the `ADBMobileConfig.json` file |
+| Configuration Variable or Method | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
 | setOfflineTrackingEnabled | "offlineEnabled" |
 | setOfflineHitLimit | "batchLimit" |
@@ -96,14 +96,14 @@ Per effettuare la migrazione dalla versione 3. x alla 4, sposta il valore variab
 
 ### Migrazione dalla versione 2.x
 
-Per effettuare la migrazione dalla versione 2. x alla versione 4, spostare il valore dalla prima colonna alla variabile nella seconda colonna.
+To migrate from version 2.x to version 4, move the value from the first column to the variable in the second column.
 
 | Variabile di configurazione | Variable in the `ADBMobileConfig.json` file |
 | --- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server", rimuovete il `"https://"` prefisso. Il prefisso del protocollo viene aggiunto in automatico in base all'impostazione "ssl". |
+| trackingServer | "server", remove the `"https://"` prefix. Il prefisso del protocollo viene aggiunto in automatico in base all'impostazione "ssl". |
 | trackingServerSecure | Rimuovi. Per connessioni sicure, definisci "server" e quindi abilita "ssl". |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -116,21 +116,21 @@ Per effettuare la migrazione dalla versione 2. x alla versione 4, spostare il va
 | dynamicVariablePrefix | Rimuovi, non è più utilizzata. |
 | visitorNamespace | Rimuovi, non è più utilizzata. |
 | usePlugins | Rimuovi, non è più utilizzata. |
-| useBestPractices  tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituita dalle metriche del ciclo di vita. |
+| useBestPractices  tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito da Metriche del ciclo di vita. |
 
 ## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 Invece di usare le chiamate `track` e `trackLink` incentrate sul web, la versione 4 dell'SDK usa i metodi seguenti:
 
-* `trackState`, sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`e `cart`così via.
+* `trackState`, che sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart`e così via.
 
    Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
-* `trackAction` azioni, ad esempio `logons``banner taps`, `feed subscriptions`e così via che si verificano nell'app e che si desidera misurare.
+* `trackAction` azioni, come `logons`, `banner taps``feed subscriptions`, e così via, che si verificano nell'app e che desideri misurare.
 
-`contextData` Il parametro di entrambi questi metodi è un `HashMap<String, Object>`, che contiene le coppie nome-valore che vengono inviate come dati contestuali.
+The `contextData` parameter for both of these methods is a `HashMap<String, Object>`, which contains the name-value pairs that are sent as context data.
 
-## Eventi, prop ed evar
+## Eventi, prop ed eVar
 
 Nella versione 4, non è più possibile assegnare direttamente nell'app variabili quali eventi, eVar, prop, eredi ed elenchi. L'SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell'app sulle variabili di Analytics a scopo di reportistica.
 
@@ -140,11 +140,11 @@ Le regole di elaborazione offrono i seguenti vantaggi:
 * Invece di impostare variabili specifiche per una suite di rapporti, è possibile assegnare ai dati dei nomi significativi.
 * L'impatto dell'invio di dati aggiuntivi è limitato.
 
-   Questi valori compariranno nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione. Per ulteriori informazioni, vedi [Regole di elaborazione e dati contestuali](/help/android/getting-started/proc-rules.md).
+   Questi valori compariranno nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione. Per ulteriori informazioni, vedere Regole di [elaborazione e dati](/help/android/getting-started/proc-rules.md)contestuali.
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti all'HashMap `data`. This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should be removed and the values be added to the `data` parameter.
 
-## Appsection/server, geozip, transaction ID, Campaign e altre variabili standard
+## AppSection/server, GeoZip, ID transazione, Campaign e altre variabili standard
 
 I dati che precedentemente impostavi sull'oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti all'HashMap `data`. L'unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
 
