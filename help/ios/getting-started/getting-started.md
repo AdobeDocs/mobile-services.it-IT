@@ -1,11 +1,11 @@
 ---
-description: 'Le seguenti informazioni sono utili per iniziare a usare l''SDK per iOS per le soluzioni Experience Cloud '
-seo-description: 'Le seguenti informazioni sono utili per iniziare a usare l''SDK per iOS per le soluzioni Experience Cloud '
+description: 'Le seguenti informazioni sono utili per iniziare a usare l’SDK per iOS per le soluzioni Experience Cloud '
+seo-description: 'The following information helps you get started with the iOS SDK for Experience Cloud Solutions '
 seo-title: Panoramica introduttiva
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Panoramica introduttiva
 topic: Sviluppatore e implementazione
-uuid: a 2 b 9 baad-b 959-4 b 9 a -893 d -99 c 0 f 4072 e 8 d
+uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Panoramica introduttiva {#getting-started}
 
-Le seguenti informazioni sono utili per iniziare a usare l'SDK per iOS per le soluzioni Experience Cloud.
+Le informazioni seguenti sono utili per iniziare a usare l’SDK per iOS per le soluzioni Experience Cloud.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
