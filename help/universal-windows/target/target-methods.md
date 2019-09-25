@@ -2,10 +2,10 @@
 description: Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-description: Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-title: Metodi di Target
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Target
 topic: Sviluppatore e implementazione
-uuid: 2 ad 5953 b -7850-446 a -8053-b 3715 b 86329 b
+uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Univers
 
 Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager.
 
-[Le metriche del ciclo di vita](/help/universal-windows/metrics.md) vengono inviate come parametri a ogni caricamento mbox.
+[Lifecycle metrics are sent as parameters to each mbox load.](/help/universal-windows/metrics.md)
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## Costanti di stringa
 
-Queste informazioni sono utili per impostare le chiavi per i parametri personalizzati.
+This information helps you set keys for custom parameters.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -68,7 +68,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 }
 ```
 
-* **Loadrequest (winjs: Loadrequest**
+* **LoadRequest (winJS: loadRequest)**
 
    Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
@@ -87,7 +87,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
        });
       ```
 
-* **Createrequest (winjs: Createrequest)**
+* **CreateRequest (winJS: createRequest)**
 
    Crea un oggetto `TargetLocationRequest` con i parametri forniti.
 
@@ -104,7 +104,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner","default.png", null); 
       ```
 
-* **Createorderconfirmrequest (winjs: Createorderconfirmrequest)**
+* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
 
    Crea un oggetto `TargetLocationRequest` con i parametri forniti.
 
@@ -121,7 +121,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm","order","47.88","3722",null);
       ```
 
-* **Clearcookies (winjs: Clearcookies**
+* **ClearCookies (winJS: clearCookies)**
 
    Elimina i cookie di Target per l’applicazione sul dispositivo corrente.
 
@@ -137,7 +137,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ADBMobile.Target.clearCookies();
       ```
 
-* **Getpcid (winjs: Getpcid)**
+* **GetPcId (winJS: getPcId)**
 
    Restituisce il cookie dell’ID del PC del dispositivo corrente.
 
@@ -153,7 +153,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       autopcId = ADBMobile.Target.getPcId();
       ```
 
-* **Getsessionid (winjs: Getsessionid)**
+* **GetSessionId (winJS: getSessionId)**
 
    Restituisce il cookie dell’ID sessione del dispositivo corrente.
 
