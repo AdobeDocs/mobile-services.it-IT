@@ -2,10 +2,10 @@
 description: Note sulla versione e problemi noti dell’SDK 4.x della piattaforma UWP (Universal Windows Platform) per le soluzioni Experience Cloud.
 seo-description: Note sulla versione e problemi noti dell’SDK 4.x della piattaforma UWP (Universal Windows Platform) per le soluzioni Experience Cloud.
 seo-title: Note sulla versione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Note sulla versione
 topic: Sviluppatore e implementazione
-uuid: 9 c 164 e 5 c-ce 2 c -4 eda-bba 6-71324 e 4954 fa
+uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
