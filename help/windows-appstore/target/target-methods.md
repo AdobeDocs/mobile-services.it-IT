@@ -1,11 +1,11 @@
 ---
-description: Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
-seo-description: Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
+description: List of Target methods provided by the Windows 8.1 Universal App Store library.
+seo-description: Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
 seo-title: Metodi di Target
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Target
 topic: Sviluppatore e implementazione
-uuid: 8 c 35 b 31 c-c 70 b -4 dba -8759-173342 a 301 e 9
+uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -14,7 +14,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 # Target methods {#target-methods}
 
-Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
+List of Target methods provided by the Windows 8.1 Universal App Store library.
 
 Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso "Target".
 
@@ -24,7 +24,7 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-## Riferimento classe: Targetlocationrequest
+## Riferimento classe: TargetLocationRequest
 
 ### Proprietà
 
@@ -36,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## Costanti stringa
 
-Queste informazioni sono utili per impostare le chiavi per i parametri personalizzati.
+This information helps you set keys for custom parameters.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -68,7 +68,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 }
 ```
 
-* **Loadrequest (winjs: Loadrequest**
+* **LoadRequest (winJS: loadRequest)**
 
    Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
@@ -87,7 +87,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       });
       ```
 
-* **Createrequest (winjs: Createrequest)**
+* **CreateRequest (winJS: createRequest)**
 
    Crea un oggetto `TargetLocationRequest` con i parametri forniti.
 
@@ -104,7 +104,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner", "default.png", null); 
       ```
 
-* **Createorderconfirmrequest (winjs: Createorderconfirmrequest)**
+* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
 
    Crea un oggetto `TargetLocationRequest` con i parametri forniti.
 
@@ -121,7 +121,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm", "order", "47.88", "3722", null); 
       ```
 
-* **Clearcookies (winjs: Clearcookies**
+* **ClearCookies (winJS: clearCookies)**
 
    Elimina i cookie di Target per l’applicazione sul dispositivo corrente.
 
@@ -137,7 +137,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ADBMobile.Target.clearCookies();
       ```
 
-* **Getpcid (winjs: Getpcid)**
+* **GetPcId (winJS: getPcId)**
 
    Restituisce il cookie dell’ID del PC del dispositivo corrente.
 
@@ -153,7 +153,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       auto pcId = ADBMobile.Target.getPcId(); 
       ```
 
-* **Getsessionid (winjs: Getsessionid)**
+* **GetSessionId (winJS: getSessionId)**
 
    Restituisce il cookie dell’ID sessione del dispositivo corrente.
 
