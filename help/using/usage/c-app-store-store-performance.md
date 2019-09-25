@@ -3,10 +3,10 @@ description: Il rapporto Panoramica dell'app store fornisce un'istantanea delle 
 keywords: dispositivi mobili
 seo-description: Il rapporto Panoramica dell'app store fornisce un'istantanea delle metriche dell'app store, con informazioni quali numero di download, acquisti in-app, valutazione media nell'app store, ricavi da download, ricavi in-app, download per paese, download per app store e acquisti in-app per nome.
 seo-title: Rapporto Panoramica dell’app store
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Rapporto Panoramica dell’app store
 topic: Metrics (Metriche)
-uuid: ac 066 f 31-ec 4 b -4 b 67-b 839-780 c 2 cd 1574 e
+uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -29,11 +29,11 @@ Fai clic su una metrica per nascondere o visualizzare la riga corrispondente. Pa
 
 >[!IMPORTANT]
 >
->Le metriche dell'app store, come download, classifica, entrate, valutazioni e così via in Adobe Analytics richiedono un'integrazione con il connettore dati con un fornitore appropriato. `appFigures` attualmente offre un'integrazione, che richiede l'acquisto di uno specifico prodotto e/o servizio da `appFigures`**prima** che sia possibile abilitare l'integrazione. Per maggiori informazioni sulle integrazioni tramite Data Connector, vedi [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
+>Le metriche dell'app store, come download, classificazione, entrate, valutazione e così via in Adobe Analytics richiedono un'integrazione del connettore dati con un fornitore appropriato. `appFigures` attualmente offre un'integrazione, che richiede l'acquisto di uno specifico prodotto e/o servizio da `appFigures`**prima** che sia possibile abilitare l'integrazione. Per maggiori informazioni sulle integrazioni tramite Data Connector, vedi [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Oltre a modificare l'intervallo di date del rapporto facendo clic sull'icona Calendario in alto a destra, puoi personalizzare alcuni dei rapporti con possibilità di approfondimento, aggiungere filtri e serie (metriche), aggiungere filtri fissi e scaricare il rapporto in formato PDF o CSV. Per ulteriori informazioni, consultate [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
+>Oltre a modificare l'intervallo di date del rapporto facendo clic sull'icona del calendario in alto a destra, puoi personalizzare alcuni dei rapporti di approfondimento, aggiungere filtri e serie (metriche), aggiungere filtri fissi e scaricare il rapporto in formato PDF o CSV. For more information, see Customize reports.[](/help/using/usage/reports-customize/reports-customize.md)
 
 ## Valutazione media in app store {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
