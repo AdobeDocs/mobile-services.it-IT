@@ -2,10 +2,10 @@
 description: Queste informazioni sono utili per usare la funzione Posizione nelle app iOS.
 seo-description: Queste informazioni sono utili per usare la funzione Posizione nelle app iOS.
 seo-title: Posizione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Posizione
 topic: Sviluppatore e implementazione
-uuid: a 4 e 5650 a-f 5 d 3-4 fb 1-bd 11-a 27 a 3918 d 763
+uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Posizione {#location}
 
-Le informazioni contenute in questa sezione consentono di utilizzare le funzioni Posizione nelle app iOS.
+The information in this section helps you use the Location features in your iOS apps.
 
 ## Nuova versione di Adobe Experience Cloud SDK
 
