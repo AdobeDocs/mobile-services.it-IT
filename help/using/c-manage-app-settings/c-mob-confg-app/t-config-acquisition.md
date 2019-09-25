@@ -3,10 +3,10 @@ description: Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione 
 keywords: dispositivi mobili
 seo-description: Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 seo-title: Configurare le opzioni SDK acquisizione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Configurare le opzioni SDK acquisizione
 topic: Metrics (Metriche)
-uuid: 50 ce 51 ad -39 bf -4 ac 7-bd 94-757443 d 11 ca 7
+uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
 source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
@@ -27,7 +27,7 @@ Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni 
 
       Specifica il valore di timeout del referente.
 
-      Il valore predefinito è 5 secondi e questo valore specifica il numero di secondi per attendere le informazioni di acquisizione prima di inviare l'hit Primo avvio.
+      Il valore predefinito è 5 secondi e questo valore specifica il numero di secondi di attesa delle informazioni di acquisizione prima che venga inviato l’hit Primo avvio.
 
    * **[!UICONTROL Maggiori dettagli]**
 
