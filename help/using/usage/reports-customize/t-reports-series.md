@@ -3,10 +3,10 @@ description: Queste informazioni sono utili per personalizzare i rapporti incorp
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 seo-title: Aggiungere serie (metriche) ai rapporti
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aggiungere serie (metriche) ai rapporti
 topic: Rapporti, Metriche
-uuid: 84 fdfb 1 f -70 e 6-4 c 02-9 b 3 b -526 e 9 c 924 f 74
+uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 >[!IMPORTANT]
 >
->Le metriche delle app mobile sono disponibili anche in reporting e analisi di marketing, analisi ad hoc, data warehouse e altre interfacce di reporting di Analytics. Se una suddivisione o un tipo di rapporto non è disponibile in Adobe Mobile, può essere generato utilizzando un'altra interfaccia di reporting.
+>Le metriche delle app mobili sono disponibili anche in reporting e analisi di marketing, analisi ad hoc, data warehouse e altre interfacce di reporting di Analytics. Se una suddivisione o un tipo di rapporto non è disponibile in Adobe Mobile, può essere generato utilizzando un'altra interfaccia di reporting.
 
 In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** report, but the instructions can apply to any report.
 
@@ -43,7 +43,7 @@ In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** rep
 
       ![Risultato passaggio](assets/add_series.png)
 
-   * Per aggiungere una nuova app in una suite di rapporti diversa in modo da poter confrontare i dati tra app, fai clic sul nome dell'app nella nuova serie appena creata e seleziona l'app desiderata.
+   * Per aggiungere una nuova app in una suite di rapporti diversa in modo da poter confrontare i dati tra le app, fai clic sul nome dell'app nella nuova serie creata e seleziona l'app desiderata.
 
       ![](assets/add_series_app.png)
 
