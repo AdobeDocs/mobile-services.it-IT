@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni sono utili per implementare la libreria Android e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni sono utili per implementare la libreria Android e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-title: Implementazione e ciclo di vita di base
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Sviluppatore e implementazione
-uuid: af 4 d 11 ac -8245-46 a 0-9 b 3 a -4 a 0 a 29 cfbbb 2
+uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 translation-type: tm+mt
 source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
@@ -21,7 +21,7 @@ Queste informazioni sono utili per implementare la libreria Android e raccoglier
 
 >[!IMPORTANT]
 >
->Per scaricare l'SDK, devi usare Android 2.2 o versione successiva.
+>Per scaricare l’SDK, devi usare Android 2.2 o successivo.
 
 1. Effettua i passaggi descritti nelle sezioni seguenti per impostare una suite di rapporti per la fase di sviluppo e scaricare una versione precompilata del file di configurazione:
 
@@ -30,7 +30,7 @@ Queste informazioni sono utili per implementare la libreria Android e raccoglier
 
 1. Scaricate e decomprimete il `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` file e verificate che siano presenti i seguenti componenti software:
 
-   * `adobeMobileLibrary.jar`, corrispondente alla libreria che verrà utilizzata con dispositivi e simulatori Android.
+   * `adobeMobileLibrary.jar`, che è la libreria che verrà utilizzata con dispositivi e simulatori Android.
 
    * `ADBMobileConfig.json`, file di configurazione dell’SDK personalizzato per la tua app.
    >[!IMPORTANT]
@@ -39,7 +39,7 @@ Queste informazioni sono utili per implementare la libreria Android e raccoglier
 
 ## Add the SDK and config file to your IntelliJ IDEA or Eclipse project {#section_B89510FBB4C646AEA73A185B966E54D3}
 
-**Progetto intellij IDEA**
+**Progetto IntelliJ IDEA**
 
 Per aggiungere l'SDK e il file di configurazione al tuo progetto:
 
@@ -60,7 +60,7 @@ Per aggiungere l'SDK e il file di configurazione al tuo progetto:
 1. Add the `ADBMobileConfig.json` file to the `assets` folder in your project.
 1. In **[!UICONTROL Eclipse IDE]**, right-click the project name.
 1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]**.
-1. Select `adobeMobileLibrary.jar`.
+1. Seleziona `adobeMobileLibrary.jar`.
 1. Fai clic su **[!UICONTROL Apri]**.
 1. Right-click the project again and select **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]**.
 1. Nella scheda **[!UICONTROL Ordine ed esportazione]**, accertati che sia selezionato **`adobeMobileLibrary.jar`.**
@@ -81,7 +81,7 @@ Per aggiungere queste autorizzazioni, aggiungi le seguenti righe al file `Androi
 
 ## Set the application context {#set-application-context}
 
-Il codice seguente deve essere aggiunto nel `onCreate` metodo della tua attività principale:
+Nel `onCreate` metodo dell'attività principale deve essere aggiunto il seguente codice:
 
 ```java
    @Override
@@ -125,9 +125,9 @@ Dopo che avrai abilitato la funzione "lifecycle" (ciclo di vita), ad ogni avvio 
 
 >[!IMPORTANT]
 >
->Devi aggiungere queste chiamate a ogni attività per garantire una segnalazione accurata degli arresti anomali. Per ulteriori informazioni, vedi [Tracciamento arresti app](/help/android/analytics-main/crashes.md).
+>È necessario aggiungere queste chiamate a ogni attività per garantire una segnalazione accurata degli arresti anomali. Per ulteriori informazioni, vedi [Tracciare gli arresti anomali](/help/android/analytics-main/crashes.md)delle app.
 
-## Includere dati aggiuntivi con le chiamate lifecycle
+## Includi dati aggiuntivi con le chiamate del ciclo di vita
 
 Per includere dati aggiuntivi con le chiamate delle metriche "lifecycle", usa un parametro aggiuntivo a `collectLifecycleData` che contenga dati contestuali:
 
