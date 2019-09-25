@@ -1,12 +1,12 @@
 ---
 description: Elenco dei metodi di forniti dalla libreria Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Elenco dei metodi di forniti dalla libreria Android.
 seo-title: Metodi di Configurazione
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Configurazione
 topic: Sviluppatore e implementazione
-uuid: 663 aeb 6 c -1 b 97-4 a 3 a -8 c 0 e-dd 4 c 2 ec 28 c 01
+uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -38,11 +38,11 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **registerAdobeDataCallback**
 
-   * Registra un oggetto che implementa l'interfaccia `AdobeDataCallback`. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Per ulteriori dettagli sugli eventi che attivano questa callback, vedi *mobiledataeventenum* nella parte inferiore di questo argomento.
+   * Registra un oggetto che implementa l'interfaccia `AdobeDataCallback`. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Per ulteriori dettagli sugli eventi che attiveranno questo callback, vedi *MobileDataEventEnum* in fondo a questo argomento.
 
       >[!TIP]
       >
-      >Questo metodo richiede la versione 4.9.0 o successiva.
+      >This method requires version 4.9.0 or later.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -87,7 +87,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
       I valori di stato disponibili sono:
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, dove gli hit vengono inviati immediatamente.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, in cui vengono scartati.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, in cui gli hit vengono scartati.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN` - se la suite di rapporti ha la marca temporale abilitata, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
          Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in optedin. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
@@ -97,7 +97,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * Di seguito è riportato un esempio di codice per questo metodo:
+   * Here is a code sample for this method:
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -109,8 +109,8 @@ Di seguito è riportato un esempio di codice per questo metodo:
    * Imposta lo stato di privacy per l'utente corrente su `status`.
 
       Puoi impostare lo stato di privacy su uno dei seguenti valori:
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, dove gli hit vengono inviati immediatamente. Questi hit vengono inviati immediatamente.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, in cui vengono scartati. Questi hit vengono scartati.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`, where the hits are sent immediately. Questi hit vengono inviati immediatamente.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, where the its are discarded. Questi hit vengono scartati.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN` - se la suite di rapporti ha la marca temporale abilitata, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in optedin.
    * Di seguito è riportata la sintassi per questo metodo:
@@ -119,7 +119,7 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * Di seguito è riportato un esempio di codice per questo metodo:
+   * Esempio di codice per questo metodo:
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -136,7 +136,7 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Di seguito è riportato un esempio di codice per questo metodo:
+   * Esempio di codice per questo metodo:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -148,7 +148,7 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
 
       >[!TIP]
       >
-      >Se l'app viene aggiornata dall'SDK di Experience Cloud 3. x alla versione 4. x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni sull'SDK 4.x, finché non impostato, l'identificatore utente è `null`.
+      >Se l’app viene aggiornata dall’SDK Experience Cloud 3.x alla versione 4.x, l’ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni sull'SDK 4.x, finché non impostato, l'identificatore utente è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -156,7 +156,7 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
       public static String&amp getUserIdentifier();
       ```
 
-   * Qui l'esempio di codice per questo metodo:
+   * Esempio di codice per questo metodo:
 
       ```java
       String userId = Config.getUserIdentifier();
