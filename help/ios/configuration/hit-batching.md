@@ -2,10 +2,10 @@
 description: Con la gestione degli hit in batch, le applicazioni per le quali è stato abilitato il tracciamento offline possono rimandare l'invio degli hit fino al raggiungimento di un determinato numero di hit in coda.
 seo-description: Con la gestione degli hit in batch, le applicazioni per le quali è stato abilitato il tracciamento offline possono rimandare l'invio degli hit fino al raggiungimento di un determinato numero di hit in coda.
 seo-title: Invio in batch di hit
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Invio in batch di hit
 topic: Sviluppatore e implementazione
-uuid: 3 dda 7372-0695-4 cb 7-b 779-6 abca 2 d 6 e 0 d 9
+uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Con la gestione degli hit in batch, le applicazioni per le quali è stato abilit
 
 >[!IMPORTANT]
 >
->La gestione degli hit in batch richiede la versione SDK 4.1 o successiva.
+>Hit batching requires SDK version 4.1 or later.
 
 To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
 
