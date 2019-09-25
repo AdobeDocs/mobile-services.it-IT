@@ -2,10 +2,10 @@
 description: nulle
 seo-description: nulle
 seo-title: Analytics
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics
 topic: Sviluppatore e implementazione
-uuid: fa 0 ef 6 c 4-c 04 d -4695-9 eb 4-ada 4 e 9920 e 6 c
+uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,11 +14,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Analytics {#analytics}
 
-Dopo aver aggiunto la libreria al progetto, puoi effettuare qualsiasi chiamata dei metodi di Analytics ovunque nell'app.
+After you add the library to your project, you can make any of the Analytics method calls anywhere in your app.
 
 >[!TIP]
 >
->Assicurarsi di importarla `ADBMobile.h` nella classe.
+>Ensure that you import `ADBMobile.h` to your class.
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
@@ -48,7 +48,7 @@ Periodicamente, vengono rilasciate nuove versioni dei rapporti delle applicazion
 Per raccogliere metriche del ciclo di vita nell’app, aggiungi chiamate a quando l’applicazione viene attivata, come illustrato negli esempi seguenti.
 
 
-### Winjs in default. js
+### WinJS in default.js
 
 
 ```js
@@ -64,7 +64,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C # in App. xaml. cs
+### C# in App.xaml.cs
 
 ```js
 public App() 
@@ -93,7 +93,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### C/CX in App. xaml. cpp
+### C/CX in App.xaml.cpp
 
 ```js
 App::App() 
@@ -128,7 +128,7 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Se hai esaminato la Guida di riferimento delle classi [e dei metodi adbmobile](/help/windows-appstore/c-configuration/methods.md), ti chiederai probabilmente dove impostare eventi, evar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
+If you've looked at the ADBMobile Class and Method Reference, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/windows-appstore/c-configuration/methods.md) Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 L’elaborazione di regole offre diversi vantaggi:
 
@@ -145,9 +145,9 @@ L’elaborazione delle regole viene usata per copiare i dati inviati in variabil
 
 [Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
-[Panoramica sulle regole di elaborazione](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Diventare autorizzati a utilizzare le regole di elaborazione](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Become authorized to use processing rules](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 Si consiglia di raggruppare le variabili di dati di contesto utilizzando "spazi nome", in quanto aiuta a mantenere un ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
 
@@ -185,15 +185,15 @@ Le variabili dei dati di contesto che definiscono gli eventi dell’incrementato
 
 >[!NOTE]
 >
->Adobe riserva lo spazio nomi `a.`. Con l'eccezione di questo vincolo, le variabili di dati di contesto devono essere univoche per la società di accesso in modo da evitare collisioni.
+>Adobe reserves the namespace `a.`. Con l'eccezione di questo vincolo, le variabili di dati di contesto devono essere univoche per la società di accesso in modo da evitare collisioni.
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Per impostare *`products`* nell'SDK di Mobile, devi usare una sintassi particolare. Consultate [Variabile prodotti](/help/windows-appstore/analytics/products/products.md).
+To set  in the mobile SDK, you must use a special syntax. *`products`* See [Products Variable](/help/windows-appstore/analytics/products/products.md).
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Prima di abilitare il tracciamento offline, prestate attenzione ai requisiti di marca temporale descritti nel riferimento file di configurazione.
+To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Prima di abilitare il tracciamento offline, prestate attenzione ai requisiti di marca temporale descritti nel riferimento del file di configurazione.
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
