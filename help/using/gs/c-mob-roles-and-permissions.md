@@ -3,7 +3,7 @@ description: In Adobe Analytics puoi gestire i ruoli nella home page di Strument
 seo-description: In Adobe Analytics puoi gestire i ruoli nella home page di Strumenti di amministrazione.
 seo-title: Ruoli e autorizzazioni
 title: Ruoli e autorizzazioni
-uuid: ad 350 f 8 d-ef 51-4519-98 aa -3025 bc 0 f 5588
+uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
 
@@ -24,13 +24,13 @@ Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizz
 
 >[!TIP]
 >
->Un amministratore di Analytics può assegnare il ruolo di amministratore di Analytics a qualsiasi utente.
+>Un amministratore Analytics esistente può assegnare il ruolo di amministratore Analytics a qualsiasi utente.
 
 Per ulteriori informazioni su questo ruolo, consulta gli argomenti seguenti:
 
-* [Panoramica sulla gestione degli utenti](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
+* [Panoramica sulla gestione utente](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
 
-* [Modifiche alle autorizzazioni Utente e Gruppo](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Modifiche alle autorizzazioni utente e gruppo](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### Amministratori app mobili
 
@@ -44,11 +44,11 @@ Questo è il ruolo di amministratore dell'interfaccia utente di Mobile Services.
 
 Seguono alcune informazioni aggiuntive sulle opzioni di accesso dell'interfaccia utente di Mobile Services:
 
-### App e suite di rapporti
+### Apps and report suites
 
 Tutte le app di Mobile Services sono associate a delle suite di rapporti. Se gli utenti non hanno accesso a una suite di rapporti, non possono accedere all'app associata a tale suite di rapporti.
 
-### Funzioni di Mobile Services e Analytics
+### Mobile Services and Analytics features
 
 Se la tua azienda non ha un contratto Analytics per l'accesso a una determinata funzionalità dell'interfaccia utente (ad esempio i messaggi push), nessun utente dell'azienda potrà accedere a tale funzionalità, indipendentemente dal proprio livello di autorizzazione.
 
@@ -58,13 +58,13 @@ Di seguito sono elencati i ruoli dell'interfaccia utente di Mobile Services, con
 
 ### Amministratore di Analytics
 
-* Tutte le autorizzazioni Amministratore app mobili e Amministratori app mobili
+* Tutte le autorizzazioni utente e amministratore app mobili
 * Creazione di app con una nuova suite di rapporti
 * Eliminare app da Mobile Services
 
    >[!IMPORTANT]
    >
-   >Anche se l'app è stata eliminata nell'interfaccia utente di Mobile Services, la suite di rapporti esiste ancora in Analytics.
+   >Sebbene l'app sia stata eliminata nell'interfaccia utente di Mobile Services, la suite di rapporti esiste ancora in Analytics.
 
 * Gestire le impostazioni dell'app
 
@@ -97,7 +97,7 @@ Per maggiori informazioni su gruppi e utenti, vedi:
 * [Impostazioni gruppo utenti](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
 * [Aggiungere un utente a un gruppo](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
-### Utente Mobile Services
+### Utente di Mobile Services
 
 Questo ruolo dispone di autorizzazioni di sola lettura e può fornire un feedback nell'interfaccia di Mobile Services.
 
@@ -106,7 +106,7 @@ Questo ruolo dispone di autorizzazioni di sola lettura e può fornire un feedbac
 
    >[!IMPORTANT]
    >
-   >Gli utenti possono vedere solo le suite di rapporti per le quali hanno accesso in Adobe Analytics.
+   > Gli utenti possono visualizzare solo le suite di rapporti a cui hanno accesso in Adobe Analytics.
 
 * Visualizzare le impostazioni delle app
 
@@ -116,7 +116,7 @@ Questo ruolo dispone di autorizzazioni di sola lettura e può fornire un feedbac
    * Visualizzare i postback
    * Visualizzare le destinazioni collegamenti
 
-* Visualizzare ed eseguire rapporti
+* Visualizzare ed eseguire i rapporti
 * Visualizzare i collegamenti di marketing
 * Visualizzare ed esportare i collegamenti di acquisizione legacy
 * Visualizzare ed esportare una configurazione Luoghi (Punti di interesse)
