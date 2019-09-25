@@ -3,10 +3,10 @@ description: Puoi indirizzare gli utenti a una particolare destinazione a second
 keywords: dispositivi mobili
 seo-description: Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l'app (un collegamento profondo nell'app) o meno (un sito web o un app store).
 seo-title: Interstiziali
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Interstiziali
 topic: Metrics (Metriche)
-uuid: 7 dce 8 ab 2-2 a 5 d -4384-ac 1 e-e 31 dfaa 33654
+uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -29,7 +29,7 @@ Per configurare una pagina interstiziale durante la creazione di un collegamento
 
       Seleziona la tua pagina HTML interstiziale.
 
-      Con interstiziali personalizzati, gli addetti al marketing possono personalizzare le pagine di destinazione interstiziali con codice HTML/CSS/JS personalizzato, che consente di personalizzare le pagine.
+      Utilizzando interstiziali personalizzati, gli addetti al marketing possono personalizzare le pagine di destinazione interstiziali con codice HTML/CSS/JS personalizzato, per aggiungere elementi di branding alle pagine.
 
       I requisiti per la pagina HTML sono i seguenti:
 
@@ -41,7 +41,7 @@ Per configurare una pagina interstiziale durante la creazione di un collegamento
 
          >[!TIP]
          >
-         >Se caricate un codice HTML personalizzato, le altre quattro opzioni di questa tabella non saranno utilizzate solo se rimuovete il file caricato.
+         >If you upload custom HTML, the other four options in this table will not be used unless you remove the uploaded file.
    * **[!UICONTROL URL immagine]**
 
       Specifica l'URL di una risorsa di immagine.
@@ -61,7 +61,7 @@ Per configurare una pagina interstiziale durante la creazione di un collegamento
       Questo campo aggiorna il pulsante di testo se un collegamento profondo non giunge a destinazione. Gli utenti vengono invitati a provare il collegamento profondo prima di ricorrere a un'altra opzione. Ad esempio, la destinazione alternativa potrebbe essere un app store da cui scaricare e installare l'app oppure il sito web dell'azienda. Il testo di riserva segnala agli utenti che è disponibile un'altra azione se il collegamento profondo non funziona.
 
 
-1. **(Facoltativo**) Fate clic sulle icone sopra l'immagine per vedere come si presentano gli elementi interstiziali ruotati e su dispositivi diversi.
+1. (**Optional**) Click the icons above the image to see how the interstitial looks rotated and on different devices.
 
    Puoi cambiare o modificare l'immagine fuori da Mobile Services per assicurarti che sia visualizzata correttamente in situazioni diverse.
 1. Fai clic su **[!UICONTROL Salva]**.
