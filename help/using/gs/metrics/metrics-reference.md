@@ -3,10 +3,10 @@ description: Seguono alcune informazioni di riferimento per le metriche e le dim
 keywords: dispositivi mobili
 seo-description: Seguono alcune informazioni di riferimento per le metriche e le dimensioni predefinite di Mobile.
 seo-title: Riferimento per le metriche e le dimensioni di Mobile
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Riferimento per le metriche e le dimensioni di Mobile
 topic: Metrics (Metriche)
-uuid: 96170 ae 7-8553-4 f 3 e-ae 01-65 e 5 b 664 adf 4
+uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 translation-type: tm+mt
 source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
@@ -15,11 +15,11 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 # Mobile metrics and dimensions reference {#mobile-metrics-and-dimensions-reference}
 
-Queste informazioni sono utili per comprendere meglio le metriche e le dimensioni predefinite di Mobile.
+This information helps you understand more about the default mobile metrics and dimensions.
 
 >[!TIP]
 >
->Le autorizzazioni di dimensione e metrica impostate in Adobe Analytics si applicano a Mobile Services. Quando tentate di eseguire un rapporto senza le autorizzazioni corrette, si verifica un errore.
+>Le autorizzazioni relative a metriche e dimensioni impostate in Adobe Analytics si applicano a Mobile Services. When you try to run a report without the proper permissions, an error occurs.
 
 ## Metriche {#section_6704C815147D44AF96151D626BEB813C}
 
@@ -49,7 +49,7 @@ Elenco delle metriche predefinite per dispositivi mobili:
 
 * **Avvii**
 
-   Attivazione a un'esecuzione che non è un'installazione o un aggiornamento. L'attivazione ha luogo anche quando l'applicazione viene portata in primo piano. Per impostazione predefinita, viene attivato un nuovo avvio dopo che l'applicazione sia rimasta in background per almeno cinque minuti. The amount of background time before triggering a new launch can be configured in **[!UICONTROL SDK Analytics Options]** on the Manage App Settings page. Per ulteriori informazioni, vedi la riga Timeout *sessione (secondi)* in [Configura opzioni SDK Analytics](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   Attivazione a un'esecuzione che non è un'installazione o un aggiornamento. L'attivazione ha luogo anche quando l'applicazione viene portata in primo piano. Per impostazione predefinita, viene attivato un nuovo avvio dopo che l'applicazione sia rimasta in background per almeno cinque minuti. The amount of background time before triggering a new launch can be configured in **[!UICONTROL SDK Analytics Options]** on the Manage App Settings page. Per ulteriori informazioni, vedi la riga Timeout *sessione (secondi)* in [Configurare le opzioni](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)SDK Analytics.
 
    >[!IMPORTANT]
    >Because how visits in [!UICONTROL Adobe Analytics] and mobile app launches in [!UICONTROL Adobe Mobile Services] are calculated, you might see different results in reporting. Per maggiori informazioni, vedi [Confrontare visite e avvii di app mobili](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
@@ -59,7 +59,7 @@ Elenco delle metriche predefinite per dispositivi mobili:
    Attivazione quando l'applicazione non si chiude correttamente. L'evento è inviato all'avvio dell'applicazione dopo un arresto anomalo.
 
    >[!TIP]
-   >Se non viene chiamato, l'applicazione viene considerata bloccata.
+   >L’applicazione viene considerata in arresto se non viene chiamato il comando di uscita.
 
 * **Lunghezza totale della sessione**
 
@@ -97,7 +97,7 @@ Elenco delle dimensioni predefinite per dispositivi mobili:
 
    Numero del giorno della settimana in cui è stata avviata l'app.
 
-* **Versione**
+* **Sistema operativo**
 
    Sistema operativo del dispositivo.
 
@@ -111,7 +111,7 @@ Elenco delle dimensioni predefinite per dispositivi mobili:
 
    >[!TIP]
    >
-   >I giorni dall'ultimo aggiornamento non vengono memorizzati automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Giorni dall'ultimo aggiornamento non viene memorizzato automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
 * **Avvii dall'ultimo aggiornamento**
 
@@ -119,11 +119,11 @@ Elenco delle dimensioni predefinite per dispositivi mobili:
 
    >[!TIP]
    >
-   >Gli avvii dall'ultimo aggiornamento non vengono memorizzati automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Launches since last upgrade is not automatically stored in an Analytics variable. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
 * **Nome del dispositivo**
 
-   Memorizza il nome del dispositivo. In iOS, una stringa di due cifre separate da virgola identifica il dispositivo iOS. Il primo numero rappresenta la generazione del dispositivo e il secondo numero di membri della famiglia di dispositivi. Per un elenco completo dei nomi dei dispositivi più comuni, vedi [Versioni dei dispositivi iOS](/help/ios/reference/device-versions.md).
+   Memorizza il nome del dispositivo. In iOS, una stringa di due cifre separate da virgola identifica il dispositivo iOS. Il primo numero rappresenta la generazione del dispositivo, e il secondo numero di versioni differenti membri della famiglia di dispositivi. Per un elenco completo dei nomi dei dispositivi più comuni, vedi [Versioni dei dispositivi iOS](/help/ios/reference/device-versions.md).
 
 * **Nome gestore**
 
