@@ -2,10 +2,10 @@
 description: Informazioni utili per l’analisi del video.
 seo-description: Informazioni utili per l’analisi del video.
 seo-title: Analisi del video
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Analisi del video
 topic: Sviluppatore e implementazione
-uuid: 7 d 4 e 6668-a 1 d 9-41 da -96 c 8-8 baac 860 c 5 b 0
+uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
@@ -18,7 +18,7 @@ Informazioni utili per l’analisi del video.
 
 Video measurement is described in detail in the [Measuring audio and video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html/) guide. Il processo generale da seguire per la misurazione del video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
-Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali su una variabile di Analytics.
+Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali a una variabile Analytics.
 
 * **a.media.name**
 
@@ -26,7 +26,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (**Facoltativo**) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visita
    * Insight personalizzato (s.prop, usato per il percorso del video)
 
@@ -36,7 +36,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    Tipo evento: Insight personalizzato (s.prop)
 
-   * Tipo di variabile: Custom Insight (s. prop)
+   * Tipo di variabile: Custom Insight (s.prop)
 
 * **a.media.segment**
 
@@ -49,15 +49,15 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
    * fine del video (stop)
    Analytics conta la visualizzazione del primo segmento all'inizio del segmento, quando il visitatore inizia la visualizzazione. Il segmento successivo viene visualizzato quando inizia il segmento.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 
 * **a.contentType**
 
-   Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto “video”. Non è necessario riservare questa variabile esclusivamente al tracciamento video. Se la stessa variabile viene usata anche per ottenere il tipo di altri contenuti, è possibile analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali "articolo" o "pagina prodotto" ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e di calcolare i tassi di conversione del video.
+   Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto “video”. Non è necessario riservare questa variabile esclusivamente al tracciamento video. Se la stessa variabile viene usata anche per ottenere il tipo di altri contenuti, è possibile analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali "articolo" o "pagina prodotto" ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e calcolare i tassi di conversione del video.
 
-   * Tipo di variabile: Evar
+   * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.media.timePlayed**
@@ -128,7 +128,7 @@ property bool isMediaAd;
 
 ## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **Settingswith (winjs: Settingswith**
+* **SettingsWith (winJS: settingsWith)**
 
    Restituisce un oggetto `MediaSetting` con i parametri specificati.
 
@@ -144,7 +144,7 @@ property bool isMediaAd;
       var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId"); 
       ```
 
-* **Adsettingswith (winjs: Adsettingswith**
+* **AdSettingsWith (winJS: adSettingsWith**
 
    Restituisce un oggetto `MediaSettings` per l'uso con il tracciamento di un video annuncio.
 
@@ -160,7 +160,7 @@ property bool isMediaAd;
       var myAdSettings = ADB.Media.adSettingsWith("name", 10, "playerName", "parentName", "parentPod", 5, "myCPM"); 
       ```
 
-* **Open (winjs: open)**
+* **Open (winJS: open)**
 
    Tiene traccia dell’apertura di un file multimediale tramite le impostazioni definite in `settings`.
 
@@ -176,7 +176,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings); 
       ```
 
-* **Chiudi (winjs: close)**
+* **Close (winJS: close)**
 
    Tiene traccia della chiusura di un file multimediale per l’elemento del file multimediale denominato *name*.
 
@@ -192,7 +192,7 @@ property bool isMediaAd;
       ADB.Media.close("mediaName");
       ```
 
-* **Riproduci (winjs: play)**
+* **Play (winJS: play)**
 
    Tiene traccia della riproduzione di un file multimediale per l’elemento del file multimediale denominato *`name`* ad un dato *offset* (in secondi).
 
@@ -208,7 +208,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName", 0);
       ```
 
-* **Complete (winjs: complete)**
+* **Complete (winJS: complete)**
 
    Contrassegna manualmente l'elemento multimediale come completato in corrispondenza dell'*offset* indicato (in secondi).
 
@@ -224,7 +224,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8); 
       ```
 
-* **Interrompi (winjs: stop)**
+* **Stop (winJS: stop)**
 
    Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell'*offset* indicato.
 
@@ -240,7 +240,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName", 4);
       ```
 
-* **Click (winjs: click)**
+* **Click (winJS: click)**
 
    Notifica al modulo multimediale l'avvenuto clic sull'elemento multimediale.
 
@@ -256,7 +256,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName", 3);
       ```
 
-* **Track (winjs: track)**
+* **Track (winJS: track)**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
 
