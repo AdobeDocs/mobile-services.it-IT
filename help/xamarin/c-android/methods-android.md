@@ -3,9 +3,9 @@ description: Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Expe
 keywords: Xamarin
 seo-description: Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 seo-title: Metodi Android
-solution: Marketing Cloud, Sviluppatore
-title: Metodi Android
-uuid: 860 af 1 c 4-f 57 e -4 bcb -8308-4 e 316 da 9 a 27 b
+solution: Marketing Cloud,Sviluppatore
+title: Android methods
+uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -20,7 +20,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **DebugLogging**
 
-   Restituisce l'attuale preferenza di accesso di debug e il valore predefinito è false.
+   Restituisce la preferenza di accesso di debug corrente e il valore predefinito è false.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -55,7 +55,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatus.OptOut` - hits are discarded.
    * `ADBMobilePrivacyStatus.Unknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
    Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md).
 
@@ -75,7 +75,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **UserIdentifier**
 
-   Se è stato impostato un identificatore personalizzato, restituisce questo identificatore. Se non viene impostato un identificatore personalizzato, restituisce null. Il valore predefinito è `null`.
+   Se è stato impostato un identificatore personalizzato, restituisce questo identificatore. Se non è impostato un identificatore personalizzato, restituisce null. Il valore predefinito è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -176,7 +176,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 o versione successiva) Imposta l'icona grande utilizzata per le notifiche create dall'SDK. Questa icona è l'immagine principale visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
+   (4.2 o versione successiva) Imposta l'icona grande utilizzata per le notifiche create dall'SDK. Questa icona è l'immagine principale che viene visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -192,7 +192,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 o versione successiva) Imposta l'icona piccola utilizzata per le notifiche create dall'SDK. Questa icona viene visualizzata nella barra di stato e corrisponde all'immagine secondaria visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
+   (4.2 or later) Sets the small icon that is used for notifications created by the SDK. Questa icona viene visualizzata nella barra di stato e rappresenta l’immagine secondaria visualizzata dall’utente nella notifica completa nel Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -210,7 +210,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackingIdentifier**
 
-   Restituisce l’ID generato automaticamente per Analytics. Si tratta di un ID univoco specifico per l'app, che viene generato all'avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene conservato tra gli aggiornamenti dell'app e rimosso alla disinstallazione.
+   Restituisce l’ID generato automaticamente per Analytics. This is an app-specific unique ID that is generated on initial launch and is stored and used from that point forward. This ID is preserved between app upgrades and is removed on uninstall.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -424,7 +424,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SendQueuedHits**
 
-   Forza l'invio da parte della libreria di tutti gli hit nella coda offline, indipendentemente dal numero di hit attualmente presenti nella coda.
+   Forza l’invio da parte della libreria di tutti gli hit nella coda offline, indipendentemente dal numero di hit attualmente presenti nella coda.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -567,7 +567,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **ClearCookies**
 
-   Cancella i cookie di Target dall'app.
+   Clears Target cookies from your app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -691,7 +691,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Per ulteriori informazioni su Video Analytics, consulta [Analisi video](/help/android/analytics-main/video-qs.md).
+Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 
