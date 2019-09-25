@@ -1,12 +1,12 @@
 ---
-description: Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing basato sull'impronta digitale di un dispositivo.
-keywords: android; libreria; mobile; sdk
-seo-description: Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing basato sull'impronta digitale di un dispositivo.
-seo-title: Test acquisizione collegamento marketing
-solution: Marketing Cloud, Analytics
-title: Test acquisizione collegamento marketing
+description: The following instructions help you roundtrip an acquisition campaign with a Marketing Link that is based on a device fingerprint.
+keywords: android;libreria;mobile;sdk
+seo-description: The following instructions help you roundtrip an acquisition campaign with a Marketing Link that is based on a device fingerprint.
+seo-title: Testing Marketing Link acquisition
+solution: Marketing Cloud,Analytics
+title: Verifica dell’acquisizione da collegamento marketing
 topic: Sviluppatore e implementazione
-uuid: 69503 e 01-182 d -44 c 6-b 0 fb-e 1 c 012 ffa 3 bd
+uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,9 +15,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con un collegamento marketing basato sull'impronta digitale di un dispositivo.
+Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing basato sull’impronta digitale di un dispositivo.
 
-1. Completa le attività preliminari in [Acquisizione app mobile](/help/ios/acquisition-main/acquisition.md).
+1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/ios/acquisition-main/acquisition.md).
 1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
 
    Ad esempio:
@@ -42,7 +42,7 @@ Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con u
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. `appid` deve corrispondere al *`appid`* collegamento di acquisizione. |
+   | acquisizione | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` dovrebbe essere un valore maggiore di 0. |
 
 1. (Condizionale) Se l'impostazione SSL nel file di configurazione dell'app è `false`, aggiorna il collegamento di acquisizione, impostandolo per l'utilizzo del protocollo HTTP anziché HTTPS.
@@ -59,9 +59,9 @@ Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con u
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Se non trovi questi registri, verifica di aver completato i passaggi 4 e 5.
+   If you do not see these logs, verify that you completed steps 4 and 5.
 
-   Seguono alcune informazioni su possibili errori:
+   Here is some information about possible errors:
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
 
@@ -77,7 +77,7 @@ Le istruzioni seguenti ti aiutano a esplorare una campagna di acquisizione con u
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` non è incluso `contextData`.
+      `a.referrer.campaign.name` is not included in .`contextData`
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -91,16 +91,16 @@ Considerazioni da ricordare:
 
 * Utilizzando strumenti di monitoraggio HTTP, è possibile monitorare gli hit inviati dall'app per fornire elementi utili alla verifica dell'attribuzione dell'acquisizione.
 
-   You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request that are sent to the acquisition server.
+   Dovresti trovare una richiesta `/v3/<appid>/start` e una richiesta `/v3/<appid>/end`, entrambe inviate al server di acquisizione.
 
 * Eventuali varianti nell'agente utente inviato potrebbero provocare errori di attribuzione.
 
-   Assicuratevi che `https://c00.adobe.com/v3/<appid>/start` e `https://c00.adobe.com/v3/<appid>/end` abbiano gli stessi valori agente utente.
+   Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
 
 * Il collegamento di acquisizione e l'hit dell'SDK dovrebbero usare lo stesso protocollo, HTTP o HTTPS.
 
-   Se il collegamento e l'hit utilizzano protocolli diversi, dove ad esempio il collegamento utilizza HTTP e l'SDK usa HTTPS, l'indirizzo IP potrebbe risultare diverso in alcuni gestori per ogni richiesta. In tal caso l'attribuzione potrebbe non riuscire.
+   Se il collegamento e l’hit utilizzano protocolli diversi, ad esempio HTTP per il collegamento e HTTPS per l’SDK, l’indirizzo IP potrebbe essere diverso per alcuni gestori per ogni richiesta. In tal caso l'attribuzione potrebbe non riuscire.
 
-* I collegamenti di marketing sono memorizzati nella cache sul lato server con una scadenza di dieci minuti.
+* The Marketing Links are cached on the server side with a ten-minutes expiration time.
 
-   Quando apportate modifiche ai collegamenti di marketing, attendete circa 10 minuti prima di utilizzare i collegamenti.
+   Quando apporti modifiche ai collegamenti di marketing, attendi circa 10 minuti prima di usare i collegamenti.
