@@ -2,10 +2,10 @@
 description: Per "azioni" si intendono gli eventi che si verificano nell'app oggetto delle misurazioni. A ogni azione corrispondono una o più metriche che vengono incrementate ogni volta che si verifica l'evento. Ad esempio, puoi tenere traccia di un nuovo abbonamento, di ogni nuova visualizzazione di un articolo o di un completamento di un livello. La metrica corrispondente per questo tipo di eventi è configurata come abbonamenti, articoli letti o livelli completati.
 seo-description: Per "azioni" si intendono gli eventi che si verificano nell'app oggetto delle misurazioni. A ogni azione corrispondono una o più metriche che vengono incrementate ogni volta che si verifica l'evento. Ad esempio, puoi tenere traccia di un nuovo abbonamento, di ogni nuova visualizzazione di un articolo o di un completamento di un livello. La metrica corrispondente per questo tipo di eventi è configurata come abbonamenti, articoli letti o livelli completati.
 seo-title: Tracciare le azioni eseguite nell'app
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Tracciare le azioni eseguite nell'app
 topic: Sviluppatore e implementazione
-uuid: 62017 be 1-5395-4 d 16-bde 3-4 c 40 a 2 c 012 d 4
+uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Le azioni non vengono tracciate automaticamente, pertanto per tracciare un event
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, vedi *Aggiungere l'SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importa la libreria.
 
    ```objective-c
@@ -62,7 +62,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackAction:@"myapp.SocialShare" data:contextData];
 ```
 
-I valori dei dati contestuali devono essere mappati su variabili personalizzate:
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-action.png)
 
