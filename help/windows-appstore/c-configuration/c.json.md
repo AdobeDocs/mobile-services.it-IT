@@ -1,18 +1,18 @@
 ---
 description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 seo-description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-seo-title: File di configurazione adbmobileconfig. json
-solution: Marketing Cloud, Analytics
-title: File di configurazione adbmobileconfig. json
+seo-title: File di configurazione ADBMobileConfig.json
+solution: Marketing Cloud,Analytics
+title: File di configurazione ADBMobileConfig.json
 topic: Sviluppatore e implementazione
-uuid: a 45 b 91 cc -982 e -4 d 6 c-a 4 e 4-d 2 e 4 b 4 fa 7556
+uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
 source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 ---
 
 
-# `ADBMobileConfig.json` file di configurazione {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` config, file {#adbmobileconfig-json-config}
 
 Information to help you use the `ADBMobile.json` config file.
 
@@ -22,7 +22,7 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    (Richiesto da Analytics) Una o più suite di rapporti che riceveranno i dati di Analytics. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
 
-   * Di seguito sono riportati gli esempi di codice per questa variabile:
+   * Di seguito sono riportati alcuni esempi di codice per questa variabile:
 
       ```js
       "rsids" : "rsid"
@@ -60,12 +60,12 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
 * **batchLimit**
 
-   Invia gli hit in batch Ad esempio, se il valore impostato è 50, gli hit sono messi in coda fino a memorizzarne 50, dopodiché tutti quelli in coda vengono inviati. `offlineEnabled=true`Richiede. Il valore predefinito è `0` (Nessuna gestione batch).
+   Invia gli hit in batch Ad esempio, se il valore impostato è 50, gli hit sono messi in coda fino a memorizzarne 50, dopodiché tutti quelli in coda vengono inviati. Richiede `offlineEnabled=true`. Il valore predefinito è `0` (nessun invio in batch).
 
 * **privacyDefault**
 
    * `optedin` - gli hit vengono inviati immediatamente.
-   * `optedout` - gli hit vengono eliminati.
+   * `optedout` - hits are discarded.
    * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
 
       Il valore predefinito è `optedin`.
@@ -78,7 +78,7 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
-   * Ecco l'esempio di codice per questa variabile:
+   * Esempio di codice per questa variabile:
 
       ```js
       "poi": [
