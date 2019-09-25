@@ -2,10 +2,10 @@
 description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-title: Metodi TVJS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi TVJS
 topic: Sviluppatore e implementazione
-uuid: a 7 bfa 85 a -0 d 6 e -4 f 51-9 a 9 e -70429 c 2 a 9806
+uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -43,7 +43,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    Sono disponibili le seguenti opzioni:
 
    * `ADBMobilePrivacyStatusOptIn`: Gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut`: Gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
       Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente. THe default value is set in the `ADBMobileConfig.json` file.
@@ -67,8 +67,8 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    Imposta lo stato di privacy per l'utente corrente su uno dei seguenti valori:
 
    * `ADBMobilePrivacyStatusOptIn`: Gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut`: Gli hit vengono eliminati.
-   * `ADBMobilePrivacyStatusUnknown`: Se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati).
+   * `ADBMobilePrivacyStatusOptOut`: Gli hit vengono scartati.
+   * `ADBMobilePrivacyStatusUnknown`: Se il tracciamento offline è abilitato, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono scartati).
    Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -108,7 +108,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!IMPORTANT]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3. x alla versione 4. x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è nil finché non viene impostato.
+   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è nil finché non viene impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -149,11 +149,11 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **setAdvertisingIdentifier**
 
-   Imposta l'identificatore IDFA nell'SDK e, se impostato nell'SDK, l'IDFA viene inviato nel ciclo di vita. È inoltre possibile accedervi in Segnali (Postback).
+   Imposta l’identificatore IDFA nell’SDK e, se è stato impostato nell’SDK, l’identificatore IDFA viene inviato nel ciclo di vita. È inoltre possibile accedervi in Segnali (Postback).
 
    >[!IMPORTANT]
    >
-   >Recupera l'identificatore IDFA dall'API di Apple solo se utilizzi un servizio di annunci. Se recuperi l'identificatore IDFA e non lo utilizzi correttamente, l'app potrebbe venire rifiutata.
+   >Recupera l’identificatore IDFA dalle API Apple solo se utilizzi un servizio di annunci. Se recuperi l'identificatore IDFA e non lo utilizzi correttamente, l'app potrebbe venire rifiutata.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -368,7 +368,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Termina un'azione temporizzata.
 
-   Se fornisci una funzione di callback, puoi accedere al valori temporali finali. In assenza di callback, o se il callback restituisce "true", Adobe SDK invia automaticamente un hit. Quando viene restituito un falso dalla callback, l'hit dell'azione temporizzata viene eliminato.
+   Se fornisci una funzione di callback, puoi accedere al valori temporali finali. In assenza di callback, o se il callback restituisce "true", Adobe SDK invia automaticamente un hit. Quando viene restituito un valore false dal callback, l’hit dell’azione temporizzata viene eliminato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -410,7 +410,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: Bool
       * Parametro: `name`
          * Tipo: `String`
-         * Nome dell'azione temporizzata per cui è necessario controllare l'esistenza.
+         * Nome dell’azione temporizzata per la quale è necessario verificare l’esistenza.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
 
@@ -427,7 +427,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!TIP]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3. x alla versione 4. x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
+   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -625,7 +625,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
       * Restituisce: N/D
-      * Parametro: Nessuno
+      * Parametro: None
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -692,7 +692,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Identificatori da sincronizzare con il servizio ID per l'utente corrente.
       * Parametro: `authState`
          * Tipo: ADBMobileVisitorAuthenticationState
-         * Lo stato di autenticazione dell'utente e possibili valori:
+         * Lo stato di autenticazione dell’utente e i valori possibili includono:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -722,7 +722,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * Valore dell'identificatore da sincronizzare.
       * Parametro: `authState`
-         * Tipo: Stato autenticazione adbmobilevisitorauthenticationstate. Possibili valori:
+         * Tipo: Stato ADBMobileVisitorAuthenticationStateAuthentication dell’utente. Possibili valori:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -798,10 +798,9 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * ID di terze parti da usare per le richieste di Target.
    * Di seguito è riportato un esempio di codice per questo metodo:
-
-      ```objective-c
-      ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
-      ```
+   ```objective-c
+   ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
+   ```
 
 * **targetPcID**
 
