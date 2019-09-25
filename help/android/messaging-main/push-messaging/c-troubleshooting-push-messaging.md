@@ -2,18 +2,18 @@
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
-seo-title: Risoluzione dei problemi dei messaggi push
-solution: Marketing Cloud, Analytics
-title: Risoluzione dei problemi dei messaggi push
+seo-title: Troubleshoot Push Messaging
+solution: Marketing Cloud,Analytics
+title: Troubleshoot Push Messaging
 topic: Metrics (Metriche)
-uuid: 9 c 4 a 9371-6691-4 a 2 c-a 6 c 1-b 9 f 901 a 41599
+uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Risoluzione dei problemi dei messaggi push {#troubleshooting-push-messaging}
+# Troubleshoot push messaging {#troubleshooting-push-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 
@@ -36,7 +36,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
    Per ulteriori informazioni sull'affidabilità dei servizi, consulta la relativa documentazione:
 
    * **APNS**: [Qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: [Durata di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM**: Durata [di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Perché i miei messaggi push vengono troncati o non si espandono?
 
