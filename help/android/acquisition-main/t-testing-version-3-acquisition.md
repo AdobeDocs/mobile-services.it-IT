@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
-keywords: android; libreria; mobile; sdk
+keywords: android;libreria;mobile;sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 seo-title: Verifica dell'acquisizione dalla versione 3
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Verifica dell'acquisizione dalla versione 3
 topic: Sviluppatore e implementazione
-uuid: 5 e 38 b 43 d -389 e -4412-99 e 5-3 e 6223 b 6 ad 28
+uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -19,13 +19,13 @@ Queste informazioni consentono di esplorare un collegamento di campagna di acqui
 
 >[!IMPORTANT]
 >
->L'acquisizione in V 3 fa riferimento ai collegamenti di acquisizione creati con Acquisition Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzionalità, devi eseguire l'aggiornamento alla versione 4.x dell'SDK per Android per soluzioni Experience Cloud 4.6.0 o versioni successive.
+>Per "acquisizione in V3" si intendono i collegamenti di acquisizione creati con Acquisition Builder nell’interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzionalità, devi eseguire l'aggiornamento alla versione 4.x dell'SDK per Android per soluzioni Experience Cloud 4.6.0 o versioni successive.
 
-Se l'app mobile non è ancora disponibile in Google Play, quando crei il collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non la capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se l'app mobile non è ancora disponibile in Google Play, quando crei il collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
 
-1. Completa le attività preliminari in [Acquisizione app mobile](/help/android/acquisition-main/acquisition.md) e accertati di aver implementato correttamente il ricevitore di trasmissione.`INSTALL_REFERRER`
+1. Complete the prerequisite tasks in [Mobile App Acquisition](/help/android/acquisition-main/acquisition.md) and ensure that you have correctly implemented the broadcast receiver for `INSTALL_REFERRER`.
 1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -34,7 +34,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >Se fai riferimento a app Android e iOS nel collegamento di acquisizione, usa Google Play come store predefinito.
+   >Se nel collegamento di acquisizione fate riferimento sia alle app Android che iOS, utilizzate Google Play come store predefinito.
 
 1. Apri il collegamento generato in un browser desktop.
 
@@ -43,7 +43,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   Nell'esempio precedente, l'ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`è.
+   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
 1. Crea il collegamento di acquisizione finale usando l'ID univoco del passaggio 3, nel seguente formato:
 
@@ -63,7 +63,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisition | The server should be `c00.adobe.com`.   *`appid`* deve corrispondere al `appid` collegamento di acquisizione. |
+   | acquisizione | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
    | analytics | A fini di test, imposta il timeout di riferimento in modo tale da fornire il tempo necessario (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l'impostazione di timeout originale dopo il test. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l'app.
@@ -97,7 +97,7 @@ La seguente tabella contiene informazioni aggiuntive sui possibili errori:
 | Analytics - Unable to decode response(*String*). | La risposta è formata in modo errato. |
 | Analytics - Unable to parse response (*a JSON Response*). | La stringa JSON è formata in modo errato. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | La risposta non contiene il parametro contextData. |
-| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` non è incluso in contextdata. |
+| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  non è incluso in contextData. |
 | Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell'intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l'app. |
 
 Considerazioni da ricordare:
