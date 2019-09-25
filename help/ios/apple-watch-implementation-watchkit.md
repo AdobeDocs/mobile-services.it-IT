@@ -2,10 +2,10 @@
 description: A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite sui dispositivi Apple Watch. Le applicazioni che vengono eseguite in questo ambiente richiedono la condivisione di dati tra il framework WatchConnectivity e l'app iOS che le contiene.
 seo-description: A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite sui dispositivi Apple Watch. Le applicazioni che vengono eseguite in questo ambiente richiedono la condivisione di dati tra il framework WatchConnectivity e l'app iOS che le contiene.
 seo-title: Implementazione Apple Watch con WatchOS 2
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione Apple Watch con WatchOS 2
 topic: Sviluppatore e implementazione
-uuid: 9498467 e-db 5 e -411 e-a 00 e-d 19841 f 485 de
+uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,17 +14,17 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
 
-A partire da watchos 2, le estensioni watchkit possono essere eseguite su un Apple Watch. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite su Apple Watch. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
 
 >[!TIP]
 >
->A partire `AdobeMobileLibrary` dalla versione `WatchConnectivity` 4.6.0, è supportato.
+>A partire dalla versione `AdobeMobileLibrary` v4.6.0 `WatchConnectivity` è supportata.
 
 ## Getting started {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
->Assicurati di disporre di un progetto con almeno i seguenti target:
+>Accertatevi di disporre di un progetto con almeno le seguenti destinazioni:
 >
 >* L'app contenitore
 >* L'app WatchKit
@@ -73,7 +73,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. In your app delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` viene chiamato nella `ADBMobile` libreria, che restituisce un booleano che indica se il dizionario è destinato al consumo da parte della `ADBMobile` libreria. Se restituisce `No`, il messaggio non era stato avviato dall'SDK Adobe.
+   `syncSettings:` viene chiamato nella `ADBMobile` libreria, che restituisce un valore booleano che indica se il dizionario deve essere utilizzato dalla `ADBMobile` libreria. Se restituisce `No`, il messaggio non era stato avviato dall'SDK Adobe.
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -90,7 +90,7 @@ Completa i seguenti passaggi nel progetto Xcode:
    } 
    ```
 
-## Configurare l'estensione watchkit {#section_5ADE31741E514330A381F2E3CFD4A814}
+## Configurare l’estensione WatchKit {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of your WatchKit extension’s target.
 1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell'estensione WatchKit, espandi la sezione **Collega binario a librerie]e aggiungi le seguenti librerie:[!UICONTROL **
@@ -130,7 +130,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. In your extension delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` viene chiamato nella `ADBMobile` libreria, che restituisce un booleano che indica se il dizionario è destinato al consumo da parte della `ADBMobile` libreria. Se restituisce `NO`, il messaggio non era stato avviato dall'SDK Adobe.
+   `syncSettings:` viene chiamato nella `ADBMobile` libreria, che restituisce un valore booleano che indica se il dizionario deve essere utilizzato dalla `ADBMobile` libreria. Se restituisce `NO`, il messaggio non era stato avviato dall'SDK Adobe.
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
