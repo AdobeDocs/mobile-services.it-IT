@@ -2,10 +2,10 @@
 description: 'Per configurare una suite di rapporti per la raccolta di dati di app iOS, completa questi passaggi:'
 seo-description: 'Per configurare una suite di rapporti per la raccolta di dati di app iOS, completa questi passaggi:'
 seo-title: Prima di iniziare
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Prima di iniziare
 topic: Sviluppatore e implementazione
-uuid: 04133 f 68-3618-41 fd -8 a 13-aec 5 b 6 f 04 df 6
+uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -52,11 +52,11 @@ Puoi accedere ad Adobe Mobile Services in uno dei modi seguenti:
 
    Accedi a [Experience Cloud](https://marketing.adobe.com) con il tuo Adobe ID.
 
-   Questo metodo presuppone che sia stato eseguito il provisioning della tua società e che sia stato collegato il tuo account Analytics. Per ulteriori informazioni sul provisioning, vedi [Gestione di utenti e prodotti Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). Per ulteriori informazioni sul collegamento del tuo account, vedi [Organizzazioni e collegamento di account](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   Questo metodo presuppone che sia stato eseguito il provisioning della società e che sia stato collegato l’account Analytics. For more information about provisioning, see Manage Experience Cloud users and products. [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) For more information about linking your account, see [Organizations and account linking](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
 
    >[!TIP]
    >
-   >Se non sei sicuro se in Experience Cloud è stato eseguito il provisioning della tua società, usa il tuo account Adobe Analytics esistente.
+   > Se non sei sicuro se per la tua società sia stato eseguito il provisioning in Experience Cloud, usa il tuo account Adobe Analytics esistente.
 
 * **Adobe Analytics**
 
@@ -74,7 +74,7 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall'app e de
 
 1. Immetti il nome dell'app e seleziona un ID suite di rapporti univoco.
 
-   Ad esempio, l'ID suite di rapporti potrebbe essere `mycomobileappdev`. Devi configurare suite di rapporti e app distinte per le versioni di sviluppo e di produzione. Quando siete pronti per impostare la versione di produzione, ripetete questi passaggi.
+   Ad esempio, l'ID suite di rapporti potrebbe essere `mycomobileappdev`. You need to set up separate report suites and apps for the development and production versions. When you are ready to set up the production version, repeat these steps.
 1. Lascia selezionata l'opzione **[!UICONTROL Modello per app mobile].**
 
    Questo modello abilita le marche temporali per la raccolta dei dati offline e attiva le variabili della soluzione mobile per l'acquisizione delle metriche sul ciclo di vita.
@@ -85,7 +85,7 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall'app e de
 
 Per scaricare l'SDK di Mobile:
 
-1. Accedi a Mobile Services e apri l'app in uno dei modi seguenti:
+1. Log in to Mobile Services and open your app in one of the following ways:
 
    * Seleziona l'app nell'elenco a discesa **[!UICONTROL Tutte le app].**
    * Individua l'app nel riquadro a destra e aprila.
@@ -97,5 +97,5 @@ Per scaricare l'SDK di Mobile:
 
 >[!TIP]
 >
->Un file di configurazione per l'app viene incluso automaticamente nel download dell'SDK, quindi non è necessario scaricare il file separatamente. Tuttavia, se hai scaricato l'SDK in precedenza e ora desideri ottenere le impostazioni aggiornate, dovrai scaricare nuovamente il file di configurazione.
+>Un file di configurazione per l'app viene incluso automaticamente nel download dell'SDK, pertanto non è necessario scaricare tale file separatamente. Tuttavia, se hai scaricato l'SDK in precedenza e ora desideri ottenere le impostazioni aggiornate, dovrai scaricare nuovamente il file di configurazione.
 
