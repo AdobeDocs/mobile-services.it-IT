@@ -7,7 +7,7 @@ title: Implementazione Apple Watch con WatchOS 2
 topic: Sviluppatore e implementazione
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -19,6 +19,15 @@ A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite su Apple 
 >[!TIP]
 >
 >A partire dalla versione `AdobeMobileLibrary` v4.6.0 `WatchConnectivity` è supportata.
+
+## Nuova versione SDK per Adobe Experience Platform Mobile
+
+Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+
+A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+
+* Per iniziare, vai ad Adobe Experience Platform Launch.
+* Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Getting started {#section_70BC28BB69414F169196953D3D264BC1}
 
@@ -73,7 +82,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. In your app delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` viene chiamato nella `ADBMobile` libreria, che restituisce un valore booleano che indica se il dizionario deve essere utilizzato dalla `ADBMobile` libreria. Se restituisce `No`, il messaggio non era stato avviato dall'SDK Adobe.
+   `syncSettings:` is called in the `ADBMobile` library, which returns a bool that indicates whether the dictionary was meant for consumption by the `ADBMobile` library. Se restituisce `No`, il messaggio non era stato avviato dall'SDK Adobe.
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
