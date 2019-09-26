@@ -8,7 +8,7 @@ title: Acquisizione da app mobile
 topic: Sviluppatore e implementazione
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,18 +17,14 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'App Store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad [Launch](https://launch.adobe.com/).
+* To get started, go to Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as Acquisition links. Per ulteriori informazioni, consulta [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). For more information about using Acquisition and Marketing Links with the Experience Cloud SDKs, see [Acquisition and Marketing Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
 
 >[!IMPORTANT]
 >
@@ -50,9 +46,9 @@ Per raccogliere dati di acquisizione da una campagna Google Play Acquisition sta
 
    * The data is stored and available in the `AdobeDataCallback` instance that was registered earlier with the SDK.
 
-      Per ulteriori informazioni, vedere Metodi [di](/help/android/configuration/methods.md)configurazione.
+      For more information, see Configuration Methods.[](/help/android/configuration/methods.md)
 
-   * Viene utilizzato il tipo `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` o il tipo di `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` evento.
+   * The  or the  event type are used.`MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL``MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`
 
    * Le chiavi personalizzate che facevano parte dei dati di acquisizione di Google Play avranno nomi separati con spazi con " `a.acquisition.custom.`"
 
@@ -62,13 +58,13 @@ Se usi i collegamenti di acquisizione creati su Adobe Mobile Services, aggiungi 
 
    When the SDK receives the acquisition data from Adobe Mobile Services (on first launch), that data will be stored and also available in the `AdobeDataCallback` instance registered earlier with the SDK, as mentioned in [Configuration Methods](/help/android/configuration/methods.md).
 
-1. Verrà utilizzato il tipo `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` o il tipo di `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` evento.
+1. The  or the  event type will be used.`MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL``MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`
 
 1. The custom data keys are prefixed with "`a.acquisition.custom.`"
 
 >[!TIP]
 >
->If you are sending data to multiple report suites, use the acquisition data from the app that is associated with the first report suite in your list of report suite IDs.
+>Se invii dati a più suite di rapporti, usa i dati di acquisizione dall’app associata alla prima suite di rapporti nell’elenco degli ID delle suite di rapporti.
 
 Gli aggiornamenti in questa sezione consentono all'SDK di inviare dati di acquisizione da un collegamento di acquisizione.
 
@@ -76,7 +72,7 @@ Gli aggiornamenti in questa sezione consentono all'SDK di inviare dati di acquis
 
 1. Aggiungi la libreria [al progetto e implementa il ciclo di vita.
 
-   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 1. Importa la libreria:
 
