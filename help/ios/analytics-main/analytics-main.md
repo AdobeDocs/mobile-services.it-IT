@@ -7,27 +7,23 @@ title: Panoramica di Analytics
 topic: Sviluppatore e implementazione
 uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
 translation-type: tm+mt
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
 # Panoramica di Analytics {#analytics}
 
-The information in this section helps you use the iOS SDK with Adobe Analytics.
+Le informazioni contenute in questa sezione sono utili per usare l’SDK per iOS con Adobe Analytics.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## Nuova versione SDK per Adobe Experience Platform Mobile
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad Launch.
+* Per iniziare, vai ad Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Per ulteriori informazioni, consulta [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 ## Generazione di identificatori di tracciamento di Analytics
 
