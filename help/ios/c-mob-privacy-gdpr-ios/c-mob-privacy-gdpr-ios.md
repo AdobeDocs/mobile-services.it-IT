@@ -5,7 +5,7 @@ seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
 title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -18,23 +18,20 @@ Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del
 >
 >GDPR is supported **only** in Mobile SDK version 4.16.0 or later.
 
-Quando fornisce software e servizi a un'azienda, Adobe funge da “responsabile del trattamento” in merito ai dati che elabora e memorizza nell'ambito di tali servizi. In qualità di responsabile del trattamento dei dati, Adobe elabora i dati personali secondo le autorizzazioni e le istruzioni fornite dalla tua azienda (ad esempio, quelli definiti nell'accordo con Adobe).
-
-In qualità di “titolare del trattamento”, puoi usare gli SDK di Adobe Mobile Services per supportare le richieste di recupero e cancellazione dei dati in conformità ai requisiti RGPD provenienti dalle tue applicazioni mobile.
-
-## Nuova versione di Adobe Experience Cloud SDK
+## Nuova versione SDK per Adobe Experience Platform Mobile
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad Launch.
+* Per iniziare, vai ad Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Per ulteriori informazioni, consulta [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
+## Panoramica
 
+Quando fornisce software e servizi a un'azienda, Adobe funge da “responsabile del trattamento” in merito ai dati che elabora e memorizza nell'ambito di tali servizi. In qualità di responsabile del trattamento dei dati, Adobe elabora i dati personali secondo le autorizzazioni e le istruzioni fornite dalla tua azienda (ad esempio, quelli definiti nell'accordo con Adobe).
+
+In qualità di “titolare del trattamento”, puoi usare gli SDK di Adobe Mobile Services per supportare le richieste di recupero e cancellazione dei dati in conformità ai requisiti RGPD provenienti dalle tue applicazioni mobile.
 
 Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile, puoi utilizzare le seguenti impostazioni e metodi:
 
