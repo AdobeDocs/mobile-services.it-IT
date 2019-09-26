@@ -7,7 +7,7 @@ title: Metriche del ciclo di vita
 topic: Sviluppatore e implementazione
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ---
 
@@ -16,18 +16,14 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo l'implementazione del ciclo di vita.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad Launch.
+* To get started, go to [Experience Platform Launch](https://launch.adobe.com/).
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Per ulteriori informazioni, consulta [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -93,13 +89,13 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 >[!IMPORTANT]
 >
-> The Daily Engaged Users and Monthly Engaged Users metrics are not automatically stored in an Analytics metric. **** È necessario creare una regola di elaborazione che imposti un evento personalizzato per acquisire queste metriche.
+> Le metriche Utenti *giornalieri coinvolti e Utenti* mensili coinvolti ** non vengono memorizzate automaticamente in una metrica Analytics. You must create a processing rule that sets a custom event to capture these metrics.
 
-### Dimensioni
+#### Dimensioni
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l'installazione.  The date format is .`MM/DD/YYYY`
+   Data del primo avvio dopo l'installazione.  Il formato della data è `MM/DD/YYYY`.
 
    * Dati contestuali di Analytics/Target: `a.InstallDate`
    * Gestione dell'audience: `c_a_InstallDate`
@@ -189,7 +185,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Gestione dell'audience: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >Le dimensioni *Giorni dall'ultimo aggiornamento*, *Avvii dall'ultimo aggiornamento* e Nome ** gestore non vengono memorizzate automaticamente in una variabile Analytics. Devi creare una regola di elaborazione per copiare i valori in una variabile di Analytics per il reporting.
+   >The Days since last upgrade, Launches since last upgrade, and the Carrier Name dimensions are not automatically stored in an Analytics variable. ****** You must create a processing rule to copy the values to an Analytics variable for reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -226,11 +222,11 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
    Populated by `trackLocation` methods.
 
-   * Analytics Context Data/Target parameter:
+   * Dati contestuali di Analytics/parametro Target:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Management trait:
+   * Caratteristiche di Gestione dell'audience:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -254,11 +250,11 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
    Populated by `trackLocation` methods.
 
-   * Dati contestuali di Analytics/parametro Target:
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caratteristiche di Gestione dell'audience:
+   * Audience Management trait:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
