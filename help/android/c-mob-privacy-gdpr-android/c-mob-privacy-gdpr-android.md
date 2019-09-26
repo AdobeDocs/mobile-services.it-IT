@@ -5,7 +5,7 @@ seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD) overv
 title: Privacy e Regolamento generale sulla protezione dei dati
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
->[!IMPORTANT]
->
->A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad [Launch](https://launch.adobe.com/).
+* Per iniziare, vai ad Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+
+## Panoramica
 
 >[!IMPORTANT]
 >
@@ -37,10 +37,10 @@ Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile,
 
 * Per recuperare i dati dagli SDK e inviarli ai tuoi server, utilizza il metodo `getAllIdentifiersAsync`.
 
-   For more information, see Retrieving Stored Identifiers.[](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
+   Per ulteriori informazioni, vedere [Recupero degli identificatori](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)memorizzati.
 
 * Per impostare lo stato di consenso o diniego e poter dare seguito alle richieste di cancellazione dati in conformità ai requisiti RGPD, utilizza le impostazioni seguenti:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   For more information, see Setting the User's Opt Status.[](/help/android/c-mob-privacy-gdpr-android/privacy.md)
+   Per ulteriori informazioni, consultate [Impostazione dello stato](/help/android/c-mob-privacy-gdpr-android/privacy.md)di consenso dell'utente.
