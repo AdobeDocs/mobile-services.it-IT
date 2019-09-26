@@ -1,6 +1,6 @@
 ---
 description: L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all'interno dell'app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell'audience.
-keywords: android;libreria;mobile;sdk
+keywords: android;library;mobile;sdk
 seo-description: L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all'interno dell'app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell'audience.
 seo-title: SDK 4.x per Android per le soluzioni Experience Cloud
 solution: Marketing Cloud,Analytics
@@ -8,7 +8,7 @@ title: SDK 4.x per Android per le soluzioni Experience Cloud
 topic: Sviluppatore e implementazione
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,28 +17,22 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 L'SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all'interno dell'app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell'audience.
 
->[!IMPORTANT]
->
->Lo SKU Adobe Analytics Mobile Marketing Add-on è richiesto per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento profondo, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contattate il vostro Adobe CSM.
-
-## Nuova versione di Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
->[!IMPORTANT]
->
->A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad [Launch](https://launch.adobe.com/).
+* To get started, go to Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Per ulteriori informazioni, consulta [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
+>The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. For more information, contact your Adobe CSM.
 
 >[!IMPORTANT]
 >
->Anche se puoi configurare le funzionalità nell’interfaccia utente, queste funzioni non funzioneranno finché non avrai scaricato il file di configurazione generato e aggiunto il file all’SDK. Per informazioni sul download e la configurazione degli SDK, vedi Implementazione e ciclo di vita [di base](/help/android/getting-started/dev-qs.md).
+>Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see Core Implementation and Lifecycle.[](/help/android/getting-started/dev-qs.md)
 
 Gli SDK supportano le seguenti versioni di Android:
 
