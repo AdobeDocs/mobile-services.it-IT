@@ -8,31 +8,29 @@ title: Metriche del ciclo di vita
 topic: Sviluppatore e implementazione
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
 # Lifecycle metrics{#lifecycle-metrics}
 
-Questa sezione fornisce informazioni sulle metriche e le dimensioni misurabili automaticamente dalla libreria mobile dopo l’implementazione del ciclo di vita e un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. For more information about troubleshooting, go to Troubleshoot Lifecycle data.[](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)
+Questa sezione fornisce informazioni sulle metriche e le dimensioni misurabili automaticamente dalla libreria mobile dopo l’implementazione del ciclo di vita e un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. Per ulteriori informazioni sulla risoluzione dei problemi, consulta [Risoluzione dei problemi dei dati](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)del ciclo di vita.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## Nuova versione SDK per Adobe Experience Platform Mobile
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
->[!IMPORTANT]
->
->A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Per iniziare, passa ad [Launch](https://launch.adobe.com/).
+* Per iniziare, vai ad Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell'audience. Analytics e Target usano lo stesso formato; Gestione dell'audience usa invece un prefisso diverso per ogni metrica.
 
-For Analytics, the context data that is sent with each lifecycle tracking call is automatically captured in and reported on by using the metric or dimension, and the exceptions are noted.
+Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione, e le eccezioni sono indicate.
 
 ### Metrics (Metriche)
 
@@ -56,7 +54,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
+   >Questa metrica non viene memorizzata automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.DailyEngUserEvent`
    * Segnale di Audience Manager: `c_a_DailyEngUserEvent`
@@ -78,7 +76,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
+   >This metric is not automatically stored in an Analytics metric. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.LaunchEvent`
    * Segnale di Audience Manager: `c_a_LaunchEvent`
@@ -151,7 +149,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
 * **Versione sistema operativo**
 
-   The OS version.
+   Versione del sistema operativo.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
@@ -214,21 +212,21 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
    Populated by `trackTimedAction` methods.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.action.time.total`
-   * Audience Manager Trait: `c_a_action_time_total`
+   * Caratteristiche di Audience Manager: `c_a_action_time_total`
 
 * **Tempo azione in-app**
 
    Populated by `trackTimedAction` methods.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.action.time.inapp`
-   * Audience Manager Trait: `c_a_action_time_inapp`
+   * Caratteristiche di Audience Manager: `c_a_action_time_inapp`
 
 * **Valore "lifetime" del ciclo di vita (evento)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Caratteristiche di Audience Manager: `c_a_ltv_amount`
 
 ### Dimensioni
 
@@ -240,7 +238,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager Traits:
+   * Caratteristiche di Audience Manager:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -254,7 +252,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager Traits:
+   * Caratteristiche di Audience Manager:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -279,7 +277,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
    Viene compilata dai metodi trackLocation quando il dispositivo si trova entro un POI definito.
 
    * Analytics Context Data/Target Parameters: `a.loc.poi`
-   * Audience Manager Trait: `c_a_loc_poi`
+   * Caratteristiche di Audience Manager: `c_a_loc_poi`
 
 * **Distanza dal centro del punto di interesse**
 
@@ -293,7 +291,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
    Viene compilata dai metodi trackLifetimeValue.
 
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Caratteristiche di Audience Manager: `c_a_ltv_amount`
+   * Audience Manager Trait: `c_a_ltv_amount`
 
 * **Codice di tracciamento**
 
@@ -304,7 +302,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * ** Campaign
 
-   Name of the campaign, also stored in the  campaign variable. Viene compilata dalla funzione Acquisizione da app mobile.
+   Nome della campagna, memorizzato anche nella variabile della campagna. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.name`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_name`
