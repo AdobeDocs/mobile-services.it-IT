@@ -7,7 +7,7 @@ title: Implementazione e ciclo di vita di base
 topic: Sviluppatore e implementazione
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
+source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
@@ -32,7 +32,7 @@ Per scaricare l’SDK:
 
    * `ADBMobile.h`, file di intestazione Objective-C usato per iOS AppMeasurement.
    * `ADBMobileConfig.json`, file di configurazione dell’SDK personalizzato per la tua app.
-   * `AdobeMobileLibrary.a`, un fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
+   * `AdobeMobileLibrary.a`, a bitcode-enabled fat binary that contains the library builds for iOS devices (armv7, armv7s, arm64), and simulators (i386, x86_64).
 
       Se la destinazione sarà un'app iOS, il fat binary deve essere collegato.
 
@@ -44,7 +44,7 @@ Per scaricare l’SDK:
 
       Se la destinazione sarà un'app estensione Apple Watch (watchOS 2), il fat binary deve essere collegato.
 
-   * `AdobeMobileLibrary_TV.a`, un fat binary abilitato per bitcode contenente le build della libreria per i nuovi dispositivi Apple TV (arm64) e simulatori (x86_64).
+   * `AdobeMobileLibrary_TV.a`, a bitcode-enabled fat binary that contains the library builds for new Apple TV devices (arm64) and simulator (x86_64).
 
       Se la destinazione sarà un'app estensione Apple TV (tvOS), il fat binary deve essere collegato.
 
@@ -78,6 +78,7 @@ Per scaricare l’SDK:
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
+      * `CoreLocation.framework` (facoltativo, ma richiesto per le funzionalità di tracciamento geografico)
    * **Destinazioni di estensioni iOS**
 
       * `SystemConfiguration.framework`
@@ -106,7 +107,7 @@ Per scaricare l’SDK:
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Add a /  call in :`collectLifecycleData``collectLifecycleDataWithAdditionalData``application:didFinishLaunchingWithOptions`
+Aggiungi una `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` chiamata in `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
