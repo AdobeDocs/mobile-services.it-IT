@@ -1,26 +1,26 @@
 ---
-description: This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
+description: Questo argomento fornisce informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
 keywords: android;libreria;mobile;sdk
-seo-description: This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
-seo-title: Troubleshoot Acquisition testing
-solution: Marketing Cloud,Analytics
-title: Troubleshoot Acquisition testing
+seo-description: Questo argomento fornisce informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
+seo-title: Risoluzione dei problemi di test di acquisizione
+solution: Marketing Cloud, Analytics
+title: Risoluzione dei problemi di test di acquisizione
 topic: Sviluppatore e implementazione
 translation-type: tm+mt
-source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
 # Risoluzione dei problemi di test di acquisizione {#troubleshoot-acquisition-testing}
 
-This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
+Questo argomento fornisce informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
 
-* If not otherwise specified, the ADBMobileConfig.json file should be placed in the  folder.`assets`
+* Se non viene specificato diversamente, il file ADBMobileConfig.json deve trovarsi nella `assets` cartella.
 
-   The name is case sensitive, so do not use upper or lower case letters.
+   Poiché il nome distingue tra maiuscole e minuscole, non utilizzare lettere maiuscole e minuscole.
 
-* Ensure that  is called from your main activity.`Config.setContext(this.getApplicationContext())`
+* Accertatevi che `Config.setContext(this.getApplicationContext())` venga chiamato dall'attività principale.
 
    Per ulteriori informazioni, vedere Metodi [di](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)configurazione.
 
