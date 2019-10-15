@@ -2,12 +2,12 @@
 description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-title: Analisi del video
-solution: Marketing Cloud,Analytics
+solution: Marketing Cloud, Analytics
 title: Analisi del video
 topic: Sviluppatore e implementazione
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -116,7 +116,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 [ADBMobile mediaOpenWithSettings:mediaSettings callback:nil]; 
  
 // You are now ready to play the video, for example, [movieViewController.moviePlayer play]; 
-// Note the the mediaPlay, mediaStop and mediaClose methods are called in the 
+// Note the mediaPlay, mediaStop and mediaClose methods are called in the 
 // event handlers described in the next section
 ```
 
