@@ -3,17 +3,17 @@ description: Queste informazioni sono utili per risolvere eventuali problemi dei
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risoluzione dei problemi dei messaggi push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic: Metrics (Metriche)
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Troubleshooting push messaging {#troubleshooting-push-messaging}
+# Risoluzione dei problemi dei messaggi push{#troubleshooting-push-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 
@@ -33,7 +33,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    >[!TIP]
    >
-   >I servizi push non garantiscono l'invio di un messaggio. Per ulteriori informazioni sull'affidabilità dei servizi, consulta la relativa documentazione:
+   >I servizi push non garantiscono al 100% l'effettivo invio di un messaggio. Per ulteriori informazioni sull'affidabilità dei servizi, consulta la relativa documentazione:
    >
    >* **APNS**: [Qualità del servizio](https://developer.apple.com/documentation/usernotifications)
       >
