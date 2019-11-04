@@ -1,34 +1,34 @@
 ---
-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
-seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
-seo-title: Impostazione dello stato di consenso dell'utente
-solution: Marketing Cloud,Analytics
-title: Impostazione dello stato di consenso dell'utente
+description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
+seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
+seo-title: Impostazione dello stato di consenso o diniego dell'utente
+solution: Experience Cloud,Analytics
+title: Impostazione dello stato di consenso o diniego dell'utente
 topic: Sviluppatore e implementazione
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Setting the user's opt status{#setting-the-user-s-opt-status}
+# Impostazione dello stato di consenso o diniego dell'utente{#setting-the-user-s-opt-status}
 
 Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 
 >[!IMPORTANT]
 >
->Starting with Android SDK 4.15 , setting the privacy status to `unknown` holds Audience Manager and Experience Cloud ID hits.
+>A partire da Android SDK 4.15, l'impostazione dello stato di privacy su `unknown` blocca gli hit di Audience Manager ed Experience Cloud ID.
 
 Puoi verificare se l'attività di Analytics, Target e Audience Manager è consentita su un dispositivo utilizzando le seguenti impostazioni:
 
-* `privacyDefault` nel file di configurazione [ADBMobile JSON](/help/android/configuration/json-config/json-config.md).
+* `privacyDefault` in [file di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md).
 
    Questa impostazione controlla l'impostazione iniziale che persiste finché non viene modificata nel codice.
 
-* Il `Config.setPrivacyStatus` metodo.
+* Il metodo `Config.setPrivacyStatus`.
 
-   Dopo che l'impostazione della privacy è stata modificata utilizzando questo metodo, la modifica resta in vigore finché non la cambi nuovamente oppure finché non disinstalli e reinstalli l'app. Per ulteriori informazioni sui metodi, vedi [Metodi di Configurazione](/help/android/configuration/methods.md).
+   Dopo che l'impostazione della privacy è stata modificata utilizzando questo metodo, la modifica resta in vigore finché non la cambi nuovamente oppure finché non disinstalli e reinstalli l'app. Per ulteriori informazioni sui metodi, vedi  [Metodi di Configurazione](/help/android/configuration/methods.md).
 
 La seguente tabella descrive ogni stato di privacy:
 
@@ -37,7 +37,7 @@ La seguente tabella descrive ogni stato di privacy:
    * **Analytics**: gli hit vengono inviati.
    * **Target**: le richieste Mbox vengono inviate.
    * **Audience Manager**: i segnali e le sincronizzazioni ID vengono inviati.
-   * Value in the JSON Config file: `optedin`
+   * Valore nel file di configurazione JSON: `optedin`
    * Valore in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **Consenso negato**
@@ -45,17 +45,17 @@ La seguente tabella descrive ogni stato di privacy:
    * **Analytics**: gli hit vengono scartati.
    * **Target**: le richieste Mbox non sono consentite.
    * **Audience Manager**: i segnali e le sincronizzazioni ID non sono consentiti.
-   * Value in the JSON config file: `optedout`
+   * Valore nel file di configurazione JSON: `optedout`
    * Valore in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_OUT`
 
 * **Sconosciuto**
 
-   * **Analytics**: Se il tracciamento offline è **abilitato**, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono scartati).
+   * **Analytics**: se è **abilitato** il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati).
 
       Se il tracciamento offline <b>non è</b> abilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin.
    * **Target**: le richieste Mbox vengono inviate.
    * **Audience Manager**: i segnali e le sincronizzazioni ID vengono inviati.
-   * Value in the JSON config file: `optunknown`
+   * Valore nel file di configurazione JSON: `optunknown`
    * Valore in `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_UNKNOWN`
 
 ## Esempi {#section_128AC455EE024193B5D4E5A565B53D00}
