@@ -2,27 +2,27 @@
 description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 seo-description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 seo-title: Verifica dell'acquisizione V3
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verifica dell'acquisizione V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Testing V3 acquisition{#testing-v-acquisition}
+# Verifica dell’acquisizione V3{#testing-v-acquisition}
 
 Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 
 >[!IMPORTANT]
 >
-> per "acquisizione V3" si intendono i collegamenti di acquisizione creati con Acquisition Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi passare alla versione SDK 4.6.0 o successiva per iOS.
+>per "acquisizione V3" si intendono i collegamenti di acquisizione creati con Acquisition Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi passare alla versione SDK 4.6.0 o successiva per iOS.
 
 Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, seleziona una qualsiasi app mobile da usare come destinazione al momento di creare il collegamento della campagna. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento.
 
 1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/ios/acquisition-main/acquisition.md).
-1. Passa ad **[!UICONTROL Acquisition Builder]nell'interfaccia utente di Adobe Mobile Services e genera un URL per una campagna di acquisizione.**
+1. Passa ad **[!UICONTROL Acquisition Builder]** nell'interfaccia utente di Adobe Mobile Services e genera un URL per una campagna di acquisizione.
 
    Ad esempio:
 
@@ -40,17 +40,17 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   If you do not see `contextData`, or some of it is missing, ensure that the acquisition URL follows the format that is specified in [Create Acquisition Link Manually](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
+   Se non visualizzi `contextData`, o se ne mancano alcuni, accertati che l'URL di acquisizione segua il formato specificato in [Creare manualmente i collegamenti di acquisizione](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
 1. Verifica che le seguenti impostazioni nel file di configurazione siano corrette:
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisizione | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
+   | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`* dovrebbe corrispondere a *`appid`* nel collegamento di acquisizione. |
    | analytics | `referrerTimeout` dovrebbe essere un valore maggiore di 0. |
 
 
 1. (Condizionale) Se l'impostazione `ssl` nel file di configurazione dell'app è "true", aggiorna il collegamento di acquisizione, impostandolo per l'utilizzo del protocollo HTTPS.
-1. Fate clic sul collegamento generato dal dispositivo mobile sul quale intendete installare l'app.
+1. Dal dispositivo mobile sul quale intendi installare l'app, fai clic sul collegamento generato.
 
    I server di Adobe (`c00.adobe.com`) memorizzano l'impronta digitale ed eseguono il reindirizzamento all'App Store. Non è necessario scaricare l'app per eseguire la verifica.
 1. Sullo stesso dispositivo mobile utilizzato al punto 6, avvia l'applicazione per la prima volta.
@@ -65,7 +65,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
    In caso contrario, assicurati di aver completato i passaggi 4 e 5.
 
-   Here is some information about possible errors:
+   Seguono alcune informazioni su possibili errori:
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`(Impossibile recuperare la risposta del servizio di acquisizione) - Si è verificato un errore di rete.
 
@@ -79,7 +79,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` is not included in .`contextData`
+      `a.referrer.campaign.name` non è incluso in `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -97,7 +97,7 @@ Se l'app per dispositivi mobili non è ancora disponibile nell'App Store, selezi
 
          >[!TIP]
          >
-         >Accertatevi che `https://c00.adobe.com/v3/<appid>/start` e `https://c00.adobe.com/v3/<appid>/end` abbiate gli stessi valori agente utente.
+         >Assicurati che `https://c00.adobe.com/v3/<appid>/start` e `https://c00.adobe.com/v3/<appid>/end` abbiano gli stessi valori agente utente.
 
       * Il collegamento di acquisizione e l'hit dell'SDK dovrebbero usare lo stesso protocollo, HTTP o HTTPS.
 
