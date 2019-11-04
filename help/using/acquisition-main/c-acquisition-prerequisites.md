@@ -2,30 +2,30 @@
 description: Per utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
 keywords: dispositivi mobili
 seo-description: Per utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
-seo-title: Prerequisiti per l'acquisizione
-solution: Marketing Cloud,Analytics
-title: Prerequisiti per l'acquisizione
+seo-title: Prerequisiti per l’acquisizione
+solution: Experience Cloud, Analytics
+title: Prerequisiti per l’acquisizione
 topic: Metrics (Metriche)
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Acquisition prerequisites{#acquisition-prerequisites}
+# Prerequisiti per l’acquisizione{#acquisition-prerequisites}
 
-Prima di usare i collegamenti di acquisizione, completa i prerequisiti seguenti.
+Prima di utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
 
-To track Marketing Links, ensure that you meet the following prerequisites:
+Per tenere traccia dei collegamenti di marketing, è necessario che siano soddisfatti i prerequisiti seguenti:
 
 1. Accertati di disporre di una suite di rapporti per app mobili.
 
-   You must create a new mobile app report suite or have an existing report suite that can collect, track, and report on data that is collected from your Marketing Links. Per ulteriori informazioni sulla creazione di una nuova suite di rapporti per app mobili, vedi [Aggiungere una nuova app](/help/using/manage-apps/t-new-app.md).
+   Devi creare una nuova suite di rapporti per app mobili oppure usarne una già esistente in grado di raccogliere, tracciare e includere nei rapporti i dati raccolti dai tuoi collegamenti di marketing. Per ulteriori informazioni sulla creazione di una nuova suite di rapporti per app mobili, vedi [Aggiungere una nuova app](/help/using/manage-apps/t-new-app.md).
 
 1. Verifica la versione SDK.
 
-   La più recente funzionalità di tracciamento dei collegamenti marketing richiede la versione SDK 4.9 o successiva.
+   La più recente versione della funzionalità di tracciamento dei collegamenti di marketing richiede la versione 4.9 o successiva dell’SDK.
 
    **Funzionalità supportata**
 
@@ -35,10 +35,10 @@ To track Marketing Links, ensure that you meet the following prerequisites:
    | Da 4.6 a 4.9 | Sì | Sì | No |
    | 4.9 o successiva | Sì | Sì | Sì |
 
-1. Abilitare le opzioni SDK acquisizione
+1. Attivare le Opzioni acquisizione SDK
 
-   Per poter tenere traccia dei collegamenti e generare i relativi rapporti, è necessario abilitare il tracciamento nella configurazione dell'SDK. For more information, see [Configure Acquisition](/help/using/acquisition-main/t-enable-acquisition.md).
+   Per poter tenere traccia dei collegamenti e generare i relativi rapporti, è necessario abilitare il tracciamento nella configurazione dell’SDK. Per ulteriori informazioni, consulta [Configura acquisizione](/help/using/acquisition-main/t-enable-acquisition.md).
 
-1. Aggiungere app App Store
+1. Aggiungere le app dell’app store
 
-   Devi aggiungere l'app da Apple App Store o da Google Play. Per ulteriori informazioni, vedi [Add an app from an app store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Devi aggiungere l’app da Apple App Store o da Google Play. Per ulteriori informazioni, vedi  [Aggiungere un’app da un app store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
