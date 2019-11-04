@@ -2,27 +2,27 @@
 description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
 seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
 seo-title: Tracciare gli stati dell'app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Tracciare gli stati dell'app
 topic: Sviluppatore e implementazione
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Track app states {#track-app-states}
+# Tracciare gli stati dell'app {#track-app-states}
 
 Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
 
 Ogni volta che nell'applicazione viene visualizzato un nuovo stato, ad esempio quando l'utente si sposta dalla homepage al feed di notizie, viene inviata una chiamata `trackState`. In Android, `trackState` viene generalmente chiamato ogni volta che si carica una nuova attività.
 
-## Tracking states {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Tracciamento degli stati {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto IntelliJ IDEA o Eclipse* in [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
 1. Importa la libreria:
 
@@ -43,11 +43,11 @@ Ogni volta che nell'applicazione viene visualizzato un nuovo stato, ad esempio q
    }
    ```
 
-The `"State Name"` is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces,  is reported as , and  is reported as .`View State``Page Name``state views``page views`
+Il `"State Name"` è indicato nella variabile `View State` in Adobe Mobile Services e viene registrata una visualizzazione per ciascuna chiamata `trackState`. In altre interfacce di Analytics, `View State` viene riportato come `Page Name`, e `state views` viene riportato come `page views`.
 
-## Send additional data {#section_CFDB4F944496401786A145C209AB387C}
+## Inviare dati aggiuntivi {#section_CFDB4F944496401786A145C209AB387C}
 
-In addition to the `"State Name"`, you can send additional context data with each track action call:
+Oltre al `"State Name"`, con ogni chiamata di tracciamento delle azioni puoi inviare anche dati contestuali aggiuntivi:
 
 ```java
 @Override 
@@ -66,14 +66,14 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate 
 
 ![](assets/map-variable-context-state.png)
 
-## App state reporting {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Generazione di rapporti sugli stati dell'app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 Gli stati vengono generalmente visualizzati utilizzando un rapporto del percorso, che consente di vedere in che modo gli utenti si spostano nell'app e quali stati vengono visualizzati più di frequente.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione.]** Questo rapporto si basa sui percorsi seguiti dagli utenti all'interno dell'applicazione. A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
-| Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **Pagine**, **[!UICONTROL Visualizzazioni pagina]** e **Percorso[!UICONTROL .]** |
-| Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine utilizzando la dimensione **Pagina**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **Percorso[!UICONTROL .]** |
+| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all'interno dell'applicazione. Un esempio di percorso è **[!UICONTROL Home]** &gt; **[!UICONTROL Impostazioni]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **[!UICONTROL Pagine]**, **[!UICONTROL Visualizzazioni pagina]** e **[!UICONTROL Percorso]**. |
+| Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
 
 
