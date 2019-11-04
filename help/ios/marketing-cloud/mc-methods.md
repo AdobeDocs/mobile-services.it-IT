@@ -1,35 +1,35 @@
 ---
-description: Di seguito sono elencati i metodi Adobe Experience Platform Identity Service forniti dalla libreria iOS.
-seo-description: Di seguito sono elencati i metodi Adobe Experience Platform Identity Service forniti dalla libreria iOS.
+description: Di seguito sono elencati i metodi del servizio Adobe Experience Platform Identity forniti dalla libreria iOS.
+seo-description: Di seguito sono elencati i metodi del servizio Adobe Experience Platform Identity forniti dalla libreria iOS.
 seo-title: Metodi di Adobe Experience Platform Identity
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
 topic: Sviluppatore e implementazione
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 ---
 
 
-# Adobe Experience Platform Identity Service methods {#experience-cloud-id-service-methods}
+# Metodi di Adobe Experience Platform Identity {#experience-cloud-id-service-methods}
 
-Di seguito sono elencati i metodi Adobe Experience Platform Identity Service forniti dalla libreria iOS.
+Di seguito sono elencati i metodi del servizio Adobe Experience Platform Identity forniti dalla libreria iOS.
 
 L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio ID di Experience Cloud.
 
-Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. Per maggiori informazioni, consulta [Attivare il servizio Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
+I metodi sono contraddistinti dal prefisso della relativa soluzione. I metodi di Experience Cloud ID hanno il prefisso `visitor`. Per maggiori informazioni, consulta [Attivare il servizio Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL )visitorAppendToURL:(nullable NSURL )url;`*``*`**
+* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. To use this method, you must have Mobile SDK version 4.12 or higher. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per usare questo metodo devi disporre dell'SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://marketing.adobe.com/resources/help/it_IT/mcvid/mcvid-appendvisitorid.html).
 
    >[!IMPORTANT]
    >
    >Questo metodo può provocare una chiamata di rete di blocco. Non invocare questa chiamata su thread sensibili a fattori temporali.
 
    * Input: `URL<NSURL>`
-A required URL string that the visitor information will be appended to.
+Stringa URL obbligatoria alla quale verranno aggiunte le informazioni sul visitatore.
    * `URL<NSURL>`
 Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 
@@ -59,7 +59,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >Questo metodo può provocare una chiamata di rete di blocco e **non** deve essere invocato da un thread di interfaccia utente.
 
 * **visitorSyncIdentifiers:**
 
@@ -99,7 +99,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 
 * **visitorSyncIdentifierWithType:identifier:authenticationState:**
 
-   Sincronizza con il servizio ID il tipo e il valore dell'identificatore fornito. Pass in the `authState` one of the following values:
+   Sincronizza con il servizio ID il tipo e il valore dell'identificatore fornito. Passa lo stato `authState` come uno dei seguenti valori:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -138,7 +138,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 
 * **visitorgetUrlVariablesAsync**
 
-   Introduced in version 4.16.0, this method returns an appropriately formed string that contains Visitor ID Service URL variables. For more information about how this method is used, see Adobe Experience Platform Identity Service methods.[](/help/ios/reference/hybrid-app.md)
+   Introdotto nella versione 4.16.0, questo metodo restituisce una stringa con formato appropriato che contiene le variabili URL del servizio ID visitatore. Per ulteriori informazioni sull’utilizzo di questo metodo, consulta [Metodi di Adobe Experience Platform Identity](/help/ios/reference/hybrid-app.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -166,7 +166,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
