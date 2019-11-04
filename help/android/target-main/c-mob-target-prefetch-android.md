@@ -4,7 +4,7 @@ seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK
 seo-title: Preacquisizione del contenuto delle offerte in Android
 title: Preacquisizione del contenuto delle offerte in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,17 +16,17 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 
 >[!IMPORTANT]
 >
->Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
+>La funzionalità di preacquisizione preventiva negli SDK Mobile per Android non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
 Questo processo consente di ridurre il tempo di caricamento, evita l'esecuzione di più chiamate di rete e permette di notificare ad Adobe Target quale elemento mbox è stato visitato dall'utente dell'app mobile. Tutto il contenuto viene recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e da qual momento viene richiamato dalla cache per tutte le chiamate future che includono quel contenuto per il nome di mbox specificato.
 
-Il contenuto di preacquisizione non rimane tra un avvio dell'app e quello successivo. The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+Il contenuto di preacquisizione non rimane tra un avvio dell'app e quello successivo. Viene memorizzato nella cache per tutto il tempo in cui l’app rimane attiva oppure fino alla chiamata del metodo `clearPrefetchCache()`.
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Le API di pre-acquisizione di Target sono disponibili a partire dalla versione 4.14.0 dell'SDK. Per maggiori informazioni sulle limitazioni relative ai parametri, vedi [Parametri di input batch](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-Nella versione 4.14 o successiva dell’SDK, se specificato, `environmentId``ADBMobileConfig.json` viene preso dal file quando si avvia una chiamata TnT batch mbox v2. Se nel file non è specificato alcun `environmentId`, no viene inviato alcun parametro di ambiente in una chiamata TnT batch mbox, e l’offerta viene distribuita per l’ambiente predefinito.
+Nella versione 4.14 o successiva dell’SDK, se specificato, `environmentId` viene preso dal file `ADBMobileConfig.json` quando si avvia una chiamata TnT batch mbox v2. Se nel file non è specificato alcun `environmentId`, no viene inviato alcun parametro di ambiente in una chiamata TnT batch mbox, e l’offerta viene distribuita per l’ambiente predefinito.
 
 Ad esempio:
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Pre-fetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## Metodi di preacquisizione {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android:
 
@@ -56,7 +56,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       final TargetCallback<Boolean> callback)
       ```
 
-   * Here are the parameters for this method:
+   * I parametri di questo metodo sono i seguenti:
 
       * **targetPrefetchArray**
 
@@ -68,7 +68,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
       * **callback**
 
-         Viene richiamato quando la preacquisizione è completa. Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         Viene richiamato quando la preacquisizione è completa. Restituisce `true` se la preacquisizione è avvenuta correttamente oppure `false` in caso contrario.
 
 * **loadRequests**
 
@@ -76,7 +76,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
    >[!IMPORTANT]
    >
-   >If the content for the requested locations is already cached, it will be returned immediately in the provided callback. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
+   >Se il contenuto delle posizioni richieste è già presente nella cache, viene restituito immediatamente nel callback specificato. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -84,7 +84,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * Here are the parameters for this method:
+   * I parametri di questo metodo sono i seguenti:
 
       * **requestArray**
 
@@ -104,7 +104,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       public static void clearPrefetchCache();
       ```
 
-   * There are no parameters for this method.
+   * Nessun parametro per questo metodo.
 
 * **createTargetRequestObject**
 
@@ -136,11 +136,11 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
       final Map<String, Object> productParams)
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## Classi pubbliche {#section_A273E53F069E4327BBC8CE4910B37888}
 
 Di seguito sono elencate le classi pubbliche che supportano la preacquisizione in Android:
 
-### Riferimento classe: TargetPrefetchObject
+### Riferimento della classe: TargetPrefetchObject
 
 Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbox.
 
@@ -152,18 +152,18 @@ Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbo
 * `mboxParameters`
 
    Raccolta di coppie chiave-valore che verranno aggiunte come `mboxParameters` a questa richiesta `TargetPrefetchObject`.
-   * **Type: Map**`<String, Object>`
+   * **Tipo**: mappa`<String, Object>`
 
 * **`orderParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo order.
-   * **Type: Map**`<String, Object>`
+   * **Tipo**: mappa `<String, Object>`
 
 * **`productParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo product.
 
-   * **Type: Map**`<String, Object>`
+   * **Tipo**: mappa `<String, Object>`
 
 
 ### Riferimento classe: TargetRequestObject
@@ -180,19 +180,19 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
 
    Raccolta di coppie chiave-valore che verranno aggiunte come `mboxParameters` a questa richiesta  `TargetRequestObject`.
 
-   * **Type: Map`<String, Object>`**
+   * **Tipo: mappa`<String, Object>`**
 
 * **`orderParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo order.
 
-   * **Tipo**: Mappa `<String, Object>`
+   * **Tipo**: mappa `<String, Object>`
 
 * **`productParameters`**
 
    Raccolta di coppie chiave-valore che verranno aggiunte alla mbox corrente sotto il nodo product.
 
-   * **Tipo**: Mappa `<String, Object>`
+   * **Tipo**: mappa `<String, Object>`
 
 * **`defaultContent`**
 
@@ -207,7 +207,7 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
    * **Tipo**: Target.TargetCallback`<String>`
 
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## Esempio di codice {#section_BF7F49763D254371B4656E17953D520C}
 
 Di seguito è riportato un esempio di preacquisizione del contenuto mediante gli SDK per Android:
 
