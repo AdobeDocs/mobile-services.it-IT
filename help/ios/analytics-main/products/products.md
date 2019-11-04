@@ -2,21 +2,21 @@
 description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-title: Variabile "products"
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variabile "products"
 topic: Sviluppatore e implementazione
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# Variabile dei prodotti {#products-variable}
 
 La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *`products`* variable:
+Per impostare la variabile *`products`*, imposta una chiave di dati contestuali su `"&&products"`, quindi imposta il valore utilizzando la sintassi definita per la variabile *`products`*:
 
 ```objective-c
 [contextData setObject:@"Category;Product;Quantity;Price[,Category;Product;Quantity;Price]" forKey:@"&&products"];
@@ -45,4 +45,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ![](assets/map-products.png)
 
-Non è necessario mappare la variabile *`products`* mediante le regole di elaborazione, perché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
+Non è necessario mappare la variabile  *`products`* mediante le regole di elaborazione, perché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
