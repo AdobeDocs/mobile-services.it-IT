@@ -1,32 +1,32 @@
 ---
 description: Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
 seo-description: Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
-seo-title: Metodi di analisi
-solution: Marketing Cloud,Analytics
-title: Metodi di analisi
+seo-title: Metodi di Analytics
+solution: Experience Cloud,Analytics
+title: Metodi di Analytics
 topic: Sviluppatore e implementazione
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Metodi di Analytics {#analytics-methods}
 
 Elenco dei metodi di Adobe Analytics forniti dalla libreria iOS.
 
-The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi sono contraddistinti dal prefisso della relativa soluzione. I metodi di Experience Cloud ID hanno il prefisso `track`.
 
 Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di Adobe Analytics.
 
 * **trackState:&#x200B;data:**
 
-   States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina. Se `state` è vuoto, nei rapporti viene visualizzato come *app name app version (build)*. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `state` sia impostato il valore `trackState`.
+   Gli stati sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart` e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina. Se `state` è vuoto, nei rapporti viene visualizzato come *app name app version (build)*. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `state` sia impostato il valore `trackState`.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -44,11 +44,11 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackAction:&#x200B;data:**
 
-   Tiene traccia di un'azione nell'applicazione. Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
+   Tiene traccia di un'azione nell'applicazione. Le azioni che desideri misurare, come `logons`, `banner taps`, `feed subscriptions` e altre metriche, si verificano nell'app.
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >In presenza di codice che potrebbe essere eseguito mentre l'applicazione è in background (ad esempio, un recupero di dati in background), utilizza piuttosto `trackActionFromBackground`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -86,7 +86,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!TIP]
    >
-   >This method should only be called in code that runs while your app is in the background.
+   >Questo metodo dovrebbe essere invocato solo dal codice in esecuzione mentre l'applicazione è in background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -222,7 +222,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
+   >Se fornisci `block`, devi restituire `YES` per inviare un hit. Se per `nil` viene passato `block`, viene inviato l'hit finale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -263,7 +263,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackingSendQueuedHits**
 
-   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
+   Richiede SDK 4.1. A prescindere da quanti hit siano attualmente in coda, forza la libreria a inviare tutti gli hit nella coda offline.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -299,7 +299,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!CAUTION]
    >
-   >Prestate attenzione quando cancellate la coda manualmente. Questo processo non può essere annullato.
+   >Da usare con cautela quando si cancella la coda manualmente. Questo processo non può essere annullato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -321,7 +321,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
    >[!IMPORTANT]
    >
-   >Questo metodo non incrementa le visualizzazioni di pagina.
+   >Questo metodo non incrementa le visualizzazioni della pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
