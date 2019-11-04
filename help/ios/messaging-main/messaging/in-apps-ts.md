@@ -3,17 +3,17 @@ description: Queste informazioni sono utili per risolvere eventuali problemi dei
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics (Metriche)
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# Risoluzione dei problemi dei messaggi in-app{#troubleshooting-in-app-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 
@@ -21,29 +21,29 @@ Se tutti i requisiti per i messaggi in-app sono rispettati, ma non viene visuali
 
 ## La nuova configurazione e il nuovo SDK sono inclusi nell'app?
 
-Verifica che la versione dell'SDK sia 4.2 o successiva e che sia configurata correttamente. Ensure that you have a `Messages` section in your configuration (downloaded JSON file), or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+Verifica che la versione dell'SDK sia 4.2 o successiva e che sia configurata correttamente. Assicurati che nella configurazione sia presente una sezione `Messages` (file JSON scaricato) o di disporre di un endpoint remoto per i messaggi, in modo che sia possibile recuperarlo dalla gestione dinamica dei tag.
 
-## In Android il mio messaggio a schermo intero non viene visualizzato. L'SDK utilizzato e la configurazione sono corretti, così come gli attivatori.
+## In Android il mio messaggio a schermo intero non viene visualizzato. L’SDK utilizzato e la configurazione sono corretti, così come gli attivatori.
 
-Hai aggiornato il file manifesto per definire l'attività a schermo intero?
+Hai aggiornato il file manifesto per definire l’attività a schermo intero?
 
 ## Il mio messaggio di notifica locale in Android non funziona.
 
-Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissione della notifica locale. For more information, see step 2 in [Enabling In-App Messages](/help/android/messaging-main/messaging/messaging.md).
+Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissione della notifica locale. Per ulteriori informazioni, vedi il passaggio 2 in [Abilitare la messaggistica in-app](/help/android/messaging-main/messaging/messaging.md).
 
 ## Il messaggio è attivo?
 
 Nella visualizzazione a elenco della pagina Manage In-App Message (Gestisci messaggio in-app), nella colonna dello stato, verifica che il messaggio sia attivo.
 
-## Osservare *la visualizzazione una volta*, *mostrare sempre*, *mostrare le impostazioni offline* nella scheda Pubblico.
+## Osserva le impostazioni *mostra una volta*, *mostra sempre*, *mostra offline* nella scheda Pubblico.
 
-Verifica che queste impostazioni siano impostate nel modo desiderato. Nella scheda **[!UICONTROL Pubblico]**, controlla le opzioni **Attivatore], che consentono di specificare la frequenza con cui viene mostrato il messaggio.[!UICONTROL **
+Verifica che queste impostazioni siano impostate nel modo desiderato. Nella scheda **[!UICONTROL Pubblico]**, controlla le opzioni **[!UICONTROL Attivatore]**, che consentono di specificare la frequenza con cui viene mostrato il messaggio.
 
-## Se utilizzi l'evento di avvio come attivatore...
+## Se utilizzi l’evento di avvio come attivatore...
 
-L'avvio viene attivato solo su una nuova sessione. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Per ulteriori informazioni, vedi Configurazione [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
+L’avvio viene attivato solo su una nuova sessione. Per ulteriori informazioni sull'inizio di una sessione, vedi la riga `lifecycleTimeout` nel file di configurazione JSON. Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
-## Ho aggiornato il mio messaggio in remoto, ma l'app visualizza ancora il messaggio precedente.
+## Ho aggiornato il mio messaggio in remoto, ma l’app visualizza ancora il messaggio precedente.
 
 Completa una delle seguenti attività:
 
@@ -80,7 +80,7 @@ In caso di problemi con il modello a schermo intero, prova a scaricare e usare i
 
 Per visualizzare i messaggi in-app a schermo intero su iPhone X:
 
-1. Add `viewport-fit=cover` in the meta tag.
+1. Aggiungi `viewport-fit=cover` nel tag meta.
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
