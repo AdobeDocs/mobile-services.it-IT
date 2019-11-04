@@ -1,13 +1,13 @@
 ---
-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
 keywords: dispositivi mobili
-seo-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
-seo-title: Manually create Acquisition links
-solution: Marketing Cloud,Analytics
+seo-description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
+seo-title: Creare manualmente collegamenti di acquisizione
+solution: Experience Cloud, Analytics
 title: Creare manualmente collegamenti di acquisizione
 topic: Metrics (Metriche)
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
@@ -15,17 +15,17 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 # Creare manualmente collegamenti di acquisizione {#create-acquisition-link-manually}
 
-You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
 
 >[!IMPORTANT]
 >
->Questa funzione richiede la versione SDK 4.6 o successiva. Per ulteriori informazioni, consulta [Prerequisiti](/help/using/acquisition-main/c-acquisition-prerequisites.md)per l’acquisizione.
+>Questa funzione richiede la versione SDK 4.6 o successiva. Per ulteriori informazioni, consulta [Prerequisiti per l’acquisizione](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
-Nel diagramma seguente sono illustrati i componenti di un collegamento di tracciamento creato manualmente e sono visualizzati i diversi parametri URL da configurare quando crei manualmente dei collegamenti di acquisizione.
+Il diagramma seguente illustra i componenti di un collegamento di tracciamento creato manualmente, con i diversi parametri URL da configurare quando crei manualmente dei collegamenti di acquisizione.
 
 ![](assets/acquisition_url.png)
 
-Questo collegamento è configurato per eseguire un reindirizzamento specifico della piattaforma a Google Play o a Apple App Store per un'app mobile. Se non è possibile determinare la destinazione, lo store predefinito è impostato su Apple App Store. Dopo che l'app è stata installata, la chiave contestuale personalizzata `my.custom.key:test` viene associata all'hit di installazione Analytics.
+Questo collegamento è configurato per eseguire un reindirizzamento specifico della piattaforma a Google Play o a Apple App Store per un’app mobile. Se non è possibile determinare la destinazione, lo store predefinito è impostato su Apple App Store. Dopo che l’app è stata installata, la chiave contestuale personalizzata `my.custom.key:test` viene associata all’hit di installazione Analytics.
 
 Per creare manualmente i collegamenti, usa il formato di URL seguente:
 
@@ -33,24 +33,24 @@ Per creare manualmente i collegamenti, usa il formato di URL seguente:
 
 >[!TIP]
 >
->La versione di Android SDK che utilizzi non ha alcun impatto su questo processo.
+>La versione di Android SDK che utilizzi è indifferente in questo caso.
 
 Per iOS, assicurati di usare il protocollo corretto:
 
-* Use **HTTP** if you are using the iOS SDKs before version 4.7.0, or if you are using iOS SDK 4.7.0 or later, and if **[!UICONTROL Use HTTPS]** is **not** selected on the Manage App Settings page.
-* Use **HTTPS** if you are using iOS SDK 4.7.0 or later and **[!UICONTROL Use HTTPS]** **is** selected on the Manage App Settings page.
+* Usa **HTTP** se utilizzi una versione dell’SDK iOS precedente a 4.7.0 oppure se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]** **non** è selezionata nella pagina Gestisci impostazioni app.
+* Usa **HTTPS** se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]** **è** selezionata nella pagina Gestisci impostazioni app.
 
 Se si verificano le seguenti condizioni:
 
-* `{mobile-services-app-hash}` matches the application identifier in the configuration  file.`acquisition:appid `
+* `{mobile-services-app-hash}` corrisponde all’identificatore di applicazione nel file di configurazione `acquisition:appid `.
 
-   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   Puoi trovare `{mobile-services-app-hash}` nella pagina Gestisci impostazioni app in Opzioni acquisizione SDK, nel campo ID tracciamento.
 
    ![](assets/tracking-id.png)
 
 * `{parameters}` è un elenco di parametri di query URL standard con nomi specifici.
 
-Segue l'elenco dei parametri:
+Segue l’elenco dei parametri:
 
 * **`a_g_id`**
 
@@ -80,7 +80,7 @@ Segue l'elenco dei parametri:
 
    Store predefinito per reindirizzamento automatico.
 
-   * Sample value: `i | g`
+   * Valore di esempio: `i | g`
 
 * **`a_cid`**
 
@@ -90,7 +90,7 @@ Segue l'elenco dei parametri:
 
 * **`ctx*`**
 
-   Keys prefixed with `ctx` will be in the context data of the resulting launch hit.
+   Le chiavi con prefisso `ctx` vengono incluse nei dati contestuali dell’hit di lancio risultante.
 
    * Valore di esempio: `ctxmy.custom.key=myValue`
 
@@ -100,7 +100,7 @@ Segue l'elenco dei parametri:
 
    Questo parametro è necessario per i rapporti se vuoi confrontare le prestazioni di diversi collegamenti di acquisizione.
 
-   * Valore di esempio: Summit 2015
+   * Valore di esempio: Vertice 2015
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -112,9 +112,9 @@ Segue l'elenco dei parametri:
 
 * **`ctxa.referrer.campaign.source`**
 
-   La fonte.
+   L’origine.
 
-   * Valore di esempio: Rete pubblicitaria
+   * Valore di esempio: Network pubblicitario
 
 * **`ctxa.referrer.campaign.medium`**
 
@@ -132,15 +132,15 @@ Segue l'elenco dei parametri:
 
    Termine
 
-   * Valore di esempio: hiking+boots
+   * Valore di esempio: escursione+scarponi
 
 
 Quando crei manualmente dei collegamenti di acquisizione, tieni presente quanto segue:
 
-* Tutti i parametri che non corrispondono a quelli della tabella vengono passati come parte del reindirizzamento all'app store.
-* Tutti i parametri sono tecnicamente opzionali, anche se il collegamento non funzionerà, se viene specificato almeno un ID store.
+* Tutti i parametri che non corrispondono a quelli della tabella vengono passati come parte del reindirizzamento all’app store.
+* Tutti i parametri sono tecnicamente facoltativi; tuttavia, il collegamento non funzionerà se non viene specificato almeno un ID store.
 
-   An example of a store ID is `a_g_id`/ `a_i_id`.
+   Ad esempio, un ID store potrebbe essere `a_g_id`/ `a_i_id`.
 
 * Se non è possibile determinare automaticamente lo store di destinazione e non ne è stato fornito uno predefinito, viene restituito un errore 404.
 
