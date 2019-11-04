@@ -2,21 +2,21 @@
 description: Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 seo-title: Metodi di Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
 topic: Sviluppatore e implementazione
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Metodi di Audience Manager {#audience-manager-methods}
 
 Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Manager hanno il prefisso "`audience`audience".
+L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Audience Manager hanno il prefisso "`audience`".
 
 Se Audience Manager è configurato nel file JSON, viene inviato un segnale contenente le metriche sul ciclo di vita con `application:didFinishLaunchingWithOptions:`.
 
@@ -30,7 +30,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Esempio di codice per questo menu:
+   * Di seguito è riportato un esempio di codice per questo menu:
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
