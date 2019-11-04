@@ -2,18 +2,18 @@
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
-seo-title: Troubleshoot Push Messaging
-solution: Marketing Cloud,Analytics
-title: Troubleshoot Push Messaging
+seo-title: Risolvere i problemi dei messaggi push
+solution: Experience Cloud,Analytics
+title: Risolvere i problemi dei messaggi push
 topic: Metrics (Metriche)
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Troubleshoot push messaging {#troubleshooting-push-messaging}
+# Risoluzione dei problemi dei messaggi push {#troubleshooting-push-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 
@@ -27,16 +27,16 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 * Attesa del servizio push
 
-   Il servizio push (APNS o FCM) potrebbe non essere in grado di inviare il messaggio immediatamente. Anche se raramente, è possibile che si verifichi un ritardo di 5-10 minuti. Nella pagina Messaggi, fai clic sul collegamento **Visualizza** associato al messaggio per verificare che il messaggio push sia stato inviato al servizio push. Nel report, il numero di invii con esito positivo è elencato nella colonna **[!UICONTROL Pubblicato].**
+   Il servizio push (APNS o FCM) potrebbe non essere in grado di inviare il messaggio immediatamente. Anche se raramente, è possibile che si verifichi un ritardo di 5-10 minuti. Nella pagina Messaggi, fai clic sul collegamento **[!UICONTROL Visualizza]** associato al messaggio per verificare che il messaggio push sia stato inviato al servizio push. Nel report, il numero di invii con esito positivo è elencato nella colonna **[!UICONTROL Pubblicato]**.
 
    >[!TIP]
    >
-   >I servizi push non garantiscono l'invio di un messaggio.
+   >I servizi push non garantiscono al 100% l'effettivo invio di un messaggio.
 
    Per ulteriori informazioni sull'affidabilità dei servizi, consulta la relativa documentazione:
 
    * **APNS**: [Qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: Durata [di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM**: [ciclo di vita di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Perché i miei messaggi push vengono troncati o non si espandono?
 
