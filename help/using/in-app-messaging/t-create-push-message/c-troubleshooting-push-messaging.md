@@ -3,42 +3,42 @@ description: Queste informazioni possono essere utili per risolvere eventuali pr
 keywords: dispositivi mobili
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risoluzione dei problemi dei messaggi push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic: Metrics (Metriche)
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting push messaging{#troubleshooting-push-messaging}
+# Risoluzione dei problemi dei messaggi push{#troubleshooting-push-messaging}
 
 Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 
-## Perché a volte si verificano dei ritardi nell'invio dei messaggi push?
+## Perché a volte si verificano dei ritardi nell’invio dei messaggi push?
 
 I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile Services:
 
 * **Attesa degli hit di Analytics**
 
-   Per ogni suite di rapporti, un'impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L'impostazione predefinita è ogni ora.
+   Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L’impostazione predefinita è ogni ora.
 
-   L'effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Prendiamo ad esempio una suite di rapporti che elabora gli hit ogni ora. Considerando il tempo di elaborazione massimo di 30 minuti, prima che un hit in arrivo diventi disponibile per un messaggio push potrebbero quindi trascorrere 90 minuti. Se un utente ha avviato l'app alle 09:01, l'hit risulterebbe nell'interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
+   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Prendiamo ad esempio una suite di rapporti che elabora gli hit ogni ora. Considerando il tempo di elaborazione massimo di 30 minuti, prima che un hit in arrivo diventi disponibile per un messaggio push potrebbero quindi trascorrere 90 minuti. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
 
 * **Attesa del servizio push**
 
-   Il servizio push (APNS o GCM) potrebbe non essere in grado di inviare il messaggio immediatamente. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]e visualizzando il dato** Pubblicato **.**
+   Il servizio push (APNS o GCM) potrebbe non essere in grado di inviare il messaggio immediatamente. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]** e visualizzando il dato **[!UICONTROL Pubblicato]**.
 
    >[!TIP]
    >
-   >Questo numero corrisponde al numero di invii con esito positivo ai servizi push. I servizi push non garantiscono al 100% l'effettivo invio di un messaggio.
+   >Questo dato corrisponde al numero di invii ai servizi push con esito positivo. I servizi push non garantiscono al 100% l’effettivo invio di un messaggio.
 
-   Per maggiori informazioni sull'affidabilità del servizio, vedi:
+   Per maggiori informazioni sull’affidabilità del servizio, vedi:
 
    * [Qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Durata di un messaggio](https://developers.google.com/cloud-messaging/concept-options#lifetime).
+   * [Ciclo di vita del messaggio](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Perché la mia chiave API GCM Android non è valida?
 
@@ -70,7 +70,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   You can also check the validity of a registration token by replacing `"ABC"` with the token.
+   Per controllare la validità di un token di registrazione, sostituisci `"ABC"` con il token.
 
 ## Perché il mio certificato APNS non funziona?
 
@@ -78,29 +78,29 @@ Il certificato APNS potrebbe risultare non valido per i motivi seguenti:
 
 * È possibile che tu stia utilizzando un certificato sandbox invece del certificato di produzione.
 * Stai usando un nuovo certificato di produzione/sandbox che non è supportato.
-* You are using `.p8` file instead of a `.p12` file.
+* Stai usando un file `.p8` invece di un file `.p12`.
 
 ## Risoluzione degli errori dei messaggi push
 
 **Un esempio**
 
-L'esempio seguente illustra come risolvere un errore push quando usi una VRS.
+L’esempio seguente illustra come risolvere un errore push quando usi una VRS.
 
 Il cliente seguente ha due app iOS:
 
 * Nome app: PhotoShop_app_iOS
    * RSID principale: AllAdobe PhotoShop_apps
    * VRSID: PhotoShop_iOS_app_SF
-   * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * Segmento di definizione VRSID: `a.appid contains “PhotoShop_iOS_app_SF”`
 * Nome app: PhotoShop_app_iOS
    * RSID principale: AllAdobe PhotoShop_apps
    * RSID: PhotoShop_iOS_app_LA
-   * VRSID Definition Segment: `a.os contains “iOS”`
+   * Segmento di definizione VRSID: `a.os contains “iOS”`
 
-In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
+In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Benché il messaggio venga comunque recapitato agli utenti *PhotoShop_iOS_app_LA*, esso determinerà anche l’inserimento in blacklist degli ID push degli utenti *PhotoShop_iOS_app_SF*, perché l’app *PhotoShop_iOS_app_SF* ha un certificato diverso. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
 
-If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers for the *PhotoShop_iOS_app_SF* come back as `invalid`.
+Se passati con il certificato push *PhotoShop_IOS_app_LA*, gli identificatori push di *PhotoShop_iOS_app_SF* verrebbero restituiti come `invalid`.
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Se un'app **non** dispone di un certificato valido, i tuoi segmenti di pubblico potrebbero essere inseriti in blacklist a tempo indefinito e di conseguenza non saresti in grado di inviare messaggi push agli utenti interessati. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)push.
+>Quando crei un messaggio push per un’app che utilizza una VRS e fai clic su **[!UICONTROL Salva e invia]**, viene visualizzato un avviso che ti ricorda di verificare che ogni app indicata **deve** avere un certificato valido. Se un’app **non** dispone di un certificato valido, i tuoi segmenti di pubblico potrebbero essere inseriti in blacklist a tempo indefinito e di conseguenza non saresti in grado di inviare messaggi push agli utenti interessati. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
