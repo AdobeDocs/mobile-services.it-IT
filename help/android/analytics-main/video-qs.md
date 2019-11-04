@@ -1,13 +1,13 @@
 ---
 description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
 seo-title: Analisi del video
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analisi del video
 topic: Sviluppatore e implementazione
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
@@ -19,11 +19,11 @@ Queste informazioni spiegano come misurare i video su Android con la soluzione d
 
 >[!TIP]
 >
->Durante la riproduzione video, vengono inviate a questo servizio frequenti chiamate "heartbeat" per misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consultate [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate "heartbeat" che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
 
-Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali a una variabile Analytics.
+Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali in una variabile Analytics.
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## Mappare gli eventi del lettore sulle variabili di Analytics {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
    * Tipo di variabile: eVar
@@ -33,7 +33,7 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
    * (**Facoltativo**) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
 
 * **a.media.name**
-   * Variable type: Custom Insight (s.prop)
+   * Tipo evento: Custom Insight (s.prop)
    * (**Facoltativo**) Fornisce informazioni sul percorso del video.
 
       >[!IMPORTANT]
@@ -64,33 +64,33 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
       Agli hit inviati dalla misurazione è assegnato il tipo di contenuto `video`video. Dal punto di vista della misurazione video, il **tipo di contenuto** ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
 
 * **a.media.timePlayed**
-   * Tipo di variabile: Evento
+   * Tipo di variabile: Event
    * Tipo: contatore
    * Conta il tempo, in secondi, trascorso guardando un video a partire dall'ultimo processo di raccolta dati (richiesta immagine).
 
 * **a.media.view**
-   * Tipo di variabile: Evento
+   * Tipo di variabile: Event
    * Tipo: contatore
    * Indica che un visitatore ha visualizzato una parte di un video.
 
       Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
 * **a.media.segmentView**
-   * Tipo di variabile: Evento
+   * Tipo di variabile: Event
    * Tipo: contatore
    * Indica che un visitatore ha visualizzato una parte di un segmento video.
 
       Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
 * **a .media.complete**
-   * Tipo di variabile: Evento
+   * Tipo di variabile: Event
    * Tipo: contatore
    * Indica che un utente ha visualizzato un video completo.
 
       Per impostazione predefinita, l'evento completo è misurato 1 secondo prima della fine del video. Durante l'implementazione, puoi specificare quanti secondi prima della fine del video consideri la visualizzazione come completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete (ad esempio, dopo che il video è stato visualizzato per una data quantità di tempo).
 
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## Configurare le impostazioni per i file multimediali {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Configura un oggetto `MediaSettings` con le impostazioni che desideri utilizzare per tracciare il video:
 
@@ -98,9 +98,9 @@ Configura un oggetto `MediaSettings` con le impostazioni che desideri utilizzare
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Tracciare gli eventi del lettore {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, the `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. Ad esempio, chiama `mediaStop` quando il lettore viene messo in pausa e `mediaPlay` quando la riproduzione viene avviata o ripresa.
+Per misurare la riproduzione di un video, è necessario invocare i metodi `mediaPlay`, `mediaStop` e `mediaClose` nei momenti opportuni. Ad esempio, chiama `mediaStop` quando il lettore viene messo in pausa e `mediaPlay` quando la riproduzione viene avviata o ripresa.
 
 ## Classi {#section_16838332727348F990305C0C6B0D795C}
 
@@ -149,9 +149,9 @@ public boolean ad;
 public boolean eventFirstTime;
 ```
 
-## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Guida di riferimento delle classi e dei metodi per la misurazione di file multimediali {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-Di seguito sono riportati i metodi della classe Media Measurement:
+Di seguito sono riportati i metodi della classe Misurazione di file multimediali:
 
 * **settingsWith**
 
@@ -248,7 +248,7 @@ Di seguito sono riportati i metodi della classe Media Measurement:
       public static void stop(String name, double offset); 
       ```
 
-   * Here is the code sample or this method:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       Media.stop("name", 0);
@@ -270,7 +270,7 @@ Di seguito sono riportati i metodi della classe Media Measurement:
       Media.click("name", 0);
       ```
 
-* **Codice**
+* **track**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
 
