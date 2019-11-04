@@ -2,27 +2,27 @@
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-title: File di configurazione ADBMobile JSON
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Sviluppatore e implementazione
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config file {#adbmobile-json-config}
+# File di configurazione ADBMobile JSON {#adbmobile-json-config}
 
 Queste informazioni sono utili per comprendere le variabili presenti nel file di configurazione ADBMobile.json.
 
-## `ADBMobileConfig.json` riferimento del file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json`Guida di riferimento per il file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Lo stesso file di configurazione può essere utilizzato per l'app su più piattaforme:
 
 >[!TIP]
 >
->In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
+>Su **Android**, il file `ADBMobileConfig.json` deve trovarsi nella cartella `assets`.
 
 Elenco delle variabili nel file JSON e della versione SDK minima necessaria per ciascuna variabile:
 
@@ -37,7 +37,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * La versione SDK minima è 4.8.0.
    * Il valore predefinito è `false`.
 
-      Proprietà nell'oggetto `audienceManager`. Se Audience Manager è configurato e `analyticsForwardingEnabled` è impostato su `true`, anch tutto il traffico Analytics viene inoltrato ad Audience Manager.
+      Proprietà nell'oggetto `audienceManager`. Se Audience Manager è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager.
 
 * **backdateSessionInfo**
    * Versione SDK minima: 4.6.
@@ -53,7 +53,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
          >[!IMPORTANT]
          >
-         >Backdated session hit information is sent in a session info server call and additional server calls might apply.
+         >Le informazioni sugli hit di sessione retrodatate vengono inviate in una chiamata al server per informazioni sulle sessioni, e potrebbero essere applicabili chiamate server aggiuntive.
 
 * **batchLimit**
    * Versione SDK minima: 4.1
@@ -82,15 +82,15 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
 * **coopUnsafe**
    * Versione SDK minima: 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * Proprietà booleana dell’oggetto `marketingCloud` che, se impostata su `true`, determina il rifiuto di partecipazione a Experience Cloud Device Co-op.
    * Il valore predefinito è `false`.
    * Questa impostazione è utilizzata **solo** per i clienti abilitati per Device Co-op.
    I membri Device Co-op che necessitano tale valore impostato su `true` devono rivolgersi al team Co-op e richiedere un flag blacklist sul proprio account Device Co-op. Non esiste alcun percorso self-service per l'attivazione di questi flag.
 
    Considerazioni da ricordare:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
-   * If you enable Analytics server-side forwarding to Audience Manager, you will also see `coop_unsafe=1` Analytics hits.
+   * Quando `coopUnsafe` è impostato su `true`, agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto `coop_unsafe=1`.
+   * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, troverai l’hit di Analytics `coop_unsafe=1`.
 
 
 * **environmentId**
@@ -123,9 +123,9 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
       >[!IMPORTANT]
       >
-      >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property **must** be true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere false.
+      >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere false.
       >
-      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
+      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti  contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
 
       Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
@@ -168,7 +168,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      The `payload` object in the code is a sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
+      L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/android/analytics-main/postbacks/postbacks.md).
 
 * **privacyDefault**
    * Versione SDK minima: 4.0
@@ -176,7 +176,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       * Per `optedin`, gli hit vengono inviati immediatamente.
       * Per `optedout`, gli hit vengono scartati.
       * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
-      If your report suite is not timestamp-enabled, hits are discarded until the privacy status changes to `optedin`.  Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata.
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in `optedin`. Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata.
 
 
 * **referrerTimeout**
@@ -185,7 +185,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
       >[!IMPORTANT]
       >
-      >Questa variabile è obbligatoria per Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l'SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
+      >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l'SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
 
 * **remotes**
    * Versione SDK minima: 4.2
@@ -213,7 +213,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
 * **server**
    * Versione SDK minima: 4.0
-   * Server di Analytics o Gestione dell'audience, in base al nodo principale. This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
+   * Server di Analytics o Gestione dell'audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
 * **ssl**
    * Versione SDK minima: 4.0
@@ -236,7 +236,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Determina per quanto tempo Target può aspettare di ricevere una risposta.
 
 
-## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
+## File {#section_4655EF79744649E5A5AE19E3224C472C} di esempio `ADBMobileConfig.json`
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
