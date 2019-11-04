@@ -4,7 +4,7 @@ seo-description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sos
 seo-title: Adobe Target per TVML/TVJS
 title: Adobe Target per TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -16,81 +16,81 @@ Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. For more information, see Apple TV Implementation with tvOS.[](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
+>Prima di usare l'elemento `ADBTarget` nelle pagine TVML, devi configurare l'app TVML/TVJS per l'utilizzo dell'SDK per tvOS. Per ulteriori informazioni, consulta [Implementazione Apple TV con tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
 
-## Getting started {#section_88445645FD67416EAF6FDC3E3D3F5C33}
+## Guida introduttiva {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
-1. Identify the `.xml` file in which you want to use your Target location.
-1. Add an `ADBTarget` element to the file as a child of the `<document>` element.
-1. If Target fails to find your Mbox location, or it times out, the value between your `<ADBTarget>` and `</ADBTarget>` tags is used as default content.
+1. Individua il file `.xml` nel quale desideri usare la posizione Target.
+1. Aggiungi un elemento `ADBTarget` al file come elemento secondario di `<document>`.
+1. Se Target non è in grado di trovare la posizione Mbox, o se si verifica un timeout, il valore tra i tag `<ADBTarget>` e `</ADBTarget>` viene utilizzato come contenuto predefinito.
 
-## Configure your mbox in Target {#section_F2DA140C34B0421D976046F825B23123}
+## Configurare mbox in Target {#section_F2DA140C34B0421D976046F825B23123}
 
-The returned content from Target replaces all content between `<ADBTarget>` and `</ADBTarget>`, including both `ADBTarget` tags.
+Il contenuto restituito da Target sostituisce tutto il contenuto tra i tag `<ADBTarget>` e `</ADBTarget>`, compresi entrambi i tag `ADBTarget`.
 
 >[!TIP]
 >
->Pianificare di conseguenza ciò che si desidera sostituire.
+>Pianifica attentamente ciò che desideri sostituire.
 
 Potrebbe trattarsi della semplice sostituzione di un valore stringa in un'etichetta o della più complessa sostituzione di un'intera pagina.
 
-## Configure your ADBTarget element {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## Configura l’elemento ADBTarget {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
-Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
+Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. Facoltativamente, puoi aggiungere proprietà personalizzate alla richiesta nel formato `customParameterName="customParameterValue"`.
 
 * **`mbox`**
 
    Nome della posizione Mbox.
 
-   * Property type: String
+   * Tipo di proprietà: String
    * Questa proprietà è obbligatoria.
 
 * **`id`**
 
-   The Order ID.
+   ID ordine.
 
-   * Property type: String
+   * Tipo di proprietà: String
    * Questa proprietà **non** è obbligatoria.
 
 * **`total`**
 
    Totale ordine.
 
-   * Tipo di proprietà: Stringa
+   * Tipo di proprietà: String
    * Questa proprietà **non** è obbligatoria.
 
 * **`purchasedProductIds`**
 
    Elenco degli ID, separati da virgola, dei prodotti acquistati per questo ordine.
 
-   * Esempio di codice per questa proprietà:
+   * Di seguito è riportato un esempio di codice per questa proprietà:
 
 
       ```objective-c
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * Tipo di proprietà: Stringa
+   * Tipo di proprietà: String
    * Questa proprietà **non** è obbligatoria.
 
 * **`mboxParameters`**
 
-   Elenco di coppie chiave-valore per `mboxParameters`. Ogni voce di questa stringa è separata da un punto e virgola e i valori chiave sono separati da due punti.
+   Elenco di coppie chiave-valore per `mboxParameters`. Le voci di questa stringa sono separate da punto e virgola e le coppie chiave-valori sono separate da due punti.
 
-   * Esempio di codice per questa proprietà:
+   * Di seguito è riportato un esempio di codice per questa proprietà:
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
-   * Tipo di proprietà: Stringa
+   * Tipo di proprietà: String
    * Questa proprietà **non** è obbligatoria.
 
 * **`customParameterName`**
 
    Il valore di questa proprietà è `customParameterValue`.
 
-   * Tipo di proprietà: Stringa
+   * Tipo di proprietà: String
    * Questa proprietà **non** è obbligatoria.
 
 
