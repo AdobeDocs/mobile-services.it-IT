@@ -1,13 +1,13 @@
 ---
-description: I rapporti sull'utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l'app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall'avvio iniziale.
+description: I rapporti sull’utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall’avvio iniziale.
 keywords: dispositivi mobili
-seo-description: I rapporti sull'utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l'app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall'avvio iniziale.
+seo-description: I rapporti sull’utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall’avvio iniziale.
 seo-title: Rapporti
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud, Analytics
 title: Rapporti
 topic: Rapporti, Metriche
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # Rapporti{#reports}
 
-I rapporti sull'utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l'app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall'avvio iniziale.
+I rapporti sull’utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall’avvio iniziale.
 
-Puoi generare i rapporti seguenti nell'interfaccia utente di Mobile:
+Puoi generare i rapporti seguenti nell’interfaccia utente di Mobile:
 
 * [Panoramica](/help/using/usage/usage-overview.md)
 * [Utenti e sessioni](/help/using/usage/users-sessions.md)
