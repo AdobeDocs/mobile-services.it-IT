@@ -1,31 +1,31 @@
 ---
 description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
 seo-description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
-seo-title: Guida introduttiva sulle indossabili Android
-solution: Marketing Cloud,Analytics
-title: Guida introduttiva sulle indossabili Android
+seo-title: Android Wearable - Guida introduttiva
+solution: Experience Cloud,Analytics
+title: Android Wearable - Guida introduttiva
 topic: Sviluppatore e implementazione
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: getting started{#android-wearables-getting-started}
+# Android Wearable: guida introduttiva{#android-wearables-getting-started}
 
 A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
 
-## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
+## Configurare l'SDK per un'app Handheld (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-For more information about importing the SDK into your project, see [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+Per ulteriori informazioni sull’importazione dell’SDK nel progetto, consulta [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
-1. Aggiungi il file `ADBMobileConfig.json` alla cartella assets del progetto.
+1. Aggiungi il file `ADBMobileConfig.json` alla cartella delle risorse del progetto.
 1. Aggiungi il file `adobeMobileLibrary-*.jar` alla cartella libs oppure accertati che il progetto faccia riferimento a tale file.
 
    >[!TIP]
    >
-   >You might need to sync the gradle project after adding the `.jar` file.
+   >Potrebbe essere necessario sincronizzare il progetto gradle dopo l’aggiunta del file `.jar`.
 
 1. Nel metodo `onCreate`, consenti all'SDK di accedere al contesto dell'applicazione utilizzando `Config.setContext`:
 
@@ -40,7 +40,7 @@ For more information about importing the SDK into your project, see [Core Implem
    }
    ```
 
-1. Add the following code to the  file:`AndroidManifest.xml`
+1. Aggiungi il codice seguente al file `AndroidManifest.xml`:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -55,7 +55,7 @@ For more information about importing the SDK into your project, see [Core Implem
    ```
 
 1. Accertati che nel tuo progetto sia inclusa la libreria di Google Play Services.
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. Implementa `WearableListenerService` oppure aggiungi il codice corrispondente al tuo `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ For more information about importing the SDK into your project, see [Core Implem
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. Aggiungi `WearListenerService` al file `AndroidManifest.xml`:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -117,12 +117,12 @@ For more information about importing the SDK into your project, see [Core Implem
    Permalink Edit
    ```
 
-## Configuring the SDK for a Wearable app (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## Configurazione dell'SDK per un'app Wearable (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. Completa una delle seguenti attività:
 
-   * Aggiungi lo stesso file `ADBMobileConfig.json` alla cartella assets del progetto wearable.
-   * Modifica la configurazione gradle affinché utilizzi il file `ADBMobileConfig.json` nella cartella assets dell'app handheld:
+   * Aggiungi lo stesso file `ADBMobileConfig.json` alla cartella delle risorse del progetto wearable.
+   * Modifica la configurazione gradle affinché utilizzi il file `ADBMobileConfig.json` nella cartella delle risorse dell'app handheld:
 
       ```java
       android { 
@@ -135,7 +135,7 @@ For more information about importing the SDK into your project, see [Core Implem
       }
       ```
 
-1. Aggiungi il file`adobeMobileLibrary-*.jar`   alla cartella libs oppure accertati che il progetto vi faccia riferimento.
+1. Aggiungi il file`adobeMobileLibrary-*.jar` alla cartella libs oppure accertati che il progetto vi faccia riferimento.
 
    Potrebbe essere necessario sincronizzare il progetto gradle dopo l'aggiunta del file .jar.
 
@@ -162,7 +162,7 @@ For more information about importing the SDK into your project, see [Core Implem
    ```
 
 1. Accertati che nel tuo progetto sia inclusa la libreria di Google Play Services.
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. Implementa `WearableListenerService` oppure aggiungi il codice corrispondente al tuo `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ For more information about importing the SDK into your project, see [Core Implem
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. Aggiungi `WearListenerService` al file `AndroidManifest.xml`:
 
    ```java
    If you are using Google Play Services  < 8.2 
