@@ -1,22 +1,22 @@
 ---
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
-seo-title: Configurazione ADBMobile JSON
-solution: Marketing Cloud,Analytics
-title: Configurazione ADBMobile JSON
+seo-title: File di configurazione ADBMobile JSON
+solution: Experience Cloud,Analytics
+title: File di configurazione ADBMobile JSON
 topic: Sviluppatore e implementazione
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config {#adbmobile-json-config}
+# File di configurazione ADBMobile JSON {#adbmobile-json-config}
 
 Queste informazioni sono utili per usare il file di configurazione `ADBMobile.json`.
 
-## ADBMobileConfig.json config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Riferimento per il file di configurazione ADBMobileConfig.json {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Lo stesso file di configurazione può essere utilizzato per l'app su più piattaforme:
 
@@ -36,7 +36,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **analyticsForwardingEnabled**
 
-   Proprietà nell'oggetto `audienceManager`. If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. Il valore predefinito è `false`.
+   Proprietà nell'oggetto `audienceManager`. Se `Audience Manager` è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager. Il valore predefinito è `false`.
 
    * Versione SDK minima: 4.8.0
 
@@ -57,20 +57,20 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Versione SDK minima: 4.6
    >[!IMPORTANT]
    >
-   >Backdated session hit information is sent in a session info server call, and additional server calls might apply.
+   >Le informazioni di hit di sessione retrodatate vengono inviate in una chiamata al server per informazioni sulle sessioni, e potrebbero essere applicabili chiamate server aggiuntive.
 
 
 * **batchLimit**
 
    Soglia per il numero di hit da inviare in chiamate consecutive. Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. Quando arriva il 10° hit, tutti i 10 hit in coda vengono inviati consecutivamente.
 
-   * Default value is `0`, which means that batching is not enabled.
+   * Il valore predefinito è `0` e indica che la gestione degli hit in batch non è abilitata.
    * Richiede `offlineEnabled = true`.
    * Versione SDK minima: 4.1
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/it_IT/sc/implement/charset.html).
 
    * Versione SDK minima: 4.0
 
@@ -90,12 +90,12 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    Considerazioni da ricordare:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
+   * Quando `coopUnsafe` è impostato su `true`, agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto `coop_unsafe=1`.
    * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, negli hit di Analytics troverai `coop_unsafe=1`.
    Seguono alcune informazioni aggiuntive:
 
    * Versione SDK minima: 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * Proprietà booleana dell’oggetto `marketingCloud` che, se impostata su `true`, determina il rifiuto di partecipazione a Experience Cloud Device Co-op.
    * Il valore predefinito è `false`.
    * Questa impostazione è utilizzata **solo** per i clienti abilitati per Device Co-op.
 
@@ -125,18 +125,18 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    Quando è disabilitata, gli hit vengono messi in coda mentre il dispositivo è offline e inviati non appena torna online. Per poter usare il tracciamento offline, nella suite di rapporti devono essere abilitate le marche temporali. Il valore predefinito è `false`.
 
-   Seguono alcune informazioni importanti:
+   Seguono alcune importanti informazioni:
 
-   * If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true.
-   * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
+   * Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere true.
+   * Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false.
 
-      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
+      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,  contatta  l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
    * Versione SDK minima: 4.0
 
 * **org**
 
-   Specifica l’ID organizzazione di Experience Cloud per il servizio di identità della piattaforma Adobe Experience Cloud.
+   Specifica l'ID organizzazione di Experience Cloud per il servizio Adobe Experience Platform.
 
    * Versione SDK minima: 4.3
 
@@ -174,7 +174,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
 
    * Versione SDK minima: 4.6
 
@@ -184,7 +184,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Per `optedout`, gli hit vengono scartati.
    * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in optedin.
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
 
       Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata. Il valore predefinito è `optedin`.
 
@@ -196,7 +196,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   >Questa variabile è obbligatoria per Acquisizione. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l'SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
 
    * Versione SDK minima: 4.1
 
@@ -224,7 +224,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   >This variable is required by Analytics.
+   >Questa variabile è obbligatoria per Analytics.
 
    * Versione SDK minima: 4.0
 
@@ -232,13 +232,13 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    Server di Analytics o Gestione dell'audience, in base al nodo principale.
 
-   This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`.
+   Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`.
 
    Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
    >[!IMPORTANT]
    >
-   >This variable is required by Analytics and/or Audience Management.
+   >Questa variabile è obbligatoria per Analytics e/o Gestione dell'audience.
 
    * Versione SDK minima: 4.0
 
@@ -256,7 +256,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
 
    * Versione SDK minima: 4.0
 
@@ -267,7 +267,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Versione SDK minima: 4.0
 
 
-## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## File {#section_52FA7C71A99147AFA9BE08D2177D8DA7} di esempio `ADBMobileConfig.json`
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
