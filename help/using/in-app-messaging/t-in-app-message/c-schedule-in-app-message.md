@@ -2,26 +2,26 @@
 description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
 keywords: dispositivi mobili
 seo-description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
-seo-title: Pianificazione del messaggio in-app
-solution: Marketing Cloud,Analytics
-title: Pianificazione del messaggio in-app
+seo-title: Pianificazione messaggio in-app
+solution: Experience Cloud, Analytics
+title: Pianificazione messaggio in-app
 topic: Metrics (Metriche)
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Schedule: in-app message {#schedule-in-app-message}
+# Pianificazione: messaggio in-app {#schedule-in-app-message}
 
 Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
 
 >[!TIP]
 >
->Gli intervalli di date sono definiti dal tuo fuso orario. Gli intervalli di giorni e di ore specifici dipendono dal dispositivo dell'utente.
+>Gli intervalli di date sono definiti in base al tuo fuso orario. Gli intervalli di giorni e di ore specifici dipendono dal dispositivo dell’utente.
 
-1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
+1. Nell’app, fai clic su **[!UICONTROL Messaggistica]** &gt; **[!UICONTROL Gestisci messaggi]** &gt; **[!UICONTROL Crea messaggio]** &gt; **[!UICONTROL Crea in-app]**.
 1. Fai clic su **[!UICONTROL Pianifica]**.
 1. Compila i campi seguenti nella sezione **[!UICONTROL Durata]:**
 
@@ -31,7 +31,7 @@ Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso dur
 
    * **[!UICONTROL Inizio e Fine]**
 
-      Usa le icone **[!UICONTROL Calendario]per scegliere una data di inizio e una data di fine per il messaggio.**
+      Usa le icone **[!UICONTROL Calendario]** per scegliere una data di inizio e una data di fine per il messaggio.
 
 1. Compila i campi seguenti nella sezione **[!UICONTROL Giorni della settimana]:**
 
