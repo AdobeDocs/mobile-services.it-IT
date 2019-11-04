@@ -2,16 +2,16 @@
 description: 'La libreria iOS fornisce i seguenti metodi di acquisizione '
 seo-description: 'La libreria iOS fornisce i seguenti metodi di acquisizione '
 seo-title: Metodi di acquisizione
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di acquisizione
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Acquisition methods {#acquisition-methods}
+# Metodi di acquisizione {#acquisition-methods}
 
 La libreria iOS fornisce i seguenti metodi di acquisizione:
 
