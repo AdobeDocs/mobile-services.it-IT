@@ -1,23 +1,23 @@
 ---
 description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 seo-title: Variabile "products"
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variabile "products"
 topic: Sviluppatore e implementazione
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# Variabile dei prodotti {#products-variable}
 
 La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 
-To set the *products* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *products* variable:
+Per impostare la variabile *prodotti*, imposta una chiave di dati contestuali su `"&&products"`, quindi imposta il valore utilizzando la sintassi definita per la variabile *prodotti*:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *products* variable is set on the image request, and the other variables are set as context data. Tutte le variabili dei dati di contesto devono essere mappate utilizzando le regole di elaborazione:
+La variabile *prodotti* è impostata sulla richiesta dell'immagine e le altre variabili sono impostate come dati contestuali. Tutte le variabili dei dati di contesto devono essere mappate utilizzando le regole di elaborazione:
 
 ![](assets/map-products.png)
 
-Non è necessario mappare la variabile *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
+Non è necessario mappare la variabile  *prodotti* mediante le regole di elaborazione, perché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
