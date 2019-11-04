@@ -1,32 +1,32 @@
 ---
 description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 seo-title: Verifica dell'acquisizione dalla versione 3
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verifica dell'acquisizione dalla versione 3
 topic: Sviluppatore e implementazione
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing V3 acquisition {#testing-version-acquisition}
+# Verifica dell’acquisizione V3 {#testing-version-acquisition}
 
 Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 
 >[!IMPORTANT]
 >
->Per "acquisizione in V3" si intendono i collegamenti di acquisizione creati con Acquisition Builder nell’interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzionalità, devi eseguire l'aggiornamento alla versione 4.x dell'SDK per Android per soluzioni Experience Cloud 4.6.0 o versioni successive.
+>Acquisizione in V3 si riferisce ai collegamenti di acquisizione creati con Builder nell'interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzionalità, devi eseguire l'aggiornamento alla versione 4.x dell'SDK per Android per soluzioni Experience Cloud 4.6.0 o versioni successive.
 
 Se l'app mobile non è ancora disponibile in Google Play, quando crei il collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
+L'app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]** tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
 
-1. Complete the prerequisite tasks in [Mobile App Acquisition](/help/android/acquisition-main/acquisition.md) and ensure that you have correctly implemented the broadcast receiver for `INSTALL_REFERRER`.
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/android/acquisition-main/acquisition.md) e assicurati di aver implementato correttamente il destinatario della trasmissione per `INSTALL_REFERRER`.
+1. Nell'interfaccia utente di Adobe Mobile Services, fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Marketing Links Builder]** e genera l'URL di un collegamento marketing di acquisizione che imposti Google Play come destinazione per i dispositivi Android.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -34,16 +34,16 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >Se nel collegamento di acquisizione fate riferimento sia alle app Android che iOS, utilizzate Google Play come store predefinito.
+   >Se nel collegamento di acquisizione fai riferimento sia ad app Android che iOS, usa Google Play come store predefinito.
 
 1. Apri il collegamento generato in un browser desktop.
 
    Dovresti essere reindirizzato a una pagina con un URL simile al seguente esempio:
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copy the unique ID after `utm_content%3D`.
+1. Copia l'ID univoco dopo `utm_content%3D`.
 
-   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
+   Nell’esempio precedente, l’ID è `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
 1. Crea il collegamento di acquisizione finale usando l'ID univoco del passaggio 3, nel seguente formato:
 
@@ -63,19 +63,19 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisizione | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
+   | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`* dovrebbe corrispondere a `appid` nel collegamento di acquisizione. |
    | analytics | A fini di test, imposta il timeout di riferimento in modo tale da fornire il tempo necessario (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l'impostazione di timeout originale dopo il test. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l'app.
 1. Avvia ADB Shell, quindi avvia l'applicazione sul dispositivo.
-1. Invia una trasmissione usando il seguente comando `adb`: 
+1. Invia una trasmissione usando il seguente comando `adb`:
 
    `am broadcast -a com.android.vending.INSTALL_REFERRER -n com.adobe.android/com.adobe.android.YourBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<unique id get on step 5>"`
 
 1. Completa i seguenti passaggi:
    1. Sostituisci `com.adobe.android` con il nome del pacchetto dell'applicazione.
-   1.  Aggiorna il riferimento del ricevitore con quello della posizione del ricevitore di tracciamento della campagna nella tua app. 
-   1. Replace values that are associated with `utm_content`.
+   1. Aggiorna il riferimento del ricevitore con quello della posizione del ricevitore di tracciamento della campagna nella tua app.
+   1. Sostituisci i valori associati con `utm_content`.
    Se la trasmissione è riuscita, la risposta sarà simile a quella nel seguente esempio:
 
    `Broadcasting: Intent 
@@ -103,7 +103,7 @@ La seguente tabella contiene informazioni aggiuntive sui possibili errori:
 Considerazioni da ricordare:
 
 * Gli hit inviati dall'app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l'attribuzione di acquisizione.
-* Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, vedi [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
+* Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, consulta [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
 
 * In Android 4.8.2 è stata rilasciata una correzione di bug per l'acquisizione.
 
@@ -115,7 +115,7 @@ Considerazioni da ricordare:
 
 Per installare lo strumento Java:
 
-1. Download the [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) file.
+1. Scarica il file [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip).
 
 1. Estrai il file .jar.
 
