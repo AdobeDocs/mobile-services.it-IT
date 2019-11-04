@@ -1,13 +1,13 @@
 ---
 description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 seo-title: Tracciamento dei beacon
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Tracciamento dei beacon
 topic: Sviluppatore e implementazione
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -19,7 +19,7 @@ Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utili
 
 Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad Analytics e Target:
 
-* `a.beacon.uuid` - ProximityUUID del beacon
+* `a.beacon.uuid` - ProximityUUID del beacon.
 * `a.beacon.major` - Numero principale del beacon (come numero dello store).
 * `a.beacon.minor` - Numero secondario del beacon (come numero univoco all'interno dello store).
 * `a.beacon.prox` - Valori da 0 a 3 che rappresentano la vicinanza dell'utente al beacon.
@@ -37,7 +37,7 @@ Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* IntelliJ IDEA o Eclipse nell’implementazione e nel ciclo di vita [](/help/android/getting-started/dev-qs.md)core.
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto IntelliJ IDEA o Eclipse* in [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
 1. Importa la libreria:
 
@@ -67,7 +67,7 @@ Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
    Analytics.clearBeacon();
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Inviare dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Oltre ai dati sul beacon, puoi inviare dati di contesto aggiuntivi con ciascuna chiamata `trackBeacon`:
 
