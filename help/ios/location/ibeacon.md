@@ -2,11 +2,11 @@
 description: Il tracciamento iBeacon consente di misurare e indirizzare come destinazioni micro posizioni utilizzando le tecnologie iBeacon e Low Energy Bluetooth.
 seo-description: Il tracciamento iBeacon consente di misurare e indirizzare come destinazioni micro posizioni utilizzando le tecnologie iBeacon e Low Energy Bluetooth.
 seo-title: Tracciamento iBeacon
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Tracciamento iBeacon
 topic: Sviluppatore e implementazione
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,7 +18,7 @@ Il tracciamento iBeacon consente di misurare e indirizzare come destinazioni mic
 
 Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad Analytics e Target:
 
-* `a.beacon.uuid` - ProximityUUID of the beacon
+* `a.beacon.uuid` - ProximityUUID del beacon.
 * `a.beacon.major` - numero principale del beacon, ad esempio numero del negozio.
 * `a.beacon.minor` - numero secondario del beacon, ad esempio un numero univoco nel negozio.
 * `a.beacon.prox` - i seguenti valori rappresentano la distanza dell'utente dal beacon:
@@ -28,11 +28,11 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
    * `2`: nelle vicinanze
    * `3`: distante
 
-## Track iBeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Tracciare iBeacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
 1. Importa la libreria:
 
    ```objective-c
@@ -51,7 +51,7 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
    [ADBMobile trackingClearCurrentBeacon];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Inviare dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Oltre al nome dell'azione temporizzata, con ogni chiamata di tracciamento puoi inviare anche dati di contesto aggiuntivi:
 
@@ -59,7 +59,7 @@ Oltre al nome dell'azione temporizzata, con ogni chiamata di tracciamento puoi i
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-I valori dei dati di contesto devono essere mappati su variabili personalizzate:
+I valori dei dati contestuali devono essere mappati su variabili personalizzate:
 
 ![](assets/map-variable-context-ltv.png)
 
