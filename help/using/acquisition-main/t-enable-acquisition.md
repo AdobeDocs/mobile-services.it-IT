@@ -1,36 +1,36 @@
 ---
-description: Acquisition tracking must be enabled in the SDK configuration before you can track and report on Marketing Links.
+description: Per poter tener traccia dei collegamenti di acquisizione e generare i relativi rapporti, nella configurazione SDK deve essere attivato il tracciamento dell’acquisizione.
 keywords: dispositivi mobili
-seo-description: Per poter tenere traccia dei collegamenti marketing e generare rapporti su di essi, è necessario abilitare il tracciamento dell'acquisizione nella configurazione SDK.
-seo-title: Configurare l'acquisizione
-solution: Marketing Cloud,Analytics
-title: Configurare l'acquisizione
+seo-description: Per poter tener traccia dei collegamenti di acquisizione e generare i relativi rapporti, nella configurazione SDK deve essere attivato il tracciamento dell’acquisizione.
+seo-title: Configurare l’acquisizione
+solution: Experience Cloud, Analytics
+title: Configurare l’acquisizione
 topic: Metrics (Metriche)
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Configurare l'acquisizione {#configure-acquisition}
+# Configurare l’acquisizione {#configure-acquisition}
 
-Per poter tenere traccia dei collegamenti marketing e generare rapporti su di essi, è necessario abilitare il tracciamento dell'acquisizione nella configurazione SDK.
+Per poter tener traccia dei collegamenti di acquisizione e generare i relativi rapporti, nella configurazione SDK deve essere attivato il tracciamento dell’acquisizione.
 
-1. Nella pagina Gestione impostazioni app dell'app, scorri fino alla sezione **[!UICONTROL Opzioni SDK acquisizione.]**
+1. Nella pagina Gestione impostazioni app dell’app, scorri fino alla sezione **[!UICONTROL Opzioni SDK acquisizione.]**
 1. Completa le attività seguenti:
 
-   * To enable Acquisition, select the **[!UICONTROL Enable]** check box.
+   * Per abilitare l’acquisizione, seleziona la casella di controllo **[!UICONTROL Abilita]**.
 
-      When you select this check box, the **[!UICONTROL Referrer Timeout]** field becomes active, and the value changes from 0 to 5.
+      Quando selezioni questa casella di controllo, viene attivato il campo **[!UICONTROL Timeout referente]** e il valore cambia da 0 a 5.
 
-   * Enter a value in the Referrer Timeout (seconds) field ****
+   * Immetti un valore nel campo **[!UICONTROL Timeout referente (secondi)]**.
 
-      (**Optional**) If you enabled the **[!UICONTROL Enable]** check box, this field is optional. Puoi cambiare il valore del timeout, specificato in secondi. Questa impostazione specifica il periodo di attesa delle informazioni di acquisizione prima di inviare l'hit Primo avvio.
+      (**Facoltativo**) Se hai attivato la casella di controllo **[!UICONTROL Abilita]**, questo campo è facoltativo. Puoi cambiare il valore del timeout, specificato in secondi. Questa impostazione specifica il tempo di attesa per le informazioni di acquisizione prima che venga inviato l’hit Primo avvio.
    >[!IMPORTANT]
-   >You must enter a non-zero value. Se attivi Acquisizione ma lasci il valore zero, i collegamenti di acquisizione non funzioneranno. È consigliabile utilizzare il valore predefinito di 5 secondi.
+   >È necessario immettere un valore diverso da zero. Se attivi l’acquisizione ma lasci il valore impostato su zero, i collegamenti di acquisizione non funzioneranno. È consigliabile utilizzare il valore predefinito di cinque secondi.
 
 1. Scarica e usa il nuovo file di configurazione SDK nella tua app.
 
-   A questo punto hai configurato correttamente l'acquisizione su **iOS**.
-To enable Acquisition on **Android**, complete the steps in [Tracking Mobile Acquisition](/help/android/acquisition-main/acquisition.md).
+   A questo punto hai configurato correttamente l’acquisizione su **iOS**.
+Per attivarla anche su **Android**, completa i passaggi nella sezione [Tracciamento dell’acquisizione mobile](/help/android/acquisition-main/acquisition.md).
