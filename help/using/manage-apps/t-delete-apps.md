@@ -1,28 +1,28 @@
 ---
-description: Puoi eliminare un'app da Adobe Mobile.
+description: Puoi eliminare un’app da Adobe Mobile.
 keywords: dispositivi mobili
-seo-description: Puoi eliminare un'app da Adobe Mobile.
-seo-title: Eliminare un'app
-solution: Marketing Cloud,Analytics
-title: Eliminare un'app
+seo-description: Puoi eliminare un’app da Adobe Mobile.
+seo-title: Eliminare un’app
+solution: Experience Cloud, Analytics
+title: Eliminare un’app
 topic: Metrics (Metriche)
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Delete an app{#delete-an-app}
+# Eliminare un’app{#delete-an-app}
 
-Puoi eliminare un'app dall'interfaccia utente di Mobile Services.
+Puoi eliminare un’app dall’interfaccia utente di Mobile Services.
 
-1. Click **[!UICONTROL Manage Apps]**.
+1. Fai clic su **[!UICONTROL Gestisci app]**.
 1. Seleziona la casella di controllo accanto alle app da eliminare.
 
    >[!IMPORTANT]
    >
-   >Deleting an app from Adobe Mobile removes the app from the Adobe Mobile UI, but the app is not removed from the Apple App Store or Google Play. La suite di rapporti e i dati rimarranno disponibili in Adobe Analytics, ma non potrai più gestire l'app in Adobe Mobile.
+   >Quando elimini un’app da Adobe Mobile, questa viene rimossa soltanto dall’interfaccia utente di Adobe Mobile e non da Apple App Store o Google Play. La suite di rapporti e i dati rimarranno disponibili in Adobe Analytics, ma non potrai più gestire l’app in Adobe Mobile.
 
-1. Click **[!UICONTROL Delete Selected]**.
-1. Click **[!UICONTROL Delete]**.
+1. Fai clic su **[!UICONTROL Elimina selezionati]**.
+1. Fai clic su **[!UICONTROL Elimina]**.
