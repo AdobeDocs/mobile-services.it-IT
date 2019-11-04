@@ -1,36 +1,36 @@
 ---
-description: In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'App Store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
-keywords: android;libreria;mobile;sdk
-seo-description: In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'App Store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
+description: In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'app store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
+keywords: android,libreria,mobile,sdk
+seo-description: In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'app store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
 seo-title: Acquisizione da app mobile
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Acquisizione da app mobile
 topic: Sviluppatore e implementazione
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
-# Mobile app acquisition {#mobile-app-acquisition}
+# Acquisizione da app mobile {#mobile-app-acquisition}
 
-In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'App Store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
+In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'app store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
 
-## New Adobe Experience Platform Mobile SDK Release
+## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* To get started, go to Adobe Experience Platform Launch.
+* Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
 >Per usare Acquisition, **devi** disporre della versione SDK 4.1 o successiva.
 
-I collegamenti di acquisizione devono essere creati in Adobe Mobile Services. For more information, see [Acquisition](/help/using/acquisition-main/acquisition-main.md).
+I collegamenti di acquisizione devono essere creati in Adobe Mobile Services. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
 **Nelle versioni SDK 4.13.1 e successive**:
 
@@ -44,11 +44,11 @@ Per raccogliere dati di acquisizione da una campagna Google Play Acquisition sta
 
 * Quando l'utente scarica ed esegue un'app in seguito all'acquisizione da Google Play Store, i dati del riferimento saranno raccolti e inviati ad Adobe Mobile Services.
 
-   * The data is stored and available in the `AdobeDataCallback` instance that was registered earlier with the SDK.
+   * I dati sono memorizzati e disponibili nell'istanza `AdobeDataCallback` registrata in precedenza con l'SDK.
 
-      For more information, see Configuration Methods.[](/help/android/configuration/methods.md)
+      Per ulteriori informazioni, consulta [Metodi di configurazione](/help/android/configuration/methods.md).
 
-   * The  or the  event type are used.`MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL``MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`
+   * Viene utilizzato il `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` o il tipo di evento `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`.
 
    * Le chiavi personalizzate che facevano parte dei dati di acquisizione di Google Play avranno nomi separati con spazi con " `a.acquisition.custom.`"
 
@@ -56,23 +56,23 @@ Se usi i collegamenti di acquisizione creati su Adobe Mobile Services, aggiungi 
 
 1. Aggiungi il prefisso "`adb`" a una variabile di acquisizione.
 
-   When the SDK receives the acquisition data from Adobe Mobile Services (on first launch), that data will be stored and also available in the `AdobeDataCallback` instance registered earlier with the SDK, as mentioned in [Configuration Methods](/help/android/configuration/methods.md).
+   Quando l'SDK riceve i dati di acquisizione da Adobe Mobile Services (al primo avvio), questi saranno memorizzati e disponibili nell'istanza `AdobeDataCallback` registrata in precedenza con l'SDK, come indicato in [Metodi di configurazione](/help/android/configuration/methods.md).
 
-1. The  or the  event type will be used.`MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL``MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`
+1. Sarà utilizzato il `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` o il tipo di evento `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH`.
 
-1. The custom data keys are prefixed with "`a.acquisition.custom.`"
+1. Le chiavi di dati personalizzate hanno il prefisso "`a.acquisition.custom.`"
 
 >[!TIP]
 >
->Se invii dati a più suite di rapporti, usa i dati di acquisizione dall’app associata alla prima suite di rapporti nell’elenco degli ID delle suite di rapporti.
+>Se invii dati a suite di rapporti multiple, usa i dati di acquisizione dell'app associata alla prima suite di rapporti nell'elenco degli ID della suite di rapporti.
 
 Gli aggiornamenti in questa sezione consentono all'SDK di inviare dati di acquisizione da un collegamento di acquisizione.
 
-## Tracking mobile acquisition {#section_CEA30C652AC8470784B8054E299B80FA}
+## Tracciamento acquisizione mobile {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. Aggiungi la libreria [al progetto e implementa il ciclo di vita.
+1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto IntelliJ IDEA o Eclipse* in [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
 1. Importa la libreria:
 
@@ -107,7 +107,7 @@ Gli aggiornamenti in questa sezione consentono all'SDK di inviare dati di acquis
    </receiver>
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required acquisition settings:
+1. Verifica che il file `ADBMobileConfig.json` contenga le impostazioni di acquisizione necessarie:
 
    ```xml
    "acquisition": { 
@@ -121,9 +121,9 @@ Gli aggiornamenti in questa sezione consentono all'SDK di inviare dati di acquis
 
    >[!IMPORTANT]
    >
-   > se invii dati a suite di rapporti multiple, usa le impostazioni di acquisizione (server di acquisizione e appid) dell'app associata alla prima suite di rapporti nell'elenco degli ID di suite di rapporti.
+   >se invii dati a suite di rapporti multiple, usa le impostazioni di acquisizione (server di acquisizione e appid) dell'app associata alla prima suite di rapporti nell'elenco degli ID di suite di rapporti.
 
-   The `acquisition` settings are generated by Adobe Mobile services and should not be changed. For more information about how to download a customized `ADBMobileConfig.json` file with the `acquisition` settings pre-configured, see [Before You Start](/help/android/getting-started/requirements.md).
+   Le impostazioni `acquisition` sono generate da Adobe Mobile Services e non devono essere modificate. Per ulteriori informazioni sul download di un file `ADBMobileConfig.json` personalizzato con le impostazioni `acquisition` pre-configurate, vedi [Prima di iniziare](/help/android/getting-started/requirements.md).
 
 Dopo aver abilitato queste impostazioni, dopo il primo avvio dell'app, i dati di acquisizione vengono inviati automaticamente con la chiamata del ciclo di vita iniziale.
 
