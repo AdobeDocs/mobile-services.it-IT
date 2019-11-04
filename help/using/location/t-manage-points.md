@@ -1,46 +1,46 @@
 ---
-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest'ultimo è associato all'hit.
+description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 keywords: dispositivi mobili
-seo-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest'ultimo è associato all'hit.
+seo-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 seo-title: Gestire i punti di interesse
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud, Analytics
 title: Gestire i punti di interesse
 topic: Metrics (Metriche)
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Manage points of interest {#manage-points-of-interest}
+# Gestire i punti di interesse {#manage-points-of-interest}
 
-Puoi creare e gestire i POI, che ti consentono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un POI, il POI è collegato all’hit.
+Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, questo è collegato all’hit.
 
-Prima di poter utilizzare Location, verifica i seguenti requisiti:
+Prima di poter utilizzare la posizione, verifica i seguenti requisiti:
 
 * Devi avere Analytics – Mobile Apps o Analytics Premium.
-* Devi abilitare i **[!UICONTROL Rapporti sulla posizione]per l'app.**
-* If you are using a version of the iOS SDK or Android SDK older than version 4.2, after adding new **[!UICONTROL Points of Interest]**, you must download a new configuration file and give it to your app developers.
+* Devi abilitare i **[!UICONTROL Rapporti sulla posizione]** per l’app.
+* Se utilizzi una versione dell’SDK iOS o Android precedente alla versione 4.2, dopo aver aggiunto nuovi **[!UICONTROL punti di interesse]**, devi scaricare un nuovo file di configurazione e passarlo ai tuoi sviluppatori di app.
 
-   If you are using the iOS SDK or Android SDK version 4.2 or later, you do not need to submit an app update to the store to update your **[!UICONTROL Points of Interest]**. Nella pagina Gestisci punti di interesse, quando fai clic su **[!UICONTROL Salva]**, le modifiche vengono inserite nell'elenco **[!UICONTROL Punti di interesse]** e il file di configurazione per l'app live viene aggiornato. Il salvataggio aggiorna anche l’elenco dei punti nell’app sui dispositivi dell’utente, purché l’app utilizzi l’SDK aggiornato e la configurazione con un URL POI remoto.
+   Se utilizzi iOS SDK o Android SDK versione 4.2 o successiva, non è necessario inviare un aggiornamento dell’app allo store per aggiornare i **[!UICONTROL punti di interesse]**. Nella pagina Gestisci punti di interesse, quando fai clic su **[!UICONTROL Salva]**, le modifiche vengono inserite nell’elenco **[!UICONTROL Punti di interesse]** e il file di configurazione per l’app attiva viene aggiornato. Il salvataggio comporta anche l’aggiornamento dell’elenco dei punti all’interno dell’app sui dispositivi dell’utente, fino a quando l’app utilizza l’SDK aggiornato e la configurazione con un URL dei punti di interesse remoto.
 
-On the user's device, for a hit to be assigned to a **[!UICONTROL Points of Interest]**, location must be enabled for the app.
+Sul dispositivo dell’utente, affinché un hit possa essere assegnato a un **[!UICONTROL punto di interesse]**, la posizione deve essere abilitata nell’app.
 
-Per utilizzare Posizione, completare le seguenti attività:
+Per utilizzare Posizione, completa le seguenti attività:
 
-1. Fai clic sul nome dell'app per visualizzare la pagina Gestione impostazioni app.
-1. Click **[!UICONTROL Location]** &gt; **[!UICONTROL Manage Points of Interest]**.
+1. Fai clic sul nome dell’app per visualizzare la pagina Gestione impostazioni app.
+1. Fai clic su **[!UICONTROL Posizione]** &gt; **[!UICONTROL Gestisci punti di interesse]**.
 
    ![Risultato passaggio](assets/poi.png)
 
-1. Digitate le informazioni in ciascuno dei campi seguenti:
+1. Digita le informazioni in ciascuno dei campi seguenti:
 
    * **[!UICONTROL Nome punto]**
 
       Digita il nome del **[!UICONTROL punto di interesse.]**
 
-      Può essere il nome di una città, una provincia o una regione. Puoi anche creare **[!UICONTROL punti di interesse]intorno a posizioni specifiche, ad esempio uno stadio sportivo o un'azienda.**
+      Può essere il nome di una città, una provincia o una regione. Puoi anche creare **[!UICONTROL punti di interesse]** intorno a posizioni specifiche, ad esempio uno stadio sportivo o un’azienda.
 
    * **[!UICONTROL Latitudine]**
 
@@ -52,18 +52,18 @@ Per utilizzare Posizione, completare le seguenti attività:
 
    * **[!UICONTROL Raggio (metri)]**
 
-      Digita il raggio (in metri) intorno al **[!UICONTROL punto di interesse]che vuoi includere.** Ad esempio, se create un POI per Denver in Colorado, potete specificare un raggio sufficientemente ampio che includa la città di Denver e le aree circostanti, escludendo però Colorado Springs.
+      Digita il raggio (in metri) intorno al **[!UICONTROL punto di interesse]** che vuoi includere. Ad esempio, se crei un punto di interesse per la città di Denver in Colorado, potresti specificare un raggio sufficientemente ampio che includa sia la città che la zona circostante, escludendo però Colorado Springs.
 
    * **[!UICONTROL Icona mappa]**
 
-      Selezionate un’icona che verrà visualizzata nei rapporti [Panoramica](/help/using/location/c-location-overview.md) e [Mappa](/help/using/location/c-map-points.md) .
+      Seleziona un’icona che verrà visualizzata nei rapporti [Panoramica](/help/using/location/c-location-overview.md) e [Mappa](/help/using/location/c-map-points.md).
 
-1. Se necessario, aggiungete altri punti di interesse.
+1. Se necessario, aggiungi altri punti di interesse.
 
-   È consigliabile non aggiungerne più di 5.000. Se aggiungi più di 5.000 punti di interesse, potrai salvarli ma riceverai un avviso che ti consiglia di non superare i 5.000 punti di interesse.
+   È consigliabile non aggiungerne più di 5000. Se aggiungi più di 5.000 punti di interesse, potrai salvarli ma riceverai un avviso che ti consiglia di non superare i 5.000 punti di interesse.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-To delete one or more POIs, select the applicable check boxes, and click **[!UICONTROL Remove Selected]**.
+Per eliminare uno o più punti di interesse, seleziona le caselle di controllo applicabili e fai clic su **[!UICONTROL Rimuovi selezionati]**.
 
-Click **[!UICONTROL Import]** or **[!UICONTROL Export]** to work with the data by using a `.csv` file instead of using the Adobe Mobile user interface.
+Fai clic su **[!UICONTROL Importa]** o **[!UICONTROL Esporta]** per lavorare con i dati utilizzando un file `.csv` anziché l’interfaccia utente di Adobe Mobile.
