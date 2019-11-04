@@ -2,19 +2,19 @@
 description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-title: Regole di elaborazione e dati contestuali
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
 topic: Sviluppatore e implementazione
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Processing rules and context data {#processing-rules-and-context-data}
+# Regole di elaborazione e dati contestuali {#processing-rules-and-context-data}
 
-Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica. Per ulteriori informazioni, consulta [Regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 
