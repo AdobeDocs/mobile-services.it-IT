@@ -1,23 +1,23 @@
 ---
 description: Elenco dei metodi di Audience Manager forniti dalla libreria Android.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria Android.
-seo-title: Audience Manager methods
-solution: Marketing Cloud,Analytics
+seo-title: Metodi di Audience Manager
+solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
 topic: Sviluppatore e implementazione
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Metodi di Audience Manager{#audience-manager-methods}
 
 Elenco dei metodi di Audience Manager forniti dalla libreria Android.
 
-L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio identità della piattaforma Adobe Experience. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `audience manager`.
 
 Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le metriche del ciclo di vita è inviato con l'hit del ciclo di vita.
 
@@ -73,7 +73,7 @@ Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le m
 
    Imposta il DPID e il DPUUID; questi valori vengono inviati con ciascun segnale.
 
-   Se il valore DPUUID passato a questo metodo contiene caratteri non sicuri per l’URL, i clienti devono codificare il parametro prima di trasmetterlo all’SDK.
+   Se il valore DPUUID passato a questo metodo contiene caratteri che non sono sicuri per gli URL, i clienti devono codificare il parametro prima di passarlo all'SDK.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
