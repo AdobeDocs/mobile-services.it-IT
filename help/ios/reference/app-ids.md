@@ -2,11 +2,11 @@
 description: La tabella seguente descrive i diversi identificatori di app utilizzati dall'SDK per iOS e da Adobe Mobile Services.
 seo-description: La tabella seguente descrive i diversi identificatori di app utilizzati dall'SDK per iOS e da Adobe Mobile Services.
 seo-title: ID delle app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ID delle app
 topic: Sviluppatore e implementazione
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0e22d5e080b680ff6b23462f1bc12f27d99e6d42
 
 ---
