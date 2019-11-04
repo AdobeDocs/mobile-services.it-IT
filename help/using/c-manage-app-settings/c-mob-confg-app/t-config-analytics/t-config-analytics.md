@@ -1,23 +1,23 @@
 ---
-description: Puoi configurare le Opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
+description: Puoi configurare le opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
 keywords: dispositivi mobili
 seo-description: Puoi configurare le opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
 seo-title: Configurare le opzioni SDK Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud, Analytics
 title: Configurare le opzioni SDK Analytics
 topic: Metrics (Metriche)
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Configure SDK Analytics options {#configure-sdk-analytics-options}
+# Configurare le opzioni SDK Analytics {#configure-sdk-analytics-options}
 
 Puoi configurare le opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
 
-Type information in the following fields under **[!UICONTROL SDK Analytics Options]**:
+Compila i seguenti campi nella sezione **[!UICONTROL Opzioni SDK Analytics]**:
 
 * **[!UICONTROL Usa HTTPS]**
 
@@ -25,11 +25,11 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Retrodata hit sessioni]**
 
-   Enable or disable the ability for the Adobe SDK to backdate session info hits. Gli hit di informazioni delle sessioni al momento consistono di arresti anomali e durata della sessione. Se questa opzione è abilitata, Adobe SDK retrodaterà l'hit di informazioni della sessione a 1 secondo dopo l'ultimo hit della sessione precedente. Ciò significa che gli arresti anomali e i dati delle sessioni saranno correlati alla data corretta in cui si sono verificati. Sarà retrodatato un hit per ogni nuovo avvio dell'applicazione. Se l'opzione è disabilitata, Adobe SDK assocerà le informazioni di sessione al ciclo di vita corrente.
+   Abilita o disabilita la possibilità di Adobe SDK di retrodatare gli hit di informazioni delle sessioni. Gli hit di informazioni delle sessioni al momento consistono di arresti anomali e durata della sessione. Se questa opzione è abilitata, Adobe SDK retrodaterà l’hit di informazioni della sessione a 1 secondo dopo l’ultimo hit della sessione precedente. Ciò significa che gli arresti anomali e i dati delle sessioni saranno correlati alla data corretta in cui si sono verificati. Sarà retrodatato un hit per ogni nuovo avvio dell’applicazione. Se l’opzione è disabilitata, Adobe SDK assocerà le informazioni di sessione al ciclo di vita corrente.
 
 * **[!UICONTROL Privacy]**
 
-   Seleziona un'opzione di privacy:
+   Seleziona un’opzione di privacy:
 
    * **[!UICONTROL Invia dati fino a rinuncia]**
    * **[!UICONTROL Mantieni dati fino a consenso]**
@@ -48,6 +48,6 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Maggiori dettagli]**
 
-   Fai clic sul collegamento **[!UICONTROL Maggiori dettagli]per visualizzare l'ID suite di rapporti e il server di tracciamento, abilitare o disabilitare il tracciamento offline e visualizzare il modello di codifica dei caratteri in uso (ad esempio UTF-8).**
+   Fai clic sul collegamento **[!UICONTROL Maggiori dettagli]** per visualizzare l’ID suite di rapporti e il server di tracciamento, abilitare o disabilitare il tracciamento offline e visualizzare il modello di codifica dei caratteri in uso (ad esempio UTF-8).
 
    Quando il tracciamento offline è abilitato, i dati generati dal dispositivo offline vengono contrassegnati con marca temporale e inviati in un secondo momento. Se questa opzione è disabilitata, i dati offline vengono scartati.
