@@ -2,29 +2,29 @@
 description: A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può essere distribuita senza la relativa app contenitore. Con questa estensione, non è necessario un gruppo di app e i dati non devono essere condivisi con alcuna app contenitore.
 seo-description: A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può essere distribuita senza la relativa app contenitore. Con questa estensione, non è necessario un gruppo di app e i dati non devono essere condivisi con alcuna app contenitore.
 seo-title: Implementazione di un'estensione autonoma
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Implementazione di un'estensione autonoma
 topic: Sviluppatore e implementazione
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Stand-alone extension implementation {#stand-alone-extension-implementation}
+# Implementazione di un'estensione autonoma {#stand-alone-extension-implementation}
 
 A partire da iOS 10, Apple consente di creare un'estensione "autonoma" che può essere distribuita senza la relativa app contenitore. Con questa estensione, non è necessario un gruppo di app e i dati non devono essere condivisi con alcuna app contenitore.
 
 >[!IMPORTANT]
 >
->Per utilizzare le estensioni autonome, è necessario disporre della versione SDK 4.13.0 o successiva di Mobile.
+>Per usare un’estensione autonoma, devi disporre della versione SDK Mobile 4.13.0 o successiva.
 
 ## Configurare l'estensione autonoma da usare con l'SDK {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
 Per configurare l'estensione autonoma:
 
-1. Ensure that the `ADBMobileConfig.json` file is a member of your extension's target.
+1. Assicurati che il file `ADBMobileConfig.json` sia un membro della destinazione della tua estensione.
 1. Collega le librerie e i framework seguenti:
 
    * `AdobeMobileLibrary_Extension.a`
@@ -39,7 +39,7 @@ Per configurare l'estensione autonoma:
 
 1. Conferma che l'app possa essere generata senza errori imprevisti.
 
-## Additional notes {#section_1C9A55E2309A44BF842310F735702B3D}
+## Note aggiuntive {#section_1C9A55E2309A44BF842310F735702B3D}
 
 Seguono alcune informazioni aggiuntive:
 
