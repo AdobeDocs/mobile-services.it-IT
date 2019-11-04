@@ -1,19 +1,19 @@
 ---
 description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
 seo-title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
 topic: Sviluppatore e implementazione
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events {#products-variable-with-merchandising-evars-and-product-specific-events}
+# Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti {#products-variable-with-merchandising-evars-and-product-specific-events}
 
 Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
 
@@ -37,5 +37,5 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->If you trigger a product-specific event by using the  variable, you must also set that event in the  variable. *`&&products`**`&&events`* In caso contrario, l'evento verrà escluso durante l'elaborazione.
+>Se si attiva un evento specifico per il prodotto utilizzando la variabile *`&&products`*, è necessario impostare tale evento anche nella variabile *`&&events`*. In caso contrario, l'evento verrà escluso durante l'elaborazione.
 
