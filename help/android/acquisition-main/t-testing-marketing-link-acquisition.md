@@ -1,28 +1,28 @@
 ---
-description: Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
-keywords: android;library;mobile;sdk
-seo-description: Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+keywords: android,libreria,mobile,sdk
+seo-description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 seo-title: Verifica dell'acquisizione da collegamenti marketing
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verifica dell'acquisizione da collegamenti marketing
 topic: Sviluppatore e implementazione
-uuid: d0933dcc-8fc3-4f60-987f-7a5459aacf5
-translation-type: tm+mt
+uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
+# Verifica dell'acquisizione da collegamenti marketing {#testing-marketing-link-acquisition}
 
-Le istruzioni seguenti consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 
-Se la tua app mobile non è ancora disponibile in Google Play, puoi selezionare come destinazione qualsiasi app mobile al momento della creazione del collegamento di marketing. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento di acquisizione. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se la tua app mobile non è ancora disponibile in Google Play, durante la creazione del collegamento di marketing puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull'app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento di acquisizione. I parametri della stringa di query vengono passati a Google Play Store e quindi all'app al momento dell'installazione, nell'ambito della trasmissione della campagna. Il test dell'acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
+L'app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]** tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell'app.
 
-1. Completa le attività preliminari nell’acquisizione [da app](/help/android/acquisition-main/acquisition.md) Mobile e assicurati di aver implementato correttamente il ricevitore di trasmissione per `INSTALL_REFERRER`.
-1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/android/acquisition-main/acquisition.md) e assicurati di aver implementato correttamente il destinatario della trasmissione per `INSTALL_REFERRER`.
+1. Nell'interfaccia utente di Adobe Mobile Services, fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Marketing Links Builder]** e genera l'URL di un collegamento marketing di acquisizione che imposti Google Play come destinazione per i dispositivi Android.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -36,7 +36,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copy the unique ID after `utm_content%3D`.
+1. Copia l'ID univoco dopo `utm_content%3D`.
 
    Nell’esempio precedente, l’ID è `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
@@ -69,7 +69,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisizione | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
+   | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`* dovrebbe corrispondere a `appid` nel collegamento di acquisizione. |
    | analytics | A fini di test, imposta il timeout di riferimento in modo tale da fornire il tempo necessario (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l'impostazione di timeout originale dopo il test. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l'app.
@@ -79,7 +79,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    adb shell
    ```
 
-1. Invia una trasmissione usando il seguente comando `adb`: 
+1. Invia una trasmissione usando il seguente comando `adb`:
 
    ```
    am broadcast -a com.android.vending.INSTALL_REFERRER -n com.adobe.android/com.adobe.android.YourBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<unique id get on step 5>"
@@ -120,14 +120,14 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 Considerazioni da ricordare:
 
 * Gli hit che vengono inviati dall'app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l'attribuzione di acquisizione.
-* Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, vedi [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google .
+* Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, consulta [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
 * Puoi usare lo strumento Java `acquisitionTest.jar` fornito per ottenere l'ID univoco e il riferimento di installazione della trasmissione, per ottenere quindi le informazioni nei passaggi 3-10.
 
 **Installare lo strumento Java**
 
 Per installare lo strumento Java:
 
-1. Download the [`acquistionTester.zip`](../assets/acquisitionTester.zip) file.
+1. Scarica il file [`acquistionTester.zip`](../assets/acquisitionTester.zip).
 1. Estrai il file .jar.
 
    Puoi eseguire il file .jar sulla riga di comando.
@@ -138,4 +138,4 @@ Ad esempio:
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-I collegamenti marketing sono memorizzati nella cache lato server con un tempo di scadenza di dieci minuti. Quando apporti modifiche ai collegamenti di marketing, attendi 10 minuti prima di riutilizzarli, per accertarti che le modifiche siano state applicate.
+I collegamenti marketing sono memorizzati nella cache lato server con un tempo di scadenza di 10 minuti. Quando apporti modifiche ai collegamenti di marketing, attendi 10 minuti prima di riutilizzarli, per accertarti che le modifiche siano state applicate.
