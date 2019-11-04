@@ -1,10 +1,10 @@
 ---
-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
-seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
+description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (GDPR) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
+seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (GDPR) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
+title: Privacy e Regolamento generale sulla protezione dei dati (GDPR)
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
@@ -16,15 +16,15 @@ Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del
 
 >[!IMPORTANT]
 >
->GDPR is supported **only** in Mobile SDK version 4.16.0 or later.
+>Le funzioni per i requisiti RGPD sono supportate **solo** dall'SDK di Mobile versione 4.16.0 o successiva.
 
-## Nuova versione SDK per Adobe Experience Platform Mobile
+## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* Per iniziare, vai ad Adobe Experience Platform Launch.
+* Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Panoramica
@@ -37,16 +37,16 @@ Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile,
 
 * Per recuperare i dati dagli SDK e inviarli ai tuoi server, utilizza il metodo `getAllIdentifiersAsync`.
 
-   Per ulteriori informazioni, vedere [Recupero degli identificatori](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)memorizzati.
+   Per ulteriori informazioni, vedi [Recupero degli ID memorizzati](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md).
 
 * Per impostare lo stato di consenso o diniego e poter dare seguito alle richieste di cancellazione dati in conformità ai requisiti RGPD, utilizza le impostazioni seguenti:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Per ulteriori informazioni, consultate [Impostazione dello stato](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)di consenso dell'utente.
+   Per ulteriori informazioni, consulta [Impostazione dello stato di consenso o diniego dell'utente](/help/ios/c-mob-privacy-gdpr-ios/privacy.md).
 
 ## Informazioni aggiuntive {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* Per ulteriori informazioni sul regolamento RGPD, consulta la pagina dedicata all'[RGPD e il tuo business](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+* Per ulteriori informazioni sul regolamento RGPD, consulta la pagina dedicata all'[RGPD e il tuo business](https://www.adobe.com/it/privacy/general-data-protection-regulation.html).
 * Per accedere alla documentazione sulle API RGPD, consulta [General Data Protection Regulation API](https://adobe.io/apis/cloudplatform/gdpr.html) (API per il regolamento generale sulla protezione dei dati).
 
