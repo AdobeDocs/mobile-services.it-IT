@@ -3,18 +3,18 @@ description: Puoi allegare file di immagini alle notifiche Android. L'aggiunta d
 seo-description: Puoi allegare file di immagini alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
 seo-title: Ricevere notifiche push potenziate
 title: Ricevere notifiche push potenziate
-uuid: 4a0340a6-666b-49b6-907a-9afc966dfba
-translation-type: tm+mt
+uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
+translation-type: ht
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# Ricevere notifiche push potenziate {#receive-rich-push-notifications}
 
 Puoi allegare file di immagini alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
 
-## Handle the incoming rich push message (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
+## Gestire i messaggi push potenziati in ingresso (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
 Se l'app è in primo piano, il messaggio push sarà gestito dall'app che estende la classe `FirebaseMessagingService` ed è dichiarato nel file manifesto come segue:
 
@@ -30,9 +30,9 @@ Se l'app è in primo piano, il messaggio push sarà gestito dall'app che estende
 
 >[!IMPORTANT]
 >
->La classe che contiene l' `onMessageReceived()` implementazione gestisce i dati ricevuti.
+>La classe che contiene l'implementazione `onMessageReceived()` gestisce i dati ricevuti.
 
-If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. La chiave da utilizzare è `attachment-url`, come mostrato nel seguente esempio di codice:
+Se il messaggio push contiene un URL multimediale, questo sarà disponibile nel parametro `RemoteMessage` che viene passato alla funzione `onMessageReceived()`. La chiave da utilizzare è `attachment-url`, come mostrato nel seguente esempio di codice:
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -90,9 +90,9 @@ private void sendNotification(RemoteMessage message) {
 
 >[!IMPORTANT]
 >
->When you set `NotificationCompat.BigPictureStyle`, large images might not be displayed. Per fare in modo che siano sempre visualizzate, imposta il parametro nativo `Notification.BigPictureStyle`.
+>Quando si imposta `NotificationCompat.BigPictureStyle`, è possibile che le immagini di grandi dimensioni non vengano visualizzate. Per fare in modo che siano sempre visualizzate, imposta il parametro nativo `Notification.BigPictureStyle`.
 
-## Sample rich push notification {#section_6819316BEDDE45108413B541CA2BB2DC}
+## Esempio di notifiche push potenziate {#section_6819316BEDDE45108413B541CA2BB2DC}
 
 Esempio di notifica push potenziata con un'immagine:
 
