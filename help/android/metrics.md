@@ -1,36 +1,36 @@
 ---
 description: Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
 seo-title: Metriche del ciclo di vita
-solution: Marketing Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Metriche del ciclo di vita
 topic: Sviluppatore e implementazione
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# Lifecycle metrics{#lifecycle-metrics}
+# Metriche del ciclo di vita{#lifecycle-metrics}
 
-Questa sezione fornisce informazioni sulle metriche e le dimensioni misurabili automaticamente dalla libreria mobile dopo l’implementazione del ciclo di vita e un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. Per ulteriori informazioni sulla risoluzione dei problemi, consulta [Risoluzione dei problemi dei dati](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)del ciclo di vita.
+In questa sezione vengono fornite informazioni sulle metriche e sulle dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. Per ulteriori informazioni sulla risoluzione dei problemi, consulta [Risoluzione dei problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Nuova versione SDK per Adobe Experience Platform Mobile
+## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
 
 Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell’SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* Per iniziare, vai ad Adobe Experience Platform Launch.
-* Per visualizzare cosa è compreso negli archivi SDK di Experience Platform, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Per iniziare, vai su Adobe Experience Platform Launch.
+* Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell'audience. Analytics e Target usano lo stesso formato; Gestione dell'audience usa invece un prefisso diverso per ogni metrica.
 
-Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione, e le eccezioni sono indicate.
+Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita sono acquisiti automaticamente e segnalati mediante l'uso della metrica o della dimensione, con le eccezioni indicate.
 
 ### Metrics (Metriche)
 
@@ -107,7 +107,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **ID app**
 
-   Stores the application name and version in the `[AppName] [BundleVersion]` format. Un esempio di questo formato è `myapp 1.1`.
+   Memorizza il nome e la versione dell'applicazione nel formato `[AppName] [BundleVersion]`. Un esempio di questo formato è `myapp 1.1`.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -160,7 +160,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -171,7 +171,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.LaunchesSinceUpgrade`
    * Audience Manager: `c_a_LaunchesSinceUpgrade`
@@ -189,7 +189,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.CarrierName`
    * Audience Manager: `c_a_CarrierName`
@@ -201,7 +201,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.Resolution`
    * Audience Manager: `c_a_Resolution`
 
-## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Metriche e dimensioni aggiuntive per soluzioni mobile {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni mobile dai metodi elencati nella colonna **Descrizione**.
 
@@ -209,21 +209,21 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * **Tempo azione totale**
 
-   Populated by `trackTimedAction` methods.
+   Viene compilata dai metodi `trackTimedAction`.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.action.time.total`
    * Caratteristiche di Audience Manager: `c_a_action_time_total`
 
 * **Tempo azione in-app**
 
-   Populated by `trackTimedAction` methods.
+   Viene compilata dai metodi `trackTimedAction`.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.action.time.inapp`
    * Caratteristiche di Audience Manager: `c_a_action_time_inapp`
 
 * **Valore "lifetime" del ciclo di vita (evento)**
 
-   Populated by `trackLifetimeValue` methods.
+   Viene compilata dai metodi `trackLifetimeValue`.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.ltv.amount`
    * Caratteristiche di Audience Manager: `c_a_ltv_amount`
@@ -232,9 +232,9 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * **Posizione (fino a 10 chilometri)**
 
-   Populated by `trackLocation` methods.
+   Viene compilata dai metodi `trackLocation`.
 
-   * Parametri dati contestuali di Analytics/Target:
+   * Dati contestuali di Analytics/Parametri di Target:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -248,7 +248,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
    Viene compilata dai metodi trackLocation.
 
-   * Parametri dati contestuali di Analytics/Target:
+   * Dati contestuali di Analytics/Parametri di Target:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -262,7 +262,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
    Viene compilata dai metodi trackLocation.
 
-   * Parametri dati contestuali di Analytics/Target:
+   * Dati contestuali di Analytics/Parametri di Target:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -276,61 +276,61 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
    Viene compilata dai metodi trackLocation quando il dispositivo si trova entro un POI definito.
 
-   * Analytics Context Data/Target Parameters: `a.loc.poi`
+   * Dati contestuali di Analytics/Parametri di Target: `a.loc.poi`
    * Caratteristiche di Audience Manager: `c_a_loc_poi`
 
 * **Distanza dal centro del punto di interesse**
 
    Viene compilata dai metodi trackLocation quando il dispositivo si trova entro un POI definito.
 
-   * Analytics Context Data/Target Parameters: `a.loc.dist`
+   * Dati contestuali di Analytics/Parametri di Target: `a.loc.dist`
    * Caratteristiche di Audience Manager: `c_a_loc_dist`
 
 * **Valore "lifetime" del ciclo di vita (variabile di conversione)**
 
    Viene compilata dai metodi trackLifetimeValue.
 
-   * Analytics Context Data/Target Parameters: `a.ltv.amount`
+   * Dati contestuali di Analytics/Parametri di Target: `a.ltv.amount`
    * Caratteristiche di Audience Manager: `c_a_ltv_amount`
 
 * **Codice di tracciamento**
 
    Compilata da Acquisizione da app mobile e generata automaticamente da Adobe Mobile Services.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.trackingcode`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_trackingcode`
 
 * **Campaign**
 
    Nome della campagna, memorizzato anche nella variabile della campagna. Viene compilata dalla funzione Acquisizione da app mobile.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.name`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.name`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_name`
 
 * **Contenuto campagna**
 
    Nome o ID del contenuto in cui è stato visualizzato il collegamento. Viene compilata dalla funzione Acquisizione da app mobile.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.content`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_content`
 
 * **Canale campagna**
 
    Canale di marketing, ad esempio un banner o un'e-mail. Viene compilata dalla funzione Acquisizione da app mobile.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.medium`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Origine campagna**
 
    Referente originale, ad esempio una newsletter o un social media network. Viene compilata dalla funzione Acquisizione da app mobile.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.source`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_source`
 
 * **Termine campagna**
 
    Parole chiave a pagamento o altri termini di cui si desidera tenere traccia con questa acquisizione. Viene compilata dalla funzione Acquisizione da app mobile.
 
-   * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
+   * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.term`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_term`
