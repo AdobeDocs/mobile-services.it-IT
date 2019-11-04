@@ -1,18 +1,18 @@
 ---
-description: Le geolocalità permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
-seo-description: Le geolocalità permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
-seo-title: Geolocalità e punti di interesse
-solution: Marketing Cloud,Analytics
-title: Geolocalità e punti di interesse
+description: La geolocalizzazione permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
+seo-description: La geolocalizzazione permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
+seo-title: Geolocalizzazione e punti di interesse
+solution: Experience Cloud,Analytics
+title: Geolocalizzazione e punti di interesse
 topic: Sviluppatore e implementazione
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Geo-location and points of interest {#geo-location-and-points-of-interest}
+# Geolocalizzazione e punti di interesse {#geo-location-and-points-of-interest}
 
 Le geolocalità permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
 
@@ -24,25 +24,25 @@ Ogni chiamata `trackLocation` invia i seguenti dati:
 
 * Distanza dal centro e precisione passate come dati contestuali.
 
-   Queste variabili non vengono acquisite automaticamente. You must map these context data variables by using the instructions in *Sending Additional Data* section below.
+   Queste variabili non vengono acquisite automaticamente. Devi mappare queste variabili di dati contestuali, seguendo le istruzioni disponibili nella sezione *Invio di dati aggiuntivi* di seguito.
 
 ## Aggiornamenti POI dinamici {#section_3747B310DD5147E2AAE915E762997712}
 
-A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell'interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell'app. This synchronization requires an `analytics.poi` setting in the `ADBMobile.json` file:
+A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell'interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell'app. Tale sincronizzazione richiede un'impostazione `analytics.poi` nel file `ADBMobile.json`:
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-Per ulteriori informazioni, vedi Configurazione [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
+Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
-Se non è configurata, devi scaricare e aggiungere all'app una versione aggiornata del file `ADBMobile.json`. Per ulteriori informazioni e istruzioni, consulta *Scaricare l’SDK e gli strumenti* di prova in [Prima di iniziare](/help/ios/getting-started/requirements.md).
+Se non è configurata, devi scaricare e aggiungere all'app una versione aggiornata del file `ADBMobile.json`. Per ulteriori informazioni e istruzioni, consulta *Scaricare l’SDK e gli strumenti di prova* in [Prima di iniziare](/help/ios/getting-started/requirements.md).
 
-## Tracciare geolocalità e POI {#section_B1616E400A7548F9A672F97FEC75AE27}
+## Tracciare geolocalizzazioni e POI {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
 1. Importa la libreria:
 
    ```objective-c
@@ -58,13 +58,13 @@ Se non è configurata, devi scaricare e aggiungere all'app una versione aggiorna
 
    >[!TIP]
    >
-   >You can call `trackLocation` at any time.
+   >Puoi invocare `trackLocation` in qualsiasi momento.
 
-   Per determinare la posizione passata alla `trackLocation` chiamata, utilizza [Ottenere la posizione](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)dell’utente.
+   Per determinare la posizione passata alla chiamata `trackLocation`, usa [Ottenere la posizione dell'utente](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html).
 
 Inoltre, se la posizione è determinata entro il raggio definito per un POI, con l'hit `a.loc.poi` viene inviata una variabile di dati di contesto `trackLocation` che viene inserita come POI nei rapporti sulla posizione. Viene inoltre inviata una variabile di dati contestuali `a.loc.dist`, con la distanza (in metri) dalle coordinate definite.
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Inviare dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Oltre ai dati sulla posizione, con ogni chiamata di tracciamento della posizione puoi inviare anche dati di contesto aggiuntivi:
 
@@ -74,20 +74,20 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLocation: currentLocation data:contextData];
 ```
 
-I valori dei dati di contesto devono essere mappati su variabili personalizzate:
+I valori dei dati contestuali devono essere mappati su variabili personalizzate:
 
 ![](assets/map-location-context-data.png)
 
-## Location context data {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
+## Dati contestuali sulla posizione {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
 I dati di latitudine e longitudine vengono inviati utilizzando in totale sei parametri di dati di contesto: tre diversi parametri di dati contestuali per ciascuno, ognuno dei quali rappresenta un diverso livello di precisione.
 
 Ad esempio, le coordinate "lat = 40.93231, lon = -111.93152" rappresentano una posizione con precisione di 1 m. Questa viene divisa in base al livello di precisione nelle seguenti variabili:
 
-* `a.loc.lat.a`= 040.9
+* `a.loc.lat.a` = 040,9
 * `a.loc.lat.b` = 32
 * `a.loc.lat.c` = 31
-* `a.loc.lon.a` = -111.9
+* `a.loc.lon.a` = -111,9
 * `a.loc.lon.b` = 31
 * `a.loc.lon.c` = 52
 
@@ -97,7 +97,7 @@ Alcuni livelli di precisione potrebbe essere riportati come "00", a seconda dell
 
 Considerazioni da ricordare:
 
-* A `trackLocation` request sends in the equivalent of a `trackAction` call.
+* Una richiesta `trackLocation` invia l'equivalente di una chiamata `trackAction`.
 
 * I POI non vengono passati in normali chiamate `trackAction` e `trackState`; per tenere traccia dei POI devi quindi usare una chiamata `trackLocation`.
 
