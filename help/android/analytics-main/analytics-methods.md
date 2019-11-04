@@ -1,35 +1,35 @@
 ---
 description: Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
 seo-title: Metodi di Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Analytics
 topic: Sviluppatore e implementazione
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Metodi di Analytics {#analytics-methods}
 
 Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
+L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
 
 Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rapporti di Adobe Analytics:
 
 * **trackState**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
+   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart` e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
-   If `state` is empty, `app name app version (build)` is displayed in reports. Se visualizzi questo valore nei rapporti, accertati di impostare `state` in ciascuna chiamata `trackState`.
+   Se `state` è vuoto, nei rapporti viene visualizzato `app name app version (build)`. Se visualizzi questo valore nei rapporti, accertati di impostare `state` in ciascuna chiamata `trackState`.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -43,9 +43,10 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackAction** Monitora un’azione nell’app.
+* **trackAction**
+Tiene traccia di un'azione nell'applicazione.
 
-   Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
+   Azioni che si verificano nell'app e che desideri misurare, ad esempio `logons`, `banner taps`, `feed subscriptions` e altre metriche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -59,7 +60,8 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier** Restituisce l’identificatore visitatore generato automaticamente per Analytics.
+* **getTrackingIdentifier**
+Restituisce l'identificatore del visitatore generato automaticamente per Analytics.
 
    Si tratta di un ID visitatore univoco specifico per l'app, che viene generato all'avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. L'ID viene conservato durante gli aggiornamenti dell'app e rimosso quando l'app viene disinstallata.
 
@@ -77,7 +79,7 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
 
 * **trackLocation**
 
-   Invia la latitudine, la longitudine e la posizione correnti in un punto di interesse definito. Per ulteriori informazioni, vedi [Geolocalità e punti di interesse](/help/android/location/geo-poi.md).
+   Invia la latitudine, la longitudine e la posizione attuali in un punto di interesse definito. Per ulteriori informazioni, vedi [Geolocalizzazione e punti di interesse](/help/android/location/geo-poi.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -143,7 +145,7 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Esempio di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
@@ -153,11 +155,11 @@ Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rappor
 
 * **trackTimed&#x200B;ActionEnd**
 
-   Termina un'azione temporizzata. If you provide `block`, you can access the final time values and can manipulate `data` before sending the final hit.
+   Termina un'azione temporizzata. Se fornisci `block`, puoi accedere ai valori finali di tempo e manipolare i `data` prima di inviare l'hit finale.
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `true` to send a hit. Passing `null` for `block` sends the final hit.
+   >Se fornisci `block`, devi restituire `true` per inviare un hit. Passando `null` per `block` si invia l'hit finale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
