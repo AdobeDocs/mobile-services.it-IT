@@ -4,23 +4,23 @@ seo-description: Puoi allegare dei file di immagini alle notifiche Apple. L'aggi
 seo-title: Ricevere notifiche push potenziate
 title: Ricevere notifiche push potenziate
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# Ricevere notifiche push potenziate {#receive-rich-push-notifications}
 
 Puoi allegare dei file di immagini alle notifiche Apple. L'aggiunta di elementi visivi può notevolmente migliorare il tasso di coinvolgimento degli utenti con le notifiche push.
 
 Per Ricevere notifiche push potenziate nell'app iOS:
 
-1. Implementa i messaggi push per l'app, completando i passaggi descritti in [Messaggi push](/help/ios/messaging-main/push-messaging/push-messaging.md).
+1. Implementa i messaggi push per l'app, completando i passaggi descritti in  [Messaggi push](/help/ios/messaging-main/push-messaging/push-messaging.md).
 1. Verifica di poter inviare un messaggio di testo push all'app.
 1. Aggiungi un'estensione del servizio di notifica, completando i passaggi descritti di seguito:
 
-   1. In your Xcode project, select  **[!UICONTROL File]** &gt; **[!UICONTROL New]** &gt; **[!UICONTROL Target]**.
+   1. Nel tuo progetto Xcode, seleziona **[!UICONTROL File]** &gt; **[!UICONTROL Nuovo]** &gt; **[!UICONTROL Destinazione]**.
    1. Seleziona **[!UICONTROL Estensione servizio notifiche]**.
    1. Verifica che esista il file `NotificationService.m`.
 
@@ -35,7 +35,7 @@ Per Ricevere notifiche push potenziate nell'app iOS:
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      In this method, you can get the Media URL from  by using the  key. `userInfo``attachment-url` After you download the file to a local directory, add the local path to .`bestAttemptContent.attachments`
+      Con questo metodo, puoi ottenere l’URL del file multimediale da `userInfo` usando la chiave `attachment-url`. Dopo aver scaricato il file in una directory locale, aggiungi il percorso locale a `bestAttemptContent.attachments`.
 
       Esempio del codice per questo metodo:
 
