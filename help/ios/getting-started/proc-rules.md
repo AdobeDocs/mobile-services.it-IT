@@ -2,26 +2,26 @@
 description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 seo-title: Regole di elaborazione e dati contestuali
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
 topic: Sviluppatore e implementazione
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Processing rules and context data{#processing-rules-and-context-data}
+# Regole di elaborazione e dati contestuali{#processing-rules-and-context-data}
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
 
 Per ulteriori informazioni, consulta:
 
-* [Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
-* Diventare autorizzati a utilizzare le regole di elaborazione
+* [Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/?captions=ita) @ Summit 2013
+* Ottenere l'autorizzazione all'utilizzo delle regole di elaborazione
 
-   For more information about processing rules, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+   Per ulteriori informazioni sulle regole di elaborazione, consulta [Panoramica sulle regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 
@@ -63,5 +63,5 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
 
 >[!TIP]
 >
->Adobe reserves the namespace " ". `a.` A parte questa restrizione, per evitare conflitti l'unico requisito consiste nell'usare variabili di dati di contesto univoche per la società di accesso.
+>Adobe riserva lo spazio dei nomi " `a.`". A parte questa restrizione, per evitare conflitti l'unico requisito consiste nell'usare variabili di dati di contesto univoche per la società di accesso.
 
