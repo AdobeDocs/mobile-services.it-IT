@@ -4,13 +4,13 @@ seo-description: Puoi usare Adobe SDK per raccogliere informazioni di identifica
 seo-title: Postback PII
 title: Postback PII
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# PII postbacks {#pii-postbacks}
+# Postback PII {#pii-postbacks}
 
 Puoi usare Adobe SDK per raccogliere informazioni di identificazione personale (PII) e inviarle a un endpoint di terze parti.
 
@@ -18,13 +18,13 @@ Se desideri utilizzare Adobe SDK per raccogliere PII, invia una chiamata PII di 
 
 >[!TIP]
 >
->Per utilizzare il tipo di postback PII è necessario un endpoint che supporta HTTPS.
+>Per usare il tipo di postback PII, occorre un endpoint che supporta HTTPS.
 
-## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
+## Tracciamento dei postback PII {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
-   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in Implementazione e ciclo di vita [di](/help/ios/getting-started/dev-qs.md)base.
+   Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
 1. Importa la libreria:
 
    ```objective-c
