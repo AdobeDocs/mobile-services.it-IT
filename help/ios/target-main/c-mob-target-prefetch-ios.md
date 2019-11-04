@@ -4,7 +4,7 @@ seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK
 seo-title: Preacquisizione del contenuto delle offerte in iOS
 title: Preacquisizione del contenuto delle offerte in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,17 +16,17 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 
 >[!IMPORTANT]
 >
->La funzionalità di recupero preventivo negli SDK Mobile per iOS non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
+>La funzionalità di preacquisizione preventiva negli SDK Mobile per iOS non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
 Questo processo consente di ridurre il tempo di caricamento, evita l'esecuzione di più chiamate di rete e permette di notificare ad Adobe Target quale elemento mbox è stato visitato dall'utente dell'app mobile. Tutto il contenuto viene recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e da qual momento viene richiamato dalla cache per tutte le chiamate future che includono quel contenuto per il nome di mbox specificato.
 
-Il contenuto di preacquisizione non rimane tra un avvio dell'app e quello successivo. The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+Il contenuto di preacquisizione non rimane tra un avvio dell'app e quello successivo. Viene memorizzato nella cache per tutto il tempo in cui l’app rimane attiva oppure fino alla chiamata del metodo `clearPrefetchCache()`.
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Le API di pre-acquisizione di Target sono disponibili a partire dalla versione 4.14.0 dell'SDK. Per maggiori informazioni sulle limitazioni relative ai parametri, vedi [Parametri batch di input](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-Nella versione 4.14 o successiva dell’SDK, se specificato, `environmentId``ADBMobileConfig.json` viene preso dal file quando si avvia una chiamata TnT batch mbox v2. Se nel file non è specificato alcun `environmentId`, no viene inviato alcun parametro di ambiente in una chiamata TnT batch mbox, e l’offerta viene distribuita per l’ambiente predefinito.
+Nella versione 4.14 o successiva dell’SDK, se specificato, `environmentId` viene preso dal file `ADBMobileConfig.json` quando si avvia una chiamata TnT batch mbox v2. Se nel file non è specificato alcun `environmentId`, no viene inviato alcun parametro di ambiente in una chiamata TnT batch mbox, e l’offerta viene distribuita per l’ambiente predefinito.
 
 Ad esempio:
 
@@ -67,7 +67,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
 
       * **`callback`**
 
-         Viene richiamato quando la preacquisizione è completa. Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         Viene richiamato quando la preacquisizione è completa. Restituisce `true` se la preacquisizione è avvenuta correttamente oppure `false` in caso contrario.
 
 * **targetLoadRequests**
 
@@ -75,7 +75,7 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
 
    >[!IMPORTANT]
    >
-   >Se il contenuto delle posizioni richieste è già presente nella cache, verrà restituito immediatamente nel callback fornito. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
+   >Se il contenuto delle posizioni richieste è già presente nella cache, viene restituito immediatamente nel callback specificato. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -132,11 +132,11 @@ Di seguito sono indicati i metodi che puoi utilizzare per la preacquisizione in 
       mboxParameters:(nullableNSDictionary *)mboxParameters;
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## Classi pubbliche {#section_A273E53F069E4327BBC8CE4910B37888}
 
 Di seguito sono indicate le classi pubbliche che supportano la preacquisizione in iOS:
 
-### Riferimento classe: TargetPreFetchObject
+### Riferimento della classe: TargetPreFetchObject
 
 Racchiude il nome mbox e tutti i parametri utilizzati per la preacquisizione mbox.
 
@@ -192,7 +192,7 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
 
    * **Tipo**: Funzione
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## Esempio di codice {#section_BF7F49763D254371B4656E17953D520C}
 
 Di seguito è presente un esempio di come eseguire la preacquisizione del contenuto utilizzando gli SDK iOS:
 
