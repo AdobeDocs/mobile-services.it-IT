@@ -1,16 +1,16 @@
 ---
 cloud: experience-cloud
-product: servizi mobili
-solution-title: Learn & Support
+product: mobile-services
+solution-title: Informazioni e supporto
 solution-hub-url: https://helpx.adobe.com/it/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Introduzione
-getting-started-url: https://docs.adobe.com/content/help/en/mobile-services/using/get-started-ug/gs.html
+getting-started-url: https://docs.adobe.com/content/help/it-IT/mobile-services/using/get-started-ug/gs.html
 tutorials-title: Esercitazioni
 tutorials-url: https://helpx.adobe.com/it/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
