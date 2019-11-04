@@ -4,21 +4,21 @@ seo-description: Usa l'SDK per iOS per implementare il tracciamento dei collegam
 seo-title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
 ---
 
 
-# Tracking third-party deferred deep links {#tracking-third-party-deferred-deep-links}
+# Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti {#tracking-third-party-deferred-deep-links}
 
 Usa l'SDK per iOS per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
 
-## Classic Adobe Mobile SDK deep linking {#section_D114FA1EB9664EAA82E036A990694B26}
+## Collegamenti diretti classici dell'SDK di Adobe Mobile {#section_D114FA1EB9664EAA82E036A990694B26}
 
-The Adobe Mobile SDK currently supports deep linking where the app developer is expected to call the `trackAdobeDeepLink` API and pass the deep linking URL, which is the fingerprinter URL that is generated in Adobe Mobile Services during configuration. L'SDK invia un segnale ping al generatore dell'impronta digitale per ottenere i dati di acquisizione e li aggiunge ai dati contestuali delle chiamate di analisi installazione/avvio, come parte del ciclo di vita. Inoltre, l’SDK aggiunge i dati del collegamento profondo dai parametri dell’URL del collegamento profondo. Per ulteriori informazioni sul deep linking, vedi [Tracciamento dei collegamenti profondi (deep link)](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
+L'SDK di Adobe Mobile attualmente supporta il deep linking, o creazione di collegamenti diretti, in cui lo sviluppatore di app deve chiamare l'API `trackAdobeDeepLink` e passare l'URL del collegamento diretto, che è l'URL di creazione dell'impronta digitale generato in Adobe Mobile Services durante la configurazione. L'SDK invia un segnale ping al generatore dell'impronta digitale per ottenere i dati di acquisizione e li aggiunge ai dati contestuali delle chiamate di analisi installazione/avvio, come parte del ciclo di vita. Inoltre, aggiunge i dati del collegamento diretto dai parametri dell'URL di deep linking. Per ulteriori informazioni sul deep linking, vedi [Tracciamento dei collegamenti profondi (deep link)](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
 
-## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
+## Collegamenti diretti di Facebook {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
 Il creatore di un'inserzione può creare un'inserzione su Facebook come collegamento profondo. Quando l'utente fa clic sull'inserzione su Facebook, passa direttamente alle informazioni di interesse nell'app. Il collegamento profondo **non** è un URL di generazione di impronta digitale. Tuttavia, durante la configurazione dell'annuncio, è disponibile l'opzione per fornire un URL di collegamento profondo di terze parti. Lo sviluppatore di app che utilizza i servizi e l'SDK di Experience Cloud Mobile deve immettere in questo campo l'URL di generazione di impronte digitali configurato da Mobile Services. Se è tutto impostato correttamente, l'SDK di Facebook passa questo URL all'applicazione quando l'app viene installata o avviata.
 
@@ -26,12 +26,12 @@ Il creatore di un'inserzione può creare un'inserzione su Facebook come collegam
 
 1. Imposta l'SDK di Facebook.
 
-   Per ulteriori informazioni, consulta:
+   Per ulteriori informazioni vedi quanto segue:
 
    * [Introduzione all'SDK di Facebook per iOS](https://developers.facebook.com/docs/ios/getting-started)
    * [Impostazione del deep linking](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
-1. Per impostare l’SDK, invoca `trackAdobeDeepLink` e passa l’URL agli SDK:
+1. Per impostare l’SDK, chiama `trackAdobeDeepLink` e passa l’URL agli SDK:
 
    ```objective-c
    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation 
@@ -43,13 +43,13 @@ Il creatore di un'inserzione può creare un'inserzione su Facebook come collegam
 
    >[!TIP]
    >
-   >Ensure that the deep link URL has a key with the name `a.deeplink.id`. Se nell'URL manca il parametro `a.deeplink.id`, nessun parametro URL potrà essere aggiunto ai dati.
+   >Accertati che l'URL del collegamento diretto disponga di una chiave denominata `a.deeplink.id`. Se nell'URL manca il parametro `a.deeplink.id`, nessun parametro URL potrà essere aggiunto ai dati.
 
 Se l'applicazione è impostata come descritto qui sopra, la versione SDK di Adobe Mobile corrente funzionerà correttamente e i dati del collegamento profondo verranno aggiunti alle chiamate di installazione o avvio.
 
 ## Abilitare la funzione in un’applicazione di esempio {#section_64C15E269E89424B8E3D029F88094620}
 
-1. Registra uno schema URL. 
+1. Registra uno schema URL.
 
    Assicurati di registrare uno schema URL, corrispondente all'URL di collegamento profondo.
 
@@ -100,7 +100,7 @@ Se l'applicazione è impostata come descritto qui sopra, la versione SDK di Adob
       @import Bolts;
       ```
 
-   1. Aggiungere la maniglia per i collegamenti profondi differiti.
+   1. Aggiungi un handle per il deferred deep linking.
 
       ```objective-c
       - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -129,7 +129,7 @@ Se l'applicazione è impostata come descritto qui sopra, la versione SDK di Adob
       }
       ```
 
-   1. Call the `trackAdobeDeepLink` API and pass the deep link URL to the SDK.
+   1. Chiama l'API `trackAdobeDeepLink` e passa l'URL del collegamento diretto agli SDK.
 
       ```objective-c
       - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options { 
