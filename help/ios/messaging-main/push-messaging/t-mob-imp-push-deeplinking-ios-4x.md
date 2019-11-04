@@ -3,14 +3,14 @@ description: Dopo aver configurato l'URL di collegamento profondo (deep linking)
 seo-description: Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave adb_deeplink.
 seo-title: Implementare i messaggi push con collegamenti profondi
 title: Implementare i messaggi push con collegamenti profondi
-uuid: e9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: tm+mt
+uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# Implementare i messaggi push con collegamenti profondi {#implement-push-messaging-with-deep-linking}
 
 Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave `adb_deeplink`.
 
@@ -22,11 +22,11 @@ Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfa
 
    * I metodi delegate per le notifiche remote
 
-      In the `didReceiveRemoteNotification:` application or in the `didReceiveRemoteNotification:fetchCompletionHandler:` application, you can get the URL by accessing the `userInfo` dictionary with the `adb_deeplink` key.
+      Nell'applicazione `didReceiveRemoteNotification:` o `didReceiveRemoteNotification:fetchCompletionHandler:`, puoi ottenere l'URL mediante l'accesso al dizionario `userInfo` con la chiave `adb_deeplink`.
 
-   * The delegate methods for `UNUserNotificationCenter`
+   * I metodi delegate per `UNUserNotificationCenter`
 
-      In the `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` method, you can get the push payload from the `userInfo` dictionary, in the `adb_deeplink` key.
+      Nel metodo `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` puoi ottenere il payload push dal dizionario `userInfo` nella chiave `adb_deeplink`.
 
 Ad esempio:
 
