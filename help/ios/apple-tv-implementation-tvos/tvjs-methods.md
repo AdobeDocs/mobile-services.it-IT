@@ -2,23 +2,23 @@
 description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-title: Metodi TVJS
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi TVJS
 topic: Sviluppatore e implementazione
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# TVJS methods {#tvjs-methods}
+# Metodi TVJS {#tvjs-methods}
 
 Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
-## Configuration methods {#section_5F82FD2F6A0546B3B4E80DF832E11634}
+## Metodi di configurazione {#section_5F82FD2F6A0546B3B4E80DF832E11634}
 
-* **version**
+* **versione**
 
    Restituisce la versione corrente della libreria Adobe Mobile.
 
@@ -34,7 +34,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       var sdkVersion = ADBMobile.version();
       ```
 
-   * Returns: `String`
+   * Restituisce: `String`
 
 * **privacyStatus**
 
@@ -42,11 +42,11 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Sono disponibili le seguenti opzioni:
 
-   * `ADBMobilePrivacyStatusOptIn`: Gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
+   * `ADBMobilePrivacyStatusOptIn`: gli hit vengono inviati immediatamente.
+   * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente. THe default value is set in the `ADBMobileConfig.json` file.
+      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -60,15 +60,15 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       var privacyStatus = ADBMobile.privacyStatus();
       ```
 
-   * Returns: `Number`
+   * Restituisce: `Number`
 
 * Il metodo **setPrivacyStatus**
 
    Imposta lo stato di privacy per l'utente corrente su uno dei seguenti valori:
 
-   * `ADBMobilePrivacyStatusOptIn`: Gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut`: Gli hit vengono scartati.
-   * `ADBMobilePrivacyStatusUnknown`: Se il tracciamento offline è abilitato, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono scartati).
+   * `ADBMobilePrivacyStatusOptIn`: gli hit vengono inviati immediatamente.
+   * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
+   * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
    Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -100,15 +100,15 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       var ltv = ADBMobile.lifetimeValue();
       ```
 
-   * Returns: `Number`
+   * Restituisce: `Number`
 
 * **userIdentifier**
 
-   Restituisce l'identificatore utente se è stato impostato un identificatore personalizzato. Restituisce nil se non è impostato alcun identificatore personalizzato. The default is `nil`.
+   Restituisce l'identificatore utente se è stato impostato un identificatore personalizzato. Restituisce nil se non è impostato alcun identificatore personalizzato. Il valore predefinito è `nil`.
 
    >[!IMPORTANT]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è nil finché non viene impostato.
+   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è nil finché non viene impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -122,7 +122,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       var uid = ADBMobile.userIdentifier();
       ```
 
-   * Returns: `String`
+   * Restituisce: `String`
 
 * **setUserIdentifier**
 
@@ -144,7 +144,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    * Parametro:  `userID`
 
-      * Tipo: String
+      * Tipo: string
       * Nuovo identificatore per l'utente corrente.
 
 * **setAdvertisingIdentifier**
@@ -153,7 +153,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!IMPORTANT]
    >
-   >Recupera l’identificatore IDFA dalle API Apple solo se utilizzi un servizio di annunci. Se recuperi l'identificatore IDFA e non lo utilizzi correttamente, l'app potrebbe venire rifiutata.
+   >Recupera l'identificatore IDFA dall'API di Apple solo se utilizzi un servizio di annunci. Se recuperi l'identificatore IDFA e non lo utilizzi correttamente, l'app potrebbe venire rifiutata.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -174,7 +174,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **setDebugLogging**
 
-   Restituisce l'attuale preferenza di accesso di debug.
+   Restituisce la preferenza di accesso di debug.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -194,7 +194,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Valore che indica se Adobe SDK dovrebbe registrare nella console di debug.
 
 
-## Analytics methods {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Metodi di Analytics {#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 
@@ -204,7 +204,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -240,7 +240,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametri: `actionName`
-         * Tipo: String
+         * Tipo: string
          * Nome dell'azione di cui tenere traccia.
       * Parametro: `contextData`
          * Tipo: Object
@@ -257,7 +257,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Invia le coordinate di latitudine e longitudine correnti.
 
-   Also uses points of interest (POI) that are defined in the `ADBMobileConfig.json` file to determine whether the location that you entered as a parameter is in any of your POIs. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Utilizza anche i punti di interesse (POI) definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all'interno di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -321,7 +321,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `name`
-         * Tipo: String
+         * Tipo: string
          * Nome dell'azione temporizzata di cui tenere traccia.
       * Parametro: `contextData`
          * Tipo: Object
@@ -351,7 +351,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `name`
-         * Tipo: String
+         * Tipo: string
          * Nome dell'azione temporizzata che viene aggiornata.
       * Parametro: `contextData`
          * Tipo: Object
@@ -368,7 +368,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Termina un'azione temporizzata.
 
-   Se fornisci una funzione di callback, puoi accedere al valori temporali finali. In assenza di callback, o se il callback restituisce "true", Adobe SDK invia automaticamente un hit. Quando viene restituito un valore false dal callback, l’hit dell’azione temporizzata viene eliminato.
+   Se fornisci una funzione di callback, puoi accedere al valori temporali finali. In assenza di callback, o se il callback restituisce "true", Adobe SDK invia automaticamente un hit. Se restituisce false, l'hit dell'azione temporizzata viene eliminato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -378,13 +378,13 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametri: `name`
-         * Tipo: String
+         * Tipo: string
          * Nome dell'azione temporizzata che viene terminata.
       * Parametro: `callback`
          * Tipo: `function(inAppDuration, totalDuration, data)`
-         * Callback method that will have `inAppDuration` (number), `totalDuration` (number), and `data` (context data object) in its parameters.
+         * Metodo di callback i cui parametri conterranno il `inAppDuration` (numero), il `totalDuration` (numero) e `data` (oggetto di dati contestuali).
 
-            You can suppress the final hit from being sent by the SDK by returning `false` in your callback function.
+            Se la funzione di callback restituisce `false`, verrà impedito l'invio dell'hit finale da parte dell'SDK.
       * Di seguito è riportato un esempio di codice per questo metodo:
 
          ```objective-c
@@ -427,7 +427,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!TIP]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
+   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -435,7 +435,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       trackingIdentifier()
       ```
 
-      * Returns: `String`
+      * Restituisce: `String`
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -502,7 +502,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
 
-## Audience Manager methods {#section_0155C4DF04644EDAAF6159C420A158DE}
+## Metodi di Audience Manager {#section_0155C4DF04644EDAAF6159C420A158DE}
 
 * **audienceVisitorProfile**
 
@@ -554,7 +554,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       audienceDpuuid()
       ```
 
-      * Returns: `String`
+      * Restituisce: `String`
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -625,7 +625,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
       * Restituisce: N/D
-      * Parametro: None
+      * Parametro: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -633,7 +633,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
 
-## ID Service methods {#section_BEB6DA612EA4423FB354B65ECC941335}
+## Metodi del servizio ID {#section_BEB6DA612EA4423FB354B65ECC941335}
 
 * **visitorMarketingCloudID**
 
@@ -714,7 +714,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * Return: N/D
+      * Restituisce: N/D
       * Parametro: `idType`
          * Tipo: `String`
          * Tipo dell'identificatore da sincronizzare.
@@ -722,7 +722,8 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * Valore dell'identificatore da sincronizzare.
       * Parametro: `authState`
-         * Tipo: Stato ADBMobileVisitorAuthenticationStateAuthentication dell’utente. Possibili valori:
+         * Tipo: ADBMobileVisitorAuthenticationState
+Stato di autenticazione dell’utente. Possibili valori:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -752,7 +753,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       visitorGetIDsJs()
       ```
 
-      * Returns: `Array [Object]`
+      * Restituisce: `Array [Object]`
 
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
@@ -762,7 +763,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
 
-## Target methods {#section_F9F7EC2B9B7C41AFBCA2458F9F138634}
+## Metodi di Target {#section_F9F7EC2B9B7C41AFBCA2458F9F138634}
 
 * **targetThirdPartyID**
 
@@ -774,7 +775,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       targetThirdPartyID()
       ```
 
-      * Returns: `String`
+      * Restituisce: `String`
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -812,7 +813,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       targetPcID()
       ```
 
-      * Returns: `String`
+      * Restituisce: `String`
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -831,7 +832,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       targetSessionID()
       ```
 
-      * Returns: `String`
+      * Restituisce: `String`
       * Parametri: nessuno
    * Di seguito è riportato un esempio di codice per questo metodo:
 
