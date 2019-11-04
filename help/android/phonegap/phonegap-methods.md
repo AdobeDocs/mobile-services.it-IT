@@ -1,29 +1,29 @@
 ---
 description: Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire diverse attività.
-keywords: android;libreria;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire diverse attività.
 seo-title: Metodi del plug-in PhoneGap
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi del plug-in PhoneGap
 topic: Sviluppatore e implementazione
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# PhoneGap plug-in methods{#phonegap-plug-in-methods}
+# Metodi del plug-in PhoneGap{#phonegap-plug-in-methods}
 
 Puoi usare i metodi del plug-in PhoneGap per Android per completare diverse attività.
 
-In `html` files where you want to use tracking, add the following to the `<head>` tag:
+Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al tag `<head>`:
 
 ```js
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## Configuration methods {#section_CC429F68292D4601AEEF0A91445E1185}
+## Metodi di configurazione {#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
@@ -33,7 +33,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    * `ADB.optedIn`: Gli hit vengono inviati immediatamente.
    * `ADB.optedOut`: Gli hit vengono scartati.
-   * `ADB.optUnknown`: Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). **** Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
+   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
 
       Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
@@ -51,7 +51,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    * `ADB.optedIn`: Gli hit vengono inviati immediatamente.
    * `ADB.optedOut`: Gli hit vengono scartati.
-   * `ADB.optUnknown`: Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). **** Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
+   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -71,7 +71,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **setDebugLogging**
 
-   Enables (`true`) or disables (`false`) viewing debug information. Per impostazione predefinita, questa variabile è impostata su `false`.
+   Abilita (`true`) o disabilita (`false`) la visualizzazione delle informazioni di debug. Per impostazione predefinita, questa variabile è impostata su `false`.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -97,7 +97,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >Se l’app viene aggiornata dall’SDK Experience Cloud 3.x alla versione 4.x, l’ID visitatore precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta `getUserIdentifier`, di seguito. Questo ID conserva i dati del visitatore tra gli aggiornamenti dell'SDK.
+   >Se l'app viene aggiornata dall'SDK Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta `getUserIdentifier`, di seguito. Questo ID conserva i dati del visitatore tra gli aggiornamenti dell'SDK.
 
    Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `null` e viene utilizzato l'identificatore di tracciamento.
 
@@ -153,7 +153,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!IMPORTANT]
    >
-   >Calling `keepLifecycleSessionAlive` prevents your app from launching a new session the next time it is resumed from background. Usa questo metodo solo se l'app si registra per le notifiche in background.
+   >Una chiamata `keepLifecycleSessionAlive` impedisce che l'app avvii una nuova sessione in seguito alla ripresa dopo l'esecuzione in background. Usa questo metodo solo se l'app si registra per le notifiche in background.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -187,7 +187,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!WARNING]
    >
-   >Presta attenzione quando cancella la coda manualmente, perché non può essere annullata.
+   >Quando cancelli la coda manualmente, presta particolare attenzione poiché l'azione non può essere annullata.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -195,7 +195,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackingClearQueue(function (value) { myTempVal = value; }, function () { myTempVal = null; }); 
       ```
 
-## PII methods {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
+## Metodi PII {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
 
 * **collectPII**
 
@@ -213,7 +213,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ```
 
 
-## Tracking methods {#section_7946BB753A4446FE8A3ED728AEF97D04}
+## Metodi di tracciamento {#section_7946BB753A4446FE8A3ED728AEF97D04}
 
 * **trackAdobeDeepLink**
 
@@ -221,7 +221,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >If the Lifecycle call is a launch event, the Adobe Link data will be appended, otherwise an extra call will be sent.
+   >Se la chiamata del ciclo di vita è un evento di avvio, i dati del collegamento Adobe verranno aggiunti; in caso contrario viene inviata una chiamata aggiuntiva.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -237,7 +237,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackState**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. States are the views that are available in your app, such as such as `home dashboard`, `app settings`, `cart`, and so on. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
+   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart` e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
    `cData`: oggetto JSON con coppie chiave-valore da inviare nei dati contestuali.
 
@@ -247,7 +247,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackState(string stateName[,JSON cData]);
       ```
 
-   * Here are code samples for this method:
+   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
 
       ```js
         ADB.trackState("login&amp;nbsp;page"); 
@@ -259,7 +259,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackAction**
 
-   Tiene traccia di un'azione nell'applicazione. Actions include `logins`, `banner taps`, `feed subscriptions`, and other metrics that occur in your app and that you want to measure.
+   Tiene traccia di un'azione nell'applicazione. Azioni, come `logins`, `banner taps`, `feed subscriptions` e altre metriche che si verificano nell'app e che desideri misurare.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -267,7 +267,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackAction(string action[,JSON cData]); 
       ```
 
-   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```js
         ADB.trackAction("login");
@@ -333,7 +333,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackTimed&#x200B;ActionUpdate**
 
-   Passa in `cData` per aggiornare i dati contestuali associati all'azione `action`&gt;.
+   Passa in `cData` per aggiornare i dati contestuali associati all'azione `action`.
 
    I dati `cData` passati vengono aggiunti alla fine dei dati esistenti per l'azione, e li sovrascrivono se per l'azione `action`, è già definita la stessa chiave.
 
@@ -369,7 +369,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackingTimedActionExists(function (value) { myTempVal = value }, function () { myTempVal = null; }); 
       ```
 
-## Beacon methods {#section_F9500D6BD95348E08E283C02B657019D}
+## Metodi Beacon {#section_F9500D6BD95348E08E283C02B657019D}
 
 * **trackBeacon**
 
@@ -404,7 +404,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.clearCurrentBeacon(); 
       ```
 
-## Target methods {#section_8670140C5A3F455E887830AFFDF91D59}
+## Metodi di Target {#section_8670140C5A3F455E887830AFFDF91D59}
 
 * **targetLoadRequest**
 
@@ -456,7 +456,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **targetLoadRequestWithNameWithLocationParameters**
 
-   Processes a `Target` service request.
+   Elabora la richiesta di un servizio `Target`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -474,7 +474,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **targetLoadRequestWithName**
 
-   Processes a `Target` service request.
+   Elabora la richiesta di un servizio `Target`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -554,13 +554,13 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.targetThirdPartyID(success, fail);
       ```
 
-   * Esempio di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
       ```
 
-## Acquisition methods {#section_EDEA25C4B2884487827069E9257A0BA6}
+## Metodi di acquisizione {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -572,7 +572,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.acquisitionCampaignStartForApp(appId, data, success, fail); 
       ```
 
-   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
@@ -582,11 +582,11 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
       ```
 
-## Advertising identifier {#section_194607D101B047A19C51B19E176E1500}
+## Identificatore pubblicitario {#section_194607D101B047A19C51B19E176E1500}
 
-In the main activity that is generated by Cordova, call `Config.submitAdvertisingIdentifierTask()` in the `onResume()` method. For more information, see Configuration Methods.[](/help/android/configuration/methods.md)
+Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingIdentifierTask()` nel metodo `onResume()`. Per ulteriori informazioni, consulta [Metodi di configurazione](/help/android/configuration/methods.md).
 
-## Audience Manager methods {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Metodi di Audience Manager {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
@@ -646,7 +646,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSetDpidAndDpuuid(dpid, dpuuid, success, fail); 
       ```
 
-   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’, ‘dpuuid’, function() {…}, function(){…};
@@ -666,7 +666,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSignalWithData(success, fail, data);
       ```
 
-   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
        ADB.audienceSignalWithData(function() {}, function() {} {‘key1’: ’value1’ ‘key2’: ‘value2’}); 
@@ -678,7 +678,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
 
 * **audienceReset**
 
-   UUID di Audience Manager ed elimina il profilo visitatore corrente.
+   UUID di Audience Manager ed elimina il profilo del visitatore corrente.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -686,7 +686,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceReset();
       ```
 
-## ID Service methods {#section_840B4FAEA55B466F9754148ABA15EBDA}
+## Metodi del servizio ID {#section_840B4FAEA55B466F9754148ABA15EBDA}
 
 * **visitorGetMarketingCloudId**
 
@@ -714,7 +714,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.visitorSyncIdentifiers(identifiers, success, fail); 
       ```
 
-   * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’}, function() {…}, function() {…}));
@@ -775,7 +775,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
 
 * **visitorGetIDs**
 
-   Returns all `visitorID`s that have been synced.
+   Restituisce tutti gli `visitorID` che sono stati sincronizzati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
