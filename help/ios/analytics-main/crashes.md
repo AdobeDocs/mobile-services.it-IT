@@ -1,24 +1,24 @@
 ---
 description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 seo-description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
-seo-title: Track App crashes
-solution: Marketing Cloud,Analytics
+seo-title: Tracciare gli arresti anomali dell'app
+solution: Experience Cloud,Analytics
 title: Tracciare gli arresti anomali dell'app
 topic: Sviluppatore e implementazione
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Track app crashes {#track-app-crashes}
+# Tracciare gli arresti anomali dell'app {#track-app-crashes}
 
 Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 
 >[!IMPORTANT]
 >
->Devi eseguire l'aggiornamento alla versione SDK 4.8.6 per iOS, che contiene modifiche importanti che impediscono la segnalazione di falsi arresti anomali.
+>Effettua l'aggiornamento alla versione SDK 4.8.6 per iOS, contenente modifiche importanti grazie alle quali non vengono più segnalati i falsi arresti anomali.
 
 ## Quando viene segnalato un arresto anomalo?
 
@@ -44,13 +44,13 @@ Nelle seguenti condizioni, l'SDK può segnalare falsi arresti anomali:
 
    >[!TIP]
    >
-   >You can avoid a crash in this scenario by backgrounding the app before launching the app again from Xcode.
+   >In questo caso, per evitare l'arresto anomalo porta l'app in background prima di avviarla di nuovo da Xcode.
 
-* If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
+* Se l'app è in background e invia hit Analytics tramite una chiamata diversa da `trackActionFromBackground`, `trackLocation` o `trackBeacon` e l'app viene terminata (manualmente o dal sistema operativo) mentre è in background, all'avvio successivo si verifica un arresto anomalo.
 
    >[!TIP]
    >
-   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
+   >L’attività in background che si verifica oltre la soglia `lifecycleTimeout` potrebbe inoltre causare un falso avvio.
 
 * Se l'app viene avviata in background in seguito a un richiamo in background, all'aggiornamento della posizione, e così via, e viene terminata dal sistema operativo senza tornare in primo piano, all'avvio successivo (in background o in primo piano) si verifica un arresto anomalo.
 * Se elimini in modo programmatico il flag di pausa di Adobe da `NSUserDefaults` mentre l'app è in background, al prossimo avvio o alla prossima ripresa si verifica un arresto anomalo.
@@ -66,5 +66,5 @@ Le pratiche descritte di seguito permettono di evitare la segnalazione di falsi 
 * Assicurati di eseguire le operazioni di sviluppo con suite di report non destinate alla versione di produzione, per evitare il caso di falsi allarmi descritto al punto 1.
 * Non eliminare e non modificare i valori inseriti dall'SDK di Adobe Mobile in `NSUserDefaults`.
 
-   Se questi valori vengono modificati al di fuori dell’SDK, i dati segnalati non saranno validi.
+   Se tali valori vengono modificati all'esterno dell'SDK, i dati segnalati nei rapporti non saranno validi.
 
