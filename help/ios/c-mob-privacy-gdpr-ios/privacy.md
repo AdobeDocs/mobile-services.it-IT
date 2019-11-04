@@ -1,28 +1,28 @@
 ---
-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
-seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
+description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
+seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
 seo-title: Impostazione dello stato di consenso o diniego dell'utente
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Impostazione dello stato di consenso o diniego dell'utente
 topic: Sviluppatore e implementazione
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Setting the user's opt status {#setting-the-user-s-opt-status}
+# Impostazione dello stato di consenso o diniego dell'utente {#setting-the-user-s-opt-status}
 
 Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 
 >[!IMPORTANT]
 >
->Starting with Experience Cloud iOS SDKs 4.15, setting the privacy status to `unknown` holds Audience Manager and Experience Cloud ID hits.
+>A partire da Experience Cloud iOS SDK 4.15, l'impostazione dello stato di privacy su `unknown` blocca gli hit di Audience Manager ed Experience Cloud ID.
 
 Per definire se le attività di Analytics, Target e Audience Manager sono consentite su un dispositivo, usa le seguenti impostazioni:
 
-* `privacyDefault` nel file di configurazione [ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` in [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
    Questa impostazione controlla l'impostazione iniziale che viene mantenuta finché non viene modificata nel codice.
 
@@ -30,16 +30,16 @@ Per definire se le attività di Analytics, Target e Audience Manager sono consen
 
    Quando l'impostazione della privacy viene modificata utilizzando questo metodo, la modifica diventa permanente finché non viene nuovamente cambiata con questo metodo, oppure finché non disinstalli e reinstalli l'app.
 
-   Per ulteriori informazioni sui metodi, vedi [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
+   Per ulteriori informazioni sui metodi, vedi  [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
 
-Informazioni su ogni stato di privacy:
+Di seguito sono riportate informazioni su ogni stato di privacy:
 
 * **Consenso accordato**
 
    * Analytics: gli hit vengono inviati.
    * Target: le richieste Mbox vengono inviate.
    * Audience Manager: i segnali e le sincronizzazioni ID vengono inviati.
-   * Value in the JSON config file: `optedin`
+   * Valore nel file di configurazione JSON: `optedin`
    * Valore in `setPrivacyStatus`: `ADBMobilePrivacyStatusOptIn`
 
 * **Consenso negato**
@@ -47,7 +47,7 @@ Informazioni su ogni stato di privacy:
    * Analytics: gli hit vengono scartati.
    * Target: le richieste Mbox non sono consentite.
    * Audience Manager: i segnali e le sincronizzazioni ID non sono consentiti.
-   * Value in the JSON config file: `optedout`
+   * Valore nel file di configurazione JSON: `optedout`
    * Valore in `setPrivacyStatus`: `ADBMobilePrivacyStatusOptOut`
 
 * **Sconosciuto**
@@ -58,7 +58,7 @@ Informazioni su ogni stato di privacy:
 
    * Target: le richieste Mbox vengono inviate.
    * Audience Manager: i segnali e le sincronizzazioni ID vengono inviati.
-   * Value in the JSON config file: `optunknown`
+   * Valore nel file di configurazione JSON: `optunknown`
    * Valore in `setPrivacyStatus`: `ADBMobilePrivacyStatusUnknown`
 
 ## Esempi {#section_128AC455EE024193B5D4E5A565B53D00}
