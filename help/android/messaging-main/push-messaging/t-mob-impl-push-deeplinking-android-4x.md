@@ -4,21 +4,21 @@ seo-description: Dopo aver configurato l'URL di collegamento profondo (deep link
 seo-title: Implementare i messaggi push con collegamenti profondi
 title: Implementare i messaggi push con collegamenti profondi
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# Implementare i messaggi push con collegamenti profondi {#implement-push-messaging-with-deep-linking}
 
 Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave adb_deeplink.
 
-Potete ottenere l’URL chiamando `remoteMessage.getData().get("adb_deeplink")` in `FirebaseMessagingService`.
+Puoi ottenere l’URL chiamando `remoteMessage.getData().get("adb_deeplink")` nel `FirebaseMessagingService`.
 
 >[!TIP]
 >
->Potete definire intenti diversi a seconda che il payload abbia o meno un URL di collegamento profondo.
+>Puoi definire intenti diversi in base al fatto che il payload abbia o meno un URL di collegamento diretto.
 
 1. Completa una delle seguenti attività:
 
@@ -30,7 +30,7 @@ Potete ottenere l’URL chiamando `remoteMessage.getData().get("adb_deeplink")` 
 
 ## Esempio
 
-Here is a sample implementation for the class extending from `FirebaseMessagingService`:
+Questo è un esempio di implementazione per la classe che si estende da `FirebaseMessagingService`:
 
 ```java
 public void onMessageReceived(RemoteMessage message) { 
