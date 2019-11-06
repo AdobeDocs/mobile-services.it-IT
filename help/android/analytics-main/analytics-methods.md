@@ -120,6 +120,7 @@ Restituisce l'identificatore del visitatore generato automaticamente per Analyti
    >Questa chiamata non invia un hit.
 
    * Di seguito è riportata la sintassi per questo metodo:
+
    ```java
    publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
    ```

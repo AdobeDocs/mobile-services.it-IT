@@ -202,6 +202,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
    Invia una richiesta di raccolta PII.
 
    * Di seguito è riportata la sintassi per questo metodo:
+
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
