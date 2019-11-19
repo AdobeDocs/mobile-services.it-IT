@@ -2,12 +2,12 @@
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-title: File di configurazione ADBMobile JSON
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
 
@@ -70,7 +70,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/it_IT/sc/implement/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
 
    * Versione SDK minima: 4.0
 
@@ -245,7 +245,11 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **ssl**
 
-   Il valore predefinito è `false`. Abilita (`true`) o disabilita (`false`) l'invio dei dati di misurazione tramite SSL (HTTPS).
+   >[!IMPORTANT]
+   >
+   > A partire dalla versione 4.10.0, per impostazione predefinita SSL è true se il flag non è impostato.
+
+   Abilita (`true`) o disabilita (`false`) l'invio dei dati di misurazione tramite SSL (HTTPS).
 
    Di seguito viene illustrata la definizione del modello di messaggio "callback":
 
