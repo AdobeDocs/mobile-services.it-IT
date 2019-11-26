@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
@@ -70,7 +70,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/it_IT/sc/implement/charset.html).
 
    * Versione SDK minima: 4.0
 
@@ -130,7 +130,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere true.
    * Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false.
 
-      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,  contatta  l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
+      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
    * Versione SDK minima: 4.0
 
@@ -247,7 +247,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   > A partire dalla versione 4.10.0, per impostazione predefinita SSL è true se il flag non è impostato.
+   > A partire dalla versione 4.10.0, l’impostazione predefinita SSL è autentica se il contrassegno non è impostato.
 
    Abilita (`true`) o disabilita (`false`) l'invio dei dati di misurazione tramite SSL (HTTPS).
 
