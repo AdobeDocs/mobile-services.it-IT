@@ -2,12 +2,12 @@
 description: Queste informazioni sono utili per implementare la libreria iOS e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-description: Queste informazioni sono utili per implementare la libreria iOS e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-title: Implementazione e ciclo di vita di base
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Implementazione e ciclo di vita di base
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -64,7 +64,7 @@ Per scaricare l’SDK:
    ![](assets/step_3.png)
 
 1. Fai clic su **[!UICONTROL Fine]**.
-1. In **[!UICONTROL Navigatore progetti]**, seleziona **[!UICONTROL`ADBMobileConfig.json`]**.
+1. In **[!UICONTROL Navigatore progetti]**, seleziona **`ADBMobileConfig.json`**.
 1. In **[!UICONTROL Ispettore file]**, aggiungi il file JSON alle destinazioni nel tuo progetto che useranno l'SDK di Adobe.
 
    ![](assets/step_4.png)
