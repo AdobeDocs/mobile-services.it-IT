@@ -1,14 +1,14 @@
 ---
 description: Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 seo-title: Visualizzare le metriche di Mobile
-solution: Experience Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Visualizzare le metriche di Mobile
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -53,7 +53,7 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Visualizzare gli indicatori prestazioni chiave**
 
-   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona **** &gt; accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
+   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
 
 ## Modificare le impostazioni di un’app {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
