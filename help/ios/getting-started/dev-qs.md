@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
@@ -58,9 +58,9 @@ Per scaricare l’SDK:
 1. In Navigatore progetti, trascina la cartella `AdobeMobileLibrary` e rilasciala sotto al tuo progetto.
 1. Verifica quanto segue:
 
-   * La casella **[!UICONTROL Copia elementi se necessario]deve essere selezionata.**
+   * La casella **[!UICONTROL Copia elementi se necessario]** deve essere selezionata.
    * **[!UICONTROL Crea gruppi]** deve essere selezionato.
-   * Nessuna delle caselle della sezione **[!UICONTROL Aggiungi a destinazioni]deve essere selezionata.**
+   * Nessuna delle caselle della sezione **[!UICONTROL Aggiungi a destinazioni]** deve essere selezionata.
    ![](assets/step_3.png)
 
 1. Fai clic su **[!UICONTROL Fine]**.
