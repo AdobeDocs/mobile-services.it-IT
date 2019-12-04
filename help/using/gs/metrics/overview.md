@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Visualizzare le metriche di Mobile
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 
-Le metriche visualizzate per ogni app corrispondono alle metriche chiave che hai selezionato al momento della creazione dell’app. Per ulteriori informazioni, vedi  [Aggiungi una nuova app](/help/using/manage-apps/t-new-app.md).
+Le metriche visualizzate per ogni app corrispondono alle metriche chiave che hai selezionato al momento della creazione dell’app. Per ulteriori informazioni, vedi   [Aggiungi una nuova app](/help/using/manage-apps/t-new-app.md).
 
 Se l’app che desideri visualizzare non è visibile, puoi cercarla digitandone il nome o facendo clic sull’elenco a discesa in **[!UICONTROL Tutte le app]**.
 
@@ -53,13 +53,13 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Visualizzare gli indicatori prestazioni chiave**
 
-   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
+   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
 
 ## Modificare le impostazioni di un’app {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. Fai clic sull’icona dell’ingranaggio nel riquadro di un’app per aprirne la pagina Informazioni app.
 1. Modifica le impostazioni dell’app.
 
-   Per maggiori informazioni sulle singole impostazioni, vedi  [Configurazione dell’app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   Per maggiori informazioni sulle singole impostazioni, vedi   [Configurazione dell’app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. Fai clic su **[!UICONTROL Salva]**.
