@@ -57,7 +57,7 @@ Accedi a [Experience Cloud](https://marketing.adobe.com) con il tuo Adobe ID. Qu
 
 ### Adobe Analytics
 
-Fai clic su **[!UICONTROL Accedi con l&#39;account Analytics]**e immetti il nome della tua società Analytics, il tuo nome utente e la tua password.
+Fai clic su **[!UICONTROL Accedi con l&#39;account Analytics]** e immetti il nome della tua società Analytics, il tuo nome utente e la tua password.
 
 ## Creare una suite di rapporti {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
@@ -66,15 +66,15 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall&#39;app 
 1. Accedi all&#39;interfaccia utente di Mobile Services digitando [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in un browser.
 1. Click **[!UICONTROL Create an App]**.
 
-   Se non trovi questo pulsante, fai clic su **[!UICONTROL Gestione app]**>**[!UICONTROL  Aggiungi]**.
+   Se non trovi questo pulsante, fai clic su **[!UICONTROL Gestione app]** > **[!UICONTROL  Aggiungi]**.
 
-1. Nel menu a discesa **[!UICONTROL Suite di rapporti]**, seleziona**[!UICONTROL  Nuova suite di rapporti]**.
+1. Nel menu a discesa **[!UICONTROL Suite di rapporti]**, seleziona **[!UICONTROL  Nuova suite di rapporti]**.
 
 1. Immetti il nome dell&#39;app e seleziona un tipo di suite di rapporti.
 
    Ad esempio, l&#39;ID suite di rapporti potrebbe essere `mycomobileappdev`. Devi impostare suite di rapporti e app distinte per le versioni di sviluppo e di produzione. Ripeti quindi questi passaggi quando sarà il momento di impostare la versione di produzione.
 1. In **[!UICONTROL ID suite di rapporti]**, verifica che sia visualizzato il nome della tua suite di rapporti.
-1. In **[!UICONTROL Copia impostazioni da]**, verifica che sia selezionato**[!UICONTROL  Modello per app mobile]**.
+1. In **[!UICONTROL Copia impostazioni da]**, verifica che sia selezionato **[!UICONTROL  Modello per app mobile]**.
 
    Questo modello abilita le marche temporali per la raccolta dei dati offline e attiva le variabili della soluzione mobile per l&#39;acquisizione delle metriche sul ciclo di vita.
 
@@ -85,20 +85,20 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall&#39;app 
 Per scaricare l&#39;SDK di Mobile:
 
 1. accedi all&#39;interfaccia utente di Mobile Services digitando [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in un browser.
-1. Nel riquadro a sinistra, fai clic sull&#39;elenco a discesa **[!UICONTROL Tutte le app]**e seleziona la tua app.
+1. Nel riquadro a sinistra, fai clic sull&#39;elenco a discesa **[!UICONTROL Tutte le app]** e seleziona la tua app.
 Puoi anche selezionare l&#39;app nel riquadro a destra.
 
    >[!IMPORTANT]
    >
    >Per visualizzare l&#39;app nel riquadro a destra, è innanzitutto necessario creare un&#39;app. Per informazioni sulla creazione di un&#39;app, consultate [Aggiungere una nuova app.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
 
-1. Nell&#39;app, nel riquadro a sinistra, fai clic su **[!UICONTROL Gestione impostazioni]**app.
+1. Nell&#39;app, nel riquadro a sinistra, fai clic su **[!UICONTROL Gestione impostazioni]** app.
 
    >[!IMPORTANT]
    >
-   >Se non trovi l&#39;opzione **[!UICONTROL Gestione impostazioni]**app, accertati di aver effettuato l&#39;accesso ad Adobe Mobile Services. Per verificare il funzionamento, fai clic sull&#39;icona del commutatore![](assets/solution-switcher.png)della soluzione in alto a destra della pagina e accertati che**[!UICONTROL  Adobe Mobile Services]** sia visualizzato in alto a sinistra.
+   >Se non trovi l&#39;opzione **[!UICONTROL Gestione impostazioni]** app, accertati di aver effettuato l&#39;accesso ad Adobe Mobile Services. Per verificare il funzionamento, fai clic sull&#39;icona del commutatore![](assets/solution-switcher.png)della soluzione in alto a destra della pagina e accertati che **[!UICONTROL  Adobe Mobile Services]** sia visualizzato in alto a sinistra.
 
-1. Nella parte inferiore della pagina Gestione impostazioni app, nella sezione Download **[!UICONTROL SDK per]**app, scarica l’SDK e l’app di esempio per la tua piattaforma.
+1. Nella parte inferiore della pagina Gestione impostazioni app, nella sezione Download **[!UICONTROL SDK per]** app, scarica l’SDK e l’app di esempio per la tua piattaforma.
 
 >[!TIP]
 >
