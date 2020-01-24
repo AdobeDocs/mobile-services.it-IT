@@ -4,10 +4,10 @@ keywords: android;library;mobile;sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 seo-title: Verifica dell'acquisizione dalla versione 3
 solution: Marketing Cloud,Analytics
-title: Verifica dell'acquisizione dalla versione 3
+title: Verifica dell’acquisizione dalla versione 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -25,13 +25,13 @@ Se l&#39;app mobile non è ancora disponibile in Google Play, quando crei il col
 
 >[!IMPORTANT]
 >
->Se state implementando utilizzando le API di riferimento per l&#39;installazione di Google Play, non potete testare l&#39;acquisizione prima che l&#39;app sia nello store di Google Play.
+>Se stai implementando tramite le API di riferimento per l’installazione di Google Play, non potrai testare l’acquisizione prima che l’app sia nello store di Google Play.
 
-L&#39;app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]**tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell&#39;app.
+L’app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]**tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell&#39;app.
 
 1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/android/acquisition-main/acquisition.md) e assicurati di aver implementato correttamente il destinatario della trasmissione per `INSTALL_REFERRER`.
 
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Nell’interfaccia utente di Adobe Mobile Services, fai clic su **[!UICONTROL Acquisizione]**>**[!UICONTROL  Marketing Links Builder]** e genera l’URL di un collegamento marketing di acquisizione che imposti Google Play come destinazione per i dispositivi Android.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
