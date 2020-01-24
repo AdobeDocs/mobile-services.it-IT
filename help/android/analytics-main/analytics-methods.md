@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Analytics
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -257,13 +257,13 @@ Restituisce l&#39;identificatore del visitatore generato automaticamente per Ana
    >
    > Questa API è disponibile a partire dalla versione SDK 4.18.0
 
-   Recupera i dati di acquisizione dall&#39;URL di riferimento Google Play Install fornito.
+   Recupera i dati di acquisizione dall’URL di riferimento Google Play Install fornito.
 
    I dati raccolti da questa API verranno inviati sugli hit di installazione inviati ad Analytics e saranno disponibili in Adobe Data Callback.
 
    Se i dati del referente sono già stati raccolti dall’SDK, la chiamata di questo metodo determinerà un no-op.
 
-   Per informazioni su come recuperare l’URL del referente, consultate la documentazione di Google: https://developer.android.com/google/play/installreferrer/library.
+   Per informazioni su come recuperare l’URL del referente, consulta la documentazione di Google: https://developer.android.com/google/play/installreferrer/library.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
