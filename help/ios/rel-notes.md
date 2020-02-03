@@ -2,12 +2,12 @@
 description: Note sulla versione e problemi noti per le versioni 4.x degli SDK per iOS per le soluzioni Experience Cloud.
 seo-description: Note sulla versione e problemi noti per le versioni 4.x degli SDK per iOS per le soluzioni Experience Cloud.
 seo-title: Note sulla versione
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Note sulla versione
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 ---
 
@@ -15,6 +15,14 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # Note sulla versione {#release-notes}
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
+
+**4 febbraio 2020: Versione 4.19.0**
+
+* Ciclo di vita: aggiunta una nuova API, pauseCollectingLifecycleData, per attenuare i dati anormali relativi alla lunghezza di sessione segnalati da alcuni vecchi dispositivi iOS.
+
+**8 novembre 2019: Versione 4.18.9**
+
+* In Messaggi app - È stato corretto un bug a causa del quale le immagini memorizzate nella cache o nel bundle non potevano essere caricate nei messaggi a schermo intero.
 
 **20 settembre 2019: versione 4.18.8**
 
@@ -25,13 +33,13 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
    * È stato corretto un bug a causa del quale il payload click-through push non poteva essere utilizzato come caratteristica dei i messaggi in-app.
    * Risolto un problema di arresto anomalo.
 
-* Generale: è stato corretto un bug a causa del quale i dati dell'SDK venivano sincronizzati con l'app watchOS associata a ogni chiamata di Analytics.
+* Generale: è stato corretto un bug a causa del quale i dati dell&#39;SDK venivano sincronizzati con l&#39;app watchOS associata a ogni chiamata di Analytics.
 
 **2 agosto 2019: versione 4.18.7**
 
 * Ripristinato un cambiamento introdotto nella versione 4.18.6 che, in alcuni ambienti, ha causato un arresto anomalo dei dispositivi che utilizzavano una versione iOS più vecchia di 11.0.
 
-* Adobe Target: aggiunta la proprietà `requestLocationParameters` in `ADBTargetRequestObject`, che consente di inviare l'impressionId con le richieste di Target.
+* Adobe Target: aggiunta la proprietà `requestLocationParameters` in `ADBTargetRequestObject`, che consente di inviare l&#39;impressionId con le richieste di Target.
 
 **18 luglio 2019: versione 4.18.6**
 
@@ -47,9 +55,9 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
 **24 maggio 2019: versione 4.18.4**
 
-* Servizio ID visitatore: aumentato il timeout di ritorno per l'API
+* Servizio ID visitatore: aumentato il timeout di ritorno per l&#39;API
    `visitorGetUrlVariablesAsync` a 30 secondi.
 
 * Servizio ID visitatore: la chiamata API `setPushIdentifier` ora invia una chiamata di sincronizzazione al servizio ID visitatore ogni volta che viene chiamata.
 
-Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://marketing.adobe.com/resources/help/it_IT/whatsnew/).
+Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
