@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Metodi di configurazione
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
@@ -23,8 +23,8 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
    Configura l&#39;impostazione SDK di Adobe Mobile per determinare quale tipo di estensione viene attualmente eseguito.
 
    Imposta uno dei valori seguenti:
-   * `ADBMobileAppExtensionTypeRegular`: l&#39;estensione è inclusa in un pacchetto con un&#39;app contenitore.
-   * `ADBMobileAppExtensionTypeStandAlone`: l&#39;estensione non è inclusa in un pacchetto con un&#39;app contenitore.
+   * `ADBMobileAppExtensionTypeRegular` - l&#39;estensione è inclusa in un pacchetto con un&#39;app contenitore.
+   * `ADBMobileAppExtensionTypeStandAlone` - l&#39;estensione non è inclusa in un pacchetto con un&#39;app contenitore.
    >[!TIP]
    >
    >Usa questo metodo **solo** se l&#39;app ha un&#39;estensione o se si tratta di un&#39;estensione autonoma. Per ulteriori informazioni, consulta *ADBMobileAppExtensionType*, di seguito.
@@ -65,7 +65,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
    * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
-   * `ADBMobilePrivacyStatusUnknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente. 
+   * `ADBMobilePrivacyStatusUnknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
 Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    * Di seguito è riportata la sintassi per questo metodo:
@@ -272,13 +272,13 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
 * **pauseCollectingLifecycleData**
 
-   Utilizzate questa API per mettere in pausa la raccolta di dati del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md).
+   Utilizza questa API per mettere in pausa la raccolta dati del ciclo di vita. Per ulteriori informazioni, consulta [Metriche del ciclo di vita](/help/ios/metrics.md).
 
    >[!IMPORTANT]
    >
-   >Nel metodo `applicationDidEnterBackground` delegate, devi prima chiamare il `pauseCollectingLifecycleData` metodo.
+   >Nel metodo delegato `applicationDidEnterBackground` devi prima chiamare il metodo `pauseCollectingLifecycleData`.
    >
-   >L’API viene fornita per attenuare il problema su iPhone 7/7 o dispositivi precedenti con iOS 13, in cui la metrica della lunghezza di sessione diventava anormale. Ciò è dovuto ad alcune modifiche sconosciute che si sono verificate in iOS 13, dove iOS non lascia abbastanza tempo per il completamento dell&#39;attività in background al momento del background nell&#39;app.
+   >L&#39;API attenua il problema su iPhone 7/7s o dispositivi precedenti con iOS 13, in cui la metrica della lunghezza di sessione era anormale. La causa è riconducibile ad alcune modifiche non note in iOS 13, per cui iOS non lascia abbastanza tempo per il completamento dell&#39;attività quando l&#39;app viene mantenuta in background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
