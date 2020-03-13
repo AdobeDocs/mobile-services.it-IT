@@ -6,7 +6,7 @@ seo-title: Plug-in di Unity per gli SDK iOS e Android 4.x
 solution: Marketing Cloud,Developer
 title: Plug-in di Unity per gli SDK iOS e Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
@@ -16,14 +16,14 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 Questo plug-in consente di inviare chiamate ad Adobe Analytics dalle applicazioni Unity.
 
-Last Update: **March 10, 2020**
+Ultimo aggiornamento: **10 marzo 2020**
 * [Unity-v4.19.0](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases/tag/v4.19.0-Unity)
 
 ## Introduzione {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
 Scarica il file ADBMobile.unitypackage da GitHub.
 
-Below are the contents of the `ADBMobile.unitypackage` file:
+Di seguito sono elencati i contenuti del file `ADBMobile.unitypackage`:
 
 * Risorse (root)
 
@@ -48,9 +48,9 @@ Below are the contents of the `ADBMobile.unitypackage` file:
          * AdobeMobileLibrary.a
 
 
-**Cartelle** facoltative: La cartella *Demo* contiene scene Unity e codice di esempio.
+**Cartelle facoltative**: La cartella *Demo* contiene scene Unity e codice di esempio.
 
-## Importazione del plug-in ADBMobile nel progetto Unity  {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
+## Importazione del plug-in ADBMobile nel progetto Unity {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Apri il progetto Unity.
 1. Fai doppio clic su **[!UICONTROL ADBMobile.unitypackage]**.
