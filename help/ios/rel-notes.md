@@ -1,13 +1,13 @@
 ---
-description: Note sulla versione e problemi noti per le versioni 4.x degli SDK per iOS per le soluzioni Experience Cloud.
-seo-description: Note sulla versione e problemi noti per le versioni 4.x degli SDK per iOS per le soluzioni Experience Cloud.
+description: Note sulla versione e problemi noti per gli SDK 4.x iOS per le soluzioni Experience Cloud.
+seo-description: Note sulla versione e problemi noti per gli SDK 4.x iOS per le soluzioni Experience Cloud.
 seo-title: Note sulla versione
 solution: Marketing Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+translation-type: tm+mt
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
@@ -15,6 +15,15 @@ source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 # Note sulla versione {#release-notes}
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
+
+**24 marzo 2020: Versione 4.19.2**
+
+* Generale - Sono stati corretti alcuni problemi di perdita nel codice di Target.
+
+**12 marzo 2020: Versione 4.19.1**
+
+* Generale - È stato risolto un potenziale arresto anomalo causato dall’inclusione di enum Swift nei dati contestuali per il tracciamento delle chiamate.
+* Target - L&#39;ID sessione di Target ora verrà aggiunto come parametro dei dati contestuali &quot;a.target.sessionId&quot; nell&#39;hit interno di Analytics per Target inviato ad Adobe Analytics.
 
 **4 febbraio 2020: versione 4.19.0**
 
