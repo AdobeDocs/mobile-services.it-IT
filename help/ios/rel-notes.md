@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
@@ -16,18 +16,18 @@ source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
 
-**24 marzo 2020: Versione 4.19.2**
+**24 marzo 2020: versione 4.19.2**
 
-* Generale - Sono stati corretti alcuni problemi di perdita nel codice di Target.
+* Generale: sono stati corretti alcuni problemi nel codice di Target.
 
-**12 marzo 2020: Versione 4.19.1**
+**12 marzo 2020: versione 4.19.1**
 
-* Generale - È stato risolto un potenziale arresto anomalo causato dall’inclusione di enum Swift nei dati contestuali per il tracciamento delle chiamate.
-* Target - L&#39;ID sessione di Target ora verrà aggiunto come parametro dei dati contestuali &quot;a.target.sessionId&quot; nell&#39;hit interno di Analytics per Target inviato ad Adobe Analytics.
+* Generale: è stato risolto un potenziale arresto anomalo provocato dall’inclusione degli enum di Swift nei dati contestuali per il tracciamento delle chiamate.
+* Target: l’ID della sessione di Target verrà ora aggiunto come parametro dei dati contestuali “a.target.sessionId” nel risultato interno di Analytics for Target inviato ad Adobe Analytics.
 
 **4 febbraio 2020: versione 4.19.0**
 
-* Ciclo di vita: aggiunta nuova API, pauseCollectingLifecycleData, per attenuare il problema relativo ai dati anormali della lunghezza di sessione segnalati da alcuni dispositivi iOS precedenti.
+* Ciclo di vita: è stata aggiunta la nuova API pauseCollectingLifecycleData per attenuare il problema relativo ai dati anormali della lunghezza di sessione segnalati da alcuni dispositivi iOS precedenti.
 
 **8 novembre 2019: versione 4.18.9**
 
