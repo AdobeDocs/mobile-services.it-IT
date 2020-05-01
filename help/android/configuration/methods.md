@@ -1,14 +1,14 @@
 ---
 description: Elenco dei metodi di forniti dalla libreria Android.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Elenco dei metodi di forniti dalla libreria Android.
 seo-title: Metodi di Configurazione
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Configurazione
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -31,14 +31,13 @@ Di seguito è riportato un esempio di codice per questo metodo:
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## Impostazioni SDK (classe di configurazione) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
-   * Registra un oggetto che implementa l'interfaccia `AdobeDataCallback`. Il metodo "call" sovrascritto sarà invocato con un valore `Config.MobileDataEvent` e i dati associati in una `Map<String, Object>` per l'evento che scatena l'attivazione. Per ulteriori dettagli sugli eventi che attiveranno questo callback, vedi *MobileDataEventEnum* in fondo a questo argomento.
+   * Registra un oggetto che implementa l&#39;interfaccia `AdobeDataCallback`. Il metodo &quot;call&quot; sovrascritto sarà invocato con un valore `Config.MobileDataEvent` e i dati associati in una `Map<String, Object>` per l&#39;evento che scatena l&#39;attivazione. Per ulteriori dettagli sugli eventi che attiveranno questo callback, vedi *MobileDataEventEnum* in fondo a questo argomento.
 
       >[!TIP]
       >
@@ -84,7 +83,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
    * Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
 
-      I valori di stato disponibili sono:
+      I valori di stato della privacy sono i seguenti:
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN` - gli hit vengono inviati immediatamente.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` - gli hit vengono scartati.
@@ -106,7 +105,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * Il metodo **setPrivacyStatus**
 
-   * Imposta lo stato di privacy per l'utente corrente su `status`.
+   * Imposta lo stato di privacy per l&#39;utente corrente su `status`.
 
       Puoi impostare lo stato di privacy su uno dei seguenti valori:
       * `MOBILE_PRIVACY_STATUS_OPT_IN` - gli hit vengono inviati immediatamente. Questi hit vengono inviati immediatamente.
@@ -127,7 +126,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **getLifetimeValue**
 
-   * Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente. Il valore predefinito è `0`.
+   * Restituisce il valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente corrente. Il valore predefinito è `0`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -143,11 +142,11 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **getUserIdentifier**
 
-   * Se è stato impostato un identificatore personalizzato, restituisce l'identificatore utente personalizzato. In caso contrario restituisce `null`. Il valore predefinito è `null`.
+   * Se è stato impostato un identificatore personalizzato, restituisce l&#39;identificatore utente personalizzato. In caso contrario restituisce `null`. Il valore predefinito è `null`.
 
       >[!TIP]
       >
-      >Se l'app viene aggiornata dall'SDK di Experience Cloud 3.x alla versione 4.x, l'ID precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni sull'SDK 4.x, finché non impostato, l'identificatore utente è `null`.
+      >Se l&#39;app viene aggiornata dall&#39;SDK di Experience Cloud 3.x alla versione 4.x, l&#39;ID precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all&#39;altro dell&#39;SDK. Per le nuove installazioni sull&#39;SDK 4.x, finché non impostato, l&#39;identificatore utente è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -163,7 +162,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **setUserIdentifier**
 
-   * Imposta l'identificatore utente su `identifier`.
+   * Imposta l&#39;identificatore utente su `identifier`.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -178,7 +177,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **getDebugLogging**
 
-   * Restituisce l'attuale preferenza di accesso di debug. Il valore predefinito è `false`.
+   * Restituisce l&#39;attuale preferenza di accesso di debug. Il valore predefinito è `false`.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -192,7 +191,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
       ```
 
 * **setDebugLogging**
-   * Imposta la preferenza per l'accesso di su `debugLogging`debug.
+   * Imposta la preferenza per l&#39;accesso di su `debugLogging`debug.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -206,7 +205,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
       ```
 
 * **collectLifecycleData**
-   * Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni dell'SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/configuration/methods.md).
+   * Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni dell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/configuration/methods.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -235,7 +234,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **collectLifecycleData (Activity activity)**
 
-   * (**Versione 4.2 o versioni successive**) Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni nell'SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   * (**Versione 4.2 o versioni successive**) Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni nell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -253,7 +252,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
       
 * **pauseCollecting&#x200B;LifecycleData**
 
-   * Indica all'SDK che l'applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, `onPause` recupera una marca temporale per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca che l'applicazione non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   * Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, `onPause` recupera una marca temporale per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca che l&#39;applicazione non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -273,7 +272,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Versione 4.2 o successiva**) Imposta l'icona piccola che verrà utilizzata per le notifiche create dall'SDK. Questa icona compare sulla barra di stato e sarà l'immagine secondaria visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
+   * (**Versione 4.2 o successiva**) Imposta l’icona piccola che verrà utilizzata per le notifiche create dall’SDK. Questa icona apparirà sulla barra di stato e sarà l&#39;immagine secondaria visualizzata quando l&#39;utente visualizza la notifica completa nel Centro notifiche.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -288,7 +287,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Versione 4.2 o successiva**) Imposta l'icona grande che verrà utilizzata per le notifiche create dall'SDK. Questa icona sarà l'immagine principale visualizzata dall'utente nella notifica completa all'interno del Centro notifiche.
+   * (**Versione 4.2 o successiva**) Imposta l’icona grande che verrà utilizzata per le notifiche create dall’SDK. Questa icona sarà l&#39;immagine principale visualizzata quando l&#39;utente visualizza la notifica completa nel Centro notifiche.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -303,7 +302,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Versione 4.2 o successiva**) Consente di caricare un diverso file di configurazione ADBMobile JSON all'avvio dell'applicazione. La diversa configurazione viene utilizzata fino alla chiusura dell'applicazione.
+   * (**Versione 4.2 o successiva**) Consente di caricare un diverso file di configurazione ADBMobile JSON all’avvio dell’applicazione. La diversa configurazione viene utilizzata fino alla chiusura dell’applicazione.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -340,11 +339,11 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **submitAdvertisingIdentifierTask**
 
-   * Fornisce un oggetto chiamabile all'SDK che restituisce la stringa dell'Identificatore pubblicitario restituito da Google Play Services. L'SDK esegue questo task in un thread di background e imposta una variabile interna per l'Identificatore pubblicitario che si basa sul valore restituito dall'oggetto chiamabile.
+   * Fornisce un oggetto chiamabile all&#39;SDK che restituisce la stringa dell&#39;Identificatore pubblicitario restituito da Google Play Services. L&#39;SDK esegue questo task in un thread di background e imposta una variabile interna per l&#39;Identificatore pubblicitario che si basa sul valore restituito dall&#39;oggetto chiamabile.
 
       >[!IMPORTANT]
       > 
-      >Se desideri utilizzare l'Identificatore pubblicitario in Acquisizione o Lifecycle, chiamalo prima di `Config.collectLifecycleData`.
+      >Se desideri utilizzare l&#39;Identificatore pubblicitario in Acquisizione o Lifecycle, chiamalo prima di `Config.collectLifecycleData`.
 
       * Di seguito è riportata la sintassi per questo metodo:
 
