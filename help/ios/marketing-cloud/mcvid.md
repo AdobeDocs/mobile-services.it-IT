@@ -2,12 +2,12 @@
 description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-title: Experience Cloud ID
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,11 +18,11 @@ Il servizio Adobe Experience Platform Identity fornisce un ID visitatore univers
 
 >[!TIP]
 >
->Devi compilare l'Experience Cloud ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/it_IT/mcvid/).
+>Devi compilare l&#39;Experience Cloud ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/it-IT/id-service/using/home.html).
 
 **Richiede SDK versione 4.3 o successiva**
 
-## Attivare l'Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## Attivare l&#39;Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
