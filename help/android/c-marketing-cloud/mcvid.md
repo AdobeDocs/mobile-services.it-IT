@@ -2,12 +2,12 @@
 description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-title: Configurazione del servizio Experience Cloud ID
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Configurazione del servizio Experience Cloud ID
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,13 +18,13 @@ Il servizio Adobe Experience Platform Identity fornisce un ID visitatore univers
 
 >[!TIP]
 >
->Devi compilare l'ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/it_IT/mcvid/).
+>Devi compilare l&#39;ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/it-IT/id-service/using/home.html).
 
 >[!IMPORTANT]
 >
 >Questa funzione richiede la versione SDK 4.3 o successiva.
 
-Per attivare l'Experience Cloud ID:
+Per attivare l&#39;Experience Cloud ID:
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
@@ -56,4 +56,4 @@ Per attivare l'Experience Cloud ID:
 
    Se tali ID non sono configurati, scarica un file `ADBMobileConfig.json` aggiornato da Adobe Mobile Services. Per ulteriori informazioni, consulta [Prima di iniziare](/help/android/getting-started/requirements.md).
 
-Quando la configurazione è completa, viene generato un Experience Cloud ID che viene incluso in tutti gli hit. Altri ID, come ID personalizzati e generati automaticamente, continuano a essere inviati con ciascun hit.
+Al termine della configurazione, viene generato un Experience Cloud ID che viene incluso in tutti gli hit. Altri ID, come ID personalizzati e generati automaticamente, continuano a essere inviati con ogni hit.
