@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Queste informazioni sono utili per usare il file di configurazione `ADBMobile.js
 
 ## Riferimento per il file di configurazione ADBMobileConfig.json {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-Lo stesso file di configurazione può essere utilizzato per l'app su più piattaforme:
+Lo stesso file di configurazione può essere utilizzato per l&#39;app su più piattaforme:
 
 >[!TIP]
 >
@@ -26,17 +26,17 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **acquisizione**
 
-   Abilita l'acquisizione dell'app mobile.
+   Abilita l&#39;acquisizione dell&#39;app mobile.
 
-   Se manca questa sezione, abilita l'acquisizione da app mobile e scarica di nuovo il file di configurazione dell'SDK. Per ulteriori informazioni, consulta *referrerTimeout*, di seguito.
+   Se manca questa sezione, abilita l&#39;acquisizione da app mobile e scarica di nuovo il file di configurazione dell&#39;SDK. For more information, see *referrerTimeout* below.
 
-   * `server`: server di acquisizione controllato all'avvio iniziale per individuare un referente di acquisizione.
-   * `appid`: ID generato che identifica l'app in modo univoco sul server di acquisizione.
+   * `server`: server di acquisizione controllato all&#39;avvio iniziale per individuare un referente di acquisizione.
+   * `appid`: ID generato che identifica l&#39;app in modo univoco sul server di acquisizione.
    * Versione SDK minima: 4.1
 
 * **analyticsForwardingEnabled**
 
-   Proprietà nell'oggetto `audienceManager`. Se `Audience Manager` è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager. Il valore predefinito è `false`.
+   Proprietà nell&#39;oggetto `audienceManager`. Se `Audience Manager` è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager. Il valore predefinito è `false`.
 
    * Versione SDK minima: 4.8.0
 
@@ -44,15 +44,15 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    Abilita/disabilita la possibilità di Adobe SDK di retrodatare gli hit di informazioni delle sessioni.
 
-   Gli hit di informazioni della sessione consistono attualmente in crash e durata e possono essere abilitati o disabilitati.
+   Gli hit di informazioni della sessione sono attualmente costituiti da arresti anomali e dalla durata della sessione e possono essere attivati o disattivati.
 
    * Impostando il valore su `false`, gli hit vengono **disabilitati**.
 
-      L'SDK ritorna al suo comportamento pre-4.1, che consiste nell'accorpare le informazioni della sessione precedente al primo hit della sessione successiva. L'SDK di Adobe allega anche le informazioni della sessione al ciclo di vita corrente, evitando così la creazione di una visita gonfiata. In seguito alla mancata creazione di visite gonfiate, si verifica un calo immediato del numero di visite.
+      L’SDK torna al suo comportamento precedente alla 4.1, ossia il caricamento delle informazioni sulla sessione precedente con il primo hit della sessione successiva. L’SDK di Adobe associa anche le informazioni sulla sessione al ciclo di vita corrente, evitando così la creazione di visite eccessive. Poiché non vengono più create visite in eccesso, si verifica un calo immediato del numero di visite.
 
    * Se non fornisci un valore, il valore predefinito è `true`, e gli hit sono **abilitati**.
 
-      Se è abilitata, Adobe SDK retrodaterà l'hit di informazioni della sessione a 1 secondo dopo l'ultimo hit della sessione precedente. Gli arresti anomali e i dati delle sessioni saranno quindi correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l'SDK potrebbe creare una visita per l'hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell'applicazione.
+      Quando gli hit sono attivati, Adobe SDK retrodaterà l’hit di informazioni della sessione a 1 secondo dopo l’hit finale nella sessione precedente. Ciò significa che i dati di arresto anomalo e di sessione saranno correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l’SDK potrebbe creare una visita per l’hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell&#39;applicazione.
 
    * Versione SDK minima: 4.6
    >[!IMPORTANT]
@@ -70,7 +70,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://marketing.adobe.com/resources/help/it_IT/sc/implement/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
    * Versione SDK minima: 4.0
 
@@ -86,7 +86,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **coopUnsafe**
 
-   I membri Device Co-op che necessitano tale valore impostato su `true` devono rivolgersi al team Co-op e richiedere un flag blacklist sul proprio account Device Co-op. Non esiste alcun percorso self-service per l'attivazione di questi flag.
+   I membri Device Co-op che necessitano tale valore impostato su `true` devono rivolgersi al team Co-op e richiedere un flag blacklist sul proprio account Device Co-op. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
    Considerazioni da ricordare:
 
@@ -111,13 +111,13 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    Il valore predefinito è 300 secondi.
 
-   Specifica l'intervallo di tempo, in secondi, che deve trascorrere tra il momento in cui viene avviata l'app e quando tale avvio debba essere considerato come una nuova sessione. Il timeout viene applicato anche quando l’applicazione viene lasciata in background e poi riattivata. Il tempo durante il quale l’app rimane in background non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l&#39;app viene avviata ma prima che l&#39;avvio venga considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene inviata in background e riattivata. Il tempo trascorso in background dall&#39;app non viene incluso nella durata della sessione.
 
    * Versione SDK minima: 4.0
 
 * **messages**
 
-   Generata automaticamente da Adobe Mobile Services, definisce le impostazioni per i messaggi in-app. Per ulteriori informazioni, consulta *Descrizione dei messaggi*.
+   Generato automaticamente da Adobe Mobile Services, definisce le impostazioni per la messaggistica in-app. Per ulteriori informazioni, consulta la sezione Descrizione *dei* messaggi.
 
    * Versione SDK minima: 4.2
 
@@ -130,19 +130,19 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere true.
    * Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false.
 
-      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
+      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
    * Versione SDK minima: 4.0
 
 * **org**
 
-   Specifica l'ID organizzazione di Experience Cloud per il servizio Adobe Experience Platform.
+   Specifica l&#39;ID organizzazione di Experience Cloud per il servizio Adobe Experience Platform.
 
    * Versione SDK minima: 4.3
 
 * **poi**
 
-   Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell&#39;area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Versione SDK minima: 4.0
 
@@ -155,7 +155,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!TIP]
    >
-   >A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell'interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell'app. Tale sincronizzazione richiede un'impostazione `analytics.poi`:
+   >A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell&#39;app. Tale sincronizzazione richiede un&#39;impostazione `analytics.poi`:
 
    ```js
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
@@ -165,7 +165,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **postback**
 
-   Di seguito viene illustrata la definizione del modello di messaggio "callback":
+   Di seguito viene illustrata la definizione del modello di messaggio &quot;callback&quot;:
 
    ```js
    "payload":{
@@ -175,7 +175,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
+   L&#39;oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
 
    * Versione SDK minima: 4.6
 
@@ -185,35 +185,35 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    * Per `optedout`, gli hit vengono scartati.
    * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata. Il valore predefinito è `optedin`.
+      Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l&#39;app non viene disinstallata e reinstallata. Il valore predefinito è `optedin`.
 
    * Versione SDK minima: 4.0
 
 * **referrerTimeout**
 
-   Tempo di attesa, in secondi, affinché l'SDK possa ricevere i dati del referente dell'acquisizione all'avvio iniziale, prima che si verifichi un timeout. Se usi la funzione di acquisizione, consigliamo un timeout di 5 secondi.
+   Numero di secondi in cui l’SDK attende i dati del referente di acquisizione all’avvio iniziale prima che venga eseguito il timeout. Se utilizzi l’acquisizione, consigliamo un timeout di 5 secondi.
 
    >[!IMPORTANT]
    >
-   >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l'SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
+   >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l&#39;SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
 
    * Versione SDK minima: 4.1
 
 * **remotes**
 
-   Configurata automaticamente, definisce gli endpoint gestiti da Adobe per i file di configurazione dinamici. Ad ogni avvio, l'ora dell'ultimo aggiornamento di ogni file di configurazione viene verificato rispetto alla versione corrente, e gli aggiornamenti vengono scaricati e salvati.
+   Configurata automaticamente, definisce gli endpoint gestiti da Adobe per i file di configurazione dinamici. Ad ogni avvio, l&#39;ora dell&#39;ultimo aggiornamento di ogni file di configurazione viene verificato rispetto alla versione corrente, e gli aggiornamenti vengono scaricati e salvati.
 
-   * `analytics.poi` è l'endpoint per la configurazione dei punti di interesse in hosting.
+   * `analytics.poi` è l&#39;endpoint per la configurazione dei punti di interesse in hosting.
 
-   * `messages` è l'endpoint per la configurazione dei messaggi in-app.
+   * `messages` è l&#39;endpoint per la configurazione dei messaggi in-app.
 
    * Versione SDK minima: 4.2
 
 * **rsids**
 
-   Una o più suite di rapporti che dovrà ricevere i dati Analytics. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
+   Una o più suite di rapporti che dovrà ricevere i dati Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
    ```js
    "rsids": "rsid"
@@ -231,7 +231,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
 * **server**
 
-   Server di Analytics o Gestione dell'audience, in base al nodo principale.
+   Server di Analytics o Gestione dell&#39;audience, in base al nodo principale.
 
    Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`.
 
@@ -239,7 +239,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
 
    >[!IMPORTANT]
    >
-   >Questa variabile è obbligatoria per Analytics e/o Gestione dell'audience.
+   >Questa variabile è obbligatoria per Analytics e/o Gestione dell&#39;audience.
 
    * Versione SDK minima: 4.0
 
@@ -249,9 +249,9 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
    >
    > A partire dalla versione 4.10.0, l’impostazione predefinita SSL è autentica se il contrassegno non è impostato.
 
-   Abilita (`true`) o disabilita (`false`) l'invio dei dati di misurazione tramite SSL (HTTPS).
+   Abilita (`true`) o disabilita (`false`) l&#39;invio dei dati di misurazione tramite SSL (HTTPS).
 
-   Di seguito viene illustrata la definizione del modello di messaggio "callback":
+   Di seguito viene illustrata la definizione del modello di messaggio &quot;callback&quot;:
 
    ```js
    "payload":{
@@ -261,7 +261,7 @@ Lo stesso file di configurazione può essere utilizzato per l'app su più piatta
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
+   L&#39;oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/ios/analytics-main/postback/postback.md).
 
    * Versione SDK minima: 4.0
 
@@ -343,58 +343,56 @@ Ecco un esempio di file `ADBMobileConfig.json`:
 
 ## Descrizione dei messaggi {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e generalmente non deve essere modificato manualmente. La descrizione seguente è utile per la risoluzione di eventuali problemi:
+Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e in genere non è necessario modificarlo manualmente. La descrizione seguente è fornita per la risoluzione dei problemi:
 
-* "messageId"
+* &quot;messageId&quot;
 
    * ID generato, obbligatorio
 
-* "template"
+* &quot;un modello&quot;
 
-   * "alert", "fullscreen" o "local"
-   * obbligatorio
+   * &quot;alert&quot;, &quot;fullscreen&quot; o &quot;local&quot;
+   * mandatory
 
-* "payload"
+* &quot;payload&quot;
 
-   * "html"
+   * &quot;html&quot;
 
-      * solo per il modello fullscreen, obbligatorio
+      * solo modello fullscreen, obbligatorio
       * html che definisce il messaggio
-   * "image"
+   * &quot;image&quot;
 
       * solo fullscreen, facoltativo
-      * url dell'immagine da usare come immagine a schermo intero
-   * "altImage"
+      * url dell’immagine da utilizzare per un’immagine a schermo intero
+   * &quot;altImage&quot;
 
       * solo fullscreen, facoltativo
-      * nome dell'immagine fornita nel pacchetto da usare se l'URL specificato in
+      * nome dell’immagine bundle da utilizzare se l’URL specificato in
          `image` non è accessibile
-   * "title"
+   * &quot;title&quot;
 
-      * per fullscreen e alert, obbligatorio
-      * testo del titolo di un messaggio fullscreen o alert
-   * "content"
+      * fullscreen e alert, obbligatorio
+      * testo del titolo per un messaggio di avviso o a schermo intero
+   * &quot;content&quot;
 
       * notifica alert e local, obbligatorio
-      * sottotesto per un messaggio alert, o testo di notifica per un messaggio di notifica local
-   * "confirm"
+      * sottotesto per un messaggio di avviso o testo di notifica per un messaggio di notifica locale
+   * &quot;confirm&quot;
 
       * alert, facoltativo
-      * testo usato per il pulsante di conferma
-   * "cancel"
+      * testo utilizzato nel pulsante di conferma
+   * &quot;cancel&quot;
 
       * alert, obbligatorio
-      * testo usato per il pulsante Annulla
-   * "url"
+      * testo utilizzato per il pulsante Annulla
+   * &quot;url&quot;
 
       * alert, facoltativo
       * azione URL da caricare se si fa clic sul pulsante di conferma
-   * "wait"
+   * &quot;wait&quot;
 
-      * notifica local, obbligatorio
-      * tempo (in secondi) che deve trascorrere prima di pubblicare la notifica local una volta soddisfatti i relativi criteri
-
-
+      * notifica locale, obbligatorio
+      * tempo (in secondi) per la pubblicazione della notifica locale dopo aver soddisfatto i criteri
 
 
 
@@ -402,63 +400,65 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e g
 
 
 
-* "showOffline"
+
+
+* &quot;showOffline&quot;
 
    * true o false
    * il valore predefinito è false
 
-* "showRule"
+* &quot;showRule&quot;
 
-   * "always", "once" o "untilClick"
-   * obbligatorio
+   * &quot;always&quot;, &quot;once&quot; o &quot;beforeClick&quot;
+   * mandatory
 
-* "endDate"
+* &quot;endDate&quot;
 
-   * numero di secondi dal 1° gennaio 1970
+   * numero di secondi dal 1 gennaio 1970
    * Il valore predefinito è 2524730400
 
-* "startDate"
+* &quot;startDate&quot;
 
-   * numero di secondi dal 1° gennaio 1970
+   * numero di secondi dal 1 gennaio 1970
    * Il valore predefinito è 0
 
-* "audiences"
+* &quot;audiences&quot;
 
    Array di oggetti che definisce come deve essere visualizzato il messaggio:
 
-   * "key"
+   * &quot;key&quot;
 
       Nome della variabile da cercare nell’hit; obbligatorio.
 
-   * "matches"
+   * &quot;matches&quot;
 
       Tipo di corrispondenza utilizzato per il confronto:
 
       * eq = equals (uguale a)
       * ne = does not equal (non uguale a)
-      * co = contains (contiene)
-      * nc = does not contain (non contiene)
-      * sw = starts with (inizia con)
-      * ew = ends with (termina con)
-      * ex = exists (esiste)
-      * nx = does not exist (non esiste)
+      * co = contains
+      * nc = non contiene
+      * sw = Inizia con
+      * ew = ends with
+      * ex = exists
+      * nx = does not exists
       * lt = less than (minore di)
       * le = less than or equals (minore di o uguale a)
       * gt = greater than (maggiore di)
       * ge = greater than or equals (maggiore di o uguale a)
-   * "values"
+   * &quot;values&quot;
 
       Array di valori utilizzati per eseguire il confronto rispetto al valore della variabile denominata in:
 
       * key
-      * con il tipo di corrispondenza definito in
+      * con il tipo di corrispondenza in
       * matches
 
 
-* "triggers"
+* &quot;triggers&quot;
 
    Simile a audience, ma per le azioni anziché per il pubblico:
 
-   * "key"
-   * "matches"
-   * "values"
+   * &quot;key&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;
