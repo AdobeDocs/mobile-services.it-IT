@@ -1,14 +1,14 @@
 ---
 description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
 seo-title: Metodi di Adobe Experience Platform Identity
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: ht
-source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -17,13 +17,13 @@ source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity.
 
 I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `visitor`. Per ulteriori informazioni, consulta [Configurazione Experience Cloud ID](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo, occorre avere Mobile SDK 4.12+. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://marketing.adobe.com/resources/help/it_IT/mcvid/mcvid-appendvisitorid.html).
+   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo è necessario disporre dell’SDK 4.12+ per dispositivi mobili. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -50,7 +50,7 @@ I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del serv
 
 * **getMarketingCloudId**
 
-   Recupera l'Experience Cloud ID dal servizio ID.
+   Recupera l&#39;Experience Cloud ID dal servizio ID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -70,7 +70,7 @@ I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del serv
 
 * **syncIdentifiers**
 
-   Insieme all'Experience Cloud ID, puoi impostare altri ID cliente da associare a ogni visitatore. L'API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente che consente di distinguere l'ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
+   Con l&#39;Experience Cloud ID puoi impostare altri ID cliente da associare a ogni visitatore. L&#39;API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l&#39;ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
