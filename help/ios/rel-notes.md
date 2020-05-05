@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -69,4 +69,4 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
 * Servizio ID visitatore: la chiamata API `setPushIdentifier` ora invia una chiamata di sincronizzazione al servizio ID visitatore ogni volta che viene chiamata.
 
-Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://marketing.adobe.com/resources/help/it_IT/whatsnew/).
+Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
