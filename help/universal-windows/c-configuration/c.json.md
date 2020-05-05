@@ -4,23 +4,23 @@ seo-description: Informazioni utili per l’utilizzo del file di configurazione 
 seo-title: Configurazione ADBMobileConfig.json
 solution: Marketing Cloud,Analytics
 title: Configurazione ADBMobileConfig.json
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# File di configurazione ADBMobileConfig.json {#adbmobileconfig-json-config}
+# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
 
 Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso "Config".
+Al momento l’SDK supporta più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
 
 * **rsids**
 
-   (**Required by Analytics**) One or more report suites to receive Analytics data. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
+   (**Richiesto da Analytics**) Una o più suite di rapporti ricevono i dati Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -34,17 +34,17 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
 * **server**
 
-   (**Richiesto da Analytics e Gestione dell’audience**). Server di Analytics o Gestione dell’audience, in base al nodo principale. This variable should be populated with the server domain, without an `"https://"` or `"https://"` protocol prefix. Il prefisso del protocollo viene gestito automaticamente dalla libreria, in base alla variabile `ssl`.
+   (**Richiesto da Analytics e Gestione** dell&#39;audience). Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `"https://"` o `"https://"`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla `ssl` variabile.
 
    Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l’archiviazione e la generazione di rapporti. For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (`HTTPS`). Il valore predefinito è `false`.
+   Abilita (`true`) o disabilita (`false`) l’invio di dati di misurazione tramite SSL (`HTTPS`). Il valore predefinito è `false`.
 
 * **offlineEnabled**
 
@@ -52,39 +52,39 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere `false`.
 
-   Se questo non viene configurato correttamente, i dati andranno perduti. If you are unsure whether a report suite is timestamp enabled, contact Customer Care. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate in una suite di rapporti, contatta l&#39;Assistenza clienti. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Il valore predefinito è `false`.
 
 * **lifecycleTimeout**
 
-   Specifica l’intervallo di tempo, in secondi, che deve trascorrere tra un avvio dell’app e quello successivo affinché questo sia considerato come una nuova sessione. Il timeout viene applicato anche quando l’applicazione viene lasciata in background e poi riattivata. Il tempo durante il quale l’app rimane in background non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene inviata in background e riattivata. Il tempo trascorso in background dall&#39;app non viene incluso nella durata della sessione.
 
    Il valore predefinito è 300 secondi.
 
 * **batchLimit**
 
-   Invia gli hit in batch 
+   Invia gli hit in batch.
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Richiede `offlineEnabled=true`e il valore predefinito è `0` (nessun invio in batch).
+   Ad esempio, se è impostato su `50`, gli hit vengono messi in coda fino alla memorizzazione di 50, dopodiché tutti gli hit in coda vengono inviati. Richiede `offlineEnabled=true`e il valore predefinito è `0` (nessun invio in batch).
 
 * **privacyDefault**
 
    Le opzioni sono:
 
    * `optedin` - gli hit vengono inviati immediatamente.
-   * `optedout` - gli hit vengono scartati.
-   * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
+   * `optedout` - gli hit vengono eliminati.
+   * `optunknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      Questo imposta solo il valore predefinito. Se questo valore è impostato o modificato nel codice, il valore impostato dal codice viene salvato nello spazio di archiviazione locale e utilizzato fino a quando non viene modificato o l’app non viene disinstallata e reinstallata.
+      Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nello spazio di archiviazione locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
       Il valore predefinito è `optedin`.
 
 * **poi**
 
-   Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell'area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell&#39;area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
-   * Here is the code sample for this variable:
+   * Esempio di codice per questa variabile:
 
       ```js
        "poi" [ 
@@ -95,13 +95,13 @@ Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud
 
 * **clientCode**
 
-   (**Required by Target**) Your assigned client code.
+   (**Richiesto da Target**) Il codice client assegnato.
 
 * **timeout**
 
-   Determina per quanto tempo Target può aspettare di ricevere una risposta.
+   Determina per quanto tempo Target attende una risposta.
 
-Di seguito viene indicato un esempio del file `ADBMobileConfig.json`:
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
