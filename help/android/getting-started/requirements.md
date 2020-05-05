@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: Prima di iniziare
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: ht
-source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -24,10 +24,10 @@ Gli amministratori di Analytics e gli sviluppatori di app devono completare le s
 
 Per configurare una suite di rapporti e raccogliere i dati dalle app per dispositivi mobili:
 
-1. Esegui una delle procedure riportate in [Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8).
-1. Crea un account Analytics per ogni sviluppatore di app.
+1. Completa una delle sezioni in [Accedi all&#39;interfaccia utente](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)di Adobe Mobile Services.
+1. Create un account Analytics per ogni sviluppatore di app.
 
-Gli sviluppatori di app possono ora visualizzare le suite di rapporti che hai creato.
+Gli sviluppatori di app ora hanno accesso per visualizzare le suite di rapporti che hai creato.
 
 >[!IMPORTANT]
 >
@@ -43,13 +43,13 @@ Per ulteriori informazioni su ruoli e autorizzazioni, vedi [Ruoli e autorizzazio
 
 ## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services è l&#39;interfaccia principale per la gestione dei rapporti per l&#39;analisi delle app per dispositivi mobili e la definizione delle destinazioni (targeting). Una volta completati questi passaggi, puoi scaricare un file di configurazione in cui sono già stati configurati il server per la raccolta dei dati, la suite di rapporti e numerose altre impostazioni.
+Adobe Mobile Services è l&#39;interfaccia di reporting principale per l&#39;analisi e il targeting delle app per dispositivi mobili. Dopo aver completato questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
 
-Puoi accedere all&#39;interfaccia utente di Adobe Mobile Services in uno dei seguenti modi:
+Puoi accedere all’interfaccia utente di Adobe Mobile Services in uno dei modi seguenti:
 
 ### Experience Cloud
 
-Accedi a [Experience Cloud](https://marketing.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Accedi a [Experience Cloud](https://experiencecloud.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -66,15 +66,15 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall&#39;app 
 1. Accedi all’interfaccia utente di Mobile Services e digita [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in un browser.
 1. Fai clic su **[!UICONTROL Crea un’app]**.
 
-   Se non trovi questo pulsante, fai clic su **[!UICONTROL Gestione app]** > **[!UICONTROL  Aggiungi]**.
+   Se non trovi questo pulsante, fai clic su **[!UICONTROL Gestione app]** > **[!UICONTROL Aggiungi]**.
 
-1. Nel menu a discesa **[!UICONTROL Suite di rapporti]**, seleziona **[!UICONTROL  Nuova suite di rapporti]**.
+1. Nel menu a discesa **[!UICONTROL Suite di rapporti]**, seleziona **[!UICONTROL Nuova suite di rapporti]**.
 
 1. Immetti il nome dell&#39;app e seleziona un tipo di suite di rapporti.
 
    Ad esempio, l&#39;ID suite di rapporti potrebbe essere `mycomobileappdev`. Devi impostare suite di rapporti e app distinte per le versioni di sviluppo e di produzione. Ripeti quindi questi passaggi quando sarà il momento di impostare la versione di produzione.
 1. In **[!UICONTROL ID suite di rapporti]**, verifica che sia visualizzato il nome della tua suite di rapporti.
-1. In **[!UICONTROL Copia impostazioni da]**, verifica che sia selezionato **[!UICONTROL  Modello per app mobile]**.
+1. In **[!UICONTROL Copia impostazioni da]**, verifica che sia selezionato **[!UICONTROL Modello per app mobile]**.
 
    Questo modello abilita le marche temporali per la raccolta dei dati offline e attiva le variabili della soluzione mobile per l&#39;acquisizione delle metriche sul ciclo di vita.
 
@@ -96,7 +96,7 @@ Puoi anche selezionare l’app nel riquadro a destra.
 
    >[!IMPORTANT]
    >
-   >Se non trovi l’opzione **[!UICONTROL Gestione impostazioni app]**, accertati di aver effettuato l’accesso ad Adobe Mobile Services. Per verificare il funzionamento, fai clic sull’icona del ![commutatore della soluzione](assets/solution-switcher.png) in alto a destra della pagina e accertati che **[!UICONTROL  Adobe Mobile Services]** sia visualizzato in alto a sinistra.
+   >Se non trovi l’opzione **[!UICONTROL Gestione impostazioni app]**, accertati di aver effettuato l’accesso ad Adobe Mobile Services. Per verificare il funzionamento, fai clic sull’icona del ![commutatore della soluzione](assets/solution-switcher.png) in alto a destra della pagina e accertati che **[!UICONTROL Adobe Mobile Services]** sia visualizzato in alto a sinistra.
 
 1. Nella parte inferiore della pagina Gestione impostazioni app, nella sezione **[!UICONTROL Scaricare l’SDK di app]**, scarica l’SDK e l’app di esempio per la tua piattaforma.
 
@@ -112,5 +112,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 Considerazioni da ricordare:
 
-* Sostituisci il numero di versione riportato nell&#39;esempio con quello appropriato degli SDK per Android.
-* Scarica il file di configurazione e includilo nel progetto.
+* Sostituisci il numero di versione nell’esempio di codice con la versione appropriata degli SDK Android.
+* Scaricate il file di configurazione e includetelo nel progetto.
