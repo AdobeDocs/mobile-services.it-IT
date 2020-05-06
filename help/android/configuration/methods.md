@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Configurazione
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
 
-# Metodi di configurazione{#configuration-methods}
+# Metodi di configurazione {#configuration-methods}
 
 Elenco dei metodi di forniti dalla libreria Android.
 
@@ -83,7 +83,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
    * Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
 
-      I valori di stato della privacy sono i seguenti:
+      I valori dello stato di privacy sono i seguenti:
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN` - gli hit vengono inviati immediatamente.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` - gli hit vengono scartati.
@@ -103,14 +103,15 @@ Di seguito è riportato un esempio di codice per questo metodo:
       ```
 
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    * Imposta lo stato di privacy per l&#39;utente corrente su `status`.
 
       Puoi impostare lo stato di privacy su uno dei seguenti valori:
       * `MOBILE_PRIVACY_STATUS_OPT_IN` - gli hit vengono inviati immediatamente. Questi hit vengono inviati immediatamente.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` - gli hit vengono scartati. Questi hit vengono scartati.
-      * `MOBILE_PRIVACY_STATUS_UNKNOWN` - se la suite di rapporti ha la marca temporale abilitata, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in optedin.
+      * `MOBILE_PRIVACY_STATUS_UNKNOWN` - se la suite di rapporti ha la marca temporale abilitata, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
+Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in optedin.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -272,7 +273,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Versione 4.2 o successiva**) Imposta l’icona piccola che verrà utilizzata per le notifiche create dall’SDK. Questa icona apparirà sulla barra di stato e sarà l&#39;immagine secondaria visualizzata quando l&#39;utente visualizza la notifica completa nel Centro notifiche.
+   * (**Versione 4.2 o successiva**) Imposta l’icona piccola che verrà utilizzata per le notifiche create dall’SDK. Questa icona apparirà sulla barra di stato e sarà l’immagine secondaria mostrata quando l’utente visualizza la notifica completa nel centro notifiche.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -287,7 +288,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Versione 4.2 o successiva**) Imposta l’icona grande che verrà utilizzata per le notifiche create dall’SDK. Questa icona sarà l&#39;immagine principale visualizzata quando l&#39;utente visualizza la notifica completa nel Centro notifiche.
+   * (**Versione 4.2 o successiva**) Imposta l’icona grande che verrà utilizzata per le notifiche create dall’SDK. Questa icona sarà l’immagine primaria mostrata quando l’utente visualizza la notifica completa nel centro notifiche.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -302,7 +303,7 @@ Di seguito è riportato un esempio di codice per questo metodo:
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Versione 4.2 o successiva**) Consente di caricare un diverso file di configurazione ADBMobile JSON all’avvio dell’applicazione. La diversa configurazione viene utilizzata fino alla chiusura dell’applicazione.
+   * (**Versione 4.2 o successiva**) Consente di caricare un file di configurazione ADBMobile JSON diverso all’avvio dell’applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
