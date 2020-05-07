@@ -7,7 +7,10 @@ title: Note sulla versione
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 76%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # Note sulla versione {#release-notes}
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulla correzione per l’SDK 4.x per Android per le soluzioni Experience Cloud:
+
+**3 aprile 2020: 4.18.2**
+
+* In Messaggi app - Per motivi di sicurezza, WebViews creati dall&#39;SDK ora imposta la proprietà &#39;setAllowFileAccess&#39; su false.
+
+**12 marzo 2020: 4.18.1**
+
+* Target - L&#39;ID sessione di Target ora verrà aggiunto come parametro di dati contestuali &quot;a.target.sessionId&quot; nell&#39;hit interno Analytics-for-Target inviato ad Adobe Analytics.
 
 **16 gennaio 2020: 4.18.0**
 
