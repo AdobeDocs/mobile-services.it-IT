@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '1715'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
    Abilita l&#39;acquisizione dell&#39;app mobile.
 
-   Se manca questa sezione, abilita l&#39;acquisizione da app mobile e scarica di nuovo il file di configurazione dell&#39;SDK. For more information, see *referrerTimeout* below.
+   Se manca questa sezione, abilita l&#39;acquisizione da app mobile e scarica di nuovo il file di configurazione dell&#39;SDK. Per ulteriori informazioni, vedi *referrerTimeout* di seguito.
 
    * `server`: server di acquisizione controllato all&#39;avvio iniziale per individuare un referente di acquisizione.
    * `appid`: ID generato che identifica l&#39;app in modo univoco sul server di acquisizione.
@@ -44,15 +47,15 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
    Abilita/disabilita la possibilità di Adobe SDK di retrodatare gli hit di informazioni delle sessioni.
 
-   Gli hit di informazioni della sessione sono attualmente costituiti da arresti anomali e dalla durata della sessione e possono essere attivati o disattivati.
+   Gli hit di informazioni delle sessioni sono attualmente costituiti da arresti anomali e dalla lunghezza di sessione e possono essere attivati o disattivati.
 
    * Impostando il valore su `false`, gli hit vengono **disabilitati**.
 
-      L’SDK torna al suo comportamento precedente alla 4.1, ossia il caricamento delle informazioni sulla sessione precedente con il primo hit della sessione successiva. L’SDK di Adobe associa anche le informazioni sulla sessione al ciclo di vita corrente, evitando così la creazione di visite eccessive. Poiché non vengono più create visite in eccesso, si verifica un calo immediato del numero di visite.
+      L’SDK torna al suo comportamento precedente alla versione 4.1, ossia il raggruppamento delle informazioni sulla sessione precedente con il primo hit della sessione successiva. L’SDK di Adobe associa anche le informazioni sulla sessione al ciclo di vita corrente, evitando così la creazione di visite in eccesso. Poiché non vengono più create visite in eccesso, si verifica un calo immediato del numero di visite.
 
    * Se non fornisci un valore, il valore predefinito è `true`, e gli hit sono **abilitati**.
 
-      Quando gli hit sono attivati, Adobe SDK retrodaterà l’hit di informazioni della sessione a 1 secondo dopo l’hit finale nella sessione precedente. Ciò significa che i dati di arresto anomalo e di sessione saranno correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l’SDK potrebbe creare una visita per l’hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell&#39;applicazione.
+      Quando gli hit sono attivati, l’SDK di Adobe retrodaterà l’hit di informazioni delle sessioni a 1 secondo dopo l’hit finale nella sessione precedente. Ciò significa che i dati di arresto anomalo e di sessione saranno correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l’SDK potrebbe creare una visita per l’hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell&#39;applicazione.
 
    * Versione SDK minima: 4.6
    >[!IMPORTANT]
@@ -70,7 +73,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/config-vars/charset.html).
 
    * Versione SDK minima: 4.0
 
@@ -111,13 +114,13 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
    Il valore predefinito è 300 secondi.
 
-   Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l&#39;app viene avviata ma prima che l&#39;avvio venga considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene inviata in background e riattivata. Il tempo trascorso in background dall&#39;app non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l’app viene avviata e quello in cui l’avvio viene considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
    * Versione SDK minima: 4.0
 
 * **messages**
 
-   Generato automaticamente da Adobe Mobile Services, definisce le impostazioni per la messaggistica in-app. Per ulteriori informazioni, consulta la sezione Descrizione *dei* messaggi.
+   Generato automaticamente da Adobe Mobile Services, definisce le impostazioni per la messaggistica in-app. Per ulteriori informazioni, consulta la sezione *Descrizione dei messaggi* di seguito.
 
    * Versione SDK minima: 4.2
 
@@ -193,7 +196,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
 * **referrerTimeout**
 
-   Numero di secondi in cui l’SDK attende i dati del referente di acquisizione all’avvio iniziale prima che venga eseguito il timeout. Se utilizzi l’acquisizione, consigliamo un timeout di 5 secondi.
+   Numero di secondi in cui l’SDK attende i dati del referente di acquisizione all’avvio iniziale, prima che venga eseguito il timeout. Se utilizzi l’acquisizione, consigliamo un timeout di 5 secondi.
 
    >[!IMPORTANT]
    >
@@ -213,7 +216,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
 * **rsids**
 
-   Una o più suite di rapporti che dovrà ricevere i dati Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
+   Una o più suite di rapporti che riceva i dati di Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
    ```js
    "rsids": "rsid"
@@ -272,7 +275,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
    * Versione SDK minima: 4.0
 
 
-## File {#section_52FA7C71A99147AFA9BE08D2177D8DA7} di esempio `ADBMobileConfig.json`
+## File di esempio `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
@@ -343,56 +346,56 @@ Ecco un esempio di file `ADBMobileConfig.json`:
 
 ## Descrizione dei messaggi {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e in genere non è necessario modificarlo manualmente. La descrizione seguente è fornita per la risoluzione dei problemi:
+Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e in genere non è necessario modificarlo manualmente. La seguente descrizione è fornita per la risoluzione di problemi:
 
-* &quot;messageId&quot;
+* “messageId”
 
    * ID generato, obbligatorio
 
-* &quot;un modello&quot;
+* “template”
 
-   * &quot;alert&quot;, &quot;fullscreen&quot; o &quot;local&quot;
-   * mandatory
+   * “alert”, “fullscreen” o “local”
+   * obbligatorio
 
-* &quot;payload&quot;
+* “payload”
 
-   * &quot;html&quot;
+   * “html”
 
-      * solo modello fullscreen, obbligatorio
+      * solo modello a schermo intero, obbligatorio
       * html che definisce il messaggio
-   * &quot;image&quot;
+   * “image”
 
-      * solo fullscreen, facoltativo
-      * url dell’immagine da utilizzare per un’immagine a schermo intero
-   * &quot;altImage&quot;
+      * solo a schermo intero, facoltativo
+      * URL dell’immagine da utilizzare per un’immagine a schermo intero
+   * “altImage”
 
-      * solo fullscreen, facoltativo
-      * nome dell’immagine bundle da utilizzare se l’URL specificato in
+      * solo a schermo intero, facoltativo
+      * nome dell’immagine nel bundle da utilizzare se l’URL specificato in
          `image` non è accessibile
-   * &quot;title&quot;
+   * “title”
 
-      * fullscreen e alert, obbligatorio
+      * a schermo intero e avviso, obbligatorio
       * testo del titolo per un messaggio di avviso o a schermo intero
-   * &quot;content&quot;
+   * “content”
 
-      * notifica alert e local, obbligatorio
+      * notifica di avviso e locale, obbligatorio
       * sottotesto per un messaggio di avviso o testo di notifica per un messaggio di notifica locale
-   * &quot;confirm&quot;
+   * “confirm”
 
-      * alert, facoltativo
+      * avviso, facoltativo
       * testo utilizzato nel pulsante di conferma
-   * &quot;cancel&quot;
+   * “cancel”
 
-      * alert, obbligatorio
-      * testo utilizzato per il pulsante Annulla
-   * &quot;url&quot;
+      * avviso, obbligatorio
+      * testo utilizzato nel pulsante di annullamento
+   * “url”
 
-      * alert, facoltativo
+      * avviso, facoltativo
       * azione URL da caricare se si fa clic sul pulsante di conferma
-   * &quot;wait&quot;
+   * “wait”
 
       * notifica locale, obbligatorio
-      * tempo (in secondi) per la pubblicazione della notifica locale dopo aver soddisfatto i criteri
+      * tempo di attesa (in secondi) per la pubblicazione della notifica locale dopo che i criteri sono stati soddisfatti
 
 
 
@@ -402,24 +405,24 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
 
 
 
-* &quot;showOffline&quot;
+* “showOffline”
 
    * true o false
    * il valore predefinito è false
 
-* &quot;showRule&quot;
+* “showRule”
 
-   * &quot;always&quot;, &quot;once&quot; o &quot;beforeClick&quot;
-   * mandatory
+   * “always”, “once” o “untilClick”
+   * obbligatorio
 
-* &quot;endDate&quot;
+* “endDate”
 
-   * numero di secondi dal 1 gennaio 1970
+   * numero di secondi dal 1° gennaio 1970
    * Il valore predefinito è 2524730400
 
-* &quot;startDate&quot;
+* “startDate”
 
-   * numero di secondi dal 1 gennaio 1970
+   * numero di secondi dal 1° gennaio 1970
    * Il valore predefinito è 0
 
 * &quot;audiences&quot;
@@ -436,16 +439,16 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
 
       * eq = equals (uguale a)
       * ne = does not equal (non uguale a)
-      * co = contains
-      * nc = non contiene
-      * sw = Inizia con
-      * ew = ends with
-      * ex = exists
-      * nx = does not exists
+      * co = contains (contiene)
+      * nc = does not contain (non contiene)
+      * sw = starts with (inizia con)
+      * ew = ends with (termina con)
+      * ex = exists (esiste)
+      * nx = does not exist (non esiste)
       * lt = less than (minore di)
-      * le = less than or equals (minore di o uguale a)
+      * le = less than or equals (minore o uguale a)
       * gt = greater than (maggiore di)
-      * ge = greater than or equals (maggiore di o uguale a)
+      * ge = greater than or equals (maggiore o uguale a)
    * &quot;values&quot;
 
       Array di valori utilizzati per eseguire il confronto rispetto al valore della variabile denominata in:
