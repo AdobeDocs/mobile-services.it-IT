@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Prima di iniziare
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -24,10 +27,10 @@ Gli amministratori di Analytics e gli sviluppatori di app devono completare le s
 
 Per configurare una suite di rapporti e raccogliere i dati dalle app per dispositivi mobili:
 
-1. Completa una delle sezioni in [Accedi all&#39;interfaccia utente](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)di Adobe Mobile Services.
-1. Create un account Analytics per ogni sviluppatore di app.
+1. Completa una delle sezioni in [Eseguire l’accesso all’interfaccia utente di Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8).
+1. Crea un account Analytics per ogni sviluppatore di app.
 
-Gli sviluppatori di app ora hanno accesso per visualizzare le suite di rapporti che hai creato.
+Gli sviluppatori di app ora hanno accesso alla visualizzazione delle suite di rapporti che hai creato.
 
 >[!IMPORTANT]
 >
@@ -43,9 +46,9 @@ Per ulteriori informazioni su ruoli e autorizzazioni, vedi [Ruoli e autorizzazio
 
 ## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services è l&#39;interfaccia di reporting principale per l&#39;analisi e il targeting delle app per dispositivi mobili. Dopo aver completato questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
+Adobe Mobile Services è l’interfaccia di reportistica principale per l’analisi e il targeting delle app per dispositivi mobili. Dopo aver completato questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
 
-Puoi accedere all’interfaccia utente di Adobe Mobile Services in uno dei modi seguenti:
+Puoi accedere all’interfaccia utente di Adobe Mobile Services in uno dei seguenti modi:
 
 ### Experience Cloud
 
@@ -112,5 +115,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 Considerazioni da ricordare:
 
-* Sostituisci il numero di versione nell’esempio di codice con la versione appropriata degli SDK Android.
-* Scaricate il file di configurazione e includetelo nel progetto.
+* Sostituisci il numero di versione nell’esempio di codice con la versione appropriata degli SDK per Android.
+* Scarica il file di configurazione e inseriscilo nel progetto.
