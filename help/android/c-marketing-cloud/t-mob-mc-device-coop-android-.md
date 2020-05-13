@@ -4,8 +4,11 @@ seo-description: Per iniziare a utilizzare Experience Cloud Device Co-op, contat
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '290'
+ht-degree: 100%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 Per iniziare a utilizzare Experience Cloud Device Co-op, contatta il tuo rappresentante Adobe.
 
-Per abilitare Experience Cloud Device Co-op nelle tue app mobile, completa i seguenti passaggi per gli SDK Experience Cloud per Android:
+Per abilitare le app mobili per Experience Cloud Device Co-op, completa i seguenti passaggi per gli SDK di Experience Cloud per Android:
 
 >[!IMPORTANT]
 >
 >Questa funzionalità richiede la versione SDK 4.8.3 o successiva per Android.
 
-A partire dalla versione SDK 4.16.1, i membri di Device Co-op possono scegliere i propri dati dei dispositivi mobili da Experience Cloud Device Co-op. Per ulteriori informazioni, vedi Configurazione [JSON](/help/android/configuration/json-config/json-config.md) ADBMobile e il `visitorAPI.js` metodo per [isCoopSafe](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html).
+A partire dall’SDK versione 4.16.1, i membri di Device Co-op possono scegliere di rimuovere i dati dei propri dispositivi mobili da Experience Cloud Device Co-op. Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md) e il metodo `visitorAPI.js` per [isCoopSafe](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/configurations/coopsafe.html).
 
 1. Implementa l&#39;SDK di Adobe Mobile.
 
