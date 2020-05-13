@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Configurazione del servizio Experience Cloud ID
 topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
@@ -56,4 +59,4 @@ Per attivare l&#39;Experience Cloud ID:
 
    Se tali ID non sono configurati, scarica un file `ADBMobileConfig.json` aggiornato da Adobe Mobile Services. Per ulteriori informazioni, consulta [Prima di iniziare](/help/android/getting-started/requirements.md).
 
-Al termine della configurazione, viene generato un Experience Cloud ID che viene incluso in tutti gli hit. Altri ID, come ID personalizzati e generati automaticamente, continuano a essere inviati con ogni hit.
+Al termine della configurazione, viene generato un Experience Cloud ID che viene incluso in tutti gli hit. Eventuali altri ID, ad esempio gli ID personalizzati o generati in automatico, continuano a essere inviati con ogni hit.
