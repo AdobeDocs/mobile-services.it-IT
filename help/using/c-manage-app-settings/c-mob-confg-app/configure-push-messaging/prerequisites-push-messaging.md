@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Prerequisiti per abilitare i messaggi push
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '646'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +42,7 @@ Per ulteriori informazioni, consulta:
 
 >[!IMPORTANT]
 >
->Per utilizzare la funzionalità Servizi push, gli utenti devono accedere al servizio core Mobile con il proprio Adobe ID, e il tuo account Analytics deve essere collegato ai loro Adobe ID. La funzionalità Servizi push non è disponibile se gli utenti accedono utilizzando gli account Adobe Analytics esistenti.
+>Per utilizzare la funzionalità Servizi push, gli utenti devono accedere al servizio core Mobile con il proprio Adobe ID, e il tuo account Analytics deve essere collegato ai loro Adobe ID. La funzionalità Servizi push non è disponibile se gli utenti accedono con gli account Adobe Analytics esistenti.
 
 Se gli utenti non dispongono di un Adobe ID, effettua i seguenti passaggi:
 
@@ -73,22 +76,22 @@ Finché non attivi il servizio ID per la tua app, la sezione **[!UICONTROL Servi
 
 >[!IMPORTANT]: devi fare clic su **[!UICONTROL Salva]** per salvare le modifiche e aggiornare i Servizi push.
 >
->Puoi configurare un’app per app store per Apple e una per Google in ogni suite di rapporti. Se ti servono altre app, ad esempio una per un ambiente di produzione e una per un ambiente di sviluppo, configura una nuova app per app store e una nuova suite di rapporti per ciascun ambiente.
+>Puoi configurare un’app per app store per Apple e una per Google in ogni suite di rapporti. Se hai bisogno di altre app, ad esempio una per un ambiente di produzione e una per un ambiente di sviluppo, configura una nuova app per app store e una nuova suite di rapporti per ciascun ambiente.
 
-* Per **Apple**, trascina e rilascia la chiave privata e/o il certificato. Se la tua chiave privata è crittografata con una password, digita la password.
+* Per **Apple**, trascina e rilascia la chiave privata e/o il certificato. Se la tua chiave privata è crittografata tramite password, digita la password.
 
    * Per **Chiave privata**, trascina e rilascia il file della chiave privata nell’apposita casella.
 
       Puoi anche fare clic su **[!UICONTROL Sfoglia]** per selezionare il file. Il file contiene la chiave privata. Nel file potrebbe essere incluso anche il certificato (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
-   * Per Password **chiave** privata, se il file della chiave privata è crittografato, digitate la password.
+   * Per la **password della chiave privata**, se il file della chiave privata è crittografato, digita la password.
 
-      (Condizionale) Per il **certificato**, trascina e rilascia il file del certificato nella casella. Puoi anche fare clic su **[!UICONTROL Sfoglia]** per selezionare il file. Questo campo non è richiesto se il file della chiave privata contiene anche il certificato ( `.cert`, `.cer`, `.crt`, `.pem`).
+      (Condizionato) Per il **certificato**, trascina e rilascia il file del certificato nella casella. Puoi anche fare clic su **[!UICONTROL Sfoglia]** per selezionare il file. Questo campo non è richiesto se il file della chiave privata contiene anche il certificato ( `.cert`, `.cer`, `.crt`, `.pem`).
 
 * Per **Google**, specifica la chiave API dell’app.
 
    Fai clic su **[!UICONTROL Prova]** per verificare che l’app e Mobile Services siano configurati correttamente. Questa opzione è utile per il debug e la risoluzione dei problemi.
 
-   Digita i token push del dispositivo per il quale vuoi inviare il messaggio. Puoi inviare il messaggio a più dispositivi specificando i diversi token in un elenco separato da virgole.
+   Digita i token push del dispositivo al quale vuoi inviare il messaggio. Puoi inviare il messaggio a più dispositivi specificando i diversi token in un elenco separato da virgole.
 
    ![Messaggi push di test](assets/push_test_list.png)
