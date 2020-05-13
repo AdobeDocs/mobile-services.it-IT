@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del serv
 
 * **public static String appendToURL(final String URL)**
 
-   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo è necessario disporre dell’SDK 4.12+ per dispositivi mobili. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo, devi disporre dell’SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -70,7 +73,7 @@ I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del serv
 
 * **syncIdentifiers**
 
-   Con l&#39;Experience Cloud ID puoi impostare altri ID cliente da associare a ogni visitatore. L&#39;API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l&#39;ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
+   Con Experience Cloud ID, puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
