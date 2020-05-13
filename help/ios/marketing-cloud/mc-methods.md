@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '461'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ I metodi sono contraddistinti dal prefisso della relativa soluzione. I metodi di
 
 * **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per usare questo metodo devi disporre dell&#39;SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per usare questo metodo devi disporre dell&#39;SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -63,7 +66,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 
 * **visitorSyncIdentifiers:**
 
-   Con l&#39;Experience Cloud ID puoi impostare altri ID cliente da associare a ogni visitatore. L&#39;API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l&#39;ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
+   Con Experience Cloud ID, puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -166,7 +169,7 @@ Stringa completa a cui sono state aggiunte le informazioni sul visitatore.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
