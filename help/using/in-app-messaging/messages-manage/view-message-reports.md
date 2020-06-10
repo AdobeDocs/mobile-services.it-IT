@@ -1,14 +1,17 @@
 ---
 description: Puoi visualizzare i rapporti sui messaggi in-app e push.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi visualizzare i rapporti sui messaggi in-app e push.
 seo-title: Visualizzare rapporti sui messaggi
-solution: Experience Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Visualizzare rapporti sui messaggi
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: ht
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 81%
 
 ---
 
@@ -79,13 +82,13 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi push
 
    * Un pushID non valido
 
-   * La piattaforma push (APNS, FCM, ecc.) specificata come destinazione del push non esiste per l’applicazione del lavoro. Ad esempio, la piattaforma potrebbe raccogliere token di push iOS senza che sia stato configurato il servizio APNS.
+   * La piattaforma push (APNS, FCM, ecc.) specificata come destinazione del push non esiste per l’applicazione del lavoro. Ad esempio, la piattaforma potrebbe raccogliere token push iOS ma non dispone del servizio APNS configurato.
 
-   * Il mancato invio di un messaggio può essere dovuto alla configurazione non corretta del servizio push o alla temporanea indisponibilità del sistema Mobile Services.
+   * Il messaggio potrebbe non essere riuscito perché il servizio push non è stato configurato correttamente o il sistema Mobile Services non è in grado di funzionare.
    >[!IMPORTANT]
    >
-   >Se si verificano numerosi tentativi non riusciti, controlla la configurazione dei servizi push. Se sembrano configurati correttamente, contatta l’assistenza clienti Adobe.
+   >In caso di un numero insolitamente elevato di errori, controlla la configurazione dei servizi push. Se sembrano configurati correttamente, contatta l’assistenza clienti Adobe.
 
 * **[!UICONTROL In lista nera]**
 
-   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS si comportano diversamente quando dei token vengono considerati in lista nera. I token Android figurano immediatamente nel conteggio dei token in lista nera. I token iOS inizialmente vengono visualizzati come pubblicati ma, in base al feedback ricevuto da APNS, vengono poi indicati come in lista nera nei messaggi successivi.
+   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS si comportano diversamente quando i token vengono considerati come negati nell&#39;elenco. I token Android vengono visualizzati immediatamente nel conteggio degli elenchi di negazioni. I token iOS inizialmente vengono visualizzati come pubblicati, ma in base al feedback ricevuto da APNS, vengono visualizzati come non consentiti elencati nei messaggi successivi.
