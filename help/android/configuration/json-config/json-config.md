@@ -2,12 +2,15 @@
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-title: File di configurazione ADBMobile JSON
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +21,7 @@ Queste informazioni sono utili per comprendere le variabili presenti nel file di
 
 ## `ADBMobileConfig.json`Guida di riferimento per il file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-Lo stesso file di configurazione può essere utilizzato per l'app su più piattaforme:
+Lo stesso file di configurazione può essere utilizzato per l&#39;app su più piattaforme:
 
 >[!TIP]
 >
@@ -28,28 +31,29 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
 * **acquisizione**
    * Versione SDK minima: 4.1
-   * Abilita l'acquisizione dell'app mobile.
-      * `server`, server di acquisizione controllato all'avvio iniziale per individuare un referente di acquisizione.
-      * `appid`, ID generato che identifica l'app in modo univoco sul server di acquisizione.
-   Se manca questa sezione, abilita l'acquisizione da app mobile e scarica di nuovo il file di configurazione dell'SDK. Per ulteriori informazioni, vedi *referrerTimeout* in questo elenco di variabili.
+   * Abilita l&#39;acquisizione dell&#39;app mobile.
+      * `server`, server di acquisizione controllato all&#39;avvio iniziale per individuare un referente di acquisizione.
+      * `appid`, ID generato che identifica l&#39;app in modo univoco sul server di acquisizione.
+
+   Se manca questa sezione, abilita l&#39;acquisizione da app mobile e scarica di nuovo il file di configurazione dell&#39;SDK. Per ulteriori informazioni, vedi *referrerTimeout* in questo elenco di variabili.
 
 * **analyticsForwardingEnabled**
    * La versione SDK minima è 4.8.0.
    * Il valore predefinito è `false`.
 
-      Proprietà nell'oggetto `audienceManager`. Se Audience Manager è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager.
+      Proprietà nell&#39;oggetto `audienceManager`. Se Audience Manager è configurato e `analyticsForwardingEnabled` è impostato su `true`, anche tutto il traffico Analytics viene inoltrato ad Audience Manager.
 
 * **backdateSessionInfo**
    * Versione SDK minima: 4.6.
    * Abilita/disabilita la possibilità di Adobe SDK di retrodatare gli hit di informazioni delle sessioni.
 
-      Gli hit di informazioni della sessione consistono attualmente in crash e durata e possono essere abilitati o disabilitati.
+      Gli hit di informazioni delle sessioni sono attualmente costituiti da arresti anomali e dalla lunghezza di sessione e possono essere attivati o disattivati.
 
-      **Abilitazione o disabilitazione degli hit**
+      **Attivazione o disattivazione degli hit**
 
-      * Impostando il valore su `false`, gli hit vengono **disabilitati**. L'SDK ritorna al suo comportamento pre-4.1, che consiste nell'accorpare le informazioni della sessione precedente al primo hit della sessione successiva. L'SDK di Adobe allega anche le informazioni della sessione al ciclo di vita corrente, evitando così la creazione di una visita gonfiata. In seguito alla mancata creazione di visite gonfiate, si verifica un calo immediato del numero di visite.
+      * Impostando il valore su `false`, gli hit vengono **disabilitati**. L’SDK torna al suo comportamento precedente alla versione 4.1, ossia il raggruppamento delle informazioni sulla sessione precedente con il primo hit della sessione successiva. L’SDK di Adobe associa anche le informazioni sulla sessione al ciclo di vita corrente, evitando così la creazione di visite in eccesso. Poiché non vengono più create visite in eccesso, si verifica un calo immediato del numero di visite.
 
-      * Se non fornisci un valore, il valore predefinito è `true`, e gli hit sono **abilitati**. Se è abilitata, Adobe SDK retrodaterà l'hit di informazioni della sessione a 1 secondo dopo l'ultimo hit della sessione precedente. Gli arresti anomali e i dati delle sessioni saranno quindi correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l'SDK potrebbe creare una visita per l'hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell'applicazione.
+      * Se non fornisci un valore, il valore predefinito è `true`, e gli hit sono **abilitati**. Quando gli hit sono attivati, l’SDK di Adobe retrodaterà l’hit di informazioni delle sessioni a 1 secondo dopo l’hit finale nella sessione precedente. Ciò significa che i dati di arresto anomalo e di sessione saranno correlati alla data corretta in cui si sono verificati. Un effetto collaterale è che l’SDK potrebbe creare una visita per l’hit retrodatato. Viene retrodatato un hit per ogni nuovo avvio dell&#39;applicazione.
 
          >[!IMPORTANT]
          >
@@ -59,7 +63,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Versione SDK minima: 4.1
    * Soglia per il numero di hit da inviare in chiamate consecutive.
 
-      Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. Quando arriva il 10° hit, tutti i 10 hit in coda vengono inviati consecutivamente.
+      Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. Quando arriva il 10° hit, tutti i 10 hit vengono inviati consecutivamente.
 
       Considerazioni da ricordare:
 
@@ -70,7 +74,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Versione SDK minima: 4.0
    * Definisce il set di caratteri utilizzato per i dati inviati ad Analytics.
 
-      Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti.
+      Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti.
 
 * **clientCode**
    * Versione SDK minima: 4.0
@@ -85,7 +89,8 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Proprietà booleana dell’oggetto `marketingCloud` che, se impostata su `true`, determina il rifiuto di partecipazione a Experience Cloud Device Co-op.
    * Il valore predefinito è `false`.
    * Questa impostazione è utilizzata **solo** per i clienti abilitati per Device Co-op.
-   I membri Device Co-op che necessitano tale valore impostato su `true` devono rivolgersi al team Co-op e richiedere un flag blacklist sul proprio account Device Co-op. Non esiste alcun percorso self-service per l'attivazione di questi flag.
+
+   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
    Considerazioni da ricordare:
 
@@ -103,14 +108,14 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Versione SDK minima: 4.0
    * Il valore predefinito è 300 secondi.
 
-      Specifica l'intervallo di tempo, in secondi, che deve trascorrere tra il momento in cui viene avviata l'app e quando tale avvio debba essere considerato come una nuova sessione. Il timeout viene applicato anche quando l'applicazione viene lasciata in background e poi riattivata.
+      Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l’app viene avviata e quello in cui l’avvio viene considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata.
 
-      Il tempo durante il quale l'app rimane in background non viene incluso nella durata della sessione.
+      Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
 * **messages**
 
    * Versione SDK minima: 4.2
-   * Generata automaticamente da Adobe Mobile Services, definisce le impostazioni per i messaggi in-app. Per ulteriori informazioni, consulta *Descrizione dei messaggi*.
+   * Generato automaticamente da Adobe Mobile Services, definisce le impostazioni per la messaggistica in-app. Per ulteriori informazioni, consulta la sezione *Descrizione dei messaggi* di seguito.
 
 * **offlineEnabled**
 
@@ -125,18 +130,18 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       >
       >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere false.
       >
-      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti  contatta l'Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
+      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti  contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
 
       Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
 * **org**
 
    * Versione SDK minima: 4.3
-   * Specifica l'ID organizzazione di Experience Cloud per il servizio ID.
+   * Specifica l&#39;ID organizzazione di Experience Cloud per il servizio ID.
 
 * **poi**
    * Versione SDK minima: 4.0
-   * Ogni array di punto di interesse (POI) contiene il nome, la latitudine, la longitudine e il raggio in metri dell'area di interesse.
+   * Ogni array di punto di interesse (POI) contiene il nome, la latitudine, la longitudine e il raggio in metri dell&#39;area di interesse.
 
       Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
@@ -147,7 +152,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
              ]
       ```
 
-      A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell'interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell'app. Tale sincronizzazione richiede un'impostazione `analytics.poi`:
+      A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell&#39;app. Tale sincronizzazione richiede un&#39;impostazione `analytics.poi`:
 
       ```javascript
       “analytics.poi“: `https://assets.adobedtm.com/`
@@ -158,7 +163,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
 * **postback**
    * Versione SDK minima: 4.6
-   * Di seguito viene illustrata la definizione del modello di messaggio "callback":
+   * Di seguito viene illustrata la definizione del modello di messaggio &quot;callback&quot;:
 
       ```javascript
       "payload":{
@@ -168,7 +173,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      L'oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/android/analytics-main/postbacks/postbacks.md).
+      L&#39;oggetto `payload` nel codice è un payload di esempio per la definizione di un messaggio da inserire nel file `ADBMobileConfig.json`. Per ulteriori informazioni, vedi [Postback](/help/android/analytics-main/postbacks/postbacks.md).
 
 * **privacyDefault**
    * Versione SDK minima: 4.0
@@ -176,28 +181,29 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       * Per `optedin`, gli hit vengono inviati immediatamente.
       * Per `optedout`, gli hit vengono scartati.
       * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
-      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in `optedin`. Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata.
+
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in `optedin`. Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
 
 * **referrerTimeout**
    * Versione SDK minima: 4.1
-   * Tempo di attesa, in secondi, affinché l'SDK possa ricevere i dati del referente dell'acquisizione all'avvio iniziale, prima che si verifichi un timeout. Se usi la funzione di acquisizione, consigliamo un timeout di 5 secondi.
+   * Numero di secondi in cui l’SDK attende i dati del referente di acquisizione all’avvio iniziale, prima che venga eseguito il timeout. Se utilizzi l’acquisizione, consigliamo un timeout di 5 secondi.
 
       >[!IMPORTANT]
       >
-      >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l'SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
+      >Questa variabile è obbligatoria per la funzione Acquisizione. Se la variabile è impostata su `0` o non è inclusa, l&#39;SDK non attende i dati di acquisizione e la metrica di acquisizione non può essere tracciata.
 
 * **remotes**
    * Versione SDK minima: 4.2
    * Configurata automaticamente, definisce gli endpoint gestiti da Adobe per i file di configurazione dinamici.
 
-      Ad ogni avvio, l'ora dell'ultimo aggiornamento di ogni file di configurazione viene verificato rispetto alla versione corrente, e gli aggiornamenti vengono scaricati e salvati.
-      * `analytics.poi` è l'endpoint per la configurazione dei punti di interesse in hosting.
-      * `messages` è l'endpoint per la configurazione dei messaggi in-app.
+      Ad ogni avvio, l&#39;ora dell&#39;ultimo aggiornamento di ogni file di configurazione viene verificato rispetto alla versione corrente, e gli aggiornamenti vengono scaricati e salvati.
+      * `analytics.poi` è l&#39;endpoint per la configurazione dei punti di interesse in hosting.
+      * `messages` è l&#39;endpoint per la configurazione dei messaggi in-app.
 
 * **rsids**
    * Versione SDK minima: 4.0
-   * Una o più suite di rapporti che dovrà ricevere i dati Analytics. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
+   * Una o più suite di rapporti che riceva i dati di Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
       ```javascript
         "rsids" "rsid"
@@ -213,15 +219,15 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
 * **server**
    * Versione SDK minima: 4.0
-   * Server di Analytics o Gestione dell'audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
+   * Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso viene gestito automaticamente dalla libreria, in base alla variabile `ssl`. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
 * **ssl**
    * Versione SDK minima: 4.0
    * Il valore predefinito è `false`.
 
-      Abilita (`true`) o disabilita (`false`) l'invio dei dati di misurazione tramite SSL (HTTPS).
+      Abilita (`true`) o disabilita (`false`) l&#39;invio dei dati di misurazione tramite SSL (HTTPS).
 
-      Di seguito viene illustrata la definizione del modello di messaggio "callback":
+      Di seguito viene illustrata la definizione del modello di messaggio &quot;callback&quot;:
 
       ```javascript
       "payload": {
@@ -307,69 +313,69 @@ Ecco un esempio di file `ADBMobileConfig.json`:
 
 ## Descrizione dei messaggi {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e generalmente non deve essere modificato manualmente. La descrizione seguente è utile per la risoluzione di eventuali problemi:
+Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e in genere non è necessario modificarlo manualmente. La seguente descrizione è fornita per la risoluzione di problemi:
 
-* "messageId"
+* “messageId”
 * ID generato, obbligatorio
-* "template"
-   * "alert", "fullscreen" o "local"
+* “template”
+   * “alert”, “fullscreen” o “local”
    * obbligatorio
 
-* "showOffline"
+* “showOffline”
    * true o false
    * il valore predefinito è false
 
-* "showRule"
-   * "always", "once" o "untilClick"
+* “showRule”
+   * “always”, “once” o “untilClick”
    * obbligatorio
 
-* "endDate"
+* “endDate”
    * numero di secondi dal 1° gennaio 1970
    * Il valore predefinito è 2524730400
 
-* "startDate"
+* “startDate”
    * numero di secondi dal 1° gennaio 1970
    * Il valore predefinito è 0
 
-* "payload"
-   * "html"
-      * solo per il modello fullscreen, obbligatorio
+* “payload”
+   * “html”
+      * solo modello a schermo intero, obbligatorio
       * html che definisce il messaggio
-   * "image"
-      * solo fullscreen, facoltativo
-      * url dell'immagine da usare come immagine a schermo intero
-   * "altImage"
-      * solo fullscreen, facoltativo
-      * nome dell'immagine fornita nel pacchetto da usare se l'URL specificato in
+   * “image”
+      * solo a schermo intero, facoltativo
+      * URL dell’immagine da utilizzare per un’immagine a schermo intero
+   * “altImage”
+      * solo a schermo intero, facoltativo
+      * nome dell’immagine nel bundle da utilizzare se l’URL specificato in
          * image
          * non è accessibile
-   * "title"
-      * per fullscreen e alert, obbligatorio
-      * testo del titolo di un messaggio fullscreen o alert
-   * "content"
-      * notifica alert e local, obbligatorio
-      * sottotesto per un messaggio alert, o testo di notifica per un messaggio di notifica local
-   * "confirm"
-      * alert, facoltativo
-      * testo usato per il pulsante di conferma
-   * "cancel"
-      * alert, obbligatorio
-      * testo usato per il pulsante Annulla
-   * "url"
-      * alert, facoltativo
+   * “title”
+      * a schermo intero e avviso, obbligatorio
+      * testo del titolo per un messaggio di avviso o a schermo intero
+   * “content”
+      * notifica di avviso e locale, obbligatorio
+      * sottotesto per un messaggio di avviso o testo di notifica per un messaggio di notifica locale
+   * “confirm”
+      * avviso, facoltativo
+      * testo utilizzato nel pulsante di conferma
+   * “cancel”
+      * avviso, obbligatorio
+      * testo utilizzato nel pulsante di annullamento
+   * “url”
+      * avviso, facoltativo
       * azione URL da caricare se si fa clic sul pulsante di conferma
-   * "wait"
-      * notifica local, obbligatorio
-      * tempo (in secondi) che deve trascorrere prima di pubblicare la notifica local una volta soddisfatti i relativi criteri
+   * “wait”
+      * notifica locale, obbligatorio
+      * tempo di attesa (in secondi) per la pubblicazione della notifica locale dopo che i criteri sono stati soddisfatti
 
 
 
-* "audiences"
-   * array di oggetti che definisce come dovrà essere visualizzato il messaggio
-   * "key"
-      * nome della variabile da cercare nell'hit, obbligatorio
-* "matches"
-   * tipo di corrispondenza usato nel confronto
+* &quot;audiences&quot;
+   * array di oggetti che definisce la modalità di visualizzazione del messaggio
+   * &quot;key&quot;
+      * nome della variabile da cercare nell’hit, obbligatorio
+* &quot;matches&quot;
+   * tipo di corrispondenza utilizzato per il confronto
    * eq = equals (uguale a)
    * ne = does not equal (non uguale a)
    * co = contains (contiene)
@@ -379,16 +385,16 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e g
    * ex = exists (esiste)
    * nx = does not exist (non esiste)
    * lt = less than (minore di)
-   * le = less than or equals (minore di o uguale a)
+   * le = less than or equals (minore o uguale a)
    * gt = greater than (maggiore di)
-   * ge = greater than or equals (maggiore di o uguale a)
-* "values"
-   * array di valori usati per determinare la corrispondenza rispetto al valore della variabile denominata in
+   * ge = greater than or equals (maggiore o uguale a)
+* &quot;values&quot;
+   * un array di valori utilizzati per determinare la corrispondenza rispetto al valore della variabile denominata in
       * key
-      * con il tipo di corrispondenza definito in
+      * con il tipo di corrispondenza in
       * matches
-* "triggers"
-   * come "audiences", ma si tratta dell'azione anziché del pubblico
-   * "key"
-   * "matches"
-   * "values"
+* &quot;triggers&quot;
+   * come audience, ma questa è l&#39;azione invece del pubblico
+   * &quot;key&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;
