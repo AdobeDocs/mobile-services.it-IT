@@ -1,14 +1,17 @@
 ---
 description: 'Puoi definire e configurare le opzioni relative al pubblico per i messaggi push: intervalli di date, segmenti di Analytics e segmenti personalizzati.'
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: 'Puoi definire e configurare le opzioni relative al pubblico per i messaggi push: intervalli di date, segmenti di Analytics e segmenti personalizzati.'
 seo-title: 'Pubblico: definire e configurare i segmenti di pubblico per i messaggi push'
-solution: Experience Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: 'Pubblico: definire e configurare i segmenti di pubblico per i messaggi push'
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 83%
 
 ---
 
@@ -21,13 +24,13 @@ Puoi definire e configurare le opzioni relative al pubblico per i messaggi push:
 
 Quando si crea un segmento di pubblico per i messaggi push, esso può includere utenti di una o più app perché le suite di rapporti o le suite di rapporti virtuali potrebbero contenere dati provenienti da una o più app. Per maggiori informazioni sulle suite di rapporti virtuali, vedi  [Suite di rapporti virtuali](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services, gli addetti al marketing possono inviare dati push a una sola app per piattaforma. Se tentano di inviare dati a segmenti che contengono utenti di più app, un avviso segnala che se procedono si possono verificare seri errori di push e il potenziale inserimento in blacklist degli utenti. Se incontri un errore di invio push, vedi *Risoluzione degli errori di invio push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services, gli addetti al marketing possono inviare i dati a una sola app per piattaforma. Se gli esperti di marketing tentano di inviare dati a segmenti che contengono utenti di più app, viene visualizzato un avviso in cui si informa che se procedono si possono verificare gravi errori di push e il potenziale rifiuto dell&#39;elenco degli utenti. Se incontri un errore di invio push, vedi *Risoluzione degli errori di invio push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Per utilizzare i dati di Audience Manager nelle tue definizioni di segmenti, vedi [Audience Analytics](https://docs.adobe.com/content/help/it-IT/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Se gli utenti delle app vengono inseriti in blacklist, gli addetti al marketing non potranno **mai più** inviare messaggi push a tali utenti.
+>If app users are deny listed, marketers can **never** send push messages to those affected users again.
 
 Se scegli un segmento di pubblico che contiene utenti di più app, potresti incontrare il seguente messaggio di avviso:
 
@@ -60,11 +63,11 @@ In questo modo, le notifiche push vengono inviate a un segmento di pubblico che 
 
 ### Esempi
 
-Ecco alcuni esempi per aiutarti a comprendere come si definiscono correttamente i segmenti:
+Di seguito sono riportati alcuni esempi per comprendere come definire correttamente i segmenti:
 
-**Procedura corretta**: l’addetto al marketing fornisce dei certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. Potrebbe inviare una notifica push a un segmento di utenti di entrambe le piattaforme.
+**Procedura corretta**: l’addetto al marketing fornisce dei certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. L&#39;addetto al marketing potrebbe inviare una notifica push a un segmento di utenti che si estende su entrambe le piattaforme.
 
-**Procedura non corretta**: l’addetto al marketing fornisce certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. Se crea e invia una notifica a un segmento di *tutti gli utenti attivi degli ultimi 30 giorni*, solo gli utenti dell’app Adobe Photoshop iOS e Android ricevono la notifica push, mentre tutti gli utenti dell’app Adobe Illustrator iOS e Android verranno inseriti in blacklist. Per un esempio più dettagliato, vedi *Risoluzione degli errori relativi ai messaggi push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Procedura non corretta**: l’addetto al marketing fornisce certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be deny listed. Per un esempio più dettagliato, vedi *Risoluzione degli errori relativi ai messaggi push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Configurare i segmenti di pubblico {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -76,7 +79,7 @@ Ecco alcuni esempi per aiutarti a comprendere come si definiscono correttamente 
 
    * Il **[!UICONTROL Pubblico con consenso stimato]** rappresenta il numero di dispositivi che corrispondono al segmento di Adobe Analytics **e** al numero di dispositivi con consenso.
 
-      Puoi anche visualizzare una stima del numero di utenti dei segmenti che hai selezionato che hanno acconsentito alla ricezione dei messaggi e quindi riceveranno il messaggio push. Sotto la stima viene indicato il numero totale di utenti dell’app, che abbiano prestato o meno il consenso.
+      Puoi visualizzare una stima del numero di utenti nei segmenti selezionati che hanno acconsentito alla ricezione dei messaggi e che riceveranno il messaggio push. Sotto la stima viene indicato il numero totale di utenti dell’app, che abbiano prestato o meno il consenso.
 
    * Il **[!UICONTROL Totale]** è il numero di dispositivi che corrispondono al segmento di Adobe Analytics.
 
