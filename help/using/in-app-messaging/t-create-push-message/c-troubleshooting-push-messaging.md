@@ -1,14 +1,17 @@
 ---
 description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risoluzione dei problemi dei messaggi push
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '736'
+ht-degree: 61%
 
 ---
 
@@ -25,7 +28,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L’impostazione predefinita è ogni ora.
 
-   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Prendiamo ad esempio una suite di rapporti che elabora gli hit ogni ora. Considerando il tempo di elaborazione massimo di 30 minuti, prima che un hit in arrivo diventi disponibile per un messaggio push potrebbero quindi trascorrere 90 minuti. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
+   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo di elaborazione massimo di 30 minuti, potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
 
 * **Attesa del servizio push**
 
@@ -44,14 +47,14 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 * **Chiave API non valida**
 
-   La chiave API potrebbe risultare non valida per i motivi seguenti:
+   La chiave API potrebbe non essere valida per i motivi seguenti:
 
    * La chiave API che hai fornito non è una chiave server con il valore chiave API GCM corretto.
-   * La chiave server ha inserito gli IP in una whitelist e sta impedendo ai server Adobe di inviare un messaggio push.
+   * La chiave server ha consentito agli IP e sta bloccando i server Adobe dall&#39;invio di un messaggio push.
 
-* **Stabilire la validità di una chiave API**
+* **Determinare la validità della chiave API**
 
-   Per determinare la validità della chiave API, esegui il comando seguente:
+   Per determinare la validità della chiave API, eseguite il comando seguente:
 
    **Android**
 
@@ -63,7 +66,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
        -d"{\"registration_ids\":[\"ABC\"]}"
    ```
 
-   Se viene restituito un codice di stato HTTP 401, significa che la chiave API non è valida. Altrimenti, il risultato visualizzato sarà simile al seguente:
+   Un codice di stato HTTP 401 restituito indica che la chiave API non è valida. In caso contrario, verrà visualizzato un elemento simile al seguente:
 
    ```java
    {"multicast_id":6782339717028231855,"success":0,"failure":1,
@@ -74,10 +77,10 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 ## Perché il mio certificato APNS non funziona?
 
-Il certificato APNS potrebbe risultare non valido per i motivi seguenti:
+Il certificato APNS potrebbe non essere valido per i motivi seguenti:
 
-* È possibile che tu stia utilizzando un certificato sandbox invece del certificato di produzione.
-* Stai usando un nuovo certificato di produzione/sandbox che non è supportato.
+* Potreste utilizzare un certificato sandbox invece del certificato di produzione.
+* Si sta utilizzando un nuovo certificato di produzione/sandbox non supportato.
 * Stai usando un file `.p8` invece di un file `.p12`.
 
 ## Risoluzione degli errori dei messaggi push
@@ -97,10 +100,10 @@ Il cliente seguente ha due app iOS:
    * RSID: PhotoShop_iOS_app_LA
    * Segmento di definizione VRSID: `a.os contains “iOS”`
 
-In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Benché il messaggio venga comunque recapitato agli utenti *PhotoShop_iOS_app_LA*, esso determinerà anche l’inserimento in blacklist degli ID push degli utenti *PhotoShop_iOS_app_SF*, perché l’app *PhotoShop_iOS_app_SF* ha un certificato diverso. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
+In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also deny-lists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
 
 Se passati con il certificato push *PhotoShop_IOS_app_LA*, gli identificatori push di *PhotoShop_iOS_app_SF* verrebbero restituiti come `invalid`.
 
 >[!CAUTION]
 >
->Quando crei un messaggio push per un’app che utilizza una VRS e fai clic su **[!UICONTROL Salva e invia]**, viene visualizzato un avviso che ti ricorda di verificare che ogni app indicata **deve** avere un certificato valido. Se un’app **non** dispone di un certificato valido, i tuoi segmenti di pubblico potrebbero essere inseriti in blacklist a tempo indefinito e di conseguenza non saresti in grado di inviare messaggi push agli utenti interessati. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>Quando crei un messaggio push per un’app che utilizza una VRS e fai clic su **[!UICONTROL Salva e invia]**, viene visualizzato un avviso che ti ricorda di verificare che ogni app indicata **deve** avere un certificato valido. If each app does **not** have a valid certificate, your audience segments might be indefinitely deny listed, and you might not be able to send future push messages to the affected users. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
