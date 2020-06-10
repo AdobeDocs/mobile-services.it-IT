@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '1715'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 
@@ -89,12 +89,13 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
 * **coopUnsafe**
 
-   I membri Device Co-op che necessitano tale valore impostato su `true` devono rivolgersi al team Co-op e richiedere un flag blacklist sul proprio account Device Co-op. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
+   For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
    Considerazioni da ricordare:
 
    * Quando `coopUnsafe` è impostato su `true`, agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto `coop_unsafe=1`.
    * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, negli hit di Analytics troverai `coop_unsafe=1`.
+
    Seguono alcune informazioni aggiuntive:
 
    * Versione SDK minima: 4.16.1
