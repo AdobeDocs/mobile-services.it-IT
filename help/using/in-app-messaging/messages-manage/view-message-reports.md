@@ -8,9 +8,9 @@ title: Visualizzare rapporti sui messaggi
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '490'
 ht-degree: 81%
 
 ---
@@ -89,6 +89,6 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi push
    >
    >In caso di un numero insolitamente elevato di errori, controlla la configurazione dei servizi push. Se sembrano configurati correttamente, contatta l’assistenza clienti Adobe.
 
-* **[!UICONTROL In lista nera]**
+* **[!UICONTROL Bloccato]**
 
-   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS si comportano diversamente quando i token vengono considerati come negati nell&#39;elenco. I token Android vengono visualizzati immediatamente nel conteggio degli elenchi di negazioni. I token iOS inizialmente vengono visualizzati come pubblicati, ma in base al feedback ricevuto da APNS, vengono visualizzati come non consentiti elencati nei messaggi successivi.
+   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS si comportano diversamente quando i token vengono considerati come bloccati. I token Android vengono visualizzati immediatamente nel conteggio dei blocchi. I token iOS inizialmente vengono visualizzati come pubblicati, ma in base al feedback ricevuto da APNS, vengono visualizzati come bloccati nei messaggi successivi.
