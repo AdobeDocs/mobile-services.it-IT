@@ -11,20 +11,20 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
 
-# Pubblico: messaggi push{#audience-define-and-configure-audience-segments-for-push-messages}
+# Pubblico: messaggi push {#audience-define-and-configure-audience-segments-for-push-messages}
 
 Puoi definire e configurare le opzioni relative al pubblico per i messaggi push: intervalli di date, segmenti di Analytics e segmenti personalizzati.
 
 ## Definire i segmenti di pubblico {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Quando si crea un segmento di pubblico per i messaggi push, esso può includere utenti di una o più app perché le suite di rapporti o le suite di rapporti virtuali potrebbero contenere dati provenienti da una o più app. Per maggiori informazioni sulle suite di rapporti virtuali, vedi  [Suite di rapporti virtuali](/help/using/manage-apps/c-mob-vrs.md).
+Quando si crea un segmento di pubblico per i messaggi push, esso può includere utenti di una o più app perché le suite di rapporti o le suite di rapporti virtuali potrebbero contenere dati provenienti da una o più app. Per maggiori informazioni sulle suite di rapporti virtuali, vedi [Suite di rapporti virtuali](/help/using/manage-apps/c-mob-vrs.md).
 
-In Adobe Mobile Services, gli addetti al marketing possono inviare i dati a una sola app per piattaforma. Se gli esperti di marketing tentano di inviare dati a segmenti che contengono utenti di più app, viene visualizzato un avviso in cui si informa che se si procede, si possono verificare gravi errori di push e il potenziale blocco degli utenti. Se incontri un errore di invio push, vedi *Risoluzione degli errori di invio push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+In Adobe Mobile Services, gli addetti al marketing possono inviare messaggi push a una sola app per piattaforma. Se gli esperti di marketing tentano di inviare dati a segmenti che contengono utenti di più app, viene visualizzato un avviso in cui si informa che se si procede, si possono verificare gravi errori di push e il potenziale blocco degli utenti. Se incontri un errore di invio push, vedi *Risoluzione degli errori di invio push* in [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Per utilizzare i dati di Audience Manager nelle tue definizioni di segmenti, vedi [Audience Analytics](https://docs.adobe.com/content/help/it-IT/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
@@ -65,9 +65,9 @@ In questo modo, le notifiche push vengono inviate a un segmento di pubblico che 
 
 Di seguito sono riportati alcuni esempi per comprendere come definire correttamente i segmenti:
 
-**Procedura corretta**: l’addetto al marketing fornisce dei certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. L&#39;addetto al marketing potrebbe inviare una notifica push a un segmento di utenti che si estende su entrambe le piattaforme.
+**Procedura corretta**: l’addetto al marketing fornisce dei certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. L’addetto al marketing potrebbe inviare una notifica push a un segmento di utenti che si estende su entrambe le piattaforme.
 
-**Procedura non corretta**: l’addetto al marketing fornisce certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be blocklisted. Per un esempio più dettagliato, vedi *Risoluzione degli errori relativi ai messaggi push* in  [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Procedura non corretta**: l’addetto al marketing fornisce certificati push per le versioni iOS e Android di un’app, ad esempio Adobe Photoshop. If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be blocklisted. Per un esempio più dettagliato, vedi *Risoluzione degli errori relativi ai messaggi push* in [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Configurare i segmenti di pubblico {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -79,7 +79,7 @@ Di seguito sono riportati alcuni esempi per comprendere come definire correttame
 
    * Il **[!UICONTROL Pubblico con consenso stimato]** rappresenta il numero di dispositivi che corrispondono al segmento di Adobe Analytics **e** al numero di dispositivi con consenso.
 
-      Puoi visualizzare una stima del numero di utenti nei segmenti selezionati che hanno acconsentito alla ricezione dei messaggi e che riceveranno il messaggio push. Sotto la stima viene indicato il numero totale di utenti dell’app, che abbiano prestato o meno il consenso.
+      È possibile visualizzare una stima del numero di utenti nei segmenti selezionati che hanno prestato il consenso alla ricezione dei messaggi e che riceveranno il messaggio push. Sotto la stima viene indicato il numero totale di utenti dell’app, che abbiano prestato o meno il consenso.
 
    * Il **[!UICONTROL Totale]** è il numero di dispositivi che corrispondono al segmento di Adobe Analytics.
 
