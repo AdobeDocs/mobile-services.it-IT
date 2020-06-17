@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 61%
+ht-degree: 91%
 
 ---
 
 
-# Risoluzione dei problemi dei messaggi push{#troubleshooting-push-messaging}
+# Risoluzione dei problemi dei messaggi push {#troubleshooting-push-messaging}
 
 Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 
@@ -28,11 +28,11 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L’impostazione predefinita è ogni ora.
 
-   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo di elaborazione massimo di 30 minuti, potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
+   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo massimo di elaborazione richiesto (30 minuti), potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
 
 * **Attesa del servizio push**
 
-   Il servizio push (APNS o GCM) potrebbe non essere in grado di inviare il messaggio immediatamente. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]** e visualizzando il dato **[!UICONTROL Pubblicato]**.
+   Il servizio push (APNS o GCM) potrebbe non inviare il messaggio immediatamente. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]** e visualizzando il dato **[!UICONTROL Pubblicato]**.
 
    >[!TIP]
    >
@@ -50,11 +50,11 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
    La chiave API potrebbe non essere valida per i motivi seguenti:
 
    * La chiave API che hai fornito non è una chiave server con il valore chiave API GCM corretto.
-   * La chiave server ha consentito agli IP e sta bloccando i server Adobe dall&#39;invio di un messaggio push.
+   * La chiave server ha dato il consenso agli IP e sta impedendo l’invio di un messaggio push da parte dei server Adobe.
 
-* **Determinare la validità della chiave API**
+* **Determinare la validità di una chiave API**
 
-   Per determinare la validità della chiave API, eseguite il comando seguente:
+   Per determinare la validità di una chiave API, esegui il comando seguente:
 
    **Android**
 
@@ -66,7 +66,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
        -d"{\"registration_ids\":[\"ABC\"]}"
    ```
 
-   Un codice di stato HTTP 401 restituito indica che la chiave API non è valida. In caso contrario, verrà visualizzato un elemento simile al seguente:
+   Se viene restituito un codice di stato HTTP 401 la chiave API non è valida. Altrimenti, il risultato visualizzato sarà simile al seguente:
 
    ```java
    {"multicast_id":6782339717028231855,"success":0,"failure":1,
@@ -79,8 +79,8 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 Il certificato APNS potrebbe non essere valido per i motivi seguenti:
 
-* Potreste utilizzare un certificato sandbox invece del certificato di produzione.
-* Si sta utilizzando un nuovo certificato di produzione/sandbox non supportato.
+* Stai utilizzando un certificato sandbox invece del certificato di produzione.
+* Stai utilizzando un nuovo certificato di produzione/sandbox non supportato.
 * Stai usando un file `.p8` invece di un file `.p12`.
 
 ## Risoluzione degli errori dei messaggi push
