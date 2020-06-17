@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
 
       Gli hit di informazioni delle sessioni sono attualmente costituiti da arresti anomali e dalla lunghezza di sessione e possono essere attivati o disattivati.
 
-      **Attivazione o disattivazione degli hit**
+      **Abilitazione o disabilitazione degli hit**
 
       * Impostando il valore su `false`, gli hit vengono **disabilitati**. L’SDK torna al suo comportamento precedente alla versione 4.1, ossia il raggruppamento delle informazioni sulla sessione precedente con il primo hit della sessione successiva. L’SDK di Adobe associa anche le informazioni sulla sessione al ciclo di vita corrente, evitando così la creazione di visite in eccesso. Poiché non vengono più create visite in eccesso, si verifica un calo immediato del numero di visite.
 
@@ -63,7 +63,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Versione SDK minima: 4.1
    * Soglia per il numero di hit da inviare in chiamate consecutive.
 
-      Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. Quando arriva il 10° hit, tutti i 10 hit vengono inviati consecutivamente.
+      Ad esempio, se `batchLimit` è impostato su 10, ogni hit prima del decimo viene memorizzato nella coda. All’arrivo del decimo hit, tutti i 10 hit in coda vengono inviati consecutivamente.
 
       Considerazioni da ricordare:
 
@@ -130,7 +130,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       >
       >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere false.
       >
-      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti  contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
+      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
 
       Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
@@ -182,7 +182,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       * Per `optedout`, gli hit vengono scartati.
       * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in `optedin`. Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono scartati fino a quando lo stato di privacy non cambia in `optedin`.  Questo imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
 
 * **referrerTimeout**
@@ -347,7 +347,7 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
    * “altImage”
       * solo a schermo intero, facoltativo
       * nome dell’immagine nel bundle da utilizzare se l’URL specificato in
-         * image
+         * immagine
          * non è accessibile
    * “title”
       * a schermo intero e avviso, obbligatorio
@@ -371,11 +371,11 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
 
 
 * &quot;audiences&quot;
-   * array di oggetti che definisce la modalità di visualizzazione del messaggio
+   * array di oggetti che definisce come deve essere visualizzato il messaggio
    * &quot;key&quot;
       * nome della variabile da cercare nell’hit, obbligatorio
 * &quot;matches&quot;
-   * tipo di corrispondenza utilizzato per il confronto
+   * tipo di matcher utilizzato per il confronto
    * eq = equals (uguale a)
    * ne = does not equal (non uguale a)
    * co = contains (contiene)
@@ -389,12 +389,12 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
    * gt = greater than (maggiore di)
    * ge = greater than or equals (maggiore o uguale a)
 * &quot;values&quot;
-   * un array di valori utilizzati per determinare la corrispondenza rispetto al valore della variabile denominata in
+   * array di valori utilizzati per eseguire il confronto rispetto al valore della variabile denominata
       * key
       * con il tipo di corrispondenza in
       * matches
 * &quot;triggers&quot;
-   * come audience, ma questa è l&#39;azione invece del pubblico
+   * simile a audience, ma per l’azione anziché per il pubblico
    * &quot;key&quot;
    * &quot;matches&quot;
    * &quot;values&quot;
