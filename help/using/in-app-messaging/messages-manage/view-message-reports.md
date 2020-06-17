@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
 
-# Visualizzare rapporti sui messaggi{#view-message-reports}
+# Visualizzare rapporti sui messaggi {#view-message-reports}
 
 Puoi visualizzare i rapporti sui messaggi in-app e push.
 
@@ -45,7 +45,7 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi in-a
 
 * **[!UICONTROL Annulla]**, quando un utente preme il pulsante **[!UICONTROL Annulla]** su un avviso o su un messaggio a schermo intero.
 
-* **[!UICONTROL Livello di coinvolgimento]**, è una metrica calcolata da Adobe Analytics che corrisponde al numero di click-through diviso per il numero di impression.
+* **[!UICONTROL Livello di coinvolgimento]**, una metrica calcolata da Adobe Analytics che corrisponde al numero di click-through diviso per il numero di impression.
 
 ## Messaggi push {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -65,7 +65,7 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi push
 
 * **[!UICONTROL Stato]**
 
-   Lo stato del messaggio e gli stati disponibili sono:
+   Lo stato del messaggio. Gli stati disponibili sono:
 
    * **[!UICONTROL Annullato]**
    * **[!UICONTROL Pianificato]**
@@ -82,9 +82,9 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi push
 
    * Un pushID non valido
 
-   * La piattaforma push (APNS, FCM, ecc.) specificata come destinazione del push non esiste per l’applicazione del lavoro. Ad esempio, la piattaforma potrebbe raccogliere token push iOS ma non dispone del servizio APNS configurato.
+   * La piattaforma push (APNS, FCM, ecc.) specificata come destinazione del push non esiste per l’applicazione del lavoro. Ad esempio, la piattaforma potrebbe raccogliere token push di iOS e non disporre del servizio APNS configurato.
 
-   * Il messaggio potrebbe non essere riuscito perché il servizio push non è stato configurato correttamente o il sistema Mobile Services non è in grado di funzionare.
+   * Il messaggio potrebbe non essere riuscito perché il servizio push non è stato configurato correttamente o il sistema Mobile Services si è interrotto.
    >[!IMPORTANT]
    >
    >In caso di un numero insolitamente elevato di errori, controlla la configurazione dei servizi push. Se sembrano configurati correttamente, contatta l’assistenza clienti Adobe.
