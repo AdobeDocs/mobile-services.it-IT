@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -100,10 +100,10 @@ Il cliente seguente ha due app iOS:
    * RSID: PhotoShop_iOS_app_LA
    * Segmento di definizione VRSID: `a.os contains “iOS”`
 
-In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blocklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
+In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Nonostante venga inviato agli utenti di *PhotoShop_iOS_app_LA*, questo messaggio inserisce nella blocklist gli ID push per gli utenti di *PhotoShop_iOS_app_SF* poiché l’app *PhotoShop_iOS_app_SF* dispone di un certificato diverso. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
 
 Se passati con il certificato push *PhotoShop_IOS_app_LA*, gli identificatori push di *PhotoShop_iOS_app_SF* verrebbero restituiti come `invalid`.
 
 >[!CAUTION]
 >
->Quando crei un messaggio push per un’app che utilizza una VRS e fai clic su **[!UICONTROL Salva e invia]**, viene visualizzato un avviso che ti ricorda di verificare che ogni app indicata **deve** avere un certificato valido. If each app does **not** have a valid certificate, your audience segments might be indefinitely blocklisted, and you might not be able to send future push messages to the affected users. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>Quando crei un messaggio push per un’app che utilizza una VRS e fai clic su **[!UICONTROL Salva e invia]**, viene visualizzato un avviso che ti ricorda di verificare che ogni app indicata **deve** avere un certificato valido. Se ogni app **non** dispone di un certificato valido, i segmenti di pubblico potrebbero essere inseriti nella blocklist a tempo indefinito e in futuro non sarebbe possibile inviare messaggi push agli utenti in questione. Per ulteriori informazioni sui segmenti di pubblico, vedi [Pubblico: definire e configurare le opzioni relative al pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
