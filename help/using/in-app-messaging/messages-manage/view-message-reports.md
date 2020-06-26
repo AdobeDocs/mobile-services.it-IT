@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -91,4 +91,4 @@ Di seguito è riportato un elenco delle metriche disponibili per i messaggi push
 
 * **[!UICONTROL Bloccato]**
 
-   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS si comportano diversamente quando i token vengono considerati come bloccati. I token Android vengono visualizzati immediatamente nel conteggio dei blocchi. I token iOS inizialmente vengono visualizzati come pubblicati, ma in base al feedback ricevuto da APNS, vengono visualizzati come bloccati nei messaggi successivi.
+   Il numero di token dispositivi che non sono più validi da inviare al servizio APNS o FCM. Solitamente indicano che l’app è stata disinstallata dal dispositivo oppure che l’utente ha modificato le proprie opzioni di consenso alla ricezione dei messaggi. Android e iOS presentano delle differenze per quanto riguarda il momento in cui i token vengono considerati inseriti nella blocklist. I token Android vengono visualizzati immediatamente nel conteggio dei blocchi. I token iOS vengono appaiono inizialmente come pubblicati, ma in base al feedback dal servizio APNS vengono mostrati come inseriti nella blocklist nei messaggi successivi.
