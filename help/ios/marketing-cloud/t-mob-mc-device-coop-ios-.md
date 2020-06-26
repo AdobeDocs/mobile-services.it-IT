@@ -4,11 +4,11 @@ seo-description: Per iniziare a utilizzare Experience Cloud Device Co-op, contat
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Ecco alcune informazioni aggiuntive sul flag `coopUnsafe`:
 * Il valore predefinito è `false`.
 * Questa impostazione è utilizzata **solo** per i clienti abilitati per Device Co-op.
 
-For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
+Per i membri Device Co-op che richiedono che questo valore sia impostato come `true`, è necessario collaborare con il team Co-op per richiedere un flag di blocklist per l’account Device Co-op. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
 Considerazioni da ricordare:
 
-* Quando `coopUnsafe` è impostato su `true`, agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto `coop_unsafe=1`.
+* Quando `coopUnsafe` è impostato su `true`, `coop_unsafe=1` agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto.
 * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, negli hit di Analytics troverai `coop_unsafe=1`.
 
 
