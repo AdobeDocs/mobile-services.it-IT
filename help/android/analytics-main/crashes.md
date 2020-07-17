@@ -1,21 +1,21 @@
 ---
 description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 seo-description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
-seo-title: Tracciare gli arresti anomali dell'app
+seo-title: Tracciare gli arresti anomali dell’app
 solution: Marketing Cloud,Analytics
-title: Tracciare gli arresti anomali dell'app
+title: Tracciare gli arresti anomali dell’app
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Tracciare gli arresti anomali dell&#39;app {#track-app-crashes}
+# Tracciare gli arresti anomali dell’app {#track-app-crashes}
 
 Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell&#39;app e quali best practice adottare per gestire i falsi arresti anomali.
 
@@ -27,13 +27,13 @@ Quando si implementano le metriche del ciclo di vita, viene effettuata una chiam
 
 In `pauseCollectingLifeCycleData` viene impostato un flag per indicare una corretta uscita. Quando l&#39;app viene avviata di nuovo o ripresa, `collectLifecycleData` verifica questo flag. Se lo stato del flag determina che l&#39;uscita dall&#39;app non è avvenuta correttamente, i dati contestuali `a.CrashEvent` vengono inviati con la chiamata successiva e viene segnalato un evento di arresto anomalo.
 
-Per ottenere una segnalazione accurata degli arresti anomali, devi chiamare `pauseCollectingLifeCycleData` nel metodo `onPause` di ciascuna attività. Per capire il motivo per il quale è essenziale, ecco un diagramma che illustra il ciclo di vita dell&#39;attività Android:
+Per ottenere una segnalazione accurata degli arresti anomali, devi chiamare `pauseCollectingLifeCycleData` nel metodo `onPause` di ciascuna attività. Per capire il motivo per il quale è essenziale, ecco un diagramma che illustra il ciclo di vita delle attività Android:
 
 ![](assets/android-lifecycle.png)
 
-For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
+Per maggiori informazioni sul ciclo di vita delle attività Android, consulta [Attività](https://developer.android.com/guide/components/activities.html).
 
-*Questa illustrazione sul ciclo di vita Android è stata creata e[condivisa da Android Open Source Project](https://source.android.com/)e viene utilizzata in base ai termini della[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
+*Questa illustrazione sul ciclo di vita Android è stata creata e [condivisa da Android Open Source Project](https://source.android.com/) e viene utilizzata in base ai termini della [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Cosa causa la segnalazione di un arresto anomalo falso?
 
@@ -47,7 +47,7 @@ For more information about the Android activity lifecycle, see [Activities](http
 
 ## Come vanno gestiti i fragmenti?
 
-I frammenti presentano eventi del ciclo di vita dell’applicazione simili alle attività. Tuttavia, un frammento non può essere attivo senza essere associato a un&#39;attività.
+I frammenti presentano eventi del ciclo di vita dell’applicazione simili a quelli delle attività. Tuttavia, un frammento non può essere attivo senza essere associato a un’attività.
 
 >[!IMPORTANT]
 >
