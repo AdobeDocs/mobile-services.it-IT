@@ -1,32 +1,35 @@
 ---
-description: Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-description: Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+description: Elenco di metodi di Audience Manager  forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+seo-description: Elenco di metodi di Audience Manager  forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-title: Metodi di Audience Manager
 solution: Marketing Cloud,Analytics
 title: Metodi di Audience Manager
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 38%
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Metodi di Audience Manager{#audience-manager-methods}
 
-Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+Elenco di metodi di Audience Manager  forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Audience Manager hanno il prefisso `AudienceManager`.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
-Se Audience Manager è configurato nel tuo file JSON, con l'hit del ciclo di vita viene inviato un segnale che contiene le metriche del ciclo di vita.
+Se Audience Manager è configurato nel tuo file JSON, con l&#39;hit del ciclo di vita viene inviato un segnale che contiene le metriche del ciclo di vita.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce `null` se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `SharedPreferences` per un accesso facilitato in più avvii dell’applicazione.
+   Restituisce il profilo del visitatore ottenuto più di recente. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -77,7 +80,7 @@ Se Audience Manager è configurato nel tuo file JSON, con l'hit del ciclo di vit
 
 * **SetDpidAndDpuuid (winJS: setDpidAndDpuuid)**
 
-   Imposta gli identificatori DPID e DPUUID. Se impostati, DPID e DPUUID saranno inviati congiuntamente con ogni segnale.
+   Imposta gli identificatori DPID e DPUUID. Se impostati, DPID e DPUUID saranno inviati con ogni segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -94,7 +97,7 @@ Se Audience Manager è configurato nel tuo file JSON, con l'hit del ciclo di vit
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Invia a Gestione dell'audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in una callback.
+   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in una callback di blocco.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -111,5 +114,5 @@ Se Audience Manager è configurato nel tuo file JSON, con l'hit del ciclo di vit
       traits["trait"] = "b";
       ADB.AudienceManager.signalWithData(traits).then(function (visitorProfile) { 
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
-      }); 
-      
+      });
+      ```
