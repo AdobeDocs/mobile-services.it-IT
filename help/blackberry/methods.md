@@ -1,30 +1,33 @@
 ---
 description: Classi e metodi forniti dalla libreria BlackBerry.
 seo-description: Classi e metodi forniti dalla libreria BlackBerry.
-seo-title: Guida di riferimento di classe e metodi per Adobe Mobile
-title: Guida di riferimento di classe e metodi per Adobe Mobile
+seo-title: ' Adobe Riferimento classe e metodo Mobile'
+title: ' Adobe Riferimento classe e metodo Mobile'
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 56%
 
 ---
 
 
-# Adobe Mobile class and method reference {#adobe-mobile-class-and-method-reference}
+#  Adobe Riferimento classe e metodo Mobile {#adobe-mobile-class-and-method-reference}
 
 Classi e metodi forniti dalla libreria BlackBerry.
 
-The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
+Al momento l’SDK supporta  Adobe Analytics e i metodi si trovano in classi separate in base alla soluzione.
 
-## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## Impostazioni SDK {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **getPrivacyStatus**
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
 
    * ADBMobilePrivacyStatusOptIn: gli hit vengono inviati immediatamente.
-   * ADBMobilePrivacyStatusOptOut: gli hit vengono eliminati.
-   * ADBMobilePrivacyStatusUnknown - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
+   * ADBMobilePrivacyStatusOptOut: gli hit vengono scartati.
+   * ADBMobilePrivacyStatusUnknown - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
       Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
@@ -42,11 +45,11 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * Il metodo **setPrivacyStatus**
 
-   Imposta lo stato di privacy per l'utente corrente su `status`. Imposta uno dei valori seguenti:
+   Imposta lo stato di privacy per l&#39;utente corrente su `status`. Imposta uno dei valori seguenti:
 
    * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
-   * Per `ADBMobilePrivacyStatusUnknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
+   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -62,7 +65,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **getUserIdentifier**
 
-   Restituisce l'identificatore utente se è stato impostato un identificatore personalizzato. Returns `null` if a custom identifier is not set. Il valore predefinito è `null`.
+   Restituisce l&#39;identificatore utente se è stato impostato un identificatore personalizzato. Returns `null` if a custom identifier is not set. Il valore predefinito è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -78,7 +81,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **setUserIdentifier**
 
-   Imposta l'identificatore utente su `identifier`.
+   Imposta l&#39;identificatore utente su `identifier`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -94,7 +97,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **getDebugLogging**
 
-   Restituisce l'attuale preferenza di accesso di debug. Il valore predefinito è `false`.
+   Restituisce l&#39;attuale preferenza di accesso di debug. Il valore predefinito è `false`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -110,7 +113,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **setDebugLogging**
 
-   Imposta la preferenza per l'accesso di su `debugLogging`debug.
+   Imposta la preferenza per l&#39;accesso di su `debugLogging`debug.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -126,7 +129,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **collectLifecycleData**
 
-   Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni dell'SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/blackberry/metrics.md).
+   Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni dell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/blackberry/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -143,17 +146,17 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
       }
       ```
 
-## Analytics methods {#section_91F4AD0A045D4E4E8F9A93450503E49E}
+## Metodi di Analytics {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
 Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di Adobe Analytics.
 
 * **trackState**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio “dashboard iniziale”, “impostazioni dell'app”, “carrello” e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni dell’app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l&#39;unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -169,7 +172,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackAction**
 
-   Tiene traccia di un'azione nell'applicazione. Le azioni sono gli eventi che avvengono nell’applicazione e che desideri misurare, come “accessi”, “tap sui banner”, “abbonamenti ai feed” e altre metriche.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell’app e che desideri misurare, come &quot;accessi&quot;, &quot;tap sui banner&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -185,7 +188,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackLocation**
 
-   Invia le coordinate x,y correnti. Sostituisci “event” con l'evento ricevuto dal sottoscrittore a BPS.
+   Invia le coordinate x,y correnti. Sostituire l&#39;evento con l&#39;evento ricevuto dal sottoscrittore a BPS.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -199,13 +202,13 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` riferimento del file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json`Guida di riferimento per il file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
-   (Obbligatorio) Una o più suite di rapporti che dovrà ricevere i dati Analytics. Nel caso di più suite di rapporti, i rispettivi ID devono essere separati da una virgola, senza spazio.
+   (Obbligatorio) Una o più suite di rapporti che dovrà ricevere i dati Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
    Esempio di codice per questa variabile:
 
@@ -219,15 +222,15 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **server**
 
-   (Obbligatorio). Server di Analytics. This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Il prefisso del protocollo viene gestito automaticamente dalla libreria, in base alla variabile `ssl`. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
+   (Obbligatorio). Server di Analytics. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla `ssl` variabile. Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l'archiviazione e la generazione di rapporti.
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti.
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (HTTPS). Il valore predefinito è `false`.
+   Abilita (`true`) o disabilita (`false`) l’invio di dati di misurazione tramite SSL (HTTPS). Il valore predefinito è `false`.
 
 * **offlineEnabled**
 
@@ -235,34 +238,34 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+   >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,  contatta  [Supporto](https://helpx.adobe.com/it/contact/enterprise-support.ec.html)Enterprise.
 
-   Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
+   If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    Il valore predefinito è `false`.
 
 * **lifecycleTimeout**
 
-   Specifica l’intervallo di tempo, in secondi, che deve trascorrere tra un avvio dell’app e quello successivo affinché questo sia considerato come una nuova sessione. Il timeout viene applicato anche quando l’applicazione viene lasciata in background e poi riattivata. Il tempo durante il quale l’app rimane in background non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
-   The default value is 300 seconds.
+   Il valore predefinito è 300 secondi.
 
 * **batchLimit**
 
-   Numero massimo di hit offline memorizzati nella coda. The default value is 0 (No limit).
+   Numero massimo di hit offline memorizzati nella coda. Il valore predefinito è 0 (nessun limite).
 
 * **privacyDefault**
 
    * `optedin` - gli hit vengono inviati immediatamente.
-   * `optedout` - gli hit vengono scartati.
-   * Per `optunknown`, se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). 
+   * `optedout` - gli hit vengono eliminati.
+   * `optunknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati).
 
-      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
-   Questa variabile imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene usato finché non viene nuovamente modificato oppure finché l'app non viene disinstallata e reinstallata.
+      Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
+   Questa variabile imposta solo il valore iniziale. Se questo valore viene impostato o modificato nel codice, il nuovo valore viene utilizzato finché non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
    Il valore predefinito è `optedin`.
 
-Di seguito viene indicato un esempio del file `ADBMobileConfig.json`:
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
