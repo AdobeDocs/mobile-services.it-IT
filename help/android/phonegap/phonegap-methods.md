@@ -1,14 +1,17 @@
 ---
 description: Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire diverse attività.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire diverse attività.
 seo-title: Metodi del plug-in PhoneGap
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi del plug-in PhoneGap
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 97%
 
 ---
 
@@ -27,13 +30,13 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **getPrivacyStatus**
 
-   Restituisce lo stato di privacy per l'utente corrente.
+   Restituisce lo stato di privacy per l&#39;utente corrente.
 
    Gli stati disponibili sono:
 
    * `ADB.optedIn`: Gli hit vengono inviati immediatamente.
    * `ADB.optedOut`: Gli hit vengono scartati.
-   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
+   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
       Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
@@ -45,13 +48,13 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * Il metodo **setPrivacyStatus**
 
-   Imposta lo stato di privacy per l'utente corrente su `status`.
+   Imposta lo stato di privacy per l&#39;utente corrente su `status`.
 
    Puoi impostare uno dei valori seguenti:
 
    * `ADB.optedIn`: Gli hit vengono inviati immediatamente.
    * `ADB.optedOut`: Gli hit vengono scartati.
-   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l'utente acconsente (optedin).
+   * `ADB.optUnknown`: Se le marche temporali **sono** abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali **non sono** abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -61,7 +64,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **getLifetimeValue**
 
-   Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente. Il valore predefinito è 0.
+   Restituisce il valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente corrente. Il valore predefinito è 0.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -91,15 +94,15 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackingIdentifier**
 
-   Restituisce l'identificatore visitatore generato automaticamente.
+   Restituisce l&#39;identificatore visitatore generato automaticamente.
 
-   Si tratta di un ID visitatore univoco specifico per l'app, che viene generato all'avvio iniziale dell'app e quindi memorizzato e utilizzato da quel momento in poi. L'ID viene conservato durante gli aggiornamenti dell'app e rimosso quando l'app viene disinstallata.
+   Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale dell’app e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso quando l&#39;app viene disinstallata.
 
    >[!TIP]
    >
-   >Se l'app viene aggiornata dall'SDK Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta `getUserIdentifier`, di seguito. Questo ID conserva i dati del visitatore tra gli aggiornamenti dell'SDK.
+   >Se l&#39;app viene aggiornata dall&#39;SDK Experience Cloud 3.x alla versione 4.x, l&#39;ID visitatore precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. Per ulteriori informazioni, consulta `getUserIdentifier`, di seguito. Questo ID conserva i dati del visitatore tra gli aggiornamenti dell&#39;SDK.
 
-   Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `null` e viene utilizzato l'identificatore di tracciamento.
+   Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` e viene utilizzato l&#39;identificatore di tracciamento.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -119,7 +122,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **setUserIdentifier**
 
-   Imposta l'identificatore utente su `identifier`.
+   Imposta l&#39;identificatore utente su `identifier`.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -153,7 +156,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
    >[!IMPORTANT]
    >
-   >Una chiamata `keepLifecycleSessionAlive` impedisce che l'app avvii una nuova sessione in seguito alla ripresa dopo l'esecuzione in background. Usa questo metodo solo se l'app si registra per le notifiche in background.
+   >Una chiamata `keepLifecycleSessionAlive` impedisce che l&#39;app avvii una nuova sessione in seguito alla ripresa dopo l&#39;esecuzione in background. Usa questo metodo solo se l&#39;app si registra per le notifiche in background.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -187,7 +190,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
    >[!WARNING]
    >
-   >Quando cancelli la coda manualmente, presta particolare attenzione poiché l'azione non può essere annullata.
+   >Quando cancelli la coda manualmente, presta particolare attenzione poiché l&#39;azione non può essere annullata.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -238,7 +241,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackState**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart` e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell&#39;app, ad esempio `home dashboard`, `app settings`, `cart` e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
    `cData`: oggetto JSON con coppie chiave-valore da inviare nei dati contestuali.
 
@@ -260,7 +263,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackAction**
 
-   Tiene traccia di un'azione nell'applicazione. Azioni, come `logins`, `banner taps`, `feed subscriptions` e altre metriche che si verificano nell'app e che desideri misurare.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Azioni, come `logins`, `banner taps`, `feed subscriptions` e altre metriche che si verificano nell&#39;app e che desideri misurare.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -280,7 +283,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackLocation**
 
-   Invia le coordinate x,y correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all'interno di un POI. Se le coordinate correnti si trovano all'interno di un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Invia le coordinate x,y correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all&#39;interno di un POI. Se le coordinate correnti si trovano all&#39;interno di un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -296,7 +299,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackLifetime&#x200B;ValueIncrease**
 
-   Aggiunge al valore "lifetime" del ciclo di vita dell'utente un incremento pari a `amount`.
+   Aggiunge al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente un incremento pari a `amount`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -312,9 +315,9 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackTimed&#x200B;ActionStart**
 
-   Avvia un'azione temporizzata con il nome `action`.
+   Avvia un&#39;azione temporizzata con il nome `action`.
 
-   Se invochi questo metodo per un'azione già avviata, l'azione temporizzata precedente viene sovrascritta.
+   Se invochi questo metodo per un&#39;azione già avviata, l&#39;azione temporizzata precedente viene sovrascritta.
 
    >[!TIP]
    >
@@ -334,9 +337,9 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackTimed&#x200B;ActionUpdate**
 
-   Passa in `cData` per aggiornare i dati contestuali associati all'azione `action`.
+   Passa in `cData` per aggiornare i dati contestuali associati all&#39;azione `action`.
 
-   I dati `cData` passati vengono aggiunti alla fine dei dati esistenti per l'azione, e li sovrascrivono se per l'azione `action`, è già definita la stessa chiave.
+   I dati `cData` passati vengono aggiunti alla fine dei dati esistenti per l&#39;azione, e li sovrascrivono se per l&#39;azione `action`, è già definita la stessa chiave.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -352,7 +355,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackTimed&#x200B;ActionEnd**
 
-   Termina un'azione temporizzata.
+   Termina un&#39;azione temporizzata.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -362,7 +365,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackingTimedActionExists**
 
-   Restituisce un valore che indica se un'azione temporizzata è in corso o meno.
+   Restituisce un valore che indica se un&#39;azione temporizzata è in corso o meno.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -409,7 +412,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **targetLoadRequest**
 
-   Invia una richiesta al server di `Target` configurato e restituisce il valore stringa dell'offerta.
+   Invia una richiesta al server di `Target` configurato e restituisce il valore stringa dell&#39;offerta.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -447,7 +450,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **targetClearCookies**
 
-   Cancella i cookie di `Target` dall'archiviazione dei cookie condivisi.
+   Cancella i cookie di `Target` dall&#39;archiviazione dei cookie condivisi.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -531,7 +534,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **targetSetThirdPartyID**
 
-   Imposta l'ID visitatore personalizzato per Target.
+   Imposta l&#39;ID visitatore personalizzato per Target.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -547,7 +550,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **targetThirdPartyID**
 
-   Ottiene l'ID visitatore personalizzato per Target.
+   Ottiene l&#39;ID visitatore personalizzato per Target.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -565,7 +568,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **acquisitionCampaignStartForApp**
 
-   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell'offerta.
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -585,7 +588,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 ## Identificatore pubblicitario {#section_194607D101B047A19C51B19E176E1500}
 
-Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingIdentifierTask()` nel metodo `onResume()`. Per ulteriori informazioni, consulta [Metodi di configurazione](/help/android/configuration/methods.md).
+Nell&#39;attività principale generata da Cordova, chiama `Config.submitAdvertisingIdentifierTask()` nel metodo `onResume()`. Per ulteriori informazioni, consulta [Metodi di configurazione](/help/android/configuration/methods.md).
 
 ## Metodi di Audience Manager {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
@@ -607,7 +610,7 @@ Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingI
 
 * **audienceGetDpuuid**
 
-   Restituisce l'identificatore DPUUID.
+   Restituisce l&#39;identificatore DPUUID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -623,7 +626,7 @@ Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingI
 
 * **audienceGetDpid**
 
-   Restituisce l'identificatore DPID.
+   Restituisce l&#39;identificatore DPID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -691,7 +694,7 @@ Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingI
 
 * **visitorGetMarketingCloudId**
 
-   Restituisce l'Experience Cloud ID dal servizio ID.
+   Restituisce l&#39;Experience Cloud ID dal servizio ID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -744,7 +747,7 @@ Nell'attività principale generata da Cordova, chiama `Config.submitAdvertisingI
 
 * **visitorSyncIdentifierWithType**
 
-   Sincronizza l'identificatore fornito con il servizio ID.
+   Sincronizza l&#39;identificatore fornito con il servizio ID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
