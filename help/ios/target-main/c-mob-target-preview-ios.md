@@ -4,8 +4,11 @@ seo-description: Con Anteprima Target puoi eseguire facilmente test di controllo
 seo-title: Anteprima Target in iOS
 title: Anteprima Target in iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +27,7 @@ Per ulteriori informazioni su come impostare e utilizzare la funzione Anteprima 
 
 * **setPreviewRestartDeeplink**
 
-   Imposta un collegamento profondo per app che verrà attivato quando le selezioni di anteprima sono applicate in modalità Anteprima.
+   Imposta un collegamento profondo all&#39;app che verrà attivato quando le opzioni di anteprima vengono applicate in modalità Anteprima.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
