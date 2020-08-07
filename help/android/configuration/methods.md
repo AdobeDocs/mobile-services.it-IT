@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Configurazione
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 100%
 
 ---
 
@@ -249,8 +252,8 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting&#x200B;LifecycleData**
 
    * Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, `onPause` recupera una marca temporale per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca che l&#39;applicazione non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
