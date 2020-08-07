@@ -1,14 +1,17 @@
 ---
 description: 'Puoi usare queste informazioni per: creare una nuova app e configurarne le metriche chiave; configurare le opzioni SDK per Adobe Analytics e Adobe Audience Manager; configurare le opzioni di acquisizione e del servizio ID; scaricare il file di configurazione, gli SDK e gli strumenti per sviluppatori e tester.'
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: 'Puoi usare queste informazioni per: creare una nuova app e configurarne le metriche chiave; configurare le opzioni SDK per Adobe Analytics e Adobe Audience Manager; configurare le opzioni di acquisizione e del servizio ID; scaricare il file di configurazione, gli SDK e gli strumenti per sviluppatori e tester.'
 seo-title: Aggiungere una nuova app
-solution: Experience Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aggiungere una nuova app
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 96%
 
 ---
 
@@ -69,7 +72,7 @@ Per poter configurare un’app, devi prima aggiungerla nell’interfaccia utente
 
    * **[!UICONTROL Tipo]**
 
-      Seleziona un tipo dall’elenco a discesa. I rapporti disponibili visualizzati nel menu di navigazione a sinistra dipendono dal tipo di app selezionata.
+      Seleziona un tipo dall’elenco a discesa. I rapporti disponibili visualizzati nel menu di navigazione a sinistra variano a seconda del tipo di app selezionata.
 
       I tipi disponibili sono:
 
