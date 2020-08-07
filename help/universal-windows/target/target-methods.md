@@ -1,28 +1,31 @@
 ---
-description: Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-description: Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+description: Elenco di metodi Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+seo-description: Elenco di metodi Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-title: Metodi di Target
 solution: Marketing Cloud,Analytics
 title: Metodi di Target
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
-# Target methods {#target-methods}
+# Metodi di Target {#target-methods}
 
-Elenco di metodi di Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
+Elenco di metodi Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager.
 
-[Lifecycle metrics are sent as parameters to each mbox load.](/help/universal-windows/metrics.md)
+[Le metriche](/help/universal-windows/metrics.md) del ciclo di vita vengono inviate come parametri a ogni caricamento di mbox.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
 ## Riferimento classe: TargetLocationRequest
 
@@ -34,9 +37,9 @@ property Platform::String ^defaultContent;
 property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^parameters;
 ```
 
-## Costanti di stringa
+## Costanti stringa
 
-This information helps you set keys for custom parameters.
+Queste informazioni sono utili per impostare le chiavi per i parametri personalizzati.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -89,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Crea un oggetto `TargetLocationRequest` con i parametri forniti.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -104,9 +107,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner","default.png", null); 
       ```
 
-* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
+* **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Crea un oggetto `TargetLocationRequest` con i parametri forniti.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -123,7 +126,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies (winJS: clearCookies)**
 
-   Elimina i cookie di Target per l’applicazione sul dispositivo corrente.
+   Cancella i cookie di Target per l’applicazione sul dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -139,7 +142,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId (winJS: getPcId)**
 
-   Restituisce il cookie dell’ID del PC del dispositivo corrente.
+   Restituisce il cookie PC ID per il dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -155,7 +158,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId (winJS: getSessionId)**
 
-   Restituisce il cookie dell’ID sessione del dispositivo corrente.
+   Restituisce il cookie ID sessione per il dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -168,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
        autosessionId=ADBMobile.Target.getSessionId(); 
       ```
-
