@@ -2,12 +2,15 @@
 description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-description: Queste informazioni spiegano come misurare i video su iOS mediante la misurazione di specifici eventi video.
 seo-title: Analisi del video
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Analisi del video
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 72%
 
 ---
 
@@ -18,9 +21,9 @@ Queste informazioni spiegano come misurare i video su iOS mediante la misurazion
 
 >[!TIP]
 >
->Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate "heartbeat" che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
+>Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate &quot;heartbeat&quot; che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull&#39;abbandono. Per ulteriori informazioni, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
 
-Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice.
+Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Questo contenuto fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 ## Mappare gli eventi del lettore sulle variabili di Analytics {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -28,13 +31,13 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.name**
 
-   (Obbligatorio) Raccoglie il nome del video, in base a quanto specificato nell'implementazione, quando un visitatore visualizza il video in qualche modo. Per questa variabile puoi aggiungere delle classificazioni.
+   (Obbligatorio) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Puoi aggiungere classificazioni per questa variabile.
 
-   (Facoltativo) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
+   (Facoltativo) La variabile Custom Insight fornisce informazioni sul percorso del video.
 
    * Tipo di variabile: eVar
-   * Scadenza predefinita: visita
-   * Insight personalizzato (s.prop, usato per il percorso del video)
+   * Scadenza predefinita: Visita
+   * Custom Insight (s.prop, utilizzato per il percorso del video)
 
 * **a.media.name**
 
@@ -45,14 +48,15 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.segment**
 
-   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l'ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, SiteCatalyst potrebbe raccogliere quanto segue nella eVar dei segmenti `1:M:0-25`.
+   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l&#39;ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, SiteCatalyst potrebbe raccogliere quanto segue nella eVar dei segmenti `1:M:0-25`.
 
-   Il metodo predefinito di raccolta dei dati video raccoglie i dati presso i seguenti punti:
+   Il metodo di raccolta dei dati video predefinito raccoglie i dati nei seguenti punti:
 
    * inizio video (play)
-   * inizio del segmento
-   * fine del video (stop)
-   Analytics conta la visualizzazione del primo segmento all'inizio del segmento, quando il visitatore inizia la visualizzazione. Il segmento successivo viene visualizzato quando inizia il segmento.
+   * inizio segmento
+   * fine video (stop)
+
+   Analytics conta la visualizzazione del primo segmento all&#39;inizio del segmento, quando il visitatore inizia a guardarlo. Il segmento successivo viene visualizzato all&#39;inizio del segmento.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -60,35 +64,35 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.contentType**
 
-   Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione è assegnato il tipo di contenuto `video`video. Non è necessario riservare questa variabile esclusivamente al tracciamento video. Se la stessa variabile viene usata anche per ottenere il tipo di altri contenuti, è possibile analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali "articolo" o "pagina prodotto" ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
+   Raccoglie dati relativi al tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione è assegnato il tipo di contenuto `video`video. Questa variabile non deve essere riservata esclusivamente al tracciamento video. Far sì che altri contenuti segnalino il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.media.timePlayed**
 
-   Conta il tempo, in secondi, trascorso a guardare un video dall'ultimo processo di raccolta di dati (richiesta immagine).
+   Conta il tempo, in secondi, trascorso a guardare un video dall&#39;ultimo processo di raccolta di dati (richiesta immagine).
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a.media.view**
 
-   Indica che un visitatore ha visualizzato una parte di un video. Tuttavia, non fornisce informazioni sulla parte specifica visualizzata, né sulla durata della visualizzazione.
+   Indica che un visitatore ha visualizzato una parte del video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a.media.segmentView**
 
-   Indica che un visitatore ha visualizzato una parte di un segmento video. Tuttavia, non fornisce informazioni sulla parte specifica visualizzata, né sulla durata della visualizzazione.
+   Indica che un visitatore ha visualizzato una parte di un segmento video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a.media.complete**
 
-   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l'evento completo è misurato 1 secondo prima della fine del video. Durante l'implementazione, puoi specificare quanti secondi dalla fine del video considerare come una visualizzazione dell'intero video. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete, ad esempio, dopo che il video è stato visualizzato per una data quantità di tempo.
+   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, potete specificare quanti secondi dalla fine del video considerare una visualizzazione completa. Per i video in diretta e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete, ad esempio, dopo che è stato visualizzato un dato momento.
 
    * Tipo di variabile: Event
    * Tipo: contatore
@@ -124,7 +128,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 
 Per misurare la riproduzione di un video, è necessario invocare i metodi `mediaPlay`, `mediaStop` e `mediaClose` nei momenti opportuni. Ad esempio, `mediaStop` deve essere invocato quando il lettore viene messo in pausa e `mediaPlay` quando la riproduzione viene avviata o ripresa.
 
-L'esempio di seguito illustra come configurare le notifiche e invocare i metodi per i file multimediali per ottenere le misurazioni relative ai video:
+L&#39;esempio di seguito illustra come configurare le notifiche e invocare i metodi per i file multimediali per ottenere le misurazioni relative ai video:
 
 ```objective-c
 // configure notifications for when the video is finished, and when the 
@@ -246,7 +250,7 @@ NSUInteger eventType
 
 * **mediaAdCreateSettings&#x200B;WithName:&#x200B;length:&#x200B;playerName:&#x200B;parentName:&#x200B;parentPod:&#x200B;parentPodPosition:&#x200B;CPM:**
 
-   Restituisce un oggetto `ADBMediaSettings` per l'uso con il monitoraggio di un video annuncio.
+   Restituisce un oggetto `ADBMediaSettings` per l&#39;uso con il monitoraggio di un video annuncio.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -292,7 +296,7 @@ NSUInteger eventType
 
 * **mediaClose:**
 
-   Chiude l'elemento multimediale denominato *name*.
+   Chiude l&#39;elemento multimediale denominato *name*.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -308,7 +312,7 @@ NSUInteger eventType
 
 * **mediaPlay:&#x200B;offset:**
 
-   Riproduce l'elemento multimediale denominato *name* in corrispondenza dell'*offset* indicato (in secondi).
+   Riproduce l&#39;elemento multimediale denominato *name* in corrispondenza dell&#39;*offset* indicato (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -324,7 +328,7 @@ NSUInteger eventType
 
 * **mediaComplete:&#x200B;offset:**
 
-   Contrassegna manualmente l'elemento multimediale come completato in corrispondenza dell'*offset* indicato (in secondi).
+   Contrassegna manualmente l&#39;elemento multimediale come completato in corrispondenza dell&#39;*offset* indicato (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -340,7 +344,7 @@ NSUInteger eventType
 
 * **mediaStop:&#x200B;offset:**
 
-   Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell'*offset* indicato.
+   Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell&#39;*offset* indicato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -356,7 +360,7 @@ NSUInteger eventType
 
 * **mediaClick:&#x200B;offset:**
 
-   Notifica al modulo multimediale l'avvenuto clic sull'elemento multimediale.
+   Notifica al modulo multimediale l&#39;avvenuto clic sull&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -372,7 +376,7 @@ NSUInteger eventType
 
 * **mediaTrack:&#x200B;withData:**
 
-   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
+   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
