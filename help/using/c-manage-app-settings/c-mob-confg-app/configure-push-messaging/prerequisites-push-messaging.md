@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Prerequisiti per abilitare i messaggi push
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
@@ -74,7 +74,9 @@ Per ulteriori informazioni, consulta [Risoluzione dei problemi di collegamento d
 
 Finché non attivi il servizio ID per la tua app, la sezione **[!UICONTROL Servizi push]** risulta disabilitata. Tuttavia, dopo aver abilitato il servizio ID, viene abilitata la sezione Servizi push. Per ulteriori informazioni sull’attivazione dei servizi push, vedere [Configurare le opzioni del servizio ID SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
->[!IMPORTANT]: devi fare clic su **[!UICONTROL Salva]** per salvare le modifiche e aggiornare i Servizi push.
+>[!IMPORTANT]
+>
+>devi fare clic su **[!UICONTROL Salva]** per salvare le modifiche e aggiornare i Servizi push.
 >
 >Puoi configurare un’app per app store per Apple e una per Google in ogni suite di rapporti. Se hai bisogno di altre app, ad esempio una per un ambiente di produzione e una per un ambiente di sviluppo, configura una nuova app per app store e una nuova suite di rapporti per ciascun ambiente.
 
