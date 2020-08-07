@@ -1,32 +1,35 @@
 ---
-description: Elenco di metodi Audience Manager forniti dalla libreria Windows 8.1 Universal App Store.
-seo-description: Elenco di metodi Audience Manager forniti dalla libreria Windows 8.1 Universal App Store.
+description: Elenco di metodi di Audience Manager  forniti dalla libreria Windows 8.1 Universal App Store.
+seo-description: Elenco di metodi di Audience Manager  forniti dalla libreria Windows 8.1 Universal App Store.
 seo-title: Metodi di Audience Manager
 solution: Marketing Cloud,Analytics
 title: Metodi di Audience Manager
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 40%
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Metodi di Audience Manager {#audience-manager-methods}
 
-Elenco di metodi Audience Manager forniti dalla libreria Windows 8.1 Universal App Store.
+Elenco di metodi di Audience Manager  forniti dalla libreria Windows 8.1 Universal App Store.
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Audience Manager hanno il prefisso "Audience Manager".
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione.  metodi di Audience Manager hanno il prefisso &quot;AudienceManager&quot;.
 
 >[!NOTE]
 >
 >Quando utilizzi metodi winmd da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
-Se Audience Manager è configurato nel file JSON, viene inviato un segnale contenente le metriche del ciclo di vita con l’hit del ciclo di vita.
+Se Audience Manager è configurato nel tuo file JSON, con l&#39;hit del ciclo di vita viene inviato un segnale contenente le metriche del ciclo di vita.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce `null` se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `SharedPreferences` per un accesso facilitato in più avvii dell’applicazione.
+   Restituisce il profilo del visitatore ottenuto più di recente. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -77,7 +80,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
 * **SetDpidAndDpuuid (winJS: setDpidAndDpuuid)**
 
-   Imposta gli identificatori DPID e DPUUID. Se impostati, DPID e DPUUID saranno inviati congiuntamente con ogni segnale.
+   Imposta gli identificatori DPID e DPUUID. Se impostati, DPID e DPUUID saranno inviati con ogni segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -94,7 +97,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Invia a Audience Manager un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in una callback.
+   Invia  Audience Manager un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un callback di blocco.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
