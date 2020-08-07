@@ -2,12 +2,15 @@
 description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-description: Elenco dei metodi TVJS forniti dalla libreria tvOS.
 seo-title: Metodi TVJS
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi TVJS
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 85%
 
 ---
 
@@ -38,15 +41,15 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **privacyStatus**
 
-   Restituisce la rappresentazione NSUInteger dello stato di privacy enum per l'utente corrente.
+   Restituisce la rappresentazione NSUInteger dello stato di privacy enum per l’utente corrente.
 
-   Sono disponibili le seguenti opzioni:
+   Di seguito sono riportate le opzioni disponibili:
 
    * `ADBMobilePrivacyStatusOptIn`: gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
+      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -64,12 +67,13 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * Il metodo **setPrivacyStatus**
 
-   Imposta lo stato di privacy per l'utente corrente su uno dei seguenti valori:
+   Imposta lo stato di privacy per l&#39;utente corrente su uno dei seguenti valori:
 
    * `ADBMobilePrivacyStatusOptIn`: gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
-   Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
+
+   Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -86,7 +90,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **lifetimeValue**
 
-   Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente. Il valore predefinito è `0`.
+   Restituisce il valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente corrente. Il valore predefinito è `0`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -104,11 +108,11 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **userIdentifier**
 
-   Restituisce l'identificatore utente se è stato impostato un identificatore personalizzato. Restituisce nil se non è impostato alcun identificatore personalizzato. Il valore predefinito è `nil`.
+   Restituisce l&#39;identificatore utente se è stato impostato un identificatore personalizzato. Restituisce nil se non è impostato alcun identificatore personalizzato. Il valore predefinito è `nil`.
 
    >[!IMPORTANT]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è nil finché non viene impostato.
+   >Se l&#39;app viene aggiornata dall&#39;SDK di Experience Cloud 3.x alla versione 4.x, l&#39;ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all&#39;altro dell&#39;SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è nil finché non viene impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -126,7 +130,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **setUserIdentifier**
 
-   Imposta l'identificatore dell'utente.
+   Imposta l&#39;identificatore dell&#39;utente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -145,7 +149,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    * Parametro:  `userID`
 
       * Tipo: string
-      * Nuovo identificatore per l'utente corrente.
+      * Nuovo identificatore per questo utente.
 
 * **setAdvertisingIdentifier**
 
@@ -153,7 +157,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    >[!IMPORTANT]
    >
-   >Recupera l'identificatore IDFA dall'API di Apple solo se utilizzi un servizio di annunci. Se recuperi l'identificatore IDFA e non lo utilizzi correttamente, l'app potrebbe venire rifiutata.
+   >Recupera l&#39;identificatore IDFA dall&#39;API di Apple solo se utilizzi un servizio di annunci. Se recuperi l&#39;identificatore IDFA e non lo utilizzi correttamente, l&#39;app potrebbe venire rifiutata.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -170,7 +174,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    * Restituisce: N/D
    * Parametro: `idfa`
       * Tipo: `String`
-      * IDFA recuperato dell'API di Apple.
+      * IDFA recuperato dell&#39;API di Apple.
 
 * **setDebugLogging**
 
@@ -198,13 +202,13 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackStateData**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio dashboard iniziale, impostazioni dell'app, carrello e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate trackState incrementano le visualizzazioni di pagina.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell&#39;app, ad esempio dashboard iniziale, impostazioni dell&#39;app, carrello e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate trackState incrementano le visualizzazioni di pagina.
 
    Se lo stato è vuoto, nei rapporti viene visualizzato come app name app version (build). Se trovi questo valore nei rapporti, assicurati che in ogni chiamata trackState sia impostato il valore state.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
+   >Questa è l&#39;unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -217,8 +221,8 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * Nome dello stato della pagina
       * Parametro: `contextData`
-         * Tipo: Object
-         * Dati di contesto aggiuntivi per questo hit.
+         * Tipo: Oggetto
+         * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -230,7 +234,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackActionData**
 
-   Tiene traccia di un'azione nell'applicazione. Le azioni sono gli eventi che avvengono nell'applicazione e che desideri misurare, come accessi, tap sui banner, abbonamenti ai feed e altre metriche.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell&#39;applicazione e che desideri misurare, come accessi, tap sui banner, abbonamenti ai feed e altre metriche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -241,10 +245,10 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametri: `actionName`
          * Tipo: string
-         * Nome dell'azione di cui tenere traccia.
+         * Nome dell’azione tracciata.
       * Parametro: `contextData`
-         * Tipo: Object
-         * Dati di contesto aggiuntivi per questo hit.
+         * Tipo: Oggetto
+         * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -257,7 +261,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Invia le coordinate di latitudine e longitudine correnti.
 
-   Utilizza anche i punti di interesse (POI) definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all'interno di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Utilizza anche i punti di interesse (POI) definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all&#39;interno di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -267,14 +271,14 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `lat`
-         * Tipo: numero
+         * Tipo: Numero
          * Latitudine della posizione.
       * Parametro: `lon`
-         * Tipo: numero
+         * Tipo: Numero
          * Longitudine della posizione.
       * Parametro: `contextData`
-         * Tipo: Object
-         * Dati di contesto aggiuntivi per questo hit.
+         * Tipo: Oggetto
+         * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -286,7 +290,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackLifetimeValueIncreaseJsData**
 
-   Aggiunge un incremento al valore "lifetime" del ciclo di vita dell'utente.
+   Aggiunge un incremento al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -296,8 +300,8 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `increaseAmount`
-         * Tipo: numero
-         * Incremento da aggiungere al valore "lifetime" del ciclo di vita dell'utente.
+         * Tipo: Numero
+         * Importo da aggiungere al valore del ciclo di vita corrente dell&#39;utente.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -307,7 +311,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackTimedActionStartData**
 
-   Avvia un'azione temporizzata con il nome action. Se invochi questo metodo per un'azione già avviata, l'azione temporizzata precedente viene sovrascritta.
+   Avvia un&#39;azione temporizzata con il nome action. Se invochi questo metodo per un&#39;azione già avviata, l&#39;azione temporizzata precedente viene sovrascritta.
 
    >[!TIP]
    >
@@ -322,10 +326,10 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametro: `name`
          * Tipo: string
-         * Nome dell'azione temporizzata di cui tenere traccia.
+         * Nome dell’azione temporizzata da avviare.
       * Parametro: `contextData`
-         * Tipo: Object
-         * Dati di contesto aggiuntivi per questo hit.
+         * Tipo: Oggetto
+         * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -335,9 +339,9 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackTimedActionUpdateData**
 
-   Passa i dati con cui aggiornare i dati contestuali associati all'azione.
+   Trasmettere i dati per aggiornare i dati contestuali associati all’azione action.
 
-   I dati passati vengono aggiunti alla fine dei dati esistenti per l'azione e li sovrascrivono se per l'azione è già definita la stessa chiave.
+   I dati passati vengono aggiunti in coda ai dati esistenti per l’azione e, se per l’azione è già definita la stessa chiave, i dati vengono sovrascritti.
 
    >[!TIP]
    >
@@ -352,10 +356,10 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametro: `name`
          * Tipo: string
-         * Nome dell'azione temporizzata che viene aggiornata.
+         * Nome dell’azione temporizzata da aggiornare.
       * Parametro: `contextData`
-         * Tipo: Object
-         * Dati di contesto aggiuntivi per questo hit.
+         * Tipo: Oggetto
+         * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -366,9 +370,9 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackTimedActionEndJsLogic**
 
-   Termina un'azione temporizzata.
+   Termina un&#39;azione temporizzata.
 
-   Se fornisci una funzione di callback, puoi accedere al valori temporali finali. In assenza di callback, o se il callback restituisce "true", Adobe SDK invia automaticamente un hit. Se restituisce false, l'hit dell'azione temporizzata viene eliminato.
+   Se si fornisce una funzione di callback, è possibile accedere ai valori temporali finali. Se non viene fornito alcun callback, o se il callback restituisce true, l’SDK del Adobe  invia automaticamente un hit. Se restituisce false, l&#39;hit dell&#39;azione temporizzata viene eliminato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -379,12 +383,12 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametri: `name`
          * Tipo: string
-         * Nome dell'azione temporizzata che viene terminata.
+         * Nome dell’azione temporizzata da terminare
       * Parametro: `callback`
          * Tipo: `function(inAppDuration, totalDuration, data)`
          * Metodo di callback i cui parametri conterranno il `inAppDuration` (numero), il `totalDuration` (numero) e `data` (oggetto di dati contestuali).
 
-            Se la funzione di callback restituisce `false`, verrà impedito l'invio dell'hit finale da parte dell'SDK.
+            Se la funzione di callback restituisce `false`, verrà impedito l&#39;invio dell&#39;hit finale da parte dell&#39;SDK.
       * Di seguito è riportato un esempio di codice per questo metodo:
 
          ```objective-c
@@ -399,7 +403,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackingTimedActionExistsJs**
 
-   Restituisce un valore che indica se un'azione temporizzata è in corso o meno.
+   Restituisce un valore che indica se un&#39;azione temporizzata è in corso o meno.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -421,13 +425,13 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackingIdentifier**
 
-   Restituisce l'identificatore visitatore generato automaticamente.
+   Restituisce l&#39;identificatore visitatore generato automaticamente.
 
-   Si tratta di un ID visitatore univoco specifico per l'app, generato dai server Adobe. Se i server Adobe non sono accessibili al momento della generazione, verrà utilizzato l'identificatore CFUUID di Apple. Il valore viene generato al primo avvio, memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell'app, salvato e ripristinato durante il processo standard di backup dell'applicazione, e rimosso con la disinstallazione dell'app.
+   Si tratta di un ID visitatore univoco specifico per l’app, generato dai server  Adobe. Se  server  Adobi non è possibile raggiungerlo al momento della generazione, l’ID viene generato utilizzando l’identificatore CFUUID di Apple. Il valore viene generato al primo avvio e memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app, viene salvato e ripristinato durante il processo standard di backup dell&#39;applicazione e viene rimosso quando l&#39;app viene disinstallata.
 
    >[!TIP]
    >
-   >Se l'app viene aggiornata dall'SDK di Experience Cloud 3.x alla versione 4.x, l'ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all'altro dell'SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `nil` e viene utilizzato l'identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
+   >Se l&#39;app viene aggiornata dall&#39;SDK di Experience Cloud 3.x alla versione 4.x, l&#39;ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all&#39;altro dell&#39;SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `nil` e viene utilizzato l&#39;identificatore di tracciamento. Per ulteriori informazioni, consulta la riga userIdentifier di seguito.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -446,7 +450,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackingSendQueuedHits**
 
-   Forza l'invio da parte della libreria di tutti gli hit nella coda, indipendentemente dal numero di hit attualmente presenti nella coda.
+   Forza l&#39;invio da parte della libreria di tutti gli hit nella coda, indipendentemente dal numero di hit attualmente presenti nella coda.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -508,7 +512,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Restituisce il profilo del visitatore ottenuto più di recente.
 
-   Restituisce null se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell'applicazione.
+   Restituisce null se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell&#39;applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -598,11 +602,11 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
       * Parametro: `traits`
-         * Tipo: Object
-         * Dizionario delle caratteristiche per l'utente corrente.
+         * Tipo: Oggetto
+         * Dizionario delle caratteristiche per questo utente.
       * Parametro: `callback`
          * Tipo: function(profile)
-         * Profilo restituito da Audience Manager nel parametro della funzione di callback.
+         * Profilo restituito da  Audience Manager nel parametro per la funzione di callback.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -616,7 +620,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **audienceReset**
 
-   Ripristina l'identificatore UUID di Audience Manager e svuota il profilo visitatore corrente.
+   Ripristina l&#39;identificatore UUID di Audience Manager e svuota il profilo visitatore corrente.
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -637,7 +641,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **visitorMarketingCloudID**
 
-   Recupera l'Experience Cloud ID dal servizio ID.
+   Recupera l&#39;Experience Cloud ID dal servizio ID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -656,7 +660,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **visitorSyncIdentifiers**
 
-   Oltre all'Experience Cloud ID, puoi impostare altri ID cliente da associare a ogni visitatore. L'API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente che consente di distinguere l'ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
+   Oltre all&#39;ID Experience Cloud , puoi impostare altri ID cliente da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -668,7 +672,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Parametro: `identifiers`
 
          * Tipo: `Object`
-         * Identificatori da sincronizzare con il servizio ID per l'utente corrente.
+         * Identificatori da sincronizzare con il servizio ID per l&#39;utente corrente.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -689,7 +693,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametri: `identifiers`
          * Tipo: `Object`
-         * Identificatori da sincronizzare con il servizio ID per l'utente corrente.
+         * Identificatori da sincronizzare con il servizio ID per l&#39;utente corrente.
       * Parametro: `authState`
          * Tipo: ADBMobileVisitorAuthenticationState
          * Lo stato di autenticazione dell’utente e i valori possibili includono:
@@ -706,7 +710,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **visitorSyncIdentifierWithTypeIdentifierAuthenticationState**
 
-   Sincronizza con il servizio ID il tipo e il valore dell'identificatore fornito.
+   Sincronizza con il servizio ID il tipo e il valore dell&#39;identificatore fornito.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -717,10 +721,10 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametro: `idType`
          * Tipo: `String`
-         * Tipo dell'identificatore da sincronizzare.
+         * Tipo dell&#39;identificatore da sincronizzare.
       * Parametro: `identifier`
          * Tipo: `String`
-         * Valore dell'identificatore da sincronizzare.
+         * Valore dell&#39;identificatore da sincronizzare.
       * Parametro: `authState`
          * Tipo: ADBMobileVisitorAuthenticationState
 Stato di autenticazione dell’utente. Possibili valori:
@@ -767,7 +771,7 @@ Stato di autenticazione dell’utente. Possibili valori:
 
 * **targetThirdPartyID**
 
-   Restituisce l'ID di terze parti.
+   Restituisce l&#39;ID di terze parti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -786,7 +790,7 @@ Stato di autenticazione dell’utente. Possibili valori:
 
 * **targetSetThirdPartyID**
 
-   Imposta l'ID di terze parti.
+   Imposta l&#39;ID di terze parti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -825,7 +829,7 @@ Stato di autenticazione dell’utente. Possibili valori:
 
 * **targetSessionID**
 
-   Restituisce l'ID della sessione.
+   Restituisce l&#39;ID della sessione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
