@@ -1,42 +1,40 @@
 ---
-description: Questo argomento descrive come iniziare a utilizzare i componenti di Xamarin per l'SDK 4.x delle soluzioni mobili.
+description: Questo argomento descrive come iniziare a utilizzare i componenti Xamarin per l’SDK 4.x delle soluzioni mobili.
 keywords: Xamarin
-seo-description: Questo argomento descrive come iniziare a utilizzare i componenti di Xamarin per l'SDK 4.x delle soluzioni mobili.
-seo-title: Xamarin components for Experience Cloud Solutions 4.x SDK
-solution: Marketing Cloud,Sviluppatore
-title: Componenti Xamarin per l’SDK 4.x per soluzioni Experience Cloud
+seo-description: Questo argomento descrive come iniziare a utilizzare i componenti Xamarin per l’SDK 4.x delle soluzioni mobili.
+seo-title: Componenti Xamarin per l’SDK per soluzioni  Experience Cloud 4.x
+solution: Marketing Cloud,Developer
+title: Componenti Xamarin per l’SDK per soluzioni  Experience Cloud 4.x
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 3%
 
 ---
 
 
 # Xamarin components for Experience Cloud Solutions 4.x SDK {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 
-Questo argomento descrive come iniziare a utilizzare i componenti di Xamarin per l'SDK 4.x delle soluzioni mobili.
+Questo argomento descrive come iniziare a utilizzare i componenti Xamarin per l’SDK 4.x delle soluzioni mobili.
 
-Ultimo aggiornamento: **10 gennaio 2019**
+Last Updated: **January 10, 2019**
 
 ## Introduzione {#section_59D434C30C8F4765A7DEFE877D5268D0}
 
 >[!IMPORTANT]
 >
->L’SDK di Adobe Mobile non è più disponibile nello store componenti Xamarin o nella raccolta NuGet. Per scaricare i componenti Xamarin, vai su [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services).
-
+> SDK Mobile di Adobe non è più disponibile nello store componenti di Xamarin o nella raccolta NuGet. Per scaricare i componenti Xamarin, andate a [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services).
 
 ## Android {#section_9CAE1BFD359242568D8288C12A4B7A7D}
 
-Import the ADBMobile Component to your Xamarin.Android project:
+Importa il componente ADBMobile nel progetto Xamarin.Android:
 
 1. Apri il progetto Xamarin
-
-1. Open **[!UICONTROL References]** dialog and click the **[!UICONTROL .Net Assembly]** tab.
-
-1. Select  from the lib/Android folder.`ADBMobile.XamarinAndroidBinding.dll`****
-
+1. Aprite la finestra di dialogo **[!UICONTROL Riferimenti]** e fate clic sulla scheda Assembly **** .Net.
+1. Selezionate `ADBMobile.XamarinAndroidBinding.dll` dalla cartella **[!UICONTROL lib/Android]** .
 1. Add your `ADBMobileConfig.json` file to the **[!UICONTROL Assets]** folder of your project.
-
 1. Aggiungi le autorizzazioni per:
 
    * `INTERNET`
@@ -50,31 +48,27 @@ Import the ADBMobile Component to your Xamarin.Android project:
 1. Se utilizzi la messaggistica in-app, aggiungi la seguente attività e ricevitore:
 
    ```java
-   <activity 
-   android:name="com.adobe.mobile.MessageFullScreenActivity" 
-   android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-   <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
+    <activity 
+    android:name="com.adobe.mobile.MessageFullScreenActivity" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
    ```
 
-1. Se utilizzi l'acquisizione, aggiungi il ricevitore seguente:
+1. Se utilizzi l&#39;acquisizione, aggiungi il ricevitore seguente:
 
    ```java
-   <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
-   <intent-filter>
-       <action android:name="com.android.vending.INSTALL_REFERRER" />
-   </intent-filter>
-   </receiver>
+    <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
+    <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+    </intent-filter>
+    </receiver>
    ```
 
 ## iOS {#section_1531928DDE904D769B3987BF927D0E02}
 
-Import the ADBMobile Component to your Xamarin.iOS project:
+Importa il componente ADBMobile nel progetto Xamarin.iOS:
 
 1. Apri il tuo progetto Xamarin.
-1. Open **[!UICONTROL References]** dialog and click the **[!UICONTROL .Net Assembly]** tab.
-
+1. Aprite la finestra di dialogo **[!UICONTROL Riferimenti]** e fate clic sulla scheda Assembly **** .Net.
 1. Selezionate `ADBMobile.XamarinIOSBinding.dll` dalla cartella **[!UICONTROL lib/ios-unified]** .
-
-1. Aggiungi il file `ADBMobileConfig.json` al progetto.
-
-
+1. Aggiungete il `ADBMobileConfig.json` file al progetto.
