@@ -1,22 +1,25 @@
 ---
-description: Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
+description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 keywords: Xamarin
-seo-description: Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
+seo-description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 seo-title: Metodi Android
-solution: Marketing Cloud,Sviluppatore
-title: Android methods
+solution: Marketing Cloud,Developer
+title: Metodi Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 66%
 
 ---
 
 
-# Android methods{#android-methods}
+# Metodi Android{#android-methods}
 
-Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
+Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
-## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
+## Metodi di configurazione {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
@@ -37,7 +40,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **LifetimeValue**
 
-   Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente.
+   Restituisce il valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -55,9 +58,10 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatus.OptOut` - hits are discarded.
-   * `ADBMobilePrivacyStatus.Unknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l'utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l'utente acconsente.
-   Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md).
+   * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
+   * `ADBMobilePrivacyStatus.Unknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
+
+   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -108,7 +112,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **PauseCollectingLifecycleData**
 
-   Indica all’SDK che l’applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, all'avvio della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, questo imposta un flag in modo che il ciclo di vita acquisisca correttamente che l'applicazione non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l’app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -124,7 +128,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **CollectLifecycleData (attività Activity)**
 
-   (4.2 o versioni successive) Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni nell'SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   (4.2 o versioni successive) Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni nell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -140,7 +144,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **CollectLifecycleData (attività Activity)**
 
-   (4.2 o versioni successive) Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni nell'SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   (4.2 o versioni successive) Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni nell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -159,7 +163,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. La diversa configurazione viene utilizzata fino alla chiusura dell'applicazione.
+   (4.2 o versione successiva) Consente di caricare un diverso file di `ADBMobile JSON` configurazione all&#39;avvio dell&#39;applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -176,7 +180,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 o versione successiva) Imposta l'icona grande utilizzata per le notifiche create dall'SDK. Questa icona è l'immagine principale che viene visualizzata quando l'utente visualizza la notifica completa nel Centro notifiche.
+   (4.2 o versione successiva) Imposta l&#39;icona grande utilizzata per le notifiche create dall&#39;SDK. Questa icona è l&#39;immagine principale visualizzata dall&#39;utente nella notifica completa all&#39;interno del Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -192,7 +196,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 or later) Sets the small icon that is used for notifications created by the SDK. Questa icona viene visualizzata nella barra di stato e rappresenta l’immagine secondaria visualizzata dall’utente nella notifica completa nel Centro notifiche.
+   (4.2 o versione successiva) Imposta l&#39;icona piccola utilizzata per le notifiche create dall&#39;SDK. Questa icona viene visualizzata nella barra di stato e rappresenta l’immagine secondaria visualizzata dall’utente nella notifica completa nel Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -206,11 +210,11 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
        Config.SetSmallIconResourceId(R.drawable.appIcon);
       ```
 
-## Analytics methods {#section_63CF636104EF41F790C3E4190D755BBA}
+## Metodi di Analytics {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
-   Restituisce l’ID generato automaticamente per Analytics. This is an app-specific unique ID that is generated on initial launch and is stored and used from that point forward. This ID is preserved between app upgrades and is removed on uninstall.
+   Restituisce l’ID generato automaticamente per Analytics. Si tratta di un ID univoco specifico per l&#39;app, che viene generato all&#39;avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso alla disinstallazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -226,11 +230,11 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackState**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. `States`sono le visualizzazioni disponibili nell'applicazione, come "schermata del titolo", "livello 1", "pausa" e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se lo stato è vuoto, viene visualizzato come "nome app versione app (build)" nei report. Se visualizzi questo valore nel report, assicurati che lo stato in ogni chiamata sia impostato su `TrackState`.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. `States` sono le visualizzazioni disponibili nell&#39;app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l&#39;unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -249,12 +253,12 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackAction**
 
-   Monitora un'azione nell'applicazione. Le azioni sono gli eventi che avvengono nell'applicazione e che desideri misurare, come "morti", "livello acquisito", "iscrizioni al feed" e altri parametri.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell&#39;app e che desideri misurare, come &quot;morti&quot;, &quot;livello acquisito&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
 
    >[!TIP]
    >
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >In presenza di codice che potrebbe essere eseguito mentre l&#39;applicazione è in background (ad esempio, un recupero di dati in background), utilizza piuttosto `trackActionFromBackground`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -326,7 +330,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackLifetimeValueIncrease**
 
-   Aggiunge un incremento al valore "lifetime" del ciclo di vita dell'utente.
+   Aggiunge un incremento al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -342,7 +346,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackTimedActionStart**
 
-   Avvia un'azione temporizzata con il nome action. Se invochi questo metodo per un'azione già avviata, l'azione temporizzata precedente viene sovrascritta.
+   Avvia un&#39;azione temporizzata con il nome action. Se invochi questo metodo per un&#39;azione già avviata, l&#39;azione temporizzata precedente viene sovrascritta.
 
    >[!TIP]
    >
@@ -354,7 +358,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Esempio di codice per questo metodo:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -362,7 +366,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackTimedActionUpdate**
 
-   Passa i dati con cui aggiornare i dati contestuali associati all'azione. I dati trasmessi vengono aggiunti in coda ai dati esistenti per l'azione, e li sovrascrivono se per l'azione è già definita la stessa chiave.
+   Trasmettere i dati per aggiornare i dati contestuali associati all’azione action. I dati passati vengono aggiunti in coda ai dati esistenti per l’azione, e li sovrascrivono se per l’azione è già definita la stessa chiave.
 
    >[!TIP]
    >
@@ -384,7 +388,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackTimedActionEnd**
 
-   Termina un'azione temporizzata.
+   Termina un&#39;azione temporizzata.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -408,7 +412,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **TrackingTimedActionExists**
 
-   Restituisce un valore che indica se un'azione temporizzata è in corso o meno.
+   Restituisce un valore che indica se un&#39;azione temporizzata è in corso o meno.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -474,7 +478,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **MarketingCloudId**
 
-   Recupera l'Experience Cloud ID dal servizio ID.
+   Recupera l&#39;Experience Cloud ID dal servizio ID.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -490,7 +494,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **SyncIdentifiers**
 
-   Utilizzando l’ID Experience Cloud, è possibile impostare ID cliente aggiuntivi da associare a ciascun visitatore. L'API Visitor accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente che consente di distinguere l'ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
+   Con l&#39;ID Experience Cloud , puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -506,7 +510,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
       Visitor.SyncIdentifiers (ids);
       ```
 
-## Target methods {#section_C1E4121CAF9D43538511D857A1F549A7}
+## Metodi di Target {#section_C1E4121CAF9D43538511D857A1F549A7}
 
 * **LoadRequest**
 
@@ -533,7 +537,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **CreateRequest**
 
-   Costruttore di convenienza per creare un oggetto `ADBTargetLocationRequest` con i parametri indicati.
+   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -551,7 +555,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **CreateOrderConfirmRequest**
 
-   Crea un `ADBTargetLocationRequest`.
+   Crea una `ADBTargetLocationRequest`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -567,7 +571,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **ClearCookies**
 
-   Clears Target cookies from your app.
+   Elimina i cookie di Target dall&#39;app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -585,7 +589,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **VisitorProfile**
 
-   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce nil se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell'applicazione.
+   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce nil se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell&#39;applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -633,7 +637,7 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
 
 * **AudienceSetDpidAndDpuuid**
 
-   Imposta l' `dpid` e `dpuuid`. If `dpid` and `dpuuid` are set, they are sent with each signal.
+   Imposta l&#39; `dpid` e `dpuuid`. Se `dpid` e `dpuuid` sono impostati, vengono inviati con ogni segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -673,9 +677,9 @@ Metodi Android per componenti Xamarin per soluzioni SDK 4.x di Experience Cloud.
       AudienceManager.SignalWithData (traits, new AudienceManagerCallback());
       ```
 
-* **Reset**
+* **Reimpostare**
 
-   Ripristina l'`UUID` di Audience Manager ed elimina il profilo del visitatore corrente.
+   Resets audience manager `UUID` and purges current visitor profile.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -711,7 +715,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
 
 * **AdSettingsWith**
 
-   Restituisce un oggetto `MediaSettings` per l'uso con il monitoraggio di un video annuncio.
+   Restituisce un oggetto `MediaSettings` per l&#39;uso con il monitoraggio di un video annuncio.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -749,9 +753,9 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       }
       ```
 
-* **Close**
+* **Chiudi**
 
-   Chiude il nome denominato dell'elemento multimediale.
+   Chiude l&#39;elemento multimediale denominato name.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -767,7 +771,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
 
 * **Riproduci**
 
-   Riproduce il nome denominato dell'elemento multimediale in corrispondenza dell'offset indicato (in secondi).
+   Riproduce l&#39;elemento multimediale denominato name in corrispondenza dell&#39;offset indicato (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -781,9 +785,9 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Play (settings.Name, 0); 
       ```
 
-* **Completa**
+* **Complete**
 
-   Contrassegna manualmente l'elemento multimediale come completato in corrispondenza dell'offset indicato (in secondi).
+   Contrassegna manualmente l&#39;elemento multimediale come completato in corrispondenza dell&#39;offset indicato (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -797,9 +801,9 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Complete (settings.Name, 5); 
       ```
 
-* **Stop**
+* **Interrompi**
 
-   Notifica al modulo multimediale che il video è stato arrestato o messo in pausa in corrispondenza dell'offset indicato.
+   Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell&#39;offset indicato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -813,9 +817,9 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Stop (settings.Name, 3);
       ```
 
-* **Clic**
+* **Fai clic su**
 
-   Notifica al modulo multimediale l'avvenuto clic sull'elemento multimediale.
+   Notifica al modulo multimediale l&#39;avvenuto clic sull&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -831,7 +835,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
 
 * **Track**
 
-   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
+   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
