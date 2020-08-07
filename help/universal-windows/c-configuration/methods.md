@@ -4,10 +4,13 @@ seo-description: Classi e metodi forniti dalla libreria della piattaforma UWP (U
 seo-title: Metodi SDK
 solution: Marketing Cloud,Analytics
 title: Metodi SDK
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +21,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -40,11 +43,11 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
 
-   * `ADBMobilePrivacyStatusOptIn` - Gli hit vengono inviati immediatamente.
-   * `ADBMobilePrivacyStatusOptOut` - Gli hit vengono scartati.
-   * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
+   * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
+   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono scartati.
+   * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      The default value is set in the `ADBMobileConfig.json` config file. For more information, see ADBMobileConfig.json config file.[](/help/universal-windows/c-configuration/c.json.md)
+      The default value is set in the `ADBMobileConfig.json` config file. Per ulteriori informazioni, vedi [ADBMobileConfig.json file](/help/universal-windows/c-configuration/c.json.md)di configurazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -53,9 +56,9 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
       ^getPrivacyStatusAsync();
       ```
 
-   * Here are the code samples for this method:
+   * Di seguito è riportato un esempio di codice per questo metodo:
 
-      **C Sharp**
+      **C Nitido**
 
       ```csharp
       public enum class ADBMobilePrivacyStatus : int { ADBMobilePrivacyStatusOptIn = 1, 
@@ -75,10 +78,10 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
-   Imposta lo stato di privacy per l'utente corrente su `status`. Imposta uno dei valori seguenti:
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
-   * `DBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati. Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin).
+   Imposta lo stato di privacy per l&#39;utente corrente su `status`. Imposta uno dei valori seguenti:
+   * `ADBMobilePrivacyStatusOptIn` - gli hit vengono inviati immediatamente.
+   * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
+   * `DBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati. Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
       * Di seguito è riportata la sintassi per questo metodo:
 
@@ -86,9 +89,9 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
          static void SetPrivacyStatus(ADBMobilePrivacyStatus status);
          ```
 
-      * Di seguito sono riportati alcuni esempi di codice per questo metodo:
+      * Di seguito è riportato un esempio di codice per questo metodo:
 
-         **C-sharp**
+         **C diesis**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -108,7 +111,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 * **GetLifetimeValue (winJS: getLifetimeValue)**
 
-   Restituisce il valore "lifetime" del ciclo di vita dell'utente corrente. Il valore predefinito è `0`.
+   Restituisce il valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente corrente. Il valore predefinito è `0`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -125,12 +128,12 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Restituisce l’identificativo utente personalizzato se un identificatore personalizzato è stato impostato. Returns `null` if a custom identifier is not set.
+   Restituisce l’identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Returns `null` if a custom identifier is not set.
 Il valore predefinito è `null`.
 
    >[!IMPORTANT]
    >
-   >Se l’app viene aggiornata dall’SDK di Experience Cloud 3.x alla versione 4.x, il servizio ID precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l'SDK 4.x, l'identificatore dell'utente è `null` finché non viene impostato.
+   >Se l’app viene aggiornata dall’SDK  Experience Cloud 3.x alla versione 4.x, il servizio ID precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` finché non viene impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -147,7 +150,7 @@ Il valore predefinito è `null`.
 
 * **SetUserIdentifier (winJS: setUserIdentifier)**
 
-   Imposta l'identificatore utente su `identifier`.
+   Imposta l&#39;identificatore utente su `identifier`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -164,7 +167,7 @@ Il valore predefinito è `null`.
 
 * **GetDebugLogging (winJS: getDebugLogging)**
 
-   Restituisce l'attuale preferenza di accesso di debug. Il valore predefinito è `false`.
+   Restituisce l&#39;attuale preferenza di accesso di debug. Il valore predefinito è `false`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -181,7 +184,7 @@ Il valore predefinito è `null`.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Imposta la preferenza per l'accesso di su `debugLogging`debug. La registrazione di debug funziona solo quando si utilizza la versione di debug della libreria, la versione finale ignora questa impostazione.
+   Imposta la preferenza per l&#39;accesso di su `debugLogging`debug. La registrazione del debug funziona solo quando si utilizza la versione di debug della libreria. La versione release ignora questa impostazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -198,7 +201,7 @@ Il valore predefinito è `null`.
 
 * **CollectLifecycleData (winJS: collectLifecycleData)**
 
-   Indica all'SDK che i dati del ciclo di vita devono essere raccolti per l'utilizzo in tutte le soluzioni dell'SDK. Per ulteriori informazioni, consulta  [Lifecycle metrics](/help/universal-windows/metrics.md).
+   Indica all&#39;SDK che i dati del ciclo di vita devono essere raccolti per l&#39;utilizzo in tutte le soluzioni dell&#39;SDK. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/universal-windows/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -215,7 +218,7 @@ Il valore predefinito è `null`.
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseRaccolta &#x200B; LifecycleData)**
 
-   Indica all’SDK che l’applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, all'avvio della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, questo imposta un flag in modo che il ciclo di vita acquisisca correttamente che l'applicazione non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/universal-windows/metrics.md).
+   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l’app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/universal-windows/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
