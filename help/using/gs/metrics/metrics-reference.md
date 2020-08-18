@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Riferimento per le metriche e le dimensioni di Mobile
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Elenco delle dimensioni predefinite per dispositivi mobili:
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l’installazione. La data è in formato *MM/GG/AAAA* .
+   Data del primo avvio dopo l’installazione. La data è nel formato *MM/GG/AAAA*.
 
 * **ID app**
 
