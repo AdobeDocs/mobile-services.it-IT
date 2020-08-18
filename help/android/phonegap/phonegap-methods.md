@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Metodi del plug-in PhoneGap
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Metodi del plug-in PhoneGap{#phonegap-plug-in-methods}
+# Metodi del plug-in PhoneGap {#phonegap-plug-in-methods}
 
 Puoi usare i metodi del plug-in PhoneGap per Android per completare diverse attività.
 
@@ -46,7 +46,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
       getPrivacyStatus(function (value) { myTempVal = value; }, function () {myTempVal = null;}); 
       ```
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    Imposta lo stato di privacy per l&#39;utente corrente su `status`.
 
@@ -96,7 +96,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
    Restituisce l&#39;identificatore visitatore generato automaticamente.
 
-   Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale dell’app e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso quando l&#39;app viene disinstallata.
+   Si tratta di un ID visitatore univoco specifico per l’app, generato all’avvio iniziale dell’app e quindi memorizzato e utilizzato da quel momento in poi. L’ID viene mantenuto nei successivi aggiornamenti dell’app e rimosso quando l’app viene disinstallata.
 
    >[!TIP]
    >
