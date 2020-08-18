@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Metodi TVJS
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2013'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    * Restituisce: `Number`
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    Imposta lo stato di privacy per l&#39;utente corrente su uno dei seguenti valori:
 
@@ -221,7 +221,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: `String`
          * Nome dello stato della pagina
       * Parametro: `contextData`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -245,9 +245,9 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       * Restituisce: N/D
       * Parametri: `actionName`
          * Tipo: string
-         * Nome dell’azione tracciata.
+         * Nome dell’azione da tracciare.
       * Parametro: `contextData`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -271,13 +271,13 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `lat`
-         * Tipo: Numero
+         * Tipo: numero
          * Latitudine della posizione.
       * Parametro: `lon`
-         * Tipo: Numero
+         * Tipo: numero
          * Longitudine della posizione.
       * Parametro: `contextData`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -300,8 +300,8 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
       * Restituisce: N/D
       * Parametro: `increaseAmount`
-         * Tipo: Numero
-         * Importo da aggiungere al valore del ciclo di vita corrente dell&#39;utente.
+         * Tipo: numero
+         * Importo da aggiungere al valore del ciclo di vita corrente dell’utente.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -328,7 +328,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: string
          * Nome dell’azione temporizzata da avviare.
       * Parametro: `contextData`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -339,9 +339,9 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **trackTimedActionUpdateData**
 
-   Trasmettere i dati per aggiornare i dati contestuali associati all’azione action.
+   Passa i dati per aggiornare i dati contestuali associati all’azione in questione.
 
-   I dati passati vengono aggiunti in coda ai dati esistenti per l’azione e, se per l’azione è già definita la stessa chiave, i dati vengono sovrascritti.
+   I dati passati vengono aggiunti alla fine dei dati esistenti per l’azione in questione e li sovrascrivono se per l’azione è già definita la stessa chiave.
 
    >[!TIP]
    >
@@ -358,7 +358,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
          * Tipo: string
          * Nome dell’azione temporizzata da aggiornare.
       * Parametro: `contextData`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dati contestuali aggiuntivi per l’hit.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -372,7 +372,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Termina un&#39;azione temporizzata.
 
-   Se si fornisce una funzione di callback, è possibile accedere ai valori temporali finali. Se non viene fornito alcun callback, o se il callback restituisce true, l’SDK del Adobe  invia automaticamente un hit. Se restituisce false, l&#39;hit dell&#39;azione temporizzata viene eliminato.
+   Se fornisci una funzione di callback, puoi accedere ai valori temporali finali. Se non viene fornito alcun callback, o se il callback restituisce true, l’SDK di Adobe invia automaticamente un hit. Se restituisce false, l&#39;hit dell&#39;azione temporizzata viene eliminato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -427,7 +427,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
    Restituisce l&#39;identificatore visitatore generato automaticamente.
 
-   Si tratta di un ID visitatore univoco specifico per l’app, generato dai server  Adobe. Se  server  Adobi non è possibile raggiungerlo al momento della generazione, l’ID viene generato utilizzando l’identificatore CFUUID di Apple. Il valore viene generato al primo avvio e memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app, viene salvato e ripristinato durante il processo standard di backup dell&#39;applicazione e viene rimosso quando l&#39;app viene disinstallata.
+   Si tratta di un ID visitatore univoco specifico per l’app, generato dai server Adobe. Se non è possibile raggiungere i server Adobe al momento della generazione, l’ID viene generato utilizzando CFUUID di Apple. Il valore viene generato al primo avvio e memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell’app, viene salvato e ripristinato durante il processo standard di backup dell’applicazione e viene rimosso quando l’app viene disinstallata.
 
    >[!TIP]
    >
@@ -602,11 +602,11 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
       ```
 
       * Parametro: `traits`
-         * Tipo: Oggetto
+         * Tipo: oggetto
          * Dizionario delle caratteristiche per questo utente.
       * Parametro: `callback`
          * Tipo: function(profile)
-         * Profilo restituito da  Audience Manager nel parametro per la funzione di callback.
+         * Il profilo restituito da Audience Manager nel parametro per la funzione di callback.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
@@ -660,7 +660,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
 
 * **visitorSyncIdentifiers**
 
-   Oltre all&#39;ID Experience Cloud , puoi impostare altri ID cliente da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
+   Oltre a Experience Cloud ID, puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
