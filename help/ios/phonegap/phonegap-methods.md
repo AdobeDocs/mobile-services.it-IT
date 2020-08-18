@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Metodi del plug-in PhoneGap
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Metodi del plug-in PhoneGap{#phonegap-plug-in-methods}
+# Metodi del plug-in PhoneGap {#phonegap-plug-in-methods}
 
 Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire diverse attività.
 
@@ -43,7 +43,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
          getPrivacyStatus(function (value){myTempVal = value;},function(){myTempVal = null;});
          ```
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    Imposta lo stato di privacy per l&#39;utente corrente su `status`. Puoi impostare uno dei valori seguenti:
    * `ADB.optedIn`: gli hit vengono inviati immediatamente.
@@ -90,7 +90,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackingIdentifier**
 
-   Restituisce l&#39;identificatore visitatore generato automaticamente. Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale dell’app e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso quando l&#39;app viene disinstallata.
+   Restituisce l&#39;identificatore visitatore generato automaticamente. Si tratta di un ID visitatore univoco specifico per l’app, generato all’avvio iniziale dell’app e quindi memorizzato e utilizzato da quel momento in poi. L’ID viene mantenuto nei successivi aggiornamenti dell’app e rimosso quando l’app viene disinstallata.
 
    >[!TIP]
    >
@@ -325,7 +325,7 @@ Nei file `html` in cui desideri usare il tracciamento, aggiungi quanto segue al 
 
 * **trackActionFromBackground**
 
-   Monitora un&#39;azione che si è verificata in background. In questo modo gli eventi del ciclo di vita non vengono attivati in determinati scenari.
+   Traccia un’azione che si è verificata nel background. In questo modo gli eventi del ciclo di vita non vengono attivati in determinati scenari.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
