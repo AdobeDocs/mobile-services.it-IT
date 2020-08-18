@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
-# Risoluzione dei problemi dei messaggi in-app{#troubleshooting-in-app-messaging}
+# Risoluzione dei problemi dei messaggi in-app {#troubleshooting-in-app-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 
@@ -36,7 +36,7 @@ Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissi
 
 ## Il messaggio è attivo?
 
-Nella vista a elenco della pagina Gestisci messaggio in-app, nella colonna Stato, verifica che sia attivo.
+Verifica che sia attivo controllando la visualizzazione elenco della pagina Gestisci messaggi in-app, nella colonna Stato.
 
 ## Osserva le impostazioni *mostra una volta*, *mostra sempre*, *mostra offline* nella scheda Pubblico.
 
@@ -61,7 +61,7 @@ Se l&#39;app è stata riavviata entro il periodo di timeout della sessione del c
 
 ## La mia immagine non rientra esattamente nello spazio disponibile nel modello.
 
-Il modello a schermo intero per i messaggi in-app supporta la visualizzazione di un&#39;immagine da un server remoto (URL immagine) o dal pacchetto dell&#39;app (immagine nel pacchetto). L&#39;immagine deve essere in un formato grafico standard, ad esempio JPG, GIF o PNG.
+Il modello a schermo intero per i messaggi in-app supporta la visualizzazione di un’immagine da un server remoto (URL immagine) o dal pacchetto dell’app (immagine nel pacchetto). L&#39;immagine deve essere in un formato grafico standard, ad esempio JPG, GIF o PNG.
 
 Poiché gli schermi dei dispositivi hanno dimensioni diverse, è probabile che l&#39;immagine non rientri perfettamente nello spazio disponibile nel modello. Nel modello viene data precedenza al centro dell&#39;immagine; se questa non rientra completamente, i lati vengono ritagliati (per le immagini in verticale) o sfumati (per le immagini in orizzontale).
 
@@ -71,13 +71,13 @@ Regole di posizionamento e dimensionamento per ciascun orientamento:
    * Altezza di 195 pixel per telefoni
    * Altezza di 529 pixel per tablet
    * Centrata se la larghezza dell’immagine è inferiore alla larghezza del dispositivo.
-   * Ritagliato se la larghezza dell’immagine è maggiore della larghezza del dispositivo.
+   * Ritagliata se la larghezza dell’immagine è maggiore della larghezza del dispositivo.
 
 * **Orizzontale**:
-   * L&#39;immagine viene ridimensionata al 100% dell&#39;altezza del dispositivo.
+   * L’immagine viene ridimensionata al 100% dell’altezza del dispositivo.
    * La larghezza è pari al 75% del dispositivo, con una dissolvenza a destra.
 
-In caso di problemi con il modello a schermo intero, potete scaricare e utilizzare il modello HTML personalizzato. Questo modello offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
+In caso di problemi con il modello a schermo intero, puoi scaricare e utilizzare il modello HTML personalizzato. Questo modello offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
 
 ## I messaggi in-app su un iPhone X non vengono visualizzati in modalità a schermo intero.
 
@@ -89,7 +89,7 @@ Per visualizzare i messaggi in-app in modalità a schermo intero su un iPhone X:
    <meta name="viewport" content="viewport-fit=cover">
    ```
 
-1. Configurate la spaziatura appropriata nel CSS per l&#39;elemento dell&#39;interfaccia utente principale, ad esempio:
+1. Configura una spaziatura interna appropriata nel CSS per l’elemento dell’interfaccia utente principale, ad esempio:
 
    ```html
     topelement {
