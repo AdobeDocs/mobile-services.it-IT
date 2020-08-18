@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Aggiungere una nuova app
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '710'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Aggiungi una nuova app{#add-a-new-app}
+# Aggiungi una nuova app {#add-a-new-app}
 
 Puoi usare queste informazioni per: creare una nuova app e configurarne le metriche chiave; configurare le opzioni SDK per Adobe Analytics e Adobe Audience Manager; configurare le opzioni di acquisizione e del servizio ID; scaricare il file di configurazione, gli SDK e gli strumenti per sviluppatori e tester.
 
@@ -78,7 +78,7 @@ Per poter configurare un’app, devi prima aggiungerla nell’interfaccia utente
 
       * **[!UICONTROL Standard]**
 
-         Per la maggior parte dei rapporti puoi lasciare selezionata l’opzione **[!UICONTROL Standard}**.
+         Per la maggior parte dei rapporti puoi lasciare selezionata l’opzione **[!UICONTROL Standard]**.
 
       * **[!UICONTROL Pubblicazione]**
 
