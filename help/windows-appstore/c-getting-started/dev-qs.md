@@ -1,86 +1,89 @@
 ---
-description: nulle
-seo-description: nulle
-seo-title: Developer quick start
+description: 'null'
+seo-description: 'null'
+seo-title: Guida rapida per sviluppatori
 solution: Marketing Cloud,Analytics
-title: Developer quick start
-topic: Sviluppatore e implementazione
+title: Guida rapida per sviluppatori
+topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 2%
 
 ---
 
 
-# Developer quick start {#developer-quick-start}
+# Guida rapida per sviluppatori {#developer-quick-start}
 
-Per implementare l’SDK è necessario Visual Studio 2013 o versione successiva.
+Per implementare l’SDK è necessario Visual Studio 2013 o successivo.
 
-## Ottenere l’SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
+## Scaricare l&#39;SDK  {#section_99FE1A17A36D4A2C943939023CF6265C}
 
-Una volta estratto il [download dell’SDK](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases), disporrai di una cartella separata per ogni architettura e combinazione di piattaforme supportata. Disporrai anche del file `ADBMobileConfig.json` che viene spiegato più avanti in questa guida.
+Dopo aver decompresso il download [dell&#39;](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)SDK, avrai una cartella separata per ogni combinazione di architettura e piattaforma supportata. Avrete anche un `ADBMobileConfig.json` file che verrà illustrato più avanti in questa guida.
 
-## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Selezionate la versione corretta {#section_E53C5AA7D5474824A89BB32C003865A1}
 
-Different `.dll`/ `.winmd` files are provided for each target platform (Windows 8.1, Windows Phone 8.1), and supported architecture (x86, x64, ARM). I file sono separati in una struttura di cartelle come la seguente:
+Vengono forniti `.dll`/ `.winmd` file diversi per ciascuna piattaforma di destinazione (Windows 8.1, Windows Phone 8.1) e architetture supportate (x86, x64, ARM). I file sono separati in una struttura di cartelle come segue:
 
 ![](assets/folder-structure.png)
 
 >[!IMPORTANT]
 >
->The version of `ADBMobile.winmd` does not reflect the version of the library. The `.winmd` file contains metadata only, and as such will have a version number of `255.255.255.255` which is accepted behavior according to Microsoft (see [How do I add assembly information for a WinRT C++ / CX component dll?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)). To check the version of the library you are using, check the version of the underlying `ADBMobile.dll` file.
+>La versione di `ADBMobile.winmd` non riflette la versione della libreria. Il `.winmd` file contiene solo i metadati, e come tale avrà un numero di versione di `255.255.255.255` cui è accettato il comportamento secondo Microsoft (vedere [Come si aggiungono le informazioni di assembly per una dll componente WinRT C++ / CX?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)). Per verificare la versione della libreria in uso, controllate la versione del `ADBMobile.dll` file sottostante.
 
-## Syntax differences {#section_A02DE120B6D240F5AFFE7509755C4F14}
+## Differenze di sintassi {#section_A02DE120B6D240F5AFFE7509755C4F14}
 
-La libreria Windows 8.1 Universal App Store può essere utilizzata in vari linguaggi di programmazione. Gli esempi riportati in questa guida sono in WinJS (JavaScript) e potrebbero richiedere delle modifiche se utilizzi un linguaggio diverso. Ricorda che quando utilizzi metodi winmd da WinJS (JavaScript), in tutti i metodi la prima lettera viene automaticamente impostata come minuscola.
+La libreria Windows 8.1 Universal App Store può essere utilizzata in diversi linguaggi di programmazione. Gli esempi contenuti in questa guida sono in WinJS (JavaScript) e potrebbero dover essere modificati se si utilizza un linguaggio diverso. Tenere presente che quando si utilizzano metodi winmd da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
-La differenza principale tra le implementazioni è la struttura dei dati utilizzata per i dati contestuali.
+La differenza principale tra le implementazioni è la struttura dati utilizzata per i dati contestuali.
 
-Additionally, when using the SDK in a WinJS project, use an empty string ( `""` or `''`) instead of `null` for empty string values.
+Inoltre, quando utilizzi l’SDK in un progetto WinJS, usa una stringa vuota ( `""` o `''`) invece di `null` valori stringa vuoti.
 
-## Add the library and config file to your project - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## Aggiungere la libreria e il file di configurazione al progetto - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
-1. Avvia Visual Studio e apri la soluzione.
-1. In **Esplora soluzioni**, fai clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e seleziona **[!UIUCONTROL Aggiungi riferimento]**.
+1. Avviare Visual Studio e aprire la soluzione.
+1. In Esplora **soluzioni**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UIUCONTROL Aggiungi riferimento]**.
 
-1. Select the correct version of the library and browse to the associated `ADBMobile.winmd` file.
+1. Selezionate la versione corretta della libreria e individuate il `ADBMobile.winmd` file associato.
 
    Per ulteriori informazioni, consulta la sezione *Selezionare la versione* corretta riportata di seguito.
 
 1. Fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Verify that `ADBMobile.winmd` is selected in the **[!UICONTROL Reference Manager]** window and click **[!UICONTROL OK]**.
+1. Verificare che `ADBMobile.winmd` sia selezionato nella finestra Gestione **** riferimenti e fare clic su **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Quando aggiungete un riferimento a un'app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
+   >Quando aggiungete un riferimento a un&#39;app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
 
-1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
+1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
 
    Ignora questo passaggio se hai anche un progetto C++ nella soluzione.
 
 1. Nella scheda **Windows** a sinistra, selezionate **[!UICONTROL Estensioni]**, quindi selezionate e aggiungete **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]**.
 
-1. Aggiungi la riga seguente alla classe:
+1. Aggiungete la riga seguente alla classe:
 
    ```
    using ADBMobile;
    ```
 
-1. Right-click you your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL Existing Item]**.
+1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > Elemento **** esistente.
 
 1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
 
-1. Right-click the `ADBMobileConfig.json` file in your solution and select **[!UICONTROL Properties]**.
+1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
 
-1. Cambia **[!UICONTROL Operazione di generazione]** in **[!UICONTROL Contenuto]**.
+1. Cambia Azione **[!UICONTROL di]** compilazione in **[!UICONTROL Contenuto]**.
 
 ## Add the library and config file to your project - C++ {#section_A95C1D18F6144F37ADC8F51590F3983E}
 
-1. Avvia Visual Studio e apri la soluzione.
-1. In the **[!UICONTROL Solution Explorer]**, right-click your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL References]**.
+1. Avviare Visual Studio e aprire la soluzione.
+1. In Esplora **[!UICONTROL soluzioni]**, fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > **[!UICONTROL Riferimenti]**.
 
-1. Select the correct version of the library and then add a reference to the associated `ADBMobile.winmd` file.
+1. Selezionate la versione corretta della libreria, quindi aggiungete un riferimento al `ADBMobile.winmd` file associato.
 
    Per ulteriori informazioni, consultate la sezione *Selezionare la versione* corretta riportata di seguito.
 
@@ -90,60 +93,60 @@ Additionally, when using the SDK in a WinJS project, use an empty string ( `""` 
 
    >[!TIP]
    >
-   >Quando aggiungete un riferimento a un'app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
+   >Quando aggiungete un riferimento a un&#39;app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
 
-1. Aggiungi la riga seguente alla classe:
+1. Aggiungete la riga seguente alla classe:
 
    ```
    using namespace ADMS::Measurement;
    ```
 
-1. Right-click you your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL Existing Item]**.
+1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > Elemento **** esistente.
 
 1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
 
-1. Right-click the `ADBMobileConfig.json` file in your solution and select **[!UICONTROL Properties]**.
+1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
 
-1. On the **[!UICONTROL General]** tab, change **[!UICONTROL Content]** to **[!UICONTROL Yes]**, and click **[!UICONTROL OK]**.
+1. Nella scheda **[!UICONTROL Generale]** , modificate **[!UICONTROL Contenuto]** in **[!UICONTROL Sì]** e fate clic su **[!UICONTROL OK]**.
 
 ## Add the library and config file to your project - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
 
-1. Avvia Visual Studio e apri la soluzione.
-1. In the **Solution Explorer**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference**.
+1. Avviare Visual Studio e aprire la soluzione.
+1. In Esplora **soluzioni**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
 
-   For more information, see Select the Correct Version section below.**
+   Per ulteriori informazioni, consultate *Selezionare la sezione Versione* corretta di seguito.
 
-1. Select the correct version of the library and then browse to the associated `ADBMobile.winmd` file.
+1. Selezionate la versione corretta della libreria, quindi individuate il `ADBMobile.winmd` file associato.
 
 1. Fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Verifica che `ADBMobile.winmd`**sia selezionato nella finestra[!UICONTROL Gestione riferimenti]** e fai clic su **[!UICONTROL OK]**.
+1. Verificare che `ADBMobile.winmd` sia selezionato nella finestra Gestione **** riferimenti e fare clic su **[!UICONTROL OK]**.
 
    >[!TIP]
    >
-   >Quando aggiungete un riferimento a un'app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
+   >Quando aggiungete un riferimento a un&#39;app Windows Phone, per selezionare `ADBMobile.winmd`, modificate il filtro file predefinito da File **** componente a **Tutti i file**.
 
-1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
+1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
 
    Ignora questo passaggio se hai anche un progetto C++ nella soluzione.
 
 1. Nella scheda **[!UICONTROL Windows]** a sinistra, selezionate **[!UICONTROL Estensioni]** , quindi selezionate e aggiungete **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package for Windows]**.
 
-1. Right-click your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL Existing Item]**.
+1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > Elemento **** esistente.
 
 1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
 
-1. Right-click the `ADBMobileConfig.json]` file in your solution and select **[!UICONTROL Properties]**.
+1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json]` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
 
 1. Con Proprietà **** file selezionato, accertati che Azione **** pacchetto sia impostata su **[!UICONTROL Contenuto]**.
 
    Per i progetti JavaScript, il file è impostato su **[!UICONTROL Content]** per impostazione predefinita.
 
-## Update the ADBMobileConfig.json config file {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
+## Aggiornare il file di configurazione ADBMobileConfig.json {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
 
-The `ADBMobileConfig.json` file contains global SDK settings, and is located at your project root after you complete the steps in the *Add the Library and Config File to your Project* section. If your `ADBMobileConfig.json` file was not pre-configured by Adobe Mobile Services, you need to update a few values to get started.
+Il `ADBMobileConfig.json` file contiene impostazioni SDK globali e si trova nella directory principale del progetto dopo aver completato i passaggi descritti nella sezione *Aggiungi la libreria e il file di configurazione al progetto* . Se il `ADBMobileConfig.json` file non è stato preconfigurato da  Adobe Mobile Services, devi aggiornare alcuni valori per iniziare.
 
-Di seguito viene indicato un esempio del file `ADBMobileConfig.json`:
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
@@ -171,26 +174,26 @@ Di seguito viene indicato un esempio del file `ADBMobileConfig.json`:
 }
 ```
 
-Come minimo, aggiorna i seguenti valori delle soluzioni che utilizzi:
+Come minimo, aggiorna i seguenti valori per le soluzioni che utilizzi:
 
 * **Analytics**: `rsids` e `server`
 * **Target**: `clientCode`
-* **Gestione dell'audience**: `server`
+* **Gestione dell&#39;audience**: `server`
 
-For more details, see [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md).
+Per ulteriori dettagli, vedi [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md).
 
 ## Eseguire il debug {#section_3A10376A60394A15BEE483323E0CD4AA}
 
-Per attivare il debug per SDK, è necessario invocare `ADBMobile.Config.setDebugLogging(true);`.
+Per abilitare il debug per l’SDK, devi chiamare `ADBMobile.Config.setDebugLogging(true);`.
 
-Per le app C Sharp e JS, devi abilitare il debug del codice nativo eseguendo i passaggi seguenti (il debug del codice nativo è l'impostazione predefinita per le app C++):
+Per le app C Sharp e JS, è necessario abilitare il debug del codice nativo eseguendo i passaggi seguenti (il debug del codice nativo è l&#39;impostazione predefinita per le app C++):
 
-### C Sharp
+### C Nitido
 
-Right-click the project, select **[!UICONTROL Properties]** &gt; **[!UICONTROL Debug tab]**. Nel menu a discesa Debugger, selezionate Solo **** nativo.
+Fare clic con il pulsante destro del mouse sul progetto, selezionare **[!UICONTROL Proprietà]** > scheda **** Debug. Nel menu a discesa Debugger, selezionate Solo **** nativo.
 
 ### JS
 
-Right-click the project, select  **[!UICONTROL Properties]** &gt; **[!UICONTROL Configuration Properties]** &gt; **[!UICONTROL Debug tab]**. Cambia l’elenco a discesa del tipo di debug in **Native Only (Solo nativo)**.
+Fate clic con il pulsante destro del mouse sul progetto, selezionate **[!UICONTROL Proprietà]** > Proprietà **** configurazione > scheda **[!UICONTROL Debug]**. Cambia il tipo di debugger a discesa in Solo **** nativo.
 
-Fatto! Ora è tutto pronto per l’implementazione di Analytics, Target, e Audience Manager nella tua app Windows 8.1 Universal App Store.
+Tutto qui. Ora sei pronto per implementare Analytics, Target e Gestione dell&#39;audience nell&#39;app Windows 8.1 Universal App Store.
