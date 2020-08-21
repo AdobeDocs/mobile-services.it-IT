@@ -1,20 +1,23 @@
 ---
-description: Puoi usare Adobe SDK per raccogliere informazioni di identificazione personale (PII) e inviarle a un endpoint di terze parti.
-seo-description: Puoi usare Adobe SDK per raccogliere informazioni di identificazione personale (PII) e inviarle a un endpoint di terze parti.
+description: Puoi usare l’SDK del Adobe  per raccogliere informazioni personali (PII) e inviarle a un endpoint di terze parti.
+seo-description: Puoi usare l’SDK del Adobe  per raccogliere informazioni personali (PII) e inviarle a un endpoint di terze parti.
 seo-title: Postback PII
 title: Postback PII
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: ht
-source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 40%
 
 ---
 
 
 # Postback PII {#pii-postbacks}
 
-Puoi usare Adobe SDK per raccogliere informazioni di identificazione personale (PII) e inviarle a un endpoint di terze parti.
+Puoi usare l’SDK del Adobe  per raccogliere informazioni personali (PII) e inviarle a un endpoint di terze parti.
 
-Se desideri utilizzare Adobe SDK per raccogliere PII, invia una chiamata PII di tracciamento. Anche se l'utilizzo di questa chiamata abilita la raccolta di dati PII, l'SDK non invia automaticamente i dati a un endpoint Adobe. Un postback di tipo PII deve essere configurato con l'endpoint appropriato.
+Se desideri usare l’SDK del Adobe  per raccogliere PII, invia una chiamata PII di tracciamento. Anche se l’utilizzo di questa chiamata abilita la raccolta di dati PII, l’SDK non invia automaticamente i dati a un endpoint di Adobe . Un postback di tipo PII deve essere configurato con l&#39;endpoint appropriato.
 
 >[!TIP]
 >
