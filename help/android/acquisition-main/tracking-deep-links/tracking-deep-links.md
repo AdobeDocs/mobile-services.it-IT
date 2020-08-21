@@ -1,32 +1,35 @@
 ---
 description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
 seo-title: Tracciamento dei collegamenti profondi in Adobe Mobile Services
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Tracciamento dei collegamenti profondi (deep link)
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 88%
 
 ---
 
 
 # Tracciamento dei collegamenti profondi {#tracking-deep-links}
 
-Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
+Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l&#39;SDK di Adobe Mobile per Android.
 
 ## Tracciamento dei collegamenti profondi
 
-1. Aggiungi l'SDK al tuo progetto e implementa le metriche del ciclo di vita.
+1. Aggiungi l&#39;SDK al tuo progetto e implementa le metriche del ciclo di vita.
 
    Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto IntelliJ IDEA o Eclipse* in [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
-1. Registra l'applicazione per gestire gli URL.
+1. Registra l&#39;applicazione per gestire gli URL.
 
    Per ulteriori informazioni, consulta [URL](https://developer.android.com/training/basics/intents/filters.html).
-1. Passa l'attività con l'intento dei collegamenti profondi ad Adobe SDK tramite `collectLifecycleData`.
+1. Passa l&#39;attività con l&#39;intento dei collegamenti profondi ad Adobe SDK tramite `collectLifecycleData`.
 
    Ecco un esempio di tracciamento di un collegamento profondo:
 
@@ -42,9 +45,9 @@ Queste informazioni sono utili per tenere traccia dei collegamenti profondi (dee
    }
    ```
 
-L'SDK di Adobe Mobile può analizzare le coppie chiave-valore di dati che sono stati aggiunti alla fine di un collegamento diretto o universale, purché questo contenga una chiave con l'etichetta `a.deeplink.id` e un valore corrispondente non nullo e generato dall'utente. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all'hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la coppia chiave-valore `a.deeplink.id`.
+The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all&#39;hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la coppia chiave-valore `a.deeplink.id`.
 
-Inoltre, puoi anche aggiungere al collegamento diretto o universale una o più delle seguenti chiavi riservate (con valori generati dall'utente):
+Inoltre, puoi anche aggiungere al collegamento diretto o universale una o più delle seguenti chiavi riservate (con valori generati dall&#39;utente):
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
@@ -54,7 +57,7 @@ Inoltre, puoi anche aggiungere al collegamento diretto o universale una o più d
 
 Queste chiavi sono variabili premappate per il reporting in Adobe Analytics. Per maggiori informazioni sulle regole di mappatura ed elaborazione, vedi [Regole di elaborazione e dati contestuali](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-## Tracciamento dei collegamenti profondi differiti (per l'utilizzo con i collegamenti di marketing)
+## Tracciamento dei collegamenti profondi differiti (per l&#39;utilizzo con i collegamenti di marketing)
 
 Nel caso di un collegamento profondo differito, Adobe SDK aprirà un nuovo Intent con il collegamento profondo come dati di intento. Questo processo viene gestito come collegamento profondo esterno utilizzando il codice indicato in precedenza.
 
