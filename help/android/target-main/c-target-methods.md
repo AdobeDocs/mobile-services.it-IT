@@ -1,14 +1,17 @@
 ---
 description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 seo-title: Metodi di destinazione per Android
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Metodi di destinazione per Android
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `target`.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `target`.
 
 >[!TIP]
 >
@@ -61,7 +64,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **loadRequest**
 
-   Invia la richiesta al server di Target configurato e restituisce il valore della stringa dell'offerta generato in un blocco callback.
+   Invia la richiesta al server di Target configurato e restituisce il valore della stringa dell&#39;offerta generato in un blocco callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -77,7 +80,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **loadRequest**
 
-   Invia la richiesta al server di Target configurato e restituisce il valore della stringa dell'offerta generato in un blocco callback.
+   Invia la richiesta al server di Target configurato e restituisce il valore della stringa dell&#39;offerta generato in un blocco callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -104,7 +107,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **loadRequest**
 
-   Invia una richiesta al server di Target configurato e restituisce il valore della stringa dell'offerta generato in un blocco TargetCallback.
+   Invia una richiesta al server di Target configurato e restituisce il valore della stringa dell&#39;offerta generato in un blocco TargetCallback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -120,22 +123,22 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
       * **nome**
 
-         Nome dell'Mbox/posizione Target che desideri recuperare.
+         Nome dell&#39;Mbox/posizione Target che desideri recuperare.
 
          * **Tipo:** String
       * **defaultContent**
 
-         Valore restituito nella callback se il server di Target non è raggiungibile, oppure se l'utente non è qualificato per la campagna.
+         Valore restituito nella callback se il server di Target non è raggiungibile, oppure se l&#39;utente non è qualificato per la campagna.
 
          * **Tipo:** String
       * **profileParameters**
 
-         I valori in questo dizionario entrano nell'oggetto "profileParameters" nella richiesta a Target.
+         I valori in questo dizionario entrano nell&#39;oggetto &quot;profileParameters&quot; nella richiesta a Target.
 
          * **Tipo:** mappa `<String, Object>`
       * **orderParameters**
 
-         I valori in questo dizionario entrano nell'oggetto "order" nella richiesta a Target.
+         I valori in questo dizionario entrano nell&#39;oggetto &quot;order&quot; nella richiesta a Target.
 
          * **Tipo:** mappa `<String, Object>`
       * **mboxParameters**
@@ -145,12 +148,12 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
          * **Tipo:** mappa `<String, Object>`
       * **requestLocationParameters**
 
-         I valori in questo dizionario entrano nell'oggetto "requestLocation" nella richiesta a Target.
+         I valori in questo dizionario entrano nell&#39;oggetto &quot;requestLocation&quot; nella richiesta a Target.
 
          * **Tipo:** mappa `<String, Object>`
       * **callback**
 
-         Questo metodo sarà chiamato con il contenuto dell'offerta dal server di Target. Se il server di Target non è raggiungibile o se l'utente non si qualifica per la campagna, verrà restituito defaultContent.
+         Questo metodo sarà chiamato con il contenuto dell&#39;offerta dal server di Target. Se il server di Target non è raggiungibile o se l&#39;utente non si qualifica per la campagna, verrà restituito defaultContent.
 
          * **Tipo:** TargetCallback `<String>`
    * Di seguito è riportato un codice di esempio per questo metodo:
@@ -212,7 +215,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **clearCookies**
 
-   Elimina tutti i cookie di Target dall'applicazione.
+   Elimina tutti i cookie di Target dall&#39;applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -244,7 +247,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **getSessionID**
 
-   Restituisce l'ID della sessione.
+   Restituisce l&#39;ID della sessione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -260,7 +263,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **setThirdPartyID**
 
-   Imposta l'ID di terze parti.
+   Imposta l&#39;ID di terze parti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -276,7 +279,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 * **getThirdPartyID**
 
-   Restituisce l'ID di terze parti.
+   Restituisce l&#39;ID di terze parti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
