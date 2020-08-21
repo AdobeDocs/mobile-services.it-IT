@@ -1,32 +1,35 @@
 ---
-description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare opzioni avanzate quali quelle relative al payload e le opzioni personalizzate per i dispositivi iOS.'
-keywords: dispositivi mobili
-seo-description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare opzioni avanzate quali quelle relative al payload e le opzioni personalizzate per i dispositivi iOS.'
+description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Potete anche configurare opzioni avanzate, comprese le opzioni di payload e le opzioni personalizzate per i dispositivi iOS.'
+keywords: mobile
+seo-description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Potete anche configurare opzioni avanzate, comprese le opzioni di payload e le opzioni personalizzate per i dispositivi iOS.'
 seo-title: Esperienza Messaggio push
-solution: Experience Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Esperienza Messaggio push
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 82%
 
 ---
 
 
 # Esperienza: messaggio push {#experience-push-message}
 
-Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare opzioni avanzate quali quelle relative al payload e le opzioni personalizzate per i dispositivi iOS.
+Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Potete anche configurare opzioni avanzate, comprese le opzioni di payload e le opzioni personalizzate per i dispositivi iOS.
 
 1. Nella pagina Pubblico per un nuovo messaggio push, fai clic su **[!UICONTROL Esperienza]**.
 
    ![schermata messaggio push esperienza](assets/experience-push-message.png)
 
 1. Specifica un nome per il messaggio.
-1. Compila i seguenti campi nella sezione **[!UICONTROL Messaggio]:**
+1. Compila i seguenti campi nella sezione **[!UICONTROL Messaggio]**:
 
    * **[!UICONTROL Contenuto]**
 
-      Specifica il testo del messaggio. Puoi immettere fino a 140 caratteri.
+      Specifica il testo del messaggio. È possibile specificare fino a un massimo di 140 caratteri.
 
    * **[!UICONTROL URL contenuto multimediale]**
 
@@ -54,19 +57,19 @@ Di seguito sono riportati i requisiti per l’invio di notifiche push potenziate
 * **Versioni supportate**
 
    Le notifiche push potenziate sono supportate nelle seguenti versioni:
-   * Android 4.1.0 o successivo
-   * iOS 10 o successivo
+   * Android 4.1.0 o versione successiva
+   * iOS 10 o versione successiva
 
       >[!IMPORTANT]
       >
       >Considerazioni da ricordare:
       >* I messaggi push potenziati inviati a versioni precedenti vengono comunque inviati, ma risulterà visibile solo il testo.
-      >* Al momento il supporto per gli orologi non è disponibile.
+      >* Al momento non c&#39;è supporto per gli orologi.
 
 
 * **Formati file**
 
-   Sono supportati i formati file seguenti:
+   Di seguito sono elencati i formati di file supportati:
    * Immagini: JPG e PNG
    * Animazioni (solo iOS): GIF
    * Video (solo iOS): MP4
@@ -74,7 +77,7 @@ Di seguito sono riportati i requisiti per l’invio di notifiche push potenziate
 * **Formati URL**
    * Solo HTTPS
 
-* **Dimensioni**
+* **Ridimensionamento**
    * Le immagini devono essere in formato 2:1, altrimenti verranno ritagliate.
 
 Per ulteriori informazioni sulla configurazione delle notifiche push potenziate, vedi:
@@ -104,7 +107,7 @@ Per configurare un messaggio push nella pagina Esperienza:
 
 1. (Facoltativo) Per verificare il layout del messaggio, fai clic sulle icone seguenti:
 
-   * **Riepilogo [!UICONTROL x}**
+   * **[!UICONTROL x Riepilogo]**
 
       Nasconde il riquadro di anteprima. Fai clic su ![Anteprima](assets/icon_preview.png) per visualizzare nuovamente il riquadro di anteprima.
 
@@ -126,10 +129,10 @@ Per configurare un messaggio push nella pagina Esperienza:
    Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggi precedente.
 
 1. (**Facoltativo**) Fai clic su **[!UICONTROL Prova]** per inviare in push il messaggio a dispositivi specifici a scopo di test.
-1. Seleziona il servizio e digita i token di push per almeno uno dei dispositivi ai quali vuoi inviare il messaggio push.
+1. Seleziona il servizio e digita i token push per almeno un dispositivo al quale vuoi inviare il messaggio push.
 
-   Per inviare il messaggio a più dispositivi, specifica i vari token in un elenco di voci separate da virgole.
+   Specificate i token in un elenco separato da virgole per inviare il messaggio push a più dispositivi.
 
-1. Configura le  le opzioni di pianificazione per il messaggio.
+1. Configura le opzioni di pianificazione per il messaggio.
 
    Per ulteriori informazioni, consulta [Pianificazione: messaggio push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
