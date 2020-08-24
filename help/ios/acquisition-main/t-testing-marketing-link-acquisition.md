@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Verifica dell'acquisizione da collegamenti marketing
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Le istruzioni seguenti sono utili per eseguire un ciclo completo per la verifica
 
    Seguono alcune informazioni su possibili errori:
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       (Impossibile recuperare la risposta del servizio di acquisizione) - Si è verificato un errore di rete.
 
@@ -85,7 +85,7 @@ Le istruzioni seguenti sono utili per eseguire un ciclo completo per la verifica
 
    * `Analytics - Acquisition referrer timed out`
 
-      (Timeout del referente acquisizione) - Impossibile ricevere la risposta entro l&#39;intervallo di tempo definito da `referrerTimeout`. Aumenta questo valore e riprova. Devi anche accertarti di aver aperto il collegamento di acquisizione prima di installare l’app e di utilizzare la stessa rete quando fai clic sull’URL e apri l’app.
+      (Timeout del referente acquisizione) - Impossibile ricevere la risposta entro l&#39;intervallo di tempo definito da `referrerTimeout`. Aumenta questo valore e riprova. Accertati inoltre di aver aperto il collegamento di acquisizione prima di installare l’app, e di utilizzare la stessa rete quando fai clic sull’URL e apri l’app.
 
 Considerazioni da ricordare:
 
