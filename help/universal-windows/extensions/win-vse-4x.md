@@ -7,7 +7,7 @@ title: Estensioni di Windows Visual Studio per  SDK 4.x per soluzioni di Experie
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Questa estensione fornisce un modo molto più semplice per aggiungere al progett
 
 1. Scarica l’SDK Windows Universal da [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Estrarre localmente il file scaricato.
-1. Fai doppio clic sul file **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsix]** per aprire il programma di installazione.
+1. Fai doppio clic sul file **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** per aprire il programma di installazione.
 1. Selezionate Posizione **** globale e installate la libreria.
 
 ## Aggiungere riferimenti al progetto {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
