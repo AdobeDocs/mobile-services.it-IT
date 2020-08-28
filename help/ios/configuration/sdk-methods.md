@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Metodi di configurazione
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+translation-type: tm+mt
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 86%
 
 ---
 
@@ -20,11 +23,12 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
 * **setAppExtensionType**
 
-   Configura l&#39;impostazione SDK di Adobe Mobile per determinare quale tipo di estensione viene attualmente eseguito.
+   Configura l&#39;impostazione SDK di Mobile  Adobe per determinare il tipo di estensione attualmente in esecuzione.
 
    Imposta uno dei valori seguenti:
    * `ADBMobileAppExtensionTypeRegular` - l&#39;estensione è inclusa in un pacchetto con un&#39;app contenitore.
    * `ADBMobileAppExtensionTypeStandAlone` - l&#39;estensione non è inclusa in un pacchetto con un&#39;app contenitore.
+
    >[!TIP]
    >
    >Usa questo metodo **solo** se l&#39;app ha un&#39;estensione o se si tratta di un&#39;estensione autonoma. Per ulteriori informazioni, consulta *ADBMobileAppExtensionType*, di seguito.
@@ -80,7 +84,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
       ADBMobilePrivacyStatus privacyStatus = [ADBMobileprivacyStatus];
       ```
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    Imposta lo stato di privacy per l&#39;utente corrente su `status`.
 
@@ -120,7 +124,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
 * **trackingIdentifier**
 
-   Restituisce l&#39;identificatore visitatore generato automaticamente. Si tratta di un ID visitatore univoco specifico per l&#39;app, generato dai server Adobe. Se i server Adobe non sono accessibili al momento della generazione di questo ID, verrà utilizzato l&#39;identificatore CFUUID di Apple. Il valore viene generato al primo avvio, memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app, viene salvato e ripristinato durante il processo standard di backup dell&#39;applicazione, e viene rimosso con la disinstallazione dell&#39;app.
+   Restituisce l&#39;identificatore visitatore generato automaticamente. Si tratta di un ID visitatore univoco specifico per l’app, generato dai server Adobe. Se  server  Adobi non è possibile raggiungere al momento della generazione, l’ID viene generato utilizzando l’identificatore CFUUID di Apple. Il valore viene generato all’avvio iniziale e memorizzato e utilizzato da tale momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app, viene salvato e ripristinato durante il processo standard di backup dell&#39;applicazione e viene rimosso alla disinstallazione.
 
    >[!TIP]
    >
@@ -306,7 +310,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
 * **overrideConfigPath**
 
-   Consente di caricare un diverso file di configurazione ADBMobile JSON all&#39;avvio dell&#39;applicazione. La diversa configurazione viene utilizzata fino alla chiusura dell&#39;applicazione.
+   Consente di caricare un diverso file di configurazione ADBMobile JSON all’avvio dell’applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
 
    >[!IMPORTANT]
    >
@@ -349,12 +353,15 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
 * **setAdvertisingIdentifier**
 
-   Imposta l&#39;identificatore IDFA nell&#39;SDK. Se l&#39;identificatore IDFA è stato impostato nell&#39;SDK sarà inviato nel ciclo di vita. È inoltre possibile accedervi in Segnali (Postback).
+   Imposta l’identificatore IDFA nell’SDK. Se l’identificatore IDFA è stato impostato nell’SDK, l’identificatore IDFA verrà inviato nel ciclo di vita. È inoltre possibile accedervi in Segnali (Postback).
 
    >[!TIP]
    >
    >Recupera l&#39;identificatore IDFA dall&#39;API di Apple **solo** se utilizzi un servizio di annunci. Se recuperi l&#39;identificatore IDFA e non lo utilizzi correttamente, l&#39;app potrebbe venire rifiutata.
-
+   >
+   >Se l’applicazione richiede l’identificatore IDFA, consultate la documentazione [di](https://developer.apple.com/documentation/adsupport) Apple per richiedere le preferenze dell’utente in Ad Tracking e per ottenere il valore IDFA.
+   >
+   >Per iOS 14+, è necessario implementare il nuovo framework [Trasparenza tracciamento](https://developer.apple.com/documentation/apptrackingtransparency) app per recuperare correttamente il valore IDFA.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```objective-c
@@ -364,7 +371,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
