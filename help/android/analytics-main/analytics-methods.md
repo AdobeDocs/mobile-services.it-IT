@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Metodi di Analytics
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Elenco dei metodi di Adobe Analytics forniti dalla libreria Android.
 
-L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione; ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `analytics`.
 
 Ciascuno dei seguenti metodi è utilizzato per inviare dati alla suite di rapporti di Adobe Analytics:
 
