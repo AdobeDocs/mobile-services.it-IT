@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Acquisizione da app mobile
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 >[!IMPORTANT]
 >
->To use Acquisition, you **must** have SDK version 4.1 or later.
+>Per usare la funzione Acquisizione, **è necessario** disporre della versione SDK 4.1 o successiva.
 
-I collegamenti di acquisizione devono essere creati in  Adobe Mobile Services. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
+I collegamenti di acquisizione devono essere creati in Adobe Mobile Services. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
 **Nelle versioni SDK 4.18.0 e successive**:
 
