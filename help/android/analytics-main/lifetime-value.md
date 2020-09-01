@@ -1,23 +1,23 @@
 ---
-description: Il valore del ciclo di vita consente di misurare e impostare come destinazione un valore del ciclo di vita per ciascun utente Android. Il valore può essere utilizzato per memorizzare acquisti, visualizzazioni di annunci, completamenti di video, condivisioni social, caricamenti di foto e così via.
-seo-description: Il valore del ciclo di vita consente di misurare e impostare come destinazione un valore del ciclo di vita per ciascun utente Android. Il valore può essere utilizzato per memorizzare acquisti, visualizzazioni di annunci, completamenti di video, condivisioni social, caricamenti di foto e così via.
+description: Il valore “lifetime” permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto e così via, nel corso del ciclo di vita.
+seo-description: Il valore “lifetime” permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto e così via, nel corso del ciclo di vita.
 seo-title: Valore "lifetime" del ciclo di vita del visitatore
 solution: Marketing Cloud,Analytics
-title: Valore "lifetime" del ciclo di vita del visitatore
+title: Valore “lifetime” del ciclo di vita del visitatore
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
 # Valore &quot;lifetime&quot; del ciclo di vita del visitatore {#visitor-lifetime-value}
 
-Il valore del ciclo di vita consente di misurare e impostare come destinazione un valore del ciclo di vita per ciascun utente Android. Il valore può essere utilizzato per memorizzare acquisti, visualizzazioni di annunci, completamenti di video, condivisioni social, caricamenti di foto e così via.
+Il valore “lifetime” permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto e così via, nel corso del ciclo di vita.
 
 Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale valore viene aggiunto a quello esistente. Il valore &quot;lifetime&quot; del ciclo di vita è memorizzato nel dispositivo e può essere recuperato in qualsiasi momento con una chiamata `lifetimeValue`.
 
