@@ -1,17 +1,17 @@
 ---
-description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+description: Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 keywords: android;library;mobile;sdk
 seo-description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 seo-title: Verifica dell'acquisizione da collegamenti marketing
 solution: Marketing Cloud,Analytics
-title: Verifica dell'acquisizione da collegamenti marketing
+title: Verifica dell’acquisizione da collegamenti marketing
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 
-Se la tua app mobile non è ancora disponibile in Google Play, durante la creazione del collegamento di marketing puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull’app alla quale il server di acquisizione ti reindirizzerà, dopo aver fatto clic sul collegamento di acquisizione, e non sulla capacità di verificare il collegamento di acquisizione. I parametri della stringa di query vengono passati a Google Play Store, che vengono passati all&#39;app al momento dell&#39;installazione come parte di una trasmissione della campagna. Il test di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se la tua app mobile non è ancora disponibile in Google Play, durante la creazione del collegamento di marketing puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull’app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store, e quindi passati all’app al momento dell’installazione come parte di una trasmissione della campagna. Il test del ciclo completo di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
 L’app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]** tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell&#39;app.
 
@@ -73,7 +73,7 @@ L’app deve essere stata appena installata oppure i dati devono essere eliminat
    | Impostazione | Valore |
    |--- |--- |
    | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`* dovrebbe corrispondere a `appid` nel collegamento di acquisizione. |
-   | analytics | A scopo di test, impostate il timeout del referente in modo da concedere un tempo sufficiente (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l’impostazione di timeout originale dopo il test. |
+   | analytics | A scopo di test, imposta il timeout del referente in modo da concedere un tempo sufficiente (almeno 60 secondi) per inviare manualmente la trasmissione. Dopo il test potrai ripristinare l’impostazione di timeout originale. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l&#39;app.
 1. Avvia ADB Shell, quindi avvia l&#39;applicazione sul dispositivo.
@@ -108,7 +108,7 @@ L’app deve essere stata appena installata oppure i dati devono essere eliminat
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   Se questi registri non compaiono, verifica di aver completato i passaggi da 6 a 10.
+   In caso contrario, assicurati di aver completato i passaggi 6 e 10.
 
    La tabella seguente contiene informazioni aggiuntive sui possibili errori:
 
@@ -118,11 +118,11 @@ L’app deve essere stata appena installata oppure i dati devono essere eliminat
    | Analytics - Unable to parse response (`a JSON Response`). | La stringa JSON è formata in modo errato. |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | La risposta non contiene il parametro `contextData`. |
    | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` non è incluso in contextData. |
-   | Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l’app. |
+   | Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Assicurati anche di aver aperto il collegamento di acquisizione prima di installare l’app. |
 
 Considerazioni da ricordare:
 
-* Gli hit inviati dall’app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l’attribuzione di acquisizione.
+* Gli hit inviati dall’app possono essere monitorati mediante strumenti di monitoraggio HTTP per verificare l’attribuzione di acquisizione.
 * Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, consulta [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
 * Puoi usare lo strumento Java `acquisitionTest.jar` fornito per ottenere l&#39;ID univoco e il riferimento di installazione della trasmissione, per ottenere quindi le informazioni nei passaggi 3-10.
 
@@ -131,9 +131,9 @@ Considerazioni da ricordare:
 Per installare lo strumento Java:
 
 1. Scarica il file [`acquistionTester.zip`](../assets/acquisitionTester.zip).
-1. Estraete il file .jar.
+1. Estrai il file .jar.
 
-   Potete eseguire il file .jar sulla riga di comando.
+   Puoi eseguire il file .jar sulla riga di comando.
 
 Ad esempio:
 
