@@ -1,5 +1,5 @@
 ---
-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
+description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l’SDK di Adobe Mobile per Android.
 keywords: android;library;mobile;sdk
 seo-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
 seo-title: Tracciamento dei collegamenti profondi in Adobe Mobile Services
@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Tracciamento dei collegamenti profondi (deep link)
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Queste informazioni sono utili per tenere traccia dei collegamenti profondi (dee
    }
    ```
 
-The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all&#39;hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la coppia chiave-valore `a.deeplink.id`.
+L’SDK di Adobe Mobile può analizzare le coppie chiave-valore di dati che sono stati aggiunti alla fine di un collegamento diretto o universale, purché questo contenga una chiave con l’etichetta `a.deeplink.id` e un valore corrispondente non nullo e generato dall’utente. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all’hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la coppia chiave-valore `a.deeplink.id`.
 
 Inoltre, puoi anche aggiungere al collegamento diretto o universale una o più delle seguenti chiavi riservate (con valori generati dall&#39;utente):
 
