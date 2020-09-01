@@ -2,21 +2,21 @@
 description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 keywords: android;library;mobile;sdk
 seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
-seo-title: Metodi di destinazione per Android
+seo-title: Metodi di Target per Android
 solution: Marketing Cloud,Analytics
-title: Metodi di destinazione per Android
+title: Metodi di Target per Android
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
 ---
 
 
-# Metodi di destinazione per Android{#target-methods}
+# Metodi di Target per Android {#target-methods}
 
 Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 
