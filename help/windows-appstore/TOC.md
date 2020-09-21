@@ -1,34 +1,38 @@
 ---
 product: mobile-services
-audience: utente finale
+audience: end-user
 user-guide-title: Mobile Services Windows 8.1 Universal App Store SDK
+breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 47%
 
 ---
 
 
 # Mobile Services Windows 8.1 Universal App Store SDK {#windows-universal-appstore}
 
-+ [Windows 8.1 Universal App Store SDK 4.x per soluzioni Experience Cloud](overview.md)
++ [Windows 8.1 Universal App Store SDK 4.x per soluzioni di Experience Cloud](overview.md)
 + [Note sulla versione](release-notes.md)
-+ Get started {#getting-started-win-appstore}
-   + [Get started](c-getting-started/c-getting-started.md)
++ introduzione {#getting-started-win-appstore}
+   + [introduzione](c-getting-started/c-getting-started.md)
    + [Guida rapida per sviluppatori](c-getting-started/dev-qs.md)
 + Configurazione {#config-win-appstore}
-   + [Panoramica della configurazione](c-configuration/c-configuration.md)
+   + [Panoramica sulla configurazione](c-configuration/c-configuration.md)
    + [Configurazione ADBMobileConfig.json](c-configuration/c.json.md)
    + [Metodi SDK](c-configuration/methods.md)
 + Analytics {#analytics-win-appstore}
    + [Analytics](analytics/analytics.md)
-   + Products variable {#products-variable}
-      + [Variabile "products"](analytics/products/products.md)
-      + [Products variable with merchandising eVars and product-specific events](analytics/products/products-variable-evars-events.md)
+   + Variabile dei prodotti {#products-variable}
+      + [Variabile dei prodotti](analytics/products/products.md)
+      + [Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti](analytics/products/products-variable-evars-events.md)
    + [Serializzazione degli eventi](analytics/event-serialization.md)
    + [Analisi del video](analytics/video-qs.md)
-   + [Metodi di analisi](analytics/analytics-methods.md)
+   + [Metodi di Analytics](analytics/analytics-methods.md)
 + [Metodi di Target](target/target-methods.md)
-+ [Audience Manager methods](audiencemgmt/audience-manager-methods.md)
-+ [Lifecycle metrics](metrics.md)
-+ [Estensioni di Windows Visual Studio per l’SDK 4.x per soluzioni Experience Cloud](extensions/win-vse-4x.md)
++ [Metodi di Audience Manager](audiencemgmt/audience-manager-methods.md)
++ [Metriche del ciclo di vita](metrics.md)
++ [Estensioni di Windows Visual Studio per  SDK 4.x per soluzioni di Experience Cloud](extensions/win-vse-4x.md)
 + [Migrazione](migration-v3.md)
