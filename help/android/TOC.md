@@ -1,14 +1,18 @@
 ---
 product: mobile-services
-audience: utente finale
+audience: end-user
 user-guide-title: Guida Android di Mobile Services
-translation-type: ht
-source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
+breadcrumb-title: Android Guide
+translation-type: tm+mt
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 97%
 
 ---
 
 
-# Guida Android di Mobile Services{#android}
+# Mobile Services Android Guide{#android}
 
 + [Android SDK 4.x per soluzioni Experience Cloud](overview.md)
 + [Note sulla versione](rel-notes.md)
@@ -27,11 +31,11 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
 + [Metriche del ciclo di vita](metrics.md)
 + Analytics{#analytics-android}
    + [Panoramica di Analytics](analytics-main/analytics-main.md)
-   + [Tracciare gli stati dell'app](analytics-main/states.md)
-   + [Tracciare le azioni eseguite nell'app](analytics-main/actions.md)
-   + [Tracciare gli arresti anomali dell'app](analytics-main/crashes.md)
+   + [Tracciare gli stati dell&#39;app](analytics-main/states.md)
+   + [Tracciare le azioni eseguite nell&#39;app](analytics-main/actions.md)
+   + [Tracciare gli arresti anomali dell&#39;app](analytics-main/crashes.md)
    + [Azioni temporizzate](analytics-main/timed-actions.md)
-   + [Valore "lifetime" del ciclo di vita del visitatore](analytics-main/lifetime-value.md)
+   + [Valore &quot;lifetime&quot; del ciclo di vita del visitatore](analytics-main/lifetime-value.md)
    + Variabile dei prodotti{#products-variable}
       + [Variabile dei prodotti](analytics-main/products/products.md)
       + [Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti](analytics-main/products/products-variable-evars-events.md)
@@ -49,9 +53,9 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + Tracciamento dei collegamenti profondi{#tracking-deep-links}
       + [Tracciamento dei collegamenti profondi](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
-   + [Verifica dell'acquisizione da collegamenti marketing](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [Verifica dell'acquisizione V3](acquisition-main/t-testing-version-3-acquisition.md)
-   + [Verifica dell'acquisizione legacy](acquisition-main/t-testing-acquisition.md)
+   + [Verifica dell&#39;acquisizione da collegamenti marketing](acquisition-main/t-testing-marketing-link-acquisition.md)
+   + [Verifica dell&#39;acquisizione V3](acquisition-main/t-testing-version-3-acquisition.md)
+   + [Verifica dell&#39;acquisizione legacy](acquisition-main/t-testing-acquisition.md)
    + [Risoluzione dei problemi del test di acquisizione](acquisition-main/troubleshoot-acquisition-testing.md)
 + Messaggistica{#messaging-android}
    + [Panoramica sulla messaggistica](messaging-main/messaging-main-android.md)
@@ -86,7 +90,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Panoramica su Wearable](wearables/wearables.md)
    + [Android Wearable: guida introduttiva](wearables/android-wearable.md)
    + [Wearable Android: note aggiuntive](wearables/c-android-wearables--additional-notes.md)
-+ Guida di riferimento dell'SDK per Android{#sdk-reference-android}
++ Guida di riferimento dell&#39;SDK per Android{#sdk-reference-android}
    + [Panoramica di riferimento dell’SDK per Android](/help/android/reference/reference.md)
    + [ID delle app](/help/android/reference/app-ids.md)
    + [Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili](/help/android/reference/hybrid-app.md)
@@ -94,7 +98,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
 + Privacy e Regolamento generale sulla protezione dei dati (RGPD){#gdpr-privacy-android}
    + [Panoramica sulla privacy e sul RGPD](c-mob-privacy-gdpr-android/c-mob-privacy-gdpr-android.md)
    + [Recupero di ID memorizzati](c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
-   + [Impostazione dello stato di consenso o diniego dell'utente](c-mob-privacy-gdpr-android/privacy.md)
+   + [Impostazione dello stato di consenso o diniego dell&#39;utente](c-mob-privacy-gdpr-android/privacy.md)
 + Plug-in PhoneGap{#phonegap-android}
    + [Panoramica del plug-in PhoneGap](phonegap/phonegap.md)
    + [Metodi del plug-in PhoneGap](phonegap/phonegap-methods.md)
