@@ -1,28 +1,31 @@
 ---
-description: List of Target methods provided by the Windows 8.1 Universal App Store library.
+description: Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
 seo-description: Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
 seo-title: Metodi di Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Target
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 42%
 
 ---
 
 
-# Target methods {#target-methods}
+# Metodi di Target {#target-methods}
 
-List of Target methods provided by the Windows 8.1 Universal App Store library.
+Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso "Target".
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Target&quot;.
 
 [Le metriche del ciclo di vita](/help/windows-appstore/metrics.md) sono inviate come parametri a ciascun caricamento Mbox.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
 ## Riferimento classe: TargetLocationRequest
 
@@ -34,9 +37,9 @@ property Platform::String ^defaultContent;
 property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^parameters;
 ```
 
-## Costanti stringa
+## Costanti di stringa
 
-This information helps you set keys for custom parameters.
+Queste informazioni sono utili per impostare le chiavi per i parametri personalizzati.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -89,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Crea un oggetto `TargetLocationRequest` con i parametri forniti.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -104,9 +107,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner", "default.png", null); 
       ```
 
-* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
+* **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Crea un oggetto `TargetLocationRequest` con i parametri forniti.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -123,7 +126,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies (winJS: clearCookies)**
 
-   Elimina i cookie di Target per l’applicazione sul dispositivo corrente.
+   Cancella i cookie di Target per l’applicazione sul dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -139,7 +142,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId (winJS: getPcId)**
 
-   Restituisce il cookie dell’ID del PC del dispositivo corrente.
+   Restituisce il cookie PC ID per il dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -155,7 +158,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId (winJS: getSessionId)**
 
-   Restituisce il cookie dell’ID sessione del dispositivo corrente.
+   Restituisce il cookie ID sessione per il dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
