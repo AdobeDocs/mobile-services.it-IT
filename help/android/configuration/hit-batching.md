@@ -1,21 +1,24 @@
 ---
 description: Con la gestione degli hit in batch, le applicazioni possono rimandare l'invio degli hit fino al superamento di un determinato numero di hit in coda.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Con la gestione degli hit in batch, le applicazioni possono rimandare l'invio degli hit fino al superamento di un determinato numero di hit in coda.
 seo-title: Gestione degli hit in batch
 solution: Experience Cloud,Analytics
 title: Gestione degli hit in batch
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 89%
 
 ---
 
 
 # Invio in batch di hit {#hit-batching}
 
-Con la gestione degli hit in batch, le applicazioni possono rimandare l'invio degli hit fino al superamento di un determinato numero di hit in coda.
+Con la gestione degli hit in batch, le applicazioni possono rimandare l&#39;invio degli hit fino al superamento di un determinato numero di hit in coda.
 
 >[!IMPORTANT]
 >
@@ -30,11 +33,11 @@ Per abilitare la gestione degli hit in batch, devi aggiornare il file `ADBMobile
 }
 ```
 
-Se imposti il valore su un numero maggiore di 0, l'SDK mette in coda il numero di hit pari al valore *`batchLimit`*. Una volta raggiunta questa soglia, vengono inviati tutti gli hit presenti nella coda.
+Se imposti il valore su un numero maggiore di 0, l&#39;SDK mette in coda il numero di hit pari al valore *`batchLimit`*. Una volta superata questa soglia, tutti gli hit nella coda vengono inviati.
 
-I metodi seguenti vengono usati insieme alla gestione degli hit in batch:
+I seguenti metodi vengono utilizzati con la gestione degli hit in batch:
 
 * `Analytics.getQueueSize` restituisce un `long` con il numero di hit attualmente presenti nella coda di invio in batch di hit.
 
-* `Analytics.sendQueuedHits` forza l'invio da parte della libreria di tutti gli hit nella coda, indipendentemente dal numero di hit attualmente presenti nella coda.
+* `Analytics.sendQueuedHits` forza l&#39;invio da parte della libreria di tutti gli hit nella coda, indipendentemente dal numero di hit attualmente presenti nella coda.
 * `Analytics.clearQueue` cancella tutti gli hit dalla coda senza inviarli.
