@@ -1,14 +1,17 @@
 ---
 description: Il rapporto di panoramica Posizione permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l’app viene utilizzata.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto di panoramica Posizione permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l’app viene utilizzata.
 seo-title: Panoramica (Posizione)
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Panoramica (Posizione)
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +34,7 @@ Questa visualizzazione fornisce, ad esempio, il rapporto di base con le suddivis
 
 ![](assets/location.png)
 
-Questo grafico sunburst è interattivo. Per modificare il periodo temporale, fai clic sull’icona **[!UICONTROL Calendario]** in alto a destra. Per visualizzare ulteriori informazioni, passa il cursore sopra una parte del grafico. Ad esempio, nell’illustrazione seguente, si possono vedere il numero totale e la percentuale di utenti che usano l’app negli Stati Uniti.
+Questo grafico sunburst è interattivo. Per modificare il periodo temporale, fai clic sull’icona **[!UICONTROL Calendario]** in alto a destra. Passa il cursore sopra una parte del grafico per visualizzare ulteriori informazioni. Ad esempio, nell’illustrazione seguente, si possono vedere il numero totale e la percentuale di utenti che usano l’app negli Stati Uniti.
 
 ![](assets/location_mouse.png)
 
@@ -45,7 +48,7 @@ Questa è la visualizzazione quando si seleziona **[!UICONTROL Punti di interess
 
 ![](assets/location_poi.png)
 
-Puoi fare clic su una sezione dell’anello per selezionare il pubblico su cui eseguire azioni quali ingrandire, nascondere dei tipi di pubblico, creare un messaggio in-app o un filtro fisso.
+Puoi fare clic su una sezione dell&#39;anello per selezionare il pubblico per il quale vuoi eseguire determinate azioni, ad esempio ingrandire la sezione, nascondere i tipi di pubblico, creare un messaggio in-app o un filtro fisso.
 
 ![](assets/location_aud.png)
 
