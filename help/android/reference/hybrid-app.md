@@ -4,10 +4,13 @@ seo-description: Se la tua app apre contenuto web per mobile, accertati che i vi
 seo-title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 solution: Experience Cloud,Analytics
 title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 85%
 
 ---
 
@@ -18,25 +21,25 @@ Se la tua app apre contenuto web per mobile, accertati che i visitatori non veng
 
 ## ID visitatore nelle app
 
-L'SDK per Android genera un ID visitatore univoco quando viene installata un'app. L'ID viene memorizzato nella memoria del dispositivo mobile, inviato a ogni hit e rimosso solo quando l'utente disinstalla l'app.
+L’SDK per Android genera un ID visitatore univoco quando viene installata un’app. L’ID viene memorizzato nella memoria del dispositivo mobile, inviato con ogni hit e rimosso solo quando l’utente disinstalla l’app.
 
 >[!TIP]
 >
->Gli ID visitatore dell'app restano memorizzati anche da un aggiornamento all'altro.
+>Gli ID visitatore dell&#39;app restano memorizzati anche da un aggiornamento all&#39;altro.
 
 ## ID visitatore nei contenuti web per dispositivi mobili
 
-Le implementazioni web per mobile tipiche usano lo stesso codice standard per Analytics `s_code.js` o `AppMeasurement.js` che viene utilizzato nei siti per desktop. Poiché le librerie JavaScript hanno metodi propri per la generazione di ID visitatore univoci, quando dall'app si aprono contenuti Web per dispositivi mobili viene generato un diverso ID visitatore.
+Le implementazioni web per mobile tipiche usano lo stesso codice standard per Analytics `s_code.js` o `AppMeasurement.js` che viene utilizzato nei siti per desktop. Poiché le librerie JavaScript hanno metodi propri per la generazione di ID visitatore univoci, quando dall&#39;app si aprono contenuti Web per dispositivi mobili viene generato un diverso ID visitatore.
 
 ## Implementazione del tracciamento dei visitatori tra app e dei contenuti web per dispositivi mobili {#section_1755BCCFD42D456EB2319141030FDDFF}
 
-Per usare lo stesso ID visitatore nell'app e nel contenuto Web per dispositivi mobili:
+Per usare lo stesso ID visitatore nell&#39;app e nel contenuto Web per dispositivi mobili:
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 
    Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto IntelliJ IDEA o Eclipse* in [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
-1. Per aggiungere le informazioni sul visitatore all'URL con cui si apre la visualizzazione Web, invoca `visitorAppendToURL`:
+1. Per aggiungere le informazioni sul visitatore all&#39;URL con cui si apre la visualizzazione Web, invoca `visitorAppendToURL`:
 
    ```java
    String urlString = "https://www.mydomain.com/index.php"; 
@@ -45,7 +48,7 @@ Per usare lo stesso ID visitatore nell'app e nel contenuto Web per dispositivi m
    startActivity(browserIntent);
    ```
 
-   In alternativa, avviando l'SDK versione 4.16.0, puoi invocare `Visitor.getUrlVariablesAsync` e generare il tuo URL:
+   In alternativa, avviando l&#39;SDK versione 4.16.0, puoi invocare `Visitor.getUrlVariablesAsync` e generare il tuo URL:
 
    ```java
    final String urlString = "https://www.mydomain.com/index.php"; 
@@ -59,36 +62,36 @@ Per usare lo stesso ID visitatore nell'app e nel contenuto Web per dispositivi m
    });
    ```
 
-Invece di inviare ad Adobe la richiesta di un nuovo ID, il codice del servizio ID sul dominio di destinazione estrae l'identificatore MID dall'URL. Il codice usa il MID passato per tracciare il visitatore.
+Il codice del servizio ID sul dominio di destinazione estrae l’identificatore MID dall’URL invece di inviare una richiesta  Adobe per un nuovo ID. Il codice utilizza l’identificatore MID passato per monitorare il visitatore.
 
-Sugli hit per il contenuto web per mobile, verifica che il parametro `mid` esista su ciascun hit, e che il valore corrisponda al parametro `mid` inviato dal codice dell'app.
+Sugli hit per il contenuto web per mobile, verifica che il parametro `mid` esista su ciascun hit, e che il valore corrisponda al parametro `mid` inviato dal codice dell&#39;app.
 
 ## Risoluzione dei problemi di tracciamento dei visitatori {#section_9B641F8569E34A089C52AA28EA4C891D}
 
 ### Non vedo `Visitor.appendToURL`.
 
-Controlla che la versione dell'SDK di Adobe fornito in bundle con l'applicazione principale sia 4.12.0 o successiva.
+Controlla che la versione dell&#39;SDK di Adobe fornito in bundle con l&#39;applicazione principale sia 4.12.0 o successiva.
 
-**Non vedo gli Adobe ID nell'URL.**
+**Non vedo gli Adobe ID nell&#39;URL.**
 
 * Verifica quanto segue:
-   * La stringa dell'URL utilizzata per aprire la visualizzazione web è stata generata da `Visitor.appendToURL(urlString)`.
+   * La stringa dell&#39;URL utilizzata per aprire la visualizzazione web è stata generata da `Visitor.appendToURL(urlString)`.
    * Gli Adobe ID sono codificati. 
-Per assicurare che gli ID siano collegati all'URL che viene aperto, verifica che il parametro della query `adobe_mc` sia presente nell'URL.
+Per assicurare che gli ID siano collegati all&#39;URL che viene aperto, verifica che il parametro della query `adobe_mc` sia presente nell&#39;URL.
 
 ### Il mio `mid` non è identico tra app e visualizzazione web.
 
 * Verifica quanto segue:
 
-   * La stringa dell'URL che viene utilizzata per aprire la visualizzazione web è stata generata da `Visitor.appendToURL(urlString)`.
+   * La stringa dell&#39;URL che viene utilizzata per aprire la visualizzazione web è stata generata da `Visitor.appendToURL(urlString)`.
    * La stringa URL contiene i parametri Adobe.
 
-      La stringa deve contenere `adobe_mc="SAMPLE_ID_DATA"`, dove `"SAMPLE_ID_DATA"` contiene gli ID generati nell'SDK di Adobe Mobile.
+      La stringa deve contenere `adobe_mc="SAMPLE_ID_DATA"`, dove `"SAMPLE_ID_DATA"` contiene gli ID generati nell&#39;SDK di Adobe Mobile.
    * La versione di `VisitorAPI.js` è 1.7.0 o successiva.
 
-Se questi passaggi non consentono di risolvere i problemi, contatta l'assistenza Adobe Experience.
+Se questi passaggi non consentono di risolvere i problemi, contatta l&#39;assistenza Adobe Experience.
 
 >[!IMPORTANT]
 >
->Per consentire ad Adobe di convalidare l'implementazione, devi condividere un'applicazione di esempio e il sito associato.
+>Per consentire ad Adobe di convalidare l&#39;implementazione, devi condividere un&#39;applicazione di esempio e il sito associato.
 
