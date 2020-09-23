@@ -1,14 +1,17 @@
 ---
 description: Questa funzione permette di creare collegamenti di marketing che indirizzano gli utenti agli app store e a destinazioni in app o collegamenti web. Gli addetti al marketing possono scegliere le destinazioni in base a regole quali il tipo di dispositivo o il sistema operativo dell’utente.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Questa funzione permette di creare collegamenti di marketing che indirizzano gli utenti agli app store e a destinazioni in app o collegamenti web. Gli addetti al marketing possono scegliere le destinazioni in base a regole quali il tipo di dispositivo o il sistema operativo dell’utente.
 seo-title: Marketing Links Builder
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Marketing Links Builder
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 100%
 
 ---
 
