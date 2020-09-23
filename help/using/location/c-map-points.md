@@ -1,14 +1,17 @@
 ---
 description: Puoi visualizzare una mappa interattiva con i tuoi punti di interesse e altri marcatori dati.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi visualizzare una mappa interattiva con i tuoi punti di interesse e altri marcatori dati.
 seo-title: Mappa
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Mappa
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 79%
 
 ---
 
@@ -23,10 +26,10 @@ Seguono alcune considerazioni importanti da tenere a mente:
 
 * Puoi aumentare o diminuire la dimensione della mappa.
 
-   Questa funzione è utile, ad esempio, se hai due punti di interesse vicini tra loro. Ingrandendo la mappa ne puoi osservare meglio i dettagli.
+   Questa funzione è utile, ad esempio, se hai due punti di interesse vicini tra loro. Ingrandendo la mappa potete visualizzarla più dettagliatamente.
 * I punti di interesse sono visualizzati in blu.
 
-   Altri marcatori di dati sono indicati in nero (ad esempio gli avvii). Fai clic su un marcatore per visualizzare maggiori informazioni.
+   Altri marcatori di dati, come Avvii, vengono visualizzati in nero. Fate clic su un marcatore per visualizzare ulteriori informazioni.
 
 Fai clic su ![livelli](assets/map_layers.png) per selezionare le opzioni seguenti:
 
@@ -43,7 +46,7 @@ Visualizza la mappa in versione satellitare.
 
 * **[!UICONTROL Mappa di calore]**
 
-   Scegli se visualizzare i marcatori della mappa di calore. Maggiore è l’intensità del colore, più alta è la frequenza con cui si verifica la relativa condizione (ad esempio, gli avvii).
+   Scegliete se visualizzare i marcatori di mappa termica. Maggiore è l’intensità del colore, più alta è la frequenza con cui si verifica la relativa condizione (ad esempio, gli avvii).
 
 * **[!UICONTROL Punti di interesse]**
 
