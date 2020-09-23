@@ -1,14 +1,17 @@
 ---
 description: Il rapporto Percorsi di visualizzazione, basato sull’analisi dei percorsi, visualizza un grafico che rappresenta i percorsi seguiti tra gli stati dell’app.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto Percorsi di visualizzazione, basato sull’analisi dei percorsi, visualizza un grafico che rappresenta i percorsi seguiti tra gli stati dell’app.
 seo-title: Visualizzare il rapporto Percorsi
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Visualizzare il rapporto Percorsi
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
 
@@ -27,9 +30,9 @@ Ogni nodo, a forma di casella, rappresenta uno stato nei percorsi seguiti dall�
 
 Quando fai clic su un nodo per visualizzare altre opzioni per la modifica del grafico, vengono visualizzate altre opzioni quali **[!UICONTROL Attiva]** e **[!UICONTROL Espandi]**. Ad esempio, se fai clic sullo stato **[!UICONTROL MainView]** nel nodo principale, diventano visibili le icone **[!UICONTROL Attiva]** ed **[!UICONTROL Espandi]**.
 
-Per espandere la vista, fai clic sull’icona **[!UICONTROL +]** in modo da visualizzare i percorsi aggiuntivi che entrano o escono dal nodo. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la visualizzazione della pagina principale dell’app e lo stato 3 include i percorsi seguenti che sono stati seguiti dagli utenti:
+To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la visualizzazione della pagina principale dell’app e lo stato 3 include i percorsi seguenti che sono stati seguiti dagli utenti:
 
-* Accesso al rullino fotografico
+* Passaggio al rullino
 * Accesso al selettore di elementi
 * Accesso alla fotocamera
 * Accesso alla pagina di informazioni sull’elemento
@@ -38,10 +41,10 @@ Per espandere la vista, fai clic sull’icona **[!UICONTROL +]** in modo da visu
 
 Fai clic su ![icona mirino](assets/icon_focus.png) per isolare il nodo e visualizzare i percorsi che entrano ed escono dal nodo selezionato. Nell’illustrazione seguente, i seguenti percorsi hanno preceduto la visualizzazione della vista principale dell’app da parte degli utenti:
 
-* Informazioni elemento
-* Selettore elemento
-* Rullino fotografico
-* Fotocamera
+* informazioni elemento
+* selettore elemento
+* Rullino
+* Telecamera
 
 ![visualizzare focus percorso](assets/view_paths_focus.png)
 
