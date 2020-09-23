@@ -1,18 +1,21 @@
 ---
-description: Informazioni che consentono di implementare le metriche del ciclo di vita per Android. Le metriche del ciclo di vita vengono raccolte automaticamente per iOS.
+description: Informazioni utili per implementare le metriche del ciclo di vita per Android. Le metriche del ciclo di vita vengono raccolte automaticamente per iOS.
 keywords: Xamarin
-seo-description: Informazioni che consentono di implementare le metriche del ciclo di vita per Android. Le metriche del ciclo di vita vengono raccolte automaticamente per iOS.
-seo-title: Implement lifecycle
-solution: Marketing Cloud,Sviluppatore
-title: Implementa ciclo di vita
+seo-description: Informazioni utili per implementare le metriche del ciclo di vita per Android. Le metriche del ciclo di vita vengono raccolte automaticamente per iOS.
+seo-title: Implementare le metriche sul ciclo di vita
+solution: Experience Cloud
+title: Implementare le metriche sul ciclo di vita
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 7%
 
 ---
 
 
-# Implement lifecycle {#implement-lifecycle}
+# Implementare le metriche sul ciclo di vita {#implement-lifecycle}
 
 Queste informazioni sono utili per implementare le metriche del ciclo di vita per Android.
 
