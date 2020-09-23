@@ -1,14 +1,17 @@
 ---
 description: Puoi configurare le Opzioni SDK Audience Manager nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi configurare le Opzioni SDK Audience Manager nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 seo-title: Configurare le opzioni Audience Manager
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Configurare le opzioni Audience Manager
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 100%
 
 ---
 
