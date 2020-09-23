@@ -1,14 +1,17 @@
 ---
 description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
 seo-title: Pianificazione messaggio in-app
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Pianificazione messaggio in-app
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 95%
 
 ---
 
@@ -21,9 +24,9 @@ Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso dur
 >
 >Gli intervalli di date sono definiti in base al tuo fuso orario. Gli intervalli di giorni e di ore specifici dipendono dal dispositivo dell’utente.
 
-1. Nell’app, fai clic su **[!UICONTROL Messaggistica]** &gt; **[!UICONTROL Gestisci messaggi]** &gt; **[!UICONTROL Crea messaggio]** &gt; **[!UICONTROL Crea in-app]**.
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Fai clic su **[!UICONTROL Pianifica]**.
-1. Compila i campi seguenti nella sezione **[!UICONTROL Durata]:**
+1. Compila i campi seguenti nella sezione **[!UICONTROL Durata]**:
 
    * **[!UICONTROL Ogni giorno]**
 
@@ -33,7 +36,7 @@ Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso dur
 
       Usa le icone **[!UICONTROL Calendario]** per scegliere una data di inizio e una data di fine per il messaggio.
 
-1. Compila i campi seguenti nella sezione **[!UICONTROL Giorni della settimana]:**
+1. Compila i campi seguenti nella sezione **[!UICONTROL Giorni della settimana]**:
 
    * **[!UICONTROL Ogni giorno]**
 
@@ -43,7 +46,7 @@ Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso dur
 
       Fai clic sui giorni della settimana per selezionare i giorni in cui vuoi visualizzare il messaggio.
 
-1. Compila i campi seguenti nella sezione **[!UICONTROL Ora del giorno]:**
+1. Compila i campi seguenti nella sezione **[!UICONTROL Ora del giorno]**:
 
    * **[!UICONTROL Tutto il giorno]**
 
