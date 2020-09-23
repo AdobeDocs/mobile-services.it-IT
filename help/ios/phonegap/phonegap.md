@@ -5,10 +5,13 @@ seo-description: Questo plug-in consente di inviare chiamate iOS AppMeasurement 
 seo-title: Plug-in PhoneGap
 solution: Experience Cloud,Analytics
 title: Plug-in PhoneGap
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: ht
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +20,11 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 Questo plug-in consente di inviare chiamate iOS AppMeasurement da un progetto PhoneGap.
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -60,24 +63,25 @@ Per includere la libreria AppMeasurement:
    </feature>
    ```
 
-### Aggiungere le autorizzazioni dell'app
+### Aggiungere le autorizzazioni dell&#39;app
 
 La libreria AppMeasurement richiede quanto segue:
 
-1. Avvia l'IDE di Xcode e apri la tua app.
+1. Avvia l&#39;IDE di Xcode e apri la tua app.
 1. Trascina la cartella **[!UICONTROL Adobe Mobile]** nel progetto Xcode e completa le impostazioni seguenti:
 
    1. Seleziona **[!UICONTROL Copia elementi nella cartella del gruppo di destinazione (se necessario).]**
    1. Seleziona **[!UICONTROL Crea gruppi per le cartelle aggiunte]**.
    1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement Code e fai clic su **[!UICONTROL Fine]**.
-   ![](assets/xcode-settings.png){larghezza="672"}
+
+   ![](assets/xcode-settings.png){larghezza=&quot;672&quot;}
 
 1. Nella scheda **[!UICONTROL Fasi build]** della destinazione del progetto, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. Conferma che l'app possa essere generata senza errori imprevisti.
+1. Conferma che l&#39;app possa essere generata senza errori imprevisti.
 
 ## Implementare il tracciamento personalizzato {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
