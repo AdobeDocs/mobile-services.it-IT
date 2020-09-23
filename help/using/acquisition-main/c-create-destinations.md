@@ -1,14 +1,17 @@
 ---
 description: Gli addetti al marketing possono creare, salvare e modificare le destinazioni dei collegamenti (web, diretti e di altro tipo) utilizzabili per la creazione dei collegamenti di marketing tracciabili.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Gli addetti al marketing possono creare, salvare e modificare le destinazioni dei collegamenti (web, diretti e di altro tipo) utilizzabili per la creazione dei collegamenti di marketing tracciabili.
 seo-title: Destinazioni
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Destinazioni
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +30,7 @@ Puoi creare i seguenti tipi di destinazioni dei collegamenti:
 
 * **[!UICONTROL Collegamento web]**
 
-   Le destinazioni di collegamento web indirizzano gli utenti a un URL specifico, ad esempio una linea di prodotti specifica nel sito web di un retailer online.
+   Le destinazioni dei collegamenti Web indirizzano gli utenti a un URL specifico. Ad esempio, potete indirizzare gli utenti a una linea di prodotti sul sito Web di un retailer online.
 
    >[!IMPORTANT]
    >
