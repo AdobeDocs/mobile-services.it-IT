@@ -1,14 +1,17 @@
 ---
 description: Un rapporto funnel indica dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto funnel anche per confrontare le azioni di segmenti diversi.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Un rapporto funnel indica dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto funnel anche per confrontare le azioni di segmenti diversi.
 seo-title: Rapporto Funnel
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Rapporto Funnel
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 84%
 
 ---
 
@@ -29,19 +32,19 @@ Ecco un esempio di questo rapporto:
 
 ![](assets/funnel_create.png)
 
-Per fornire un esempio di un funnel semplice, riportiamo qui le impostazioni di una configurazione con tre passaggi funnel e due confronti funnel. Supponiamo che un’app in versione demo consenta agli utenti di aggiungere un elemento, ad esempio una foto, e di condividerlo.
+Per illustrare un funnel semplice, ecco le impostazioni per una configurazione che utilizza tre passaggi funnel e due confronti funnel. Supponiamo che un’app in versione demo consenta agli utenti di aggiungere un elemento, ad esempio una foto, e di condividerlo.
 
 Le sezioni della finestra Personalizza indicano che l’utente ha avviato l’app, aggiunto una foto all’app dalla galleria, condiviso una o più foto dall’app tramite social media, messaggi di testo, e-mail e così via. Il confronto funnel ti permette di confrontare i livelli di aggiunta e condivisione delle foto tra utenti dell’app iOS e dell’app Android.
 
 Per generare il rapporto, fai clic su **[!UICONTROL Esegui]**.
 
-Ecco un esempio di rapporto generato:
+Esempio di un rapporto generato:
 
 ![](assets/funnel.png)
 
-La prima serie mostra che il 100% degli utenti ha avviato l’app. La seconda serie mostra che una percentuale più alta di utenti Android ha aggiunto una foto dalla raccolta. La terza serie indica che quasi metà degli utenti iOS ha condiviso la foto, mentre nessuno degli utenti Android lo ha fatto. Questo dato potrebbe indicare un problema dell’app che sarà bene approfondire.
+La prima serie mostra che il 100% degli utenti ha avviato l’app. La seconda serie mostra che una percentuale più elevata di utenti Android ha aggiunto una foto dalla galleria. La terza serie mostra che quasi metà degli utenti iOS ha condiviso la foto, ma nessuno degli utenti Android ha condiviso la foto. Questo dato potrebbe indicare un problema dell’app che sarà bene approfondire.
 
-Per visualizzare ulteriori informazioni, passa con il mouse sopra qualsiasi barra del grafico.
+Per visualizzare ulteriori informazioni, passa il mouse su una barra del grafico.
 
 Per questo rapporto puoi configurare le seguenti opzioni:
 
