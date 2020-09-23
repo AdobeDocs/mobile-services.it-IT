@@ -4,31 +4,34 @@ seo-description: Queste informazioni aiutano a gestire una richiesta di cancella
 seo-title: Impostazione dello stato di consenso o diniego dell'utente
 solution: Experience Cloud,Analytics
 title: Impostazione dello stato di consenso o diniego dell'utente
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
 
-# Impostazione dello stato di consenso o diniego dell'utente {#setting-the-user-s-opt-status}
+# Impostazione dello stato di consenso o diniego dell&#39;utente {#setting-the-user-s-opt-status}
 
 Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
 
 >[!IMPORTANT]
 >
->A partire da Experience Cloud iOS SDK 4.15, l'impostazione dello stato di privacy su `unknown` blocca gli hit di Audience Manager ed Experience Cloud ID.
+>A partire da Experience Cloud iOS SDK 4.15, l&#39;impostazione dello stato di privacy su `unknown` blocca gli hit di Audience Manager ed Experience Cloud ID.
 
 Per definire se le attività di Analytics, Target e Audience Manager sono consentite su un dispositivo, usa le seguenti impostazioni:
 
 * `privacyDefault` in [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
-   Questa impostazione controlla l'impostazione iniziale che viene mantenuta finché non viene modificata nel codice.
+   Questa impostazione controlla l&#39;impostazione iniziale che viene mantenuta finché non viene modificata nel codice.
 
 * `setPrivacyStatus`.
 
-   Quando l'impostazione della privacy viene modificata utilizzando questo metodo, la modifica diventa permanente finché non viene nuovamente cambiata con questo metodo, oppure finché non disinstalli e reinstalli l'app.
+   Quando l&#39;impostazione della privacy viene modificata utilizzando questo metodo, la modifica diventa permanente finché non viene nuovamente cambiata con questo metodo, oppure finché non disinstalli e reinstalli l&#39;app.
 
    Per ulteriori informazioni sui metodi, vedi  [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
 
