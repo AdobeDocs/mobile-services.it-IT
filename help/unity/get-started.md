@@ -3,11 +3,14 @@ description: Questo plug-in consente di inviare chiamate ad Adobe Analytics dall
 keywords: Unity
 seo-description: Questo plug-in consente di inviare chiamate ad Adobe Analytics dalle applicazioni Unity.
 seo-title: Plug-in di Unity per gli SDK iOS e Android 4.x
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Plug-in di Unity per gli SDK iOS e Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: ht
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +39,7 @@ Di seguito sono elencati i contenuti del file `ADBMobile.unitypackage`:
 
          * adobeMobileLibrary-{version}.jar
          * AndroidManifest.xml
-         * risorse
+         * assets
 
             * ADBMobileConfig.json
       * iOS
