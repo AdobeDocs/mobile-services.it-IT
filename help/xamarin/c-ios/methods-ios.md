@@ -2,12 +2,12 @@
 description: Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 keywords: Xamarin
 seo-description: Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-seo-title: Metodi iOS
-solution: Marketing Cloud,Developer
-title: Metodi iOS
+seo-title: Metodi per iOS
+solution: Experience Cloud
+title: Metodi per iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 70%
@@ -15,7 +15,7 @@ ht-degree: 70%
 ---
 
 
-# Metodi iOS{#ios-methods}
+# Metodi per iOS{#ios-methods}
 
 Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
