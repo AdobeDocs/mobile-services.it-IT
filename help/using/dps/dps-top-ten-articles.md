@@ -1,14 +1,17 @@
 ---
 description: Il rapporto Primi 10 articoli fornisce una visualizzazione sunburst per i dati. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suite (DPS).
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto Primi 10 articoli fornisce una visualizzazione sunburst per i dati. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suite (DPS).
 seo-title: Primi 10 articoli
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Primi 10 articoli
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 100%
 
 ---
 
