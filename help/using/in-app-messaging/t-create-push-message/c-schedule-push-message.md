@@ -1,14 +1,17 @@
 ---
 description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
 seo-title: Pianificazione messaggio push
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Pianificazione messaggio push
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 80%
 
 ---
 
@@ -30,7 +33,7 @@ Considerazioni da ricordare:
    * Modifica una data con una data successiva.
    * Modificando l’intervallo di ripetizione.
 
-      Ad esempio, se il messaggio originale veniva inviato ogni giorno, puoi impostare la ricorrenza settimanale.
+      Ad esempio, se il messaggio originale era stato inviato ogni giorno, puoi impostare la ricorrenza settimanale.
 
 ## Prima di pianificare messaggi push ricorrenti
 
@@ -48,12 +51,12 @@ Considerazioni da ricordare:
 
 * I messaggi push vengono pianificati e inviati in base all’Ora di Greenwich (GMT).
 
-   Ad esempio, se hai pianificato un messaggio ricorrente da inviare ogni sabato alle 12:00 (mezzogiorno) **PST** (ora del Pacifico), a partire dal 7 ottobre, il messaggio verrà in realtà inviato di sabato alle 19:00 **GMT**.
-* I messaggi vengono inviati in modo diverso a seconda che tu ti trovi negli Stati Uniti, in Europa o in Asia.
+   Ad esempio, se hai pianificato un messaggio ricorrente da inviare ogni sabato alle 12:00 (mezzogiorno) **PST**, a partire dal 7 ottobre, il messaggio verrà effettivamente inviato sabato alle 19:00 **GMT**.
+* I messaggi vengono inviati in modo diverso a seconda che vi troviate negli Stati Uniti, in Europa o in Asia.
 
    Ad esempio, se ti trovi a San Jose, California, e pianifichi un messaggio da inviare il ***31 ottobre*** alle 17:30 **PST**, l’invio avverrà effettivamente il ***1° novembre*** alle 00:30 **GMT**. Se sei a Tokyo e pianifichi un messaggio da inviare il ***1° gennaio*** alle 05:30, l’invio avverrà effettivamente il ***31 dicembre*** alle 20:30 **GMT**.
 * I messaggi push vengono inviati un’ora prima o dopo a seconda che sia attiva o meno l’ora legale.
-* Nel rapporto sui messaggi push, il messaggio è indicato rispetto al fuso orario del tuo sistema.
+* Quando guardi il rapporto sui messaggi push, il messaggio viene visualizzato nel fuso orario locale del sistema.
 
    Ad esempio, se l’orario di invio è 12:00 **PST**, anche se il messaggio sarà inviato effettivamente alle 19:00 **GMT**, nel rapporto risulterà inviato alle 12:00 **PST**.
 
@@ -68,7 +71,7 @@ Considerazioni da ricordare:
    ![](assets/schedule-push-message.png)
 
 1. Se hai selezionato **[!UICONTROL Pianificato]**, fai clic sull’icona del calendario e seleziona o digita una data di inizio.
-1. Digita un orario. 
+1. Digita un&#39;ora. 
 1. In **[!UICONTROL Ripeti]**, seleziona una delle opzioni seguenti:
 
    * **[!UICONTROL Mai]**
