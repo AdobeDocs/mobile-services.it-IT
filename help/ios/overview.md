@@ -4,17 +4,20 @@ seo-description: L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di
 seo-title: SDK 4.x per iOS per le soluzioni Experience Cloud
 solution: Experience Cloud,Analytics
 title: SDK 4.x per iOS per le soluzioni Experience Cloud
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
 
 # SDK 4.x per iOS per le soluzioni Experience Cloud {#ios-sdk-x-for-experience-cloud-solutions}
 
-L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le applicazioni native per Apple iPhone e iPad, inviare contenuti mirati all'interno delle app, nonché sfruttare e raccogliere i dati sul pubblico tramite Audience Manager.
+L&#39;SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le applicazioni native per Apple iPhone e iPad, inviare contenuti mirati all&#39;interno delle app, nonché sfruttare e raccogliere i dati sul pubblico tramite Audience Manager.
 
 >[!IMPORTANT]
 >
@@ -22,13 +25,13 @@ L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le appl
 
 >[!IMPORTANT]
 >
->L'SDK 4.x per iOS per le soluzioni Experience Cloud supporta ora [iOS 13 e Xcode 11](https://developer.apple.com/ios/). Per garantire la compatibilità diretta, usa le versioni più recenti degli SDK iOS 4.x. Per ulteriori informazioni sull’ultima versione, consulta le [note sulla versione](/help/ios/rel-notes.md).
+>L&#39;SDK 4.x per iOS per le soluzioni Experience Cloud supporta ora [iOS 13 e Xcode 11](https://developer.apple.com/ios/). Per garantire la compatibilità diretta, usa le versioni più recenti degli SDK iOS 4.x. Per ulteriori informazioni sull’ultima versione, consulta le [note sulla versione](/help/ios/rel-notes.md).
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -37,19 +40,19 @@ Alcune informazioni da tenere a mente:
 
 * Supporta iOS 8 e versioni successive.
 
-   Per iOS 11 o versioni successive, è **necessario** essere in possesso di SDK versione 4.13.8 o successiva.
+   Per iOS 11 o versione successiva, **è necessario** disporre della versione SDK 4.13.8 o successiva.
 
-* Nella versione 4.2 dell'SDK e nelle versioni successive, tutti gli hit vengono inviati tramite HTTP POST.
+* Nella versione 4.2 dell&#39;SDK e nelle versioni successive, tutti gli hit vengono inviati tramite HTTP POST.
 
-   Questo non ha alcun impatto sui dati raccolti o segnalati, ma per visualizzare gli hit dovrai usare un analizzatore di pacchetti che supporta l'ispezione di dati POST.
+   Questo non ha alcun impatto sui dati raccolti o segnalati, ma per visualizzare gli hit dovrai usare un analizzatore di pacchetti che supporta l&#39;ispezione di dati POST.
 
-* Per l'aggiornamento da una versione precedente (2.x o 3.x), consulta la [Guida alla migrazione 4.x](/help/ios/getting-started/migration-v3.md).
+* Per l&#39;aggiornamento da una versione precedente (2.x o 3.x), consulta la [Guida alla migrazione 4.x](/help/ios/getting-started/migration-v3.md).
 
 ## Documentazione di Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services fornisce una nuova interfaccia utente che riunisce le funzionalità di mobile marketing per applicazioni mobile da Adobe Experience Cloud. Inizialmente, Mobile Services offre l'integrazione diretta di funzioni di analisi e targeting delle app dalle soluzioni Adobe Analytics, Adobe Audience Manager e Adobe Target, nonché il servizio Adobe Experience Platform Identity.
+Adobe Mobile Services fornisce una nuova interfaccia utente che riunisce le funzionalità di mobile marketing per applicazioni mobile da Adobe Experience Cloud. Inizialmente, Mobile Services offre l&#39;integrazione diretta di funzioni di analisi e targeting delle app dalle soluzioni Adobe Analytics, Adobe Audience Manager e Adobe Target, nonché il servizio Adobe Experience Platform Identity.
 
-Per ulteriori informazioni sull'interfaccia utente di Mobile Services e per consultare la documentazione, vedi [Adobe Mobile Services](/help/using/home.md).
+Per ulteriori informazioni sull&#39;interfaccia utente di Mobile Services e per consultare la documentazione, vedi [Adobe Mobile Services](/help/using/home.md).
 
 ## Utilizzo di Bloodhound
 
