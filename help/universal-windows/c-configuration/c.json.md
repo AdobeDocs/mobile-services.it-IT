@@ -1,13 +1,16 @@
 ---
 description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 seo-description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-seo-title: Configurazione ADBMobileConfig.json
-solution: Marketing Cloud,Analytics
-title: Configurazione ADBMobileConfig.json
+seo-title: Configurazione di ADBMobileConfig.json
+solution: Experience Cloud,Analytics
+title: Configurazione di ADBMobileConfig.json
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 40%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
 
-Al momento l’SDK supporta più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
 
 * **rsids**
 
@@ -40,7 +43,7 @@ Al momento l’SDK supporta più soluzioni Adobe Experience Cloud, tra cui Analy
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 
@@ -58,7 +61,7 @@ Al momento l’SDK supporta più soluzioni Adobe Experience Cloud, tra cui Analy
 
 * **lifecycleTimeout**
 
-   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene inviata in background e riattivata. Il tempo trascorso in background dall&#39;app non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
    Il valore predefinito è 300 secondi.
 
