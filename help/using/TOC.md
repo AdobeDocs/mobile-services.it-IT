@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Guida di Mobile Services
 breadcrumb-title: Mobile Services Guide
 user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
@@ -20,28 +20,28 @@ ht-degree: 100%
 + Introduzione {#get-started-ug}
    + [Introduzione](gs/gs.md)
    + [Ruoli e autorizzazioni](gs/c-mob-roles-and-permissions.md)
-   + [Accesso in corso](gs/gs-signin.md)
+   + [Accesso](gs/gs-signin.md)
    + [Tipi di rapporti](gs/reports-types.md)
    + Metriche di Mobile {#mobile-metrics}
       + [Metriche di Mobile](gs/metrics/metrics.md)
       + [Visualizzare le metriche di Mobile](gs/metrics/overview.md)
       + [Riferimento per le metriche e le dimensioni di Mobile](gs/metrics/metrics-reference.md)
-+ Gestione app {#manage-apps-ug}
-   + [Panoramica sulla gestione app](manage-apps/manage-apps.md)
-   + [Aggiungi una nuova app](manage-apps/t-new-app.md)
++ Gestione delle app {#manage-apps-ug}
+   + [Panoramica sulla gestione delle app](manage-apps/manage-apps.md)
+   + [Aggiungere una nuova app](manage-apps/t-new-app.md)
    + [Suite di rapporti virtuali](manage-apps/c-mob-vrs.md)
    + App store {#app-store}
       + [Panoramica dell’app store](manage-apps/c-app-store/c-app-store.md)
       + [Aggiungere un’app da un app store](manage-apps/c-app-store/t-app-store-app.md)
       + [Eliminare un’app](manage-apps/t-delete-apps.md)
-+ Gestione impostazioni app {#manage-app-settings-ug}
-   + [Gestione impostazioni app](c-manage-app-settings/c-manage-app-settings.md)
++ Gestione delle impostazioni delle app {#manage-app-settings-ug}
+   + [Gestione delle impostazioni delle app](c-manage-app-settings/c-manage-app-settings.md)
    + Configurazione dell’app {#configuring-app}
       + [Configurazione dell’app](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Configurare le opzioni SDK Analytics](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
-      + [Download di strumenti e SDK per dispositivi mobili](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
+      + [Scaricare strumenti e SDK per dispositivi mobili](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
       + [Configurare le opzioni Audience Manager](c-manage-app-settings/c-mob-confg-app/t-config-aam.md)
-      + [Configurare le opzioni SDK acquisizione](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
+      + [Configurare le opzioni SDK per l’acquisizione](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
       + [Collegamenti universali Apple e collegamenti app Android](c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
       + [Configurare le opzioni SDK del servizio ID](c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)
       + [Configurare i postback](c-manage-app-settings/c-mob-confg-app/signals.md)
@@ -73,7 +73,7 @@ ht-degree: 100%
    + [Condivisione social](dps/dps-social-sharing.md)
    + [Metriche banner](dps/dps-banner-metrics.md)
 + Acquisizione {#acquisition-main-ug}
-   + [Panoramica acquisizione](acquisition-main/acquisition-main.md)
+   + [Panoramica dell’acquisizione](acquisition-main/acquisition-main.md)
    + [Prerequisiti per l’acquisizione](acquisition-main/c-acquisition-prerequisites.md)
    + [Configurare l’acquisizione](acquisition-main/t-enable-acquisition.md)
    + [Destinazioni](acquisition-main/c-create-destinations.md)
@@ -99,9 +99,9 @@ ht-degree: 100%
    + [Mappa](location/c-map-points.md)
    + [Gestire i punti di interesse](location/t-manage-points.md)
 + Messaggistica {#messaging-ug}
-   + [Panoramica messaggi](in-app-messaging/in-app-messaging.md)
+   + [Panoramica sulla messaggistica](in-app-messaging/in-app-messaging.md)
    + [Gestire i messaggi](in-app-messaging/messages-manage/messages-manage.md)
-   + [Visualizzare rapporti sui messaggi](in-app-messaging/messages-manage/view-message-reports.md)
+   + [Visualizzare i rapporti sui messaggi](in-app-messaging/messages-manage/view-message-reports.md)
    + Messaggi push {#push-messages}
       + [Creare un messaggio push](in-app-messaging/t-create-push-message/t-create-push-message.md)
       + [Pubblico: messaggio push](in-app-messaging/t-create-push-message/c-audience-push-message.md)
