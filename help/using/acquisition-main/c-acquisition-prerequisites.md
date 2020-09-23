@@ -1,14 +1,17 @@
 ---
 description: Per utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Per utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
 seo-title: Prerequisiti per l’acquisizione
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Prerequisiti per l’acquisizione
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 97%
 
 ---
 
@@ -32,8 +35,8 @@ Per tenere traccia dei collegamenti di marketing, è necessario che siano soddis
    | Versione SDK | [Acquisition Builder legacy](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md) | [Creazione manuale di collegamenti](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) | [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md) |
    |--- |--- |--- |--- |
    | Da 4.1 a 4.5 | Sì | No | No |
-   | Da 4.6 a 4.9 | Sì | Sì | No |
-   | 4.9 o successiva | Sì | Sì | Sì |
+   | Da 4,6 a 4,9 | Sì | Sì | No |
+   | 4.9 o successivo | Sì | Sì | Sì |
 
 1. Attivare le Opzioni acquisizione SDK
 
