@@ -1,25 +1,25 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Guida di Mobile Services Xamarin
+user-guide-title: Guida di Mobile Services per Xamarin
 breadcrumb-title: Xamarin Guide
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 
-# Guida di Mobile Services Xamarin {#xamarin}
+# Guida di Mobile Services per Xamarin {#xamarin}
 
 + [Componenti Xamarin per l’SDK 4.x delle soluzioni Experience Cloud](get-started.md)
-+ [Esecuzione di chiamate alla libreria](library-calls.md)
-+ [Implementa ciclo di vita](lifecycle.md)
++ [Eseguire chiamate alla libreria](library-calls.md)
++ [Implementare le metriche sul ciclo di vita](lifecycle.md)
 + Android {#android-xamarin}
-   + [Metodi Android](c-android/methods-android.md)
+   + [Metodi per Android](c-android/methods-android.md)
    + [Classi, enum e interfacce](c-android/c-classes-enums-interfaces.md)
 + iOS {#ios-xamarin}
-   + [Metodi iOS](c-ios/methods-ios.md)
+   + [Metodi per iOS](c-ios/methods-ios.md)
    + [Classi ed enum](c-ios/c-classes-enums-constants.md)
