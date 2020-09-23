@@ -1,23 +1,26 @@
 ---
-description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i tuoi eventi di successo ai download.
-keywords: dispositivi mobili
-seo-description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i tuoi eventi di successo ai download.
+description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i vostri eventi di successo ai download.
+keywords: mobile
+seo-description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i vostri eventi di successo ai download.
 seo-title: Creare un collegamento di acquisizione
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Creare un collegamento di acquisizione
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 74%
 
 ---
 
 
 # Creare un collegamento di acquisizione{#create-an-acquisition-link}
 
-Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i tuoi eventi di successo ai download.
+Puoi creare collegamenti agli app store per scaricare applicazioni direttamente da Apple App Store e Google Play. I collegamenti creati consentono di attribuire i vostri eventi di successo ai download.
 
-1. Fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Gestisci collegamenti di acquisizione]** &gt; **[!UICONTROL Crea nuovo]**.
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
 1. Immetti le seguenti informazioni nella sezione **[!UICONTROL Informazioni collegamento]**:
 
    * (**Obbligatorio**) **[!UICONTROL Nome]**
@@ -43,7 +46,8 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
       Seleziona un app store:
       * Apple App Store
       * Google Play
-      Le opzioni disponibili per ciascun app store sono diverse (vedi di seguito).
+
+      Le opzioni per ciascun app store variano, come descritto di seguito.
 
    * **[!UICONTROL Regione browser (solo per Apple App Store)]**
 
@@ -74,7 +78,7 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
 
 
 
-1. Per salvare la configurazione e generare il collegamento, fai clic su **[!UICONTROL Aggiungi]** &gt; **[!UICONTROL Salva]**.
+1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
    Il nuovo collegamento creato viene visualizzato nella sezione **[!UICONTROL Collegamenti all’app store]**.
 
