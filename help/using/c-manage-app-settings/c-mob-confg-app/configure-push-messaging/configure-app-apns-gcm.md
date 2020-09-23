@@ -1,14 +1,17 @@
 ---
 description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
 seo-title: Configurare l’app per l’uso di APNS o FCM
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Configurare l’app per l’uso di APNS o FCM
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: ht
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 92%
 
 ---
 
@@ -83,10 +86,10 @@ Per configurare la tua app Android per l’utilizzo di FCM in questo scenario:
 
 Per configurare la tua app iOS per l’uso di APNS:
 
-1. Vai a [https://developer.apple.com/account](https://developer.apple.com/account) e accedi al tuo [account Apple Developer](https://developer.apple.com/account).
-1. In **[!UICONTROL App iOS]**, seleziona **[!UICONTROL Identificatori**].
+1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
+1. In **[!UICONTROL App iOS]**, seleziona **[!UICONTROL Identificatori]**.
 1. Se hai un App ID impostato per il push, passa al passaggio 11.
-1. Premi il pulsante **[!UICONTROL +]** per creare un nuovo ID app.
+1. Press the **[!UICONTROL +]** button to create a new App ID.
 1. Immetti una descrizione per l’App ID.
 1. Immetti un suffisso per l’App ID.
 
@@ -114,9 +117,9 @@ Per ottenere il certificato SSL e la chiave privata (APNS):
 1. Apri **[!UICONTROL Accesso Portachiavi]**.
 1. Fai clic su **[!UICONTROL I miei certificati]** e trova il certificato **[!UICONTROL iOS Services Certificate]** appropriato per l’app e l’ambiente.
 
-   Per identificare il certificato corretto, confrontalo con il bundle ID e verifica se si tratta di un certificato di sviluppo (Development) o produzione (Production).
+   Per identificare il certificato corretto, confrontalo con il bundle ID e verifica se si tratta di un certificato di sviluppo o produzione.
 
-1. Espandi il certificato e verifica che contenga una chiave privata.
+1. Espandete il certificato e verificate che contenga una chiave privata.
 1. Fai clic con il pulsante destro del mouse sulla chiave privata e seleziona **[!UICONTROL Esporta “*`<name of key>`*]**.
 1. Digita le informazioni necessarie nella finestra di dialogo e salva il nuovo file `.p12`.
 
