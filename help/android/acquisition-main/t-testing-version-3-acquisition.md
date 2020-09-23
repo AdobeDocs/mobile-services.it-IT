@@ -3,12 +3,15 @@ description: Queste informazioni consentono di esplorare un collegamento di camp
 keywords: android;library;mobile;sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 seo-title: Verifica dell'acquisizione dalla versione 3
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione dalla versione 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: ht
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 85%
 
 ---
 
@@ -19,19 +22,19 @@ Queste informazioni consentono di esplorare un collegamento di campagna di acqui
 
 >[!IMPORTANT]
 >
->Acquisizione in V3 si riferisce ai collegamenti di acquisizione creati con Builder nell&#39;interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzionalità, devi eseguire l&#39;aggiornamento alla versione 4.x dell&#39;SDK per Android per soluzioni Experience Cloud 4.6.0 o versioni successive.
+>Acquisizione in V3 si riferisce ai collegamenti di acquisizione creati con Builder nell&#39;interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi eseguire l’aggiornamento ad Android SDK 4.x per  soluzioni di Experience Cloud 4.6.0 o versioni successive.
 
-Se l&#39;app mobile non è ancora disponibile in Google Play, quando crei il collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull&#39;app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store e quindi all&#39;app al momento dell&#39;installazione, nell&#39;ambito della trasmissione della campagna. Il test dell&#39;acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se l&#39;app mobile non è ancora disponibile in Google Play, al momento della creazione del collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull&#39;app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store, e quindi passati all’app al momento dell’installazione come parte di una trasmissione della campagna. Il test del ciclo completo di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
 >[!IMPORTANT]
 >
 >Se stai implementando tramite le API di riferimento per l’installazione di Google Play, non potrai testare l’acquisizione prima che l’app sia nello store di Google Play.
 
-L’app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]**tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell&#39;app.
+L’app deve essere stata appena installata oppure i dati devono essere eliminati nelle **[!UICONTROL Impostazioni]** tutte le volte che si esegue un test. In questo modo le metriche del ciclo di vita iniziali associate ai parametri di stringa della query della campagna vengono inviate al primo avvio dell&#39;app.
 
 1. Completa le attività preliminari descritte nella sezione [Acquisizione da app mobile](/help/android/acquisition-main/acquisition.md) e assicurati di aver implementato correttamente il destinatario della trasmissione per `INSTALL_REFERRER`.
 
-1. Nell’interfaccia utente di Adobe Mobile Services, fai clic su **[!UICONTROL Acquisizione]**>**[!UICONTROL  Marketing Links Builder]** e genera l’URL di un collegamento marketing di acquisizione che imposti Google Play come destinazione per i dispositivi Android.
+1. Nell’interfaccia utente di Adobe Mobile Services, fai clic su **[!UICONTROL Acquisizione]** > **[!UICONTROL Marketing Links Builder]** e genera l’URL di un collegamento marketing di acquisizione che imposti Google Play come destinazione per i dispositivi Android.
 
    Per ulteriori informazioni, consulta [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -68,8 +71,8 @@ L’app deve essere stata appena installata oppure i dati devono essere eliminat
 
    | Impostazione | Valore |
    |--- |--- |
-   | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`*dovrebbe corrispondere a`appid`nel collegamento di acquisizione. |
-   | analytics | A fini di test, imposta il timeout di riferimento in modo tale da fornire il tempo necessario (almeno 60 secondi) per inviare manualmente la trasmissione. Puoi ripristinare l&#39;impostazione di timeout originale dopo il test. |
+   | acquisizione | Il server dovrebbe essere `c00.adobe.com` e *`appid`* dovrebbe corrispondere a `appid` nel collegamento di acquisizione. |
+   | analytics | A scopo di test, imposta il timeout del referente in modo da concedere un tempo sufficiente (almeno 60 secondi) per inviare manualmente la trasmissione. Dopo il test potrai ripristinare l’impostazione di timeout originale. |
 
 1. Connetti il dispositivo a un computer e disinstalla e reinstalla l&#39;app.
 1. Avvia ADB Shell, quindi avvia l&#39;applicazione sul dispositivo.
@@ -81,6 +84,7 @@ L’app deve essere stata appena installata oppure i dati devono essere eliminat
    1. Sostituisci `com.adobe.android` con il nome del pacchetto dell&#39;applicazione.
    1. Aggiorna il riferimento del ricevitore con quello della posizione del ricevitore di tracciamento della campagna nella tua app.
    1. Sostituisci i valori associati con `utm_content`.
+
    Se la trasmissione è riuscita, la risposta sarà simile a quella nel seguente esempio:
 
    `Broadcasting: Intent
@@ -93,9 +97,9 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-In caso contrario, assicurati di aver completato i passaggi da 6 a 12.
+Se i registri di cui sopra non compaiono, verifica di aver completato i passaggi da 6 a 12.
 
-La seguente tabella contiene informazioni aggiuntive sui possibili errori:
+La tabella seguente contiene informazioni aggiuntive sui possibili errori:
 
 | Errore | Descrizione |
 |--- |--- |
@@ -103,16 +107,16 @@ La seguente tabella contiene informazioni aggiuntive sui possibili errori:
 | Analytics - Unable to parse response (*a JSON Response*). | La stringa JSON è formata in modo errato. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | La risposta non contiene il parametro contextData. |
 | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  non è incluso in contextData. |
-| Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l&#39;app. |
+| Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l’app. |
 
 Considerazioni da ricordare:
 
-* Gli hit inviati dall&#39;app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l&#39;attribuzione di acquisizione.
+* Gli hit inviati dall’app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l’attribuzione di acquisizione.
 * Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, consulta [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
 
-* In Android 4.8.2 è stata rilasciata una correzione di bug per l&#39;acquisizione.
+* È stata rilasciata una correzione di bug per l&#39;acquisizione su Android 4.8.2.
 
-   Prima di eseguire il test, aggiorna l&#39;SDK alla versione più recente.
+   Prima di eseguire il test, aggiorna l’SDK alla versione più recente.
 
 * Puoi usare lo strumento Java `acquisitionTest.jar` fornito per ottenere l&#39;ID univoco e il riferimento di installazione della trasmissione, per ottenere quindi le informazioni nei passaggi 3-12.
 
@@ -124,7 +128,7 @@ Per installare lo strumento Java:
 
 1. Estrai il file .jar.
 
-   Puoi eseguire il file sulla riga di comando.
+   È possibile eseguire il file sulla riga di comando.
 
    Ad esempio:
 
