@@ -4,10 +4,13 @@ seo-description: Queste informazioni sono utili per passare dalle versioni 3.x o
 seo-title: Migrazione alla libreria iOS 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione alla libreria iOS 4.x
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 62%
 
 ---
 
@@ -24,15 +27,15 @@ Nella versione 4.x della libreria SDK iOS, i metodi pubblici sono consolidati in
 
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Nella versione 4, non è più possibile assegnare direttamente nell'app variabili quali eventi, eVar, prop, eredi ed elenchi. L'SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell'app sulle variabili di Analytics a scopo di reportistica.
+Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* È possibile cambiare la mappatura dei dati senza dover inviare un aggiornamento all'App Store.
-* Invece di impostare variabili specifiche per una suite di rapporti, è possibile assegnare ai dati dei nomi significativi.
-* L'impatto dell'invio di dati aggiuntivi è limitato.
+* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
+* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
+* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
 
-   Questi valori compariranno nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+   Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
 
 >[!TIP]
 >
@@ -74,7 +77,7 @@ Il nuovo file `ADBMobileConfig.json` contiene impostazioni globali specifiche pe
 Per spostare il file di configurazione:
 
 1. Sposta il valore impostato per la variabile della prima colonna alla variabile della seconda colonna.
-1. Rimuovi dal codice la precedente variabile di configurazione.
+1. Rimuovete dal codice la vecchia variabile di configurazione.
 
 ### Informazioni sulla migrazione
 
@@ -82,67 +85,67 @@ Nella tabella seguente sono elencate le variabili di configurazione che devi spo
 
 #### Migrazione dalla versione 3.x
 
-Sposta il valore riportato nella prima colonna alla variabile della seconda colonna.
+Sposta il valore dalla prima colonna alla variabile della seconda colonna.
 
 | Variabile di configurazione | Variabile nel file `ADBMobileConfig.json` |
 |--- |--- |
-| offlineTrackingEnabled | "offlineEnabled" |
-| offlineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Rimuovi, non è più utilizzata. |
-| linkTrackEvents | Rimuovi, non è più utilizzata. |
+| offlineTrackingEnabled | &quot;offlineEnabled&quot; |
+| offlineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Rimuovi, non più utilizzato. |
+| linkTrackEvents | Rimuovi, non più utilizzato. |
 
 
 #### Migrazione dalla versione 2.x
 
-Sposta il valore riportato nella prima colonna alla variabile della seconda colonna.
+Sposta il valore dalla prima colonna alla variabile della seconda colonna.
 
 | Variabile di configurazione | Variabile nel file `ADBMobileConfig.json` |
 |--- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server", rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto in automatico in base all'impostazione "ssl". |
-| trackingServerSecure | Rimuovi. Per connessioni sicure, definisci "server" e quindi abilita "ssl". |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Rimuovi, non è più utilizzata. |
-| linkTrackEvents | Rimuovi, non è più utilizzata. |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto automaticamente in base all&#39;impostazione &quot;ssl&quot;. |
+| trackingServerSecure | Rimuovi. Per le connessioni sicure, definite &quot;server&quot; e abilitate &quot;ssl&quot;. |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Rimuovi, non più utilizzato. |
+| linkTrackEvents | Rimuovi, non più utilizzato. |
 | timestamp | Rimuovi, non è più configurabile. |
-| dc | Rimuovi, non è più utilizzata. |
+| dc | Rimuovi, non più utilizzato. |
 | userAgent | Rimuovi, non è più configurabile. |
-| dynamicVariablePrefix | Rimuovi, non è più utilizzata. |
-| visitorNamespace | Rimuovi, non è più utilizzata. |
-| usePlugins | Rimuovi, non è più utilizzata. |
-| useBestPractices    tutte le chiamate alla misurazione churn (getChurnInstance ) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
+| dynamicVariablePrefix | Rimuovi, non più utilizzato. |
+| visitorNamespace | Rimuovi, non più utilizzato. |
+| usePlugins | Rimuovi, non più utilizzato. |
+| useBestPractices tutte le chiamate alla misurazione churn ( getChurnInstance ) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
 
 
 ## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-Invece di usare le chiamate `track` e `trackLink` incentrate sul web, la versione 4 dell'SDK usa i metodi seguenti:
+Invece di usare le chiamate `track` e `trackLink` incentrate sul web, la versione 4 dell&#39;SDK usa i metodi seguenti:
 
-* Gli stati `trackState:data:` sono le visualizzazioni disponibili nell'app, ad esempio `home dashboard`, `app settings`, `cart` e così via.
+* Gli stati `trackState:data:` sono le visualizzazioni disponibili nell&#39;app, ad esempio `home dashboard`, `app settings`, `cart` e così via.
 
    Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
-* Azioni `trackAction:data:`, come `logons`, `banner taps`, `feed subscriptions` e altre metriche che si verificano nell'app e che desideri misurare.
+* Azioni `trackAction:data:`, come `logons`, `banner taps`, `feed subscriptions` e altre metriche che si verificano nell&#39;app e che desideri misurare.
 
 Il parametro `data` di entrambi questi metodi è un dizionario `NSDictionary` contenente coppie nome-valore che vengono inviate come dati contestuali.
 
 ### Eventi, prop, eVar
 
-Nella versione 4, non è più possibile assegnare direttamente nell'app variabili quali eventi, eVar, prop, eredi ed elenchi. L'SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell'app sulle variabili di Analytics a scopo di reportistica.
+Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L&#39;SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili di Analytics per la creazione di report.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* È possibile cambiare la mappatura dei dati senza dover inviare un aggiornamento all'App Store.
-* Invece di impostare variabili specifiche per una suite di rapporti, è possibile assegnare ai dati dei nomi significativi.
-* L'impatto dell'invio di dati aggiuntivi è limitato.
+* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
+* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
+* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
 
    Questi valori compariranno nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione. Per ulteriori informazioni, consulta [Regole di elaborazione e dati contestuali](/help/ios/getting-started/proc-rules.md).
 
@@ -150,7 +153,7 @@ Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno
 
 ### AppSection/Server, GeoZip, transaction ID, Campaign e altre variabili standard
 
-I dati che precedentemente impostavi sull'oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti al dizionario `data``NSDictionary`. L'unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
+I dati che precedentemente impostavi sull&#39;oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti al dizionario `data``NSDictionary`. L&#39;unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
 
 ### Sostituire le chiamate di tracciamento
 
@@ -191,7 +194,7 @@ Nel codice, devi rimuovere le chiamate ai seguenti metodi:
 
 ## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Poiché la variabile "products" non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
+Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 
 ```objective-c
 //create a processing rule to set the corresponding product event. 
