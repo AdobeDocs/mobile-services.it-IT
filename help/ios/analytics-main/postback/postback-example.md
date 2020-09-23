@@ -4,10 +4,13 @@ seo-description: Definizione ed esempi di codice sorgente per la funzione Postba
 seo-title: Esempio di postback
 solution: Experience Cloud,Analytics
 title: Esempio di postback
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Definizione ed esempi di codice sorgente per la funzione Postback.
 
 >[!CAUTION]
 >
->Questo esempio è fornito unicamente a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
+>Questo esempio è fornito unicamente a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell&#39;interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
 
 ## Definizione di ADBMobileConfig.json {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -58,6 +61,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Poiché il suo stato è `“MainMenu”`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L'URL sostituisce tutte le variabili di modello con i valori dell'hit. Presupponendo che la sessione precedente dell'utente sia durata 132 secondi e che l'utente disponga della versione SDK 4.6.0 per iOS, ecco un esempio dell'URL risultante:
+Poiché il suo stato è `“MainMenu”`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L&#39;URL sostituisce tutte le variabili di modello con i valori dell&#39;hit. Presupponendo che la sessione precedente dell&#39;utente sia durata 132 secondi e che l&#39;utente disponga della versione SDK 4.6.0 per iOS, ecco un esempio dell&#39;URL risultante:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
