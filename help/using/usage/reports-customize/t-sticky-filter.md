@@ -1,21 +1,24 @@
 ---
-description: Crea un filtro per più rapporti in modo da visualizzare il comportamento di un particolare segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
-keywords: dispositivi mobili
-seo-description: Crea un filtro per più rapporti in modo da visualizzare il comportamento di un particolare segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
+description: Crea un filtro per più rapporti per vedere in che modo un particolare segmento si sta comportando in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
+keywords: mobile
+seo-description: Crea un filtro per più rapporti per vedere in che modo un particolare segmento si sta comportando in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
 seo-title: Aggiungere un filtro fisso
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Aggiungere un filtro fisso
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 72%
 
 ---
 
 
 # Aggiungere un filtro fisso{#add-sticky-filter}
 
-Crea un filtro per più rapporti in modo da visualizzare il comportamento di un particolare segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
+Crea un filtro per più rapporti per vedere in che modo un particolare segmento si sta comportando in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
 
 Nell’esempio vengono aggiunti dei filtri fissi per i sistemi operativi iOS e Android al rapporto **[!UICONTROL Utenti e sessioni]**, ma le istruzioni sono valide per qualsiasi rapporto o metrica.
 
