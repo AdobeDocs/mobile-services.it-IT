@@ -1,14 +1,17 @@
 ---
 description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 seo-title: Aggiungere serie (metriche) ai rapporti
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Aggiungere serie (metriche) ai rapporti
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +26,7 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]**, ma le istruzioni sono valide per qualsiasi tipo di rapporto.
 
-1. Apri l’app e fai clic su **[!UICONTROL Utilizzo]** &gt; **[!UICONTROL Utenti e sessioni]**.
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![Risultato passaggio](assets/customize1.png)
 
@@ -35,7 +38,7 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]*
 
 1. Scorri verso il basso e fai clic su **[!UICONTROL Aggiungi serie]**.
 
-   Inizialmente, il nome della serie è uguale a quello dell’ultima serie dell’elenco. Nell’illustrazione precedente, l’ultima serie è **[!UICONTROL Download da app store]**, quindi viene aggiunta una nuova serie con lo stesso nome **[!UICONTROL Download da app store**].
+   Inizialmente, il nome della serie è uguale a quello dell’ultima serie dell’elenco. Nell’illustrazione precedente, l’ultima serie è **[!UICONTROL Download da app store]**, quindi viene aggiunta una nuova serie con lo stesso nome **[!UICONTROL Download da app store]**.
 
 1. Completa una delle seguenti attività:
 
