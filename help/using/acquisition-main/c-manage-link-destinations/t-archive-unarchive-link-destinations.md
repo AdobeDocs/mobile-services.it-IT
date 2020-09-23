@@ -1,14 +1,17 @@
 ---
 description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
 seo-title: Gestire le destinazioni dei collegamenti
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Gestire le destinazioni dei collegamenti
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 100%
 
 ---
 
@@ -49,6 +52,7 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
       1. fai clic su **[!UICONTROL Visualizza archivio]**.
       1. Seleziona una o più caselle di controllo accanto ai nomi dei collegamenti da rimuovere dall’archivio.
       1. Fai clic su **[!UICONTROL Annulla archiviazione selezionati]**.
+
       L’opzione **[!UICONTROL Visualizza archivio]** è visibile solo se hai precedentemente archiviato delle destinazioni di collegamenti.
 
    * **Elimina**
