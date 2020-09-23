@@ -1,14 +1,17 @@
 ---
 description: Puoi configurare le opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi configurare le opzioni SDK Analytics nella pagina Gestione impostazioni quando crei una nuova app o ne modifichi una esistente.
 seo-title: Configurare le opzioni SDK Analytics
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Configurare le opzioni SDK Analytics
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +41,7 @@ Compila i seguenti campi nella sezione **[!UICONTROL Opzioni SDK Analytics]**:
 
    Specifica il valore di timeout della sessione.
 
-   Il valore predefinito è 300 secondi. Specifica l’intervallo di tempo, in secondi, che deve trascorrere tra un avvio dell’app e quello successivo affinché questo sia considerato come una nuova sessione. Il timeout viene applicato anche quando l’applicazione viene lasciata in background e poi riattivata. Il tempo durante il quale l’app rimane in background non viene incluso nella durata della sessione.
+   Il valore predefinito è 300 secondi. Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
 * **[!UICONTROL Limite batch]**
 
