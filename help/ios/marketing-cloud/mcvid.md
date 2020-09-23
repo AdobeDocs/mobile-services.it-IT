@@ -2,13 +2,13 @@
 description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 seo-title: Experience Cloud ID
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Experience Cloud ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 
