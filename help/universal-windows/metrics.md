@@ -1,177 +1,180 @@
 ---
-description: Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
+description: Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 keywords: android;library;mobile;sdk
-seo-description: Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
+seo-description: Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 seo-title: Metriche del ciclo di vita
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metriche del ciclo di vita
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 75%
 
 ---
 
 
-# Lifecycle metrics {#lifecycle-metrics}
+# Metriche del ciclo di vita {#lifecycle-metrics}
 
-Elenca le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile.
+Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 
-Per ulteriori informazioni, consulta [Risoluzione dei problemi dei dati](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)del ciclo di vita.
+Per ulteriori informazioni, consulta [Risoluzione dei problemi dei dati](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html)del ciclo di vita.
 
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell'audience. Analytics e Target usano lo stesso formato; Gestione dell'audience usa invece un prefisso diverso per ogni metrica.
+Una volta configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell&#39;audience. Analytics e Target usano lo stesso formato, mentre Gestione dell&#39;audience usa un prefisso diverso per ogni metrica.
 
-For Analytics, the context data that is sent with each lifecycle tracking call is automatically captured in and reported on by using the metric or dimension. Le eccezioni sono riportate nel contenuto.
+Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione. Le eccezioni sono riportate nel contenuto.
 
 ## Metrics (Metriche)
 
 * **Primi avvii**
 
-   Attivazione alla prima esecuzione dopo l'installazione o reinstallazione.
+   Attivazione alla prima esecuzione dopo l&#39;installazione o reinstallazione.
 
-   * Analytics Context Data/Target parameter: `a.InstallEvent`
-   * Audience Manager signal: `c_a_InstallEvent`
+   * Dati contestuali di Analytics/Parametro di Target: `a.InstallEvent`
+   * Segnale di Audience Manager: `c_a_InstallEvent`
 
 * **Aggiornamenti**
 
    Attivazione alla prima esecuzione dopo un aggiornamento o quando cambia il numero di versione.
 
-   * Analytics Context Data/Target parameter: `a.UpgradeEvent`
-   * Audience Manager signal: `c_a_UpgradeEvent`
+   * Dati contestuali di Analytics/Parametro di Target: `a.UpgradeEvent`
+   * Segnale di Audience Manager: `c_a_UpgradeEvent`
 
 * **Utenti giornalieri coinvolti**
 
-   Attivazione quando l'applicazione viene utilizzata in un giorno particolare.
-
-   >[!IMPORTANT]
-   >
-   >This metric is not automatically stored in an Analytics metric. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
-
-   * Analytics Context Data/Target parameter: `a.DailyEngUserEvent`
-   * Audience Manager signal: `c_a_DailyEngUserEvent`
-
-* **Utenti mensili coinvolti**
-
-   Attivazione quando l'applicazione viene utilizzata in un mese particolare.
+   Attivazione quando l&#39;applicazione viene utilizzata in un giorno particolare.
 
    >[!IMPORTANT]
    >
    >Questa metrica non viene memorizzata automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
 
-   * Analytics Context Data/Target parameter: `a.MonthlyEngUserEvent`
-   * Audience Manager signal: `c_a_MonthlyEngUserEvent`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DailyEngUserEvent`
+   * Segnale di Audience Manager: `c_a_DailyEngUserEvent`
+
+* **Utenti mensili coinvolti**
+
+   Attivazione quando l&#39;applicazione viene utilizzata in un mese particolare.
+
+   >[!IMPORTANT]
+   >
+   >Questa metrica non viene memorizzata automaticamente in una metrica Analytics. Devi creare una regola di elaborazione che imposti un evento personalizzato per la cattura di questa metrica.
+
+   * Dati contestuali di Analytics/Parametro di Target: `a.MonthlyEngUserEvent`
+   * Segnale di Audience Manager: `c_a_MonthlyEngUserEvent`
 
 * **Avvii**
 
-   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa dopo un periodo in background se viene superato il timeout di una sessione ciclo di vita.
+   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa in background quando viene superato il timeout della sessione del ciclo di vita.
 
-   * Analytics Context Data/Target parameter: `a.LaunchEvent`
-   * Audience Manager signal: `c_a_LaunchEvent`
+   * Dati contestuali di Analytics/Parametro di Target: `a.LaunchEvent`
+   * Segnale di Audience Manager: `c_a_LaunchEvent`
 
 * **Arresti anomali**
 
-   Attivazione quando l'applicazione non viene messa in background prima della chiusura. L'evento è inviato all'avvio dell'applicazione in seguito a un arresto anomalo. La reportistica di Adobe Mobile sugli arresti anomali non implementa un handler globale per eccezioni non rilevate.
+   Attivazione quando l&#39;applicazione non viene messa in background prima della chiusura. L&#39;evento è inviato all&#39;avvio dell&#39;applicazione in seguito a un arresto anomalo. La reportistica di Adobe Mobile sugli arresti anomali non implementa un handler globale per eccezioni non rilevate.
 
-   * Analytics Context Data/Target parameter: `a.CrashEvent`
-   * Audience Manager signal: `c_a_CrashEvent`
+   * Dati contestuali di Analytics/Parametro di Target: `a.CrashEvent`
+   * Segnale di Audience Manager: `c_a_CrashEvent`
 
 * **Durata sessione precedente**
 
-   Segnala la durata di una precedente sessione dell'applicazione in base a quanto tempo l'applicazione è stata aperta e in primo piano.
+   Segnala la durata di una precedente sessione dell&#39;applicazione in base a quanto tempo l&#39;applicazione è stata aperta e in primo piano.
 
-   * Analytics Context Data/Target parameter: `a.PrevSessionLength`
-   * Audience Manager signal: `c_a_PrevSessionLength`
+   * Dati contestuali di Analytics/Parametro di Target: `a.PrevSessionLength`
+   * Segnale di Audience Manager: `c_a_PrevSessionLength`
 
 
 ## Dimensioni
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l'installazione. Il formato della data è `MM/DD/YYYY`.
+   Data del primo avvio dopo l&#39;installazione. Il formato della data è `MM/DD/YYYY`.
 
-   * Analytics Context Data/Target parameter: `a.InstallDate`
-   * Audience Manager signal: `c_a_InstallDate`
+   * Dati contestuali di Analytics/Parametro di Target: `a.InstallDate`
+   * Segnale di Audience Manager: `c_a_InstallDate`
 
 * **ID app**
 
-   Stores the application name and version in the `[AppName] [BundleVersion]` format. Un esempio di questo formato è `myapp 1.1`.
+   Memorizza il nome e la versione dell&#39;applicazione nel formato `[AppName] [BundleVersion]`. Un esempio di questo formato è `myapp 1.1`.
 
-   * Analytics Context Data/Target parameter: `a.AppID`
-   * Audience Manager signal: `c_a_AppID`
+   * Dati contestuali di Analytics/Parametro di Target: `a.AppID`
+   * Segnale di Audience Manager: `c_a_AppID`
 
 * **Numero di avvii**
 
-   Numero di volte per cui l'applicazione è stata avviata o portata in primo piano.
+   Numero di volte per cui l&#39;applicazione è stata avviata o portata in primo piano.
 
-   * Analytics Context Data/Target parameter: `a.Launches`
-   * Audience Manager signal: `c_a_Launches`
+   * Dati contestuali di Analytics/Parametro di Target: `a.Launches`
+   * Segnale di Audience Manager: `c_a_Launches`
 
 * **Giorni dal primo utilizzo**
 
    Numero di giorni dalla prima esecuzione.
 
-   * Analytics Context Data/Target parameter: `a.DaysSinceFirstUse`
-   * Audience Manager signal: `c_a_DaysSinceFirstUse`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceFirstUse`
+   * Segnale di Audience Manager: `c_a_DaysSinceFirstUse`
 
-* **Giorni dall'ultimo utilizzo**
+* **Giorni dall&#39;ultimo utilizzo**
 
-   Numero di giorni dall'ultimo utilizzo.
+   Numero di giorni dall&#39;ultimo utilizzo.
 
-   * Analytics Context Data/Target parameter: `a.DaysSinceLastUse`
-   * Audience Manager signal: `c_a_DaysSinceLastUse`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUse`
+   * Segnale di Audience Manager: `c_a_DaysSinceLastUse`
 
 * **Ora del giorno**
 
-   Misura l'ora in cui è stata avviata l'app. Questa metrica usa il formato numerico a 24 ore e viene utilizzata per la suddivisione del tempo per determinare le ore di utilizzo di picco.
+   Misura l&#39;ora in cui è stata avviata l&#39;app. Questa metrica usa il formato numerico a 24 ore e viene utilizzata per la suddivisione del tempo per determinare le ore di utilizzo di picco.
 
-   * Analytics Context Data/Target parameter: `a.HourOfDay`
-   * Audience Manager signal: `c_a_HourOfDay`
+   * Dati contestuali di Analytics/Parametro di Target: `a.HourOfDay`
+   * Segnale di Audience Manager: `c_a_HourOfDay`
 
 * **Giorno della settimana**
 
-   Numero del giorno della settimana in cui è stata avviata l'app.
+   Numero del giorno della settimana in cui è stata avviata l&#39;app.
 
-   * Analytics Context Data/Target parameter: `a.DayOfWeek`
-   * Audience Manager signal: `c_a_DayOfWeek`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DayOfWeek`
+   * Segnale di Audience Manager: `c_a_DayOfWeek`
 
 * **Versione sistema operativo**
 
    Versione del sistema operativo.
 
-   * Analytics Context Data/Target parameter: `a.OSVersion`
-   * Audience Manager signal: `c_a_OSVersion`
+   * Dati contestuali di Analytics/Parametro di Target: `a.OSVersion`
+   * Segnale di Audience Manager: `c_a_OSVersion`
 
-* **Giorni dall'ultimo aggiornamento**
+* **Giorni dall&#39;ultimo aggiornamento**
 
-   Numero di giorni dalla modifica del numero di versione dell'applicazione.
-
-   >[!IMPORTANT]
-   >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
-
-   * Analytics Context Data/Target parameter: `a.DaysSinceLastUpgrade`
-   * Audience Manager signal: `c_a_DaysSinceLastUpgrade`
-
-* **Avvii dall'ultimo aggiornamento**
-
-   Numero di avvii dalla modifica del numero di versione dell'applicazione.
+   Numero di giorni dalla modifica del numero di versione dell&#39;applicazione.
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
-   * Analytics Context Data/Target parameter: `a.LaunchesSinceUpgrade`
-   * Audience Manager signal: `c_a_LaunchesSinceUpgrade`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUpgrade`
+   * Segnale di Audience Manager: `c_a_DaysSinceLastUpgrade`
+
+* **Avvii dall&#39;ultimo aggiornamento**
+
+   Numero di avvii dalla modifica del numero di versione dell&#39;applicazione.
+
+   >[!IMPORTANT]
+   >
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+
+   * Dati contestuali di Analytics/Parametro di Target: `a.LaunchesSinceUpgrade`
+   * Segnale di Audience Manager: `c_a_LaunchesSinceUpgrade`
 
 * **Nome del dispositivo**
 
    Memorizza il nome del dispositivo.
 
-   * Analytics Context Data/Target parameter: `a.DeviceName`
-   * Audience Manager signal: `c_a_DeviceName`
+   * Dati contestuali di Analytics/Parametro di Target: `a.DeviceName`
+   * Segnale di Audience Manager: `c_a_DeviceName`
 
 * **Nome gestore**
 
@@ -179,20 +182,20 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >Questa metrica non viene memorizzata automaticamente in una variabile Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
+   >Questa metrica non viene memorizzata automaticamente in una variabile di Analytics. È necessario creare una regola di elaborazione per copiare questo valore in una variabile di Analytics da usare nei rapporti.
 
-   * Analytics Context Data/Target parameter: `a.CarrierName`
-   * Audience Manager signal: `c_a_CarrierName`
+   * Dati contestuali di Analytics/Parametro di Target: `a.CarrierName`
+   * Segnale di Audience Manager: `c_a_CarrierName`
 
 * **Risoluzione**
 
    Larghezza x altezza in pixel reali.
 
-   * Analytics Context Data/Target parameter: `a.Resolution`
-   * Audience Manager signal: `c_a_Resolution`
+   * Dati contestuali di Analytics/Parametro di Target: `a.Resolution`
+   * Segnale di Audience Manager: `c_a_Resolution`
 
 
-## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Metriche e dimensioni aggiuntive per soluzioni mobile {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzione mobile con il seguente metodo:
 
@@ -200,35 +203,35 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
 * **Tempo azione totale**
 
-   Populated by `trackTimedAction` methods.
+   Viene compilata dai metodi `trackTimedAction`.
 
-   * Analytics Context Data/Target parameter: `a.action.time.total`
-   * Audience Manager signal: `c_a_action_time_total`
+   * Dati contestuali di Analytics/Parametro di Target: `a.action.time.total`
+   * Segnale di Audience Manager: `c_a_action_time_total`
 
 * **Tempo azione in-app**
 
-   Populated by `trackTimedAction` methods.
-   * Analytics Context Data/Target parameter: `a.action.time.inapp`
-   * Audience Manager signal: `c_a_action_time_inapp`
+   Viene compilata dai metodi `trackTimedAction`.
+   * Dati contestuali di Analytics/Parametro di Target: `a.action.time.inapp`
+   * Segnale di Audience Manager: `c_a_action_time_inapp`
 
-* **Valore "lifetime" del ciclo di vita (evento)**
+* **Valore &quot;lifetime&quot; del ciclo di vita (evento)**
 
-   Populated by `trackLifetimeValue` methods.
+   Viene compilata dai metodi `trackLifetimeValue`.
 
-   * Analytics Context Data/Target parameter: `a.ltv.amount`
-   * Audience Manager signal: `c_a_ltv_amount`
+   * Dati contestuali di Analytics/Parametro di Target: `a.ltv.amount`
+   * Segnale di Audience Manager: `c_a_ltv_amount`
 
 ### Dimensioni
 
 * **Posizione (fino a 10 chilometri)**
 
-   Populated by `trackLocation` methods.
+   Viene compilata dai metodi `trackLocation`.
 
    * Dati contestuali di Analytics/parametri di Target:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caratteristiche di Audience Manager:
+   * Caratteristiche  Audience Manager:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -236,13 +239,13 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
 * **Posizione (fino a 100 m)**
 
-   Populated by `trackLocation` methods.
+   Viene compilata dai metodi `trackLocation`.
 
    * Dati contestuali di Analytics/parametri di Target:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caratteristiche di Audience Manager:
+   * Caratteristiche  Audience Manager:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -250,13 +253,13 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
 * **Posizione (fino a 1 m)**
 
-   Populated by `trackLocation` methods.
+   Viene compilata dai metodi `trackLocation`.
 
    * Dati contestuali di Analytics/parametri di Target:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caratteristiche di Audience Manager:
+   * Caratteristiche  Audience Manager:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -264,21 +267,21 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili della soluzi
 
 * **Nome del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
+   Populated by `trackLocation` methods when device is in a defined POI.
 
-   * Analytics Context Data/Target parameter: `a.loc.poi`
-   * Caratteristiche di Audience Manager: `c_a_loc_poi`
+   * Dati contestuali di Analytics/Parametro di Target: `a.loc.poi`
+   * Audience Manager trait: `c_a_loc_poi`
 
 * **Distanza dal centro del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
+   Populated by `trackLocation` methods when device is within a defined POI.
 
-   * Analytics Context Data/Target parameter: `a.loc.dist`
-   * Caratteristiche di Audience Manager: `c_a_loc_dist`
+   * Dati contestuali di Analytics/Parametro di Target: `a.loc.dist`
+   * Audience Manager trait: `c_a_loc_dist`
 
-* **Valore "lifetime" del ciclo di vita (variabile di conversione)**
+* **Valore &quot;lifetime&quot; del ciclo di vita (variabile di conversione)**
 
-   Populated by `trackLifetimeValue` methods.
+   Viene compilata dai metodi `trackLifetimeValue`.
 
-   * Analytics Context Data/Target parameter: `a.ltv.amount`
-   * Caratteristiche di Audience Manager: `c_a_ltv_amount`
+   * Dati contestuali di Analytics/Parametro di Target: `a.ltv.amount`
+   * Audience Manager trait: `c_a_ltv_amount`
