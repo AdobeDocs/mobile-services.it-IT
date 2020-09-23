@@ -2,15 +2,15 @@
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
 seo-title: File di configurazione ADBMobile JSON
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,11 +89,11 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
 
 * **coopUnsafe**
 
-   For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
+   Per i membri Device Co-op che richiedono che questo valore sia impostato come `true`, è necessario collaborare con il team Co-op per richiedere un flag di blocklist per l’account Device Co-op. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
    Considerazioni da ricordare:
 
-   * Quando `coopUnsafe` è impostato su `true`, agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto `coop_unsafe=1`.
+   * Quando `coopUnsafe` è impostato su `true`, `coop_unsafe=1` agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto.
    * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, negli hit di Analytics troverai `coop_unsafe=1`.
 
    Seguono alcune informazioni aggiuntive:
@@ -134,7 +134,7 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
    * Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere true.
    * Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false.
 
-      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti, contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
+      Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,  contatta  l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
    * Versione SDK minima: 4.0
 
