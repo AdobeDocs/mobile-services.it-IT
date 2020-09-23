@@ -1,23 +1,26 @@
 ---
 description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 93%
 
 ---
 
 
-# Risoluzione dei problemi dei messaggi in-app{#troubleshooting-in-app-messaging}
+# Risoluzione dei problemi dei messaggi in-app {#troubleshooting-in-app-messaging}
 
 Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
 
-Se hai soddisfatto tutti i requisiti per la messaggistica in-app ma i messaggi non vengono visualizzati, verifica quanto segue:
+Se hai soddisfatto tutti i requisiti per i messaggi in-app, ma i messaggi non vengono visualizzati, verifica quanto segue:
 
 ## La nuova configurazione e il nuovo SDK sono inclusi nell’app?
 
@@ -25,7 +28,7 @@ Se hai soddisfatto tutti i requisiti per la messaggistica in-app ma i messaggi n
 
 * Inoltre devi verificare che nella configurazione sia presente una sezione relativa ai [Messaggistica](/help/using/in-app-messaging/in-app-messaging.md) (il file JSON scaricato) o di avere un endpoint remoto per i messaggi, in modo che sia possibile recuperarlo dalla gestione dinamica dei tag.
 
-## In Android il mio messaggio a schermo intero non viene visualizzato. L’SDK utilizzato e la configurazione sono corretti, così come gli attivatori.
+## Il mio messaggio a schermo intero in Android non viene visualizzato. L’SDK utilizzato e la configurazione sono corretti, così come gli attivatori.
 
 Hai aggiornato il file manifesto per definire l’attività a schermo intero?
 
@@ -51,7 +54,7 @@ Completa una delle seguenti attività:
 
 * Per l’aggiornamento dell’endpoint della gestione tag dinamica con la nuova definizione potrebbero essere necessari alcuni minuti.
 
-   Attendi qualche minuto e poi riprova.
+   Dedica un po&#39; di tempo e riprova.
 
 * La configurazione verrà aggiornata solo al successivo avvio.
 
@@ -69,7 +72,7 @@ Regole di posizionamento e dimensionamento per ciascun orientamento:
 
 * **Orizzontale:** l’immagine viene ridimensionata al 100% dell’altezza del dispositivo, con una larghezza corrispondente al 75% del dispositivo e una dissolvenza sul lato destro.
 
-   In caso di problemi con il modello a schermo intero, prova a scaricare e usare il modello HTML personalizzato. Questo offre maggiore flessibilità per le immagini e permette di controllare ogni aspetto del modello.
+   In caso di problemi con il modello a schermo intero, puoi scaricare e utilizzare il modello HTML personalizzato. Il modello HTML personalizzato offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
 
 ## I miei messaggi non riflettono le modifiche e gli aggiornamenti che ho apportato nell’interfaccia.
 
