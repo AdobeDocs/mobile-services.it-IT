@@ -4,21 +4,24 @@ seo-description: È possibile caricare un diverso file di configurazione ADBMobi
 seo-title: Escludere il percorso del file di configurazione ADBMobile JSON
 solution: Experience Cloud,Analytics
 title: Escludere il percorso del file di configurazione ADBMobile JSON
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 0d1be674-c634-4a48-aa31-5701681911b9
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 100%
 
 ---
 
 
 # Escludere il percorso del file di configurazione ADBMobile JSON {#override-the-adbmobile-json-config-path}
 
-È possibile caricare un diverso file di configurazione ADBMobile JSON all'avvio dell'applicazione.
+È possibile caricare un diverso file di configurazione ADBMobile JSON all&#39;avvio dell&#39;applicazione.
 
-Il metodo `ADBMobile overrideConfigPath:filePath` consente di specificare il percorso di un file di configurazione `ADBMobile.json` diverso all'avvio dell'applicazione. Questo metodo deve essere chiamato nel metodo `applicationDidFinishLaunchingWithOptions` e la chiamata deve essere eseguita prima di qualsiasi altra chiamata Experience Cloud SDK, ad esempio `collectLifecycleData`.
+Il metodo `ADBMobile overrideConfigPath:filePath` consente di specificare il percorso di un file di configurazione `ADBMobile.json` diverso all&#39;avvio dell&#39;applicazione. Questo metodo deve essere chiamato nel metodo `applicationDidFinishLaunchingWithOptions` e la chiamata deve essere eseguita prima di qualsiasi altra chiamata Experience Cloud SDK, ad esempio `collectLifecycleData`.
 
-Quando invochi questo metodo con un percorso diverso, si esclude una tantum il file di configurazione, fino alla chiusura dell'applicazione.
+Quando invochi questo metodo con un percorso diverso, si esclude una tantum il file di configurazione, fino alla chiusura dell&#39;applicazione.
 
 Ad esempio:
 
