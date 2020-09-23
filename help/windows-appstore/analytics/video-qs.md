@@ -1,25 +1,25 @@
 ---
-description: Informazioni utili per l’utilizzo di Video  Analytics.
-seo-description: Informazioni utili per l’utilizzo di Video  Analytics.
-seo-title: Analisi del video
-solution: Marketing Cloud,Analytics
-title: Analisi del video
+description: Informazioni utili per l’analisi dei video.
+seo-description: Informazioni utili per l’analisi dei video.
+seo-title: Analisi dei video
+solution: Experience Cloud,Analytics
+title: Analisi dei video
 topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 51%
+ht-degree: 68%
 
 ---
 
 
-# Analisi del video {#video-analytics}
+# Analisi dei video {#video-analytics}
 
-Informazioni utili per l’utilizzo di Video  Analytics.
+Informazioni utili per l’analisi dei video.
 
-La misurazione dei video è descritta in dettaglio nella guida [Misurazione audio e video di Adobe  Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html/) . Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione introduttiva fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione dei video è descritta in dettaglio in [Misurazione di audio e video nella guida  Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html/) . Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione introduttiva fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
@@ -27,10 +27,10 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Obbligatorio) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Potete aggiungere classificazioni per questa variabile.
 
-   (**Facoltativo**) La variabile Custom Insight fornisce informazioni sul percorso del video.
+   (**Optional**) The Custom Insight variable provides video pathing information.
 
    * Tipo di variabile: eVar
-   * Scadenza predefinita: Visita
+   * Scadenza predefinita: visita
    * Custom Insight (s.prop, utilizzato per il percorso del video)
 
 * **a.media.name**
@@ -45,12 +45,13 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l&#39;ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
 
-   Il metodo di raccolta dei dati video predefinito raccoglie i dati nei seguenti punti:
+   Il metodo predefinito per la raccolta dei dati video raccoglie i dati nei seguenti punti:
 
-   * inizio video (play)
+   * inizio video (Riproduci)
    * inizio segmento
-   * fine video (stop)
-    Analytics conteggia la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Il segmento successivo viene visualizzato all&#39;inizio del segmento.
+   * fine video (Interrompi)
+
+   Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -58,7 +59,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non deve essere riservata esclusivamente al tracciamento video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e calcolare i tassi di conversione del video.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e calcolare i tassi di conversione del video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -72,21 +73,21 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.view**
 
-   Indica che un visitatore ha visualizzato una parte del video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
+   Indica che un visitatore ha visualizzato una parte del video. Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
    * Variabile: Evento
    * Tipo: contatore
 
 * **a.media.segmentView**
 
-   Indica che un visitatore ha visualizzato una parte di un segmento video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
+   Indica che un visitatore ha visualizzato una parte di un segmento di video. Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a .media.complete**
 
-   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, potete specificare quanti secondi dalla fine del video considerare una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
+   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
 
    * Tipo di variabile: Event
    * Tipo: contatore
