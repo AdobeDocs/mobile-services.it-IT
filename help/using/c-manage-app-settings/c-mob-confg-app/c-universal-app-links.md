@@ -1,14 +1,17 @@
 ---
 description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti diretti nelle app iOS o Android.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti diretti nelle app iOS o Android.
 seo-title: Collegamenti universali Apple e collegamenti app Android
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Collegamenti universali Apple e collegamenti app Android
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: ht
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1142'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +66,7 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
 1. In Adobe Mobile Services, crea un collegamento di marketing che utilizza i collegamenti universali:
 
-   a. Seleziona l’app dalla home page di Mobile Services, fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Fai clic su **[!UICONTROL Crea nuovo]**.
 
@@ -122,7 +125,7 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
 1. In Adobe Mobile Services, crea un collegamento di marketing che utilizza i collegamenti alle app:
 
-   a. Seleziona l’app dalla home page di Mobile Services, fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Fai clic su **[!UICONTROL Crea nuovo]**.
 
