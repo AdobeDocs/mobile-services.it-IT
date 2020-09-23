@@ -1,37 +1,40 @@
 ---
-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
-seo-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
-seo-title: Metodi di analisi
-solution: Marketing Cloud,Analytics
-title: Metodi di analisi
-topic: Sviluppatore e implementazione
+description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
+seo-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
+seo-title: Metodi di Analytics
+solution: Experience Cloud,Analytics
+title: Metodi di Analytics
+topic: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 57%
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Metodi di Analytics {#analytics-methods}
 
-Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
+Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
 
-Al momento l’SDK dispone di supporto per più Soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso "Analytics".
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Analytics&quot;.
 
 Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di Adobe Analytics.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
 
 * **TrackState (winJS: trackState)**
 
-   Tiene traccia dello stato di un'app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell'app, ad esempio “dashboard iniziale”, “impostazioni dell'app”, “carrello” e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
-Se `state` è vuoto, nei rapporti viene visualizzato come “app name app version (build)”. Se vedi questo valore nei rapporti, assicurati che `state` sia impostato in ogni chiamata `TrackState`.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni dell’app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
+If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
 
    >[!TIP]
    >
-   >Questa è l'unica chiamata di tracciamento che incrementa le visualizzazioni di pagina.
+   >Questa è l&#39;unica chiamata di tracciamento che incrementa le visualizzazioni pagina.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -48,7 +51,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackAction (winJS: trackAction)**
 
-   Tiene traccia di un'azione nell'applicazione. Le azioni sono gli eventi che avvengono nell’applicazione e che desideri misurare, come “accessi”, “tap sui banner”, “abbonamenti ai feed” e altre metriche.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell’app e che desideri misurare, come &quot;accessi&quot;, &quot;tap sui banner&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -65,7 +68,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
-   Restituisce l’ID visitatore generato automaticamente per Analytics. Si tratta di un ID visitatore univoco specifico per l'app, che viene generato all'avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene conservato tra un aggiornamento e l’altro dell’applicazione, e rimosso alla disinstallazione.
+   Restituisce l’ID visitatore generato automaticamente per Analytics. Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso alla disinstallazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -84,7 +87,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackLocation (winJS: trackLocation)**
 
-   Invia le coordinate x,y correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all'interno di un POI. Se le coordinate correnti si trovano all'interno di un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
+   Invia le coordinate x,y correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all&#39;interno di un POI. Se le coordinate correnti si trovano all&#39;interno di un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -101,7 +104,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackLifetime &#x200B; ValueIncrease (winJS: trackLifetime &#x200B; ValueIncrease)**
 
-   Aggiunge al valore "lifetime" del ciclo di vita dell'utente un incremento pari a `amount`.
+   Aggiunge al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente un incremento pari a `amount`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -118,7 +121,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackTimed &#x200B; ActionStart (winJS: trackTimed &#x200B; ActionStart)**
 
-   Avvia un'azione temporizzata con il nome `action`. Se invochi questo metodo per un'azione già avviata, l'azione temporizzata precedente viene sovrascritta.
+   Avvia un&#39;azione temporizzata con il nome `action`. Se invochi questo metodo per un&#39;azione già avviata, l&#39;azione temporizzata precedente viene sovrascritta.
 
    >[!TIP]
    >
@@ -137,9 +140,9 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **TrackTimed&#x200B;ActionUpdate (winJS: trackTimed&#x200B;ActionUpdate)**
+* **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Passa i dati `contextData` per aggiornare i dati contestuali associati all'azione `action`. I dati `data` passati vengono aggiunti alla fine dei dati esistenti per l'azione, e li sovrascrivono se per l'azione è già definita la stessa chiave per `action`.
+   Passa i dati `contextData` per aggiornare i dati contestuali associati all&#39;azione `action`. I dati `data` passati vengono aggiunti alla fine dei dati esistenti per l&#39;azione, e li sovrascrivono se per l&#39;azione è già definita la stessa chiave per `action`.
 
    >[!TIP]
    >
@@ -162,7 +165,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
-   Restituisce true se l'azione temporizzata specificata esiste e false se non esiste.
+   Restituisce true se l&#39;azione temporizzata specificata esiste e false se non esiste.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -180,7 +183,7 @@ Se `state` è vuoto, nei rapporti viene visualizzato come “app name app versio
 
 * **TrackTimed &#x200B; ActionEnd (winJS: trackTimed &#x200B; ActionEnd)**
 
-   Termina un'azione temporizzata.
+   Termina un&#39;azione temporizzata.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
