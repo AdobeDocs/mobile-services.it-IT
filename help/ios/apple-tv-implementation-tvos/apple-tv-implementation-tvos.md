@@ -4,10 +4,13 @@ seo-description: Queste informazioni sono utili per implementare Apple TV con tv
 seo-title: Implementazione Apple TV con tvOS
 solution: Experience Cloud,Analytics
 title: Implementazione Apple TV con tvOS
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -16,18 +19,18 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 Queste informazioni sono utili per implementare Apple TV con tvOS.
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Panoramica
 
-Con Apple TV, è ora possibile creare applicazioni da eseguire nell'ambiente nativo tvOS. Puoi creare un'app nativa utilizzando diversi framework in iOS, oppure puoi creare un'app utilizzando modelli XML e JavaScript.
+Con Apple TV, ora è possibile creare applicazioni da eseguire nell&#39;ambiente nativo tvOS. Potete creare un&#39;app nativa utilizzando diversi framework in iOS, oppure potete creare l&#39;app utilizzando modelli XML e JavaScript.
 
 >[!TIP]
 >
@@ -37,15 +40,15 @@ Con Apple TV, è ora possibile creare applicazioni da eseguire nell'ambiente nat
 
 >[!TIP]
 >
->Si presuppone che il progetto abbia come destinazione un'app Apple TV per tvOS. Per ulteriori informazioni, consulta [tvOS](https://developer.apple.com/tvos/documentation/).
+>Si presuppone che il progetto abbia come destinazione un&#39;app Apple TV per tvOS. Per ulteriori informazioni, consulta [tvOS](https://developer.apple.com/tvos/documentation/).
 
-## Configurare un'app nativa per tvOS {#section_5095F19B3C4545F68E8C1E37A7E303AE}
+## Configurare un&#39;app nativa per tvOS {#section_5095F19B3C4545F68E8C1E37A7E303AE}
 
 Completa i seguenti passaggi nel progetto Xcode:
 
 1. Trascina nel progetto la cartella AdobeMobileLibrary.
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della tua destinazione.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell'app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
@@ -53,31 +56,31 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 Per informazioni, consulta la documentazione di iOS in [iOS](https://developer.apple.com/ios/resources/).
 
-## Configurare un'app TVML/TVJS per tvOS {#section_AB2EC8C326654F3387658EBBD990BB12}
+## Configurare un&#39;app TVML/TVJS per tvOS {#section_AB2EC8C326654F3387658EBBD990BB12}
 
 1. Trascina nel progetto la cartella `AdobeMobileLibrary`.
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della tua destinazione.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell'app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
    * `SystemConfiguration.framework`
 
-1. Nel file di implementazione della classe `TVApplicationControllerDelegate`, importa l'SDK.
+1. Nel file di implementazione della classe `TVApplicationControllerDelegate`, importa l&#39;SDK.
 
    ```objective-c
    #import “ADBMobile.h"
    ```
 
-1. Nel metodo `application:didFinishLaunchWithOptions:` della classe `TVApplicationControllerDelegate`, passa l'oggetto `TVApplicationController` all'SDK con il metodo `installTVMLHooks:`.
+1. Nel metodo `application:didFinishLaunchWithOptions:` della classe `TVApplicationControllerDelegate`, passa l&#39;oggetto `TVApplicationController` all&#39;SDK con il metodo `installTVMLHooks:`.
 
-   Per registrarsi nel JSContext dell'app, l'SDK di Adobe deve poter accedere alla classe `TVApplicationController` dell'app. Questo passaggio consente di invocare i metodi nativi nell'SDK di Adobe dai file JavaScript.
+   Per registrarsi nel JSContext dell&#39;app, l&#39;SDK di Adobe deve poter accedere alla classe `TVApplicationController` dell&#39;app. Questo passaggio consente di invocare i metodi nativi nell&#39;SDK di Adobe dai file JavaScript.
 
    ```objective-c
    [ADBMobile installTVMLHooks:appController];
    ```
 
-1. Nei file JavaScript, usa l'oggetto `ADBMobile` per accedere ai metodi nativi dell'SDK di Adobe.
+1. Nei file JavaScript, usa l&#39;oggetto `ADBMobile` per accedere ai metodi nativi dell&#39;SDK di Adobe.
 
    Per un elenco completo dei metodi disponibili, vedi [Metodi TVJS](/help/ios/apple-tv-implementation-tvos/tvjs-methods.md).
 
