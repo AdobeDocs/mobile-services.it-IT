@@ -3,13 +3,13 @@ description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi
 keywords: mobile
 seo-description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare varie opzioni avanzate, comprese le opzioni di payload e quelle personalizzate per i dispositivi iOS.'
 seo-title: Esperienza Messaggio push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Esperienza Messaggio push
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
