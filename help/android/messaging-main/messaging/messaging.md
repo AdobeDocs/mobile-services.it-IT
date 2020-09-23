@@ -2,12 +2,12 @@
 description: Puoi inviare messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
 seo-description: Puoi inviare messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
 seo-title: Messaggistica in-app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Messaggistica in-app
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 61%
@@ -38,7 +38,7 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 >
 >To use in-app messaging, you **must** have SDK version 4.2 or later.
 
-Puoi creare messaggi e regole in Adobe Mobile Services che definiscono quando i messaggi vengono visualizzati. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Per visualizzare i messaggi in-app, è necessario aggiornare l&#39;SDK. Puoi completare questi passaggi anche se non hai ancora definito alcun messaggio. Dopo aver definito i messaggi, questi verranno inviati dinamicamente all&#39;app e visualizzati senza che sia necessario aggiornare l&#39;app store.
+Puoi creare messaggi e regole in  Adobe Mobile Services che definiscono quando i messaggi vengono visualizzati. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Per visualizzare i messaggi in-app, è necessario aggiornare l&#39;SDK. Puoi completare questi passaggi anche se non hai ancora definito alcun messaggio. Dopo aver definito i messaggi, questi verranno inviati dinamicamente all&#39;app e visualizzati senza che sia necessario aggiornare l&#39;app store.
 
 ## Abilitazione dei messaggi in-app {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
