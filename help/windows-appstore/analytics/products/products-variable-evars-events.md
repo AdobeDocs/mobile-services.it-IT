@@ -1,20 +1,23 @@
 ---
-description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
-seo-description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
+description: Esempio della variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
+seo-description: Esempio della variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
 seo-title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
-source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events{#products-variable-with-merchandising-evars-and-product-specific-events}
+# Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti{#products-variable-with-merchandising-evars-and-product-specific-events}
 
-Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
+Esempio della variabile &quot;products&quot; con eVar per merchandising ed eventi per singoli prodotti.
 
 ```
 //create a context data dictionary 
@@ -37,5 +40,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Se si attiva un evento specifico per il prodotto utilizzando la *`&&products`* variabile, è necessario impostare tale evento anche nella *`&&events`* variabile, altrimenti l'evento viene escluso durante l'elaborazione.
+>Se si attiva un evento specifico per il prodotto utilizzando la *`&&products`* variabile, è necessario impostare tale evento anche nella *`&&events`* variabile, altrimenti l&#39;evento viene escluso durante l&#39;elaborazione.
 
