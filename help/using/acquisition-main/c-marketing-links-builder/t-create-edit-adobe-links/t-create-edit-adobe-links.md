@@ -1,14 +1,17 @@
 ---
 description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
 seo-title: Creare o modificare collegamenti di marketing
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Creare o modificare collegamenti di marketing
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +24,7 @@ Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti 
 1. Completa una delle seguenti attività:
 
    * Per creare un collegamento di marketing, fai clic su **[!UICONTROL Crea nuovo]**.
-   * Per modificare un collegamento, fai clic sul nome del collegamento nella colonna **[!UICONTROL Titolo].**
+   * Per modificare un collegamento, fai clic sul nome del collegamento nella colonna **[!UICONTROL Titolo]**.
 
 1. Digita le informazioni nei campi seguenti:
 
@@ -35,7 +38,7 @@ Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti 
 
    * **[!UICONTROL Aggiungi dati contestuali tracciamento]**:
 
-      (**Facoltativo**) Fai clic sull’icona **[!UICONTROL +]** e digita le informazioni richieste per tracciare la tua campagna utilizzando i dati contestuali. Nell’elenco a discesa **[!UICONTROL Dati contestuali personalizzati]**, seleziona un tag predefinito o uno dei tuoi tag personalizzati. I dati contestuali vengono utilizzati per registrare quando viene distribuito il collegamento di marketing.
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Nell’elenco a discesa **[!UICONTROL Dati contestuali personalizzati]**, seleziona un tag predefinito o uno dei tuoi tag personalizzati. I dati contestuali vengono utilizzati per registrare quando viene distribuito il collegamento di marketing.
 
       Sono disponibili i seguenti tag preimpostati:
 
@@ -82,7 +85,7 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
 
          I sistemi operativi supportati sono: iOS, Android, AMX e altri.
 
-      * **[!UICONTROL Tipo di dispositivo]**
+      * **[!UICONTROL Device Type]**
 
          I tipi di dispositivi possono essere desktop, eReader, console giochi, telefoni cellulari, decoder e altri.
    1. Fai clic sull’icona **[!UICONTROL Destinazione]** (![icona quadrata](assets/icon_square.png)) e seleziona uno dei tipi di destinazione seguenti:
@@ -91,9 +94,10 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
       * **[!UICONTROL Collegamento web]**
       * **[!UICONTROL Collegamento profondo app]**
       * **[!UICONTROL Collegamento ibrido]**
+
       >[!TIP]
       >
-      >Quando usi il tipo di destinazione **[!UICONTROL Collegamento web]** con un collegamento all’app store, non è possibile tenere traccia delle acquisizioni. A tale scopo, usa piuttosto il tipo di destinazione **[!UICONTROL App store].**
+      >Quando usi il tipo di destinazione **[!UICONTROL Collegamento web]** con un collegamento all’app store, non è possibile tenere traccia delle acquisizioni. A tale scopo, usa piuttosto il tipo di destinazione **[!UICONTROL App store]**.
 
       Per ulteriori informazioni, vedi [Creare una nuova destinazione di collegamento](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
