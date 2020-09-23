@@ -4,19 +4,22 @@ seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni
 seo-title: Tracciare gli stati dell'app
 solution: Experience Cloud,Analytics
 title: Tracciare gli stati dell'app
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
 
-# Tracciare gli stati dell'app {#track-app-states}
+# Tracciare gli stati dell&#39;app {#track-app-states}
 
-Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
+Per &quot;stati&quot; si intendono le diverse schermate o visualizzazioni disponibili nell&#39;app.
 
-Ogni volta che nell'applicazione viene visualizzato un nuovo stato, ad esempio quando l'utente si sposta dalla homepage al feed di notizie, viene inviata una chiamata `trackState`. In Android, `trackState` viene generalmente chiamato ogni volta che si carica una nuova attività.
+Ogni volta che nell&#39;applicazione viene visualizzato un nuovo stato, ad esempio quando l&#39;utente si sposta dalla homepage al feed di notizie, viene inviata una chiamata `trackState`. In Android, `trackState` viene generalmente chiamato ogni volta che si carica una nuova attività.
 
 ## Tracciamento degli stati {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -66,13 +69,13 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate 
 
 ![](assets/map-variable-context-state.png)
 
-## Generazione di rapporti sugli stati dell'app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Generazione di rapporti sugli stati dell&#39;app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Gli stati vengono generalmente visualizzati utilizzando un rapporto del percorso, che consente di vedere in che modo gli utenti si spostano nell'app e quali stati vengono visualizzati più di frequente.
+Gli stati vengono generalmente visualizzati utilizzando un rapporto sui percorsi, che consente di vedere in che modo gli utenti si spostano nell&#39;app e quali stati vengono visualizzati più di frequente.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all'interno dell'applicazione. Un esempio di percorso è **[!UICONTROL Home]** &gt; **[!UICONTROL Impostazioni]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all&#39;interno dell&#39;applicazione. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **[!UICONTROL Pagine]**, **[!UICONTROL Visualizzazioni pagina]** e **[!UICONTROL Percorso]**. |
 | Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
 
