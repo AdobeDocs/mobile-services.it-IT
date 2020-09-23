@@ -4,10 +4,13 @@ seo-description: Il tracciamento iBeacon consente di misurare e indirizzare come
 seo-title: Tracciamento iBeacon
 solution: Experience Cloud,Analytics
 title: Tracciamento iBeacon
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +24,7 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
 * `a.beacon.uuid` - ProximityUUID del beacon.
 * `a.beacon.major` - numero principale del beacon, ad esempio numero del negozio.
 * `a.beacon.minor` - numero secondario del beacon, ad esempio un numero univoco nel negozio.
-* `a.beacon.prox` - i seguenti valori rappresentano la distanza dell'utente dal beacon:
+* `a.beacon.prox` - i seguenti valori rappresentano la distanza dell&#39;utente dal beacon:
 
    * `0`: distanza sconosciuta
    * `1`: nelle immediate vicinanze
@@ -45,7 +48,7 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
    [ADBMobile trackBeacon:beacon data:nil];
    ```
 
-1. Quando l'utente lascia le vicinanze del beacon, cancella il beacon corrente:
+1. Quando l&#39;utente lascia le vicinanze del beacon, cancella il beacon corrente:
 
    ```objective-c
    [ADBMobile trackingClearCurrentBeacon];
@@ -53,7 +56,7 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
 
 ## Inviare dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
-Oltre al nome dell'azione temporizzata, con ogni chiamata di tracciamento puoi inviare anche dati di contesto aggiuntivi:
+Oltre al nome dell&#39;azione temporizzata, con ogni chiamata di tracciamento puoi inviare anche dati di contesto aggiuntivi:
 
 ```objective-c
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
