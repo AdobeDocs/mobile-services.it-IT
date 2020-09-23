@@ -1,28 +1,31 @@
 ---
-description: Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
-seo-description: Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
+description: In questa sezione viene descritto come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK 4.x per Windows 8.1 Universal App Store per  Soluzioni di Experience Cloud.
+seo-description: In questa sezione viene descritto come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK 4.x per Windows 8.1 Universal App Store per  Soluzioni di Experience Cloud.
 seo-title: Migrazione agli SDK 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migrazione agli SDK 4.x
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '683'
+ht-degree: 13%
 
 ---
 
 
 # Migrazione agli SDK 4.x {#migrate-to-the-x-sdks}
 
-Questa sezione spiega come passare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
+In questa sezione viene descritto come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK 4.x per Windows 8.1 Universal App Store per  Soluzioni di Experience Cloud.
 
-Con il passaggio alla versione 4.x, tutte le funzionalità sono ora accessibili mediante metodi statici, quindi non è più necessario tenere traccia dei propri oggetti.
+Con il passaggio alla versione 4.x, tutte le funzionalità sono ora accessibili tramite metodi statici, per cui non è più necessario tenere traccia dei propri oggetti.
 
-Le sezioni seguenti illustrano la procedura per migrare dalla versione 3.x alla versione 4.x.
+Nelle sezioni seguenti viene descritta la migrazione dalla versione 3.x alla versione 4.x.
 
-## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+## Rimuovere le proprietà non utilizzate {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Avrai probabilmente notato il nuovo file `ADBMobileConfig.json` incluso nel download. Questo file contiene impostazioni globali specifiche per le applicazioni e sostituisce la maggior parte delle variabili di configurazione utilizzate nelle versioni precedenti. Ecco un esempio di file `ADBMobileConfig.json`:
+Probabilmente avete notato un nuovo `ADBMobileConfig.json` file incluso nel download. Questo file contiene impostazioni globali specifiche per le applicazioni e sostituisce la maggior parte delle variabili di configurazione utilizzate nelle versioni precedenti. Ecco un esempio di file `ADBMobileConfig.json`:
 
 ```js
 { 
@@ -50,55 +53,55 @@ Avrai probabilmente notato il nuovo file `ADBMobileConfig.json` incluso nel down
 }
 ```
 
-Nella tabella seguente sono elencate le variabili di configurazione che devi spostare al file di configurazione. Sposta il set di valori della variabile nella prima colonna alla variabile nella seconda colonna, quindi elimina la variabile di configurazione precedente dal codice.
+Nella tabella seguente sono elencate le variabili di configurazione che devi spostare al file di configurazione. Sposta il valore impostato per la variabile della prima colonna alla variabile della seconda colonna, quindi rimuovi la vecchia variabile di configurazione dal codice.
 
 ## Migrazione da 3.x
 
 | Variabile/Metodo di configurazione | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
-| offlineTrackingEnabled | "offlineEnabled" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| setOfflineHitLimit | Rimuovi, non è più utilizzata. |
-| linkTrackVars | Rimuovi, non è più utilizzata. |
-| linkTrackEvents | Rimuovi, non è più utilizzata. |
+| offlineTrackingEnabled | &quot;offlineEnabled&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| setOfflineHitLimit | Rimuovi, non più utilizzato. |
+| linkTrackVars | Rimuovi, non più utilizzato. |
+| linkTrackEvents | Rimuovi, non più utilizzato. |
 
-## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
+## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-Invece di utilizzare le chiamate `Track` e `TrackLink`, l’SDK della versione 4 utilizza due metodi che hanno più senso nel mondo dei dispositivi mobili:
+Invece di utilizzare le `Track` chiamate e `TrackLink` gli SDK versione 4 incentrati sul Web, l&#39;SDK usa due metodi che hanno un senso nel mondo dei dispositivi mobili:
 
-* `TrackState` Gli stati sono le visualizzazioni disponibili nell'app, ad esempio “dashboard iniziale”, “impostazioni dell'app”, “carrello” e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
+* `TrackState` Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni dell’app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `trackState` incrementano le visualizzazioni di pagina.
 
-* `TrackAction` Le azioni sono gli eventi che avvengono nell’applicazione e che desideri misurare, come “accessi”, “tap sui banner”, “abbonamenti ai feed” e altre metriche. Tali chiamate non incrementano le visualizzazioni di pagina.
+* `TrackAction` Le azioni sono gli eventi che avvengono nell’app e che desideri misurare, come &quot;accessi&quot;, &quot;tap sui banner&quot;, &quot;abbonamenti ai feed&quot; e altre metriche. Queste chiamate non incrementano le visualizzazioni di pagina.
 
-Il parametro `contextData` di entrambi questi metodi contiene coppie nome-valore che vengono inviate come dati contestuali.
+The `contextData` parameter for both of these methods contains name-value pairs that are sent as context data.
 
 ## Eventi, prop, eVar
 
-Se hai esaminato i metodi [](/help/windows-appstore/c-configuration/methods.md)SDK, probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare direttamente nell'app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
+Se hai esaminato i metodi [](/help/windows-appstore/c-configuration/methods.md)SDK, probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
 
-L’elaborazione di regole offre diversi vantaggi:
+Le regole di elaborazione offrono diversi vantaggi:
 
-* È possibile cambiare la mappatura dei dati senza dover inviare un aggiornamento all’App Store.
-* Invece di impostare variabili specifiche per una suite di rapporti, è possibile assegnare ai dati dei nomi significativi.
-* L’impatto dell’invio di dati aggiuntivi è limitato. Questi valori compariranno nei rapporti solo dopo che questi saranno stati mappati utilizzando delle regole di elaborazione.
+* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
+* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
+* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
 
 For more information, see *Processing Rules* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti ai dati contestuali. This means that calls to `SetProp`, `SetEvar`, and assignments to persistent context data should all be removed and the values added to context data.
 
-**AppSection/Server, GeoZip, Transaction ID, Campaign e altre variabili standard**
+**AppSection/Server, GeoZip, ID transazione, Campaign e altre variabili standard**
 
-Tutti gli altri dati che precedentemente impostavi sull’oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti invece ai dati contestuali.
+Tutti gli altri dati che precedentemente impostavi sull’oggetto di misurazione, comprese le variabili elencate sopra, devono essere aggiunti invece ai dati contestuali.
 
-Per dirla semplicemente, gli unici dati inviati con una chiamata `TrackState` o `TrackAction` sono il payload del parametro `data`.
+Per dirla semplicemente, gli unici dati inviati con una `TrackState` chiamata o `TrackAction` chiamata sono il payload nel `data` parametro.
 
 ### Sostituire le chiamate di tracciamento
 
-Nell’intero codice, sostituisci i metodi seguenti con una chiamata a `trackState` o `trackAction`:
+Throughout your code, replace the following methods with a call to `trackState` or `trackAction`:
 
 ### Migrazione da 3.x
 
@@ -107,24 +110,24 @@ Nell’intero codice, sostituisci i metodi seguenti con una chiamata a `trackSta
 * `Track` (TrackAction)
 * `TrackLinkURL` (TrackAction)
 
-## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+## ID visitatore personalizzato {#section_2CF930C13BA64F04959846E578B608F3}
 
-Replace the `visitorID` variable with a call to `setUserIdentifier`.
+Sostituisci la variabile `visitorID` con una chiamata a `setUserIdentifier`.
 
-## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Tracciamento offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Il tracciamento offline è abilitato nel `ADBMobileConfig.json` file. Tutte le altre configurazioni offline vengono eseguite automaticamente.
+Offline tracking is enabled in the `ADBMobileConfig.json` file. All other offline configuration is done automatically.
 
-Nell’intero codice, devi rimuovere le chiamate ai seguenti metodi:
+In tutto il codice, devi rimuovere le chiamate ai seguenti metodi:
 
 ### Migrazione da 3.x
 
 * `SetOnline`
 * `SetOffline`
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Poiché la variabile "" non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
+Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 
 ```js
 // create a processing rule to set the corresponding product event. 
@@ -136,4 +139,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-In this example, the value of `"&&products"` is `";Cool Shoe`" and should follow the products string syntax for the type of event that you are tracking.
+In questo esempio, il valore di `"&&products"` è `";Cool Shoe`&quot; e deve seguire la sintassi della stringa products per il tipo di evento che si sta monitorando.
