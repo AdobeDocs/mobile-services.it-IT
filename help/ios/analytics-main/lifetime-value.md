@@ -4,19 +4,22 @@ seo-description: Il valore "lifetime" permette di misurare e impostare come dest
 seo-title: Valore "lifetime" del ciclo di vita del visitatore
 solution: Experience Cloud,Analytics
 title: Valore "lifetime" del ciclo di vita del visitatore
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 100%
 
 ---
 
 
-# Valore "lifetime" del ciclo di vita del visitatore {#visitor-lifetime-value}
+# Valore &quot;lifetime&quot; del ciclo di vita del visitatore {#visitor-lifetime-value}
 
-Il valore "lifetime" permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente.
+Il valore &quot;lifetime&quot; permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente.
 
-Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale valore viene aggiunto a quello esistente. Il valore "lifetime" del ciclo di vita è memorizzato nel dispositivo e può essere recuperato in qualsiasi momento con una chiamata `lifetimeValue`. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto, ecc. nel corso del ciclo di vita.
+Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale valore viene aggiunto a quello esistente. Il valore &quot;lifetime&quot; del ciclo di vita è memorizzato nel dispositivo e può essere recuperato in qualsiasi momento con una chiamata `lifetimeValue`. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto, ecc. nel corso del ciclo di vita.
 
 ## Tracciare il valore del ciclo di vita del visitatore {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
@@ -29,7 +32,7 @@ Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale va
    import com.adobe.mobile.*;
    ```
 
-1. Invoca `trackLifetimeValueIncrease` con l'incremento da aggiungere al valore:
+1. Invoca `trackLifetimeValueIncrease` con l&#39;incremento da aggiungere al valore:
 
    ```objective-c
    [ADBMobile trackLifetimeValueIncrease:increaseAmount data:nil];
@@ -37,7 +40,7 @@ Ogni volta che viene inviato un valore con `trackLifetimeValueIncrease`, tale va
 
 ## Inviare dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
-Oltre al valore "lifetime" del ciclo di vita, con ogni chiamata di tracciamento delle azioni puoi inviare anche dati di contesto aggiuntivi:
+Oltre al valore &quot;lifetime&quot; del ciclo di vita, con ogni chiamata di tracciamento delle azioni puoi inviare anche dati di contesto aggiuntivi:
 
 ```objective-c
 NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
