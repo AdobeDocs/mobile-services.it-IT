@@ -1,14 +1,17 @@
 ---
 description: Puoi accedere ad Adobe Mobile Services utilizzando un browser web.
-keywords: mobile,cambio password,accesso,disconnessione,login,logout, connessione,accedere
+keywords: mobile;change password;log in;log out;login;logout;sign in;signin
 seo-description: Puoi accedere ad Adobe Mobile Services utilizzando un browser web.
 seo-title: Accesso
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Accesso
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: ht
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 100%
 
 ---
 
