@@ -5,24 +5,27 @@ seo-title: Tracciamento dei collegamenti profondi
 solution: Experience Cloud,Analytics
 title: Tracciamento dei collegamenti profondi
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 98%
 
 ---
 
 
 # Tracciamento dei collegamenti profondi{#tracking-deep-links}
 
-Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per iOS.
+Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l&#39;SDK di Adobe Mobile per iOS.
 
 Per ulteriori informazioni sul modo in cui i professionisti del marketing utilizzano i collegamenti profondi nelle loro applicazioni, consulta la sezione [Acquisizione](/help/ios/acquisition-main/acquisition.md) nella documentazione di Mobile Services.
 
 ## Tracciamento dei collegamenti profondi
 
-1. Aggiungi l'SDK al tuo progetto e implementa le metriche del ciclo di vita.
+1. Aggiungi l&#39;SDK al tuo progetto e implementa le metriche del ciclo di vita.
 
    Per ulteriori informazioni, consulta *Aggiungere l’SDK e il file di configurazione al progetto* in [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
-1. Registra l'applicazione per la gestione di comunicazioni tra app o supporto di collegamenti universali.
+1. Registra l&#39;applicazione per la gestione di comunicazioni tra app o supporto di collegamenti universali.
 
    Per ulteriori informazioni, consulta [Comunicazioni tra app](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) o [Collegamenti universali di supporto](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
@@ -48,9 +51,9 @@ Per ulteriori informazioni sul modo in cui i professionisti del marketing utiliz
    }
    ```
 
-SDK di Adobe Mobile può analizzare le coppie chiave-valore di dati aggiunti alla fine di un collegamento diretto o universale, purché questo contenga una chiave con l'etichetta `a.deeplink.id` e un valore corrispondente non nullo e generato dall'utente. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all'hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la chiave-valore `a.deeplink.id`.
+SDK di Adobe Mobile può analizzare le coppie chiave-valore di dati aggiunti alla fine di un collegamento diretto o universale, purché questo contenga una chiave con l&#39;etichetta `a.deeplink.id` e un valore corrispondente non nullo e generato dall&#39;utente. Tutte le coppie di dati chiave-valore aggiunte alla fine del collegamento vengono analizzate, allegate all&#39;hit del ciclo di vita e inviate ad Adobe Analytics, purché il collegamento contenga la chiave-valore `a.deeplink.id`.
 
-Puoi anche scegliere di aggiungere al collegamento diretto o universale una o più delle seguenti chiavi riservate (con valori generati dall'utente):
+Puoi anche scegliere di aggiungere al collegamento diretto o universale una o più delle seguenti chiavi riservate (con valori generati dall&#39;utente):
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
