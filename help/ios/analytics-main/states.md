@@ -1,20 +1,23 @@
 ---
-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell'app viene visualizzato un nuovo stato, ad esempio, quando un utente passa dalla home page al feed delle notizie, è utile inviare una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
-seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell'app viene visualizzato un nuovo stato, ad esempio, quando un utente passa dalla home page al feed delle notizie, è utile inviare una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
+description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell’applicazione viene visualizzato un nuovo stato, ad esempio quando un utente passa dalla home page al feed delle notizie, deve essere inviata una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
+seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell’applicazione viene visualizzato un nuovo stato, ad esempio quando un utente passa dalla home page al feed delle notizie, deve essere inviata una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
 seo-title: Tracciare gli stati dell'app
 solution: Experience Cloud,Analytics
 title: Tracciare gli stati dell'app
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 58%
 
 ---
 
 
-# Tracciare gli stati dell'app {#track-app-states}
+# Tracciare gli stati dell&#39;app {#track-app-states}
 
-Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app. Ogni volta che nell'app viene visualizzato un nuovo stato, ad esempio, quando un utente passa dalla home page al feed delle notizie, è utile inviare una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
+Per &quot;stati&quot; si intendono le diverse schermate o visualizzazioni disponibili nell&#39;app. Ogni volta che nell’applicazione viene visualizzato un nuovo stato, ad esempio quando un utente passa dalla home page al feed delle notizie, deve essere inviata una chiamata di tracciamento dello stato. In iOS, il tracciamento di uno stato avviene solitamente con il metodo viewDidLoad di ciascuna visualizzazione.
 
 >[!TIP]
 >
@@ -54,12 +57,12 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate:
 
 ![](assets/map-variable-context-state.png)
 
-## Generazione di rapporti sugli stati dell'app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Generazione di rapporti sugli stati dell&#39;app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Per visualizzare gli stati si usa solitamente un rapporto sui percorsi che consente di vedere in che modo gli utenti navigano nell'app e quali stati vengono visualizzati con maggiore frequenza.
+Gli stati vengono generalmente visualizzati utilizzando un rapporto di percorso, che consente di vedere in che modo gli utenti navigano nell&#39;app e quali stati vengono visualizzati di più.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all'interno dell'applicazione. Un esempio di percorso è **[!UICONTROL Home]** &gt; **[!UICONTROL Impostazioni]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all&#39;interno dell&#39;applicazione. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **[!UICONTROL Pagine]**, **[!UICONTROL Visualizzazioni pagina]** e **[!UICONTROL Percorso]**. |
 | Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
