@@ -1,14 +1,17 @@
 ---
 description: Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un collegamento web o a un collegamento profondo all’interno dell’app.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un collegamento web o a un collegamento profondo all’interno dell’app.
 seo-title: Creare una nuova destinazione di collegamento
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Creare una nuova destinazione di collegamento
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +25,7 @@ Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un
 1. Fai clic su **[!UICONTROL Gestione destinazioni collegamenti]**.
 1. Fai clic su **[!UICONTROL Crea nuovo]**.
 1. Digita le informazioni nei campi seguenti:
-   * **[!UICONTROL Titolo]**
+   * **[!UICONTROL Title]**
 
       Digita un nome descrittivo per la destinazione di collegamento dell’app. Il titolo viene visualizzato solo sulla pagina Gestione destinazioni collegamenti dell’interfaccia utente di Adobe Mobile Services. Un nome descrittivo può essere utile per trovare rapidamente una destinazione di collegamento specifica e può fornire indicazioni sulla sua funzione.
 
@@ -36,7 +39,7 @@ Puoi creare una nuova destinazione di collegamento che indirizza gli utenti a un
 
       * **[!UICONTROL Collegamento web]**
 
-         Digita un URL web di tipo HTTP o HTTPS, ad esempio,`https://adobe.com`. Le destinazioni di collegamento web indirizzano gli utenti a un URL, ad esempio una linea di prodotti specifica nel sito web di un retailer online.
+         Digita un URL web di tipo HTTP o HTTPS, ad esempio,`https://adobe.com`. Le destinazioni dei collegamenti Web indirizzano gli utenti a un URL. Ad esempio, potete indirizzare gli utenti a una linea di prodotti sul sito Web di un retailer online.
 
       * **[!UICONTROL Collegamento ibrido]**
 
