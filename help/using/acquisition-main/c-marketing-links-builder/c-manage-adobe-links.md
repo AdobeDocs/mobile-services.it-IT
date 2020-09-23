@@ -1,14 +1,17 @@
 ---
 description: Puoi usare la pagina Collegamenti marketing per creare, utilizzare e archiviare i collegamenti di marketing.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi usare la pagina Collegamenti marketing per creare, utilizzare e archiviare i collegamenti di marketing.
 seo-title: Gestire i collegamenti di marketing
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Gestire i collegamenti di marketing
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ Nella pagina Collegamenti marketing, completa le attività seguenti:
 
 * **Visualizzare i collegamenti di marketing**
 
-   Per visualizzare l’elenco dei collegamenti di marketing, nella home page di Mobile Services fai clic su **[!UICONTROL Acquisizione]** &gt; **[!UICONTROL Collegamenti di marketing]**.
+   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
 
    La colonna **[!UICONTROL Clic]** mostra il numero di utenti che hanno fatto clic sul collegamento di marketing. La colonna **[!UICONTROL Primi avvii]** visualizza il numero di primi avvii dell’app. Questo valore corrisponde al numero di utenti che hanno scelto di installare l’app e di avviarla dopo aver fatto clic sul collegamento di marketing.
 
