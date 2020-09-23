@@ -1,14 +1,17 @@
 ---
 description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
 seo-title: Rapporto Tecnologia
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Rapporto Tecnologia
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 87%
 
 ---
 
@@ -29,10 +32,10 @@ Questa visualizzazione fornisce, ad esempio, il rapporto di base insieme alle su
 
 ![](assets/report_technology.png)
 
-Il grafico sunburst è interattivo e ti permette di effettuare le attività seguenti:
+Il grafico sunburst è interattivo ed è possibile completare le seguenti attività:
 
-* Passa il cursore su una parte del grafico per visualizzare ulteriori informazioni.
-* Modifica il periodo temporale facendo clic sull’icona **[!UICONTROL Calendario].**
+* Passa il cursore sopra una parte del grafico per visualizzare ulteriori informazioni.
+* Modifica il periodo temporale facendo clic sull’icona **[!UICONTROL Calendario]**.
 * Fai clic su una sezione dell’anello per selezionare il pubblico su cui eseguire azioni quali ingrandire, nascondere dei tipi di pubblico, creare un messaggio in-app o un filtro fisso.
 * Nell’angolo in alto a destra, seleziona **[!UICONTROL Tipo di dispositivo]** e **[!UICONTROL Dispositivo]** per visualizzare informazioni sui dispositivi e sui tipi di dispositivi.
 
@@ -47,7 +50,7 @@ La tabella seguente descrive i rapporti standard e come vengono compilati in Mob
 | Dispositivo | Metriche del ciclo di vita | Metriche comuni suddivise per tipo di dispositivo. |
 | Sistemi operativi | Automatico | Metriche comuni suddivise per sistema operativo. |
 | Versione sistema operativo | Metriche del ciclo di vita | Metriche comuni suddivise per versione del sistema operativo. |
-| Gestori | Automatico | Metriche comuni suddivise per gestore. |
+| Vettori | Automatico | Metriche comuni suddivise per gestore. |
 
 >[!TIP]
 >
