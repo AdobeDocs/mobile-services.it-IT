@@ -1,14 +1,17 @@
 ---
 description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 seo-title: Tracciamento dei beacon
 solution: Experience Cloud,Analytics
 title: Tracciamento dei beacon
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 76%
 
 ---
 
@@ -21,14 +24,14 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
 
 * `a.beacon.uuid` - ProximityUUID del beacon.
 * `a.beacon.major` - Numero principale del beacon (come numero dello store).
-* `a.beacon.minor` - Numero secondario del beacon (come numero univoco all'interno dello store).
-* `a.beacon.prox` - Valori da 0 a 3 che rappresentano la vicinanza dell'utente al beacon.
+* `a.beacon.minor` - Numero secondario del beacon (come numero univoco all&#39;interno dello store).
+* `a.beacon.prox` - Valori da 0 a 3 che rappresentano la vicinanza dell&#39;utente al beacon.
 
-Significato dei valori:
+Significato dei seguenti valori:
 
-* 0 = distanza sconosciuta
-* 1 = nelle immediate vicinanze
-* 2 = nelle vicinanze
+* 0 = unknown
+* 1 = immediate
+* 2 = near
 * 3 = distante
 
 Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
@@ -47,8 +50,8 @@ Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
 
 1. Raccogli la posizione del beacon.
 
-   Sono disponibili diverse librerie di terze parti per la scansione di beacon BLE, a seconda del produttore del beacon.
-1. Dopo il recupero delle informazioni sul beacon, usa la seguente chiamata per tracciare la posizione:
+   Sono disponibili diverse librerie di terze parti per la scansione dei beacon BLE, a seconda del produttore del beacon.
+1. Dopo aver ottenuto le informazioni sul beacon, usa la seguente chiamata per tenere traccia della posizione:
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
@@ -61,7 +64,7 @@ Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
    Analytics.trackBeacon(beaconUUID, major, minor, proximity, null);
    ```
 
-1. Quando l'utente si allontana dal beacon, cancella il seguente beacon:
+1. Quando l&#39;utente si allontana dal beacon, cancella il beacon corrente:
 
    ```java
    Analytics.clearBeacon();
