@@ -3,13 +3,13 @@ description: In Adobe Mobile Services è possibile generare collegamenti di acqu
 keywords: android;library;mobile;sdk
 seo-description: In Adobe Mobile Services è possibile generare collegamenti di acquisizione con codici di tracciamento univoci. Quando un utente scarica ed esegue un'app dall'app store dopo aver fatto clic sul collegamento generato, l'SDK raccoglie e invia automaticamente i dati di acquisizione ad Adobe Mobile Services.
 seo-title: Acquisizione da app mobile
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Acquisizione da app mobile
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 
