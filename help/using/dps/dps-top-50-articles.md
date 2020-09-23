@@ -1,14 +1,17 @@
 ---
 description: Il rapporto Primi 50 articoli visualizza un grafico a barre e una classifica degli articoli più letti utilizzando l’app. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suite (DPS).
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto Primi 50 articoli visualizza un grafico a barre e una classifica degli articoli più letti utilizzando l’app. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suite (DPS).
 seo-title: Primi 50 articoli
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Primi 50 articoli
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
