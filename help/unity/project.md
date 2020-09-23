@@ -3,26 +3,29 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: Creazione del progetto
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Creazione del progetto
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 20%
 
 ---
 
 
-# Building your project{#building-your-project}
+# Creazione del progetto{#building-your-project}
 
 ## iOS
 
-Quando si sviluppa per iOS, viene creato un progetto Xcode. Per impostazione predefinita, i file `ADBMobileWrapper.mm` e `AdobeMobileLibrary.a` saranno inclusi nel gruppo Librerie del nuovo progetto. Esegui le seguenti operazioni manuali necessarie per creare l&#39;app:
+Quando create per iOS, viene creato un progetto Xcode. Per impostazione predefinita, i file `ADBMobileWrapper.mm` e `AdobeMobileLibrary.a` saranno inclusi nel gruppo Librerie del nuovo progetto. Per creare l&#39;app, eseguite i seguenti passaggi manuali:
 
 1. Aggiungi il file `ADBMobileConfig.json` al progetto.
 
-   Assicurati che ogni destinazione necessaria faccia parte della build.
+   Assicurarsi che sia membro della build tutte le destinazioni necessarie.
 
-1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
+1. Nella scheda Fasi **** build del progetto, aggiungi un collegamento alle seguenti librerie:
 
    * `SystemConfiguration.framework`
 Questa libreria potrebbe essere già collegata.
@@ -31,13 +34,13 @@ Questa libreria potrebbe essere già collegata.
 
 >[!TIP]
 >
->To use Local Notification In-App messages from the SDK, you must call `ADBMobile.EnableLocalNotifications();` from the Start method in your first Unity Scene.
+>Per utilizzare i messaggi in-app delle notifiche locali dall’SDK, devi chiamare `ADBMobile.EnableLocalNotifications();` dal metodo Start nella prima Unity Scene.
 
 ## Android
 
-Quando si sviluppa per Android, il file `apk` include già il file `ADBMobileConfig.json` nella posizione corretta. By default, the `AndroidManifest.xml` file in your `/Plugins/Android` folder is also used.
+Quando create per Android, il `apk` file include già il `ADBMobileConfig.json` file nella posizione corretta. Per impostazione predefinita, viene utilizzato anche il `AndroidManifest.xml` file nella `/Plugins/Android` cartella.
 
-Per utilizzare un file di manifesto personalizzato è necessario aggiungere le seguenti modifiche.
+Se devi usare un file manifesto personalizzato, devi aggiungere le seguenti modifiche.
 
 Aggiungi le autorizzazioni per:
 
@@ -49,7 +52,7 @@ Aggiungi le autorizzazioni per:
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-Se utilizzate la messaggistica in-app, aggiungete la seguente attività e il ricevitore:
+Se utilizzi la messaggistica in-app, aggiungi l’attività e il ricevitore seguenti:
 
 ```java
 <activity android:name="com.adobe.mobile.MessageFullScreenActivity"  
