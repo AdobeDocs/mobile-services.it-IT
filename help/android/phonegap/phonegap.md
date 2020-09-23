@@ -1,14 +1,17 @@
 ---
 description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
 seo-title: Panoramica del plug-in PhoneGap
 solution: Experience Cloud,Analytics
 title: Panoramica del plug-in PhoneGap
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
@@ -17,11 +20,11 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap. Per creare un progetto PhoneGap, consulta [PhoneGap](https://helpx.adobe.com/it/experience-manager/6-4/mobile/using/phonegap.html).
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -63,26 +66,26 @@ cordova plugin add adobe-mobile-services
 
 ## Includere la libreria AppMeasurement
 
-1. Per scaricare la libreria AppMeasurement, vedi [Ottenere l'SDK](/help/android/getting-started/dev-qs.md).
+1. Per scaricare la libreria AppMeasurement, vedi [Ottenere l&#39;SDK](/help/android/getting-started/dev-qs.md).
 1. Trascina il file `adobeMobileLibrary.jar` nella cartella `src`.
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
 1. Fai clic con il pulsante destro del mouse sul file adobeMobileLibrary.jar e seleziona **[!UICONTROL Aggiungi come libreria]**.
 1. In base ai requisiti del progetto, inserisci nome, livello e posizione della libreria.
-1. Trascina il file `ADBMobileConfig.json` nella cartella `assets` della radice dell'applicazione.
-1. Accertati di aver selezionato l'applicazione radice e **non** un'applicazione in un'applicazione.
+1. Trascina il file `ADBMobileConfig.json` nella cartella `assets` della radice dell&#39;applicazione.
+1. Accertati di aver selezionato l&#39;applicazione radice e **non** un&#39;applicazione in un&#39;applicazione.
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
-## Aggiungere le autorizzazioni dell'app
+## Aggiungere le autorizzazioni dell&#39;app
 
 La libreria AppMeasurement richiede le seguenti autorizzazioni per inviare dati e registrare le chiamate di tracciamento offline:
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
 
-Per aggiungere queste autorizzazioni, aggiungi le seguenti righe al file `AndroidManifest.xml`, che si trova nella directory di progetto dell'applicazione:
+Per aggiungere queste autorizzazioni, aggiungi le seguenti righe al file `AndroidManifest.xml`, che si trova nella directory di progetto dell&#39;applicazione:
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" /> 
@@ -91,7 +94,7 @@ Per aggiungere queste autorizzazioni, aggiungi le seguenti righe al file `Androi
 
 Per abilitare i messaggi in-app:
 
-Aggiorna AndroidManifest.xml per dichiarare l'attività a schermo intero e abilita il gestore di notifica dei messaggi:
+Aggiorna AndroidManifest.xml per dichiarare l&#39;attività a schermo intero e abilita il gestore di notifica dei messaggi:
 
 ```java
 <activity  
