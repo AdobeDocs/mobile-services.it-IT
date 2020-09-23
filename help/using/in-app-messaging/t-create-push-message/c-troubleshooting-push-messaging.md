@@ -3,13 +3,13 @@ description: Queste informazioni possono essere utili per risolvere eventuali pr
 keywords: mobile
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risoluzione dei problemi dei messaggi push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
