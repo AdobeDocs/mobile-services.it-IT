@@ -3,12 +3,15 @@ description: Queste informazioni sono utili per implementare la libreria Android
 keywords: android;library;mobile;sdk
 seo-description: Queste informazioni sono utili per implementare la libreria Android e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-title: Implementazione e ciclo di vita di base
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 100%
 
 ---
 
