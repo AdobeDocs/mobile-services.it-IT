@@ -1,14 +1,17 @@
 ---
 description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
 seo-title: Aggiungere filtri ai rapporti
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Aggiungere filtri ai rapporti
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +26,7 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]**, ma le istruzioni sono valide per qualsiasi tipo di rapporto.
 
-1. Apri l’app e fai clic su **[!UICONTROL Utilizzo]** &gt; **[!UICONTROL Utenti e sessioni]**.
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![](assets/customize1.png)
 
@@ -50,7 +53,7 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]*
 1. Fai clic su **[!UICONTROL Aggiorna]**.
 1. Per rigenerare il rapporto, fai clic su **[!UICONTROL Esegui]**.
 
-   Il rapporto ora mostra gli utenti suddivisi per sistema operativo. Il titolo del rapporto è stato modificato in modo da corrispondere ai filtri applicati al rapporto.
+   Questo rapporto ora mostra gli utenti suddivisi per sistema operativo. Il titolo del rapporto è stato modificato per corrispondere ai filtri applicati al rapporto.
 
    ![](assets/customize5.png)
 
