@@ -3,68 +3,71 @@ description: Queste informazioni sono utili per capire come vengono tracciati gl
 seo-description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 seo-title: Tracciare gli arresti anomali dell'app
 solution: Experience Cloud,Analytics
-title: Tracciare gli arresti anomali dell'app
-topic: Sviluppatore e implementazione
+title: Tracciare gli arresti anomali dell’app
+topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 77%
 
 ---
 
 
-# Tracciare gli arresti anomali dell'app {#track-app-crashes}
+# Tracciare gli arresti anomali dell’app {#track-app-crashes}
 
-Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
+Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell&#39;app e quali best practice adottare per gestire i falsi arresti anomali.
 
 >[!IMPORTANT]
 >
->Effettua l'aggiornamento alla versione SDK 4.8.6 per iOS, contenente modifiche importanti grazie alle quali non vengono più segnalati i falsi arresti anomali.
+>Effettua l&#39;aggiornamento alla versione SDK 4.8.6 per iOS, contenente modifiche importanti grazie alle quali non vengono più segnalati i falsi arresti anomali.
 
 ## Quando viene segnalato un arresto anomalo?
 
-Se l'applicazione viene terminata senza prima passare in background, l'SDK segnala un arresto anomalo al successivo avvio dell'app.
+Se l&#39;applicazione viene terminata senza prima passare in background, l&#39;SDK segnala un arresto anomalo al successivo avvio dell&#39;app.
 
 ## Come funziona la segnalazione di arresti anomali?
 
-iOS usa le notifiche di sistema che permettono agli sviluppatori di tenere traccia e rispondere a diversi stati ed eventi nel ciclo di vita dell'applicazione.
+iOS usa le notifiche di sistema che permettono agli sviluppatori di tenere traccia e rispondere a diversi stati ed eventi nel ciclo di vita dell&#39;applicazione.
 
-L'SDK di Adobe Mobile per iOS ha un gestore di notifiche che risponde alla notifica `UIApplicationDidEnterBackgroundNotification`. In questo codice, viene impostato un valore che indica che l'app è stata messa in background dall'utente. Al successivo avvio, se tale valore non viene trovato, viene segnalato un arresto anomalo.
+L&#39;SDK di Adobe Mobile per iOS ha un gestore di notifiche che risponde alla notifica `UIApplicationDidEnterBackgroundNotification`. In questo codice, viene impostato un valore che indica che l&#39;app è stata messa in background dall&#39;utente. In un successivo avvio, se tale valore non può essere trovato, viene segnalato un arresto anomalo.
 
 ## Perché Adobe misura gli arresti anomali in questo modo?
 
-Questo approccio fornisce una risposta di alto livello alla domanda *L'utente è uscito intenzionalmente dall'app?*
+Questo approccio fornisce una risposta di alto livello alla domanda *L&#39;utente è uscito intenzionalmente dall&#39;app?*
 
-Le librerie per la segnalazione di arresti anomali fornite da aziende come Apteligent (già Crittercism) usano un gestore `NSException` globale per fornire informazioni più dettagliate sugli arresti anomali. Un'app può avere un solo gestore di questo tipo. Adobe è consapevole che i suoi clienti potrebbero usare altri provider per la segnalazione di arresti anomali, e ha pertanto deciso di non implementare un gestore `NSException` globale, al fine di evitare errori durante la generazione dell'app.
+Le librerie per la segnalazione di arresti anomali fornite da aziende come Apteligent (già Crittercism) usano un gestore `NSException` globale per fornire informazioni più dettagliate sugli arresti anomali. Un&#39;app può avere un solo gestore di questo tipo. Adobe è consapevole che i suoi clienti potrebbero usare altri provider per la segnalazione di arresti anomali, e ha pertanto deciso di non implementare un gestore `NSException` globale, al fine di evitare errori durante la generazione dell&#39;app.
 
 ## Cosa causa la segnalazione di un arresto anomalo falso?
 
-Nelle seguenti condizioni, l'SDK può segnalare falsi arresti anomali:
+I seguenti scenari possono causare falsi arresti anomali nel rapporto dell’SDK:
 
-* Se esegui il debug con Xcode, si verifica un arresto anomalo quando si avvia di nuovo l'app mentre questa è in esecuzione in primo piano.
+* Se esegui il debugging utilizzando Xcode, l&#39;avvio dell&#39;app di nuovo mentre è in primo piano causa un arresto anomalo.
 
    >[!TIP]
    >
-   >In questo caso, per evitare l'arresto anomalo porta l'app in background prima di avviarla di nuovo da Xcode.
+   >In questo caso, per evitare l&#39;arresto anomalo porta l&#39;app in background prima di avviarla di nuovo da Xcode.
 
-* Se l'app è in background e invia hit Analytics tramite una chiamata diversa da `trackActionFromBackground`, `trackLocation` o `trackBeacon` e l'app viene terminata (manualmente o dal sistema operativo) mentre è in background, all'avvio successivo si verifica un arresto anomalo.
+* Se l&#39;app è in background e invia hit Analytics tramite una chiamata diversa da `trackActionFromBackground`, `trackLocation` o `trackBeacon` e l&#39;app viene terminata (manualmente o dal sistema operativo) mentre è in background, all&#39;avvio successivo si verifica un arresto anomalo.
 
    >[!TIP]
    >
    >L’attività in background che si verifica oltre la soglia `lifecycleTimeout` potrebbe inoltre causare un falso avvio.
 
-* Se l'app viene avviata in background in seguito a un richiamo in background, all'aggiornamento della posizione, e così via, e viene terminata dal sistema operativo senza tornare in primo piano, all'avvio successivo (in background o in primo piano) si verifica un arresto anomalo.
-* Se elimini in modo programmatico il flag di pausa di Adobe da `NSUserDefaults` mentre l'app è in background, al prossimo avvio o alla prossima ripresa si verifica un arresto anomalo.
+* Se l&#39;app viene avviata in background in seguito a un richiamo in background, all&#39;aggiornamento della posizione, e così via, e viene terminata dal sistema operativo senza tornare in primo piano, all&#39;avvio successivo (in background o in primo piano) si verifica un arresto anomalo.
+* Se elimini in modo programmatico il flag di pausa di Adobe da `NSUserDefaults` mentre l&#39;app è in background, al prossimo avvio o alla prossima ripresa si verifica un arresto anomalo.
 
 ## Come posso evitare la segnalazione di falsi arresti anomali?
 
-Le pratiche descritte di seguito permettono di evitare la segnalazione di falsi arresti anomali:
+Le seguenti procedure possono essere utili per evitare la segnalazione di falsi arresti anomali:
 
-* Nell'SDK per iOS versione 4.8.6, è stato aggiunto del codice che consente di determinare meglio se una nuova sessione del ciclo di vita sia effettivamente desiderata.
+* Nell’SDK per iOS versione 4.8.6, è stato aggiunto del codice per determinare meglio se una nuova sessione del ciclo di vita sia effettivamente desiderata.
 
-   Questo codice corregge i casi di falsi arresti anomali descritti nella sezione precedente ai punti 2 e 3.
+   Questo codice corregge i falsi arresti anomali descritti ai punti 2 e 3 della sezione precedente.
 
-* Assicurati di eseguire le operazioni di sviluppo con suite di report non destinate alla versione di produzione, per evitare il caso di falsi allarmi descritto al punto 1.
-* Non eliminare e non modificare i valori inseriti dall'SDK di Adobe Mobile in `NSUserDefaults`.
+* Assicurati di eseguire lo sviluppo rispetto alle suite di rapporti non di produzione, per evitare il verificarsi di falsi arresti anomali #1.
+* Non eliminare e non modificare i valori inseriti dall&#39;SDK di Adobe Mobile in `NSUserDefaults`.
 
-   Se tali valori vengono modificati all'esterno dell'SDK, i dati segnalati nei rapporti non saranno validi.
+   Se tali valori vengono modificati all&#39;esterno dell&#39;SDK, i dati segnalati nei rapporti non saranno validi.
 
