@@ -1,21 +1,24 @@
 ---
-description: Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+description: Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 keywords: mobile
-seo-description: Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+seo-description: Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 seo-title: Visualizzare le metriche di Mobile
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Visualizzare le metriche di Mobile
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 75%
 
 ---
 
 
 # Visualizzare le metriche di Mobile {#display-mobile-metrics}
 
-Puoi visualizzare le metriche chiave delle prestazioni delle app che hai visualizzato più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 
 Le metriche visualizzate per ogni app corrispondono alle metriche chiave che hai selezionato al momento della creazione dell’app. Per ulteriori informazioni, vedi   [Aggiungi una nuova app](/help/using/manage-apps/t-new-app.md).
 
@@ -29,7 +32,7 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Filtrare i dati**
 
-   Puoi usare i filtri per segmentare i dati per ogni app.
+   Potete utilizzare i filtri per segmentare i dati per ogni app.
 
    Ad esempio, puoi filtrare i dati per Versione app e per Tipo di dispositivo.
 
@@ -53,7 +56,7 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Visualizzare gli indicatori prestazioni chiave**
 
-   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
+   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le righe del grafico hanno colori diversi e puoi passare il cursore sopra il punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
 
 ## Modificare le impostazioni di un’app {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
