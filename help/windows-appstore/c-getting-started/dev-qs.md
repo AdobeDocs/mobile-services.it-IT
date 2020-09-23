@@ -2,15 +2,15 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Guida rapida per sviluppatori
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Guida rapida per sviluppatori
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -182,7 +182,7 @@ Come minimo, aggiorna i seguenti valori per le soluzioni che utilizzi:
 
 Per ulteriori dettagli, vedi [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md).
 
-## Eseguire il debug {#section_3A10376A60394A15BEE483323E0CD4AA}
+## Eseguire il debug di {#section_3A10376A60394A15BEE483323E0CD4AA}
 
 Per abilitare il debug per l’SDK, devi chiamare `ADBMobile.Config.setDebugLogging(true);`.
 
