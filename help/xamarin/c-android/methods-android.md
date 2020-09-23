@@ -2,20 +2,20 @@
 description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 keywords: Xamarin
 seo-description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-seo-title: Metodi Android
-solution: Marketing Cloud,Developer
-title: Metodi Android
+seo-title: Metodi per Android
+solution: Experience Cloud
+title: Metodi per Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
 
-# Metodi Android{#android-methods}
+# Metodi per Android{#android-methods}
 
 Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
@@ -163,7 +163,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **OverrideConfigStream**
 
-   (4.2 o versione successiva) Consente di caricare un diverso file di `ADBMobile JSON` configurazione all&#39;avvio dell&#39;applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
+   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -366,7 +366,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackTimedActionUpdate**
 
-   Trasmettere i dati per aggiornare i dati contestuali associati all’azione action. I dati passati vengono aggiunti in coda ai dati esistenti per l’azione, e li sovrascrivono se per l’azione è già definita la stessa chiave.
+   Passa i dati per aggiornare i dati contestuali associati all’azione in questione. I dati passati vengono aggiunti in coda ai dati esistenti per l’azione, e li sovrascrivono se per l’azione è già definita la stessa chiave.
 
    >[!TIP]
    >
@@ -801,7 +801,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Complete (settings.Name, 5); 
       ```
 
-* **Interrompi**
+* **Interruzione**
 
    Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell&#39;offset indicato.
 
