@@ -4,19 +4,22 @@ seo-description: A partire dalla versione 4.5 dell'SDK per Android, è stata agg
 seo-title: Android Wearable - Guida introduttiva
 solution: Experience Cloud,Analytics
 title: Android Wearable - Guida introduttiva
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
 
 # Android Wearable: guida introduttiva{#android-wearables-getting-started}
 
-A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
+A partire dalla versione 4.5 dell&#39;SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall&#39;applicazione Android Wearable.
 
-## Configurare l'SDK per un'app Handheld (Android Studio) {#section_262237484EC44C58953891B105F0D000}
+## Configurare l&#39;SDK per un&#39;app Handheld (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
 Per ulteriori informazioni sull’importazione dell’SDK nel progetto, consulta [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
@@ -27,7 +30,7 @@ Per ulteriori informazioni sull’importazione dell’SDK nel progetto, consulta
    >
    >Potrebbe essere necessario sincronizzare il progetto gradle dopo l’aggiunta del file `.jar`.
 
-1. Nel metodo `onCreate`, consenti all'SDK di accedere al contesto dell'applicazione utilizzando `Config.setContext`:
+1. Nel metodo `onCreate`, consenti all&#39;SDK di accedere al contesto dell&#39;applicazione utilizzando `Config.setContext`:
 
    ```java
    @Override 
@@ -117,12 +120,12 @@ Per ulteriori informazioni sull’importazione dell’SDK nel progetto, consulta
    Permalink Edit
    ```
 
-## Configurazione dell'SDK per un'app Wearable (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## Configurazione dell&#39;SDK per un&#39;app Wearable (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. Completa una delle seguenti attività:
 
    * Aggiungi lo stesso file `ADBMobileConfig.json` alla cartella delle risorse del progetto wearable.
-   * Modifica la configurazione gradle affinché utilizzi il file `ADBMobileConfig.json` nella cartella delle risorse dell'app handheld:
+   * Modifica la configurazione gradle affinché utilizzi il file `ADBMobileConfig.json` nella cartella delle risorse dell&#39;app handheld:
 
       ```java
       android { 
@@ -137,9 +140,9 @@ Per ulteriori informazioni sull’importazione dell’SDK nel progetto, consulta
 
 1. Aggiungi il file`adobeMobileLibrary-*.jar` alla cartella libs oppure accertati che il progetto vi faccia riferimento.
 
-   Potrebbe essere necessario sincronizzare il progetto gradle dopo l'aggiunta del file .jar.
+   Potrebbe essere necessario sincronizzare il progetto gradle dopo l&#39;aggiunta del file .jar.
 
-1. Nel metodo `onCreate`, consenti all'SDK di accedere al contesto dell'applicazione utilizzando `Config.setContext`:
+1. Nel metodo `onCreate`, consenti all&#39;SDK di accedere al contesto dell&#39;applicazione utilizzando `Config.setContext`:
 
    ```java
    @Override 
