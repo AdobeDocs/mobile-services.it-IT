@@ -1,14 +1,17 @@
 ---
 description: Elenco dei metodi di Audience Manager forniti dalla libreria Android.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria Android.
 seo-title: Metodi di Audience Manager
 solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 100%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Elenco dei metodi di Audience Manager forniti dalla libreria Android.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `audience manager`.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `audience manager`.
 
-Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le metriche del ciclo di vita è inviato con l'hit del ciclo di vita.
+Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le metriche del ciclo di vita è inviato con l&#39;hit del ciclo di vita.
 
 * **getVisitorProfile**
 
-   Restituisce il profilo del visitatore ottenuto più di recente e, se non è stato inviato un segnale, restituisce `null`. Il profilo del visitatore viene salvato in `SharedPreferences` in modo da essere facilmente accessibile per diversi avvii dell'applicazione.
+   Restituisce il profilo del visitatore ottenuto più di recente e, se non è stato inviato un segnale, restituisce `null`. Il profilo del visitatore viene salvato in `SharedPreferences` in modo da essere facilmente accessibile per diversi avvii dell&#39;applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -73,7 +76,7 @@ Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le m
 
    Imposta il DPID e il DPUUID; questi valori vengono inviati con ciascun segnale.
 
-   Se il valore DPUUID passato a questo metodo contiene caratteri che non sono sicuri per gli URL, i clienti devono codificare il parametro prima di passarlo all'SDK.
+   Se il valore DPUUID passato a questo metodo contiene caratteri che non sono sicuri per gli URL, i clienti devono codificare il parametro prima di passarlo all&#39;SDK.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -89,7 +92,7 @@ Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le m
 
 * **signalWithData**
 
-   Invia a Gestione dell'audience un segnale con traits e fa sì che i segmenti corrispondenti vengano restituiti in un callback di blocco.
+   Invia a Gestione dell&#39;audience un segnale con traits e fa sì che i segmenti corrispondenti vengano restituiti in un callback di blocco.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
