@@ -1,13 +1,16 @@
 ---
 description: In questo argomento vengono fornite informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: In questo argomento vengono fornite informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
 seo-title: Risoluzione dei problemi del test di acquisizione
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi del test di acquisizione
-topic: Sviluppatore e implementazione
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+topic: Developer and implementation
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
@@ -20,11 +23,11 @@ In questo argomento vengono fornite informazioni su come risolvere eventuali pro
 
    Poiché il nome distingue tra maiuscole e minuscole, non utilizzare lettere maiuscole e minuscole.
 
-* Accertati che `Config.setContext(this.getApplicationContext())` venga chiamato dall'attività principale.
+* Accertati che `Config.setContext(this.getApplicationContext())` venga chiamato dall&#39;attività principale.
 
    Per ulteriori informazioni, consulta [Metodi di configurazione](https://docs.adobe.com/content/help/it-IT/mobile-services/android/configuration-android/methods.html).
 
-* Verifica che nel file `AndroidManifest.xml` siano presenti le autorizzazioni richieste per l'SDK di Mobile:
+* Verifica che nel file `AndroidManifest.xml` siano presenti le autorizzazioni richieste per l&#39;SDK di Mobile:
 
    ```html
    <manifest ..>
@@ -34,11 +37,11 @@ In questo argomento vengono fornite informazioni su come risolvere eventuali pro
    </manifest>
    ```
 
-* Se `referrerTimeout` è impostato su 5 nel file ADMobileConfig.json, devi inviare l'intento di installazione in un arco temporale di 5 secondi dopo la prima installazione e il primo avvio dell'applicazione per visualizzare le informazioni sul referente aggiunte all'hit di installazione.
+* Se `referrerTimeout` è impostato su 5 nel file ADMobileConfig.json, devi inviare l&#39;intento di installazione in un arco temporale di 5 secondi dopo la prima installazione e il primo avvio dell&#39;applicazione per visualizzare le informazioni sul referente aggiunte all&#39;hit di installazione.
 
-   Per il test manuale, consigliamo di aumentare il `referrerTimeout` a 10-15 secondi, in modo da disporre di tempo sufficiente per inviare le informazioni sul referente prima che l'hit di installazione venga elaborato.
+   Per il test manuale, consigliamo di aumentare il `referrerTimeout` a 10-15 secondi, in modo da disporre di tempo sufficiente per inviare le informazioni sul referente prima che l&#39;hit di installazione venga elaborato.
 
-* Esegui tutti i passaggi in [Verifica dell'acquisizione di Marketing Link](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) e accertati di eseguire prima il comando `adb shell` e quindi quanto segue:
+* Esegui tutti i passaggi in [Verifica dell&#39;acquisizione di Marketing Link](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) e accertati di eseguire prima il comando `adb shell` e quindi quanto segue:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"
@@ -46,5 +49,5 @@ In questo argomento vengono fornite informazioni su come risolvere eventuali pro
 
 >[!IMPORTANT]
 >
->Per elaborare correttamente l'intento del referente, è necessario eseguire questi due comandi in modo indipendente. In caso contrario, il `adb` sottrarrà due volte le informazioni del referente e i dati ricevuti dal destinatario della trasmissione risulteranno incompleti.
+>Per elaborare correttamente l&#39;intento del referente, è necessario eseguire questi due comandi in modo indipendente. In caso contrario, il `adb` sottrarrà due volte le informazioni del referente e i dati ricevuti dal destinatario della trasmissione risulteranno incompleti.
 
