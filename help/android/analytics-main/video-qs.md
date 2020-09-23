@@ -1,25 +1,28 @@
 ---
 description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-seo-title: Analisi del video
+seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
-title: Analisi del video
-topic: Sviluppatore e implementazione
+title: Analisi dei video
+topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
 
-# Analisi del video {#video-analytics}
+# Analisi dei video {#video-analytics}
 
 Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
 
 >[!TIP]
 >
->Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate "heartbeat" che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull'abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
+>Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate &quot;heartbeat&quot; che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull&#39;abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
 
 Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali in una variabile Analytics.
 
@@ -28,9 +31,9 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
 * **a.media.name**
    * Tipo di variabile: eVar
       * Scadenza predefinita: visita
-      * Insight personalizzato (s.prop, usato per il percorso del video)
-   * (**Obbligatorio**) Quando un visitatore visualizza il video in qualche modo, questa variabile dati di contesto raccoglie il nome del video, in base a quanto specificato nell'implementazione. Per questa variabile puoi aggiungere delle classificazioni.
-   * (**Facoltativo**) La variabile Insight personalizzato fornisce informazioni sul percorso del video.
+      * Custom Insight (s.prop, utilizzato per il percorso del video)
+   * (**Obbligatorio**) Quando un visitatore visualizza il video in qualche modo, questa variabile di dati di contesto raccoglie il nome del video, come specificato nell’implementazione. Puoi aggiungere delle classificazioni per questa variabile.
+   * (**Optional**) The Custom Insight variable provides video pathing information.
 
 * **a.media.name**
    * Tipo evento: Custom Insight (s.prop)
@@ -44,16 +47,17 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
 * **a.media.segment**
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
-   * (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l'ordine in cui il segmento appare nel video.
+   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
 
       Puoi popolare questa variabile abilitando la variabile `segmentByMilestones` quando monitori automaticamente gli eventi del lettore oppure impostando un nome del segmento personalizzato quando monitori manualmente gli eventi del lettore. Ad esempio, quando un visitatore visualizza il primo segmento di un video, SiteCatalyst potrebbe raccogliere quanto segue nella eVar dei segmenti: `1:M:0-25`.
 
-      Il metodo predefinito di raccolta dei dati video raccoglie i dati presso i seguenti punti:
+      Il metodo predefinito per la raccolta dei dati video raccoglie i dati nei seguenti punti:
 
-      * inizio video (play)
-      * inizio del segmento
-      * fine del video (stop)
-      Analytics conta la visualizzazione del primo segmento all'inizio del segmento, quando il visitatore inizia la visualizzazione. Il segmento successivo viene visualizzato quando inizia il segmento.
+      * inizio video (Riproduci)
+      * inizio segmento
+      * fine video (Interrompi)
+
+      Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
 
 * **a.contentType**
@@ -66,19 +70,19 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
 * **a.media.timePlayed**
    * Tipo di variabile: Event
    * Tipo: contatore
-   * Conta il tempo, in secondi, trascorso guardando un video a partire dall'ultimo processo di raccolta dati (richiesta immagine).
+   * Conta il tempo, in secondi, trascorso guardando un video dall’ultimo processo di raccolta dei dati (richiesta immagine).
 
 * **a.media.view**
    * Tipo di variabile: Event
    * Tipo: contatore
-   * Indica che un visitatore ha visualizzato una parte di un video.
+   * Indica che un visitatore ha visualizzato una parte del video.
 
       Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
 * **a.media.segmentView**
    * Tipo di variabile: Event
    * Tipo: contatore
-   * Indica che un visitatore ha visualizzato una parte di un segmento video.
+   * Indica che un visitatore ha visualizzato una parte di un segmento di video.
 
       Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
@@ -87,7 +91,7 @@ Il processo generale da seguire per la misurazione dei video è molto simile per
    * Tipo: contatore
    * Indica che un utente ha visualizzato un video completo.
 
-      Per impostazione predefinita, l'evento completo è misurato 1 secondo prima della fine del video. Durante l'implementazione, puoi specificare quanti secondi prima della fine del video consideri la visualizzazione come completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete (ad esempio, dopo che il video è stato visualizzato per una data quantità di tempo).
+      Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, potete specificare quanti secondi dalla fine del video considerare la visualizzazione come completa. Per i video in diretta e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete (ad esempio, dopo che è stato visualizzato un dato momento).
 
 
 ## Configurare le impostazioni per i file multimediali {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -171,7 +175,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 * **adSettingsWith**
 
-   Restituisce un oggetto `MediaSettings` per l'uso con il tracciamento di un video annuncio.
+   Restituisce un oggetto `MediaSettings` per l&#39;uso con il tracciamento di un video annuncio.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -200,9 +204,10 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
    * **close**
 
-      Chiude l'elemento multimediale denominato *name*.
+      Chiude l&#39;elemento multimediale denominato *name*.
 
       * Di seguito è riportata la sintassi per questo metodo:
+
       ```java
       public static void close(String name);
       ```
@@ -215,7 +220,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 
 * **play**
-   * Riproduce l'elemento multimediale denominato *name* in corrispondenza dell'*offset* indicato in secondi.
+   * Riproduce l&#39;elemento multimediale denominato *name* in corrispondenza dell&#39;*offset* indicato in secondi.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
@@ -224,7 +229,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 * **completato**
 
-   Contrassegna manualmente l'elemento multimediale come completato in corrispondenza dell'*offset* indicato in secondi.
+   Contrassegna manualmente l&#39;elemento multimediale come completato in corrispondenza dell&#39;*offset* indicato in secondi.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -240,7 +245,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 * **stop**
 
-   Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell'*offset* indicato.
+   Notifica al modulo multimediale che il video è stato interrotto o messo in pausa in corrispondenza dell&#39;*offset* indicato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -256,7 +261,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 * **click**
 
-   Notifica al modulo multimediale l'avvenuto clic sull'elemento multimediale.
+   Notifica al modulo multimediale l&#39;avvenuto clic sull&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -272,7 +277,7 @@ Di seguito sono riportati i metodi della classe Misurazione di file multimediali
 
 * **track**
 
-   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell'elemento multimediale.
+   Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell&#39;elemento multimediale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
