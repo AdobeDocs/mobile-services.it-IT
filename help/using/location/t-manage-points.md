@@ -1,14 +1,17 @@
 ---
-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
-keywords: dispositivi mobili
-seo-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
+description: Puoi creare e gestire i punti di interesse, che ti permettono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
+keywords: mobile
+seo-description: Puoi creare e gestire i punti di interesse, che ti permettono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 seo-title: Gestire i punti di interesse
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Gestire i punti di interesse
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +33,7 @@ Sul dispositivo dell’utente, affinché un hit possa essere assegnato a un **[!
 Per utilizzare Posizione, completa le seguenti attività:
 
 1. Fai clic sul nome dell’app per visualizzare la pagina Gestione impostazioni app.
-1. Fai clic su **[!UICONTROL Posizione]** &gt; **[!UICONTROL Gestisci punti di interesse]**.
+1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
 
    ![Risultato passaggio](assets/poi.png)
 
