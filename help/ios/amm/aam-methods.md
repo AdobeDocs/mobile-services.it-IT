@@ -4,10 +4,13 @@ seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria iO
 seo-title: Metodi di Audience Manager
 solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 80%
 
 ---
 
@@ -16,13 +19,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 
-L'SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Audience Manager hanno il prefisso "`audience`".
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Audience Manager hanno il prefisso &quot;`audience`&quot;.
 
 Se Audience Manager è configurato nel file JSON, viene inviato un segnale contenente le metriche sul ciclo di vita con `application:didFinishLaunchingWithOptions:`.
 
 * **audienceVisitorProfile**
 
-   Restituisce il profilo del visitatore ottenuto più di recente e, se non è stato inviato un segnale, restituisce `null`. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell'applicazione.
+   Restituisce il profilo del visitatore ottenuto più di recente e, se non è stato inviato un segnale, restituisce `null`. Il profilo del visitatore viene salvato in `NSUserDefaults` in modo da essere facilmente accessibile per diversi avvii dell&#39;applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -70,14 +73,14 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   Imposta gli identificatori DPID e DPUUID. Una volta impostati, entrambi saranno aggiunti a ogni segnale.
+   Imposta gli identificatori DPID e DPUUID. Una volta impostati, entrambi saranno aggiunti a ciascun segnale.
 
-   * Il **Data Provider ID (DPID)** è l'ID del partner di dati assegnato da Audience Manager.
-   * Il **Data Provider Unique User ID (DPUUID)** è l'ID univoco del provider di dati per l'utente.
+   * L&#39;ID provider di **dati (DPID)** è l&#39;ID del partner di dati assegnato da  Audience Manager.
+   * L&#39;ID utente univoco del fornitore di **dati (DPUUID)** è l&#39;ID univoco del fornitore di dati per l&#39;utente.
 
       >[!IMPORTANT]
       >
-      >Prima della versione 4.13.x, DPUUID non era codificato automaticamente. A partire dalla versione 4.13.x, l'SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Questo processo assicura che l'SDK non interrompa la compatibilità con le versioni precedenti.
+      >Prima della versione 4.13.x, DPUUID non era codificato automaticamente. A partire dalla versione 4.13.x, l’SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Questo processo assicura che l’SDK non interrompa la compatibilità con le versioni precedenti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -95,7 +98,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
 * **audienceReset**
 
-   Ripristina l'identificatore UUID di Audience Manager e svuota il profilo visitatore corrente.
+   Ripristina l&#39;identificatore UUID di Audience Manager e svuota il profilo visitatore corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -111,7 +114,7 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
 * **audienceSignalWithData::&#x200B;callback:**
 
-   Invia a gestione dell'audience un segnale con le caratteristiche e riceve i segmenti corrispondenti restituiti nella funzione callback di un blocco.
+   Invia a gestione dell&#39;audience un segnale con le caratteristiche e riceve i segmenti corrispondenti restituiti nella funzione callback di un blocco.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
