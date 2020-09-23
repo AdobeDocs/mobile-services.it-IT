@@ -1,14 +1,17 @@
 ---
 description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
 seo-title: Pubblico messaggio in-app
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Pubblico messaggio in-app
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
 
-1. Nell’app, fai clic su **[!UICONTROL Messaggistica]** &gt; **[!UICONTROL Gestisci messaggi]** &gt; **[!UICONTROL Crea messaggio]** &gt; **[!UICONTROL Crea in-app]**.
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Nella pagina Pubblico, digita le informazioni nei campi seguenti:
 
    * **[!UICONTROL Visualizzazione]**
@@ -34,7 +37,7 @@ Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso 
 
       * **[!UICONTROL Fino al click-through]**
 
-         Il messaggio viene visualizzato ogni volta che si verifica l’evento di attivazione fino al click-through dell’utente. Questo attivatore vale solo per i messaggi a schermo intero e di avviso. La maggior parte dei messaggi richiede un reindirizzamento o utilizza una risorsa da Internet e non viene visualizzata in modalità offline. Per visualizzare sempre il messaggio indipendentemente dalla connettività di rete, seleziona la casella di controllo **[!UICONTROL Mostra offline].**
+         Il messaggio viene visualizzato ogni volta che si verifica l’evento di attivazione fino al click-through dell’utente. Questo attivatore vale solo per i messaggi a schermo intero e di avviso. La maggior parte dei messaggi richiede un reindirizzamento o utilizza una risorsa da Internet e non viene visualizzata in modalità offline. Per visualizzare sempre il messaggio indipendentemente dalla connettività di rete, seleziona la casella di controllo **[!UICONTROL Mostra offline]**.
    * **[!UICONTROL Attivatore]**
 
       Seleziona un’opzione dall’elenco a discesa, quindi scegli una condizione. Ad esempio, seleziona **[!UICONTROL Avviato]** dal primo elenco a discesa ed **[!UICONTROL Esiste]** dal secondo. Per visualizzare il messaggio, puoi inoltre specificare dati di contesto personalizzato che devono essere inclusi nell’hit di attivazione.
@@ -52,9 +55,9 @@ Puoi scegliere chi deve visualizzare il messaggio in-app quando viene attivato e
 
 >[!IMPORTANT]
 >
->Gli attivatori e le caratteristiche utilizzano dati trasmessi ad Analytics dalla tua app. Tali valori sono passati come dati di contesto, variabili mappate e metriche. Una variabile è un valore di testo; una metrica è invece un valore numerico.
+>Gli attivatori e le caratteristiche utilizzano dati trasmessi ad Analytics dalla tua app. Questi valori vengono passati come dati contestuali, variabili mappate e metriche. Una variabile è un valore basato su testo e una metrica è un valore numerico.
 
-Per vedere le mappature di queste coppie di chiave e valore nell’interfaccia utente di Mobile Services e convalidare il valore per il tuo attivatore, fai clic su **[!UICONTROL Gestisci impostazioni app]** &gt; **[!UICONTROL Gestisci variabili e metriche]**. Vengono visualizzate le seguenti schede:
+To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables &amp; Metrics]** >, which displays the following tabs:
 
 * **[!UICONTROL Variabili standard e metriche]**
 * **[!UICONTROL Variabili personalizzate]**
@@ -72,7 +75,7 @@ Gli scenari di seguito sono utili per determinare se selezionare una metrica o u
 
 Una metrica è un valore numerico, ad esempio il numero di acquisti effettuati.
 
-1. Fai clic su **[!UICONTROL Gestisci messaggi]** &gt; **[!UICONTROL Crea messaggio]**.
+1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
 1. Completa i seguenti passaggi nella sezione **[!UICONTROL Attivatore]** della scheda **[!UICONTROL Pubblico]**:
 
    1. Seleziona un evento standard, ad esempio **[!UICONTROL Avviato]** e seleziona **[!UICONTROL esiste]**.
@@ -83,7 +86,7 @@ Una metrica è un valore numerico, ad esempio il numero di acquisti effettuati.
 
 Una variabile è una stringa di testo che sia un identificatore univoco, ad esempio paese, aeroporto e così via.
 
-1. Fai clic su **[!UICONTROL Gestisci messaggi]** &gt; **[!UICONTROL Crea messaggio]**.
+1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
 1. Completa i seguenti passaggi nella sezione **[!UICONTROL Attivatore]** della scheda **[!UICONTROL Pubblico]**:
 
    1. Seleziona un evento standard, ad esempio **[!UICONTROL Avviato]** e seleziona **[!UICONTROL esiste]**.
