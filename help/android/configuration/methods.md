@@ -3,13 +3,13 @@ description: Elenco dei metodi di forniti dalla libreria Android.
 keywords: android;library;mobile;sdk
 seo-description: Elenco dei metodi di forniti dalla libreria Android.
 seo-title: Metodi di Configurazione
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Configurazione
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
 
@@ -195,7 +195,7 @@ Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengo
       ```
 
 * **setDebugLogging**
-   * Imposta la preferenza per l&#39;accesso di su `debugLogging`debug.
+   * Imposta la preferenza per l&#39;accesso di su `debugLogging` debug.
    * Di seguito è riportata la sintassi per questo metodo:
 
       ```java
