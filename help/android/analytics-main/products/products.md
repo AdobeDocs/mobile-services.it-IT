@@ -1,21 +1,24 @@
 ---
-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
-keywords: android,libreria,mobile,sdk
-seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
+description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
+keywords: android;library;mobile;sdk
+seo-description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 seo-title: Variabile "products"
 solution: Experience Cloud,Analytics
 title: Variabile "products"
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: ht
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 48%
 
 ---
 
 
 # Variabile dei prodotti {#products-variable}
 
-La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
+La variabile &quot;products&quot; non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 
 Per impostare la variabile *prodotti*, imposta una chiave di dati contestuali su `"&&products"`, quindi imposta il valore utilizzando la sintassi definita per la variabile *prodotti*:
 
@@ -42,8 +45,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-La variabile *prodotti* è impostata sulla richiesta dell'immagine e le altre variabili sono impostate come dati contestuali. Tutte le variabili dei dati di contesto devono essere mappate utilizzando le regole di elaborazione:
+La variabile *prodotti* è impostata sulla richiesta dell&#39;immagine e le altre variabili sono impostate come dati contestuali. Tutte le variabili dei dati di contesto devono essere mappate utilizzando le regole di elaborazione:
 
 ![](assets/map-products.png)
 
-Non è necessario mappare la variabile  *prodotti* mediante le regole di elaborazione, perché viene impostata direttamente nella richiesta dell'immagine dall'SDK.
+Non è necessario mappare la variabile  *prodotti* mediante le regole di elaborazione, perché viene impostata direttamente nella richiesta dell&#39;immagine dall&#39;SDK.
