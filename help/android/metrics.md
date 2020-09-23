@@ -1,14 +1,17 @@
 ---
 description: Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
 seo-title: Metriche del ciclo di vita
 solution: Experience Cloud,Analytics
 title: Metriche del ciclo di vita
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 91%
 
 ---
 
@@ -17,26 +20,26 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 In questa sezione vengono fornite informazioni sulle metriche e sulle dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. Per ulteriori informazioni sulla risoluzione dei problemi, consulta [Risoluzione dei problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Quando sono configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell'audience. Analytics e Target usano lo stesso formato; Gestione dell'audience usa invece un prefisso diverso per ogni metrica.
+Una volta configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell&#39;audience. Analytics e Target usano lo stesso formato, mentre Gestione dell&#39;audience usa un prefisso diverso per ogni metrica.
 
-Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita sono acquisiti automaticamente e segnalati mediante l'uso della metrica o della dimensione, con le eccezioni indicate.
+Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita sono acquisiti automaticamente e segnalati mediante l&#39;uso della metrica o della dimensione, con le eccezioni indicate.
 
 ### Metrics (Metriche)
 
 * **Primi avvii**
 
-   Attivazione alla prima esecuzione dopo l'installazione o reinstallazione.
+   Attivazione alla prima esecuzione dopo l&#39;installazione o reinstallazione.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.InstallEvent`
    * Segnale di Audience Manager: `c_a_InstallEvent`
@@ -50,7 +53,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Utenti giornalieri coinvolti**
 
-   Attivazione quando l'applicazione viene utilizzata in un giorno particolare.
+   Attivazione quando l&#39;applicazione viene utilizzata in un giorno particolare.
 
    >[!IMPORTANT]
    >
@@ -61,7 +64,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Utenti mensili coinvolti**
 
-   Attivazione quando l'applicazione viene utilizzata in un mese particolare.
+   Attivazione quando l&#39;applicazione viene utilizzata in un mese particolare.
 
    >[!IMPORTANT]
    >
@@ -72,7 +75,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Avvii**
 
-   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa dopo un periodo in background se viene superato il timeout di una sessione ciclo di vita.
+   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa in background quando viene superato il timeout della sessione del ciclo di vita.
 
    >[!IMPORTANT]
    >
@@ -83,14 +86,14 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Arresti anomali**
 
-   Attivazione quando l'applicazione non viene messa in background prima della chiusura. L'evento è inviato all'avvio dell'applicazione in seguito a un arresto anomalo.  La reportistica di Adobe Mobile sugli arresti anomali non implementa un handler globale per eccezioni non rilevate.
+   Attivazione quando l&#39;applicazione non viene messa in background prima della chiusura. L&#39;evento è inviato all&#39;avvio dell&#39;applicazione in seguito a un arresto anomalo.  La reportistica di Adobe Mobile sugli arresti anomali non implementa un handler globale per eccezioni non rilevate.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.CrashEvent`
    * Segnale di Audience Manager: `c_a_CrashEvent`
 
 * **Durata sessione precedente**
 
-   Segnala la durata di una precedente sessione dell'applicazione in base a quanto tempo l'applicazione è stata aperta e in primo piano.
+   Segnala la durata di una precedente sessione dell&#39;applicazione in base a quanto tempo l&#39;applicazione è stata aperta e in primo piano.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.PrevSessionLength`
    * Segnale di Audience Manager: `c_a_PrevSessionLength`
@@ -100,21 +103,21 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Data di installazione**
 
-   Data del primo avvio dopo l'installazione. Il formato della data è MM/GG/AAAA.
+   Data del primo avvio dopo l&#39;installazione. Il formato della data è MM/GG/AAAA.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
 
 * **ID app**
 
-   Memorizza il nome e la versione dell'applicazione nel formato `[AppName] [BundleVersion]`. Un esempio di questo formato è `myapp 1.1`.
+   Memorizza il nome e la versione dell&#39;applicazione nel formato `[AppName] [BundleVersion]`. Un esempio di questo formato è `myapp 1.1`.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.AppID`
    * Audience Manager: `c_a_AppID`
 
 * **Numero di avvii**
 
-   Numero di volte per cui l'applicazione è stata avviata o portata in primo piano.
+   Numero di volte per cui l&#39;applicazione è stata avviata o portata in primo piano.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.Launches`
    * Audience Manager: `c_a_Launches`
@@ -126,23 +129,23 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceFirstUse`
    * Audience Manager: `c_a_DaysSinceFirstUse`
 
-* **Giorni dall'ultimo utilizzo**
+* **Giorni dall&#39;ultimo utilizzo**
 
-   Numero di giorni dall'ultimo utilizzo.
+   Numero di giorni dall&#39;ultimo utilizzo.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUse`
    * Audience Manager: `c_a_DaysSinceLastUse`
 
 * **Ora del giorno**
 
-   Misura l'ora in cui è stata avviata l'app.  Questa metrica usa il formato numerico a 24 ore e viene utilizzata per la suddivisione del tempo per determinare le ore di utilizzo di picco.
+   Misura l&#39;ora in cui è stata avviata l&#39;app.  Questa metrica usa il formato numerico a 24 ore e viene utilizzata per la suddivisione del tempo per determinare le ore di utilizzo di picco.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.HourOfDay`
    * Audience Manager: `c_a_HourOfDay`
 
 * **Giorno della settimana**
 
-   Numero del giorno della settimana in cui è stata avviata l'app.
+   Numero del giorno della settimana in cui è stata avviata l&#39;app.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.DayOfWeek`
    * Audience Manager: `c_a_DayOfWeek`
@@ -154,9 +157,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
 
-* **Giorni dall'ultimo aggiornamento**
+* **Giorni dall&#39;ultimo aggiornamento**
 
-   Numero di giorni dalla modifica del numero di versione dell'applicazione.
+   Numero di giorni dalla modifica del numero di versione dell&#39;applicazione.
 
    >[!IMPORTANT]
    >
@@ -165,9 +168,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
 
-* **Avvii dall'ultimo aggiornamento**
+* **Avvii dall&#39;ultimo aggiornamento**
 
-   Numero di avvii dalla modifica del numero di versione dell'applicazione.
+   Numero di avvii dalla modifica del numero di versione dell&#39;applicazione.
 
    >[!IMPORTANT]
    >
@@ -221,7 +224,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
    * Dati contestuali di Analytics/Parametro di Target: `a.action.time.inapp`
    * Caratteristiche di Audience Manager: `c_a_action_time_inapp`
 
-* **Valore "lifetime" del ciclo di vita (evento)**
+* **Valore &quot;lifetime&quot; del ciclo di vita (evento)**
 
    Viene compilata dai metodi `trackLifetimeValue`.
 
@@ -286,7 +289,7 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
    * Dati contestuali di Analytics/Parametri di Target: `a.loc.dist`
    * Caratteristiche di Audience Manager: `c_a_loc_dist`
 
-* **Valore "lifetime" del ciclo di vita (variabile di conversione)**
+* **Valore &quot;lifetime&quot; del ciclo di vita (variabile di conversione)**
 
    Viene compilata dai metodi trackLifetimeValue.
 
@@ -309,28 +312,28 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * **Contenuto campagna**
 
-   Nome o ID del contenuto in cui è stato visualizzato il collegamento. Viene compilata dalla funzione Acquisizione da app mobile.
+   Nome o ID del contenuto che ha visualizzato il collegamento. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.content`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_content`
 
 * **Canale campagna**
 
-   Canale di marketing, ad esempio un banner o un'e-mail. Viene compilata dalla funzione Acquisizione da app mobile.
+   Canale di marketing, ad esempio un banner o un messaggio e-mail. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.medium`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Origine campagna**
 
-   Referente originale, ad esempio una newsletter o un social media network. Viene compilata dalla funzione Acquisizione da app mobile.
+   Referente originale, ad esempio una newsletter o un social network. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.source`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_source`
 
 * **Termine campagna**
 
-   Parole chiave a pagamento o altri termini di cui si desidera tenere traccia con questa acquisizione. Viene compilata dalla funzione Acquisizione da app mobile.
+   Parole chiave a pagamento o altri termini che desideri monitorare con questa acquisizione. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.term`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_term`
