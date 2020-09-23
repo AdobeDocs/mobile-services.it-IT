@@ -1,14 +1,17 @@
 ---
 description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
 seo-title: Messaggistica
 solution: Experience Cloud,Analytics
 title: Messaggistica
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 95%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 Puoi creare, gestire e generare rapporti sui messaggi in-app e push.
 
-## Nuova versione di Adobe Experience Cloud SDK
+## Nuova versione SDK per Adobe Experience Cloud
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* Per iniziare, passa ad [Launch](https://launch.adobe.com/).
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -34,10 +37,10 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Que
 
 I messaggi in-app vengono consegnati agli utenti in tempo reale, in base alle loro azioni e caratteristiche. I messaggi vengono attivati dai dati di Analytics già tracciati dall’SDK.
 
-Sono supportati i tipi di messaggi seguenti:
+Sono supportati i seguenti tipi di messaggi:
 
-* Personalizzati e a tema
-* A schermo intero
+* Personalizzato e a tema
+* Schermo intero
 * Avvisi nativi
 * Notifiche locali
 
