@@ -1,23 +1,26 @@
 ---
-description: La tabella seguente illustra i diversi identificatori dell'app utilizzati dall'SDK per Android e Adobe Mobile Services.
-seo-description: La tabella seguente illustra i diversi identificatori dell'app utilizzati dall'SDK per Android e Adobe Mobile Services.
+description: La tabella seguente descrive i diversi identificatori dell'app utilizzati dall'SDK per Android e  Adobe Mobile Services.
+seo-description: La tabella seguente descrive i diversi identificatori dell'app utilizzati dall'SDK per Android e  Adobe Mobile Services.
 seo-title: ID delle app
 solution: Experience Cloud,Analytics
 title: ID delle app
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 72%
 
 ---
 
 
 # ID delle app{#app-ids}
 
-La tabella seguente illustra i diversi identificatori dell'app utilizzati dall'SDK per Android e Adobe Mobile Services.
+La tabella seguente descrive i diversi identificatori dell&#39;app utilizzati dall&#39;SDK per Android e  Adobe Mobile Services.
 
 | ID | Descrizione |
 |--- |--- |
-| ID inviato con metriche del ciclo di vita | Si tratta di una combinazione del nome dell'app e della versione del bundle inviata all'app store. Questo valore è utilizzato per il rapporto delle Versioni in Adobe Mobile Services e puoi utilizzarlo per filtrare al fine di segmentare gli nbase alla versione specifica della release dell'app. |
-| ID dell'App Store | Questo ID è assegnato alla tua app da parte dell'app store ed è fornito in Adobe Mobile Services quando crei collegamenti di acquisizione. |
-| AppID nella configurazione JSON ADBMobile | Si tratta di un ID univoco assegnato all'istanza dell'app da Adobe Mobile Services per tutti i metadati associati nel sistema. Questo ID è utilizzato per creare gli URL per il tracciamento dell'acquisizione o il collegamento per tracciamento. Questo ID viene aggiunto automaticamente al file di configurazione ADBMobile JSON quando tale file viene scaricato dall'interfaccia utente; si trova in Gestione impostazioni app nelle impostazioni di Acquisizione della tua app. |
+| ID inviato con le metriche del ciclo di vita | Si tratta di una combinazione del nome dell&#39;app e della versione del bundle inviata all&#39;app store. Questo valore è utilizzato per il rapporto delle Versioni in Adobe Mobile Services e puoi utilizzarlo per filtrare al fine di segmentare gli nbase alla versione specifica della release dell&#39;app. |
+| ID dell&#39;App Store | Questo ID è assegnato alla tua app da parte dell&#39;app store ed è fornito in Adobe Mobile Services quando crei collegamenti di acquisizione. |
+| AppID nella configurazione JSON ADBMobile | Si tratta di un ID univoco assegnato all&#39;istanza dell&#39;app da Adobe Mobile Services per tutti i metadati associati nel sistema. Questo ID è utilizzato per creare gli URL per il tracciamento dell&#39;acquisizione o il collegamento per tracciamento. Questo ID viene aggiunto automaticamente al file di configurazione ADBMobile JSON quando tale file viene scaricato dall&#39;interfaccia utente; si trova in Gestione impostazioni app nelle impostazioni di Acquisizione della tua app. |
