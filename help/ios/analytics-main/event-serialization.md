@@ -1,20 +1,23 @@
 ---
-description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
-seo-description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
+description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
+seo-description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
 seo-title: Serializzazione degli eventi
 solution: Experience Cloud,Analytics
 title: Serializzazione degli eventi
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 19a27df4-0998-403d-800c-26ff61149208
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
 
 # Serializzazione degli eventi {#event-serialization}
 
-La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell'SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
+La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
 
 ```objective-c
 [contextData setObject:@"eventN:serial number" forKey:@"&&events"];
