@@ -5,8 +5,11 @@ seo-title: Metodi di acquisizione
 solution: Experience Cloud,Analytics
 title: Metodi di acquisizione
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ La libreria iOS fornisce i seguenti metodi di acquisizione:
 
 * **acquisitionCampaignStartForApp:data:**
 
-   Consente agli sviluppatori di avviare una campagna di acquisizione app, come se l'utente avesse fatto clic su un collegamento. È utile per creare collegamenti di acquisizione manuali e per gestire direttamente il reindirizzamento all'App Store, ad esempio con `SKStoreView`.
+   Consente agli sviluppatori di avviare una campagna di acquisizione app, come se l&#39;utente avesse fatto clic su un collegamento. È utile per creare collegamenti di acquisizione manuali e per gestire direttamente il reindirizzamento all&#39;App Store, ad esempio con `SKStoreView`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
