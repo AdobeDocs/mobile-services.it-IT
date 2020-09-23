@@ -2,12 +2,12 @@
 description: Elenco di metodi Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-description: Elenco di metodi Target forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 seo-title: Metodi di Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Target
 topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
