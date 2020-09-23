@@ -1,14 +1,17 @@
 ---
 description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
 seo-title: Rapporto Action Paths (Percorsi azione)
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Rapporto Action Paths (Percorsi azione)
-topic: Rapporti, Metriche
+topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +34,7 @@ Per visualizzare le opzioni di modifica del grafico, fai clic su un nodo e poi s
 
 ![](assets/action_paths_icons.png)
 
-Per espandere, fai clic sull’icona **[!UICONTROL +]**. Con questa opzione vengono visualizzati i percorsi aggiuntivi (in entrata o in uscita) del nodo. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la scelta di una foto (l’elemento che abbiamo espanso), lo stato 3 include quattro percorsi differenti che sono stati seguiti dagli utenti:
+To expand, click the **[!UICONTROL +]** icon. Questa opzione visualizza i percorsi aggiuntivi che entrano o escono dal nodo. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la scelta di una foto (l’elemento che abbiamo espanso), lo stato 3 include quattro percorsi differenti che sono stati seguiti dagli utenti:
 
 * Selezione di un elemento
 * Aggiunta di un elemento
