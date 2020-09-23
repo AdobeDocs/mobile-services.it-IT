@@ -1,26 +1,29 @@
 ---
-description: Adobe Mobile e SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L'SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l'app dopo aver fatto clic su un messaggio push.
-seo-description: Adobe Mobile e SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L'SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l'app dopo aver fatto clic su un messaggio push.
+description: ' Mobile Adobe e l''SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.'
+seo-description: ' Mobile Adobe e l''SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.'
 seo-title: Messaggi push
 solution: Experience Cloud,Analytics
 title: Messaggi push
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: ht
-source-git-commit: 17cb91a28966cf32f955a2cb724e89ab228de5b8
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 61%
 
 ---
 
 
 # Messaggi push {#push-messaging}
 
-Adobe Mobile e SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L'SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l'app dopo aver fatto clic su un messaggio push.
+ Mobile Adobe e l&#39;SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.
 
-Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o successiva dell'SDK.
+Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o successiva dell&#39;SDK.
 
 >[!IMPORTANT]
 >
->Non impostare manualmente l'Experience Cloud ID all'interno dell'app. Questo provocherebbe infatti la creazione di un nuovo utente univoco che non riceverà i messaggi push a causa del suo stato di consenso. Ad esempio, un utente che ha acconsentito a ricevere i messaggi push accede all'app. Dopo l'accesso, se imposti manualmente l'ID all'interno dell'app, viene creato un nuovo utente univoco che non ha acconsentito alla ricezione di messaggi push. Questo nuovo utente non riceverà quindi alcun messaggio push.
+>Non impostare manualmente l&#39;Experience Cloud ID all&#39;interno dell&#39;app. Questo causa la creazione di un nuovo utente univoco che non riceverà messaggi push a causa del suo stato di consenso. Ad esempio, un utente ha acconsentito alla ricezione di messaggi push per accedere all&#39;app. Dopo l&#39;accesso, se imposti manualmente l&#39;ID all&#39;interno dell&#39;app, viene creato un nuovo utente univoco che non ha acconsentito alla ricezione di messaggi push. Questo nuovo utente non riceverà quindi alcun messaggio push.
 >
 >Lo spostamento dell’app a una nuova suite di rapporti non è supportato. Se si effettua la migrazione a una nuova suite di rapporti, la configurazione push può interrompersi e i messaggi potrebbero non essere inviati.
 
@@ -32,7 +35,7 @@ Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o 
 
 1. Verifica che il file `ADBMobileConfig.json` contenga le impostazioni richieste per i messaggi push.
 
-   L'oggetto `"marketingCloud"` deve avere la propria proprietà `"org"` configurata per i messaggi push.
+   L&#39;oggetto `"marketingCloud"` deve avere la propria proprietà `"org"` configurata per i messaggi push.
 
    ```js
    "marketingCloud": { 
@@ -40,15 +43,15 @@ Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o 
     }
    ```
 
-1. Per ottenere l'ID/token di registrazione, utilizza l'API Firebase Cloud Messaging (FCM).
+1. Per ottenere l&#39;ID/token di registrazione, utilizza l&#39;API Firebase Cloud Messaging (FCM).
 
-   * Per ulteriori informazioni sulla configurazione di FCM, vedi [Configurare un'app client Firebase Cloud Messaging su Android](https://firebase.google.com/docs/cloud-messaging/android/client).
+   * Per ulteriori informazioni sulla configurazione di FCM, vedi [Configurare un&#39;app client Firebase Cloud Messaging su Android](https://firebase.google.com/docs/cloud-messaging/android/client).
 
    ```js
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
 
-1. L'ID/token di registrazione deve essere passato all'SDK usando il metodo `Config.setPushIdentifier(final String registrationId)`.
+1. L&#39;ID/token di registrazione deve essere passato all&#39;SDK usando il metodo `Config.setPushIdentifier(final String registrationId)`.
 
    ```js
    Config.setPushIdentifier(token); // token was obtained in step 2
@@ -58,7 +61,7 @@ Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o 
 
    Questi sono i requisiti per abilitare i rapporti di click-through tramite push:
 
-   * Nella tua implementazione di `FireBaseMessageService`, l'oggetto Bundle contenente i dati del messaggio, che viene passato nel metodo `onMessageReceived` con l’oggetto RemoteMessage, deve essere aggiunto all'Intent utilizzato per aprire l'attività di destinazione su un click-through. Questa operazione può essere eseguita utilizzando il metodo `putExtras`. Per ulteriori informazioni, consulta [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle)).
+   * Nella tua implementazione di `FireBaseMessageService`, l&#39;oggetto Bundle contenente i dati del messaggio, che viene passato nel metodo `onMessageReceived` con l’oggetto RemoteMessage, deve essere aggiunto all&#39;Intent utilizzato per aprire l&#39;attività di destinazione su un click-through. Questa operazione può essere eseguita utilizzando il metodo `putExtras`. Per ulteriori informazioni, consulta [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
 
    ```java
    Intent intent = new Intent(this, MainActivity.class);
@@ -67,7 +70,7 @@ Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o 
       intent.putExtras(message.toIntent().getExtras());
    ```
 
-   * Nell'attività di destinazione del click-through, l'attività deve essere passata nell'SDK con la chiamata `collectLifecycleData`.
+   * Nell&#39;attività di destinazione del click-through, l&#39;attività deve essere passata nell&#39;SDK con la chiamata `collectLifecycleData`.
 
       Considerazioni da ricordare:
 
