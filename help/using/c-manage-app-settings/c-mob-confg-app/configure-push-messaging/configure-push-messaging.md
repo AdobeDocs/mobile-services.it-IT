@@ -1,14 +1,17 @@
 ---
 description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 seo-title: Configurare i messaggi push
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Configurare i messaggi push
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: ht
-source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +24,7 @@ Prima di configurare i messaggi push, completa i prerequisiti in [Prerequisiti p
 
 * **Considerazioni sulle suite di rapporti**
 
-   Puoi configurare un’app per app store per Apple e una per Google in ogni suite di rapporti. Se ti servono altre app, ad esempio una per un ambiente di produzione e una per un ambiente di sviluppo, configura una nuova app per app store e una nuova suite di rapporti per ciascun ambiente.
+   Puoi configurare un’app per app store per Apple e una per Google in ogni suite di rapporti. Se hai bisogno di altre app, ad esempio una per un ambiente di produzione e una per un ambiente di sviluppo, configura una nuova app per app store e una nuova suite di rapporti per ciascun ambiente.
 
 >[!IMPORTANT]
 >
