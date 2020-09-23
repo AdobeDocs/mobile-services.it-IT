@@ -1,21 +1,24 @@
 ---
 description: Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store).
-keywords: dispositivi mobili
+keywords: mobile
 seo-description: Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store).
 seo-title: Interstiziali
-solution: Experience Cloud, Analytics
+solution: Experience Cloud,Analytics
 title: Interstiziali
-topic: Metrics (Metriche)
+topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 85%
 
 ---
 
 
 # Interstiziali{#interstitials}
 
-Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store). È meglio lasciare agli utenti la scelta della destinazione. Gli addetti al marketing possono configurare una pagina interstiziale che proponga agli utenti una serie di possibili pagine di destinazione tra cui scegliere.
+Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store). È meglio lasciare agli utenti la scelta del percorso. Gli addetti al marketing possono configurare una pagina interstiziale che mostri agli utenti le destinazioni di destinazione disponibili.
 
 Per configurare una pagina interstiziale durante la  creazione di un collegamento di marketing:
 
@@ -56,9 +59,9 @@ Per configurare una pagina interstiziale durante la  creazione di un collegament
 
    * **[!UICONTROL Testo di riserva]**
 
-      Specifica il testo di riserva da visualizzare.
+      Specificate il testo di riserva da visualizzare.
 
-      Questo campo aggiorna il pulsante di testo se un collegamento profondo non giunge a destinazione. Gli utenti vengono invitati a provare il collegamento profondo prima di ricorrere a un’altra opzione. Ad esempio, la destinazione alternativa potrebbe essere un app store da cui scaricare e installare l’app oppure il sito web dell’azienda. Il testo di riserva segnala agli utenti che è disponibile un’altra azione se il collegamento profondo non funziona.
+      Questo campo aggiorna il pulsante di testo se un collegamento profondo non riesce. Gli utenti vengono invitati a provare il collegamento profondo prima di ricorrere a un’altra opzione. Ad esempio, la destinazione alternativa potrebbe essere un app store da cui scaricare e installare l’app oppure il sito web dell’azienda. Il testo di riserva segnala agli utenti che è disponibile un’altra azione se il collegamento profondo non funziona.
 
 
 1. (**Facoltativo**) Fai clic sulle icone sopra l’immagine per controllare l’aspetto dell’interstiziale quando è ruotato e su diversi dispositivi.
