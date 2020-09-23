@@ -1,14 +1,17 @@
 ---
 description: Puoi usare queste informazioni per comprendere cosa sono i postback e come funzionano.
-keywords: android,libreria,mobile,sdk
+keywords: android;library;mobile;sdk
 seo-description: Puoi usare queste informazioni per comprendere cosa sono i postback e come funzionano.
 seo-title: Esempi di postback
 solution: Experience Cloud,Analytics
 title: Esempi di postback
-topic: Sviluppatore e implementazione
+topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ Puoi usare queste informazioni per comprendere cosa sono i postback e come funzi
 
 >[!CAUTION]
 >
->Questo esempio è fornito unicamente a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell'interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
+>Questo esempio è fornito unicamente a scopo informativo. Il file `ADBMobileConfig.json` deve essere configurato nell&#39;interfaccia utente di Adobe Mobile e non deve essere modificato manualmente. Un file di configurazione modificato manualmente rappresenta un rischio quando è attiva la configurazione di messaggi in remoto.
 
 ## `ADBMobileConfig.json` definizione {#section_8751E8176F3546C09420341A39758AFF}
 
@@ -61,6 +64,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Poiché il suo stato è `“MainMenu”`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L'URL sostituirà tutte le variabili di modello con i valori dell'hit. Presupponendo che la sessione precedente dell'utente sia durata 132 secondi e che l'utente esegua la versione 4.6.0 dell'SDK per Android, l'URL risultante dovrebbe essere simile al seguente:
+Poiché il suo stato è `“MainMenu”`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L&#39;URL sostituirà tutte le variabili di modello con i valori dell&#39;hit. Presupponendo che la sessione precedente dell&#39;utente sia durata 132 secondi e che l&#39;utente esegua la versione 4.6.0 dell&#39;SDK per Android, l&#39;URL risultante dovrebbe essere simile al seguente:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`
