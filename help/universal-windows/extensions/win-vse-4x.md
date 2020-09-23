@@ -1,21 +1,21 @@
 ---
 description: Queste estensioni forniscono un modo molto più semplice per aggiungere al progetto il riferimento  SDK per Windows 4.x per soluzioni di Experience Cloud.
 seo-description: Queste estensioni forniscono un modo molto più semplice per aggiungere al progetto il riferimento  SDK per Windows 4.x per soluzioni di Experience Cloud.
-seo-title: Estensioni di Windows Visual Studio per  SDK 4.x per soluzioni di Experience Cloud
-solution: Marketing Cloud,Analytics
-title: Estensioni di Windows Visual Studio per  SDK 4.x per soluzioni di Experience Cloud
+seo-title: Estensioni Windows Visual Studio per l’SDK 4.x delle soluzioni Experience Cloud
+solution: Experience Cloud,Analytics
+title: Estensioni Windows Visual Studio per l’SDK 4.x delle soluzioni Experience Cloud
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
 
-# Windows Visual Studio extensions for Experience Cloud Solutions 4.x SDK {#windows-visual-studio-extensions-for-experience-cloud-solutions-x-sdk}
+# Estensioni Windows Visual Studio per l’SDK 4.x delle soluzioni Experience Cloud {#windows-visual-studio-extensions-for-experience-cloud-solutions-x-sdk}
 
 Questa estensione fornisce un modo molto più semplice per aggiungere al progetto il riferimento dell’SDK per Windows delle soluzioni di Experience Cloud  4.x.
 
