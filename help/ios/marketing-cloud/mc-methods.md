@@ -2,13 +2,13 @@
 description: Di seguito sono elencati i metodi del servizio Adobe Experience Platform Identity forniti dalla libreria iOS.
 seo-description: Di seguito sono elencati i metodi del servizio Adobe Experience Platform Identity forniti dalla libreria iOS.
 seo-title: Metodi di Adobe Experience Platform Identity
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
