@@ -1,20 +1,23 @@
 ---
-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-description: La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: Variabile "products"
-solution: Marketing Cloud,Analytics
-title: Variabile "products"
-topic: Sviluppatore e implementazione
-uuid: 2057a564-06ae-4171-be7-0baffa71608b
+description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+seo-description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+seo-title: Variabile dei prodotti
+solution: Experience Cloud,Analytics
+title: Variabile dei prodotti
+topic: Developer and implementation
+uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 13%
 
 ---
 
 
-# Products variable{#products-variable}
+# Variabile dei prodotti {#products-variable}
 
-La variabile "products" non può essere impostata mediante le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+La variabile &quot;products&quot; non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 
 To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products`*:
 
@@ -42,8 +45,8 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* è impostato direttamente nella richiesta dell'immagine, e le altre variabili sono impostate come dati contestuali. Tutte le variabili dei dati di contesto devono essere mappate utilizzando le regole di elaborazione:
+*`products`* è impostato direttamente nella richiesta dell&#39;immagine, e le altre variabili sono impostate come dati contestuali. Tutte le variabili di dati di contesto devono essere mappate utilizzando le regole di elaborazione:
 
 ![](assets/products-procrules.png)
 
-Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, poiché viene impostata direttamente nella richiesta dell’immagine dall’SDK.
+Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.
