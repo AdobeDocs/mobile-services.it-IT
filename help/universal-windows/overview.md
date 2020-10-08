@@ -7,7 +7,7 @@ title: SDK 4.x della piattaforma Universal Windows Platform per soluzioni Experi
 topic: Developer and implementation
 uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 37%
@@ -39,5 +39,4 @@ Per ulteriori informazioni, consulta la [documentazione](/help/using/home.md)di 
 
 >[!IMPORTANT]
 >
->Dal **30 aprile 2017**, Adobe Bloodhound è stato
-ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
+>Dal **30 aprile 2017**, Adobe Bloodhound è stato ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
