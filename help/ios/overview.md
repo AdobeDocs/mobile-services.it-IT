@@ -7,7 +7,7 @@ title: SDK 4.x per iOS per le soluzioni Experience Cloud
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 97%
@@ -58,5 +58,4 @@ Per ulteriori informazioni sull&#39;interfaccia utente di Mobile Services e per 
 
 >[!IMPORTANT]
 >
->Dal **30 aprile 2017**, Adobe Bloodhound è stato
-ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
+>Dal **30 aprile 2017**, Adobe Bloodhound è stato ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
