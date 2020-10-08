@@ -7,7 +7,7 @@ title: SDK 4.x per Windows 8.1 Universal App Store per soluzioni Experience Clou
 topic: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 35%
@@ -43,5 +43,4 @@ Per ulteriori informazioni, consulta [documentazione](/help/using/home.md)di Ado
 
 >[!IMPORTANT]
 >
->Dal **30 aprile 2017**, Adobe Bloodhound è stato
-ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
+>Dal **30 aprile 2017**, Adobe Bloodhound è stato ritirato. A partire dal 1° maggio 2017, non verranno più forniti ulteriori miglioramenti né supporto aggiuntivo Engineering o Adobe Expert Care.
