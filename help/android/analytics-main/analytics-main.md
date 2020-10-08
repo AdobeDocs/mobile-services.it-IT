@@ -8,7 +8,7 @@ title: Panoramica di Analytics
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 73%
@@ -34,8 +34,8 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 Negli SDK, gli identificatori vengono utilizzati per monitorare gli utenti, ed ecco la gerarchia di identificatori:
 
 1. Identificatore visitatore personalizzato (VID)
-2. Identificatore tracciamento analisi (AID)
-3.  ID Experience Cloud (MID)
+1. Identificatore tracciamento analisi (AID)
+1.  ID Experience Cloud (MID)
 
 >[!TIP]
 >
