@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ Dopo che avrai abilitato la funzione &quot;lifecycle&quot; (ciclo di vita), ad o
 
 >[!IMPORTANT]
 >
->Devi aggiungere queste chiamate a ogni attività per garantire una segnalazione accurata degli arresti anomali. Per ulteriori informazioni, vedi [Tracciare gli arresti anomali delle app](/help/android/analytics-main/crashes.md).
+>Devi aggiungere queste chiamate a ogni attività per garantire una segnalazione accurata degli arresti anomali. Per ulteriori informazioni, vedi [Tracciare gli arresti anomali dell’app](/help/android/analytics-main/crashes.md).
 
 ## Includere dati aggiuntivi con le chiamate &quot;lifecycle&quot;
 
@@ -153,6 +153,6 @@ Altre metriche &quot;lifecycle&quot; vengono raccolte automaticamente. Per ulter
 
 Completa le attività seguenti:
 
-* [Tracciare gli stati dell&#39;app](/help/android/analytics-main/states.md)
-* [Tracciare le azioni eseguite nell&#39;app](/help/android/analytics-main/actions.md)
+* [Tracciare gli stati dell’app](/help/android/analytics-main/states.md)
+* [Tracciare le azioni eseguite nell’app](/help/android/analytics-main/actions.md)
 
