@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
 topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Le regole di elaborazione vengono utilizzate per copiare i dati inviati in varia
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 
-* Raggruppare le variabili di dati di contesto utilizzando gli spazi dei nomi, in quanto consente di mantenere un ordine logico. Ad esempio, per raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
+* Raggruppa le variabili di dati di contesto utilizzando spazi dei nomi (namespace), utili per mantenere un ordine logico. Ad esempio, per raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
 
    ```js
    "product.type":"hat" 
@@ -29,15 +29,15 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
    "product.color":"blue"
    ```
 
-* Le variabili di dati di contesto sono ordinate in ordine alfabetico nell&#39;interfaccia delle regole di elaborazione, consentendo di vedere rapidamente quali variabili si trovano nello stesso namespace.
+* Nell’interfaccia delle regole di elaborazione, le variabili di dati contestuali sono presentate in ordine alfabetico in modo che si possa rapidamente individuare le variabili che si trovano nello stesso spazio dei nomi.
 
-   Evitate di denominare le chiavi dei dati contestuali utilizzando il numero evar o prop:
+   Evita di denominare le chiavi dei dati contestuali utilizzando il numero evar o prop:
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   Questo potrebbe facilitare *leggermente* il completamento della mappatura una tantum nelle regole di elaborazione, ma si perde la leggibilità durante il debug e gli aggiornamenti futuri del codice, il che può essere più difficile. È invece consigliabile utilizzare nomi descrittivi per chiavi e valori:
+   Questo potrebbe semplificare *leggermente* la mappatura una tantum nelle regole di elaborazione, a scapito però della leggibilità durante il debug e gli aggiornamenti futuri del codice. È consigliabile piuttosto utilizzare nomi descrittivi per chiavi e valori:
 
    ```js
    "username":"jimbo"
@@ -49,7 +49,7 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
    "logon":"1"
    ```
 
-* Le variabili di contesto che definiscono eventi di incremento possono avere l’evento come chiave e l’entità dell’incremento come valore:
+* Per le variabili di contesto che definiscono eventi di incremento, è possibile usare l’evento come chiave e l’entità di incremento come valore:
 
    ```js
    "levels completed":"6"
