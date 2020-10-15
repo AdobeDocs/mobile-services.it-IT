@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Messaggistica
 topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Per iniziare, passa a [Launch](https://launch.adobe.com/).
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -40,7 +40,7 @@ I messaggi in-app vengono consegnati agli utenti in tempo reale, in base alle lo
 Sono supportati i seguenti tipi di messaggi:
 
 * Personalizzato e a tema
-* Schermo intero
+* A schermo intero
 * Avvisi nativi
 * Notifiche locali
 
@@ -62,4 +62,4 @@ Per aiutarti a capire come funziona la messaggistica in-app, ecco alcune informa
 
 I messaggi push vengono inviati agli utenti che hanno acconsentito alla ricezione di notifiche. Puoi impostare come destinatari di questi messaggi gli utenti dei segmenti Analytics o di segmenti personalizzati. I messaggi push vengono recapitati al di fuori dell’app e sono quindi molto utili per coinvolgere di nuovo utenti passivi o per inviare informazioni specifiche in base all’ora e alla posizione.
 
-Prima di configurare i messaggi push, consulta [Prerequisiti per abilitare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Una volta eseguite tali operazioni, devi configurare i messaggi push nelle impostazioni dell’app. Per ulteriori informazioni, vedi  [Configurare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Prima di configurare i messaggi push, consulta [Prerequisiti per abilitare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Una volta eseguite tali operazioni, devi configurare i messaggi push nelle impostazioni dell’app. Per ulteriori informazioni, vedi   [Configurare i messaggi push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
