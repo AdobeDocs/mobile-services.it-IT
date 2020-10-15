@@ -1,26 +1,26 @@
 ---
-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
+description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluse quelle per visualizzazione, attivatore e caratteristiche.
 keywords: mobile
-seo-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
-seo-title: Pubblico messaggio in-app
+seo-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluse quelle per visualizzazione, attivatore e caratteristiche.
+seo-title: Pubblico - Messaggio in-app
 solution: Experience Cloud,Analytics
-title: Pubblico messaggio in-app
+title: Pubblico - Messaggio in-app
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # Pubblico: messaggio in-app {#audience-in-app-message}
 
-Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
+Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluse quelle per visualizzazione, attivatore e caratteristiche.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. Nell’app, fai clic su **[!UICONTROL Messaggistica]** > **[!UICONTROL Gestione messaggi]** > **[!UICONTROL Crea messaggio]** > **[!UICONTROL Crea in-app]**.
 1. Nella pagina Pubblico, digita le informazioni nei campi seguenti:
 
    * **[!UICONTROL Visualizzazione]**
@@ -57,9 +57,9 @@ Puoi scegliere chi deve visualizzare il messaggio in-app quando viene attivato e
 >
 >Gli attivatori e le caratteristiche utilizzano dati trasmessi ad Analytics dalla tua app. Questi valori vengono passati come dati contestuali, variabili mappate e metriche. Una variabile è un valore basato su testo e una metrica è un valore numerico.
 
-To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables &amp; Metrics]** >, which displays the following tabs:
+Per vedere le mappature di queste coppie di chiave e valore nell’interfaccia utente di Mobile Services e convalidare il valore per l’attivatore, fai clic su **[!UICONTROL Gestione impostazioni app]** > **[!UICONTROL Gestione variabili e metriche]**. Vengono visualizzate le seguenti schede:
 
-* **[!UICONTROL Variabili standard e metriche]**
+* **[!UICONTROL Variabili e metriche standard]**
 * **[!UICONTROL Variabili personalizzate]**
 * **[!UICONTROL Metriche personalizzate]**
 
@@ -71,11 +71,11 @@ Convalida la mappatura, quindi seleziona la corrispondenza o l’operatore logic
 
 Gli scenari di seguito sono utili per determinare se selezionare una metrica o una variabile per l’attivatore:
 
-### Metrics (Metriche)
+### Metriche
 
 Una metrica è un valore numerico, ad esempio il numero di acquisti effettuati.
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. Fai clic su **[!UICONTROL Gestione messaggi]** > **[!UICONTROL Crea messaggio]**.
 1. Completa i seguenti passaggi nella sezione **[!UICONTROL Attivatore]** della scheda **[!UICONTROL Pubblico]**:
 
    1. Seleziona un evento standard, ad esempio **[!UICONTROL Avviato]** e seleziona **[!UICONTROL esiste]**.
@@ -86,7 +86,7 @@ Una metrica è un valore numerico, ad esempio il numero di acquisti effettuati.
 
 Una variabile è una stringa di testo che sia un identificatore univoco, ad esempio paese, aeroporto e così via.
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. Fai clic su **[!UICONTROL Gestione messaggi]** > **[!UICONTROL Crea messaggio]**.
 1. Completa i seguenti passaggi nella sezione **[!UICONTROL Attivatore]** della scheda **[!UICONTROL Pubblico]**:
 
    1. Seleziona un evento standard, ad esempio **[!UICONTROL Avviato]** e seleziona **[!UICONTROL esiste]**.
