@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Acquisizione da app mobile
 topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
 ht-degree: 100%
 
@@ -68,6 +68,6 @@ In Xcode, per aggiungere il dominio dei collegamenti Adobe Marketing all&#39;ele
 
 1. Vai alla destinazione del progetto e fai clic sulla scheda **[!UICONTROL Capacità]**.
 2. Scorri verso il basso fino alla sezione **[!UICONTROL Domini associati]** e attivala.
-3. Aggiungi una voce nell’elenco **[!UICONTROL Domini]** per il dominio dei collegamenti di marketing dall’URL dei collegamenti di marketing.
+3. Aggiungi una voce all’elenco **[!UICONTROL Domini]** per il dominio dei collegamenti di marketing dall’URL di Collegamenti marketing.
 
-La tua voce si presenterà in un modo simile a `applinks:5848561889a02a6996aea62b.c00.adobe.com`.
+La voce si presenterà simile a questa: `applinks:5848561889a02a6996aea62b.c00.adobe.com`.
