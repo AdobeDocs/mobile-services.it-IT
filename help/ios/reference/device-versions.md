@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Versioni dei dispositivi iOS
 topic: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Nella tabella seguente sono riportate le stringhe relative alla versione di iOS 
 >
 >Questo elenco si basa su test interni e informazioni disponibili online e potrebbe contenere inesattezze o informazioni incomplete.
 
-For more information about iOS devices, go to sites such as [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
+Per ulteriori informazioni sui dispositivi iOS, consulta i siti dedicati, come ad esempio [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
 | **iPhone** | **Versione** |
 |---|---|
@@ -67,13 +67,13 @@ For more information about iOS devices, go to sites such as [The iPhone Wiki](ht
 | iPad 2 (nuovo 16 GB) | iPad2,4 |
 | iPad Mini (WiFi) | iPad2,5 |
 | iPad Mini (GSM) | iPad2,6 |
-| iPad Mini, versione Globale (come il GSM iPad Mini, ma con radio cellulare supplementare: CDMA EV-DO Rev. A e Rev. B (3.5G) | iPad2,7 |
+| iPad Mini, versione Globale (come GSM iPad Mini, ma con radio cellulare: CDMA EV-DO Rev. A e Rev. B (3.5G)) | iPad2,7 |
 | iPad 3 (WiFi) | iPad3,1 |
 | iPad 3 (CDMA) | iPad3,2 |
 | iPad 3 (GSM) | iPad3,3 |
 | iPad 4 (WiFi) | iPad3,4 |
 | iPad 4 (GSM) | iPad3,5 |
-| iPad 4, versione Globale (come l&#39;iPad 4a generazione GSM, ma con radio cellulare supplementare: CDMA EV-DO Rev. A e Rev. B (3.5G) | iPad3,6 |
+| iPad 4, versione Globale (come iPad 4a generazione GSM, ma con radio cellulare: CDMA EV-DO Rev. A e Rev. B (3.5G)) | iPad3,6 |
 | iPad Air (WiFi) | iPad4,1 |
 | iPad Air (LTE) | iPad4,2 |
 | iPad Air (CDMA) | iPad4,3 |
@@ -94,7 +94,7 @@ For more information about iOS devices, go to sites such as [The iPhone Wiki](ht
 | iPad 5, 9,7&quot; (Wi-Fi) | iPad6,11 |
 | iPad Pro 5, 9,7&quot; (LTE) | iPad6,12 |
 | iPad Pro 2, 12,9&quot; (Wi-Fi) | iPad7,1 |
-| iPad Pro 2, 12,9&quot; (LTE) | iPad7,2 |
-| iPad Pro, 10,5&quot; (Wi-Fi) | iPad7,3 |
-| iPad Pro, 10,5&quot; (LTE) | iPad7,4 |
+| Pad Pro 2, 12,9&quot; (LTE) | iPad7,2 |
+| Pad Pro, 10,5&quot; (Wi-Fi) | iPad7,3 |
+| Pad Pro, 10,5&quot; (LTE) | iPad7,4 |
 
