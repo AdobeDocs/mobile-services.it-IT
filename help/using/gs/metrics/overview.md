@@ -1,26 +1,26 @@
 ---
-description: Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+description: Puoi visualizzare le metriche di prestazione chiave per le app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 keywords: mobile
-seo-description: Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+seo-description: Puoi visualizzare le metriche di prestazione chiave per le app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 seo-title: Visualizzare le metriche di Mobile
 solution: Experience Cloud,Analytics
 title: Visualizzare le metriche di Mobile
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Visualizzare le metriche di Mobile {#display-mobile-metrics}
 
-Potete visualizzare le metriche chiave delle prestazioni delle app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
+Puoi visualizzare le metriche di prestazione chiave per le app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 
-Le metriche visualizzate per ogni app corrispondono alle metriche chiave che hai selezionato al momento della creazione dell’app. Per ulteriori informazioni, vedi   [Aggiungi una nuova app](/help/using/manage-apps/t-new-app.md).
+Le metriche visualizzate per ogni app corrispondono alle metriche chiave che hai selezionato al momento della creazione dell’app. Per ulteriori informazioni, vedi   [Aggiungere una nuova app](/help/using/manage-apps/t-new-app.md).
 
 Se l’app che desideri visualizzare non è visibile, puoi cercarla digitandone il nome o facendo clic sull’elenco a discesa in **[!UICONTROL Tutte le app]**.
 
@@ -32,20 +32,20 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Filtrare i dati**
 
-   Potete utilizzare i filtri per segmentare i dati per ogni app.
+   Puoi utilizzare i filtri per segmentare i dati relativi a ciascuna app.
 
-   Ad esempio, puoi filtrare i dati per Versione app e per Tipo di dispositivo.
+   Ad esempio, puoi filtrare i dati per Versione app e Tipo di dispositivo.
 
    Per creare un filtro:
 
    1. Fai clic sull’icona **[!UICONTROL Filtro]** per visualizzare la finestra di dialogo **[!UICONTROL Filtro fisso]**.
    1. Fai clic su **[!UICONTROL Aggiungi regola]**, seleziona un’opzione dall’elenco a discesa, quindi inserisci le informazioni necessarie.
 
-      Ad esempio, potresti selezionare **[!UICONTROL Versione app]** e digitare `4.5` per la versione. Potresti scegliere **[!UICONTROL Tipo di dispositivo]** e digitare `Android`.
+      Ad esempio, puoi selezionare **[!UICONTROL Versione app]** e digitare `4.5` per la versione. Puoi scegliere **[!UICONTROL Tipo di dispositivo]** e digitare `Android`.
 
       >[!TIP]
       >
-      >Puoi creare filtri complessi utilizzando istruzioni *AND* e *OR*.
+      >Puoi creare filtri complessi utilizzando le istruzioni *AND* e *OR*.
 
    1. Fai clic su **[!UICONTROL Aggiorna]**.
    >[!TIP]
@@ -56,13 +56,13 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Visualizzare gli indicatori prestazioni chiave**
 
-   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le righe del grafico hanno colori diversi e puoi passare il cursore sopra il punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
+   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le linee del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
 
 ## Modificare le impostazioni di un’app {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. Fai clic sull’icona dell’ingranaggio nel riquadro di un’app per aprirne la pagina Informazioni app.
 1. Modifica le impostazioni dell’app.
 
-   Per maggiori informazioni sulle singole impostazioni, vedi   [Configurazione dell’app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   Per maggiori informazioni sulle singole impostazioni, vedi    [Configurazione dell’app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. Fai clic su **[!UICONTROL Salva]**.
