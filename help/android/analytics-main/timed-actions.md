@@ -1,34 +1,34 @@
 ---
-description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale tra l'inizio e la fine di un'azione. L’SDK calcola il tempo necessario per completare l’azione in ogni sessione e complessivamente in più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
-seo-description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale tra l'inizio e la fine di un'azione. L’SDK calcola il tempo necessario per completare l’azione in ogni sessione e complessivamente in più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
+description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale dall’inizio alla fine di un’azione. L’SDK calcola il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
+seo-description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale dall’inizio alla fine di un’azione. L’SDK calcola il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
 seo-title: Azioni temporizzate
 solution: Experience Cloud,Analytics
 title: Azioni temporizzate
 topic: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
 # Azioni temporizzate {#timed-actions}
 
-Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale tra l&#39;inizio e la fine di un&#39;azione. L’SDK calcola il tempo necessario per completare l’azione in ogni sessione e complessivamente in più sessioni. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
+Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale dall’inizio alla fine di un’azione. L’SDK calcola il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
 
 Per le azioni temporizzate vengono riportate le metriche seguenti:
 
-* Numero totale di secondi trascorsi nell&#39;app tra avvio e fine (sessioni diverse)
-* Numero totale di secondi tra inizio e fine (tempo di clock)
+* Numero totale di secondi trascorsi nell’app dall’inizio alla fine (per più sessioni)
+* Numero totale di secondi dall’inizio alla fine (in base all’ora effettiva)
 
 Una callback facoltativa consente di eseguire azioni aggiuntive al completamento dell’azione temporizzata:
 
-* Eseguire il codice e aggiungere qualsiasi logica - logica personalizzata facoltativa basata sui risultati della durata.
+* Eseguire il codice e aggiungere qualsiasi logica; logica personalizzata facoltativa in base ai risultati della durata.
 * Aggiungere dati contestuali prima di passare le durate.
-* Annulla hit e durate non ancora inviate.
+* Annullare l’hit e le durate non ancora inviate.
 
 ## Tracciare le azioni temporizzate {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
