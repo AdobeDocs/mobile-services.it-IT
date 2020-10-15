@@ -1,21 +1,21 @@
 ---
-description: A partire da WatchOS 2, le estensioni WatchKit verranno eseguite su un dispositivo Apple Watch. Le applicazioni eseguite in questo ambiente richiedono il framework WatchConnectivity per condividere i dati con l'app iOS che le contiene.
-seo-description: A partire da WatchOS 2, le estensioni WatchKit verranno eseguite su un dispositivo Apple Watch. Le applicazioni eseguite in questo ambiente richiedono il framework WatchConnectivity per condividere i dati con l'app iOS che le contiene.
+description: A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite sui dispositivi Apple Watch. Le applicazioni che vengono eseguite in questo ambiente richiedono la condivisione di dati tra il framework WatchConnectivity e l’app iOS che le contiene.
+seo-description: A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite sui dispositivi Apple Watch. Le applicazioni che vengono eseguite in questo ambiente richiedono la condivisione di dati tra il framework WatchConnectivity e l’app iOS che le contiene.
 seo-title: Implementazione Apple Watch con WatchOS 2
 solution: Experience Cloud,Analytics
 title: Implementazione Apple Watch con WatchOS 2
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Implementazione Apple Watch con WatchOS 2{#apple-watch-implementation-with-watchos}
+# Implementazione Apple Watch con WatchOS 2 {#apple-watch-implementation-with-watchos}
 
 A partire da WatchOS 2, le estensioni WatchKit possono essere eseguite sui dispositivi Apple Watch. Le applicazioni che vengono eseguite in questo ambiente richiedono la condivisione di dati tra il framework `WatchConnectivity` e l&#39;app iOS che le contiene.
 
@@ -32,15 +32,15 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Guida introduttiva {#section_70BC28BB69414F169196953D3D264BC1}
+## Introduzione {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
 >Assicurati di avere un progetto con almeno le seguenti destinazioni:
 >
->* L&#39;app contenitore
->* L&#39;app WatchKit
->* L&#39;estensione WatchKit
+>* L’app contenitore
+>* L’app WatchKit
+>* L’estensione WatchKit
 
 >
 
@@ -54,7 +54,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. Trascina nel progetto la cartella `AdobeMobileLibrary`.
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della destinazione dell&#39;app contenitore.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;app contenitore, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Build Phases]** della destinazione dell’app contenitore, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.tbd`
@@ -106,7 +106,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 ## Configurare l’estensione WatchKit {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della destinazione dell&#39;estensione WatchKit.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;estensione WatchKit, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell’estensione WatchKit, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary_Watch.a`
    * `libsqlite3.tbd`
