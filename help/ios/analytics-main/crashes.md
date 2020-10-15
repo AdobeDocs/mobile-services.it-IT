@@ -1,16 +1,16 @@
 ---
 description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
 seo-description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
-seo-title: Tracciare gli arresti anomali dell'app
+seo-title: Tracciare gli arresti anomali dell’app
 solution: Experience Cloud,Analytics
 title: Tracciare gli arresti anomali dell’app
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Se l&#39;applicazione viene terminata senza prima passare in background, l&#39;S
 
 iOS usa le notifiche di sistema che permettono agli sviluppatori di tenere traccia e rispondere a diversi stati ed eventi nel ciclo di vita dell&#39;applicazione.
 
-L&#39;SDK di Adobe Mobile per iOS ha un gestore di notifiche che risponde alla notifica `UIApplicationDidEnterBackgroundNotification`. In questo codice, viene impostato un valore che indica che l&#39;app è stata messa in background dall&#39;utente. In un successivo avvio, se tale valore non può essere trovato, viene segnalato un arresto anomalo.
+L&#39;SDK di Adobe Mobile per iOS ha un gestore di notifiche che risponde alla notifica `UIApplicationDidEnterBackgroundNotification`. In questo codice, viene impostato un valore che indica che l’app è stata messa in background dall’utente. Al successivo avvio, se tale valore non viene trovato, viene registrato un arresto anomalo.
 
 ## Perché Adobe misura gli arresti anomali in questo modo?
 
@@ -41,9 +41,9 @@ Le librerie per la segnalazione di arresti anomali fornite da aziende come Aptel
 
 ## Cosa causa la segnalazione di un arresto anomalo falso?
 
-I seguenti scenari possono causare falsi arresti anomali nel rapporto dell’SDK:
+I seguenti scenari possono causare false segnalazioni di arresti anomali da parte dell’SDK:
 
-* Se esegui il debugging utilizzando Xcode, l&#39;avvio dell&#39;app di nuovo mentre è in primo piano causa un arresto anomalo.
+* Se esegui il debugging con Xcode, il riavvio dell’app mentre questa è in primo piano causa un arresto anomalo.
 
    >[!TIP]
    >
@@ -66,7 +66,7 @@ Le seguenti procedure possono essere utili per evitare la segnalazione di falsi 
 
    Questo codice corregge i falsi arresti anomali descritti ai punti 2 e 3 della sezione precedente.
 
-* Assicurati di eseguire lo sviluppo rispetto alle suite di rapporti non di produzione, per evitare il verificarsi di falsi arresti anomali #1.
+* Per evitare il verificarsi del primo tipo di falsi arresti anomali, assicurati di eseguire le attività di sviluppo rispetto alle suite di rapporti non di produzione.
 * Non eliminare e non modificare i valori inseriti dall&#39;SDK di Adobe Mobile in `NSUserDefaults`.
 
    Se tali valori vengono modificati all&#39;esterno dell&#39;SDK, i dati segnalati nei rapporti non saranno validi.
