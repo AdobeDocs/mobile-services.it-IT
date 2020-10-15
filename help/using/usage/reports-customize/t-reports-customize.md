@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Aggiungere filtri ai rapporti
 topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Aggiungere filtri ai rapporti{#add-filters-to-reports}
+# Aggiungere filtri ai rapporti {#add-filters-to-reports}
 
 Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
 
@@ -26,25 +26,25 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]**, ma le istruzioni sono valide per qualsiasi tipo di rapporto.
 
-1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
+1. Apri l’app e fai clic su **[!UICONTROL Utilizzo]** > **[!UICONTROL Utenti e sessioni]**.
 
    ![](assets/customize1.png)
 
-   Questo rapporto fornisce una vista completa degli utenti dell’app nel corso del tempo. Tuttavia, le metriche per le versioni iOS e Android dell’app vengono raccolte nella stessa suite di rapporti. Possiamo segmentare gli utenti per sistema operativo mobile aggiungendo un filtro personalizzato alla metrica Utenti.
+   Questo rapporto fornisce una vista completa degli utenti dell’app nel corso del tempo. Tuttavia, le metriche per le versioni iOS e Android dell’app vengono raccolte nella stessa suite di rapporti. È possibile segmentare gli utenti per sistema operativo mobile aggiungendo un filtro personalizzato alla metrica Utenti.
 
 1. Fai clic su **[!UICONTROL Personalizza]**.
 
    ![](assets/customize2.png)
 
-1. In **[!UICONTROL Utenti]**, fai clic su **[!UICONTROL Aggiungi filtro]**, quindi fai clic su **[!UICONTROL Aggiungi regola]**.
+1. In **[!UICONTROL Utenti]**, fai clic su **[!UICONTROL Aggiungi filtro]**, quindi su **[!UICONTROL Aggiungi regola]**.
 
-1. Seleziona **[!UICONTROL Sistema operativo]**, quindi seleziona **[!UICONTROL iOS]** dall’elenco a discesa.
+1. Seleziona **[!UICONTROL Sistema operativo]**, quindi scegli **[!UICONTROL iOS]** dall’elenco a discesa.
 
    ![](assets/customize3.png)
 
    Per aggiungere Android come filtro, devi ripetere questo passaggio.
 
-1. Fai clic su **[!UICONTROL E]**, seleziona **[!UICONTROL Sistema operativo]** dall’elenco a discesa, quindi seleziona **[!UICONTROL Android]**.
+1. Fai clic su **[!UICONTROL E]**, seleziona **[!UICONTROL Sistema operativo]** dall’elenco a discesa, quindi scegli **[!UICONTROL Android]**.
 
    A questo punto i filtri dovrebbero essere come nell’esempio seguente:
 
@@ -58,10 +58,10 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]*
    ![](assets/customize5.png)
 
    Puoi personalizzare ulteriormente il rapporto. A partire da iOS 8.3, puoi aggiungere la metrica Primi avvii con un filtro di versione del sistema operativo iOS 8.3 per vedere quanti clienti iOS 8.3 hanno aggiornato le app ed eseguito un primo avvio.
-1. In **[!UICONTROL Primi avvii]**, fai clic su **[!UICONTROL Aggiungi filtro]**, poi su **[!UICONTROL Aggiungi regola]**, seleziona **[!UICONTROL Sistema operativo]** dall’elenco a discesa e infine seleziona **[!UICONTROL iOS]**.
-1. Fai clic su **[!UICONTROL E]**, seleziona **[!UICONTROL Versioni sistema operativo]** dall’elenco a discesa, quindi seleziona **[!UICONTROL iOS 8.3]**.
+1. In **[!UICONTROL Primi avvii]**, fai clic su **[!UICONTROL Aggiungi filtro]**, poi su **[!UICONTROL Aggiungi regola]**, seleziona **[!UICONTROL Sistema operativo]** dall’elenco a discesa e infine scegli **[!UICONTROL iOS]**.
+1. Fai clic su **[!UICONTROL E]**, seleziona **[!UICONTROL Versioni sistema operativo]** dall’elenco a discesa, quindi scegli **[!UICONTROL iOS 8.3]**.
 
-   A questo punto i filtri dovrebbero essere come in questo esempio:
+   A questo punto i filtri dovrebbero presentarsi come in questo esempio:
 
    ![](assets/customize6.png)
 
