@@ -6,9 +6,9 @@ seo-title: Risoluzione dei problemi del test di acquisizione
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi del test di acquisizione
 topic: Developer and implementation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ In questo argomento vengono fornite informazioni su come risolvere eventuali pro
 
    Per il test manuale, consigliamo di aumentare il `referrerTimeout` a 10-15 secondi, in modo da disporre di tempo sufficiente per inviare le informazioni sul referente prima che l&#39;hit di installazione venga elaborato.
 
-* Esegui tutti i passaggi in [Verifica dell&#39;acquisizione di Marketing Link](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) e accertati di eseguire prima il comando `adb shell` e quindi quanto segue:
+* Esegui tutti i passaggi in [Verifica dell’acquisizione di Marketing Link](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) e accertati di eseguire prima il comando `adb shell` e quindi quanto segue:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"
