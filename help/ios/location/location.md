@@ -1,16 +1,16 @@
 ---
-description: Queste informazioni sono utili per usare le funzioni Posizione nelle app iOS.
-seo-description: Queste informazioni sono utili per usare le funzioni Posizione nelle app iOS.
+description: Informazioni utili per usare le funzioni Posizione nelle app iOS.
+seo-description: Informazioni utili per usare le funzioni Posizione nelle app iOS.
 seo-title: Posizione
 solution: Experience Cloud,Analytics
 title: Posizione
 topic: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
