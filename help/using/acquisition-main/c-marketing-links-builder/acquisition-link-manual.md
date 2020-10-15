@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Creare manualmente collegamenti di acquisizione
 topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Il diagramma seguente illustra i componenti di un collegamento di tracciamento c
 
 ![](assets/acquisition_url.png)
 
-Questo collegamento è configurato per eseguire un reindirizzamento specifico della piattaforma a Google Play o a Apple App Store per un’app mobile. Se non è possibile determinare la destinazione, lo store predefinito è stato impostato su Apple App Store. Dopo che l’app è stata installata, la chiave contestuale personalizzata `my.custom.key:test` viene associata all’hit di installazione Analytics.
+Questo collegamento è configurato per eseguire un reindirizzamento specifico della piattaforma a Google Play o a Apple App Store per un’app mobile. Se non è possibile determinare la destinazione, lo store predefinito viene impostato su Apple App Store. Dopo che l’app è stata installata, la chiave contestuale personalizzata `my.custom.key:test` viene associata all’hit di installazione Analytics.
 
 Per creare manualmente i collegamenti, usa il formato di URL seguente:
 
@@ -40,14 +40,14 @@ Per creare manualmente i collegamenti, usa il formato di URL seguente:
 
 Per iOS, assicurati di usare il protocollo corretto:
 
-* Usa **HTTP** se utilizzi una versione dell’SDK iOS precedente a 4.7.0 oppure se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]** **non** è selezionata nella pagina Gestisci impostazioni app.
-* Usa **HTTPS** se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]****è** selezionata nella pagina Gestisci impostazioni app.
+* Usa **HTTP** se utilizzi una versione dell’SDK iOS precedente a 4.7.0 oppure se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]** **non** è selezionata nella pagina Gestione impostazioni app.
+* Usa **HTTPS** se utilizzi l’SDK iOS 4.7.0 o versione successiva e se l’opzione **[!UICONTROL Usa HTTPS]** **è** selezionata nella pagina Gestione impostazioni app.
 
 Se si verificano le seguenti condizioni:
 
 * `{mobile-services-app-hash}` corrisponde all’identificatore di applicazione nel file di configurazione `acquisition:appid `.
 
-   Puoi trovare `{mobile-services-app-hash}` nella pagina Gestisci impostazioni app in Opzioni acquisizione SDK, nel campo ID tracciamento.
+   Puoi trovare `{mobile-services-app-hash}` nella pagina Gestione impostazioni app in Opzioni acquisizione SDK, nel campo ID tracciamento.
 
    ![](assets/tracking-id.png)
 
