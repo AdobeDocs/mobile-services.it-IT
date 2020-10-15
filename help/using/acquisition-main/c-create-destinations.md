@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Destinazioni
 topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Destinazioni{#destinations}
+# Destinazioni {#destinations}
 
 Gli addetti al marketing possono creare, salvare e modificare le destinazioni dei collegamenti (web, diretti e di altro tipo) utilizzabili per la creazione dei collegamenti di marketing tracciabili.
 
@@ -30,7 +30,7 @@ Puoi creare i seguenti tipi di destinazioni dei collegamenti:
 
 * **[!UICONTROL Collegamento web]**
 
-   Le destinazioni dei collegamenti Web indirizzano gli utenti a un URL specifico. Ad esempio, potete indirizzare gli utenti a una linea di prodotti sul sito Web di un retailer online.
+   La destinazione di un collegamento web indirizza gli utenti a uno specifico URL, ad esempio a una linea di prodotti specifica nel sito web di un retailer online.
 
    >[!IMPORTANT]
    >
@@ -40,4 +40,4 @@ Puoi creare i seguenti tipi di destinazioni dei collegamenti:
 
    I collegamenti ibridi supportano i collegamenti universali iOS o i collegamenti ad app Android.
 
-Per maggiori informazioni sulla creazione dei singoli tipi di collegamenti, vedi  [Creare una nuova destinazione di collegamento](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+Per maggiori informazioni sulla creazione dei singoli tipi di collegamenti, vedi   [Creare una nuova destinazione di collegamento](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
