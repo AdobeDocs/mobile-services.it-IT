@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Panoramica sui postback
 topic: Developer and implementation
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ I postback consentono di inviare i dati raccolti dall’SDK a un server di terze
 >
 >Questa funzione richiede la versione SDK 4.6.0 o successiva.
 
-I messaggi di postback vengono messi in coda e seguono tutte le regole online/offline esistenti che disciplinano la raccolta dei dati di analisi. Quando un messaggio corrisponde (come fanno i messaggi visualizzati), i messaggi postback non annullano gli altri messaggi. Questo consente di avere più postback sullo stesso hit di analisi. Per una definizione, vedi la riga *postbacks* in  [File di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md).
+I messaggi di postback vengono messi in coda e seguono tutte le regole online/offline esistenti che disciplinano la raccolta dei dati di analisi. Quando viene riscontrata una corrispondenza (come nel caso dei messaggi visualizzati), i messaggi postback non annullano gli altri messaggi. In tal modo si possono verificare più postback sullo stesso hit di analisi. Per una definizione, vedi la riga *postbacks* in   [File di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md).
 
 ## Espansioni dei modelli {#section_6758AD05A24C4E9E965F5253294C164A}
 
-Le espansioni dei modelli sono disponibili nelle proprietà `templateurl` e `templatebody`. Gli elementi modello si presentano come `{key}`, dove `key` è una chiave di dati contestuali o una chiave di dati tradizionali. I valori disponibili per l’espansione dei modelli sono limitati alle [Metriche del ciclo di vita](/help/android/metrics.md), oltre a qualsiasi dato personalizzato associato all&#39;hit che attiva il messaggio. Al momento non è disponibile alcun dato basato su storico o segmento.
+Le espansioni dei modelli sono disponibili nelle proprietà `templateurl` e `templatebody`. Gli elementi modello si presentano come `{key}`, dove `key` è una chiave di dati contestuali o una chiave di dati tradizionali. I valori disponibili per l’espansione dei modelli sono limitati alle [metriche del ciclo di vita](/help/android/metrics.md), oltre a eventuali dati personalizzati associati all’hit che attiva il messaggio. Al momento non sono disponibili dati basati sullo storico o sui segmenti.
 
 Esistono anche modelli specifici e riservati che l’SDK sostituirà automaticamente con dati interni noti all’SDK.
 
-Questo elenco include:
+Tale elenco include:
 
 | Nome token | Descrizione token |
 |--- |--- |
