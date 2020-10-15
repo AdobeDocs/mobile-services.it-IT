@@ -1,22 +1,22 @@
 ---
-description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
+description: Informazioni utili per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 keywords: mobile
-seo-description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
+seo-description: Informazioni utili per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 seo-title: Configurare i messaggi push
 solution: Experience Cloud,Analytics
 title: Configurare i messaggi push
 topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Configurare i messaggi push{#configure-push-messaging}
+# Configurare i messaggi push {#configure-push-messaging}
 
 Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 
@@ -36,7 +36,7 @@ Prima di configurare i messaggi push, completa i prerequisiti in [Prerequisiti p
 
       **[!UICONTROL Chiave privata]**
 
-      Cerca e seleziona la tua chiave privata valida `.p12`, `.key`, o `.pen`.
+      Cerca e seleziona la tua chiave privata valida `.p12`, `.key` o `.pen`.
 
       >[!IMPORTANT]
       >Se il file che selezioni per l’immissione della **[!UICONTROL Chiave privata]** contiene anche un certificato, non devi specificare il certificato.
