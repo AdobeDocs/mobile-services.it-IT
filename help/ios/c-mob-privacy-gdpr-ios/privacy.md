@@ -1,23 +1,23 @@
 ---
 description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
 seo-description: Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
-seo-title: Impostazione dello stato di consenso o diniego dell'utente
+seo-title: Impostazione dello stato di consenso o rinuncia dell’utente
 solution: Experience Cloud,Analytics
-title: Impostazione dello stato di consenso o diniego dell'utente
+title: Impostazione dello stato di consenso o rinuncia dell’utente
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
 ht-degree: 100%
 
 ---
 
 
-# Impostazione dello stato di consenso o diniego dell&#39;utente {#setting-the-user-s-opt-status}
+# Impostazione dello stato di consenso o rinuncia dell’utente {#setting-the-user-s-opt-status}
 
-Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti RGPD.
+Queste informazioni aiutano a gestire una richiesta di cancellazione dati in conformità ai requisiti GDPR.
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ Queste informazioni aiutano a gestire una richiesta di cancellazione dati in con
 
 Per definire se le attività di Analytics, Target e Audience Manager sono consentite su un dispositivo, usa le seguenti impostazioni:
 
-* `privacyDefault` in [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` nel [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
    Questa impostazione controlla l&#39;impostazione iniziale che viene mantenuta finché non viene modificata nel codice.
 
@@ -33,7 +33,7 @@ Per definire se le attività di Analytics, Target e Audience Manager sono consen
 
    Quando l&#39;impostazione della privacy viene modificata utilizzando questo metodo, la modifica diventa permanente finché non viene nuovamente cambiata con questo metodo, oppure finché non disinstalli e reinstalli l&#39;app.
 
-   Per ulteriori informazioni sui metodi, vedi  [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
+   Per ulteriori informazioni sui metodi, vedi   [Metodi di Configurazione](/help/ios/configuration/json-config/json-config.md).
 
 Di seguito sono riportate informazioni su ogni stato di privacy:
 
