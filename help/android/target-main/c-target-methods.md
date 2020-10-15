@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Metodi di Target per Android
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 
-L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `target`.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `target`.
 
 >[!TIP]
 >
@@ -57,8 +57,9 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* Se utilizzi gli SDK **precedenti** alla versione 4.14.0, consulta [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) per informazioni sulle limitazioni dei parametri.
->
->* Se utilizzi gli SDK versione 4.14.0 o **successiva**, consulta [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) per informazioni sulle limitazioni dei parametri.
+   >
+   >
+* Se utilizzi gli SDK versione 4.14.0 o **successiva**, consulta [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) per informazioni sulle limitazioni dei parametri.
 
 
 * **loadRequest**
