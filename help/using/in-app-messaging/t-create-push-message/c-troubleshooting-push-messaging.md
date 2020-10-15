@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 * **Attesa del servizio push**
 
-   Il servizio push (APNS o GCM) potrebbe non inviare il messaggio immediatamente. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]** e visualizzando il dato **[!UICONTROL Pubblicato]**.
+   Il servizio push (APNS o GCM) potrebbe non inviare subito il messaggio. Anche se raramente, sono stati registrati casi con tempi di attesa di 5-10 minuti. Puoi controllare se il messaggio push è stato inviato al servizio push guardando la vista **[!UICONTROL Rapporto]** del messaggio push, individuando il messaggio nella tabella **[!UICONTROL Cronologia messaggio]** e visualizzando il dato **[!UICONTROL Pubblicato]**.
 
    >[!TIP]
    >
