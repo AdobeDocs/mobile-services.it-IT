@@ -5,9 +5,9 @@ seo-description: Le seguenti informazioni sono utili per risolvere eventuali pro
 seo-title: Risoluzione dei problemi dei test di acquisizione
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei test di acquisizione
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Di seguito sono riportati alcuni problemi che potresti riscontrare durante il te
 
    Per il test manuale, aumenta il `referrerTimeout` a 10-15 secondi, in modo da disporre di tempo sufficiente per inviare le informazioni sul referente prima che l&#39;hit di installazione venga elaborato.
 
-* È importante eseguire tutti i passaggi in [Verifica dell&#39;acquisizione da collegamenti marketing](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) per assicurarti di eseguire la `adb` shell e quindi quanto segue:
+* È importante eseguire tutti i passaggi in [Verifica dell’acquisizione da collegamenti marketing](https://docs.adobe.com/content/help/it-IT/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) per assicurarti di eseguire la shell `adb` e quindi quanto segue:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 
