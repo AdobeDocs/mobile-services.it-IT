@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Creare un messaggio push
 topic: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Puoi inviare messaggi push ai segmenti Analytics dall’interfaccia utente di Mo
 
 I messaggi push vengono visualizzati agli utenti che hanno acconsentito alla ricezione di notifiche quando non stanno utilizzando attivamente l’app. Queste notifiche avvisano gli utenti di nuovi aggiornamenti, offerte e promemoria. Grazie a queste notifiche, puoi creare, testare, gestire e includere nei rapporti i messaggi push all’interno di un flusso di lavoro ottimizzato.
 
-I messaggi push vengono inviati lato server dagli app store anziché  Adobe Mobile Services:
+I messaggi push vengono inviati lato server dagli app store anziché da Adobe Mobile Services:
 
 ![](assets/push_message_diagram.png)
 
 Per creare un messaggio push:
 
-1. Click ***your_app_name*** > **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create Push]**.
+1. Fai clic su ***nome_app*** > **[!UICONTROL Messaggistica]** > **[!UICONTROL Gestione messaggi]** > **[!UICONTROL Crea messaggio]** > **[!UICONTROL Crea push]**.
 1. Configura le opzioni relative al pubblico.
 
    Per ulteriori informazioni, vedi [Pubblico: definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
