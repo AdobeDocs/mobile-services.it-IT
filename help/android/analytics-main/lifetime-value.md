@@ -3,12 +3,12 @@ description: Il valore “lifetime” permette di misurare e impostare come dest
 seo-description: Il valore “lifetime” permette di misurare e impostare come destinazione un valore del ciclo di vita per ogni utente. È utile per memorizzare gli acquisti, le visualizzazioni di annunci, la visione completa di un video, le condivisioni social, i caricamenti di foto e così via, nel corso del ciclo di vita.
 seo-title: Valore "lifetime" del ciclo di vita del visitatore
 solution: Experience Cloud,Analytics
-title: Valore “lifetime” del ciclo di vita del visitatore
+title: Valore "lifetime" del ciclo di vita del visitatore
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
 ht-degree: 100%
 
