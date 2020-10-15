@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: App Transport Security
 topic: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
 ht-degree: 100%
 
@@ -21,9 +21,9 @@ Queste informazioni sono utili per l&#39;utilizzo di App Transport Security (ATS
 
 Con iOS 9, Apple ha introdotto App Transport Security, un set di requisiti conformi a best practice per connessioni sicure. Per ulteriori informazioni, consulta *NSAppTransportSecurity* in [Riferimento della chiave di elenco delle proprietà delle informazioni](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/).
 
-Affinché l&#39;SDK di Adobe Mobile versione 4.7 o successiva funzioni direttamente con ATS, utilizza l&#39;opzione di abilitazione SSL nella pagina Gestione impostazioni app. Per ulteriori informazioni, vedi [Gestire le impostazioni app](/help/using/c-manage-app-settings/c-manage-app-settings.md) o [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
+Affinché l&#39;SDK di Adobe Mobile versione 4.7 o successiva funzioni direttamente con ATS, utilizza l&#39;opzione di abilitazione SSL nella pagina Gestione impostazioni app. Per ulteriori informazioni, vedi [Gestire le impostazioni app](/help/using/c-manage-app-settings/c-manage-app-settings.md) o [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
-In Adobe Mobile Services, selezionando l’opzione **[!UICONTROL Usa HTTPS]** nella pagina Gestisci impostazioni app, tutti gli hit da Analytics, Audience Manager, Target e Identity Service di Adobe Experience Platform vengono inviati tramite HTTPS.
+In Adobe Mobile Services, selezionando l’opzione **[!UICONTROL Usa HTTPS]** nella pagina Gestione impostazioni app, tutti gli hit da Analytics, Audience Manager, Target e Identity Service di Adobe Experience Platform vengono inviati tramite HTTPS.
 
 In alternativa, è possibile inserire i server seguenti nell’elenco dei server consentiti:
 
