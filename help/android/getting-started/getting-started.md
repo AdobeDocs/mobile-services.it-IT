@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Introduzione
 topic: Developer and implementation
 uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
 ht-degree: 100%
 
 ---
 
 
-# Guida introduttiva {#getting-started}
+# Introduzione {#getting-started}
 
 Le informazioni in questa sezione sono utili per iniziare a usare l&#39;SDK per Android per le soluzioni Experience Cloud.
 
