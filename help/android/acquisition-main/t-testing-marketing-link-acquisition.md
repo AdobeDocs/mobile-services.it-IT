@@ -1,24 +1,24 @@
 ---
 description: Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 keywords: android;library;mobile;sdk
-seo-description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
-seo-title: Verifica dell'acquisizione da collegamenti marketing
+seo-description: Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+seo-title: Verifica dell’acquisizione da collegamenti marketing
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione da collegamenti marketing
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
 ht-degree: 100%
 
 ---
 
 
-# Verifica dell&#39;acquisizione da collegamenti marketing {#testing-marketing-link-acquisition}
+# Verifica dell’acquisizione da collegamenti marketing {#testing-marketing-link-acquisition}
 
-Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 
 Se la tua app mobile non è ancora disponibile in Google Play, durante la creazione del collegamento di marketing puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull’app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store, e quindi passati all’app al momento dell’installazione come parte di una trasmissione della campagna. Il test del ciclo completo di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
