@@ -39,9 +39,8 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
    >I servizi push non garantiscono al 100% l&#39;effettivo invio di un messaggio. Per ulteriori informazioni sull&#39;affidabilità dei servizi, consulta la documentazione appropriata:
    >
    >* **APNS**: [Qualità del servizio](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**: [Durata di un messaggio](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**: [Durata di un messaggio](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Come posso rinnovare il mio certificato Apple Push Service?
