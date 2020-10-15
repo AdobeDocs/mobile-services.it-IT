@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Panoramica del plug-in PhoneGap
 topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Esegui il comando seguente:
 cordova plugin add adobe-mobile-services
 ```
 
-## Installare il plug-in manualmente  {#section_EA1FD59C484D44878AB509954DEE6037}
+## Installare il plug-in manualmente   {#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## Includere il plug-in
 
