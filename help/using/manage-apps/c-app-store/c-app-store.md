@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: App store
 topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
 ht-degree: 100%
 
@@ -38,4 +38,4 @@ Il [connettore dati appFigures per Adobe Analytics](https://docs.adobe.com/cont
 * Metriche e dimensioni incluse nell’integrazione
 * Segmentazione dei dati dell’app
 
-Per maggiori informazioni sul rapporto sull’app store, vedi [Rapporto Panoramica dell’app store](/help/using/usage/c-app-store-store-performance.md).
+Per maggiori informazioni sul rapporto sull’app store, vedi  [Rapporto Panoramica dell’app store](/help/using/usage/c-app-store-store-performance.md).
