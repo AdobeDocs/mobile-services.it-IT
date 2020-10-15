@@ -1,24 +1,24 @@
 ---
-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
+description: Informazioni utili per risolvere eventuali problemi dei messaggi in-app.
 keywords: mobile
-seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
+seo-description: Informazioni utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Risoluzione dei problemi dei messaggi in-app {#troubleshooting-in-app-messaging}
 
-Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi in-app.
+Informazioni utili per risolvere eventuali problemi dei messaggi in-app.
 
 Se hai soddisfatto tutti i requisiti per i messaggi in-app, ma i messaggi non vengono visualizzati, verifica quanto segue:
 
@@ -38,7 +38,7 @@ Verifica che nel file manifesto sia dichiarato il destinatario della trasmission
 
 ## Il messaggio è attivo?
 
-Nella vista a elenco della colonna **[!UICONTROL Stato]**, nella pagina Manage In-App Message (Gestisci messaggio in-app), verifica che il messaggio sia attivo.
+Nella vista a elenco della colonna **[!UICONTROL Stato]**, nella pagina Gestione messaggio in-app, verifica che il messaggio sia attivo.
 
 ## Osserva *mostra una volta*, *mostra sempre*, *mostra offline* sulla pagina Pubblico.
 
@@ -46,7 +46,7 @@ Verifica che le seguenti impostazioni siano corrette. Nella pagina Pubblico, con
 
 ## Se utilizzi l’evento di avvio come attivatore...
 
-L’avvio viene attivato solo su una nuova sessione. Per informazioni su quando ha inizio una sessione, vedi  `lifecycleTimeout` nel file di configurazione [JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+L’avvio viene attivato solo su una nuova sessione. Per informazioni su quando ha inizio una sessione, vedi   `lifecycleTimeout` nel [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
 ## Ho aggiornato il mio messaggio in remoto, ma l’app visualizza ancora il messaggio precedente.
 
@@ -54,13 +54,13 @@ Completa una delle seguenti attività:
 
 * Per l’aggiornamento dell’endpoint della gestione tag dinamica con la nuova definizione potrebbero essere necessari alcuni minuti.
 
-   Dedica un po&#39; di tempo e riprova.
+   Attendi e riprova.
 
 * La configurazione verrà aggiornata solo al successivo avvio.
 
    Se l’app è stata riavviata entro il periodo di timeout della sessione del ciclo di vita, è possibile che la nuova configurazione non sia stata scaricata.
 
-## La mia immagine non rientra esattamente nello spazio disponibile nel modello.
+## L’immagine non rientra esattamente nello spazio disponibile nel modello.
 
 Il modello a schermo intero per i messaggi in-app supporta la visualizzazione di un’immagine da un server remoto (URL immagine) o dal pacchetto dell’app (immagine nel pacchetto). L’immagine deve essere in un formato grafico standard, ad esempio JPG, GIF o PNG.
 
@@ -72,7 +72,7 @@ Regole di posizionamento e dimensionamento per ciascun orientamento:
 
 * **Orizzontale:** l’immagine viene ridimensionata al 100% dell’altezza del dispositivo, con una larghezza corrispondente al 75% del dispositivo e una dissolvenza sul lato destro.
 
-   In caso di problemi con il modello a schermo intero, puoi scaricare e utilizzare il modello HTML personalizzato. Il modello HTML personalizzato offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
+   In caso di problemi con il modello a schermo intero, puoi scaricare e utilizzare il modello HTML personalizzato. Questo modello offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
 
 ## I miei messaggi non riflettono le modifiche e gli aggiornamenti che ho apportato nell’interfaccia.
 
