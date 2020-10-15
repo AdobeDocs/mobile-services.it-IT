@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
 topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 80%
 
 Elenco dei metodi di Audience Manager forniti dalla libreria iOS.
 
-L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Audience Manager hanno il prefisso &quot;`audience`&quot;.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi iniziano con un prefisso a seconda della soluzione; i metodi di Audience Manager hanno il prefisso &quot;`audience`&quot;.
 
 Se Audience Manager è configurato nel file JSON, viene inviato un segnale contenente le metriche sul ciclo di vita con `application:didFinishLaunchingWithOptions:`.
 
@@ -75,12 +75,12 @@ Se Audience Manager è configurato nel file JSON, viene inviato un segnale conte
 
    Imposta gli identificatori DPID e DPUUID. Una volta impostati, entrambi saranno aggiunti a ciascun segnale.
 
-   * L&#39;ID provider di **dati (DPID)** è l&#39;ID del partner di dati assegnato da  Audience Manager.
-   * L&#39;ID utente univoco del fornitore di **dati (DPUUID)** è l&#39;ID univoco del fornitore di dati per l&#39;utente.
+   * L’identificatore **DPID (Data Provider ID)** è l&#39;ID del partner di dati assegnato da Audience Manager.
+   * L’identificatore **DPUUID (Data Provider Unique User ID)** è l’ID univoco del fornitore di dati per l’utente.
 
       >[!IMPORTANT]
       >
-      >Prima della versione 4.13.x, DPUUID non era codificato automaticamente. A partire dalla versione 4.13.x, l’SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Questo processo assicura che l’SDK non interrompa la compatibilità con le versioni precedenti.
+      >Prima della versione 4.13.x, DPUUID non era codificato automaticamente. A partire dalla versione 4.13.x, l’SDK prima annulla la codifica del valore passato, quindi codifica di nuovo il valore. Grazie a questo processo, l’SDK mantiene intatta la compatibilità con le versioni precedenti.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
