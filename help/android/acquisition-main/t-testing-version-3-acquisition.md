@@ -2,16 +2,16 @@
 description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 keywords: android;library;mobile;sdk
 seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
-seo-title: Verifica dell'acquisizione dalla versione 3
+seo-title: Verifica dell’acquisizione dalla versione 3
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione dalla versione 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Queste informazioni consentono di esplorare un collegamento di campagna di acqui
 
 >[!IMPORTANT]
 >
->Acquisizione in V3 si riferisce ai collegamenti di acquisizione creati con Builder nell&#39;interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi eseguire l’aggiornamento ad Android SDK 4.x per  soluzioni di Experience Cloud 4.6.0 o versioni successive.
+>Acquisizione in V3 si riferisce ai collegamenti di acquisizione creati con Builder nell&#39;interfaccia utente di Adobe Mobile Services. Per utilizzare questa funzione, devi passare a SDK 4.x per Android per le soluzioni Experience Cloud 4.6.0 o versione successiva.
 
-Se l&#39;app mobile non è ancora disponibile in Google Play, al momento della creazione del collegamento della campagna puoi selezionare come destinazione qualsiasi app mobile. Questo incide solo sull&#39;app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store, e quindi passati all’app al momento dell’installazione come parte di una trasmissione della campagna. Il test del ciclo completo di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
+Se l’app per dispositivi mobili non è ancora disponibile in Google Play, seleziona una qualsiasi app mobile da usare come destinazione al momento di creare il collegamento della campagna. Questo incide solo sull&#39;app alla quale il server di acquisizione ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non sulla capacità di verificare il funzionamento del collegamento. I parametri della stringa di query vengono passati a Google Play Store, e quindi passati all’app al momento dell’installazione come parte di una trasmissione della campagna. Il test del ciclo completo di acquisizione da app mobile richiede la simulazione di questo tipo di trasmissione.
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-Se i registri di cui sopra non compaiono, verifica di aver completato i passaggi da 6 a 12.
+In caso contrario, assicurati di aver completato i passaggi da 6 a 12.
 
 La tabella seguente contiene informazioni aggiuntive sui possibili errori:
 
@@ -107,14 +107,14 @@ La tabella seguente contiene informazioni aggiuntive sui possibili errori:
 | Analytics - Unable to parse response (*a JSON Response*). | La stringa JSON è formata in modo errato. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | La risposta non contiene il parametro contextData. |
 | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  non è incluso in contextData. |
-| Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Devi accertarti anche di aver aperto il collegamento di acquisizione prima di installare l’app. |
+| Analytics - Acquisition referrer timed out. | Impossibile ottenere la risposta nell&#39;intervallo temporale definito in `referrerTimeout`. Aumenta questo valore e riprova.  Assicurati anche di aver aperto il collegamento di acquisizione prima di installare l’app. |
 
 Considerazioni da ricordare:
 
-* Gli hit inviati dall’app possono essere monitorati mediante gli strumenti di monitoraggio HTTP per verificare l’attribuzione di acquisizione.
+* Gli hit inviati dall’app possono essere monitorati mediante strumenti di monitoraggio HTTP per verificare l’attribuzione di acquisizione.
 * Per ulteriori informazioni sulle modalità di trasmissione di `INSTALL_REFERRER`, consulta [Testare la misurazione delle campagne Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) nella guida per gli sviluppatori di Google.
 
-* È stata rilasciata una correzione di bug per l&#39;acquisizione su Android 4.8.2.
+* È stata rilasciata una correzione di bug per l’acquisizione su Android 4.8.2.
 
    Prima di eseguire il test, aggiorna l’SDK alla versione più recente.
 
@@ -128,7 +128,7 @@ Per installare lo strumento Java:
 
 1. Estrai il file .jar.
 
-   È possibile eseguire il file sulla riga di comando.
+   Puoi eseguire il file dalla riga di comando.
 
    Ad esempio:
 
