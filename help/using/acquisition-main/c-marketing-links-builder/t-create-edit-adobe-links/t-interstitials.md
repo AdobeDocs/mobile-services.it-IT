@@ -7,24 +7,24 @@ solution: Experience Cloud,Analytics
 title: Interstiziali
 topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Interstiziali{#interstitials}
+# Interstiziali {#interstitials}
 
-Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store). È meglio lasciare agli utenti la scelta del percorso. Gli addetti al marketing possono configurare una pagina interstiziale che mostri agli utenti le destinazioni di destinazione disponibili.
+Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store). È meglio lasciare agli utenti la scelta del percorso. Gli addetti al marketing possono configurare una pagina interstiziale che presenti agli utenti le opzioni per le destinazioni disponibili.
 
-Per configurare una pagina interstiziale durante la  creazione di un collegamento di marketing:
+Per configurare una pagina interstiziale durante la   creazione di un collegamento di marketing:
 
 1. Fai clic su **[!UICONTROL Modifica interstiziale collegamento diretto]**.
 
-   ![Interstiziale collegamento diretto](assets/interstitial2.png)
+   ![Interstiziale collegamento profondo](assets/interstitial2.png)
 
 1. Digita le informazioni nei campi seguenti:
 
@@ -34,7 +34,7 @@ Per configurare una pagina interstiziale durante la  creazione di un collegament
 
       Utilizzando interstiziali personalizzati, gli addetti al marketing possono personalizzare le pagine di destinazione interstiziali con codice HTML/CSS/JS personalizzato, per aggiungere elementi di branding alle pagine.
 
-      I requisiti per la pagina HTML sono i seguenti:
+      La pagina HTML deve soddisfare i seguenti requisiti:
 
       * Deve essere un file HTML.
       * Deve contenere sia `%%DEST%%` sia `%%FALLBACK%%` come segnaposto.
@@ -59,9 +59,9 @@ Per configurare una pagina interstiziale durante la  creazione di un collegament
 
    * **[!UICONTROL Testo di riserva]**
 
-      Specificate il testo di riserva da visualizzare.
+      Specifica il testo di riserva (o di fallback) da visualizzare.
 
-      Questo campo aggiorna il pulsante di testo se un collegamento profondo non riesce. Gli utenti vengono invitati a provare il collegamento profondo prima di ricorrere a un’altra opzione. Ad esempio, la destinazione alternativa potrebbe essere un app store da cui scaricare e installare l’app oppure il sito web dell’azienda. Il testo di riserva segnala agli utenti che è disponibile un’altra azione se il collegamento profondo non funziona.
+      Se un collegamento profondo non funziona, il pulsante di testo viene aggiornato con questo campo. Gli utenti vengono invitati a provare il collegamento profondo prima di ricorrere a un’altra opzione. Ad esempio, la destinazione alternativa potrebbe essere un app store da cui scaricare e installare l’app oppure il sito web dell’azienda. Il testo di riserva segnala agli utenti che è disponibile un’altra azione se il collegamento profondo non funziona.
 
 
 1. (**Facoltativo**) Fai clic sulle icone sopra l’immagine per controllare l’aspetto dell’interstiziale quando è ruotato e su diversi dispositivi.
