@@ -1,21 +1,21 @@
 ---
 description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
 seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni disponibili nell'app.
-seo-title: Tracciare gli stati dell'app
+seo-title: Tracciare gli stati dell’app
 solution: Experience Cloud,Analytics
-title: Tracciare gli stati dell'app
+title: Tracciare gli stati dell’app
 topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Tracciare gli stati dell&#39;app {#track-app-states}
+# Tracciare gli stati dell’app {#track-app-states}
 
 Per &quot;stati&quot; si intendono le diverse schermate o visualizzazioni disponibili nell&#39;app.
 
@@ -71,12 +71,12 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate 
 
 ## Generazione di rapporti sugli stati dell&#39;app {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Gli stati vengono generalmente visualizzati utilizzando un rapporto sui percorsi, che consente di vedere in che modo gli utenti si spostano nell&#39;app e quali stati vengono visualizzati più di frequente.
+Gli stati vengono generalmente visualizzati utilizzando un rapporto sui percorsi, che consente di vedere in che modo gli utenti si spostano nell’app e quali stati vengono visualizzati più di frequente.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all&#39;interno dell&#39;applicazione. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all’interno dell’applicazione. Un esempio di percorso è **[!UICONTROL Home]** > **[!UICONTROL Impostazioni]** > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **[!UICONTROL Pagine]**, **[!UICONTROL Visualizzazioni pagina]** e **[!UICONTROL Percorso]**. |
-| Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
+| Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
 
 
