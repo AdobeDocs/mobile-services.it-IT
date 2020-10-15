@@ -5,16 +5,16 @@ seo-title: Tracciamento dei collegamenti profondi
 solution: Experience Cloud,Analytics
 title: Tracciamento dei collegamenti profondi
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Tracciamento dei collegamenti profondi{#tracking-deep-links}
+# Tracciamento dei collegamenti profondi {#tracking-deep-links}
 
 Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l&#39;SDK di Adobe Mobile per iOS.
 
