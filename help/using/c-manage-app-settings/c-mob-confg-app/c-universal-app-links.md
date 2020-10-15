@@ -1,24 +1,24 @@
 ---
-description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti diretti nelle app iOS o Android.
+description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti profondi nelle app iOS o Android.
 keywords: mobile
-seo-description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti diretti nelle app iOS o Android.
+seo-description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti profondi nelle app iOS o Android.
 seo-title: Collegamenti universali Apple e collegamenti app Android
 solution: Experience Cloud,Analytics
 title: Collegamenti universali Apple e collegamenti app Android
 topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Collegamenti universali Apple e collegamenti app Android{#universal-links-and-app-links}
+# Collegamenti universali Apple e collegamenti app Android {#universal-links-and-app-links}
 
-I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti diretti nelle app iOS o Android.
+I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti profondi nelle app iOS o Android.
 
 >[!IMPORTANT]
 >
@@ -44,7 +44,7 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
    a. Nella home page di Mobile Services, scegli l’app per la quale vuoi impostare collegamenti universali o collegamenti alle app.
 
-   b. Fai clic su **[!UICONTROL Gestisci impostazioni app]**.
+   b. Fai clic su **[!UICONTROL Gestione impostazioni app]**.
 
    c. Accertati che l’app iOS che gestisce i collegamenti universali sia aggiunta alla sezione **[!UICONTROL Aggiungi app per app store]**.
 
@@ -60,25 +60,25 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
    >[!IMPORTANT]
    >
-   >Per aggiornare i documenti, fai clic su Aggiorna nella sezione delle opzioni dei collegamenti universali e collegamenti app. Tuttavia, quando fai clic su **[!UICONTROL Aggiorna]**, un avviso ti segnala che la modifica verrà applicata a tutti i collegamenti universali e ai collegamenti alle app già creati in passato.
+   >Per aggiornare i documenti, fai clic su Aggiorna nella sezione Opzioni collegamenti universali e alle app. Tuttavia, quando fai clic su **[!UICONTROL Aggiorna]**, un avviso ti segnala che la modifica verrà applicata a tutti i collegamenti universali e ai collegamenti alle app già creati in passato.
 
 ### Usare un collegamento universale
 
 1. In Adobe Mobile Services, crea un collegamento di marketing che utilizza i collegamenti universali:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Seleziona l’app dalla home page di Mobile Services e fai clic su **[!UICONTROL Acquisizione]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Fai clic su **[!UICONTROL Crea nuovo]**.
 
-   c. In **[!UICONTROL Opzioni collegamento di marketing]**, seleziona **[!UICONTROL Usa collegamenti universali o collegamenti alle app]**.
+   c. In **[!UICONTROL Opzioni collegamento di marketing]**, seleziona **[!UICONTROL Usa collegamenti universali o alle app]**.
 
-   d. Se hai configurato i documenti di associazione sito nella sezione *Impostazione dei documenti di associazione sito nella sezione Adobe Mobile Services* precedente, questa opzione è selezionata per impostazione predefinita.
+   d. Se, nella precedente sezione sull’*impostazione dei documenti di associazione sito in Adobe Mobile Services*, avevi configurato i documenti di associazione sito, questa opzione è selezionata per impostazione predefinita.
 
-   Se non hai configurato i documenti, l’opzione **[!UICONTROL Usa collegamenti universali o i collegamenti alle app]** è disabilitata e l’opzione **[!UICONTROL Usa interstiziali]** è selezionata per impostazione predefinita.
+   Se non hai configurato i documenti, l’opzione **[!UICONTROL Usa collegamenti universali o alle app]** è disabilitata e l’opzione **[!UICONTROL Usa interstiziali]** è selezionata per impostazione predefinita.
 
-   e. Se è selezionata l’opzione **[!UICONTROL Usa collegamenti universali o collegamenti alle app]**, viene visualizzato il campo **[!UICONTROL Percorso personalizzato]**.
+   e. Se è selezionata l’opzione **[!UICONTROL Usa collegamenti universali o alle app]**, viene visualizzato il campo **[!UICONTROL Percorso personalizzato]**
 
-   che permette agli utenti di definire l’URL dopo il dominio con eventuali parametri di query. Ad esempio, se immetti  `my/universal/link?os=9.2`, l’URL completo del collegamento marketing diventa `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
+   che permette agli utenti di definire l’URL dopo il dominio con eventuali parametri di query. Ad esempio, se immetti   `my/universal/link?os=9.2`, l’URL completo del collegamento marketing diventa `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
 
    f. Fai clic sulla scheda **[!UICONTROL Decisioni]** e configura la struttura decisionale.
 
@@ -99,7 +99,7 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
    a. Nella home page di Mobile Services, scegli l’app per la quale vuoi impostare collegamenti alle app.
 
-   b. Fai clic su **[!UICONTROL Gestisci impostazioni app]**.
+   b. Fai clic su **[!UICONTROL Gestione impostazioni app]**.
 
    c. Accertati che l’app Android che gestisce i collegamenti universali o i collegamenti alle app sia aggiunta alla sezione **[!UICONTROL Aggiungi app per app store]**.
 
@@ -119,25 +119,25 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
    >[!IMPORTANT]
    >
-   >Per aggiornare i documenti, fai clic su **[!UICONTROL Aggiorna]** nella sezione delle **[!UICONTROL opzioni dei collegamenti universali e collegamenti app]**. Tuttavia, quando fai clic su **[!UICONTROL Aggiorna]**, un avviso ti segnala che la modifica verrà applicata a tutti i collegamenti universali e ai collegamenti alle app già creati in passato.
+   >Per aggiornare i documenti, fai clic su **[!UICONTROL Aggiorna]** nella sezione **[!UICONTROL Opzioni collegamenti universali e alle app]**. Tuttavia, quando fai clic su **[!UICONTROL Aggiorna]**, un avviso ti segnala che la modifica verrà applicata a tutti i collegamenti universali e ai collegamenti alle app già creati in passato.
 
 ### Usare un collegamento alle app
 
 1. In Adobe Mobile Services, crea un collegamento di marketing che utilizza i collegamenti alle app:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Seleziona l’app dalla home page di Mobile Services e fai clic su **[!UICONTROL Acquisizione]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Fai clic su **[!UICONTROL Crea nuovo]**.
 
-   c. Nella sezione **[!UICONTROL Opzioni collegamento di marketing]**, seleziona **[!UICONTROL Usa collegamenti universali o collegamenti alle app]**.
+   c. Nella sezione **[!UICONTROL Opzioni collegamento di marketing]**, seleziona **[!UICONTROL Usa collegamenti universali o alle app]**.
 
-   d. Se hai impostato la documentazione di associazione dei siti nella fase 2, l’opzione è selezionata per impostazione predefinita.
+   d. Se nella fase 2 hai impostato i documenti di associazione dei siti, questa opzione è selezionata per impostazione predefinita.
 
    In caso contrario, l’opzione **[!UICONTROL Usa collegamenti universali o alle app]** è disattivata ed è invece selezionata per impostazione predefinita l’opzione **[!UICONTROL Usa interstiziali]**.
 
-   e. Se è stata selezionata l’opzione **[!UICONTROL Usa collegamenti universali o collegamenti alle app]**, viene visualizzato il campo **[!UICONTROL Percorso personalizzato]**.
+   e. Se è selezionata l’opzione **[!UICONTROL Usa collegamenti universali o alle app]**, viene visualizzato il campo **[!UICONTROL Percorso personalizzato]**.
 
-   che permette agli utenti di definire l’URL dopo il dominio con eventuali parametri di query. Ad esempio, se immetti  `my/app/link?os=6.0`, l’URL completo del collegamento marketing diventa `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
+   che permette agli utenti di definire l’URL dopo il dominio con eventuali parametri di query. Ad esempio, se immetti   `my/app/link?os=6.0`, l’URL completo del collegamento marketing diventa `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
 
    f. Fai clic sulla scheda **[!UICONTROL Decisioni]** e configura la struttura decisionale.
 
@@ -149,7 +149,7 @@ Puoi creare un collegamento di marketing che utilizza un collegamento universale
 
 >[!TIP]
 >
->Una volta salvato il collegamento di marketing, non è più possibile modificare le **[!UICONTROL Opzioni collegamento di marketing]**. per evitare che venga modificato il comportamento di eventuali collegamenti di marketing già distribuiti.
+>Una volta salvato il collegamento di marketing, non è più possibile modificare le **[!UICONTROL Opzioni collegamento di marketing]** per evitare che venga modificato il comportamento di eventuali collegamenti di marketing già distribuiti.
 
 ## Utilizzo dei collegamenti di marketing
 
