@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-
 
 Se hai soddisfatto tutti i requisiti per i messaggi in-app, ma i messaggi non vengono visualizzati, verifica quanto segue:
 
-## La nuova configurazione e il nuovo SDK sono inclusi nell&#39;app?
+## La nuova configurazione e il nuovo SDK sono inclusi nell’app?
 
 Verifica che la versione dell’SDK sia 4.2 o successiva e che sia configurata correttamente. Assicurati che nella configurazione sia presente una sezione `Messages` (file JSON scaricato) o di disporre di un endpoint remoto per i messaggi, in modo che sia possibile recuperarlo dalla gestione dinamica dei tag.
 
@@ -59,7 +59,7 @@ Se l&#39;app è stata riavviata entro il periodo di timeout della sessione del c
 
    Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md).
 
-## La mia immagine non rientra esattamente nello spazio disponibile nel modello.
+## L’immagine non rientra esattamente nello spazio disponibile nel modello.
 
 Il modello a schermo intero per i messaggi in-app supporta la visualizzazione di un’immagine da un server remoto (URL immagine) o dal pacchetto dell’app (immagine nel pacchetto). L&#39;immagine deve essere in un formato grafico standard, ad esempio JPG, GIF o PNG.
 
