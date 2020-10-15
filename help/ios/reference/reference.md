@@ -1,21 +1,21 @@
 ---
-description: Questo materiale di riferimento è utile per usare l’SDK per iOS per  Soluzioni per Experienci Cloud.
-seo-description: Questo materiale di riferimento è utile per usare l’SDK per iOS per  Soluzioni per Experienci Cloud.
-seo-title: Guida di riferimento dell'SDK per iOS
+description: Questo materiale di riferimento è utile per usare l’SDK per iOS per le soluzioni Experience Cloud.
+seo-description: Questo materiale di riferimento è utile per usare l’SDK per iOS per le soluzioni Experience Cloud.
+seo-title: Guida di riferimento dell’SDK per iOS
 solution: Experience Cloud,Analytics
-title: Guida di riferimento dell'SDK per iOS
+title: Guida di riferimento dell’SDK per iOS
 topic: Developer and implementation
 uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Guida di riferimento dell&#39;SDK per iOS {#ios-sdk-reference}
+# Guida di riferimento dell’SDK per iOS {#ios-sdk-reference}
 
 Le informazioni presenti in questa sezione sono utili per usare l’SDK per iOS per le soluzioni Experience Cloud.
 
