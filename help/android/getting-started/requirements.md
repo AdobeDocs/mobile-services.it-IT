@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Prima di iniziare
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Gli sviluppatori di app ora hanno accesso alla visualizzazione delle suite di ra
 
 Per ulteriori informazioni su ruoli e autorizzazioni, vedi [Ruoli e autorizzazioni](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
+## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services è l’interfaccia di reportistica principale per l’analisi e il targeting delle app per dispositivi mobili. Dopo aver completato questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
 
@@ -93,7 +93,7 @@ Puoi anche selezionare l’app nel riquadro a destra.
 
    >[!IMPORTANT]
    >
-   >Per visualizzare l’app nel riquadro a destra, devi prima crearne una. Consulta [Aggiungi una nuova app](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-apps-ug/t-new-app.html) per informazioni sulla creazione di app.
+   >Per visualizzare l’app nel riquadro a destra, devi prima crearne una. Consulta [Aggiungere una nuova app](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-apps-ug/t-new-app.html) per informazioni sulla creazione di app.
 
 1. Nel riquadro a sinistra dell&#39;app, fai clic su **[!UICONTROL Gestione impostazioni app]**.
 
