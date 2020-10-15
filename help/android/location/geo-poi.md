@@ -6,24 +6,24 @@ solution: Experience Cloud,Analytics
 title: Geolocalizzazione e punti di interesse
 topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Geolocalizzazione e punti di interesse {#geo-location-and-points-of-interest}
 
-La geolocalità consente di misurare i dati sulla posizione mediante latitudine e longitudine e punti di interesse predefiniti nelle app Android.
+La geolocalizzazione consente di misurare i dati sulla posizione mediante latitudine e longitudine e punti di interesse predefiniti nelle app Android.
 
 Ciascuna chiamata `trackLocation` invia le informazioni seguenti:
 
 * Latitudine, longitudine e posizione in un punto di interesse (POI) che è definito nell&#39;interfaccia utente di Adobe Mobile Services.
 
-   Queste informazioni vengono trasmesse alle variabili della soluzione mobile per il reporting automatico.
+   Queste informazioni vengono passate alle variabili della soluzione mobile per la generazione automatica dei rapporti.
 
 * Distanza dal centro e precisione passate come dati contestuali.
 
@@ -31,7 +31,7 @@ Ciascuna chiamata `trackLocation` invia le informazioni seguenti:
 
 ## Aggiornamenti POI dinamici {#section_3747B310DD5147E2AAE915E762997712}
 
-A partire della versione 4.2, i POI sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati in modo dinamico con il file di configurazione dell&#39;app. Questa sincronizzazione richiede un’impostazione `analytics.poi` nel [File di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md):
+A partire della versione 4.2, i POI sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati in modo dinamico con il file di configurazione dell&#39;app. Questa sincronizzazione richiede un’impostazione `analytics.poi` nel [file di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md):
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
@@ -64,7 +64,7 @@ Se questa configurazione non è presente, devi scaricare una versione aggiornata
 
    Puoi usare le strategie di posizione per determinare la posizione passata alla chiamata `trackLocation`. Per ulteriori informazioni, consulta [Strategie posizione Android](https://developer.android.com/guide/topics/location/strategies.html).
 
-Inoltre, se la posizione è determinata essere nel raggio di un POI definito, una variabile di dati di contesto `a.loc.poi` viene inviata con l&#39;hit `trackLocation` e indicata come POI nei rapporti di **[!UICONTROL dettaglio della posizione]**. Viene inoltre inviata una variabile di dati contestuali `a.loc.dist`, con la distanza (in metri) dalle coordinate definite.
+Inoltre, se la posizione si trova entro il raggio di un punto di interesse definito, una variabile di dati contestuali `a.loc.poi` viene inviata con l’hit `trackLocation` e indicata come punto di interesse nei rapporti di **[!UICONTROL dettaglio della posizione]**. Viene inoltre inviata una variabile di dati contestuali `a.loc.dist`, con la distanza (in metri) dalle coordinate definite.
 
 ## Invio di dati aggiuntivi {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
@@ -84,9 +84,9 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate 
 
 ## Dati contestuali sulla posizione {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-Latitudine e longitudine vengono inviati utilizzando tre diversi parametri di dati contestuali, con ciascun parametro che rappresenta un diverso livello di precisione, per un totale di sei parametri di dati contestuali.
+I dati di latitudine e longitudine vengono inviati mediante tre diversi parametri di dati contestuali, ciascuno dei quali rappresenta un diverso livello di precisione, per un totale di sei parametri di dati contestuali.
 
-Ad esempio, le coordinate lat = 40.93231, long = -111.93152 rappresentano una posizione con precisione di 1 m. Questa posizione viene divisa in base al livello di precisione tra le seguenti variabili:
+Ad esempio, le coordinate lat = 40.93231, long = -111.93152 rappresentano una posizione con precisione pari a 1 metro. Questa posizione viene divisa in base al livello di precisione tra le seguenti variabili:
 
 `a.loc.lat.a` = 040,9
 
@@ -119,5 +119,5 @@ Considerazioni da ricordare:
 
 * Quando i diametri di due POI si sovrappongono, viene usato il primo POI che contiene la posizione corrente.
 
-   Se i POI si sovrappongono, elencare i POI in ordine dal più al meno dettagliato, per fare in modo che venga trasmesso il POI più dettagliato.
+   Se i punti di interesse si sovrappongono, elencali in ordine dal più dettagliato al meno dettagliato, affinché venga trasmesso il POI più dettagliato.
 
