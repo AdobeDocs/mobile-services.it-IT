@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Analisi dei video
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
 ht-degree: 100%
 
@@ -44,11 +44,11 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
    (Facoltativo) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile dall’assistenza clienti.
 
    * Tipo evento: Custom Insight (s.prop)
-   * Tipo evento: Insight personalizzato (s.prop)
+   * Tipo evento: Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l&#39;ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, SiteCatalyst potrebbe raccogliere quanto segue nella eVar dei segmenti `1:M:0-25`.
+   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, SiteCatalyst potrebbe raccogliere quanto segue nella eVar dei segmenti `1:M:0-25`.
 
    Il metodo predefinito per la raccolta dei dati video raccoglie i dati nei seguenti punti:
 
