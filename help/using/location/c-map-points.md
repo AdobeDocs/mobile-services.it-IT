@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Mappa
 topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,10 +26,10 @@ Seguono alcune considerazioni importanti da tenere a mente:
 
 * Puoi aumentare o diminuire la dimensione della mappa.
 
-   Questa funzione è utile, ad esempio, se hai due punti di interesse vicini tra loro. Ingrandendo la mappa potete visualizzarla più dettagliatamente.
+   Questa funzione è utile, ad esempio, se hai due punti di interesse vicini tra loro. Ingrandendo la mappa puoi visualizzarla più dettagliatamente.
 * I punti di interesse sono visualizzati in blu.
 
-   Altri marcatori di dati, come Avvii, vengono visualizzati in nero. Fate clic su un marcatore per visualizzare ulteriori informazioni.
+   Altri marcatori di dati, come Avvii, vengono visualizzati in nero. Fai clic su un marcatore per visualizzare ulteriori informazioni.
 
 Fai clic su ![livelli](assets/map_layers.png) per selezionare le opzioni seguenti:
 
@@ -46,7 +46,7 @@ Visualizza la mappa in versione satellitare.
 
 * **[!UICONTROL Mappa di calore]**
 
-   Scegliete se visualizzare i marcatori di mappa termica. Maggiore è l’intensità del colore, più alta è la frequenza con cui si verifica la relativa condizione (ad esempio, gli avvii).
+   Scegli se visualizzare i marcatori per mappa di calore. Maggiore è l’intensità del colore, più alta è la frequenza con cui si verifica la relativa condizione (ad esempio, gli avvii).
 
 * **[!UICONTROL Punti di interesse]**
 
@@ -60,7 +60,7 @@ Per questo rapporto puoi configurare le seguenti opzioni:
 
 * **[!UICONTROL Personalizza]**
 
-   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]**, aggiungere metriche e filtri, aggiungere serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
+   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]** e aggiungere metriche e filtri, serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
