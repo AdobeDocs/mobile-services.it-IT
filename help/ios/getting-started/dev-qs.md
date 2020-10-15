@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -69,13 +69,13 @@ Per scaricare l’SDK:
 
 1. Fai clic su **[!UICONTROL Fine]**.
 1. In **[!UICONTROL Navigatore progetti]**, seleziona **`ADBMobileConfig.json`**.
-1. In **[!UICONTROL Ispettore file]**, aggiungi il file JSON alle destinazioni nel tuo progetto che useranno l&#39;SDK di Adobe.
+1. In **[!UICONTROL Ispettore file]**, aggiungi il file JSON alle destinazioni nel tuo progetto che useranno l’SDK di Adobe.
 
    ![](assets/step_4.png)
 
 1. In **[!UICONTROL Navigatore progetti]**, completa i passaggi seguenti:
 
-   1. Fai clic sull&#39;app.
+   1. Fai clic sull’app.
    1. Nella scheda **[!UICONTROL Generale]**, seleziona le destinazioni e collega le librerie e i framework necessari nelle sezioni **[!UICONTROL Framework collegati]** e **[!UICONTROL Librerie]**.
    * **Destinazioni di app iOS**
       * `SystemConfiguration.framework`
@@ -148,5 +148,5 @@ Altre metriche &quot;lifecycle&quot; vengono raccolte automaticamente. Per ulter
 
 Completa le attività seguenti:
 
-* [Tracciare gli stati dell&#39;app](/help/ios/analytics-main/states.md)
-* [Tracciare le azioni eseguite nell&#39;app](/help/ios/analytics-main/actions.md)
+* [Tracciare gli stati dell’app](/help/ios/analytics-main/states.md)
+* [Tracciare le azioni eseguite nell’app](/help/ios/analytics-main/actions.md)
