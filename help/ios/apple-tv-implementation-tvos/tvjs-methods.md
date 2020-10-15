@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Metodi TVJS
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2013'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
+      Se il tracciamento offline non è abilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin. Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -73,7 +73,7 @@ Elenco dei metodi TVJS forniti dalla libreria tvOS.
    * `ADBMobilePrivacyStatusOptOut`: gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o in optedout (gli hit vengono scartati).
 
-   Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
+   Se il tracciamento offline non è abilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
