@@ -6,11 +6,11 @@ seo-title: Plug-in di Unity per gli SDK iOS e Android 4.x
 solution: Experience Cloud
 title: Plug-in di Unity per gli SDK iOS e Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Scarica il file ADBMobile.unitypackage da GitHub.
 
 Di seguito sono elencati i contenuti del file `ADBMobile.unitypackage`:
 
-* Risorse (root)
+* Assets (root)
 
    * ADBMobile
 
@@ -53,7 +53,7 @@ Di seguito sono elencati i contenuti del file `ADBMobile.unitypackage`:
 
 **Cartelle facoltative**: La cartella *Demo* contiene scene Unity e codice di esempio.
 
-## Importazione del plug-in ADBMobile nel progetto Unity {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
+## Importazione del plug-in ADBMobile nel progetto Unity  {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Apri il progetto Unity.
 1. Fai doppio clic su **[!UICONTROL ADBMobile.unitypackage]**.
