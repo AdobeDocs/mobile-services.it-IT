@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Plug-in PhoneGap
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Plug-in PhoneGap{#phonegap-plug-in}
+# Plug-in PhoneGap {#phonegap-plug-in}
 
 Questo plug-in consente di inviare chiamate iOS AppMeasurement da un progetto PhoneGap.
 
@@ -42,7 +42,7 @@ Per creare un progetto PhoneGap, consulta [PhoneGap](https://helpx.adobe.com/it/
    cordova plugin add adobe-mobile-services
    ```
 
-## Installare il plug-in manualmente  {#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## Installare il plug-in manualmente   {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### Includere la libreria AppMeasurement
 
@@ -51,8 +51,8 @@ Per includere la libreria AppMeasurement:
 1. Trascina `ADBMobile_PhoneGap.h` e `ADBMobile_PhoneGap.m` nella cartella **[!UICONTROL Plugin]** del progetto Xcode.
 1. Completa le impostazioni seguenti:
 
-   1. Seleziona **[!UICONTROL Copia elementi nella cartella del gruppo di destinazione (se necessario).]**
-   1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement Code.
+   1. Seleziona **[!UICONTROL Copy items into destination group’s folder (if needed)]** (Copia elementi nella cartella del gruppo di destinazione, se necessario).
+   1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement.
 
 1. Trascina `ADB_Helper.js` nella cartella `www` del progetto Xcode.
 1. Nella cartella `res/xml`, apri `config.xml` e registra un nuovo plug-in aggiungendo gli elementi seguenti:
@@ -68,13 +68,13 @@ Per includere la libreria AppMeasurement:
 La libreria AppMeasurement richiede quanto segue:
 
 1. Avvia l&#39;IDE di Xcode e apri la tua app.
-1. Trascina la cartella **[!UICONTROL Adobe Mobile]** nel progetto Xcode e completa le impostazioni seguenti:
+1. Trascina la cartella **[!UICONTROL AdobeMobile]** nel progetto Xcode e completa le impostazioni seguenti:
 
-   1. Seleziona **[!UICONTROL Copia elementi nella cartella del gruppo di destinazione (se necessario).]**
+   1. Seleziona **[!UICONTROL Copy items into destination group’s folder (if needed)]** (Copia elementi nella cartella del gruppo di destinazione, se necessario).
    1. Seleziona **[!UICONTROL Crea gruppi per le cartelle aggiunte]**.
-   1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement Code e fai clic su **[!UICONTROL Fine]**.
+   1. Seleziona le destinazioni in cui desideri usare il codice AppMeasurement e fai clic su **[!UICONTROL Fine]**.
 
-   ![](assets/xcode-settings.png){larghezza=&quot;672&quot;}
+   ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
 1. Nella scheda **[!UICONTROL Fasi build]** della destinazione del progetto, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
