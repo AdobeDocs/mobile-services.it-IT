@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Prerequisiti per l’acquisizione
 topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Prerequisiti per l’acquisizione{#acquisition-prerequisites}
+# Prerequisiti per l’acquisizione {#acquisition-prerequisites}
 
 Prima di utilizzare i collegamenti di acquisizione, è necessario prima soddisfare i seguenti prerequisiti.
 
@@ -35,8 +35,8 @@ Per tenere traccia dei collegamenti di marketing, è necessario che siano soddis
    | Versione SDK | [Acquisition Builder legacy](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md) | [Creazione manuale di collegamenti](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) | [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md) |
    |--- |--- |--- |--- |
    | Da 4.1 a 4.5 | Sì | No | No |
-   | Da 4,6 a 4,9 | Sì | Sì | No |
-   | 4.9 o successivo | Sì | Sì | Sì |
+   | Da 4.6 a 4.9 | Sì | Sì | No |
+   | 4.9 o versione successiva | Sì | Sì | Sì |
 
 1. Attivare le Opzioni acquisizione SDK
 
@@ -44,4 +44,4 @@ Per tenere traccia dei collegamenti di marketing, è necessario che siano soddis
 
 1. Aggiungere le app dell’app store
 
-   Devi aggiungere l’app da Apple App Store o da Google Play. Per ulteriori informazioni, vedi  [Aggiungere un’app da un app store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Devi aggiungere l’app da Apple App Store o da Google Play. Per ulteriori informazioni, vedi   [Aggiungere un’app da un app store](/help/using/manage-apps/c-app-store/t-app-store-app.md).
