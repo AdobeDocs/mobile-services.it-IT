@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Prima di iniziare
 topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ Gli sviluppatori di app ora hanno accesso alla visualizzazione delle suite di ra
 
 Per ulteriori informazioni su ruoli e autorizzazioni, vedi [Ruoli e autorizzazioni](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
+## Eseguire l&#39;accesso all&#39;interfaccia utente di Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services è l’interfaccia di reportistica principale per l’analisi e il targeting delle app per dispositivi mobili. Una volta completati questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
+Adobe Mobile Services è l’interfaccia di reportistica principale per l’analisi e il targeting delle app per dispositivi mobili. Dopo aver completato questi passaggi, puoi scaricare un file di configurazione preconfigurato con il server di raccolta dati, la suite di rapporti e molte altre impostazioni.
 
-Puoi accedere al  Adobe Mobile Services in uno dei modi seguenti:
+Puoi accedere ad Adobe Mobile Services in uno dei seguenti modi:
 
 * **Experience Cloud**
 
@@ -78,7 +78,7 @@ Per impostare una nuova suite di rapporti per la raccolta dei dati dall&#39;app 
 1. Immetti il nome dell&#39;app e seleziona un ID suite di rapporti univoco.
 
    Ad esempio, l&#39;ID suite di rapporti potrebbe essere `mycomobileappdev`. Devi impostare suite di rapporti e app distinte per le versioni di sviluppo e produzione. Quando sei pronto per configurare la versione di produzione, ripeti questi passaggi.
-1. Lascia selezionata l&#39;opzione **[!UICONTROL Modello per app mobile]**.
+1. Lascia selezionata l’opzione **[!UICONTROL Modello per app mobile]**.
 
    Questo modello abilita le marche temporali per la raccolta dei dati offline e attiva le variabili della soluzione mobile per l&#39;acquisizione delle metriche sul ciclo di vita.
 
@@ -90,11 +90,11 @@ Per scaricare l&#39;SDK di Mobile:
 
 1. Accedi a Mobile Services e apri la tua app tramite uno dei seguenti modi:
 
-   * Seleziona l&#39;app nell&#39;elenco a discesa **[!UICONTROL Tutte le app]**.
-   * Individua l&#39;app nel riquadro a destra e aprila.
+   * Seleziona l’app nell’elenco a discesa **[!UICONTROL Tutte le app]**.
+   * Individua l’app nel riquadro a destra e aprila.
 
 1. Fai clic su **[!UICONTROL Gestione impostazioni app]**.
-1. Nella sezione **[!UICONTROL Download di SDK per app]**, scorri fino alla sezione **[!UICONTROL Downloads di SDK per app]**.
+1. Nella sezione **[!UICONTROL Download di SDK per app]**, scorri fino alla sezione **[!UICONTROL Download di SDK per app]**.
 
 1. Scarica l&#39;SDK e l&#39;app di esempio per la tua piattaforma.
 
