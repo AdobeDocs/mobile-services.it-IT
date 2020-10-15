@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
 topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
 ht-degree: 100%
 
 ---
 
 
-# Metodi di Audience Manager{#audience-manager-methods}
+# Metodi di Audience Manager {#audience-manager-methods}
 
 Elenco dei metodi di Audience Manager forniti dalla libreria Android.
 
-L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `audience manager`.
+L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target, Audience Manager e il servizio Adobe Experience Platform Identity. I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del servizio Experience Cloud ID hanno il prefisso `audience manager`.
 
 Se Audience Manager è configurato nel tuo file JSON, un segnale contenente le metriche del ciclo di vita è inviato con l&#39;hit del ciclo di vita.
 
