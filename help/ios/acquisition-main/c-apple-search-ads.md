@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Alcuni vantaggi offerti dagli annunci Apple Ads:
 * Consentono di misurare facilmente l&#39;efficacia delle campagne Search Ads per il download della tua app, aggiungendo poche righe di codice all&#39;app.
 * Gli sviluppatori possono accedere alla data/ora del download e alla parola chiave che ha portato alla conversione.
 
-## Implementazione di annunci Apple Ads  {#section_F1094676793540CFA1DBB540174EEB6A}
+## Implementazione di annunci Apple Ads   {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
@@ -34,13 +34,13 @@ Alcuni vantaggi offerti dagli annunci Apple Ads:
 
 Per abilitare l&#39;app all&#39;attribuzione Search Ad:
 
-1. Implementa la versione SDK del Adobe  4.13.2 o successiva.
+1. Implementa la versione dell’SDK Adobe 4.13.2 o successiva.
 
-   For more information, see [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   Per ulteriori informazioni, vedi [Implementazione e ciclo di vita di base](/help/ios/getting-started/dev-qs.md).
 
 1. Aggiungi il framework iAd al file del progetto Xcode per la tua app.
 
-## Generazione di rapporti sull&#39;attribuzione Search Ads  {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Generazione di rapporti sull&#39;attribuzione Search Ads   {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. I dati di attribuzione di Apple Search Ads sono forniti nel nome dell&#39;acquisizione, nella sorgente e nei valori dei termini.
 
