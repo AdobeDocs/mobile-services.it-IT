@@ -1,24 +1,24 @@
 ---
-description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere le metriche di cui desideri tenere traccia per la tua app.
+description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere quelle di cui desideri tenere traccia per la tua app.
 keywords: mobile
-seo-description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere le metriche di cui desideri tenere traccia per la tua app.
+seo-description: Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere quelle di cui desideri tenere traccia per la tua app.
 seo-title: Metriche di Mobile
 solution: Experience Cloud,Analytics
 title: Metriche di Mobile
 topic: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Metriche di Mobile{#mobile-metrics}
+# Metriche di Mobile {#mobile-metrics}
 
-Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere le metriche di cui desideri tenere traccia per la tua app.
+Puoi misurare diverse metriche utilizzando Adobe Mobile e raccogliere quelle di cui desideri tenere traccia per la tua app.
 
 Vengono misurati i seguenti tipi di metriche:
 
@@ -28,7 +28,7 @@ Vengono misurati i seguenti tipi di metriche:
 
 * **Utilizzo e mantenimento**
 
-   Le metriche sull’utilizzo consentono di conoscere la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni grazie alle quali potrai sapere come con quale frequenza viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti il giorno successivo all’avvio iniziale, dopo 7 giorni e dopo 28 giorni.
+   Le metriche sull’utilizzo consentono di conoscere la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni grazie alle quali potrai sapere come con quale frequenza viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di fidelizzazione degli utenti il giorno successivo all’avvio iniziale, dopo 7 giorni e dopo 28 giorni.
 
    Sui dispositivi Android puoi utilizzare il tracciamento dei referenti di Google Play per misurare come gli utenti arrivano all’app store prima di scaricare l’app.
 
@@ -38,17 +38,17 @@ Vengono misurati i seguenti tipi di metriche:
 
 * **Eventi delle app**
 
-   Gli eventi delle app sono indicatori di prestazioni chiave (KPI, Key Performance Indicators) che puoi definire per misurare il successo della tua app. Secondo il tipo di app fornito, i KPI variano da  articoli letti e livelli completati ai ricavi per tutto il ciclo di vita.
+   Gli eventi delle app sono indicatori di prestazioni chiave (KPI, Key Performance Indicators) che puoi definire per misurare il successo della tua app. Secondo il tipo di app fornito, i KPI variano da   articoli letti e livelli completati ai ricavi per tutto il ciclo di vita.
 
 * **Stati delle app**
 
-   Gli stati sono varie visualizzazioni fornite dall’app. Gli stati vengono visualizzati in un rapporto di percorsi. Per definirli è quindi utile pensare ai percorsi nell’app che si desidera misurare. Ad esempio, dove navigano più spesso gli utenti dalla visualizzazione iniziale?
+   Gli stati sono varie visualizzazioni fornite dall’app. Gli stati vengono visualizzati in un rapporto di percorsi. Per definirli è quindi utile pensare ai percorsi nell’app che si desidera misurare. Ad esempio, quali pagine visitano più spesso gli utenti dopo la visualizzazione iniziale?
 
 * **Posizione e punti di interesse**
 
    Se nella suite di rapporti Analytics è abilitato GeoReporting, sono disponibili numerosi rapporti basati sulla posizione. Su una rete Wi-Fi, la precisione di GeoReporting è simile a quella di un browser web per desktop. Su una connessione dati, la precisione varia secondo il provider e il modo in cui vengono instradate le richieste.
 
-   Per una precisione maggiore puoi aggiungere il tracciamento di posizioni e punti di interesse nell’app. Queste opzioni consentono di segnalare dati di posizione di longitudine e latitudine dettagliati e di utilizzare il geofencing per determinare quando un utente si trova nel raggio di un punto di interesse predefinito.
+   Per una precisione maggiore puoi aggiungere il tracciamento di posizioni e punti di interesse nell’app. Queste opzioni consentono di includere nei rapporti dati di posizione dettagliati (longitudine e latitudine) e di utilizzare il geofencing per determinare quando un utente si trova nel raggio di un punto di interesse predefinito.
 
 * **Valore del ciclo di vita**
 
