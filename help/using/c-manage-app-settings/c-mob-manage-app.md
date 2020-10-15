@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Gestione dell’app
 topic: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1039'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 83%
 
 Puoi tracciare e gestire i dati che ricevi dall’app configurando una serie di variabili e metriche.
 
-## Gestire variabili e metriche  {#section_EC2D58AC334F4ED49E764B81C2423A62}
+## Gestire variabili e metriche   {#section_EC2D58AC334F4ED49E764B81C2423A62}
 
-* **Variabili standard e metriche**
+* **Variabili e metriche standard**
 
-   Ogni app include variabili e metriche per il tracciamento del carrello e delle attività di acquisto. Poiché alcune informazioni di acquisto non possono essere gestite mediante regole di elaborazione, l’SDK espone i dati contestuali speciali `"&&products"`. Ad esempio, puoi avere variabili quali aggiunte di carrello, rimozioni di carrello, check-out, ordini e così via. I dati contestuali devono essere mappati su dati in  Adobe Analytics. Se questa variabile viene compilata con una semplice mappatura dai dati di contesto, questa è la chiave che viene mappata su di essa. Lascia vuoto il valore se la variabile viene compilata da regole più complesse in Strumenti di amministrazione di Analytics.
+   Ogni app include variabili e metriche per il tracciamento del carrello e delle attività di acquisto. Poiché alcune informazioni di acquisto non possono essere gestite mediante regole di elaborazione, l’SDK espone i dati contestuali speciali `"&&products"`. Ad esempio, puoi avere variabili quali aggiunte al carrello, rimozioni dal carrello, pagamento, ordini e così via. I dati contestuali devono essere mappati su dati in Adobe Analytics. Se questa variabile viene compilata con una semplice mappatura dai dati di contesto, questa è la chiave che viene mappata su di essa. Lascia vuoto il valore se la variabile viene compilata da regole più complesse in Strumenti di amministrazione di Analytics.
 
    Per ulteriori informazioni su queste variabili e metriche, vedi:
 
@@ -37,7 +37,7 @@ Puoi tracciare e gestire i dati che ricevi dall’app configurando una serie di 
 
 ### Mappare dati contestuali a variabili Analytics
 
-Click **[!UICONTROL Manage App Settings]** > **[!UICONTROL Manage Variables &amp; Metrics]** > **[!UICONTROL Custom Variables]**.
+Fai clic su **[!UICONTROL Gestione impostazioni app]** > **[!UICONTROL Gestione variabili e metriche]** > **[!UICONTROL Variabili personalizzate]**.
 
 Queste mappature richiameranno la stessa API utilizzata nelle [Regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
@@ -45,14 +45,14 @@ Queste mappature richiameranno la stessa API utilizzata nelle [Regole di elabora
 
 L’elenco seguente contiene le variabili personalizzate che puoi configurare:
 
-* Le **[!UICONTROL Proprietà personalizzate]** rispondono alla domanda “quale?” Le proprietà possono essere impostate su un valore di testo che sarà associato ad altre variabili e metriche inviate nello stesso hit. I valori possono essere utilizzati per filtrare i rapporti o elencati in ordine di classifica in base a una metrica associata.
+* Le **[!UICONTROL Proprietà personalizzate]** rispondono alla domanda “quale?”. Le proprietà possono essere impostate su un valore di testo che sarà associato ad altre variabili e metriche inviate nello stesso hit. I valori possono essere utilizzati per filtrare i rapporti o elencati in ordine di classifica in base a una metrica associata.
 
-   Quando viene impostato un valore per una proprietà in una chiamata di tracciamento (o hit), si applica solo a tale chiamata.
+   Quando un valore viene impostato per una proprietà in una chiamata di tracciamento (o hit), viene applicato solo a tale chiamata.
 
-* Anche le **[!UICONTROL Variabili personalizzate]** (eVar) rispondono alla domanda “quale?” Tuttavia, un valore eVar può essere applicato non solo all’hit in cui viene inviato ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all’impostazione di un nuovo valore.
+* Anche le **[!UICONTROL Variabili personalizzate]** (eVar) rispondono alla domanda “quale?”. Tuttavia, un valore eVar può essere applicato non solo all’hit in cui viene inviato ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all’impostazione di un nuovo valore.
 * Le **[!UICONTROL Variabili di elenco personalizzate (o variabili multivalore)]** si comportano come le normali variabili, ma permettono di acquisire più valori con un solo hit. Per ulteriori informazioni, consulta [Variabili di elenco](https://docs.adobe.com/content/help/it-IT/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
 
-Le seguenti mappature sono visualizzate in Analytics in quanto vengono create in Mobile Services.
+Le seguenti mappature sono visualizzate in Analytics in quanto create in Mobile Services.
 
 * **[!UICONTROL Nome]**
 
@@ -68,11 +68,11 @@ Le seguenti mappature sono visualizzate in Analytics in quanto vengono create in
 
    La persistenza determina il punto in cui il valore di una variabile personalizzata (eVar) scade o non viene più associato a ulteriori hit. Se una eVar risulta scaduta nel momento in cui viene attivato un hit, il valore Nessuno viene associato a tale hit per la eVar in questione. Ciò significa che nessun valore eVar era attivo al momento dell’attivazione dell’hit.
 
-   È possibile selezionare una delle opzioni seguenti:
+   Puoi scegliere una delle opzioni seguenti:
 
-   * **[!UICONTROL Session]**
+   * **[!UICONTROL Sessione]**
 
-      Il valore eVar persiste per tutta la durata della visita in Analytics.
+      Il valore eVar persiste per tutta la durata della visita Analytics.
 
    * **[!UICONTROL Chiamata di tracciamento]**
 
@@ -81,11 +81,11 @@ Le seguenti mappature sono visualizzate in Analytics in quanto vengono create in
    * **[!UICONTROL Senza scadenza]**
 
       Il valore eVar persiste per tutte le chiamate d tracciamento successive.
-   * **[!UICONTROL Advanced]**
+   * **[!UICONTROL Avanzate]**
 
       Adobe Analytics offre un’interfaccia utente più avanzata per impostare la persistenza delle eVar. Se per la eVar è impostato un valore di persistenza che non è supportato in Mobile Services, tale valore viene visualizzato nell’interfaccia di Mobile Services.
 
-      To manage eVars, click **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
+      Per gestire le eVar, fai clic su **[!UICONTROL Gestione suite di rapporti Adobe Analytics]** > **[!UICONTROL Interfaccia variabili di conversione]**.
 
    * **[!UICONTROL Supporto elenco]**
 
@@ -101,7 +101,7 @@ Puoi abilitare ulteriori variabili utilizzando l’elenco a discesa alla fine di
 
 ![aggiungere una variabile](assets/add_variable.png)
 
-Selezionare un numero di variabile non utilizzato e digitare un nome. Facoltativamente puoi fornire la variabile di dati contestuali da memorizzare ed eventuali altre informazioni.
+Seleziona un numero di variabile non utilizzato e digita un nome. Facoltativamente puoi anche fornire la variabile di dati contestuali da memorizzare ed eventuali altre informazioni.
 
 * **Metriche personalizzate**
 
@@ -115,12 +115,12 @@ Selezionare un numero di variabile non utilizzato e digitare un nome. Facoltativ
 
 ## Gestire i punti di interesse {#section_990EF15E4E3B42CC807FCD9BEC8DB4C6}
 
-I punti di interesse ti permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit. Per ulteriori informazioni sui punti di interesse, vedi  [Gestire i punti di interesse](/help/using/location/t-manage-points.md).
+I punti di interesse ti permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit. Per ulteriori informazioni sui punti di interesse, vedi   [Gestire i punti di interesse](/help/using/location/t-manage-points.md).
 
-## Gestione destinazioni collegamenti {#section_F722A387E22A430187B063D358A87711}
+## Gestire le destinazioni dei collegamenti {#section_F722A387E22A430187B063D358A87711}
 
 Puoi creare, modificare, archiviare o annullare l’archiviazione ed eliminare le destinazioni dei collegamenti. Queste destinazioni possono quindi essere richiamate in linea quando crei collegamenti di marketing, notifiche push o messaggi in-app. Per ulteriori informazioni sulle destinazioni dei collegamenti, consulta [Gestire le destinazioni dei collegamenti](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
 
 ## Gestione postback {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
-I postback consentono di inviare i dati raccolti da Adobe Mobile a un server di terze parti separato. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare Mobile per l’invio di dati personalizzati a una destinazione terza. Per ulteriori informazioni sui postback, vedi  [Configurare i postback](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
+I postback consentono di inviare i dati raccolti da Adobe Mobile a un server di terze parti separato. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare Mobile per l’invio di dati personalizzati a una destinazione terza. Per ulteriori informazioni sui postback, vedi   [Configurare i postback](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
