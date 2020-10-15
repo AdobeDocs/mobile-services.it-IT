@@ -1,16 +1,16 @@
 ---
-description: Questo materiale di riferimento è utile per usare l’SDK per Android per  Soluzioni per Experienci Cloud.
-seo-description: Questo materiale di riferimento è utile per usare l’SDK per Android per  Soluzioni per Experienci Cloud.
+description: Questo materiale di riferimento è utile per usare l’SDK per Android per le soluzioni Experience Cloud.
+seo-description: Questo materiale di riferimento è utile per usare l’SDK per Android per le soluzioni Experience Cloud.
 seo-title: Panoramica di riferimento dell’SDK per Android
 solution: Experience Cloud,Analytics
 title: Panoramica di riferimento dell’SDK per Android
 topic: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
