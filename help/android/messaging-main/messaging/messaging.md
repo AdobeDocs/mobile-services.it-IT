@@ -1,23 +1,23 @@
 ---
-description: Puoi inviare messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
-seo-description: Puoi inviare messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l'implementazione, i messaggi vengono inviati in modo dinamico all'app e non richiedono un aggiornamento del codice.
+description: Puoi inviare messaggi in-app che vengano attivati da qualsiasi dato o evento di analisi. Dopo l’implementazione, i messaggi vengono inviati in modo dinamico all’app e non richiedono alcun aggiornamento del codice.
+seo-description: Puoi inviare messaggi in-app che vengano attivati da qualsiasi dato o evento di analisi. Dopo l’implementazione, i messaggi vengono inviati in modo dinamico all’app e non richiedono alcun aggiornamento del codice.
 seo-title: Messaggistica in-app
 solution: Experience Cloud,Analytics
 title: Messaggistica in-app
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # Messaggistica in-app {#in-app-messaging}
 
-Puoi inviare messaggi in-app attivati da qualsiasi dato o evento di analisi. Dopo l&#39;implementazione, i messaggi vengono inviati in modo dinamico all&#39;app e non richiedono un aggiornamento del codice.
+Puoi inviare messaggi in-app che vengano attivati da qualsiasi dato o evento di analisi. Dopo l’implementazione, i messaggi vengono inviati in modo dinamico all’app e non richiedono alcun aggiornamento del codice.
 
 ## Nuova versione SDK per Adobe Experience Cloud
 
@@ -27,7 +27,7 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 >
 >A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Per iniziare, passa a [Launch](https://launch.adobe.com/).
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -36,9 +36,9 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 
 >[!IMPORTANT]
 >
->To use in-app messaging, you **must** have SDK version 4.2 or later.
+>Per usare la funzione per messaggi in-app, **è necessaria** la versione 4.2 o successiva dell’SDK.
 
-Puoi creare messaggi e regole in  Adobe Mobile Services che definiscono quando i messaggi vengono visualizzati. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Per visualizzare i messaggi in-app, è necessario aggiornare l&#39;SDK. Puoi completare questi passaggi anche se non hai ancora definito alcun messaggio. Dopo aver definito i messaggi, questi verranno inviati dinamicamente all&#39;app e visualizzati senza che sia necessario aggiornare l&#39;app store.
+In Adobe Mobile Services puoi creare i messaggi e le regole che definiscano quando dovranno essere visualizzati. Per ulteriori informazioni, consulta [Creare un messaggio in-app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Per visualizzare i messaggi in-app, è necessario aggiornare l’SDK. Puoi completare questi passaggi anche se non hai ancora definito alcun messaggio. Una volta definiti, i messaggi verranno inviati in modo dinamico all’app e visualizzati senza che sia necessario un aggiornamento dell’app store.
 
 ## Abilitazione dei messaggi in-app {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -121,13 +121,13 @@ Puoi creare messaggi e regole in  Adobe Mobile Services che definiscono quando i
 
 ## Tracciamento dei messaggi in-app {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Gli SDK di Android Mobile tengono traccia delle metriche seguenti per i messaggi in-app:
+Per i messaggi in-app, gli SDK di Android Mobile tengono traccia delle metriche seguenti:
 
-* Per messaggi in-app con stile schermo intero e avviso:
+* Per messaggi in-app a schermo intero e di tipo avviso:
 
-   * **Impressioni**: quando l&#39;utente attiva un messaggio in-app.
-   * **Click-through**: quando l&#39;utente preme il pulsante **[!UICONTROL Click-through]**.
-   * **Annulla**: quando l&#39;utente preme **[!UICONTROL Annulla]**.
+   * **Impression**: quando l’utente attiva un messaggio in-app.
+   * **Click-through**: quando l’utente preme il pulsante **[!UICONTROL Click-through]**.
+   * **Annulla**: quando l’utente preme **[!UICONTROL Annulla]**.
 
 * Per i messaggi in-app personalizzati a schermo intero, nel contenuto HTML del messaggio deve essere presente il codice corretto per trasmettere informazioni alla funzione di tracciamento dell&#39;SDK per i seguenti pulsanti:
 
@@ -140,7 +140,7 @@ Gli SDK di Android Mobile tengono traccia delle metriche seguenti per i messaggi
 
 ## Immagine di fallback locale {#section_DEACC1CE549B4573B556A44A52409941}
 
-Quando create un messaggio a schermo intero, potete specificare facoltativamente un&#39;immagine di fallback. Se il messaggio non riesce a recuperare l’immagine prevista dal Web, l’SDK tenta di caricare l’immagine con lo stesso nome dalla cartella assets dell’applicazione. Questo consente di mostrare il messaggio nella sua forma originale, anche se l&#39;utente è offline, o se l&#39;immagine prestabilita non è raggiungibile.
+Quando crei un messaggio a schermo intero, puoi facoltativamente specificare un’immagine di fallback. Se il messaggio non è in grado di recuperare dal web l’immagine prevista, l’SDK tenta di caricare l’immagine con lo stesso nome dalla cartelle delle risorse dell’applicazione. Questo consente di visualizzare il messaggio nella sua forma originale anche se l’utente è offline o se l’immagine prevista non è raggiungibile.
 
 >[!IMPORTANT]
 >
@@ -152,7 +152,7 @@ I seguenti metodi di consentono di configurare l&#39;icona piccola e l&#39;icona
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   Imposta l&#39;icona piccola che verrà utilizzata per le notifiche create dall&#39;SDK. Questa icona compare sulla barra di stato ed è l’immagine secondaria visualizzata quando l’utente visualizza la notifica completa nel Centro notifiche.
+   Imposta l’icona piccola che verrà utilizzata per le notifiche create dall’SDK. Questa icona apparirà sulla barra di stato e sarà l’immagine secondaria mostrata quando l’utente visualizza la notifica completa nel centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
