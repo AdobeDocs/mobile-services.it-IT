@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Domande frequenti
 topic: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,23 +24,23 @@ La tabella seguente contiene un elenco delle domande frequenti per Adobe Mobile 
 
 ### L’SDK viene aggiornato spesso?
 
-Sì, continuiamo a realizzare aggiornamenti per consentirti di ottenere gli SDK più completi, conformi agli standard e sicuri. In genere rilasciamo una nuova versione ogni mese. Gli aggiornamenti SDK di questo tipo sono aggiornamenti sostitutivi di tipo &quot;drop-in&quot; (per la versione 4x) per facilitarne l’implementazione. Per ulteriori informazioni sugli aggiornamenti, consulta le Note sulla [versione](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
+Sì, continuiamo a realizzare aggiornamenti per offrire SDK sempre più completi, conformi agli standard e sicuri. In genere viene rilasciata una nuova versione ogni mese. Gli aggiornamenti SDK di questo tipo sono aggiornamenti sostitutivi di tipo &quot;drop-in&quot; (per la versione 4x) per facilitarne l’implementazione. Per ulteriori informazioni sugli aggiornamenti, consulta le [Note sulla versione](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
 
 ### Quale versione SDK devo utilizzare?
 
-La versione corrente degli SDK è la 4.11. Per ulteriori informazioni, consulta le Note sulla [versione](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
+La versione corrente degli SDK è la 4.11. Per ulteriori informazioni, consulta le [Note sulla versione](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
 
 ### Dove si scaricano gli SDK?
 
-Gli SDK per le singole piattaforme mobili possono essere scaricati dalla sezione [Gestisci impostazioni app](/help/using/c-manage-app-settings/c-manage-app-settings.md).
+Gli SDK per le singole piattaforme mobili possono essere scaricati dalla sezione [Gestione impostazioni app](/help/using/c-manage-app-settings/c-manage-app-settings.md).
 
 ### Come si configurano gli SDK?
 
-Dopo aver creato una nuova suite di rapporti per l’app, vai a Gestisci impostazioni app e configura tutte le opzioni richieste nella pagina Informazioni app. Dopo aver salvato la configurazione, scarica gli SDK richiesti dalla parte inferiore della pagina Gestione impostazioni app. L’SDK è preconfigurato con le opzioni che hai salvato e si trova nel file `ADBMobileConfig.json` all’interno del pacchetto SDK. Se modifichi delle impostazioni SDK nella pagina Gestione impostazioni app, ricordati di scaricare di nuovo i file dell’SDK o di aggiornare il file `ADBMobileConfig.json` con le modifiche apportate.
+Dopo aver creato una nuova suite di rapporti per l’app, vai a Gestione impostazioni app e configura tutte le opzioni richieste nella pagina Informazioni app. Dopo aver salvato la configurazione, scarica gli SDK richiesti dalla parte inferiore della pagina Gestione impostazioni app. L’SDK è preconfigurato con le opzioni che hai salvato e si trova nel file `ADBMobileConfig.json` all’interno del pacchetto SDK. Se modifichi delle impostazioni SDK nella pagina Gestione impostazioni app, ricordati di scaricare di nuovo i file dell’SDK o di aggiornare il file `ADBMobileConfig.json` con le modifiche apportate.
 
-### Gli SDK per dispositivi mobili  Adobe supportano IPv6 per iOS?
+### Gli SDK Adobe Mobile supportano IPv6 per iOS?
 
-Gli SDK per dispositivi mobili  Adobe utilizzano gli stack di rete standard iOS e Android. Per iOS, l’SDK utilizza NSURLSession (iOS versioni 7+) e NSURLConnection (iOS versioni 7 e successive), completamente compatibili con IPv6. Per gli sviluppatori che hanno creato o che utilizzano uno stack di rete proprio potrebbe essere utile verificarne la compatibilità per stabilire se è necessario apportare delle modifiche. Seguono alcune informazioni aggiuntive fornite da Apple:
+Gli SDK Adobe Mobile utilizzano gli stack di rete standard iOS e Android. Per iOS, l’SDK utilizza NSURLSession (iOS versioni 7+) e NSURLConnection (iOS versioni 7 e successive), completamente compatibili con IPv6. Per gli sviluppatori che hanno creato o che utilizzano uno stack di rete proprio potrebbe essere utile verificarne la compatibilità per stabilire se è necessario apportare delle modifiche. Seguono alcune informazioni aggiuntive fornite da Apple:
 
 *Se scrivi un’app lato client utilizzando API di rete di alto livello come NSURLSession e i framework CFNetwork, e ti connetti per nome, non dovrebbe essere necessario apportare alcuna modifica per garantire il funzionamento dell’app con gli indirizzi IPv6.* Per ulteriori informazioni, consulta [Supporto delle reti DNS64/NAT64 IPv6](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
@@ -53,37 +53,37 @@ Le Metriche del ciclo di vita sono metriche &quot;pronte all’uso&quot; che ven
 
 ### Come posso risolvere i problemi relativi alle regole di elaborazione?
 
-Per ulteriori informazioni, consultate Suggerimenti e trucchi per le regole di [elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Per ulteriori informazioni, consulta la sezione sui [suggerimenti per le regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
 
 ### Posso inviare i miei dati di analisi a più suite di rapporti?
 
-Sì. Gli SDK consentono di inviare dati a più suite di rapporti Adobe Analytics . Per catturare i dati in più suite di rapporti utilizzando una richiesta di immagine, imposta gli ID suite di rapporti nel campo **[!UICONTROL rsids]** nella sezione **[!UICONTROL anayltics]** del file`ADBMobileConfig.json`, separandoli con virgole e senza usare spazi. Per ulteriori informazioni, vedi [Configurazione JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+Sì. Gli SDK consentono di inviare dati a più suite di rapporti Adobe Analytics. Per acquisire i dati in più suite di rapporti utilizzando una richiesta di immagine, imposta gli ID suite di rapporti nel campo **[!UICONTROL rsids]** nella sezione **[!UICONTROL anayltics]** del file `ADBMobileConfig.json`, separandoli con virgole e senza usare spazi. Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
 ### In che modo le visite per dispositivi mobili sono diverse dagli avvii?
 
-Un avvio viene misurato dall’SDK quando un utente apre l’app per la prima volta o ritorna nell’app dopo che è trascorso un tempo maggiore del valore di timeout specificato. Il valore di timeout tipico è di 5 minuti (300 secondi) nel campo **[!UICONTROL lifecycleTimeout]** del file `ADBMobileConfig.json`. Una visita è un calcolo lato server eseguito da Adobe Analytics in base al primo e all’ultimo hit di dati inviati dall’SDK senza superare il timeout previsto per una visita. In genere, i timeout sessione sono impostati su 30 minuti per una suite di rapporti. Anche se le visite sono dati analitici web di tipo tradizionale, questi hit possono comunque fornire informazioni utili sui comportamenti degli utenti nell’entrare e uscire dall’app.
+Un avvio viene misurato dall’SDK quando un utente apre l’app per la prima volta o ritorna nell’app dopo che è trascorso un tempo maggiore del valore di timeout specificato. Il valore di timeout tipico è di 5 minuti (300 secondi) nel campo **[!UICONTROL lifecycleTimeout]** del file `ADBMobileConfig.json`. Una visita è un calcolo lato server eseguito da Adobe Analytics in base al primo e all’ultimo hit di dati inviati dall’SDK senza superare il timeout previsto per una visita. In genere, i timeout di sessione sono impostati su 30 minuti per una suite di rapporti. Anche se le visite sono dati analitici web di tipo tradizionale, questi hit possono comunque fornire informazioni utili sui comportamenti degli utenti nell’entrare e uscire dall’app.
 
 ## Messaggistica {#section_5EFDD2B2EBA543C09902FF979C89F2EC}
 
-### Esistono limiti di dimensioni o di altro tipo per le notifiche push?
+### Le notifiche push sono soggette a limiti di dimensioni o di altro tipo?
 
-I messaggi di notifica push hanno un limite di 140 caratteri. Non esistono limiti al numero di notifiche che possono essere inviate o pianificate o alla frequenza con cui vengono inviate le notifiche.
+I messaggi di notifica push hanno un limite di 140 caratteri. Non esistono limiti al numero di notifiche che possono essere inviate o pianificate né alla frequenza con cui vengono inviate le notifiche.
 
-### Supporti payload personalizzati per le notifiche push?
+### Sono sopportati i payload personalizzati per le notifiche push?
 
 Sì, viene fornito un payload push personalizzato che può essere codificato in JSON. I payload Android e iOS sono limitati rispettivamente a 4 KB e 2 KB. Questi payload vengono inviati all’app tramite una notifica push o locale. Per ulteriori informazioni, consulta [Esperienza: messaggio push](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
-### Sono previsti limiti di dimensione per i messaggi in-app?
+### I messaggi in-app sono soggetti a limiti di dimensione?
 
-I messaggi in-app pubblicati e attivi creati in  Adobe Mobile Services sono ospitati su un server con un limite di dimensione di 15 MB per ogni suite di rapporti dell&#39;app. Questo limite vale solo per il contenuto dei messaggi e le risorse in hosting presso Adobe. Non sono invece previste restrizioni per le risorse alle quali il messaggio in-app può fare riferimento su altri host o per quelle all’interno dell’app.
+I messaggi in-app pubblicati e attivi creati in Adobe Mobile Services sono ospitati su un server con un limite di dimensione di 15 MB per ogni suite di rapporti dell’app. Questo limite vale solo per il contenuto dei messaggi e le risorse in hosting presso Adobe. Non sono invece previste restrizioni per le risorse alle quali il messaggio in-app può fare riferimento su altri host o per quelle all’interno dell’app.
 
-### Posso usare il mio codice HTML per i messaggi in-app?
+### Posso usare un mio codice HTML per i messaggi in-app?
 
-Sì, supportiamo l&#39;HTML personalizzato per i messaggi in-app. Per ulteriori informazioni, consulta [Esperienza: messaggio in-app](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
+Sì, l’HTML personalizzato è supportato per i messaggi in-app. Per ulteriori informazioni, consulta [Esperienza: messaggio in-app](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
 ### Quali attivatori posso utilizzare per inviare notifiche push o messaggi in-app?
 
-Gli addetti al marketing possono scegliere qualsiasi dato o evento di Analytics che viene inviato come attivatore per visualizzare i messaggi in-app. I messaggi in-app utilizzano attivatori che si verificano localmente sul dispositivo. Se sono stati selezionati più attivatori, tutti questi devono verificarsi nello stesso hit per consentire la visualizzazione del messaggio. Per ulteriori informazioni, consulta [Esperienza: messaggio in-app](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
+Gli addetti al marketing possono scegliere qualsiasi dato o evento di Analytics che viene inviato come attivatore per visualizzare i messaggi in-app. I messaggi in-app utilizzano attivatori che si verificano localmente sul dispositivo. Se si selezionano più attivatori, il messaggio verrà visualizzato se tutti si verificano nello stesso hit. Per ulteriori informazioni, consulta [Esperienza: messaggio in-app](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
 I messaggi push vengono inviati utilizzando segmenti Adobe Analytics preesistenti o segmenti personalizzati che possono essere creati sulla base di dati Analytics storici già raccolti. Per ulteriori informazioni, consulta [Esperienza: messaggio push](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
@@ -101,7 +101,7 @@ Non esiste un limite specifico, ma consigliamo di creare o caricare non più di 
 
 ### Posso attribuire le campagne ad attività in-app?
 
-Sì.  Adobe Mobile Services può aiutarti a creare trucchi di marketing per promuovere e indirizzare il traffico verso le tue app e collegare le campagne di acquisizione alle analisi in-app e alle conversioni. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
+Sì.  Adobe Mobile Services può aiutarti a creare attività di marketing volte a promuovere e indirizzare il traffico verso le tue app e a collegare le campagne di acquisizione alle analisi in-app e alle conversioni. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
 ### Come si impostano collegamenti per l’acquisizione e il tracciamento dei nuovi utenti dell’app?
 
