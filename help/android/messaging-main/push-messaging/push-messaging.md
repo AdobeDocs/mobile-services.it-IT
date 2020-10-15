@@ -1,29 +1,29 @@
 ---
-description: ' Mobile Adobe e l''SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.'
-seo-description: ' Mobile Adobe e l''SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.'
+description: ' Adobe Mobile e l’SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di creare un rapporto sugli utenti che hanno aperto l’app dopo aver fatto clic in un messaggio push.'
+seo-description: ' Adobe Mobile e l’SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di creare un rapporto sugli utenti che hanno aperto l’app dopo aver fatto clic in un messaggio push.'
 seo-title: Messaggi push
 solution: Experience Cloud,Analytics
 title: Messaggi push
 topic: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # Messaggi push {#push-messaging}
 
- Mobile Adobe e l&#39;SDK per dispositivi mobili  Adobe consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di segnalare facilmente gli utenti che hanno aperto l’app dopo aver fatto clic su un messaggio push.
+ Adobe Mobile e l’SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di creare un rapporto sugli utenti che hanno aperto l’app dopo aver fatto clic in un messaggio push.
 
 Per usare la funzione per messaggi push, **devi** disporre della versione 4.6 o successiva dell&#39;SDK.
 
 >[!IMPORTANT]
 >
->Non impostare manualmente l&#39;Experience Cloud ID all&#39;interno dell&#39;app. Questo causa la creazione di un nuovo utente univoco che non riceverà messaggi push a causa del suo stato di consenso. Ad esempio, un utente ha acconsentito alla ricezione di messaggi push per accedere all&#39;app. Dopo l&#39;accesso, se imposti manualmente l&#39;ID all&#39;interno dell&#39;app, viene creato un nuovo utente univoco che non ha acconsentito alla ricezione di messaggi push. Questo nuovo utente non riceverà quindi alcun messaggio push.
+>Non impostare manualmente l&#39;Experience Cloud ID all&#39;interno dell&#39;app. Questo causerebbe infatti la creazione di un nuovo utente univoco che non potrà ricevere i messaggi push a causa del suo stato di consenso. Supponiamo ad esempio che un utente che ha acconsentito alla ricezione di messaggi push acceda all’app. Dopo l’accesso, se imposti manualmente l’ID all’interno dell’app, viene creato un nuovo utente univoco che non ha acconsentito alla ricezione di messaggi push. Questo nuovo utente non riceverà quindi alcun messaggio push.
 >
 >Lo spostamento dell’app a una nuova suite di rapporti non è supportato. Se si effettua la migrazione a una nuova suite di rapporti, la configurazione push può interrompersi e i messaggi potrebbero non essere inviati.
 
