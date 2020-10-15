@@ -1,24 +1,24 @@
 ---
-description: I widget Android possono essere tracciati utilizzando gli stessi metodi dell'app. I widget condividono il contesto dell’applicazione con l’app, pertanto l’ordine degli hit e l’identificazione dei visitatori vengono mantenuti.
+description: È possibile tenere traccia dei widget Android utilizzando gli stessi metodi applicabili per l’app. Poiché i widget condividono con l’app il contesto applicativo, vengono mantenuti sia l’ordine degli hit sia l’identificazione dei visitatori.
 keywords: android;library;mobile;sdk
-seo-description: I widget Android possono essere tracciati utilizzando gli stessi metodi dell'app. I widget condividono il contesto dell’applicazione con l’app, pertanto l’ordine degli hit e l’identificazione dei visitatori vengono mantenuti.
+seo-description: È possibile tenere traccia dei widget Android utilizzando gli stessi metodi applicabili per l’app. Poiché i widget condividono con l’app il contesto applicativo, vengono mantenuti sia l’ordine degli hit sia l’identificazione dei visitatori.
 seo-title: Widget Android
 solution: Experience Cloud,Analytics
 title: Widget Android
 topic: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Widget Android {#android-widgets}
 
-I widget Android possono essere tracciati utilizzando gli stessi metodi dell&#39;app. I widget condividono il contesto dell’applicazione con l’app, pertanto l’ordine degli hit e l’identificazione dei visitatori vengono mantenuti.
+È possibile tenere traccia dei widget Android utilizzando gli stessi metodi applicabili per l’app. Poiché i widget condividono con l’app il contesto applicativo, vengono mantenuti sia l’ordine degli hit sia l’identificazione dei visitatori.
 
 Le seguenti linee guida sono utili per tenere traccia dei widget Android:
 
