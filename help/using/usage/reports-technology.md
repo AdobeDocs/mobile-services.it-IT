@@ -1,24 +1,24 @@
 ---
-description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
+description: Il rapporto Tecnologia permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
 keywords: mobile
-seo-description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
+seo-description: Il rapporto Tecnologia permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
 seo-title: Rapporto Tecnologia
 solution: Experience Cloud,Analytics
 title: Rapporto Tecnologia
 topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Rapporto Tecnologia {#technology}
 
-Il rapporto **[!UICONTROL Tecnologia]** ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
+Il rapporto **[!UICONTROL Tecnologia]** permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
 
 Questo rapporto fornisce una visualizzazione sunburst dei dati esistenti; può essere utilizzato per scoprire i segmenti di pubblico (raccolte di visitatori) per il targeting. La creazione e la gestione dei tipi di pubblico è simile alla creazione e all’utilizzo dei segmenti, con la differenza che un pubblico può essere reso disponibile in Experience Cloud.
 
@@ -36,7 +36,7 @@ Il grafico sunburst è interattivo ed è possibile completare le seguenti attivi
 
 * Passa il cursore sopra una parte del grafico per visualizzare ulteriori informazioni.
 * Modifica il periodo temporale facendo clic sull’icona **[!UICONTROL Calendario]**.
-* Fai clic su una sezione dell’anello per selezionare il pubblico su cui eseguire azioni quali ingrandire, nascondere dei tipi di pubblico, creare un messaggio in-app o un filtro fisso.
+* Fai clic su una sezione dell’anello per selezionare il pubblico su cui eseguire azioni quali ingrandire, nascondere alcuni tipi di pubblico, creare un messaggio in-app o un filtro fisso.
 * Nell’angolo in alto a destra, seleziona **[!UICONTROL Tipo di dispositivo]** e **[!UICONTROL Dispositivo]** per visualizzare informazioni sui dispositivi e sui tipi di dispositivi.
 
 * Fai clic su una metrica secondaria a destra per aggiungerla alla visualizzazione.
@@ -50,11 +50,11 @@ La tabella seguente descrive i rapporti standard e come vengono compilati in Mob
 | Dispositivo | Metriche del ciclo di vita | Metriche comuni suddivise per tipo di dispositivo. |
 | Sistemi operativi | Automatico | Metriche comuni suddivise per sistema operativo. |
 | Versione sistema operativo | Metriche del ciclo di vita | Metriche comuni suddivise per versione del sistema operativo. |
-| Vettori | Automatico | Metriche comuni suddivise per gestore. |
+| Gestori | Automatico | Metriche comuni suddivise per gestore. |
 
 >[!TIP]
 >
->Nel rapporto **[!UICONTROL Gestori]**, gli utenti Wi-Fi sono segnalati come `none`.
+>Nel rapporto **[!UICONTROL Gestori]**, per gli utenti Wi-Fi è riportato il valore `none`.
 
 
 ## Aggiungere suddivisioni e metriche {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -67,12 +67,12 @@ Puoi aggiungere suddivisioni e metriche secondarie, che modificano l’altezza d
 
 Per aggiungere suddivisioni e metriche secondarie, fai clic su **[!UICONTROL Suddivisione tecnologia]** nella barra del titolo del rapporto, quindi fai clic su **[!UICONTROL Personalizza]**.
 
-Quando fai clic su **[!UICONTROL Aggiungi suddivisione]** o **[!UICONTROL Aggiungi metrica]**, viene visualizzato un nuovo elemento con lo stesso nome di quello precedente nell’elenco. Fai clic sul raggruppamento o sulla metrica appena creata per accedere a un elenco a discesa dal quale selezionare un nuovo elemento.
+Quando fai clic su **[!UICONTROL Aggiungi suddivisione]** o **[!UICONTROL Aggiungi metrica]**, viene visualizzato un nuovo elemento con lo stesso nome di quello precedente nell’elenco. Fai clic sulla suddivisione o metrica appena creata per accedere a un elenco a discesa dal quale selezionare un nuovo elemento.
 
 ## Creare un filtro fisso {#section_B4E355CD1FE34E4C8ADC38139ED67FC8}
 
 Fai clic su una sezione dell’anello per selezionare il pubblico per il quale vuoi creare un filtro fisso, quindi fai clic su **[!UICONTROL Filtro fisso]**. Questo filtro consente di applicare i filtri correnti e di eseguire un nuovo rapporto basato sui filtri.
 
-## Condividere i rapporti  {#section_560DD5CED5144249B7E49461E2422100}
+## Condividere i rapporti   {#section_560DD5CED5144249B7E49461E2422100}
 
 Dopo che hai creato un rapporto, le impostazioni vengono utilizzate per creare un URL personalizzato, che puoi copiare e condividere.
