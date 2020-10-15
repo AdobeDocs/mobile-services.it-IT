@@ -1,22 +1,22 @@
 ---
-description: Puoi inviare segnali e recuperare segmenti di visitatori da Gestione dell'audience.
+description: Puoi inviare segnali e recuperare segmenti di visitatori da Gestione dell’audience.
 keywords: android;library;mobile;sdk
-seo-description: Puoi inviare segnali e recuperare segmenti di visitatori da Gestione dell'audience.
+seo-description: Puoi inviare segnali e recuperare segmenti di visitatori da Gestione dell’audience.
 seo-title: Configurazione di Audience Manager
 solution: Experience Cloud,Analytics
 title: Configurazione di Audience Manager
 topic: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
 ht-degree: 100%
 
 ---
 
 
-# Configurazione di Audience Manager{#audience-manager-configuration}
+# Configurazione di Audience Manager {#audience-manager-configuration}
 
 Puoi inviare segnali e recuperare segmenti di visitatori da Audience Manager.
 
