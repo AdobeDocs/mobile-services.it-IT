@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Metodi di configurazione
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1198'
 ht-degree: 100%
 
@@ -148,7 +148,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Se l&#39;app viene aggiornata dall&#39;SDK di Experience Cloud 3.x alla versione 4.x, l&#39;ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all&#39;altro dell&#39;SDK.
+   >Se l&#39;app viene aggiornata dall&#39;SDK di Experience Cloud 3.x alla versione 4.x, l&#39;ID visitatore precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK.
 
    Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `nil` finché non viene impostato.
 
@@ -276,7 +276,7 @@ Il valore predefinito è impostato nel file `ADBMobileConfig.json`.
 
 * **pauseCollectingLifecycleData**
 
-   Utilizza questa API per mettere in pausa la raccolta dati del ciclo di vita. Per ulteriori informazioni, consulta [Metriche del ciclo di vita](/help/ios/metrics.md).
+   Utilizza questa API per mettere in pausa la raccolta dati del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md).
 
    >[!IMPORTANT]
    >
