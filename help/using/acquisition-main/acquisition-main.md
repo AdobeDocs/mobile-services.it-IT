@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Acquisizione
 topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Per iniziare, passa a [Launch](https://launch.adobe.com/).
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -45,7 +45,7 @@ Puoi creare, modificare, gestire e visualizzare i rapporti sui collegamenti di m
 
 Sono disponibili i seguenti rapporti di acquisizione che forniscono informazioni approfondite sulle prestazioni dei tuoi collegamenti di marketing:
 
-* **Panoramica** {#section_5B2BA47F22694919A472AB591101237E}
+* **Panoramica**{#section_5B2BA47F22694919A472AB591101237E}
 
    Questo rapporto mostra le campagne principali che hanno portato gli utenti alla tua app, con informazioni sulle prestazioni relativamente ad altri metadati di tracciamento, quali origine acquisizione, canale, termine e contenuto.
 
@@ -57,6 +57,6 @@ Sono disponibili i seguenti rapporti di acquisizione che forniscono informazioni
 
    Considerazioni da ricordare:
 
-   * È possibile fare clic sulle icone freccia nelle intestazioni delle colonne per ordinare i dati in ordine crescente o decrescente.
+   * Per elencare i dati in ordine crescente o decrescente, puoi fare clic sulle icone a forma di freccia nelle intestazioni delle colonne.
    * Per esportare i dati in un documento PDF, puoi fare clic su **[!UICONTROL Scarica]**.
    ![](assets/acquisition_name.png)
