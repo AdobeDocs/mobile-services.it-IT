@@ -1,42 +1,42 @@
 ---
-description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
+description: Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
 keywords: android;library;mobile;sdk
-seo-description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
+seo-description: Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
 seo-title: Migrazione alla libreria Android 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione alla libreria Android 4.x
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # Migrazione alla libreria Android 4.x {#migrating-to-the-android-x-library}
 
-Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
+Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
 
 >[!IMPORTANT]
 >
 >L’SDK utilizza `SharedPreferences` per memorizzare i dati che sono necessari per calcolare gli utenti univoci, le metriche del ciclo di vita e altri dati relativi alle funzionalità SDK di base. Se modifichi o rimuovi i valori di `SharedPreferences` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
 
-Nella versione 4.x della libreria, i metodi pubblici sono consolidati in un unico header. Inoltre, tutte le funzionalità sono ora accessibili tramite metodi a livello di classe, pertanto non è necessario tenere traccia di puntatori, istanze o singleton.
+Nella versione 4.x della libreria, i metodi pubblici sono consolidati in un’unica intestazione. Inoltre, tutte le funzionalità sono ora accessibili tramite metodi di livello di classe; pertanto, non è più necessario tenere traccia di puntatori, istanze o singleton.
 
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Nella versione 4, non è più possibile assegnare nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
+Nella versione 4, non è più possibile assegnare nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo.
 
-   Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+   Questi valori verranno inclusi nei rapporti solo dopo che saranno stati mappati mediante le regole di elaborazione.
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ Nella tabella seguente sono elencate le variabili di configurazione che devi spo
 ### Spostare il file di configurazione
 
 1. Sposta il valore impostato per la variabile della prima colonna alla variabile della seconda colonna.
-1. Rimuovete dal codice la vecchia variabile di configurazione.
+1. Rimuovi dal codice la recedente variabile di configurazione.
 
 ### Migrazione dalla versione 3.x
 
@@ -94,8 +94,8 @@ Per eseguire la migrazione dalla versione 3.x alla versione 4, sposta la variabi
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Rimuovi, non più utilizzato. |
-| linkTrackEvents | Rimuovi, non più utilizzato. |
+| linkTrackVars | Rimuovi, non più in uso. |
+| linkTrackEvents | Rimuovi, non più in uso. |
 
 ### Migrazione dalla versione 2.x
 
@@ -106,20 +106,20 @@ Per migrare dalla versione 2.x alla versione 4, sposta il valore riportato nella
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot;, rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto automaticamente in base all&#39;impostazione &quot;ssl&quot;. |
-| trackingServerSecure | Rimuovi. Per le connessioni sicure, definite &quot;server&quot; e abilitate &quot;ssl&quot;. |
+| trackingServer | &quot;server&quot;, rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto automaticamente in base all’impostazione &quot;ssl&quot;. |
+| trackingServerSecure | Rimuovi. Per le connessioni sicure, definisci &quot;server&quot; e quindi abilita &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Rimuovi, non più utilizzato. |
-| linkTrackEvents | Rimuovi, non più utilizzato. |
-| timestamp | Rimuovi, non è più configurabile. |
-| dc | Rimuovi, non più utilizzato. |
-| userAgent | Rimuovi, non è più configurabile. |
-| dynamicVariablePrefix | Rimuovi, non più utilizzato. |
-| visitorNamespace | Rimuovi, non più utilizzato. |
-| usePlugins | Rimuovi, non più utilizzato. |
-| useBestPractices: tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito dalle metriche del ciclo di vita. |
+| linkTrackVars | Rimuovi, non più in uso. |
+| linkTrackEvents | Rimuovi, non più in uso. |
+| timestamp | Rimuovi, non più configurabile. |
+| dc | Rimuovi, non più in uso. |
+| userAgent | Rimuovi, non più configurabile. |
+| dynamicVariablePrefix | Rimuovi, non più in uso. |
+| visitorNamespace | Rimuovi, non più in uso. |
+| usePlugins | Rimuovi, non più in uso. |
+| useBestPractices, tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito dalle metriche del ciclo di vita. |
 
 ## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -135,15 +135,15 @@ Il parametro `contextData` di entrambi questi metodi è un `HashMap<String, Obje
 
 ## Eventi, prop ed eVar
 
-Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L&#39;SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili di Analytics per la creazione di report.
+Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L’SDK ora utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;app store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’app store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo.
 
-   Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione. Per ulteriori informazioni, consulta [Regole di elaborazione e dati contestuali](/help/android/getting-started/proc-rules.md).
+   Questi valori verranno inclusi nei rapporti solo dopo che saranno stati mappati mediante le regole di elaborazione. Per ulteriori informazioni, consulta [Regole di elaborazione e dati contestuali](/help/android/getting-started/proc-rules.md).
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti all&#39;HashMap `data`. È quindi necessario rimuovere tutte le chiamate a `setProp`, `setEvar` e le assegnazioni a dati contestuali persistenti; i relativi valori devono essere aggiunti al parametro `data`.
 
@@ -187,7 +187,7 @@ Rimuovi le chiamate ai seguenti metodi:
 * `forceOffline`
 * `forceOnline`
 
-## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Per ulteriori informazioni sulla variabile &quot;products&quot;, vedi [Variabile dei prodotti](/help/android/analytics-main/products/products.md).
+Per ulteriori informazioni sulla variabile &quot;products&quot;, vedi [Variabile &quot;products&quot;](/help/android/analytics-main/products/products.md).
 
