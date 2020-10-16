@@ -1,33 +1,33 @@
 ---
-description: Configura le opzioni relative all’esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
+description: Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
 keywords: mobile
-seo-description: Configura le opzioni relative all’esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
-seo-title: Esperienza messaggio in-app
+seo-description: Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
+seo-title: Esperienza - Messaggio in-app
 solution: Experience Cloud,Analytics
-title: Esperienza messaggio in-app
+title: Esperienza - Messaggio in-app
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Esperienza: messaggio in-app {#experience-in-app-message}
 
-Configura le opzioni relative all’esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
+Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. Nell’app, fai clic su **[!UICONTROL Messaggistica]** > **[!UICONTROL Gestione messaggi]** > **[!UICONTROL Crea messaggio]** > **[!UICONTROL Crea in-app]**.
 1. Nella pagina Esperienza, specifica un nome per il messaggio.
 1. Compila i campi nella sezione **[!UICONTROL Tipo]**:
 
    * **[!UICONTROL Tipo]**
-Seleziona il tipo di messaggio per la campagna messaggi in-app:
+Seleziona il tipo di messaggio per la campagna di messaggi in-app:
 
-      * **[!UICONTROL Schermo intero]**
+      * **[!UICONTROL A schermo intero]**
       * **[!UICONTROL Avviso]**
       * **[!UICONTROL Notifica locale]**
    * **[!UICONTROL Modello]**
@@ -40,7 +40,7 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
    * **[!UICONTROL Personalizzato]**
 
-      Caricate il contenuto HTML personalizzato (solo schermo intero). Devi fornire un collegamento click-through e un collegamento di annullamento.
+      Carica il contenuto HTML personalizzato (solo per Schermo intero). Devi fornire un collegamento click-through e un collegamento di annullamento.
 
       1. Fai clic su **[!UICONTROL Sfoglia]** e scarica un file HTML o trascina un documento HTML sulla finestra.
       1. Fai clic su **[!UICONTROL Scarica esempio]** per visualizzare un esempio di contenuto HTML personalizzato.
@@ -72,7 +72,7 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
 1. Compila i campi nella sezione **[!UICONTROL Testo]**:
 
-   * **[!UICONTROL Header]**
+   * **[!UICONTROL Intestazione]**
 
       Inserisci il testo per l’intestazione del messaggio.
 
@@ -128,6 +128,6 @@ Seleziona il tipo di messaggio per la campagna messaggi in-app:
 
       Per visualizzare l’anteprima del messaggio sul tablet di un utente, fai clic sull’icona del ![tablet](assets/icon_tablet.png).
 
-      Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggi precedente. Potete anche visualizzare una descrizione del pubblico selezionato nel passaggio precedente, nella parte inferiore del riquadro di anteprima.
+      Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggio precedente. Puoi anche visualizzare una descrizione del pubblico selezionato nel passaggio precedente, nella parte inferiore del riquadro di anteprima.
 
-1. Configurare le opzioni [di](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)pianificazione.
+1. Configura le [opzioni di pianificazione](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md).
