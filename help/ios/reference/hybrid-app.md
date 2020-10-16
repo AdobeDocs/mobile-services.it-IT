@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Se l&#39;app apre contenuti Web per dispositivi mobili, è necessario che i visi
 
 ## ID visitatore nelle app
 
-L’SDK per iOS genera un ID visitatore univoco quando viene installata un’app. Questo ID viene memorizzato nella memoria persistente sul dispositivo mobile e inviato con ogni hit. L&#39;ID viene rimosso solo quando l&#39;utente disinstalla l&#39;app.
+Quando viene installata un’app, l’SDK per iOS genera un ID visitatore univoco. Questo ID viene registrato nella memoria persistente sul dispositivo mobile e inviato con ogni hit. L&#39;ID viene rimosso solo quando l&#39;utente disinstalla l&#39;app.
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Per usare lo stesso ID visitatore nell&#39;app e nella pagina web per dispositiv
    }];
    ```
 
-Il codice del servizio ID sul dominio di destinazione estrae l’identificatore MID dall’URL invece di inviare una richiesta  Adobe per un nuovo ID. Il codice del servizio ID sulla pagina di destinazione usa il MID passato per tenere traccia del visitatore.
+Invece di inviare ad Adobe la richiesta dell’ID di quel visitatore, il codice del servizio ID sul dominio di destinazione estrae l’identificatore MID dall’URL. Il codice del servizio ID sulla pagina di destinazione usa quindi l’identificatore MID trasmesso per tenere traccia del visitatore.
 
 Negli hit da contenuti Web per dispositivi mobili, verifica che il parametro `mid` sia presente in ciascun hit e che il suo valore corrisponda al `mid` inviato dal codice dell&#39;app.
 
