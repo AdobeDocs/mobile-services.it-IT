@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       >
       >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` **deve** essere false.
       >
-      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
+      >Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti  contatta l&#39;Assistenza clienti o scarica il file di configurazione da Adobe Mobile Services.
 
       Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che usano la variabile `s.timestamp`.
 
