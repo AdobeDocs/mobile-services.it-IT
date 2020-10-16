@@ -1,24 +1,24 @@
 ---
-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
+description: Informazioni utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 keywords: mobile
-seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
+seo-description: Informazioni utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 seo-title: Aggiungere serie (metriche) ai rapporti
 solution: Experience Cloud,Analytics
 title: Aggiungere serie (metriche) ai rapporti
 topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Aggiungere serie (metriche) ai rapporti{#add-series-metrics-to-reports}
+# Aggiungere serie (metriche) ai rapporti {#add-series-metrics-to-reports}
 
-Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
+Informazioni utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 
 >[!IMPORTANT]
 >
@@ -26,15 +26,15 @@ Queste informazioni sono utili per personalizzare i rapporti incorporati aggiung
 
 In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]**, ma le istruzioni sono valide per qualsiasi tipo di rapporto.
 
-1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
+1. Apri l’app e fai clic su **[!UICONTROL Utilizzo]** > **[!UICONTROL Utenti e sessioni]**.
 
-   ![Risultato passaggio](assets/customize1.png)
+   ![Risultato del passaggio](assets/customize1.png)
 
    Questo rapporto fornisce una vista completa degli utenti dell’app nel corso del tempo. Vogliamo però aggiungere una serie per indicare nel rapporto gli arresti anomali dell’app.
 
 1. Fai clic su **[!UICONTROL Personalizza]**.
 
-   ![Risultato passaggio](assets/customize2.png)
+   ![Risultato del passaggio](assets/customize2.png)
 
 1. Scorri verso il basso e fai clic su **[!UICONTROL Aggiungi serie]**.
 
@@ -44,7 +44,7 @@ In questo esempio personalizzeremo il rapporto **[!UICONTROL Utenti e sessioni]*
 
    * Per aggiungere una nuova serie (metrica), fai clic sul nome della serie che hai appena creato per selezionare una nuova metrica Ciclo di vita dall’elenco a discesa.
 
-      ![Risultato passaggio](assets/add_series.png)
+      ![Risultato del passaggio](assets/add_series.png)
 
    * Per aggiungere una nuova app in una suite di rapporti diversa e fare quindi un confronto tra dati di app differenti, fai clic sul nome dell’app nella nuova serie che hai creato, quindi seleziona l’app desiderata.
 
