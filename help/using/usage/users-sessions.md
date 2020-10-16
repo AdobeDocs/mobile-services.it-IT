@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapporto Utenti e sessioni
 topic: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
 
 
-# Rapporto Utenti e sessioni{#users-and-sessions}
+# Rapporto Utenti e sessioni {#users-and-sessions}
 
 Il rapporto Utenti e sessioni visualizza le metriche relative ai visitatori unici nell’intervallo di tempo selezionato.
 
@@ -30,7 +30,7 @@ Per questo rapporto puoi configurare le seguenti opzioni:
 
 * **[!UICONTROL Personalizza]**
 
-   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]**, aggiungere metriche e filtri, aggiungere serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
+   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]** e aggiungere metriche e filtri, serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/t-reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
