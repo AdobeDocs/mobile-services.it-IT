@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Panoramica (Posizione)
 topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Panoramica (Posizione){#overview-location}
+# Panoramica (Posizione) {#overview-location}
 
 Il rapporto di **[!UICONTROL panoramica Posizione]** permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l’app viene utilizzata.
 
@@ -48,7 +48,7 @@ Questa è la visualizzazione quando si seleziona **[!UICONTROL Punti di interess
 
 ![](assets/location_poi.png)
 
-Puoi fare clic su una sezione dell&#39;anello per selezionare il pubblico per il quale vuoi eseguire determinate azioni, ad esempio ingrandire la sezione, nascondere i tipi di pubblico, creare un messaggio in-app o un filtro fisso.
+Puoi fare clic su una sezione dell’anello per selezionare il pubblico su cui eseguire azioni quali ingrandire, nascondere alcuni tipi di pubblico, creare un messaggio in-app o un filtro fisso.
 
 ![](assets/location_aud.png)
 
@@ -74,7 +74,7 @@ Quando fai clic su **[!UICONTROL Aggiungi suddivisione]** o **[!UICONTROL Aggiun
 
 Fai clic su una sezione dell’anello per selezionare il pubblico per il quale vuoi creare un filtro fisso, quindi fai clic su **[!UICONTROL Filtro fisso]**. Il filtro fisso consente di applicare i filtri correnti e di eseguire un nuovo rapporto basato sui filtri.
 
-## Condividere i rapporti  {#section_F8AF2AA73D4C4C008976D45847F82D0B}
+## Condividere i rapporti   {#section_F8AF2AA73D4C4C008976D45847F82D0B}
 
 Dopo che hai creato un rapporto, le tue impostazioni vengono utilizzate per creare un URL personalizzato, che puoi copiare e condividere.
 
