@@ -1,24 +1,24 @@
 ---
-description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
+description: Il tracciamento dei beacon consente di misurare e indirizzare microposizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 keywords: android;library;mobile;sdk
-seo-description: Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
+seo-description: Il tracciamento dei beacon consente di misurare e indirizzare microposizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 seo-title: Tracciamento dei beacon
 solution: Experience Cloud,Analytics
 title: Tracciamento dei beacon
 topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '240'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # Tracciamento dei beacon {#beacon-tracking}
 
-Il tracciamento dei beacon consente di misurare e mirare a micro-posizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
+Il tracciamento dei beacon consente di misurare e indirizzare microposizioni utilizzando iBeacon e BLE (Bluetooth Low Energy).
 
 Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad Analytics e Target:
 
@@ -27,11 +27,11 @@ Quando viene invocato `trackBeacon`, i seguenti dati beacon vengono inviati ad A
 * `a.beacon.minor` - Numero secondario del beacon (come numero univoco all&#39;interno dello store).
 * `a.beacon.prox` - Valori da 0 a 3 che rappresentano la vicinanza dell&#39;utente al beacon.
 
-Significato dei seguenti valori:
+Significato dei valori:
 
-* 0 = unknown
-* 1 = immediate
-* 2 = near
+* 0 = sconosciuta
+* 1 = nelle immediate vicinanze
+* 2 = vicino
 * 3 = distante
 
 Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
@@ -64,7 +64,7 @@ Questi dati del beacon vengono catturati nelle variabili della soluzione mobile.
    Analytics.trackBeacon(beaconUUID, major, minor, proximity, null);
    ```
 
-1. Quando l&#39;utente si allontana dal beacon, cancella il beacon corrente:
+1. Quando l’utente si allontana dal beacon, cancella il beacon corrente:
 
    ```java
    Analytics.clearBeacon();
