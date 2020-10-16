@@ -1,24 +1,24 @@
 ---
 description: Le informazioni seguenti sono utili per eseguire un ciclo di verifica completo per un collegamento di campagna di acquisizione legacy, basato sull'impronta digitale di un dispositivo.
 seo-description: Le informazioni seguenti sono utili per eseguire un ciclo di verifica completo per un collegamento di campagna di acquisizione legacy, basato sull'impronta digitale di un dispositivo.
-seo-title: Verifica dell'acquisizione legacy
+seo-title: Verifica di acquisizioni legacy
 solution: Experience Cloud,Analytics
-title: Verifica dell'acquisizione legacy
+title: Verifica di acquisizioni legacy
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Verifica dell&#39;acquisizione legacy {#testing-legacy-acquisition}
+# Verifica di acquisizioni legacy {#testing-legacy-acquisition}
 
 Le informazioni seguenti sono utili per eseguire un ciclo di verifica completo per un collegamento di campagna di acquisizione legacy, basato sull&#39;impronta digitale di un dispositivo.
 
-Se l&#39;app mobile non è ancora disponibile in Google Play, puoi selezionare come destinazione qualsiasi app mobile al momento della creazione del collegamento della campagna. Questo incide solo sul server di acquisizione al quale l&#39;app ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non la capacità di verificare il funzionamento del collegamento di acquisizione.
+Se l’app per dispositivi mobili non è ancora disponibile in Google Play, puoi selezionare una qualsiasi app mobile da usare come destinazione al momento di creare il collegamento della campagna. Questo incide solo sul server di acquisizione al quale l&#39;app ti reindirizzerà quando fai clic sul collegamento di acquisizione, e non la capacità di verificare il funzionamento del collegamento di acquisizione.
 
 1. Passa a **[!UICONTROL Utilizzare collegamenti di acquisizione legacy]** in Adobe Mobile Services e genera un URL per una campagna di acquisizione.
 
