@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Alcune informazioni da tenere a mente:
 
 * Supporta iOS 8 e versioni successive.
 
-   Per iOS 11 o versione successiva, **è necessario** disporre della versione SDK 4.13.8 o successiva.
+   Per iOS 11 o versione successiva, **è richiesta** la versione SDK 4.13.8 o successiva.
 
 * Nella versione 4.2 dell&#39;SDK e nelle versioni successive, tutti gli hit vengono inviati tramite HTTP POST.
 
