@@ -2,25 +2,25 @@
 description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
 keywords: mobile
 seo-description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
-seo-title: Rapporto Action Paths (Percorsi azione)
+seo-title: Rapporto Percorsi azione
 solution: Experience Cloud,Analytics
-title: Rapporto Action Paths (Percorsi azione)
+title: Rapporto Percorsi azione
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Rapporto Action Paths (Percorsi azione){#action-paths}
+# Rapporto Percorsi azione {#action-paths}
 
 Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
 
-I rapporti **[!UICONTROL Percorsi di visualizzazione]** e **[!UICONTROL Percorsi azione]** sono entrambi rapporti relativi ai percorsi. Il rapporto **[!UICONTROL Percorsi di visualizzazione]** ti permette di vedere come gli utenti si spostano nell’app passando da una schermata all’altra. Il rapporto **[!UICONTROL Percorsi azione]** mostra la sequenza di eventi e di azioni (clic, selezioni, ridimensionamento ecc.) eseguite dagli utenti nell’app.
+I rapporti **[!UICONTROL Percorsi di visualizzazione]** e **[!UICONTROL Percorsi azione]** sono entrambi relativi ai percorsi. Il rapporto **[!UICONTROL Percorsi di visualizzazione]** ti permette di vedere come gli utenti si spostano nell’app passando da una schermata all’altra. Il rapporto **[!UICONTROL Percorsi azione]** mostra la sequenza di eventi e di azioni (clic, selezioni, ridimensionamento ecc.) eseguite dagli utenti nell’app.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Per visualizzare le opzioni di modifica del grafico, fai clic su un nodo e poi s
 
 ![](assets/action_paths_icons.png)
 
-To expand, click the **[!UICONTROL +]** icon. Questa opzione visualizza i percorsi aggiuntivi che entrano o escono dal nodo. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la scelta di una foto (l’elemento che abbiamo espanso), lo stato 3 include quattro percorsi differenti che sono stati seguiti dagli utenti:
+Per espandere, fai clic sull’icona **[!UICONTROL +]**. Questa opzione visualizza i percorsi aggiuntivi in entrata o in uscita rispetto al nodo. Nell’illustrazione seguente, lo stato 1 è l’avvio dell’app, lo stato 2 è la scelta di una foto (l’elemento che abbiamo espanso), lo stato 3 include quattro percorsi differenti che sono stati seguiti dagli utenti:
 
 * Selezione di un elemento
 * Aggiunta di un elemento
@@ -73,7 +73,7 @@ Per questo rapporto puoi configurare le seguenti opzioni:
 
 * **[!UICONTROL Personalizza]**
 
-   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]**, aggiungere metriche e filtri, aggiungere serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
+   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]** e aggiungere metriche e filtri, serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
