@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Metriche banner
 topic: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
 ht-degree: 100%
 
@@ -30,4 +30,4 @@ Per impostazione predefinita, questo rapporto contiene le metriche seguenti:
 * **[!UICONTROL Clic su banner]**: il numero di volte in cui gli utenti hanno fatto clic sul banner.
 * **[!UICONTROL Impression banner]**: il numero di volte in cui il banner è stato visualizzato (o era visibile) in una pagina di un browser.
 
-Questo rapporto è simile al rapporto **[!UICONTROL Tecnologia]**. Per informazioni su come consultare e utilizzare i rapporti sunburst; aggiungere suddivisioni e metriche, creare attività target, creare filtri fissi e condividere i rapporti, vedi [Tecnologia](/help/using/usage/reports-technology.md). Le informazioni contenute in questo argomento possono essere utilizzate per personalizzare il rapporto **[!UICONTROL Metriche banner]**.
+Questo rapporto è simile al rapporto **[!UICONTROL Tecnologia]**. Per informazioni su come consultare e utilizzare i rapporti sunburst, aggiungere suddivisioni e metriche, creare attività target, creare filtri fissi e condividere i rapporti, vedi [Tecnologia](/help/using/usage/reports-technology.md). Le informazioni contenute in questo argomento possono essere utilizzate per personalizzare il rapporto **[!UICONTROL Metriche banner]**.
