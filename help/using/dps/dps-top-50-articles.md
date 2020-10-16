@@ -7,18 +7,18 @@ solution: Experience Cloud,Analytics
 title: Primi 50 articoli
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
 ---
 
 
-# Primi 50 articoli, rapporto{#top-articles}
+# Primi 50 articoli, rapporto {#top-articles}
 
-Il rapporto **[!UICONTROL Primi 50 articoli]** visualizza un grafico a barre e una classifica degli articoli più letti utilizzando l’app. Questo rapporto è disponibile solo per i clienti DPS.
+Il rapporto **[!UICONTROL Primi 50 articoli]** presenta un grafico a barre e una classifica degli articoli più letti utilizzando l’app. Questo rapporto è disponibile solo per i clienti DPS.
 
 Anche se il rapporto predefinito visualizza i dati per gli ultimi 30 giorni raggruppati per numero di lettori, può essere personalizzato nel modo desiderato.
 
@@ -33,7 +33,7 @@ Fai clic sull’icona **[!UICONTROL Calendario]** per selezionare un periodo di 
 
 * **[!UICONTROL Personalizza]**
 
-   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]**, aggiungere metriche e filtri, aggiungere serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
+   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]** e aggiungere metriche e filtri, serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
 
 * **[!UICONTROL Filtro]**
 
