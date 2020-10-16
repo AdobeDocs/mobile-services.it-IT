@@ -1,6 +1,6 @@
 ---
-description: Queste informazioni sono utili per usare l’SDK per iOS con  Adobe Analytics.
-seo-description: Queste informazioni sono utili per usare l’SDK per iOS con  Adobe Analytics.
+description: Informazioni utili per usare l’SDK per iOS con Adobe Analytics.
+seo-description: Informazioni utili per usare l’SDK per iOS con Adobe Analytics.
 seo-title: Panoramica di Analytics
 solution: Experience Cloud,Analytics
 title: Panoramica di Analytics
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -28,18 +28,18 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Generazione di identificativi di tracciamento di Analytics
+## Generazione di identificatori di tracciamento di Analytics
 
-Negli SDK, gli identificatori vengono utilizzati per monitorare gli utenti, ed ecco la gerarchia di identificatori:
+Negli SDK, gli identificatori vengono utilizzati per monitorare gli utenti. La gerarchia di identificatori è riportata di seguito:
 
 1. Identificatore visitatore personalizzato (VID)
-1. Identificatore tracciamento analisi (AID)
-1.  ID Experience Cloud (MID)
+1. Identificatore di tracciamento Analytics (AID)
+1.  Identificatore Experience Cloud (MID)
 
 >[!TIP]
 >
 >L’acronimo corretto per l’identificatore di Experience Cloud è ECID. MID è l’acronimo obsoleto, anche se gli SDK lo usano ancora.
 
-L’AID, a cui talvolta si fa riferimento come identificativo di monitoraggio, viene generato dall’SDK quando l’applicazione non è configurata per l’utilizzo di un MID. Il valore viene mantenuto tra i lanci e gli aggiornamenti dell’app in `NSUserDefaults`: Se l’utente elimina l’app dal proprio dispositivo e successivamente la reinstalla, o se lo sviluppatore dell’app cancella `NSUserDefaults`, un nuovo identificativo viene generato dall’SDK. Questo processo genera un nuovo utente nel reporting di Analytics.
+L’AID, a cui talvolta si fa riferimento come identificativo di monitoraggio, viene generato dall’SDK quando l’applicazione non è configurata per l’utilizzo di un MID. Il valore viene mantenuto tra i lanci e gli aggiornamenti dell’app in `NSUserDefaults`: Se l’utente elimina l’app dal proprio dispositivo e successivamente la reinstalla, o se lo sviluppatore dell’app cancella `NSUserDefaults`, un nuovo identificativo viene generato dall’SDK. Questo processo determina un nuovo utente nei rapporti di Analytics.
 
-Per gli utenti in un&#39;app che introduce il supporto per il servizio di identità (MID), i valori AID esistenti vengono inviati con hit Analytics, e l&#39;hit Analytics contiene un AID e un MID. Per i nuovi utenti in un&#39;app con supporto del servizio Identità, le richieste di Analytics contengono solo un MID. Per ulteriori informazioni sull’identificazione dei visitatori, consulta [Identificazione dei visitatori](https://docs.adobe.com/content/help/it-IT/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
+Per gli utenti di un’app in cui viene introdotto il supporto del servizio di identità (MID), i valori AID esistenti vengono inviati con hit di Analytics contenenti un AID e un MID. Per i nuovi utenti di un’app che supporta il servizio Identità, le richieste di Analytics contengono solo un MID. Per ulteriori informazioni sull’identificazione dei visitatori, consulta [Identificazione dei visitatori](https://docs.adobe.com/content/help/it-IT/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
