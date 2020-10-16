@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapporto Funnel
 topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Rapporto Funnel{#funnel}
+# Rapporto Funnel {#funnel}
 
 Un rapporto **[!UICONTROL Funnel]** indica dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto **[!UICONTROL funnel]** anche per confrontare le azioni di segmenti diversi.
 
@@ -38,11 +38,11 @@ Le sezioni della finestra Personalizza indicano che l’utente ha avviato l’ap
 
 Per generare il rapporto, fai clic su **[!UICONTROL Esegui]**.
 
-Esempio di un rapporto generato:
+Ecco un esempio di rapporto generato:
 
 ![](assets/funnel.png)
 
-La prima serie mostra che il 100% degli utenti ha avviato l’app. La seconda serie mostra che una percentuale più elevata di utenti Android ha aggiunto una foto dalla galleria. La terza serie mostra che quasi metà degli utenti iOS ha condiviso la foto, ma nessuno degli utenti Android ha condiviso la foto. Questo dato potrebbe indicare un problema dell’app che sarà bene approfondire.
+La prima serie mostra che il 100% degli utenti ha avviato l’app. La seconda serie mostra che una percentuale più elevata di utenti Android ha aggiunto una foto dalla galleria. La terza serie mostra che quasi metà degli utenti iOS ha condiviso la foto, mentre nessuno degli utenti Android lo ha fatto. Questo dato potrebbe indicare un problema dell’app che sarà bene approfondire.
 
 Per visualizzare ulteriori informazioni, passa il mouse su una barra del grafico.
 
@@ -53,7 +53,7 @@ Per questo rapporto puoi configurare le seguenti opzioni:
    Fai clic sull’icona **[!UICONTROL Calendario]** per selezionare un periodo di tempo personalizzato o per sceglierne uno preimpostato dall’elenco a discesa.
 * **[!UICONTROL Personalizza]**
 
-   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]**, aggiungere metriche e filtri, aggiungere serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
+   Per personalizzare i rapporti, puoi modificare le opzioni **[!UICONTROL Mostra per]** e aggiungere metriche e filtri, serie (metriche) supplementari e altri elementi. Per ulteriori informazioni, vedi [Personalizzare i rapporti](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filtro]**
 
    Fai clic su **[!UICONTROL Filtro]** per creare un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso. Per ulteriori informazioni, consulta [Aggiungere un filtro fisso](/help/using/usage/reports-customize/t-sticky-filter.md).
