@@ -1,25 +1,25 @@
 ---
-description: Queste informazioni sono utili per configurare l'estensione Android, che consente di raccogliere dati dall'app Android Wearable.
-seo-description: Queste informazioni sono utili per configurare l'estensione Android, che consente di raccogliere dati dall'app Android Wearable.
-seo-title: 'Wearable Android: note aggiuntive'
+description: Informazioni utili per configurare l’estensione Android, che consente di raccogliere dati dall’app Android Wearable.
+seo-description: Informazioni utili per configurare l’estensione Android, che consente di raccogliere dati dall’app Android Wearable.
+seo-title: Wearable Android - Note aggiuntive
 solution: Experience Cloud,Analytics
-title: 'Wearable Android: note aggiuntive'
+title: Wearable Android - Note aggiuntive
 topic: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '161'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 
-# Wearable Android: note aggiuntive{#android-wearables-additional-notes}
+# Wearable Android: note aggiuntive {#android-wearables-additional-notes}
 
-Queste informazioni sono utili per configurare l&#39;estensione Android, che consente di raccogliere dati dall&#39;app Android Wearable.
+Informazioni utili per configurare l’estensione Android, che consente di raccogliere dati dall’app Android Wearable.
 
-* L&#39;estensione  Adobe Mobile Android Wearable richiede la versione Android 4.4 (KitKat) o superiore.
+* L’estensione Adobe Mobile per Android Wearable richiede la versione Android 4.4 (KitKat) o superiore.
 * Esiste un valore contestuale aggiuntivo, `A.RunMode`, che è stato aggiunto per indicare se i dati provengono dall&#39;app contenente o dall&#39;o estensione.
 
    * `RunMode` = `Application`
