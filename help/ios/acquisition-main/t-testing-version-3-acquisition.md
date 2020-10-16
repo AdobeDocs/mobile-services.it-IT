@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
 seo-description: Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull'impronta digitale di un dispositivo.
-seo-title: Verifica dell'acquisizione V3
+seo-title: Verifica dell’acquisizione V3
 solution: Experience Cloud,Analytics
-title: Verifica dell'acquisizione V3
+title: Verifica dell’acquisizione V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Verifica dell’acquisizione V3{#testing-v-acquisition}
+# Verifica dell’acquisizione V3 {#testing-v-acquisition}
 
 Queste informazioni sono utili per eseguire un ciclo completo di verifica per il collegamento di una campagna di acquisizione V3 basata sull&#39;impronta digitale di un dispositivo.
 
@@ -66,7 +66,7 @@ Se l&#39;app per dispositivi mobili non è ancora disponibile nell&#39;App Store
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Se i registri di cui sopra non compaiono, accertati di aver completato i passaggi 4 e 5.
+   In caso contrario, assicurati di aver completato i passaggi 4 e 5.
 
    Seguono alcune informazioni su possibili errori:
 
