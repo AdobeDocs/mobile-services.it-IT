@@ -1,22 +1,22 @@
 ---
-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
+description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti profondi nella tua app mobile o sul tuo sito web.
 keywords: mobile
-seo-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
+seo-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti profondi nella tua app mobile o sul tuo sito web.
 seo-title: Creare o modificare collegamenti di marketing
 solution: Experience Cloud,Analytics
 title: Creare o modificare collegamenti di marketing
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Creare o modificare collegamenti di marketing{#create-or-edit-marketing-links}
+# Creare o modificare collegamenti di marketing {#create-or-edit-marketing-links}
 
 Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web. Per ulteriori informazioni, consulta [Collegamenti universali Apple e Collegamenti app Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
@@ -34,11 +34,11 @@ Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti 
 
    * **[!UICONTROL Codice di tracciamento univoco]**:
 
-      (**Obbligatorio**) Specifica il codice di tracciamento desiderato o fai clic su ![genera icona](assets/icon_generate.png) per creare un nuovo codice di tracciamento. Puoi visualizzare i rapporti che forniscono informazioni dettagliate sull’utilizzo del codice di tracciamento.
+      (**Obbligatorio**) Specifica il codice di tracciamento desiderato o fai clic su ( ![genera icona](assets/icon_generate.png) ) per creare un nuovo codice di tracciamento. Puoi visualizzare i rapporti che forniscono informazioni dettagliate sull’utilizzo del codice di tracciamento.
 
    * **[!UICONTROL Aggiungi dati contestuali tracciamento]**:
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Nell’elenco a discesa **[!UICONTROL Dati contestuali personalizzati]**, seleziona un tag predefinito o uno dei tuoi tag personalizzati. I dati contestuali vengono utilizzati per registrare quando viene distribuito il collegamento di marketing.
+      (**Facoltativo**) Fai clic sull’icona **[!UICONTROL +]** e digita le informazioni richieste per tracciare la campagna utilizzando i dati contestuali. Nell’elenco a discesa **[!UICONTROL Dati contestuali personalizzati]**, seleziona un tag predefinito o uno dei tuoi tag personalizzati. I dati contestuali vengono utilizzati per registrare quando viene distribuito il collegamento di marketing.
 
       Sono disponibili i seguenti tag preimpostati:
 
@@ -59,7 +59,7 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
 1. Fai clic su **[!UICONTROL Salva]**.
 1. Digita le informazioni nei campi seguenti:
 
-   * **(Obbligatorio)** In **[!UICONTROL URL di fallback]**, specifica l’URL a cui vengono indirizzati gli utenti quando una destinazione non trova corrispondenza (ad esempio, se l’utente è su un sistema desktop o altra piattaforma che non soddisfa una regola di destinazione).
+   * **(Obbligatorio)** In **[!UICONTROL URL di fallback]**, specifica l’URL a cui vengono indirizzati gli utenti quando una destinazione non trova corrispondenza (ad esempio, se l’utente usa un sistema desktop o altra piattaforma che non soddisfa una regola di destinazione).
    * In **[!UICONTROL Opzioni collegamento di marketing]**, seleziona **[!UICONTROL Interstiziali]** o **[!UICONTROL Collegamenti universali o alle app]**.
 
       Per ulteriori informazioni, vedi [Interstiziali](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) o [Collegamenti universali Apple e collegamenti alle app Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
@@ -70,12 +70,12 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
 
    (**Facoltativo**) Nelle situazioni in cui sono presenti più destinazioni, gli utenti possono essere indirizzati a seconda che abbiano installato un’app mobile o meno. Se l’app è installata, viene visualizzata una pagina di destinazione interstiziale.
 
-   Per ulteriori informazioni, vedi  [Interstiziali](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
+   Per ulteriori informazioni, vedi   [Interstiziali](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
 1. Fai clic su **[!UICONTROL Salva]** e poi su **[!UICONTROL Avanti]**.
 1. Nella pagina Destinazione, configura il collegamento.
 
-   1. Fai clic sull’icona **[!UICONTROL Decisione]** (![icona decisione](assets/icon_decision.png)) e seleziona una delle posizioni di decisione seguenti:
+   1. Fai clic sull’icona **[!UICONTROL Decisione]** ( ![icona decisione](assets/icon_decision.png) ) e seleziona una delle posizioni di decisione seguenti:
 
       * **[!UICONTROL Aggiungi decisione]**
       * **[!UICONTROL Aggiungi percorso]**
@@ -85,10 +85,10 @@ Specifica i termini a pagamento o altri termini di ricerca per l’annuncio.
 
          I sistemi operativi supportati sono: iOS, Android, AMX e altri.
 
-      * **[!UICONTROL Device Type]**
+      * **[!UICONTROL Tipo di dispositivo]**
 
          I tipi di dispositivi possono essere desktop, eReader, console giochi, telefoni cellulari, decoder e altri.
-   1. Fai clic sull’icona **[!UICONTROL Destinazione]** (![icona quadrata](assets/icon_square.png)) e seleziona uno dei tipi di destinazione seguenti:
+   1. Fai clic sull’icona **[!UICONTROL Destinazione]** ( ![icona quadrata](assets/icon_square.png) ) e seleziona uno dei tipi di destinazione seguenti:
 
       * **[!UICONTROL App store]**
       * **[!UICONTROL Collegamento web]**
