@@ -1,26 +1,26 @@
 ---
-description: Puoi eliminare uno o più collegamenti di acquisizione se non sono più necessari.
+description: Se non sono più necessari, puoi eliminare uno o più collegamenti di acquisizione.
 keywords: mobile
-seo-description: Puoi eliminare uno o più collegamenti di acquisizione se non sono più necessari.
+seo-description: Se non sono più necessari, puoi eliminare uno o più collegamenti di acquisizione.
 seo-title: Eliminare i collegamenti di acquisizione
 solution: Experience Cloud,Analytics
 title: Eliminare i collegamenti di acquisizione
 topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Eliminare i collegamenti di acquisizione{#delete-acquisition-links}
+# Eliminare i collegamenti di acquisizione {#delete-acquisition-links}
 
 Se non hai più bisogno di collegamenti di acquisizione, puoi eliminarli.
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
+1. Fai clic su **[!UICONTROL Acquisizione]** > **[!UICONTROL Gestione collegamenti di acquisizione]**.
 1. Completa una delle seguenti attività:
 
    * Seleziona la casella di controllo accanto a uno o più collegamenti di acquisizione.
