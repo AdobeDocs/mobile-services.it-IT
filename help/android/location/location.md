@@ -1,15 +1,15 @@
 ---
-description: Queste informazioni aiutano nell'utilizzo della funzione di Posizione nelle app Android.
+description: Informazioni utili per usare la funzione Posizione nelle app Android.
 keywords: android;library;mobile;sdk
-seo-description: Queste informazioni aiutano nell'utilizzo della funzione di Posizione nelle app Android.
+seo-description: Informazioni utili per usare la funzione Posizione nelle app Android.
 seo-title: Panoramica sulla posizione
 solution: Experience Cloud,Analytics
 title: Panoramica sulla posizione
 topic: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 
