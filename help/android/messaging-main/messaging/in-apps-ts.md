@@ -7,22 +7,22 @@ solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi di messaggistica in-app
 topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Risoluzione dei problemi di messaggistica in-app{#troubleshooting-in-app-messaging}
+# Risoluzione dei problemi di messaggistica in-app {#troubleshooting-in-app-messaging}
 
 Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 
 Se hai soddisfatto tutti i requisiti per i messaggi in-app, ma i messaggi non vengono visualizzati, verifica quanto segue:
 
-## La nuova configurazione e il nuovo SDK sono inclusi nell&#39;app?
+## La nuova configurazione e il nuovo SDK sono inclusi nell’app?
 
 Verifica che nella configurazione sia presente una sezione relativa alla [Messaggistica in-app](/help/android/messaging-main/messaging/messaging.md) (file JSON scaricato) o di avere un endpoint remoto per i messaggi, in modo che sia possibile recuperarlo dalla gestione dinamica dei tag.
 
@@ -36,7 +36,7 @@ Assicurati che nel file manifesto sia dichiarato il destinatario della trasmissi
 
 ## Il messaggio è attivo?
 
-Per verificare se il messaggio è attivo, nella pagina Gestisci messaggi in-app, nella colonna **[!UICONTROL Stato]**, controlla l&#39;elenco dei messaggi.
+Per verificare se il messaggio è attivo, passa alla pagina per la gestione dei messaggi in-app e controlla l’elenco dei messaggi nella colonna **[!UICONTROL Stato]**.
 
 ## Osserva le impostazioni *mostra una volta*, *mostra sempre*, *mostra offline* nella scheda Pubblico.
 
@@ -44,7 +44,7 @@ Verifica che queste impostazioni siano impostate nel modo desiderato. Nella sche
 
 ## Se utilizzi un evento di avvio come attivatore...
 
-L&#39;avvio viene attivato solo su una nuova sessione. Per ulteriori informazioni sull&#39;inizio di una sessione, vedi la riga `lifecycleTimeout` nel [file di configurazione JSON](/help/android/configuration/json-config/json-config.md).
+L’avvio viene attivato solo su una nuova sessione. Per ulteriori informazioni sull&#39;inizio di una sessione, vedi la riga `lifecycleTimeout` nel [file di configurazione JSON](/help/android/configuration/json-config/json-config.md).
 
 ## Ho aggiornato il mio messaggio in remoto, ma l&#39;app visualizza ancora il messaggio precedente.
 
@@ -55,7 +55,7 @@ Considerazioni da ricordare:
 
 Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
-## La mia immagine non rientra esattamente nello spazio disponibile nel modello.
+## L’immagine non rientra esattamente nello spazio disponibile nel modello.
 
 Il modello a schermo intero per i messaggi in-app supporta la visualizzazione di un’immagine da un server remoto (URL immagine) o dal pacchetto dell’app (immagine nel pacchetto). L&#39;immagine deve essere in un formato grafico standard, ad esempio JPG, GIF o PNG. Poiché gli schermi dei dispositivi hanno dimensioni diverse, è probabile che l&#39;immagine non rientri perfettamente nello spazio disponibile nel modello. Nel modello viene data precedenza al centro dell&#39;immagine; se questa non rientra completamente, i lati vengono ritagliati (per le immagini in verticale) o sfumati (per le immagini in orizzontale).
 
