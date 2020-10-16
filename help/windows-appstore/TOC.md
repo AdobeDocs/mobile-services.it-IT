@@ -3,11 +3,11 @@ product: mobile-services
 audience: end-user
 user-guide-title: SDK di Mobile Services per Windows 8.1 Universal App Store
 breadcrumb-title: Windows 8.1 Universal App Store SDK
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: ht
-source-wordcount: '78'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '83'
+ht-degree: 93%
 
 ---
 
