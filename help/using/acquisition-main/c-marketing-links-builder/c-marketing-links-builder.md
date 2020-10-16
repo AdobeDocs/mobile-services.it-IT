@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Marketing Links Builder
 topic: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
 
 
-# Marketing Links Builder{#marketing-links-builder}
+# Marketing Links Builder {#marketing-links-builder}
 
 Questa funzione permette di creare collegamenti di marketing che indirizzano gli utenti agli app store e a destinazioni in app o collegamenti web. Gli addetti al marketing possono scegliere le destinazioni in base a regole quali il tipo di dispositivo o il sistema operativo dell’utente.
 
