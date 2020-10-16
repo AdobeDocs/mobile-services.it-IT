@@ -6,24 +6,24 @@ solution: Experience Cloud,Analytics
 title: Geolocalizzazione e punti di interesse
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # Geolocalizzazione e punti di interesse {#geo-location-and-points-of-interest}
 
-Le geolocalità permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
+La geolocalizzazione permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
 
 Ogni chiamata `trackLocation` invia i seguenti dati:
 
 * Latitudine, longitudine e posizione in un punto di interesse (POI) definito in Adobe Mobile Services.
 
-   Queste informazioni vengono trasmesse alle variabili della soluzione mobile per il reporting automatico.
+   Queste informazioni vengono passate alle variabili della soluzione mobile per la generazione automatica dei rapporti.
 
 * Distanza dal centro e precisione passate come dati contestuali.
 
@@ -83,9 +83,9 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate:
 
 ## Dati contestuali sulla posizione {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-Latitudine e longitudine vengono inviati utilizzando tre diversi parametri di dati contestuali, ciascuno dei quali rappresenta un diverso livello di precisione, per un totale di sei parametri di dati contestuali.
+I dati di latitudine e longitudine vengono inviati con tre diversi parametri di dati contestuali, ciascuno dei quali rappresenta un diverso livello di precisione, per un totale di sei parametri di dati contestuali.
 
-Ad esempio, le coordinate lat = 40.93231, lon = -111.93152 rappresentano una posizione con precisione di 1 m. Questa posizione viene divisa in base al livello di precisione tra le seguenti variabili:
+Ad esempio, le coordinate lat = 40.93231, lon = -111.93152 rappresentano una posizione con precisione pari a 1 metro. Questa posizione viene divisa in base al livello di precisione tra le seguenti variabili:
 
 * `a.loc.lat.a` = 040,9
 * `a.loc.lat.b` = 32
@@ -115,5 +115,5 @@ Considerazioni da ricordare:
 
 * Quando i diametri di due POI si sovrappongono, viene usato il primo POI che contiene la posizione corrente.
 
-   Se i POI si sovrappongono, elencare i POI in ordine dal più dettagliato al meno dettagliato, per fare in modo che venga trasmesso il POI più dettagliato.
+   Se i punti di interesse si sovrappongono, elencali in ordine dal più dettagliato al meno dettagliato, affinché venga trasmesso il POI più dettagliato.
 
