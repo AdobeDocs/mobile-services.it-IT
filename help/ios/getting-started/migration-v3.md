@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Migrazione alla libreria iOS 4.x
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Migrazione alla libreria iOS 4.x{#migrating-to-the-x-ios-library}
+# Migrazione alla libreria iOS 4.x {#migrating-to-the-x-ios-library}
 
 Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
 
@@ -27,15 +27,15 @@ Nella versione 4.x della libreria SDK iOS, i metodi pubblici sono consolidati in
 
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
+Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo.
 
-   Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+   Questi valori verranno inclusi nei rapporti solo dopo che saranno stati mappati mediante le regole di elaborazione.
 
 >[!TIP]
 >
@@ -77,7 +77,7 @@ Il nuovo file `ADBMobileConfig.json` contiene impostazioni globali specifiche pe
 Per spostare il file di configurazione:
 
 1. Sposta il valore impostato per la variabile della prima colonna alla variabile della seconda colonna.
-1. Rimuovete dal codice la vecchia variabile di configurazione.
+1. Rimuovi dal codice la recedente variabile di configurazione.
 
 ### Informazioni sulla migrazione
 
@@ -85,7 +85,7 @@ Nella tabella seguente sono elencate le variabili di configurazione che devi spo
 
 #### Migrazione dalla versione 3.x
 
-Sposta il valore dalla prima colonna alla variabile della seconda colonna.
+Sposta il valore riportato nella prima colonna alla variabile della seconda colonna.
 
 | Variabile di configurazione | Variabile nel file `ADBMobileConfig.json` |
 |--- |--- |
@@ -96,33 +96,33 @@ Sposta il valore dalla prima colonna alla variabile della seconda colonna.
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Rimuovi, non più utilizzato. |
-| linkTrackEvents | Rimuovi, non più utilizzato. |
+| linkTrackVars | Rimuovi, non più in uso. |
+| linkTrackEvents | Rimuovi, non più in uso. |
 
 
 #### Migrazione dalla versione 2.x
 
-Sposta il valore dalla prima colonna alla variabile della seconda colonna.
+Sposta il valore riportato nella prima colonna alla variabile della seconda colonna.
 
 | Variabile di configurazione | Variabile nel file `ADBMobileConfig.json` |
 |--- |--- |
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot;, rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto automaticamente in base all&#39;impostazione &quot;ssl&quot;. |
-| trackingServerSecure | Rimuovi. Per le connessioni sicure, definite &quot;server&quot; e abilitate &quot;ssl&quot;. |
+| trackingServer | &quot;server&quot;, rimuovi il prefisso `"https://"`. Il prefisso del protocollo viene aggiunto automaticamente in base all’impostazione &quot;ssl&quot;. |
+| trackingServerSecure | Rimuovi. Per le connessioni sicure, definisci &quot;server&quot; e quindi abilita &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Rimuovi, non più utilizzato. |
-| linkTrackEvents | Rimuovi, non più utilizzato. |
-| timestamp | Rimuovi, non è più configurabile. |
-| dc | Rimuovi, non più utilizzato. |
-| userAgent | Rimuovi, non è più configurabile. |
-| dynamicVariablePrefix | Rimuovi, non più utilizzato. |
-| visitorNamespace | Rimuovi, non più utilizzato. |
-| usePlugins | Rimuovi, non più utilizzato. |
-| useBestPractices tutte le chiamate alla misurazione churn ( getChurnInstance ) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
+| linkTrackVars | Rimuovi, non più in uso. |
+| linkTrackEvents | Rimuovi, non più in uso. |
+| timestamp | Rimuovi, non più configurabile. |
+| dc | Rimuovi, non più in uso. |
+| userAgent | Rimuovi, non più configurabile. |
+| dynamicVariablePrefix | Rimuovi, non più in uso. |
+| visitorNamespace | Rimuovi, non più in uso. |
+| usePlugins | Rimuovi, non più in uso. |
+| useBestPractices, tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
 
 
 ## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
@@ -139,21 +139,21 @@ Il parametro `data` di entrambi questi metodi è un dizionario `NSDictionary` co
 
 ### Eventi, prop, eVar
 
-Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L&#39;SDK utilizza ora i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili di Analytics per la creazione di report.
+Nella versione 4, non è più possibile assegnare direttamente nell’app variabili quali eventi, eVar, prop, eredi ed elenchi. L’SDK ora utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono i seguenti vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo.
 
-   Questi valori compariranno nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione. Per ulteriori informazioni, consulta [Regole di elaborazione e dati contestuali](/help/ios/getting-started/proc-rules.md).
+   Questi valori verranno inclusi nei rapporti solo dopo che saranno stati mappati mediante le regole di elaborazione. Per ulteriori informazioni, consulta [Regole di elaborazione e dati contestuali](/help/ios/getting-started/proc-rules.md).
 
-Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti al dizionario `data``NSDictionary`. È quindi necessario rimuovere tutte le chiamate a `setProp`, `setEvar` e le assegnazioni a dati contestuali persistenti; i relativi valori devono essere aggiunti al parametro `data`.
+Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti al dizionario `data` `NSDictionary`. È quindi necessario rimuovere tutte le chiamate a `setProp`, `setEvar` e le assegnazioni a dati contestuali persistenti; i relativi valori devono essere aggiunti al parametro `data`.
 
 ### AppSection/Server, GeoZip, transaction ID, Campaign e altre variabili standard
 
-I dati che precedentemente impostavi sull&#39;oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti al dizionario `data``NSDictionary`. L&#39;unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
+I dati che precedentemente impostavi sull&#39;oggetto di misurazione, comprese le variabili elencate qui sopra, devono essere aggiunti al dizionario `data` `NSDictionary`. L&#39;unico dato che viene inviato con una chiamata `trackState` o `trackAction` è il payload nel parametro `data`.
 
 ### Sostituire le chiamate di tracciamento
 
@@ -192,7 +192,7 @@ Nel codice, devi rimuovere le chiamate ai seguenti metodi:
 * `forceOffline`
 * `forceOnline`
 
-## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 
