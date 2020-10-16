@@ -2,21 +2,21 @@
 description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
 keywords: mobile
 seo-description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
-seo-title: Pianificazione messaggio push
+seo-title: Pianificazione - Messaggi push
 solution: Experience Cloud,Analytics
-title: Pianificazione messaggio push
+title: Pianificazione - Messaggi push
 topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
-# Pianificazione: messaggi push{#schedule-push-message}
+# Pianificazione: messaggi push {#schedule-push-message}
 
 Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
 
@@ -30,7 +30,7 @@ Considerazioni da ricordare:
 
 * Puoi modificare un messaggio pianificato nei modi seguenti:
 
-   * Modifica una data con una data successiva.
+   * Modificano una data con una data successiva.
    * Modificando l’intervallo di ripetizione.
 
       Ad esempio, se il messaggio originale era stato inviato ogni giorno, puoi impostare la ricorrenza settimanale.
@@ -51,18 +51,18 @@ Considerazioni da ricordare:
 
 * I messaggi push vengono pianificati e inviati in base all’Ora di Greenwich (GMT).
 
-   Ad esempio, se hai pianificato un messaggio ricorrente da inviare ogni sabato alle 12:00 (mezzogiorno) **PST**, a partire dal 7 ottobre, il messaggio verrà effettivamente inviato sabato alle 19:00 **GMT**.
+   Ad esempio, se hai pianificato un messaggio ricorrente da inviare ogni sabato alle 12:00 (mezzogiorno) **PST** a partire dal 7 ottobre, il messaggio verrà effettivamente inviato sabato alle 19:00 **GMT**.
 * I messaggi vengono inviati in modo diverso a seconda che vi troviate negli Stati Uniti, in Europa o in Asia.
 
    Ad esempio, se ti trovi a San Jose, California, e pianifichi un messaggio da inviare il ***31 ottobre*** alle 17:30 **PST**, l’invio avverrà effettivamente il ***1° novembre*** alle 00:30 **GMT**. Se sei a Tokyo e pianifichi un messaggio da inviare il ***1° gennaio*** alle 05:30, l’invio avverrà effettivamente il ***31 dicembre*** alle 20:30 **GMT**.
 * I messaggi push vengono inviati un’ora prima o dopo a seconda che sia attiva o meno l’ora legale.
-* Quando guardi il rapporto sui messaggi push, il messaggio viene visualizzato nel fuso orario locale del sistema.
+* Nel rapporto sui messaggi push, il messaggio riporta il fuso orario locale del sistema.
 
    Ad esempio, se l’orario di invio è 12:00 **PST**, anche se il messaggio sarà inviato effettivamente alle 19:00 **GMT**, nel rapporto risulterà inviato alle 12:00 **PST**.
 
 ## Pianificare un messaggio push ricorrente {#section_675BD754E5A04423A1751193698A978F}
 
-1. Nella pagina Pianifica per un nuovo messaggio push, seleziona **[!UICONTROL Pianificato]** o **[!UICONTROL Ora]**.
+1. Nella pagina Pianifica per un nuovo messaggio push, seleziona **[!UICONTROL Pianificato]** oppure **[!UICONTROL Ora]**.
 
    Per ulteriori informazioni, consulta [Creare un messaggio push](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -71,7 +71,7 @@ Considerazioni da ricordare:
    ![](assets/schedule-push-message.png)
 
 1. Se hai selezionato **[!UICONTROL Pianificato]**, fai clic sull’icona del calendario e seleziona o digita una data di inizio.
-1. Digita un&#39;ora. 
+1. Digita un’ora. 
 1. In **[!UICONTROL Ripeti]**, seleziona una delle opzioni seguenti:
 
    * **[!UICONTROL Mai]**
@@ -91,13 +91,13 @@ Considerazioni da ricordare:
 
       Il messaggio viene inviato in formato bozza. Puoi scegliere questa opzione per salvare un messaggio non ancora completato oppure per salvarne una versione provvisoria che dovrà essere modificata e approvata prima dell’attivazione.
 
-      Se hai selezionato **[!UICONTROL Ora]** nel passaggio precedente, la bozza di messaggio viene inviata subito dopo l’attivazione. Se hai selezionato una data e un’ora per l’invio del messaggio push, questo viene inviato di conseguenza.
+      Se hai selezionato **[!UICONTROL Ora]** nel passaggio precedente, la bozza del messaggio viene inviata subito dopo l’attivazione. Se hai selezionato una data e un’ora per l’invio del messaggio push, questo viene inviato di conseguenza.
 
    * **[!UICONTROL Salva e pianifica]**
 
       Il messaggio viene inviato nel giorno e all’ora pianificati.
 
-Per inviare la bozza di messaggio in un secondo momento, effettua una delle operazioni seguenti:
+Per inviare la bozza del messaggio in un secondo momento, effettua una delle operazioni seguenti:
 
 * Fai clic su **[!UICONTROL Gestione messaggi]**, seleziona la casella di controllo accanto al messaggio e fai clic su **[!UICONTROL Attiva selezionati]**.
 * Fai clic su **[!UICONTROL Salva e invia]** per salvare il messaggio e inviarlo.
