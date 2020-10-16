@@ -5,9 +5,9 @@ seo-title: Adobe Mobile Services
 solution: Experience Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Questa guida illustra la documentazione tecnica e il supporto autonomo di Adobe 
 
 >[!IMPORTANT]
 >
->Lo SKU del componente aggiuntivo Adobe Analytics Mobile Marketing è richiesto per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento diretto, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contatta il tuo CSM Adobe.
+>Lo SKU del componente aggiuntivo Adobe Analytics Mobile Marketing è necessario per consentire a Mobile Services di accedere alle funzionalità di acquisizione mobile, collegamento diretto, geolocalizzazione e messaggistica mobile. Per ulteriori informazioni, contatta il tuo CSM Adobe.
 
 ## Annuncio della fine del supporto per gli SDK 4x
 
@@ -36,7 +36,7 @@ Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi 
 
 A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
-* Per iniziare, vai su Launch.
+* Per iniziare, passa a Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -54,7 +54,7 @@ Per le ultime note sulla versione, vedi [Note sulla versione di Experience Cloud
 Di seguito sono riportati alcuni degli argomenti più comuni in questa guida:
 
 * [Introduzione](/help/using/gs/gs.md)
-* [Accesso in corso](/help/using/gs/gs-signin.md)
+* [Accesso](/help/using/gs/gs-signin.md)
 * [Ruoli e autorizzazioni](/help/using/gs/c-mob-roles-and-permissions.md)
 * [Metriche di Mobile](/help/using/gs/metrics/metrics.md)
 * [Messaggistica](/help/using/in-app-messaging/in-app-messaging.md)
@@ -66,7 +66,7 @@ Di seguito sono riportati alcuni degli argomenti più comuni in questa guida:
 
 Di seguito sono riportati alcuni collegamenti per aiutare gli sviluppatori:
 
-* [Download di strumenti ed SDK per dispositivi mobili](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
+* [Download di strumenti e SDK per dispositivi mobili](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
 * [Sviluppatore](https://docs.adobe.com/content/help/it-IT/analytics/implementation/home.html)
 
 ## Risorse della community
@@ -85,7 +85,7 @@ Oltre alla guida per l’utente, puoi scaricare gli SDK (Software Development Ki
 
 Sono disponibili librerie native per le seguenti piattaforme:
 
-* [Android SDK 4.x per soluzioni Experience Cloud](/help/android/overview.md)
+* [SDK 4.x per Android per le soluzioni Experience Cloud](/help/android/overview.md)
 * [SDK 4.x per iOS per le soluzioni Experience Cloud](/help/ios/overview.md)
 * [Plug-in di Unity per l’SDK 4.x di iOS e Android](/help/unity/get-started.md)
 * [Componenti Xamarin per l’SDK 4.x delle soluzioni Experience Cloud](/help/xamarin/get-started.md)
