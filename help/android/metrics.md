@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Metriche del ciclo di vita
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Metriche del ciclo di vita{#lifecycle-metrics}
+# Metriche del ciclo di vita {#lifecycle-metrics}
 
 In questa sezione vengono fornite informazioni sulle metriche e sulle dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita. Per ulteriori informazioni sulla risoluzione dei problemi, consulta [Risoluzione dei problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
 
@@ -31,11 +31,11 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 ## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Una volta configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell&#39;audience. Analytics e Target usano lo stesso formato, mentre Gestione dell&#39;audience usa un prefisso diverso per ogni metrica.
+Una volta configurate, le metriche del ciclo di vita vengono inviate ad Analytics in parametri di dati contestuali, a Target in parametri con ogni chiamata Mbox e a Audience Manager come segnali. Analytics e Target usano lo stesso formato; la funzione di gestione dell’audience usa invece un prefisso diverso per ogni metrica.
 
 Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita sono acquisiti automaticamente e segnalati mediante l&#39;uso della metrica o della dimensione, con le eccezioni indicate.
 
-### Metrics (Metriche)
+### Metriche
 
 * **Primi avvii**
 
@@ -53,7 +53,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Utenti giornalieri coinvolti**
 
-   Attivazione quando l&#39;applicazione viene utilizzata in un giorno particolare.
+   Attivazione quando l’applicazione viene utilizzata in un giorno particolare.
 
    >[!IMPORTANT]
    >
@@ -75,7 +75,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Avvii**
 
-   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa in background quando viene superato il timeout della sessione del ciclo di vita.
+   Attivazione a ogni esecuzione, comprese quelle a seguito di arresti anomali e installazioni. Questa metrica viene attivata anche in seguito alla ripresa dal background oltre il tempo di timeout della sessione del ciclo di vita.
 
    >[!IMPORTANT]
    >
@@ -117,7 +117,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Numero di avvii**
 
-   Numero di volte per cui l&#39;applicazione è stata avviata o portata in primo piano.
+   Numero di volte per cui l’applicazione è stata avviata o portata in primo piano.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.Launches`
    * Audience Manager: `c_a_Launches`
@@ -129,9 +129,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceFirstUse`
    * Audience Manager: `c_a_DaysSinceFirstUse`
 
-* **Giorni dall&#39;ultimo utilizzo**
+* **Giorni dall’ultimo utilizzo**
 
-   Numero di giorni dall&#39;ultimo utilizzo.
+   Numero di giorni dall’ultimo utilizzo.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUse`
    * Audience Manager: `c_a_DaysSinceLastUse`
@@ -157,9 +157,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
 
-* **Giorni dall&#39;ultimo aggiornamento**
+* **Giorni dall’ultimo aggiornamento**
 
-   Numero di giorni dalla modifica del numero di versione dell&#39;applicazione.
+   Numero di giorni dalla modifica del numero di versione dell’applicazione.
 
    >[!IMPORTANT]
    >
@@ -168,9 +168,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Dati contestuali di Analytics/Parametro di Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
 
-* **Avvii dall&#39;ultimo aggiornamento**
+* **Avvii dall’ultimo aggiornamento**
 
-   Numero di avvii dalla modifica del numero di versione dell&#39;applicazione.
+   Numero di avvii dalla modifica del numero di versione dell’applicazione.
 
    >[!IMPORTANT]
    >
@@ -208,7 +208,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni mobile dai metodi elencati nella colonna **Descrizione**.
 
-### Metrics (Metriche)
+### Metriche
 
 * **Tempo azione totale**
 
@@ -319,21 +319,21 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * **Canale campagna**
 
-   Canale di marketing, ad esempio un banner o un messaggio e-mail. Viene compilata dalla funzione Acquisizione da app mobile.
+   Canale di marketing, ad esempio banner o e-mail. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.medium`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Origine campagna**
 
-   Referente originale, ad esempio una newsletter o un social network. Viene compilata dalla funzione Acquisizione da app mobile.
+   Referente originale, ad esempio newsletter o Social media network. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.source`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_source`
 
 * **Termine campagna**
 
-   Parole chiave a pagamento o altri termini che desideri monitorare con questa acquisizione. Viene compilata dalla funzione Acquisizione da app mobile.
+   Parole chiave a pagamento o altri termini di cui tenere traccia con questa acquisizione. Viene compilata dalla funzione Acquisizione da app mobile.
 
    * Dati contestuali di Analytics/Parametri di Target: `a.referrer.campaign.term`
    * Caratteristiche di Audience Manager: `c_a_referrer_campaign_term`
