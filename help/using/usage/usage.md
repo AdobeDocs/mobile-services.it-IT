@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapporti
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
 
 
-# Rapporti{#reports}
+# Rapporti {#reports}
 
 I rapporti sull’utilizzo visualizzano la lunghezza di sessione media, gli utenti giornalieri e mensili coinvolti, gli aggiornamenti e altre informazioni che ti permettono di comprendere come e quanto spesso viene utilizzata l’app. I rapporti sul mantenimento mostrano rapidamente i livelli di mantenimento degli utenti dopo 1, 7 e 28 giorni dall’avvio iniziale.
 
