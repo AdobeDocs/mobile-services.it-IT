@@ -2,14 +2,14 @@
 description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare varie opzioni avanzate, comprese le opzioni di payload e quelle personalizzate per i dispositivi iOS.'
 keywords: mobile
 seo-description: 'Puoi configurare le opzioni relative all’esperienza dei messaggi push standard e potenziati: nome, testo del messaggio e opzioni di destinazione. Puoi anche configurare varie opzioni avanzate, comprese le opzioni di payload e quelle personalizzate per i dispositivi iOS.'
-seo-title: Esperienza Messaggio push
+seo-title: Esperienza - Messaggio push
 solution: Experience Cloud,Analytics
-title: Esperienza Messaggio push
+title: Esperienza - Messaggio push
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
 ht-degree: 100%
 
@@ -126,7 +126,7 @@ Per configurare un messaggio push nella pagina Esperienza:
    * **[!UICONTROL Anteprima sul tablet di un utente]**
 
       Per visualizzare l’anteprima del messaggio sul tablet di un utente, fai clic sull’icona del ![tablet](assets/icon_tablet.png).
-   Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggi precedente.
+   Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggio precedente.
 
 1. (**Facoltativo**) Fai clic su **[!UICONTROL Prova]** per inviare in push il messaggio a dispositivi specifici a scopo di test.
 1. Seleziona il servizio e digita i token push per almeno un dispositivo al quale vuoi inviare il messaggio push.
