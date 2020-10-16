@@ -1,17 +1,17 @@
 ---
-description: Puoi creare e gestire i punti di interesse, che ti permettono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
+description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 keywords: mobile
-seo-description: Puoi creare e gestire i punti di interesse, che ti permettono di definire posizioni geografiche da utilizzare per correlazioni, come destinazioni di messaggi in-app e così via. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
+seo-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 seo-title: Gestire i punti di interesse
 solution: Experience Cloud,Analytics
 title: Gestire i punti di interesse
 topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -33,17 +33,17 @@ Sul dispositivo dell’utente, affinché un hit possa essere assegnato a un **[!
 Per utilizzare Posizione, completa le seguenti attività:
 
 1. Fai clic sul nome dell’app per visualizzare la pagina Gestione impostazioni app.
-1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
+1. Fai clic su **[!UICONTROL Posizione]** > **[!UICONTROL Gestisci punti di interesse]**.
 
-   ![Risultato passaggio](assets/poi.png)
+   ![Risultato del passaggio](assets/poi.png)
 
 1. Digita le informazioni in ciascuno dei campi seguenti:
 
    * **[!UICONTROL Nome punto]**
 
-      Digita il nome del **[!UICONTROL punto di interesse.]**
+      Digita il nome del **[!UICONTROL punto di interesse]**.
 
-      Può essere il nome di una città, una provincia o una regione. Puoi anche creare **[!UICONTROL punti di interesse]** intorno a posizioni specifiche, ad esempio uno stadio sportivo o un’azienda.
+      Può essere il nome di una città, una provincia o una regione. Puoi anche creare **[!UICONTROL punti di interesse]** per posizioni specifiche, ad esempio uno stadio sportivo o un’azienda.
 
    * **[!UICONTROL Latitudine]**
 
