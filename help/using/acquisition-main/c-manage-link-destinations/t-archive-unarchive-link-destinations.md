@@ -7,23 +7,23 @@ solution: Experience Cloud,Analytics
 title: Gestire le destinazioni dei collegamenti
 topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
 ht-degree: 100%
 
 ---
 
 
-# Gestire le destinazioni dei collegamenti{#manage-link-destinations}
+# Gestire le destinazioni dei collegamenti {#manage-link-destinations}
 
 Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
 
 Per visualizzare la pagina Gestione destinazioni collegamenti:
 
-1. Nell’interfaccia utente di Mobile Services, fai clic su **[!UICONTROL Gestisci app]**.
-1. Nella pagina Informazioni app dell’app, fai clic su **[!UICONTROL Gestisci destinazioni collegamenti]**.
+1. Nell’interfaccia utente di Mobile Services, fai clic su **[!UICONTROL Gestione app]**.
+1. Nella pagina Informazioni app dell’app, fai clic su **[!UICONTROL Gestione destinazioni collegamenti]**.
 
    ![Destinazioni collegamenti](assets/link_destinations_list.png)
 
@@ -49,7 +49,7 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
 
       Per annullare l’archiviazione di una destinazione di collegamento:
 
-      1. fai clic su **[!UICONTROL Visualizza archivio]**.
+      1. Fai clic su **[!UICONTROL Visualizza archivio]**.
       1. Seleziona una o più caselle di controllo accanto ai nomi dei collegamenti da rimuovere dall’archivio.
       1. Fai clic su **[!UICONTROL Annulla archiviazione selezionati]**.
 
