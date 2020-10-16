@@ -2,12 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Guida alla piattaforma Universal Windows Platform di Mobile Services
-breadcrumb-title: Universal Windows Platform Guide
-translation-type: ht
+breadcrumb-title: Guida alla piattaforma UWP
+translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: ht
-source-wordcount: '68'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 94%
 
 ---
 
