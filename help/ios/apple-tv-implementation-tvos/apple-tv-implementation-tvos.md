@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Implementazione Apple TV con tvOS
 topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,13 +30,13 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 ## Panoramica
 
-Con Apple TV, ora è possibile creare applicazioni da eseguire nell&#39;ambiente nativo tvOS. Potete creare un&#39;app nativa utilizzando diversi framework in iOS, oppure potete creare l&#39;app utilizzando modelli XML e JavaScript.
+Con Apple TV, ora è possibile creare applicazioni da eseguire nell’ambiente nativo tvOS. Puoi creare un’app nativa utilizzando diversi framework in iOS, oppure puoi creare l’app utilizzando modelli XML e JavaScript.
 
 >[!TIP]
 >
 >Il supporto per tvOS è disponibile a partire dalla versione 4.7.0 di `AdobeMobileLibrary`.
 
-## Guida introduttiva {#section_CAB40A5B5FC745068C8A5DF8F9AB6199}
+## Introduzione {#section_CAB40A5B5FC745068C8A5DF8F9AB6199}
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Completa i seguenti passaggi nel progetto Xcode:
 
 1. Trascina nel progetto la cartella AdobeMobileLibrary.
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della tua destinazione.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell’app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
@@ -60,7 +60,7 @@ Per informazioni, consulta la documentazione di iOS in [iOS](https://developer.a
 
 1. Trascina nel progetto la cartella `AdobeMobileLibrary`.
 1. Assicurati che il file `ADBMobileConfig.json` sia un membro della tua destinazione.
-1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell&#39;app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** della destinazione dell’app tvOS, espandi la sezione **[!UICONTROL Collega binario a librerie]** e aggiungi le seguenti librerie:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
