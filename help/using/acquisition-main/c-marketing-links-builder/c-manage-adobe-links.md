@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Gestire i collegamenti di marketing
 topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Gestire collegamenti di marketing{#manage-marketing-links}
+# Gestire i collegamenti di marketing {#manage-marketing-links}
 
 Puoi usare la pagina Collegamenti marketing per creare, utilizzare e archiviare i collegamenti di marketing.
 
@@ -28,9 +28,9 @@ Nella pagina Collegamenti marketing, completa le attività seguenti:
 
 * **Visualizzare i collegamenti di marketing**
 
-   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
+   Per visualizzare l’elenco dei collegamenti di marketing, nella home page di Mobile Services fai clic su **[!UICONTROL Acquisizione]** > **[!UICONTROL Collegamenti di marketing]**.
 
-   La colonna **[!UICONTROL Clic]** mostra il numero di utenti che hanno fatto clic sul collegamento di marketing. La colonna **[!UICONTROL Primi avvii]** visualizza il numero di primi avvii dell’app. Questo valore corrisponde al numero di utenti che hanno scelto di installare l’app e di avviarla dopo aver fatto clic sul collegamento di marketing.
+   La colonna **[!UICONTROL Clic]** mostra quanti utenti hanno fatto clic sul collegamento di marketing. La colonna **[!UICONTROL Primi avvii]** visualizza il numero di primi avvii dell’app. Questo valore corrisponde al numero di utenti che hanno scelto di installare l’app e di avviarla dopo aver fatto clic sul collegamento di marketing.
 
 * **Archiviare o annullare l’archiviazione dei collegamenti di marketing**
 
