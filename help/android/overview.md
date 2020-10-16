@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Android SDK 4.x per soluzioni Experience Cloud {#android-sdk-x-for-experience-cloud-solutions}
+# SDK 4.x per Android per le soluzioni Experience Cloud {#android-sdk-x-for-experience-cloud-solutions}
 
 L&#39;SDK 4.x per Android per le soluzioni Experience Cloud consente di misurare le applicazioni native Android, inviare contenuti mirati all&#39;interno dell&#39;app, nonché sfruttare e raccogliere i dati sul pubblico tramite Gestione dell&#39;audience.
 
@@ -35,7 +35,7 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 >[!IMPORTANT]
 >
->Anche se puoi configurare le funzionalità nell&#39;interfaccia utente, non funzioneranno finché non avrai scaricato il file di configurazione generato e aggiunto il file all&#39;SDK. Per informazioni sul download e sulla configurazione degli SDK, vedi [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
+>Anche se puoi configurare le funzionalità nell’interfaccia utente, non funzioneranno finché non avrai scaricato il file di configurazione generato e aggiunto il file all’SDK. Per informazioni sul download e sulla configurazione degli SDK, vedi [Implementazione e ciclo di vita di base](/help/android/getting-started/dev-qs.md).
 
 Gli SDK supportano le seguenti versioni di Android:
 
