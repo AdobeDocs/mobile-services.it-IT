@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Metodi di Analytics
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 * **trackLifetimeValueIncrease:&#x200B;data:**
 
-   Aggiunge al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente un incremento pari a `amount`.
+   Aggiunge al valore “lifetime” del ciclo di vita dell&#39;utente un incremento pari a `amount`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
