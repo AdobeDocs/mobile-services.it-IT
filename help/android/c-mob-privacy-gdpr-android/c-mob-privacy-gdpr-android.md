@@ -4,8 +4,11 @@ seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportan
 seo-title: Panoramica sulla privacy e sul regolamento generale sulla protezione dei dati
 title: Panoramica sulla privacy e sul regolamento generale sulla protezione dei dati
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 78%
 
 ---
 
@@ -14,11 +17,11 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 
-## Nuova versione dell'SDK per dispositivi mobili di Adobe Experience Platform
+## Nuova versione dell&#39;SDK per dispositivi mobili di Adobe Experience Platform
 
-Stai cercando informazioni e documentazione sull’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
+Hai bisogno di informazioni e documentazione relative all’SDK per dispositivi mobili di Adobe Experience Platform? Fai clic [qui](https://aep-sdks.gitbook.io/docs/) per la documentazione più recente.
 
-A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
+A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK. Questi nuovi SDK per dispositivi mobili di Adobe Experience Platform sono configurabili tramite [Experience Platform Launch](https://www.adobe.com/it/experience-platform/launch.html).
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -27,13 +30,13 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell'SDK. Que
 
 >[!IMPORTANT]
 >
->Le funzioni per i requisiti RGPD sono supportate **solo** dall'SDK di Mobile versione 4.16.0 o successiva.
+>Le funzioni per i requisiti RGPD sono supportate **solo** dall&#39;SDK di Mobile versione 4.16.0 o successiva.
 
-Quando fornisce software e servizi a un'azienda, Adobe funge da “responsabile del trattamento” in merito ai dati che elabora e memorizza nell'ambito di tali servizi. In qualità di responsabile del trattamento dei dati, Adobe elabora i dati personali secondo le autorizzazioni e le istruzioni fornite dalla tua azienda (ad esempio, quelli definiti nell'accordo con Adobe).
+Quando  Adobe fornisce software e servizi a un&#39;azienda,  Adobe funge da elaboratore di dati per tutti i dati personali che elabora e archivia nell&#39;ambito della fornitura di tali servizi. In qualità di elaboratore di dati,  Adobe elabora i dati personali in conformità con l&#39;autorizzazione e le istruzioni della tua azienda (ad esempio, come indicato nel tuo contratto con  Adobe).
 
-In qualità di “titolare del trattamento”, puoi usare gli SDK di Adobe Mobile Services per supportare le richieste di recupero e cancellazione dei dati in conformità ai requisiti RGPD provenienti dalle tue applicazioni mobile.
+Come controller di dati, puoi utilizzare  SDK di Mobile Services per supportare il recupero e l&#39;eliminazione di richieste GDPR dalle tue app mobili.
 
-Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile, puoi utilizzare le seguenti impostazioni e metodi:
+Per le aree delle tue applicazioni mobili gestite tramite l&#39;SDK di Adobe Mobile, puoi utilizzare le seguenti impostazioni e metodi:
 
 * Per recuperare i dati dagli SDK e inviarli ai tuoi server, utilizza il metodo `getAllIdentifiersAsync`.
 
@@ -43,4 +46,4 @@ Per le aree delle tue applicazioni mobili gestite tramite l'SDK di Adobe Mobile,
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Per ulteriori informazioni, consulta [Impostazione dello stato di consenso o diniego dell'utente](/help/android/c-mob-privacy-gdpr-android/privacy.md).
+   Per ulteriori informazioni, consulta [Impostazione dello stato di consenso o diniego dell&#39;utente](/help/android/c-mob-privacy-gdpr-android/privacy.md).
