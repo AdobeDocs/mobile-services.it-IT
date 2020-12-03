@@ -4,9 +4,9 @@ seo-description: Con Anteprima Target puoi eseguire facilmente test di controllo
 seo-title: Anteprima Target in iOS
 title: Anteprima Target in iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
