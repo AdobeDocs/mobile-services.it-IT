@@ -15,6 +15,6 @@ ht-degree: 5%
 ---
 
 
-# Configurazione{#configuration}
+# Configurazione {#configuration}
 
 Informazioni utili per configurare l’SDK della piattaforma UWP (Universal Windows Platform), con la configurazione JSON, la gestione degli hit in batch e i metodi SDK.
