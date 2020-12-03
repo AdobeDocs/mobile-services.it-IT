@@ -4,8 +4,11 @@ seo-description: Con Anteprima Target puoi eseguire facilmente test di controllo
 seo-title: Anteprima Target in Android
 title: Anteprima Target in Android
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 87%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 Con Anteprima Target puoi eseguire facilmente test di controllo qualità end-to-end per le attività di Target e vedere in anteprima tali attività sul tuo dispositivo.
 
-Per ulteriori informazioni su come impostare e utilizzare la funzione Anteprima Target, consulta [Anteprima mobile di Target](https://docs.adobe.com/content/help/it-IT/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+For more information on how to set up and use Target Preview, go to [Target Mobile Preview](https://docs.adobe.com/content/help/it-IT/target/using/implement-target/mobile-apps/target-mobile-preview.html).
 
 >[!IMPORTANT]
 >
@@ -22,7 +25,7 @@ Per ulteriori informazioni su come impostare e utilizzare la funzione Anteprima 
 
 * **setPreviewRestartDeeplink**
 
-   Imposta un collegamento profondo per app che verrà attivato quando le selezioni di anteprima sono applicate in modalità Anteprima.
+   Imposta un collegamento diretto all’app che verrà attivato quando le selezioni di anteprima vengono applicate in modalità Anteprima.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
