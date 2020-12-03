@@ -4,8 +4,11 @@ seo-description: Una suite di rapporti virtuale (VRS) è suite di rapporti che �
 seo-title: Suite di rapporti virtuali
 title: Suite di rapporti virtuali
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
@@ -17,9 +20,9 @@ Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata ap
 Le app che utilizzano le VRS si comportano come quelle che usano le normali suite di rapporti, tranne che per la gestione delle seguenti funzionalità:
 
 * Regole di elaborazione
-* eVar/prop/listVar/eventi
+* evar/prop/listVar/eventi
 * Opzione con abilitazione Timestamp
-* Flag di dimensioni (ciclo di vita, posizione ecc.)
+* Flag di Dimension (ciclo di vita, posizione e così via)
 * Classificazioni
 
 Questi valori vengono gestiti nella suite di rapporti principale e sono condivisi con le VRS che appartengono alla stessa suite di rapporti principale.
@@ -55,13 +58,13 @@ Una VRS può essere utile per completare le seguenti attività:
 
 Ogni VRS ha un ID univoco. Per visualizzare l’ID suite di rapporti principali nell’interfaccia utente di Adobe Mobile Services, nella pagina Gestisci impostazioni app, nella sezione **[!UICONTROL Informazioni app]**, fai clic su **[!UICONTROL Maggiori dettagli]**.
 
-Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati relativi a un utente aziendale in Giappone.
+Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati rilevanti per un utente aziendale in Giappone.
 
 >[!TIP]
 >
 >Non è possibile modificare i valori che vengono ereditati dalla suite di rapporti principale.
 
-Una VRS è una definizione di segmento lato server che è associata a una suite di rapporti principale. Di conseguenza, non è possibile eseguire attività di raccolta dati su una VRS, poiché l’SDK invia gli hit solo alla suite di rapporti principale, che a sua volta li registra.
+Una VRS è una definizione di segmento lato server collegata a una suite di rapporti principale. Di conseguenza, non è possibile eseguire attività di raccolta dati su una VRS, poiché l’SDK invia gli hit solo alla suite di rapporti principale, che a sua volta li registra.
 
 ## Suite di rapporti virtuale in Adobe Mobile Services e raccolta dati {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -71,7 +74,7 @@ In Adobe Mobile Services, è possibile creare un’app basata su una suite di ra
 >
 >Le certificazioni push vengono collegate a livello di app nell’interfaccia utente di Mobile Services.
 
-Per assicurare che i messaggi push vengano inviati correttamente, è necessario definire correttamente il segmento di pubblico. Per ulteriori informazioni, vedi  [Pubblico: definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+Per garantire che i messaggi push vengano inviati correttamente, il segmento di pubblico deve essere definito correttamente. For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## Comprensione dei fusi orari {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -83,7 +86,7 @@ Per utilizzare una VRS quando crei un’app, selezionala dall’elenco a discesa
 
 >[!IMPORTANT]
 >
->Per selezionare una VRS dall’elenco, cerca le voci con un pallino blu e la convenzione di denominazione `vrs_` *`<company_name>`* `_` *`<unique name>`*.
+>Per selezionare una VRS dall’elenco, cerca le voci con un pallino blu e la convenzione di denominazione `vrs_` *`<company_name>`*`_`*`<unique name>`*  .
 
 ## Proprietà delle suite di rapporti virtuali {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
@@ -93,7 +96,7 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 >
 >Le proprietà di sola lettura sono ereditate dalla suite di rapporti principale.
 
-| Proprietà | Ereditata dalla suite di rapporti principale | Modificabile? | Note |
+| Proprietà | Ereditato dalla suite di rapporti principale | Modificabile? | Note |
 |--- |--- |--- |--- |
 | `target.clientCode` | No | Sì |  |
 | `target.timeout` | No | Sì |  |
@@ -107,10 +110,10 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 | `analytics.ssl` | No | Sì |  |
 | `analytics.offlineEnabled` | Sì |  |  |
 | `analytics.charset` | Sì | No |  |
-| `analytics.lifecycleTimeout` | No | Sì | Deve essere la suite di rapporti principale, se gli utenti vogliono evitare incoerenze nei loro dati. |
+| `analytics.lifecycleTimeout` | No | Sì | Deve essere la suite di rapporti principale, se gli utenti non desiderano che i loro dati siano incoerenti. |
 | `analytics.privacyDefault` | No | Sì |  |
 | `analytics.batchLimit` | No | Sì |  |
-| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà relativa al fuso orario viene utilizzata per inviare dati a Adobe Analytics ed è diversa dalla proprietà del fuso orario che viene impostata quando crei una VRS. |
+| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà relativa al fuso orario viene utilizzata per inviare dati a  Adobe Analytics ed è diversa dalla proprietà relativa al fuso orario impostata al momento della creazione di una VRS. |
 | `analytics.timezoneOffset` | Sì | No |  |
 | `analytics.referrerTimeout` | No | Sì |  |
 | `analytics.backdateSessionInfo` | Sì | Sì |  |
