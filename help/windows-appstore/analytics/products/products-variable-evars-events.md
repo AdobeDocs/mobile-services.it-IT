@@ -15,7 +15,7 @@ ht-degree: 27%
 ---
 
 
-# Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti{#products-variable-with-merchandising-evars-and-product-specific-events}
+# Variabile &quot;products&quot; con eVar per merchandising ed eventi per singoli prodotti{#products-variable-with-merchandising-evars-and-product-specific-events}
 
 Esempio della variabile &quot;products&quot; con eVar per merchandising ed eventi per singoli prodotti.
 
