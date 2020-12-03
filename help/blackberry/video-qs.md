@@ -1,19 +1,19 @@
 ---
 description: Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 seo-description: Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
-seo-title: Analisi del video
-title: Analisi del video
+seo-title: Analisi dei video
+title: Analisi dei video
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 46%
+ht-degree: 64%
 
 ---
 
 
-# Analisi del video {#video-analytics}
+# Analisi dei video {#video-analytics}
 
 Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
@@ -28,30 +28,30 @@ For more information about Video measurement, see the [Measuring audio and video
    **(Facoltativo)** La variabile Custom Insight fornisce informazioni sul percorso del video.
 
    * Nome variabile:  eVar
-      * Scadenza predefinita: Visita
+      * Scadenza predefinita: visita
       * Custom Insight (s.prop, utilizzato per il percorso del video)
 
 * **a.media.name**
 
    (**Facoltativo**) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile da ClientCare.
 
-   * Tipo evento: Insight personalizzato (s.prop)
+   * Tipo evento: Custom Insight (s.prop)
    * Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato.
+   (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato.
 
    For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Il metodo di raccolta dei dati video predefinito raccoglie i dati ai punti di inizio video (riproduzione), inizio segmento e fine video (arresto).
 
-   Analytics conta la visualizzazione del primo segmento all&#39;inizio del segmento, quando il visitatore inizia a guardarlo. Il segmento successivo viene visualizzato all&#39;inizio del segmento.
+   Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non deve essere riservata esclusivamente al tracciamento video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e quindi calcolare i tassi di conversione del video.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e quindi calcolare i tassi di conversione del video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -65,21 +65,21 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.view**
 
-   Indica che un visitatore ha visualizzato una parte del video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
+   Indica che un visitatore ha visualizzato una parte del video. Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a.media.segmentView**
 
-   Indica che un visitatore ha visualizzato una parte di un segmento video. Tuttavia, non fornisce alcuna informazione sulla quantità o sulla parte di video visualizzata dal visitatore.
+   Indica che un visitatore ha visualizzato una parte di un segmento di video. Tuttavia, non fornisce informazioni sulla durata della visualizzazione o sulla parte di video visualizzata dal visitatore.
 
    * Tipo di variabile: Event
    * Tipo: contatore
 
 * **a .media.complete**
 
-   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, potete specificare quanti secondi dalla fine del video considerare una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
+   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
 
    * Tipo di variabile: Event
    * Tipo: contatore
