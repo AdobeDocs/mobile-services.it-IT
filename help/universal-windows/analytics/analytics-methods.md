@@ -104,7 +104,7 @@ If `state` is empty, it displays as &quot;app name app version (build)&quot; in 
 
 * **TrackLifetime &#x200B; ValueIncrease (winJS: trackLifetime &#x200B; ValueIncrease)**
 
-   Aggiunge al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente un incremento pari a `amount`.
+   Aggiunge al valore “lifetime” del ciclo di vita dell&#39;utente un incremento pari a `amount`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
