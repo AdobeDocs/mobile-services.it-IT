@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -61,7 +61,7 @@ L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Anal
 
 * **lifecycleTimeout**
 
-   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l’app viene avviata e quello in cui l’avvio viene considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
    Il valore predefinito è 300 secondi.
 
