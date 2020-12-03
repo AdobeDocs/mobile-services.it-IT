@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 7%
+ht-degree: 30%
 
 ---
 
@@ -23,7 +23,7 @@ La serializzazione degli eventi non è supportata dalle regole di elaborazione. 
 cdata["&&events"] = "event1:12341234";
 ```
 
-Ad esempio:
+Esempio:
 
 ```js
 //create a context data dictionary 
