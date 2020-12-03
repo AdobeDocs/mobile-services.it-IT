@@ -4,9 +4,9 @@ seo-description: I postback consentono di inviare i dati raccolti da Adobe Mobil
 seo-title: Configurare i postback
 title: Configurare i postback
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
