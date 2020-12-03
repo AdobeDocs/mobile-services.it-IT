@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 68%
+ht-degree: 69%
 
 ---
 
@@ -27,7 +27,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Obbligatorio) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Potete aggiungere classificazioni per questa variabile.
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   (**Facoltativo**) La variabile Custom Insight fornisce informazioni sul percorso del video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visita
@@ -37,13 +37,13 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (Facoltativo) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile da ClientCare.
 
-   Tipo evento: Insight personalizzato (s.prop)
+   Tipo evento: Custom Insight (s.prop)
 
    * Tipo evento: Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l&#39;ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
+   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
 
    Il metodo predefinito per la raccolta dei dati video raccoglie i dati nei seguenti punti:
 
