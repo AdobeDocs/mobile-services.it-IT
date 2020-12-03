@@ -4,25 +4,28 @@ seo-description: Dopo aver configurato l'URL di collegamento profondo (deep link
 seo-title: Implementare i messaggi push con collegamenti profondi
 title: Implementare i messaggi push con collegamenti profondi
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 93%
 
 ---
 
 
 # Implementare i messaggi push con collegamenti profondi {#implement-push-messaging-with-deep-linking}
 
-Dopo aver configurato l'URL di collegamento profondo (deep linking) nell'interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave `adb_deeplink`.
+Dopo aver configurato l&#39;URL di collegamento profondo (deep linking) nell&#39;interfaccia utente di Adobe Mobile Services, tale URL si troverà nel payload push con la chiave `adb_deeplink`.
 
-1. In AppDelegate, puoi recuperare l'URL di collegamento profondo e gestirlo autonomamente nelle seguenti posizioni:
+1. In AppDelegate, puoi recuperare l&#39;URL di collegamento profondo e gestirlo autonomamente nelle seguenti posizioni:
 
    * In `application:didFinishLaunchingWithOptions`:
 
-      Se l'app non è in esecuzione quando si verifica un click-through push, puoi ottenere il payload push da `launchOptions`; l'URL di collegamento profondo si trova nel dizionario di payload accanto alla chiave `adb_deeplink`.
+      Se l&#39;app non è in esecuzione quando si verifica un click-through push, puoi ottenere il payload push da `launchOptions`; l&#39;URL di collegamento profondo si trova nel dizionario di payload accanto alla chiave `adb_deeplink`.
 
    * I metodi delegate per le notifiche remote
 
-      Nell'applicazione `didReceiveRemoteNotification:` o `didReceiveRemoteNotification:fetchCompletionHandler:`, puoi ottenere l'URL mediante l'accesso al dizionario `userInfo` con la chiave `adb_deeplink`.
+      Nell&#39;applicazione `didReceiveRemoteNotification:` o `didReceiveRemoteNotification:fetchCompletionHandler:`, puoi ottenere l&#39;URL mediante l&#39;accesso al dizionario `userInfo` con la chiave `adb_deeplink`.
 
    * I metodi delegate per `UNUserNotificationCenter`
 
