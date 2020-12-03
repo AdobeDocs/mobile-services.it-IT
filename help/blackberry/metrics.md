@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 70%
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ Per ulteriori informazioni, consulta la Knowledge Base in [Risoluzione dei probl
 
 ## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Una volta configurate, le metriche del ciclo di vita vengono inviate nei parametri dei dati contestuali ad Analytics, nei parametri a Target con ciascuna chiamata Mbox e come segnale a Gestione dell&#39;audience. Analytics e Target usano lo stesso formato, mentre Gestione dell&#39;audience usa un prefisso diverso per ogni metrica.
+Una volta configurate, le metriche del ciclo di vita vengono inviate ad Analytics in parametri di dati contestuali, a Target in parametri con ogni chiamata Mbox e a Audience Manager come segnali. Analytics e Target usano lo stesso formato; la funzione di gestione dell’audience usa invece un prefisso diverso per ogni metrica.
 
 Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento del ciclo di vita vengono catturati automaticamente e segnalati utilizzando la metrica o la dimensione.
 
@@ -46,7 +46,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Utenti giornalieri coinvolti**
 
-   Attivazione quando l&#39;applicazione viene utilizzata in un giorno particolare.
+   Attivazione quando l’applicazione viene utilizzata in un giorno particolare.
 
    >[!IMPORTANT]
    >
@@ -68,7 +68,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Avvii**
 
-   Attivazione a ogni esecuzione, compresi arresti anomali e installazioni. Viene attivata anche alla ripresa in background quando viene superato il timeout della sessione del ciclo di vita.
+   Attivazione a ogni esecuzione, comprese quelle a seguito di arresti anomali e installazioni. Questa metrica viene attivata anche in seguito alla ripresa dal background oltre il tempo di timeout della sessione del ciclo di vita.
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Segnale di Audience Manager: `c_a_LaunchEvent`
@@ -108,7 +108,7 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
 
 * **Numero di avvii**
 
-   Numero di volte per cui l&#39;applicazione è stata avviata o portata in primo piano.
+   Numero di volte per cui l’applicazione è stata avviata o portata in primo piano.
 
    * Analytics context data/Target parameter: `a.Launches`
    * Segnale di Audience Manager: `c_a_Launches`
@@ -120,9 +120,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Analytics context data/Target parameter: `a.DaysSinceFirstUse`
    * Segnale di Audience Manager: `c_a_DaysSinceFirstUse`
 
-* **Giorni dall&#39;ultimo utilizzo**
+* **Giorni dall’ultimo utilizzo**
 
-   Numero di giorni dall&#39;ultimo utilizzo.
+   Numero di giorni dall’ultimo utilizzo.
 
    * Analytics context data/Target parameter: `a.DaysSinceLastUse`
    * Segnale di Audience Manager: `c_a_DaysSinceLastUse`
@@ -148,9 +148,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Analytics context data/Target parameter: `a.OSVersion`
    * Segnale di Audience Manager: `c_a_OSVersion`
 
-* **Giorni dall&#39;ultimo aggiornamento**
+* **Giorni dall’ultimo aggiornamento**
 
-   Numero di giorni dalla modifica del numero di versione dell&#39;applicazione.
+   Numero di giorni dalla modifica del numero di versione dell’applicazione.
 
    >[!IMPORTANT]
    >
@@ -159,9 +159,9 @@ Per Analytics, i dati contestuali inviati con ciascuna chiamata di tracciamento 
    * Analytics context data/Target parameter: `a.DaysSinceLastUpgrade`
    * Segnale di Audience Manager: `c_a_DaysSinceLastUpgrade`
 
-* **Avvii dall&#39;ultimo aggiornamento**
+* **Avvii dall’ultimo aggiornamento**
 
-   Numero di avvii dalla modifica del numero di versione dell&#39;applicazione.
+   Numero di avvii dalla modifica del numero di versione dell’applicazione.
 
    >[!IMPORTANT]
    >
