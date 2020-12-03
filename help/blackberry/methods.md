@@ -1,19 +1,19 @@
 ---
 description: Classi e metodi forniti dalla libreria BlackBerry.
 seo-description: Classi e metodi forniti dalla libreria BlackBerry.
-seo-title: ' Adobe Riferimento classe e metodo Mobile'
-title: ' Adobe Riferimento classe e metodo Mobile'
+seo-title: Documentazione su classi e metodi per Adobe Mobile
+title: Documentazione su classi e metodi per Adobe Mobile
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
 
-#  Adobe Riferimento classe e metodo Mobile {#adobe-mobile-class-and-method-reference}
+# Documentazione su classi e metodi per Adobe Mobile {#adobe-mobile-class-and-method-reference}
 
 Classi e metodi forniti dalla libreria BlackBerry.
 
@@ -43,7 +43,7 @@ Al momento l’SDK supporta  Adobe Analytics e i metodi si trovano in classi sep
       ADBMobilePrivacyStatus privacyStatus = ADBMobile::getPrivacyStatus();
       ```
 
-* Il metodo **setPrivacyStatus**
+* **setPrivacyStatus**
 
    Imposta lo stato di privacy per l&#39;utente corrente su `status`. Imposta uno dei valori seguenti:
 
@@ -113,7 +113,7 @@ Al momento l’SDK supporta  Adobe Analytics e i metodi si trovano in classi sep
 
 * **setDebugLogging**
 
-   Imposta la preferenza per l&#39;accesso di su `debugLogging`debug.
+   Imposta la preferenza per l&#39;accesso di su `debugLogging` debug.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -202,7 +202,7 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json`Guida di riferimento per il file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` Guida di riferimento per il file di configurazione {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
@@ -238,7 +238,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,  contatta  [Supporto](https://helpx.adobe.com/it/contact/enterprise-support.ec.html)Enterprise.
+   >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere `true`. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,   contatta   [Supporto](https://helpx.adobe.com/it/contact/enterprise-support.ec.html)Enterprise.
 
    If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
@@ -246,7 +246,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **lifecycleTimeout**
 
-   Specifica il tempo, in secondi, che deve trascorrere tra gli avvii dell&#39;app prima che l&#39;avvio venga considerato una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
+   Specifica il tempo, in secondi, che deve trascorrere tra il momento in cui l’app viene avviata e quello in cui l’avvio viene considerato come una nuova sessione. Questo timeout si applica anche quando l’applicazione viene messa in background e riattivata. Il tempo trascorso in background dall’app non viene incluso nella durata della sessione.
 
    Il valore predefinito è 300 secondi.
 
