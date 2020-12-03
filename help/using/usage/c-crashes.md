@@ -4,8 +4,11 @@ seo-description: Il rapporto Arresti anomali fornisce un’istantanea degli arre
 seo-title: Rapporto Arresti anomali
 title: Rapporto Arresti anomali
 uuid: 0c96190f-e16b-49d5-aaa5-b651780a7266
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ Il rapporto **[!UICONTROL Arresti anomali]** fornisce un’istantanea degli arre
 
 Il grafico **[!UICONTROL Frequenza media arresti anomali]** visualizza la frequenza degli arresti per data. Puoi passare il cursore sopra una data per visualizzare la frequenza degli arresti anomali di quel giorno.
 
-Il grafico **[!UICONTROL Cronologia arresti anomali]** visualizza informazioni su ogni arresto anomalo dell’app, indicandone l’ID, il tipo di arresto, quante volte e in che data si sono verificati. Per accedere ad Apteligent al fine di visualizzare più dettagli su un arresto anomalo, fai clic sul collegamento nella colonna **[!UICONTROL ID arresto anomalo].**
+Il grafico **[!UICONTROL Cronologia arresti anomali]** visualizza informazioni su ogni arresto anomalo dell’app, indicandone l’ID, il tipo di arresto, quante volte e in che data si sono verificati. Per accedere ad Apteligent al fine di visualizzare più dettagli su un arresto anomalo, fai clic sul collegamento nella colonna **[!UICONTROL ID arresto anomalo]**.
 
 Per questo rapporto puoi configurare le seguenti opzioni:
 
