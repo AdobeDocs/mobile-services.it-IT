@@ -1,9 +1,9 @@
 ---
 description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: Variabile dei prodotti
+seo-title: 'Variabile "products" '
 solution: Experience Cloud,Analytics
-title: Variabile dei prodotti
+title: 'Variabile "products" '
 topic: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 7%
 ---
 
 
-# Variabile dei prodotti {#products-variable}
+# Variabile &quot;products&quot; {#products-variable}
 
 La variabile &quot;products&quot; non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 
@@ -25,7 +25,7 @@ To set the *`products`* variable, set a context data key to `"&&products"`, and 
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
 ```
 
-Ad esempio:
+Esempio:
 
 ```js
 //create a context data dictionary 
@@ -51,7 +51,7 @@ The *`products`* is set directly on the image request, and the other variables a
 
 Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.
 
-## Variabile dei prodotti con eVar per merchandising ed eventi per singoli prodotti {#section_685D53AD3D064F9A8E225F995A9BA545}
+## Variabile &quot;products&quot; con eVar per merchandising ed eventi per singoli prodotti {#section_685D53AD3D064F9A8E225F995A9BA545}
 
 An example of the *`products`* variable with Merchandising eVars and product-specific events.
 
