@@ -15,7 +15,7 @@ ht-degree: 38%
 ---
 
 
-# Metodi di Audience Manager{#audience-manager-methods}
+# Metodi di Audience Manager {#audience-manager-methods}
 
 Elenco di metodi di Audience Manager  forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 
