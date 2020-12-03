@@ -4,8 +4,11 @@ seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK
 seo-title: Preacquisizione del contenuto delle offerte in Android
 title: Preacquisizione del contenuto delle offerte in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 92%
 
 ---
 
@@ -18,13 +21,13 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 >
 >La funzionalità di preacquisizione preventiva negli SDK Mobile per Android non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
-Questo processo consente di ridurre il tempo di caricamento, evita l'esecuzione di più chiamate di rete e permette di notificare ad Adobe Target quale elemento mbox è stato visitato dall'utente dell'app mobile. Tutto il contenuto viene recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e da qual momento viene richiamato dalla cache per tutte le chiamate future che includono quel contenuto per il nome di mbox specificato.
+Questo processo riduce il tempo di caricamento, impedisce l&#39;esecuzione di più chiamate di rete e consente  ad Adobe Target di ricevere una notifica sulla mbox visitata dall&#39;utente dell&#39;app mobile. Tutto il contenuto verrà recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e questo verrà recuperato dalla cache per tutte le chiamate future che contengono contenuto memorizzato nella cache per il nome mbox specificato.
 
-Il contenuto di preacquisizione non rimane tra un avvio dell'app e quello successivo. Viene memorizzato nella cache per tutto il tempo in cui l’app rimane attiva oppure fino alla chiamata del metodo `clearPrefetchCache()`.
+Il contenuto di preacquisizione non rimane tra un avvio dell’app e quello successivo. Viene memorizzato nella cache per tutto il tempo in cui l’app rimane attiva oppure fino alla chiamata del metodo `clearPrefetchCache()`.
 
 >[!IMPORTANT]
 >
->Le API di pre-acquisizione di Target sono disponibili a partire dalla versione 4.14.0 dell'SDK. Per maggiori informazioni sulle limitazioni relative ai parametri, vedi [Parametri di input batch](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Le API di pre-acquisizione di Target sono disponibili a partire dalla versione 4.14.0 dell&#39;SDK. Per maggiori informazioni sulle limitazioni relative ai parametri, vedi [Parametri di input batch](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 Nella versione 4.14 o successiva dell’SDK, se specificato, `environmentId` viene preso dal file `ADBMobileConfig.json` quando si avvia una chiamata TnT batch mbox v2. Se nel file non è specificato alcun `environmentId`, no viene inviato alcun parametro di ambiente in una chiamata TnT batch mbox, e l’offerta viene distribuita per l’ambiente predefinito.
 
@@ -72,11 +75,11 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
 * **loadRequests**
 
-   Esegue una richiesta batch per più posizioni mbox specificate nell'array requests.  Ogni oggetto dell'array contiene una funzione di callback che viene richiamata quando il contenuto è disponibile per la posizione mbox corrispondente.
+   Esegue una richiesta batch per più posizioni mbox specificate nell&#39;array requests.  Ogni oggetto dell&#39;array contiene una funzione di callback che viene richiamata quando il contenuto è disponibile per la posizione mbox corrispondente.
 
    >[!IMPORTANT]
    >
-   >Se il contenuto delle posizioni richieste è già presente nella cache, viene restituito immediatamente nel callback specificato. In caso contrario, l'SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
+   >Se il contenuto delle posizioni richieste è già presente nella cache, viene restituito immediatamente nel callback specificato. In caso contrario, l&#39;SDK invia una richiesta di rete ai server Target per recuperare il contenuto.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -108,7 +111,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
 * **createTargetRequestObject**
 
-   Crea e restituisce un'istanza di `TargetRequestObject` con i dati specificati.
+   Crea e restituisce un&#39;istanza di `TargetRequestObject` con i dati specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -124,7 +127,7 @@ Di seguito sono elencati i metodi utilizzabili per la preacquisizione in Android
 
 * **createTargetPrefetchObject**
 
-   Crea e restituisce un'istanza di TargetPrefetchObject con i dati specificati.
+   Crea e restituisce un&#39;istanza di TargetPrefetchObject con i dati specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -196,7 +199,7 @@ Questa classe racchiude il nome mbox, il contenuto predefinito, i parametri mbox
 
 * **`defaultContent`**
 
-   Valore stringa che viene restituito nel callback se l'SDK non è in grado di recuperare il contenuto dai server Target.
+   Valore stringa che viene restituito nel callback se l&#39;SDK non è in grado di recuperare il contenuto dai server Target.
 
    * **Tipo**: String
 
