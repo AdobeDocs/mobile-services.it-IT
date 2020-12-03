@@ -5,9 +5,9 @@ seo-description: Le seguenti informazioni sono utili per risolvere eventuali pro
 seo-title: Risoluzione dei problemi dei test di acquisizione
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei test di acquisizione
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
 
