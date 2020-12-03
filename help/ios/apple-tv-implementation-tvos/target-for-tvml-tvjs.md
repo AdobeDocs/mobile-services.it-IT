@@ -1,22 +1,25 @@
 ---
-description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con i contenuti Target, usa l'elemento XML personalizzato ADBTarget.
-seo-description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con i contenuti Target, usa l'elemento XML personalizzato ADBTarget.
+description: Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
+seo-description: Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
 seo-title: Adobe Target per TVML/TVJS
 title: Adobe Target per TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 70%
 
 ---
 
 
 # Adobe Target per TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
-Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con i contenuti Target, usa l'elemento XML personalizzato ADBTarget.
+Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
 
 >[!IMPORTANT]
 >
->Prima di usare l'elemento `ADBTarget` nelle pagine TVML, devi configurare l'app TVML/TVJS per l'utilizzo dell'SDK per tvOS. Per ulteriori informazioni, consulta [Implementazione Apple TV con tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
+>Prima di usare l&#39;elemento `ADBTarget` nelle pagine TVML, devi configurare l&#39;app TVML/TVJS per l&#39;utilizzo dell&#39;SDK per tvOS. Per ulteriori informazioni, consulta [Implementazione Apple TV con tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
 
 ## Guida introduttiva {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -32,11 +35,11 @@ Il contenuto restituito da Target sostituisce tutto il contenuto tra i tag `<ADB
 >
 >Pianifica attentamente ciò che desideri sostituire.
 
-Potrebbe trattarsi della semplice sostituzione di un valore stringa in un'etichetta o della più complessa sostituzione di un'intera pagina.
+Potrebbe trattarsi della semplice sostituzione di un valore stringa in un&#39;etichetta o della più complessa sostituzione di un&#39;intera pagina.
 
 ## Configura l’elemento ADBTarget {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
-Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. Facoltativamente, puoi aggiungere proprietà personalizzate alla richiesta nel formato `customParameterName="customParameterValue"`.
+Nell&#39;elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. Facoltativamente, puoi aggiungere proprietà personalizzate alla richiesta nel formato `customParameterName="customParameterValue"`.
 
 * **`mbox`**
 
@@ -98,11 +101,11 @@ Nell'elemento `ADBTarget`, devi fornire il nome nella proprietà `mbox`mbox. Fac
 
 ### Esempio 1
 
-Nell'esempio seguente, un elemento `ADBTarget` nella pagina `LandingPage.xml.js` viene utilizzato per sostituire i contenuti di un avviso:
+Nell&#39;esempio seguente, un elemento `ADBTarget` nella pagina `LandingPage.xml.js` viene utilizzato per sostituire i contenuti di un avviso:
 
 #### Configurare Target
 
-Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impostare il contenuto dell'offerta come segue:
+Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impostare il contenuto dell&#39;offerta come segue:
 
 ```objective-c
 <title>My cool landing page</title> 
@@ -122,7 +125,7 @@ Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impos
    </alertTemplate> 
    ```
 
-* Se la richiesta inviata a Target ha esito positivo e viene restituito il contenuto dell'offerta, il codice della pagina risultante sarà:
+* Se la richiesta a Target ha esito positivo e viene restituito il contenuto dell&#39;offerta, il risultato della pagina sarà:
 
    ```objective-c
    <alertTemplate> 
@@ -131,7 +134,7 @@ Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impos
    </alertTemplate>
    ```
 
-* Se non è possibile accedere al server Target o si verifica il timeout della richiesta, il codice della pagina risultante sarà:
+* Se non è possibile raggiungere il server di Target o se la richiesta non viene soddisfatta, la pagina risultante sarà:
 
    ```objective-c
    <alertTemplate> 
@@ -142,7 +145,7 @@ Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impos
 
 ### Esempio 2
 
-L'esempio seguente illustra come aggiungere dati personalizzati all'elemento `ADBTarget`. Questo metodo permette di creare esperienze condizionali e contenuti di offerte per questa posizione Mbox in Target:
+L&#39;esempio seguente illustra come aggiungere dati personalizzati all&#39;elemento `ADBTarget`. Questo metodo permette di creare esperienze condizionali e contenuti di offerte per questa posizione Mbox in Target:
 
 ```objective-c
 <alertTemplate> 
