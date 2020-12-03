@@ -677,7 +677,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
       AudienceManager.SignalWithData (traits, new AudienceManagerCallback());
       ```
 
-* **Reimpostare**
+* **Ripristino**
 
    Resets audience manager `UUID` and purges current visitor profile.
 
