@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Metodi di destinazione per iOS
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -56,8 +56,9 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* Se utilizzi gli SDK **precedenti** alla versione 4.14.0, consulta [Parametri di input](https://developers.adobetarget.com/api/#input-parameters) per conoscere le limitazioni relative ai parametri.
->
->* Se utilizzi gli SDK versione 4.14.0 **o successiva**, consulta [Parametri batch di input](https://developers.adobetarget.com/api/#batch-input-parameters) per conoscere le limitazioni relative ai parametri.
+   >
+   >
+* Se utilizzi gli SDK versione 4.14.0 **o successiva**, consulta [Parametri batch di input](https://developers.adobetarget.com/api/#batch-input-parameters) per conoscere le limitazioni relative ai parametri.
 
 
 ### Metodi
