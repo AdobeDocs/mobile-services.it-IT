@@ -1,22 +1,25 @@
 ---
-description: Puoi allegare file di immagini alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-description: Puoi allegare file di immagini alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-title: Ricevere notifiche push potenziate
-title: Ricevere notifiche push potenziate
+description: Potete allegare file di immagine alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+seo-description: Potete allegare file di immagine alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+seo-title: Ricevi notifiche push potenziate
+title: Ricevi notifiche push potenziate
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 60%
 
 ---
 
 
 # Ricevere notifiche push potenziate {#receive-rich-push-notifications}
 
-Puoi allegare file di immagini alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+Potete allegare file di immagine alle notifiche Android. L&#39;aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
 
 ## Gestire i messaggi push potenziati in ingresso (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
-Se l'app è in primo piano, il messaggio push sarà gestito dall'app che estende la classe `FirebaseMessagingService` ed è dichiarato nel file manifesto come segue:
+Se l&#39;app è in primo piano, il messaggio push sarà gestito dall&#39;app che estende la classe `FirebaseMessagingService` ed è dichiarato nel file manifesto come segue:
 
 ```java
 <service
@@ -30,7 +33,7 @@ Se l'app è in primo piano, il messaggio push sarà gestito dall'app che estende
 
 >[!IMPORTANT]
 >
->La classe che contiene l'implementazione `onMessageReceived()` gestisce i dati ricevuti.
+>La classe che contiene l&#39;implementazione `onMessageReceived()` gestisce i dati ricevuti.
 
 Se il messaggio push contiene un URL multimediale, questo sarà disponibile nel parametro `RemoteMessage` che viene passato alla funzione `onMessageReceived()`. La chiave da utilizzare è `attachment-url`, come mostrato nel seguente esempio di codice:
 
@@ -94,8 +97,8 @@ private void sendNotification(RemoteMessage message) {
 
 ## Esempio di notifiche push potenziate {#section_6819316BEDDE45108413B541CA2BB2DC}
 
-Esempio di notifica push potenziata con un'immagine:
+Esempio di notifica push potenziata con un&#39;immagine:
 
 ![](assets/rich-push-notification_example.png)
 
-Per ulteriori informazioni sulle notifiche push potenziate con Android, vedi [Coinvolgere con le notifiche potenziate](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
+For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
