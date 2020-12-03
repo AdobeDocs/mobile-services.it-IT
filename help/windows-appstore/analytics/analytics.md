@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 11%
+ht-degree: 20%
 
 ---
 
@@ -131,13 +131,13 @@ Se `CollectLifecycleData()` viene chiamato due volte nella stessa sessione, l&#3
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Se hai esaminato la Guida di riferimento [per le classi e i metodi di](/help/windows-appstore/c-configuration/methods.md)ADBMobile, probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
+Se hai esaminato la Guida di riferimento [per le classi e i metodi di](/help/windows-appstore/c-configuration/methods.md)ADBMobile, probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono diversi vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti ai dati contestuali.
 
@@ -146,7 +146,7 @@ Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a variabili evar, prop e ad altre variabili per il reporting.
 
-[Formazione](https://tv.adobe.com/embed/1181/16506/?captions=ita) sulle regole di elaborazione @ Summit 2013
+[Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
 [Panoramica sulle regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -168,7 +168,7 @@ Inoltre, alcuni di voi stanno denominando le chiavi dei dati di contesto utilizz
 "eVar1":"jimbo"
 ```
 
-Questo potrebbe rendere *leggermente* più semplice eseguire la mappatura una tantum nelle regole di elaborazione, ma la leggibilità del codice potrebbe risultare più difficile durante il debug e gli aggiornamenti futuri del codice. È invece consigliabile utilizzare nomi descrittivi per chiavi e valori:
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. È invece consigliabile utilizzare nomi descrittivi per chiavi e valori:
 
 ```js
 "username":"jimbo"
@@ -190,7 +190,7 @@ Le variabili di dati di contesto che definiscono eventi di incremento possono av
 >
 >Adobe riserva lo spazio dei nomi `a.`. A parte questa piccola restrizione, le variabili dei dati di contesto devono essere univoche nella società di accesso per evitare conflitti.
 
-## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Per impostare *`products`* nell’SDK di Mobile, devi usare una sintassi particolare. Consulta Variabile [](/help/windows-appstore/analytics/products/products.md)Prodotti.
 
@@ -241,8 +241,8 @@ ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 
 Le azioni temporizzate consentono di misurare il tempo trascorso nell&#39;app e il tempo totale tra l&#39;inizio e la fine di un&#39;azione. L’SDK calcola il tempo necessario per completare l’azione in una sessione e complessivamente in più sessioni. Questo può essere utilizzato per definire i segmenti da confrontare in base al tempo di acquisto, al livello di passaggio, al flusso di cassa e così via.
 
-* Numero totale di secondi trascorsi nell&#39;app tra avvio e fine - sessioni diverse
-* Numero totale di secondi tra inizio e fine (tempo di clock)
+* Numero totale di secondi trascorsi nell’app dall’inizio alla fine, per più sessioni
+* Numero totale di secondi dall’inizio alla fine (in base all’ora effettiva)
 
 ```js
 // Timed Action Start Example 
