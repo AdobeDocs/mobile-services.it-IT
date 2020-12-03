@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -376,18 +376,18 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
       * nome della variabile da cercare nell’hit, obbligatorio
 * &quot;matches&quot;
    * tipo di matcher utilizzato per il confronto
-   * eq = equals (uguale a)
-   * ne = does not equal (non uguale a)
-   * co = contains (contiene)
-   * nc = does not contain (non contiene)
-   * sw = starts with (inizia con)
-   * ew = ends with (termina con)
-   * ex = exists (esiste)
-   * nx = does not exist (non esiste)
-   * lt = less than (minore di)
-   * le = less than or equals (minore o uguale a)
-   * gt = greater than (maggiore di)
-   * ge = greater than or equals (maggiore o uguale a)
+   * eq = equals
+   * ne = does not equal
+   * co = contains
+   * nc = does not contain
+   * sw = starts with
+   * ew = ends with
+   * ex = exists
+   * nx = does not exist
+   * lt = less than
+   * le = less than or equals
+   * gt = greater than
+   * ge = greater than or equals
 * &quot;values&quot;
    * array di valori utilizzati per eseguire il confronto rispetto al valore della variabile denominata
       * key
