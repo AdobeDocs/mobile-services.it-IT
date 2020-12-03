@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 13%
+ht-degree: 24%
 
 ---
 
@@ -65,9 +65,9 @@ Nella tabella seguente sono elencate le variabili di configurazione che devi spo
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| setOfflineHitLimit | Rimuovi, non più utilizzato. |
-| linkTrackVars | Rimuovi, non più utilizzato. |
-| linkTrackEvents | Rimuovi, non più utilizzato. |
+| setOfflineHitLimit | Rimuovi, non più in uso. |
+| linkTrackVars | Rimuovi, non più in uso. |
+| linkTrackEvents | Rimuovi, non più in uso. |
 
 ## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -81,13 +81,13 @@ The `contextData` parameter for both of these methods contains name-value pairs 
 
 ## Eventi, prop, eVar
 
-Se hai esaminato i metodi [](/help/windows-appstore/c-configuration/methods.md)SDK, probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
+Se hai esaminato i metodi [](/help/windows-appstore/c-configuration/methods.md)SDK, probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono diversi vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
 
 For more information, see *Processing Rules* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
@@ -125,7 +125,7 @@ In tutto il codice, devi rimuovere le chiamate ai seguenti metodi:
 * `SetOnline`
 * `SetOffline`
 
-## Variabile dei prodotti {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 
