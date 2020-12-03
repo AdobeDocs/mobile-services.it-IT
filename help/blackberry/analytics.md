@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -39,7 +39,7 @@ Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti 
 
 1. Per raccogliere le metriche del ciclo di vita nell&#39;app, invoca `collectLifecycleData()` il `ApplicationUI` costruttore.
 
-   Ad esempio:
+   Esempio:
 
    ```java
    ApplicationUI::ApplicationUI(bb::cascades::Application *app): QObject(app) { 
@@ -53,13 +53,13 @@ Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti 
 ## Eventi, prop ed eVar {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Se hai esaminato la Guida di riferimento [per le classi e i metodi di](/help/blackberry/methods.md)ADBMobile, probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. Al contrario, l&#39;SDK utilizza i dati contestuali e le regole di elaborazione per mappare i dati dell&#39;app sulle variabili Analytics a scopo di reportistica.
+Se hai esaminato la Guida di riferimento [per le classi e i metodi di](/help/blackberry/methods.md)ADBMobile, probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non è più possibile assegnare questi tipi di variabili direttamente nell&#39;app. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono diversi vantaggi:
 
-* Potete modificare la mappatura dei dati senza inviare un aggiornamento all&#39;App Store.
-* Puoi utilizzare nomi significativi per i dati invece di impostare variabili specifiche per una suite di rapporti.
-* L&#39;impatto sull&#39;invio di dati aggiuntivi è limitato. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
+* Puoi modificare la mappatura dei dati senza inviare un aggiornamento all’App Store.
+* Puoi assegnare ai dati dei nomi significativi invece di impostare variabili specifiche per una suite di rapporti.
+* L’invio di dati aggiuntivi ha un impatto minimo. Questi valori verranno visualizzati nei rapporti solo dopo che saranno stati mappati utilizzando delle regole di elaborazione.
 
 Any values that you were assigning directly to variables should be added to the `data` HashMap instead.
 
@@ -67,7 +67,7 @@ Any values that you were assigning directly to variables should be added to the 
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a variabili evar, prop e ad altre variabili per il reporting.
 
-[Formazione](https://tv.adobe.com/embed/1181/16506/?captions=ita) sulle regole di elaborazione @ Summit 2013
+[Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
 [Regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -89,7 +89,7 @@ Inoltre, alcuni di voi stanno denominando le chiavi dei dati di contesto utilizz
 "eVar1":"jimbo"
 ```
 
-Questo potrebbe rendere *leggermente* più semplice eseguire la mappatura una tantum nelle regole di elaborazione, ma la leggibilità del codice potrebbe risultare più difficile durante il debug e gli aggiornamenti futuri del codice. È invece consigliabile utilizzare nomi descrittivi per chiavi e valori:
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. È invece consigliabile utilizzare nomi descrittivi per chiavi e valori:
 
 ```js
 "username":"jimbo"
