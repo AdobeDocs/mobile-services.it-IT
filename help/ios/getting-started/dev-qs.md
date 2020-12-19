@@ -7,10 +7,10 @@ title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
+source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 72%
+source-wordcount: '861'
+ht-degree: 75%
 
 ---
 
@@ -39,20 +39,21 @@ Per scaricare l’SDK:
 
 1. Scaricate, decomprimete il file `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` e verificate di disporre dei seguenti componenti software nella directory `AdobeMobileLibrary`:
 
+   * `ADBMobile.h` - il file di intestazione Objective-C utilizzato per l&#39;SDK iOS.
    * `ADBMobileConfig.json` - il file di configurazione dell&#39;SDK personalizzato per la tua app.
-   * `AdobeMobile.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64). Contiene anche il file di intestazione `ADBMobile.h` per l&#39;SDK.
+   * `AdobeMobile.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64).
 
       Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app iOS.
 
-   * `AdobeMobileExtension.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64). Contiene anche il file di intestazione `ADBMobile.h` per l&#39;SDK.
+   * `AdobeMobileExtension.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64).
 
       Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;estensione iOS.
 
-   * `AdobeMobileWatch.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi watchOS (arm64_32, armv7k) e simulatori (i386, x86_64, arm64). Contiene anche il file di intestazione `ADBMobile.h` per l&#39;SDK.
+   * `AdobeMobileWatch.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi watchOS (arm64_32, armv7k) e simulatori (i386, x86_64, arm64).
 
       Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app Apple Watch (watchOS).
 
-   * `AdobeMobileTV.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi tvOS (arm64) e simulatori (x86_64, arm64). Contiene anche il file di intestazione `ADBMobile.h` per l&#39;SDK.
+   * `AdobeMobileTV.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi tvOS (arm64) e simulatori (x86_64, arm64).
 
       Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app Apple TV (tvOS).
 
