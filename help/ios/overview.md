@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ L&#39;SDK 4.x per iOS per le soluzioni Experience Cloud consente di misurare le 
 
 >[!IMPORTANT]
 >
->A partire dalla versione 4.21.0, l’SDK per iOS dispone di una versione minima richiesta di Xcode 12. Se utilizzate i cococoapodi per gestire le dipendenze nell’app, l’SDK per Adobi  richiede la versione 1.10.0 o successiva dei cococoapodi.
+>A partire dalla versione 4.21.0, l’SDK per iOS richiede come minimo la versione Xcode 12. Se si utilizza Cocoapods per gestire le dipendenze nell’app, l’SDK Adobe richiede la versione 1.10.0 o successiva.
 
-Se si utilizza la versione 4.21.0 o successiva, leggere la documentazione tenendo presenti le seguenti modifiche:
+Se utilizzi la versione 4.21.0 o successiva, leggi la documentazione tenendo presenti le seguenti modifiche:
 
-* Ogni volta che si fa riferimento a un file di libreria binaria, si deve usare la sostituzione XCFrframework:
+* Ogni volta che si fa riferimento a un file di libreria binario, si deve usare la sua forma sostitutiva XCFramework:
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
    * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
    * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
    * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
-* Se aggiungete manualmente al progetto i framework XCF  Adobe, accertatevi che non siano incorporati.
+* Se nel progetto devi aggiungere manualmente codice in formato Adobe XCFrameworks, questo non deve essere incorporato.
 
 >[!IMPORTANT]
 >
