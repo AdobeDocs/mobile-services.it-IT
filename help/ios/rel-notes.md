@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
 
-**15 dicembre 2020: Versione 4.21.0**
+**15 dicembre 2020: versione 4.21.0**
 
-* Generale - L&#39;SDK è ora distribuito utilizzando XCFrameworks per supportare l&#39;hardware con la nuova architettura Apple M1, mantenendo al contempo il supporto per l&#39;architettura Intel esistente.
-   * IMPORTANTE: L&#39;aggiornamento ad AdobeMobile XCFrameworks richiede Xcode 12.0 o versioni successive
-   * IMPORTANTE: Se utilizzate i cococoapodi, l&#39;aggiornamento ad AdobeMobile XCFrameworks richiede Cocoapods 1.10.0 o versioni successive
+* Generale - L’SDK è ora distribuito utilizzando XCFrameworks per supportare gli hardware con la nuova architettura Apple M1, mantenendo al contempo il supporto per l’architettura Intel esistente.
+   * IMPORTANTE - L’aggiornamento a XCFrameworks per AdobeMobile richiede Xcode 12.0 o versione successiva.
+   * IMPORTANTE - Se si utilizza Cocoapods, l’aggiornamento a XCFrameworks per AdobeMobile richiede Cocoapods 1.10.0 o versione successiva.
 
 **4 novembre 2020: versione 4.20.0**
 
