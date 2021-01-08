@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Implementazione e ciclo di vita di base
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Queste informazioni sono utili per implementare la libreria iOS e raccogliere me
 
 >[!IMPORTANT]
 >
->L&#39;SDK richiede iOS 8 o versione successiva.
+>L’SDK richiede iOS 8 o versione successiva.
 
 **Prerequisito**
 
@@ -33,51 +33,51 @@ Per scaricare l’SDK:
 
 >[!IMPORTANT]
 >
->A partire dalla versione 4.21.0, l’SDK viene distribuito tramite XCFrameworks. Se si utilizza la versione 4.21.0 o successiva, procedere come segue.
+>A partire dalla versione 4.21.0, l’SDK viene distribuito tramite XCFrameworks. Se utilizzi la versione 4.21.0 o successiva, procedi come segue.
 >
->La versione 4.21.0 dell’SDK richiede Xcode 12.0 o versioni successive e, se applicabile, Cocoapods 1.10.0 o versioni successive.
+>La versione 4.21.0 dell’SDK richiede Xcode 12.0 o versione successiva e, se applicabile, Cocoapods 1.10.0 o versione successiva.
 
-1. Scaricate, decomprimete il file `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` e verificate di disporre dei seguenti componenti software nella directory `AdobeMobileLibrary`:
+1. Scarica e decomprimi il file `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` e verifica che i seguenti componenti software siano presenti nella directory `AdobeMobileLibrary`:
 
-   * `ADBMobile.h` - il file di intestazione Objective-C utilizzato per l&#39;SDK iOS.
-   * `ADBMobileConfig.json` - il file di configurazione dell&#39;SDK personalizzato per la tua app.
-   * `AdobeMobile.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64).
+   * `ADBMobile.h`: il file di intestazione Objective-C utilizzato per l’SDK iOS.
+   * `ADBMobileConfig.json`: file di configurazione dell’SDK personalizzato per la tua app.
+   * `AdobeMobile.xcframework`: contiene due fat binary, uno per dispositivi iOS (armv7, armv7s, arm64) e uno per simulatori (i386, x86_64, arm64). 
 
-      Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app iOS.
+      Questo XCFramework deve essere collegato quando lo si utilizza per un’app iOS.
 
-   * `AdobeMobileExtension.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi iOS (armv7, armv7s, arm64) e simulatori (i386, x86_64, arm64).
+   * `AdobeMobileExtension.xcframework`: contiene due fat binary, uno per dispositivi iOS (armv7, armv7s, arm64) e uno per simulatori (i386, x86_64, arm64). 
 
-      Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;estensione iOS.
+      Questo XCFramework deve essere collegato quando lo si utilizza per un’estensione iOS.
 
-   * `AdobeMobileWatch.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi watchOS (arm64_32, armv7k) e simulatori (i386, x86_64, arm64).
+   * `AdobeMobileWatch.xcframework`: contiene due fat binary, uno per dispositivi watchOS (arm64_32, armv7k) e uno per simulatori (i386, x86_64, arm64). 
 
-      Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app Apple Watch (watchOS).
+      Questo XCFramework deve essere collegato quando lo si utilizza per un’app Apple Watch (watchOS).
 
-   * `AdobeMobileTV.xcframework` - contiene due file binari di grasso, uno ciascuno per dispositivi tvOS (arm64) e simulatori (x86_64, arm64).
+   * `AdobeMobileTV.xcframework`: contiene due fat binary, uno per dispositivi tvOS (arm64) e uno per simulatori (x86_64, arm64). 
 
-      Questo XCFrframework deve essere collegato quando si esegue il targeting di un&#39;app Apple TV (tvOS).
+      Questo XCFramework deve essere collegato quando lo si utilizza per un’app Apple TV (tvOS).
 
 >[!IMPORTANT]
 >
->Nelle versioni precedenti alla 4.21.0, l’SDK viene distribuito tramite file binari. Se utilizzate una versione precedente alla 4.21.0, seguite i passaggi indicati di seguito.
+>Nelle versioni precedenti alla 4.21.0, l’SDK viene distribuito tramite file binari. Se utilizzi una versione precedente alla 4.21.0, segui i passaggi indicati di seguito.
 
 1. Scarica e decomprimi il file `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` e verifica di disporre dei seguenti componenti software:
 
-   * `ADBMobile.h`, file di intestazione Objective-C usato per iOS AppMeasurement.
-   * `ADBMobileConfig.json`, file di configurazione dell’SDK personalizzato per la tua app.
-   * `AdobeMobileLibrary.a`, fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
+   * `ADBMobile.h`: file di intestazione Objective-C usato per iOS AppMeasurement.
+   * `ADBMobileConfig.json`: file di configurazione dell’SDK personalizzato per la tua app.
+   * `AdobeMobileLibrary.a`: fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
 
       Se la destinazione sarà un&#39;app iOS, il fat binary deve essere collegato.
 
-   * `AdobeMobileLibrary_Extension.a`, fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
+   * `AdobeMobileLibrary_Extension.a`: fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7, armv7s, arm64) e simulatori (i386, x86_64) iOS.
 
       Se la destinazione sarà un&#39;estensione iOS, il fat binary deve essere collegato.
 
-   * `AdobeMobileLibrary_Watch.a`, fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7k) e simulatori (i386, x86_64) Apple Watch.
+   * `AdobeMobileLibrary_Watch.a`: fat binary abilitato per bitcode contenente le build della libreria per dispositivi (armv7k) e simulatori (i386, x86_64) Apple Watch.
 
       Se la destinazione sarà un&#39;app estensione Apple Watch (watchOS 2), il fat binary deve essere collegato.
 
-   * `AdobeMobileLibrary_TV.a`, un fat binary abilitato per bitcode contenente le build della libreria per dispositivi (arm64) e simulatori (x86_64) Apple TV.
+   * `AdobeMobileLibrary_TV.a`: un fat binary abilitato per bitcode contenente le build della libreria per dispositivi (arm64) e simulatori (x86_64) Apple TV.
 
       Se la destinazione sarà un&#39;app estensione Apple TV (tvOS), il fat binary deve essere collegato.
 
@@ -134,7 +134,7 @@ Per scaricare l’SDK:
 
    >[!IMPORTANT]
    >
-   > Se utilizzate la versione 4.21.0 o successiva, accertatevi che i framework XCF del Adobe  non siano incorporati.
+   > Se utilizzi la versione 4.21.0 o successiva, il codice Adobe XCFrameworks non deve essere incorporato.
 
    ![](assets/no-embed.png)
 
@@ -148,7 +148,7 @@ Per scaricare l’SDK:
 
 Dopo che avrai abilitato la funzione ciclo di vita, ad ogni avvio dell&#39;app viene inviato un hit per la misurazione di avvii, aggiornamenti, sessioni, utenti coinvolti e altre [Metriche del ciclo di vita](/help/ios/metrics.md).
 
-Aggiungi una chiamata `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` in `application:didFinishLaunchingWithOptions`:
+Aggiungi una chiamata `collectLifecycleData`/`collectLifecycleDataWithAdditionalData` in `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
