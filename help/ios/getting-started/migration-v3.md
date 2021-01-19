@@ -7,7 +7,7 @@ title: Migrazione alla libreria iOS 4.x
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
@@ -122,7 +122,7 @@ Sposta il valore riportato nella prima colonna alla variabile della seconda colo
 | dynamicVariablePrefix | Rimuovi, non più in uso. |
 | visitorNamespace | Rimuovi, non più in uso. |
 | usePlugins | Rimuovi, non più in uso. |
-| useBestPractices, tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](//help/ios/metrics.md). |
+| useBestPractices, tutte le chiamate alla misurazione churn (getChurnInstance) | Rimuovi, sostituito dalle metriche del ciclo di vita. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/ios/metrics.md). |
 
 
 ## Aggiornare le chiamate e le variabili di tracciamento {#section_96E7D9B3CDAC444789503B7E7F139AB9}
