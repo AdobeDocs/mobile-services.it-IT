@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 97%
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
 
-**13 gennaio 2021: Versione 4.21.1**
+**13 gennaio 2021: versione 4.21.1**
 
-* Generale - È stato risolto un problema che poteva causare eccezioni SQLite durante la chiusura dell&#39;app.
+* Generale: è stato risolto un problema che poteva causare eccezioni SQLite durante la chiusura dell’app.
 
 **15 dicembre 2020: versione 4.21.0**
 
