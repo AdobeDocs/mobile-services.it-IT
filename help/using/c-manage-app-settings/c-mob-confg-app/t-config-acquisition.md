@@ -8,7 +8,7 @@ title: Configurare le opzioni SDK acquisizione
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni 
 
    * **[!UICONTROL Abilita]**
 
-      Crea collegamenti agli app store per scaricare applicazioni direttamente dall’Apple App Store e da Google Play. I collegamenti creati consentono di attribuire i tuoi eventi di successo ai download. Per ulteriori informazioni, vedi [Acquisizione](//help/using/acquisition-main/acquisition-main.md).
+      Crea collegamenti agli app store per scaricare applicazioni direttamente dall’Apple App Store e da Google Play. I collegamenti creati consentono di attribuire i tuoi eventi di successo ai download. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
    * **[!UICONTROL Timeout referente (secondi)]**
 
