@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Note sulla versione
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,4 +58,4 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 * Servizio ID visitatore: sono stati aumentati i tempi di connessione e di lettura da 2 a 5 secondi.
 
 
-Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).
