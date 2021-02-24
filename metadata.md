@@ -1,22 +1,18 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: Informazioni e supporto
-solution-hub-url: https://helpx.adobe.com/it/support/experience-cloud/core-services.html
-solution-icon: help/assets/experience-cloud-logo-24.png
-getting-started-title: Introduzione
-getting-started-url: https://docs.adobe.com/content/help/it-IT/mobile-services/using/get-started-ug/gs.html
-tutorials-title: Esercitazioni
-tutorials-url: https://helpx.adobe.com/it/experience-cloud/tutorials.html
-git-repo: https://github.com/AdobeDocs/mobile-services.en
+solution: Experience Cloud Services
+type: Documentazione
+git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.it-IT
 index: true
-translation-type: ht
-source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
+translation-type: tm+mt
+source-git-commit: c6929017a865464a98242bfa7559d174712bbb7e
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 100%
 
 ---
 
-
-<!-- We need a better link for Tutorials. We can do this after we hit stage -->
 
 # Metadati per uso interno
 
