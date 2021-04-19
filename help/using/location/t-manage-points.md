@@ -1,20 +1,20 @@
 ---
 description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi creare e gestire i punti di interesse, che permettono di definire posizioni geografiche da utilizzare per correlazioni nei rapporti, come destinazioni di messaggi in-app e per altri scopi. Quando un hit viene inviato in un punto di interesse, quest’ultimo è associato all’hit.
 seo-title: Gestire i punti di interesse
 solution: Experience Cloud,Analytics
 title: Gestire i punti di interesse
-topic: Metrics
+topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
+exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 100%
 
 ---
-
 
 # Gestire i punti di interesse {#manage-points-of-interest}
 
