@@ -4,16 +4,16 @@ seo-description: L'SDK di Adobe sfrutta le API di attribuzione app di Apple Sear
 seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
 title: Apple Search Ads
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # Apple Search Ads {#apple-search-ads}
 
@@ -40,7 +40,7 @@ Per abilitare l&#39;app all&#39;attribuzione Search Ad:
 
 1. Aggiungi il framework iAd al file del progetto Xcode per la tua app.
 
-## Generazione di rapporti sull&#39;attribuzione Search Ads   {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Generazione di rapporti sull&#39;attribuzione Search Ads    {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. I dati di attribuzione di Apple Search Ads sono forniti nel nome dell&#39;acquisizione, nella sorgente e nei valori dei termini.
 
@@ -49,7 +49,7 @@ Per abilitare l&#39;app all&#39;attribuzione Search Ad:
    Inoltre, i seguenti valori saranno mappati dal dizionario `"iad"` ai nostri tipici campi per dati contestuali per l&#39;acquisizione:
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    Con questa mappatura, i valori diventano disponibili per le nostre funzioni standard di generazione dei rapporti.
