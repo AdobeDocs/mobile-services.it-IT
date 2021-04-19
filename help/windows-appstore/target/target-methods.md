@@ -1,31 +1,31 @@
 ---
-description: Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
-seo-description: Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
+description: Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
+seo-description: Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
 seo-title: Metodi di Target
 solution: Experience Cloud,Analytics
 title: Metodi di Target
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
+exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 42%
 
 ---
 
-
 # Metodi di Target {#target-methods}
 
-Elenco di metodi Target forniti dalla libreria Windows 8.1 Universal App Store.
+Elenco dei metodi di Target forniti dalla libreria Windows 8.1 Universal App Store.
 
-L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Target&quot;.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Target&quot;.
 
 [Le metriche del ciclo di vita](/help/windows-appstore/metrics.md) sono inviate come parametri a ciascun caricamento Mbox.
 
 >[!TIP]
 >
->Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
+>Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 ## Riferimento classe: TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
+   Invia `request` al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un blocco `callback`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Crea un oggetto `TargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Crea un oggetto `TargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -142,7 +142,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId (winJS: getPcId)**
 
-   Restituisce il cookie PC ID per il dispositivo corrente.
+   Restituisce il cookie ID PC del dispositivo corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -171,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
       auto sessionId = ADBMobile.Target.getSessionId(); 
       ```
-
