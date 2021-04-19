@@ -1,20 +1,20 @@
 ---
 description: È possibile tenere traccia dei widget Android utilizzando gli stessi metodi applicabili per l’app. Poiché i widget condividono con l’app il contesto applicativo, vengono mantenuti sia l’ordine degli hit sia l’identificazione dei visitatori.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: È possibile tenere traccia dei widget Android utilizzando gli stessi metodi applicabili per l’app. Poiché i widget condividono con l’app il contesto applicativo, vengono mantenuti sia l’ordine degli hit sia l’identificazione dei visitatori.
 seo-title: Widget Android
 solution: Experience Cloud,Analytics
 title: Widget Android
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
+exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # Widget Android {#android-widgets}
 
@@ -29,4 +29,3 @@ Le seguenti linee guida sono utili per tenere traccia dei widget Android:
 * Per tracciare il momento in cui l&#39;app è avviata da un widget, aggiungi una chiamata `trackState` o `trackEvent` prima di creare l&#39;intento di avviare l&#39;applicazione.
 
 * Per tracciare il contesto di un&#39;azione, puoi definire una variabile `ContextData` che offre l&#39;opzione di segmentare separatamente ciascuna azione (ad esempio, `AppExperienceType="widget"` vs. `app`).
-
