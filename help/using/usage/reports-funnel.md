@@ -1,20 +1,20 @@
 ---
 description: Un rapporto funnel indica dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto funnel anche per confrontare le azioni di segmenti diversi.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Un rapporto funnel indica dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto funnel anche per confrontare le azioni di segmenti diversi.
 seo-title: Rapporto Funnel
 solution: Experience Cloud,Analytics
 title: Rapporto Funnel
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
+exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
-
 
 # Rapporto Funnel {#funnel}
 
