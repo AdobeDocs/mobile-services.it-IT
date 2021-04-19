@@ -4,16 +4,16 @@ seo-description: Il valore "lifetime" permette di misurare e impostare come dest
 seo-title: Valore "lifetime" del ciclo di vita del visitatore
 solution: Experience Cloud,Analytics
 title: Valore "lifetime" del ciclo di vita del visitatore
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
+exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
-
 
 # Valore &quot;lifetime&quot; del ciclo di vita del visitatore {#visitor-lifetime-value}
 
@@ -51,4 +51,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 I valori dei dati contestuali devono essere mappati su variabili personalizzate:
 
 ![](assets/map-variable-context-ltv.png)
-
