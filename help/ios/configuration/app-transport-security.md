@@ -4,16 +4,16 @@ seo-description: Queste informazioni sono utili per l'utilizzo di App Transport 
 seo-title: App Transport Security
 solution: Experience Cloud,Analytics
 title: App Transport Security
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
+exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
 ---
-
 
 # App Transport Security {#app-transport-security}
 
@@ -39,4 +39,3 @@ In alternativa, è possibile inserire i server seguenti nell’elenco dei server
 >[!TIP]
 >
 >Queste considerazioni interessano le connessioni effettuate dall&#39;SDK di Adobe Mobile e non hanno alcun impatto sulla visualizzazione web o su altre connessioni effettuate dall&#39;app.
-
