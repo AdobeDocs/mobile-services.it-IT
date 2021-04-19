@@ -1,20 +1,20 @@
 ---
 description: Il rapporto Panoramica dell’app store fornisce un’istantanea delle metriche dell’app store, con informazioni quali numero di download, acquisti in-app, valutazione media nell’app store, ricavi da download, ricavi in-app, download per paese, download per app store e acquisti in-app per nome.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Il rapporto Panoramica dell’app store fornisce un’istantanea delle metriche dell’app store, con informazioni quali numero di download, acquisti in-app, valutazione media nell’app store, ricavi da download, ricavi in-app, download per paese, download per app store e acquisti in-app per nome.
 seo-title: Rapporto Panoramica dell’app store
 solution: Experience Cloud,Analytics
 title: Rapporto Panoramica dell’app store
-topic: Metrics
+topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
+exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Rapporto Panoramica dell’app store {#app-store-overview-report}
 
@@ -56,7 +56,7 @@ Questo rapporto visualizza la quantità di ricavi generati dai download dell’a
 
 Questo rapporto visualizza la quantità di ricavi generati dagli acquisti effettuati nell’app.
 
-## Download per paese   {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## Download per paese    {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 Questo rapporto visualizza il numero di download dell’app, raggruppati per paese.
 
@@ -66,7 +66,7 @@ Per visualizzare un grafico con diagramma che mostra il numero di download per p
 
 ![](assets/downloads_by_country.png)
 
-## Download per app store   {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Download per app store    {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Questo rapporto visualizza il numero di download dell’app, raggruppati per app store.
 
@@ -76,6 +76,6 @@ Per visualizzare un grafico con diagramma che mostra il numero di download per a
 
 ![](assets/app_store_downloads_detail.png)
 
-## Acquisti in-app per nome   {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## Acquisti in-app per nome    {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 Questo rapporto visualizza tutti gli acquisti in-app raggruppati per nome.
