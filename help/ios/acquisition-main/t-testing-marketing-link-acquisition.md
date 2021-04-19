@@ -1,20 +1,20 @@
 ---
 description: Le istruzioni seguenti sono utili per eseguire un ciclo completo per la verifica di una campagna di acquisizione con un collegamento di marketing basato sull'impronta digitale di un dispositivo.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Le istruzioni seguenti sono utili per eseguire un ciclo completo per la verifica di una campagna di acquisizione con un collegamento di marketing basato sull'impronta digitale di un dispositivo.
 seo-title: Verifica dell’acquisizione da collegamenti marketing
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione da collegamenti marketing
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
+exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
-
 
 # Verifica dell’acquisizione da collegamenti marketing {#testing-marketing-link-acquisition}
 
@@ -67,7 +67,7 @@ Le istruzioni seguenti sono utili per eseguire un ciclo completo per la verifica
 
    Seguono alcune informazioni su possibili errori:
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       (Impossibile recuperare la risposta del servizio di acquisizione) - Si è verificato un errore di rete.
 
