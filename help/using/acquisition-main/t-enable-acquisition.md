@@ -1,20 +1,20 @@
 ---
 description: Per poter tener traccia dei collegamenti di acquisizione e generare i relativi rapporti, nella configurazione SDK deve essere attivato il tracciamento dell’acquisizione.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Per poter tener traccia dei collegamenti di acquisizione e generare i relativi rapporti, nella configurazione SDK deve essere attivato il tracciamento dell’acquisizione.
 seo-title: Configurare l’acquisizione
 solution: Experience Cloud,Analytics
 title: Configurare l’acquisizione
-topic: Metrics
+topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
+exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 100%
 
 ---
-
 
 # Configurare l’acquisizione {#configure-acquisition}
 
