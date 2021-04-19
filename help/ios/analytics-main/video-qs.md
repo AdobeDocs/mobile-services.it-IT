@@ -4,16 +4,16 @@ seo-description: Queste informazioni spiegano come misurare i video su iOS media
 seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
+exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 100%
 
 ---
-
 
 # Analisi dei video {#video-analytics}
 
@@ -383,4 +383,3 @@ NSUInteger eventType
       ```objective-c
       + (void) mediaTrack:(NSString *)name withData:(NSDictionary *)data;
       ```
-
