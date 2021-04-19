@@ -4,16 +4,16 @@ seo-description: Le regole di elaborazione vengono utilizzate per copiare i dati
 seo-title: Regole di elaborazione e dati contestuali
 solution: Experience Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # Regole di elaborazione e dati contestuali {#processing-rules-and-context-data}
 
@@ -67,4 +67,3 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
 >[!TIP]
 >
 >Adobe riserva lo spazio dei nomi &quot; `a.`&quot;. A parte questa restrizione, per evitare conflitti l&#39;unico requisito consiste nell&#39;usare variabili di dati di contesto univoche per la società di accesso.
-
