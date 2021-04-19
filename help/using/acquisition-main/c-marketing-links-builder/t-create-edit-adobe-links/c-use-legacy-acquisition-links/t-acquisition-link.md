@@ -1,20 +1,20 @@
 ---
 description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente dall’Apple App Store e da Google Play. I collegamenti creati consentono di attribuire gli eventi di successo ai download.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi creare collegamenti agli app store per scaricare applicazioni direttamente dall’Apple App Store e da Google Play. I collegamenti creati consentono di attribuire gli eventi di successo ai download.
 seo-title: Creare un collegamento di acquisizione
 solution: Experience Cloud,Analytics
 title: Creare un collegamento di acquisizione
-topic: Metrics
+topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
+exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '507'
 ht-degree: 100%
 
 ---
-
 
 # Creare un collegamento di acquisizione {#create-an-acquisition-link}
 
