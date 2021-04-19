@@ -1,20 +1,20 @@
 ---
-description: Informazioni utili per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
-keywords: mobile
-seo-description: Informazioni utili per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
+description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
+keywords: dispositivi mobili
+seo-description: Puoi utilizzare queste informazioni per configurare le opzioni Servizi push nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una già esistente.
 seo-title: Configurare i messaggi push
 solution: Experience Cloud,Analytics
 title: Configurare i messaggi push
-topic: Metrics
+topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
+exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 100%
 
 ---
-
 
 # Configurare i messaggi push {#configure-push-messaging}
 
