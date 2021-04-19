@@ -4,16 +4,16 @@ seo-description: Note sulla versione e problemi noti per SDK 4.x della piattafor
 seo-title: Note sulla versione
 solution: Experience Cloud,Analytics
 title: Note sulla versione
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
+exl-id: c7478baf-9f16-441f-9899-3a16a9dc291b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
 ---
-
 
 # Note sulla versione {#release-notes}
 
