@@ -4,16 +4,16 @@ seo-description: Elenco dei metodi di Audience Manager forniti dalla libreria iO
 seo-title: Metodi di Audience Manager
 solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
+exl-id: b843a52f-2b83-4e19-9f43-895bd582d4ef
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 100%
 
 ---
-
 
 # Metodi di Audience Manager {#audience-manager-methods}
 
