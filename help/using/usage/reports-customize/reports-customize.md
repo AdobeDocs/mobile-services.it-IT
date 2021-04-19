@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per comprendere e personalizzare i rapporti incorporati.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per comprendere e personalizzare i rapporti incorporati.
 seo-title: Personalizzare i rapporti
 solution: Experience Cloud,Analytics
 title: Personalizzare i rapporti
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
+exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # Personalizzare i rapporti {#customize-reports}
 
@@ -45,4 +45,3 @@ Di seguito sono descritte le diverse sezioni del rapporto e la barra **[!UICONTR
 | 6 | **[!UICONTROL Filtro fisso]** consente di creare un filtro per più rapporti. Ad esempio, a volte può essere utile visualizzare il comportamento di un particolare segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.  Per ulteriori informazioni, consulta [Aggiungere un filtro fisso](/help/using/usage/reports-customize/t-sticky-filter.md). |
 | 7 | **[!UICONTROL Grafico dati]** visualizza i dati sotto forma di diagramma appropriato per le metriche selezionate. Sono disponibili diversi tipi di grafico, come grafici a linee, a barre, ad anello ecc. |
 | 8 | **[!UICONTROL Tabella dati]** mostra i dati sotto forma di tabella. Puoi fare clic su un’intestazione di colonna per ordinare i dati in ordine crescente o decrescente. |
-
