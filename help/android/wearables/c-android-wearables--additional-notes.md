@@ -4,16 +4,16 @@ seo-description: Informazioni utili per configurare l’estensione Android, che 
 seo-title: Wearable Android - Note aggiuntive
 solution: Experience Cloud,Analytics
 title: Wearable Android - Note aggiuntive
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
+exl-id: ae8cf2d1-d2b0-456b-bbd3-3980e00bbc84
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # Wearable Android: note aggiuntive {#android-wearables-additional-notes}
 
@@ -26,10 +26,9 @@ Informazioni utili per configurare l’estensione Android, che consente di racco
 
       L’hit proviene dall’app Handheld.
 
-   * `RunMode` = `Extension`
+   * `RunMode` =  `Extension`
 
       L’hit proviene dall’app Wearable.
 
 * L&#39;SDK sincronizza automaticamente lo stato `aid`/`vid`/`visitor`/`service id`/`privacy` dall&#39;app Handheld all&#39;app Wearable, pertanto non occorre chiamare `setPrivacyStatus`/`setUserIdentifier`/`idSync` dall&#39;app Wearable.
 * [I messaggi in-app](/help/android/messaging-main/messaging/messaging.md), [Target](/help/android/target-main/target.md) e [Audience Manager](/help/android/audience-manager/audiencemgmt.md) sono disabilitati per l&#39;app Wearable.
-
