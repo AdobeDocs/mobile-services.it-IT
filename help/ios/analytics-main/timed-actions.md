@@ -4,16 +4,16 @@ seo-description: Le azioni temporizzate consentono di misurare il tempo trascors
 seo-title: Azioni temporizzate
 solution: Experience Cloud,Analytics
 title: Azioni temporizzate
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
+exl-id: 3499766b-55f6-4861-8291-2269d56ba983
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
 
 ---
-
 
 # Azioni temporizzate {#timed-actions}
 
@@ -101,4 +101,3 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate:
                                         return YES; //return YES to send the hit, NO to cancel 
                                      }];
 ```
-
