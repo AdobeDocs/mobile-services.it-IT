@@ -1,20 +1,20 @@
 ---
 description: Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
 seo-title: Gestire i messaggi
 solution: Experience Cloud,Analytics
 title: Gestire i messaggi
-topic: Metrics
+topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
+exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
-
 
 # Gestire i messaggi {#manage-messages}
 
@@ -66,4 +66,3 @@ Seguono ulteriori informazioni sulle attività che è possibile completare per i
 
    1. Fai clic su **[!UICONTROL Visualizza archivio]**.
    1. Per ripristinare dei messaggi archiviati, seleziona la casella di controllo accanto a uno o più messaggi archiviati e fai clic su **[!UICONTROL Annulla archiviazione selezionati]**.
-
