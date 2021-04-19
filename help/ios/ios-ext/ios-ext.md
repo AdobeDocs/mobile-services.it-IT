@@ -4,16 +4,16 @@ seo-description: L'uso di un'estensione iOS facilita la raccolta dei dati di uti
 seo-title: Implementazione di un’estensione iOS
 solution: Experience Cloud,Analytics
 title: Implementazione di un’estensione iOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
+exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione di un’estensione iOS {#ios-extension-implementation}
 
@@ -48,6 +48,7 @@ Anche se questi tre metodi di tracciamento soddisfano le tue esigenze, usa comun
 >
 >* Una destinazione che contenga l’app
 >* Una destinazione per l’estensione
+
 >
 
 
@@ -114,4 +115,3 @@ Seguono alcune considerazioni da tenere a mente:
 * Se l’app contenitore non viene mai avviata, gli hit provenienti dall’estensione vengono scartati.
 * L’app contenitore e l’estensione devono avere lo stesso numero di versione e di build.
 * Sulle app iOS non viene attivata alcuna chiamata “lifecycle” (ciclo di vita).
-
