@@ -4,16 +4,16 @@ seo-description: Di seguito sono elencati i metodi del servizio Adobe Experience
 seo-title: Metodi di Adobe Experience Platform Identity
 solution: Experience Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
+exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
 ---
-
 
 # Metodi di Adobe Experience Platform Identity {#experience-cloud-id-service-methods}
 
@@ -176,4 +176,3 @@ ADBMobileVisitorAuthenticationStateUnknown,
 ADBMobileVisitorAuthenticationStateAuthenticated, 
 ADBMobileVisitorAuthenticationStateLoggedOut
 ```
-
