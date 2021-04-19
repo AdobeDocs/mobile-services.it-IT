@@ -1,20 +1,20 @@
 ---
 description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi creare collegamenti di marketing per acquisire al volo nuovi utenti di app mobili configurando manualmente i parametri degli URL.
 seo-title: Creare manualmente collegamenti di acquisizione
 solution: Experience Cloud,Analytics
 title: Creare manualmente collegamenti di acquisizione
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # Creare manualmente collegamenti di acquisizione {#create-acquisition-link-manually}
 
@@ -146,4 +146,3 @@ Quando crei manualmente dei collegamenti di acquisizione, tieni presente quanto 
    Ad esempio, un ID store potrebbe essere `a_g_id`/ `a_i_id`.
 
 * Se non è possibile determinare automaticamente lo store di destinazione e non ne è stato fornito uno predefinito, viene restituito un errore 404.
-
