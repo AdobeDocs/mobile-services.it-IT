@@ -4,16 +4,16 @@ seo-description: A partire da WatchOS 2, le estensioni WatchKit possono essere e
 seo-title: Implementazione Apple Watch con WatchOS 2
 solution: Experience Cloud,Analytics
 title: Implementazione Apple Watch con WatchOS 2
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
+exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione Apple Watch con WatchOS 2 {#apple-watch-implementation-with-watchos}
 
@@ -41,6 +41,7 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 >* L’app contenitore
 >* L’app WatchKit
 >* L’estensione WatchKit
+
 >
 
 
@@ -166,4 +167,3 @@ Considerazioni da ricordare:
 * Per le app WatchKit, `a.RunMode` sarà impostato su `Extension`.
 * Poiché le app WatchKit vengono eseguite sull&#39;orologio, le app segnalano correttamente il loro nome in `a.AppID`.
 * Sulle app WatchOS2 non viene attivata alcuna chiamata &quot;lifecycle&quot; (ciclo di vita).
-
