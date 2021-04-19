@@ -4,16 +4,16 @@ seo-description: Queste informazioni sono utili per passare dalle versioni 3.x o
 seo-title: Migrazione alla libreria iOS 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione alla libreria iOS 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: ht
+exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
 
 ---
-
 
 # Migrazione alla libreria iOS 4.x {#migrating-to-the-x-ios-library}
 
@@ -21,7 +21,7 @@ Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della librer
 
 >[!IMPORTANT]
 >
->L’SDK utilizza `NSUserDefaults` per memorizzare i dati che sono necessari per calcolare gli utenti univoci, le metriche del ciclo di vita e altri dati relativi alle funzionalità SDK di base. Se modifichi o rimuovi i valori di `NSUserDefaults` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
+>L’SDK utilizza `NSUserDefaults` per memorizzare i dati che sono necessari per calcolare gli utenti univoci, le metriche del ciclo di vita e altri dati relativi alle funzionalità SDK di base.  Se modifichi o rimuovi i valori di `NSUserDefaults` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
 
 Nella versione 4.x della libreria SDK iOS, i metodi pubblici sono consolidati in un’unica intestazione. Inoltre, le funzionalità sono ora accessibili tramite metodi di livello di classe; pertanto, non è più necessario tenere traccia di puntatori, istanze o singleton.
 
