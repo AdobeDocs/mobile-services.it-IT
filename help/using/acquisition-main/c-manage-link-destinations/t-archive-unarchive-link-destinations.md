@@ -1,20 +1,20 @@
 ---
 description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
 seo-title: Gestire le destinazioni dei collegamenti
 solution: Experience Cloud,Analytics
 title: Gestire le destinazioni dei collegamenti
-topic: Metrics
+topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
+exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # Gestire le destinazioni dei collegamenti {#manage-link-destinations}
 
@@ -62,6 +62,3 @@ Per visualizzare la pagina Gestione destinazioni collegamenti:
       >[!IMPORTANT]
       >
       >L’eliminazione di una destinazione di collegamento è **permanente**. Se non sei sicuro di volerla eliminare, usa l’opzione di archiviazione.
-
-
-
