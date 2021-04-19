@@ -4,16 +4,16 @@ seo-description: Non è possibile impostare la variabile "products" utilizzando 
 seo-title: Variabile "products"
 solution: Experience Cloud,Analytics
 title: Variabile "products"
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
+exl-id: c945add4-5358-44f6-b445-554b0df056c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 100%
 
 ---
-
 
 # Variabile &quot;products&quot; {#products-variable}
 
