@@ -1,20 +1,20 @@
 ---
-description: Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
-keywords: mobile
-seo-description: Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
+description: Configura le opzioni relative all’esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
+keywords: dispositivi mobili
+seo-description: Configura le opzioni relative all’esperienza per i messaggi in-app, incluso tipo (schermo intero, avviso o notifica) e visualizzazione, testo e pulsante.
 seo-title: Esperienza - Messaggio in-app
 solution: Experience Cloud,Analytics
 title: Esperienza - Messaggio in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
+exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '687'
 ht-degree: 100%
 
 ---
-
 
 # Esperienza: messaggio in-app {#experience-in-app-message}
 
