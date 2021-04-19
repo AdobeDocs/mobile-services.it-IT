@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risolvere i problemi dei messaggi push
 solution: Experience Cloud,Analytics
 title: Risolvere i problemi dei messaggi push
-topic: Metrics
+topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
+exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
-
 
 # Risolvere i problemi dei messaggi push {#troubleshooting-push-messaging}
 
@@ -26,7 +26,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
 * Attesa degli hit di Analytics
 
-   Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L&#39;impostazione predefinita è pari a 1 ora, allo scoccare dell&#39;ora. L&#39;effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo massimo di elaborazione richiesto (30 minuti), potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l&#39;app alle 09:01, l&#39;hit risulterebbe nell&#39;interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
+   Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L&#39;impostazione predefinita è pari a 1 ora, allo scoccare dell&#39;ora. L&#39;effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo massimo di elaborazione richiesto (30 minuti), potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente univoco tra le 10:15 e le 10:30.
 
 * Attesa del servizio push
 
