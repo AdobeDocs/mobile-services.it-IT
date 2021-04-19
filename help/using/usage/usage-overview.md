@@ -1,20 +1,20 @@
 ---
 description: Il rapporto Panoramica fornisce un’istantanea delle tue metriche chiave.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Il rapporto Panoramica fornisce un’istantanea delle tue metriche chiave.
 seo-title: Rapporto panoramica
 solution: Experience Cloud,Analytics
 title: Rapporto panoramica
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 5f7088af-4b25-4fe5-afda-4844597c78f9
+exl-id: db681d0e-b784-4415-b248-f92df5b780cc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '116'
 ht-degree: 100%
 
 ---
-
 
 # Rapporto panoramica {#overview}
 
@@ -29,4 +29,3 @@ Puoi modificare l’intervallo di date del rapporto facendo clic sull’icona Ca
 >[!TIP]
 >
 >Puoi configurare le metriche chiave da includere in questo rapporto durante la creazione dell’app. Per ulteriori informazioni, consulta [Configurazione dell’app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
-
