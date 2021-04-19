@@ -1,20 +1,20 @@
 ---
-description: Puoi configurare la pianificazione per i messaggi in-app utilizzando le opzioni per durata, giorni della settimana e ora del giorno.
-keywords: mobile
-seo-description: Puoi configurare la pianificazione per i messaggi in-app utilizzando le opzioni per durata, giorni della settimana e ora del giorno.
+description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
+keywords: dispositivi mobili
+seo-description: Puoi configurare le opzioni di pianificazione per i messaggi in-app, incluso durata, giorni della settimana e ora del giorno.
 seo-title: Pianificazione - Messaggio in-app
 solution: Experience Cloud,Analytics
 title: Pianificazione - Messaggio in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
+exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
-
 
 # Pianificazione: messaggio in-app {#schedule-in-app-message}
 
