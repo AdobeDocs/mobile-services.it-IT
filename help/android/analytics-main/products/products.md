@@ -1,20 +1,20 @@
 ---
 description: Non è possibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Non è possibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti nella chiamata al server.
 seo-title: Variabile "products"
 solution: Experience Cloud,Analytics
 title: Variabile "products"
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
+exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '189'
 ht-degree: 100%
 
 ---
-
 
 # Variabile &quot;products&quot; {#products-variable}
 
