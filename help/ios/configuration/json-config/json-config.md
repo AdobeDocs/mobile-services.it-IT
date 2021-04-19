@@ -4,16 +4,16 @@ seo-description: Queste informazioni sono utili per usare il file di configurazi
 seo-title: File di configurazione ADBMobile JSON
 solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
+exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
 ---
-
 
 # File di configurazione ADBMobile JSON {#adbmobile-json-config}
 
@@ -464,5 +464,5 @@ Il nodo dei messaggi viene generato automaticamente da Adobe Mobile Services e i
    Simile a audience, ma per le azioni anziché per il pubblico:
 
    * &quot;key&quot;
-   * &quot;matches&quot;
+   * &quot;corrisponde&quot;
    * &quot;values&quot;
