@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l’SDK di Adobe Mobile per Android.
-keywords: android;library;mobile;sdk
-seo-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l’SDK di Adobe Mobile per Android.
+keywords: android,libreria,mobile,sdk
+seo-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
 seo-title: Tracciamento dei collegamenti profondi in Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Tracciamento dei collegamenti profondi
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
+exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
 translation-type: tm+mt
-source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # Tracciamento dei collegamenti profondi
 
@@ -72,4 +72,3 @@ Nel caso di un collegamento profondo differito, Adobe SDK aprirà un nuovo Inten
  */
 public static final String ADB_MESSAGE_DEEPLINK_KEY = "adb_deeplink";
 ```
-
