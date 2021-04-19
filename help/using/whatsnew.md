@@ -1,20 +1,20 @@
 ---
 description: Informazioni sulla nuova versione di Adobe Mobile Services.
-keywords: mobile;release notes;whats new
+keywords: mobile, note sulla versione, novità
 seo-description: Informazioni sulla nuova versione di Adobe Mobile Services.
 seo-title: Note sulla versione di Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Note sulla versione
-topic: Metrics
+topic-fix: Metrics
 uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
+exl-id: 4da7b3d8-f9c5-4b5a-b370-d0fcb13ebad8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '85'
 ht-degree: 100%
 
 ---
-
 
 # Note sulla versione {#release-notes}
 
