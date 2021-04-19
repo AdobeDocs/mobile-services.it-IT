@@ -4,26 +4,26 @@ seo-description: Informazioni utili per l’utilizzo del file di configurazione 
 seo-title: File di configurazione ADBMobileConfig.json
 solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobileConfig.json
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
+exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 46%
 
 ---
 
+# `ADBMobileConfig.json` file di configurazione  {#adbmobileconfig-json-config}
 
-# `ADBMobileConfig.json` config, file {#adbmobileconfig-json-config}
+Informazioni utili per usare il file di configurazione `ADBMobile.json`.
 
-Informazioni utili per l’utilizzo del file di `ADBMobile.json` configurazione.
-
-L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
 
 * **rsids**
 
-   (Richiesto da Analytics) Una o più suite di rapporti ricevono i dati di Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
+   (Richiesto da Analytics) Una o più suite di rapporti che deve ricevere i dati di Analytics. Gli ID suite di rapporti multipli devono essere separati da virgole senza spazi intermedi.
 
    * Di seguito sono riportati alcuni esempi di codice per questa variabile:
 
@@ -37,7 +37,7 @@ L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Anal
 
 * **server**
 
-   (Richiesto da Analytics e Gestione dell&#39;audience). Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla `ssl` variabile.
+   (Richiesto da Analytics e Gestione dell&#39;audience). Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla variabile `ssl` .
 
    Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
@@ -47,15 +47,15 @@ L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Anal
 
 * **ssl**
 
-   Abilita (`true`) o disabilita (`false`) l’invio di dati di misurazione tramite SSL (HTTPS). Il valore predefinito è `false`.
+   Abilita (`true`) o disabilita (`false`) l&#39;invio dei dati di misurazione tramite SSL (HTTPS). Il valore predefinito è `false`.
 
 * **offlineEnabled**
 
-   Quando è attivato (true), gli hit vengono messi in coda mentre il dispositivo è offline e inviati non appena il dispositivo è online. Per poter usare il tracciamento offline, nella suite di rapporti devono essere abilitate le marche temporali.
+   Quando è abilitato (true), gli hit vengono messi in coda mentre il dispositivo è offline e inviati non appena torna online. Per poter usare il tracciamento offline, nella suite di rapporti devono essere abilitate le marche temporali.
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,   contatta   Assistenza clienti. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve essere true.* Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,   contatta   Assistenza clienti. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che utilizzano la variabile `s.timestamp` .
 
 * **lifecycleTimeout**
 
@@ -63,25 +63,25 @@ L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Anal
 
 * **batchLimit**
 
-   Invia gli hit in batch. Ad esempio, se è impostato su 50, gli hit vengono messi in coda fino alla memorizzazione di 50, quindi tutti gli hit in coda vengono inviati. Richiede `offlineEnabled=true`. Il valore predefinito è `0` (nessun invio in batch).
+   Invia gli hit in batch. Ad esempio, se è impostato su 50, gli hit vengono messi in coda fino a memorizzarne 50, dopodiché tutti gli hit in coda vengono inviati. Richiede `offlineEnabled=true`. Il valore predefinito è `0` (nessun invio in batch).
 
 * **privacyDefault**
 
    * `optedin` - gli hit vengono inviati immediatamente.
    * `optedout` - gli hit vengono eliminati.
-   * `optunknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (optedin, gli hit vengono inviati) o rinuncia (optedout, gli hit vengono eliminati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
+   * `optunknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
       Il valore predefinito è `optedin`.
 
       >[!TIP]
       >
-      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nello spazio di archiviazione locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
+      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nell&#39;archiviazione locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
 * **poi**
 
    Ogni array POI contiene il nome, la latitudine, la longitudine e il raggio (in metri) dell&#39;area di interesse. Il nome POI può essere una qualsiasi stringa. Quando viene inviata una chiamata `trackLocation`, se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `trackLocation`.
 
-   * Esempio di codice per questa variabile:
+   * Di seguito è riportato un esempio di codice per questa variabile:
 
       ```js
       "poi": [
@@ -98,7 +98,7 @@ L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Anal
 
    Determina per quanto tempo Target può aspettare di ricevere una risposta.
 
-The following is an example of an `ADBMobileConfig.json` file:
+Di seguito è riportato un esempio di file `ADBMobileConfig.json` :
 
 ```js
 { 
@@ -125,4 +125,3 @@ The following is an example of an `ADBMobileConfig.json` file:
  } 
 }
 ```
-
