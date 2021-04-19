@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi di messaggistica in-app
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi di messaggistica in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # Risoluzione dei problemi di messaggistica in-app {#troubleshooting-in-app-messaging}
 
@@ -70,6 +70,4 @@ Regole di posizionamento e dimensionamento per ciascun orientamento:
 * **Orizzontale**
    * L’immagine viene ridimensionata al 100% dell’altezza del dispositivo.
    * La larghezza è pari al 75% del dispositivo, con una dissolvenza a destra.
-
    In caso di problemi con il modello a schermo intero, puoi scaricare e utilizzare il modello HTML personalizzato. Questo modello offre maggiore flessibilità per le immagini e consente il controllo completo del modello.
-
