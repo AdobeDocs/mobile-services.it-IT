@@ -4,16 +4,16 @@ seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni
 seo-title: Tracciare gli stati dell’app
 solution: Experience Cloud,Analytics
 title: Tracciare gli stati dell’app
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
+exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # Tracciare gli stati dell’app {#track-app-states}
 
@@ -78,5 +78,3 @@ Gli stati vengono generalmente visualizzati utilizzando un rapporto sui percorsi
 | Adobe Mobile Services | Il rapporto **[!UICONTROL Stati di visualizzazione]**. Questo rapporto si basa sui percorsi seguiti dagli utenti all’interno dell’applicazione. Un esempio di percorso è **[!UICONTROL Home]** > **[!UICONTROL Impostazioni]** > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Gli stati possono essere visualizzati ovunque possano essere visualizzate le Pagine, ad esempio nei rapporti **[!UICONTROL Pagine]**, **[!UICONTROL Visualizzazioni pagina]** e **[!UICONTROL Percorso]**. |
 | Analisi ad hoc | Gli stati possono essere visualizzati ovunque possano essere visualizzate le pagine utilizzando la dimensione **[!UICONTROL Pagina]**, la metrica **[!UICONTROL Visualizzazioni pagina]** e i rapporti **[!UICONTROL Percorso]**. |
-
-
