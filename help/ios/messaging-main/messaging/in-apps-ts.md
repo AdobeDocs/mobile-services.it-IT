@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Queste informazioni sono utili per risolvere eventuali problemi dei messaggi in-app.
 seo-title: Risoluzione dei problemi dei messaggi in-app
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
+exl-id: ce009289-9d22-4d76-9997-31fc864e9d4d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 100%
 
 ---
-
 
 # Risoluzione dei problemi dei messaggi in-app {#troubleshooting-in-app-messaging}
 
