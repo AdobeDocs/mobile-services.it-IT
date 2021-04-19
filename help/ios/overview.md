@@ -4,16 +4,16 @@ seo-description: L'SDK 4.x per iOS per le soluzioni Experience Cloud consente di
 seo-title: SDK 4.x per iOS per le soluzioni Experience Cloud
 solution: Experience Cloud,Analytics
 title: SDK 4.x per iOS per le soluzioni Experience Cloud
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: ht
+exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 100%
 
 ---
-
 
 # SDK 4.x per iOS per le soluzioni Experience Cloud {#ios-sdk-x-for-experience-cloud-solutions}
 
@@ -27,9 +27,9 @@ Se utilizzi la versione 4.21.0 o successiva, leggi la documentazione tenendo pre
 
 * Ogni volta che si fa riferimento a un file di libreria binario, si deve usare la sua forma sostitutiva XCFramework:
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
+   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
 * Se nel progetto devi aggiungere manualmente codice in formato Adobe XCFrameworks, questo non deve essere incorporato.
 
 >[!IMPORTANT]
