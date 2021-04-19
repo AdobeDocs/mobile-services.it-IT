@@ -4,16 +4,16 @@ seo-description: Le azioni sono gli eventi che si verificano nell’app Android 
 seo-title: Tracciare le azioni eseguite nell’app
 solution: Experience Cloud,Analytics
 title: Tracciare le azioni eseguite nell’app
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
-
 
 # Tracciare le azioni eseguite nell’app {#track-app-actions}
 
@@ -71,4 +71,3 @@ I valori dei dati contestuali devono essere mappati su variabili personalizzate 
 | Adobe Mobile Services | Rapporto **[!UICONTROL Percorsi azione]**. Visualizza l’ordine in cui si verificano le azioni nell’app. Puoi anche fare clic su **[!UICONTROL Personalizza]** su qualsiasi rapporto per visualizzare le azioni in base a classifica, tendenze o dettagli, oppure puoi applicare un filtro per vedere le azioni relative a un dato segmento. |
 | Reporting e analisi di marketing | Rapporto **[!UICONTROL Evento personalizzato]**. Dopo aver mappato un’azione su un evento personalizzato, puoi visualizzare gli eventi da app mobile in modo analogo a tutti gli altri eventi di Analytics. |
 | Analisi ad hoc | Rapporto **[!UICONTROL Evento personalizzato]**.  Dopo aver mappato un’azione su un evento personalizzato, puoi visualizzare gli eventi da app mobile in modo analogo a tutti gli altri eventi di Analytics. |
-
