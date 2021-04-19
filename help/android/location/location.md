@@ -1,20 +1,20 @@
 ---
 description: Informazioni utili per usare la funzione Posizione nelle app Android.
-keywords: android;library;mobile;sdk
-seo-description: Informazioni utili per usare la funzione Posizione nelle app Android.
+keywords: android,libreria,mobile,sdk
+seo-description: Queste informazioni aiutano nell'utilizzo della funzione di Posizione nelle app Android.
 seo-title: Panoramica sulla posizione
 solution: Experience Cloud,Analytics
 title: Panoramica sulla posizione
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
+exl-id: 687a3b2c-ee74-46d8-a732-b3a0bec6e798
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '137'
 ht-degree: 100%
 
 ---
-
 
 # Panoramica sulla posizione {#location}
 
@@ -28,4 +28,3 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
