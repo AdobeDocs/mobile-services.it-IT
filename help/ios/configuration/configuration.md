@@ -4,16 +4,16 @@ seo-description: 'Queste informazioni sono utili per configurare l''SDK per iOS.
 seo-title: Configurazione
 solution: Experience Cloud,Analytics
 title: Configurazione
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 63261b61-e70a-42be-a56f-5943173c041e
+exl-id: ff1f7fcd-1dc9-49b4-aead-46134600f3ab
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 100%
 
 ---
-
 
 # Configurazione {#configuration}
 
