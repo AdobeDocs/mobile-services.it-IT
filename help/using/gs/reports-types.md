@@ -1,20 +1,20 @@
 ---
 description: Quando si personalizzano i rapporti, l’ampia flessibilità può far sorgere alcune domande rispetto al tipo di rapporto più adatto per ottenere i dati necessari.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Quando si personalizzano i rapporti, l’ampia flessibilità può far sorgere alcune domande rispetto al tipo di rapporto più adatto per ottenere i dati necessari.
 seo-title: Tipi di rapporti
 solution: Experience Cloud,Analytics
 title: Tipi di rapporti
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
-
 
 # Tipi di rapporti {#report-types}
 
@@ -62,7 +62,7 @@ I rapporti con classifica mostrano la frequenza con cui le prime 50 dimensioni c
 
 ![](assets/ranked.png)
 
-## Rapporti sunburst   {#section_17A9842039174DE094A6B1E9837E35BB}
+## Rapporti sunburst    {#section_17A9842039174DE094A6B1E9837E35BB}
 
 I rapporti sunburst forniscono, ad esempio, il rapporto di base con raggruppamenti. La visualizzazione utilizza l’altezza per mostrare la metrica e le differenze di prestazioni tra le metriche. Ogni cerchio concentrico rappresenta un segmento di pubblico nella categoria del dato cerchio. Puoi intraprendere azioni su un pubblico, quali l’applicazione di un filtro fisso e la visualizzazione di metriche.
 
@@ -85,7 +85,7 @@ Un rapporto di percorsi, basato sull’analisi dei percorsi, consiste in un graf
 
 Ogni nodo ha la forma di una casella e rappresenta uno stato nei percorsi seguiti dall’utente attraverso un’app. Ad esempio, nell’immagine qui sopra, il nodo più in alto rappresenta il numero di utenti che hanno avviato l’app e poi scelto una foto dalla galleria.
 
-### Rapporto Funnel   {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
+### Rapporto Funnel    {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
 Un rapporto funnel consente di determinare dove i clienti abbandonano una campagna di marketing o deviano da un percorso di conversione definito durante l’interazione con la tua app mobile. Puoi usare il rapporto funnel anche per confrontare le azioni di segmenti diversi.
 
