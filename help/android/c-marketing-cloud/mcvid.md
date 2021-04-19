@@ -4,16 +4,16 @@ seo-description: Il servizio Adobe Experience Platform Identity fornisce un ID v
 seo-title: Configurazione del servizio Experience Cloud ID
 solution: Experience Cloud,Analytics
 title: Configurazione del servizio Experience Cloud ID
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
+exl-id: 97dc6768-bf31-4a0d-a460-9caf9ecda5fb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
 
 ---
-
 
 # Configurazione del servizio Experience Cloud ID {#experience-cloud-id-configuration}
 
