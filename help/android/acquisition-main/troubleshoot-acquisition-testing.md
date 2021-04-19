@@ -1,19 +1,19 @@
 ---
 description: In questo argomento vengono fornite informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: In questo argomento vengono fornite informazioni su come risolvere eventuali problemi che potrebbero verificarsi durante il test di acquisizione.
 seo-title: Risoluzione dei problemi del test di acquisizione
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi del test di acquisizione
-topic: Developer and implementation
+topic-fix: Developer and implementation
+exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
-
 
 # Risoluzione dei problemi del test di acquisizione {#troubleshoot-acquisition-testing}
 
@@ -50,4 +50,3 @@ In questo argomento vengono fornite informazioni su come risolvere eventuali pro
 >[!IMPORTANT]
 >
 >Per elaborare correttamente l&#39;intento del referente, è necessario eseguire questi due comandi in modo indipendente. In caso contrario, il `adb` sottrarrà due volte le informazioni del referente e i dati ricevuti dal destinatario della trasmissione risulteranno incompleti.
-
