@@ -1,20 +1,20 @@
 ---
 description: Devi eseguire queste operazioni prima di configurare i messaggi push nelle applicazioni.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Devi eseguire queste operazioni prima di configurare i messaggi push nelle applicazioni.
 seo-title: Prerequisiti per abilitare i messaggi push
 solution: Experience Cloud,Analytics
 title: Prerequisiti per abilitare i messaggi push
-topic: Metrics
+topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
+exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 100%
 
 ---
-
 
 # Prerequisiti per abilitare i messaggi push {#prerequisites-to-enable-push-messaging}
 
