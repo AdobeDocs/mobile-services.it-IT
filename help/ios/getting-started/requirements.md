@@ -4,16 +4,16 @@ seo-description: 'Per configurare una suite di rapporti per la raccolta di dati 
 seo-title: Prima di iniziare
 solution: Experience Cloud,Analytics
 title: Prima di iniziare
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
 ---
-
 
 # Prima di iniziare {#before-you-start}
 
@@ -101,4 +101,3 @@ Per scaricare l&#39;SDK di Mobile:
 >[!TIP]
 >
 >Nel download dell&#39;SDK viene automaticamente incluso un file di configurazione per la tua app; non è quindi necessario scaricare manualmente tale file. Tuttavia, se hai scaricato l&#39;SDK in precedenza e ora desideri ottenere le impostazioni aggiornate, dovrai scaricare nuovamente il file di configurazione.
-
