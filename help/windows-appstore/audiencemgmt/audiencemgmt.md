@@ -1,13 +1,13 @@
 ---
-description: Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori  Audience Manager.
-seo-description: Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori  Audience Manager.
+description: Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
+seo-description: Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
 seo-title: Audience Manager
 solution: Experience Cloud,Analytics
 title: Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 22%
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 # Audience Manager {#audience-manager}
 
-Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori  Audience Manager.
+Informazioni utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
 
 ## Informazioni aggiuntive
 
