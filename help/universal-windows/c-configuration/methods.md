@@ -4,16 +4,16 @@ seo-description: Classi e metodi forniti dalla libreria della piattaforma UWP (U
 seo-title: Metodi dell’SDK
 solution: Experience Cloud,Analytics
 title: Metodi dell’SDK
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 67%
 
 ---
-
 
 # Metodi dell’SDK {#sdk-methods}
 
@@ -21,7 +21,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 >[!TIP]
 >
->Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
+>Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
    * `ADBMobilePrivacyStatusOptOut` - gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      The default value is set in the `ADBMobileConfig.json` config file. Per ulteriori informazioni, vedi [ADBMobileConfig.json file](/help/universal-windows/c-configuration/c.json.md)di configurazione.
+      Il valore predefinito è impostato nel file di configurazione `ADBMobileConfig.json`. Per ulteriori informazioni, consulta [File di configurazione ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -58,7 +58,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
-      **C Nitido**
+      **C Sharp**
 
       ```csharp
       public enum class ADBMobilePrivacyStatus : int { ADBMobilePrivacyStatusOptIn = 1, 
@@ -91,7 +91,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
       * Di seguito è riportato un esempio di codice per questo metodo:
 
-         **C diesis**
+         **Luminoso**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -128,12 +128,12 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Restituisce l’identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Returns `null` if a custom identifier is not set.
+   Restituisce l&#39;identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Restituisce `null` se non è impostato un identificatore personalizzato.
 Il valore predefinito è `null`.
 
    >[!IMPORTANT]
    >
-   >Se l’app viene aggiornata dall’SDK  Experience Cloud 3.x alla versione 4.x, il servizio ID precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` finché non viene impostato.
+   >Se l’app viene aggiornata dall’SDK di Experience Cloud 3.x alla versione 4.x, il servizio ID precedente (generato in modo personalizzato o automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` finché non viene impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -184,7 +184,7 @@ Il valore predefinito è `null`.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Imposta la preferenza per l&#39;accesso di su `debugLogging` debug. La registrazione del debug funziona solo quando si utilizza la versione di debug della libreria. La versione release ignora questa impostazione.
+   Imposta la preferenza per l&#39;accesso di su `debugLogging` debug. La registrazione di debug funziona solo quando si utilizza la versione di debug della libreria, la versione di rilascio ignora questa impostazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -218,7 +218,7 @@ Il valore predefinito è `null`.
 
 * **PauseCollecting &#x200B; LifecycleData (winJS: pauseRaccolta &#x200B; LifecycleData)**
 
-   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l’app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/universal-windows/metrics.md).
+   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera una marca temporale per determinare la lunghezza della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l&#39;app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/universal-windows/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
