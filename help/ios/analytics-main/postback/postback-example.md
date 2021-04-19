@@ -4,16 +4,16 @@ seo-description: Definizione ed esempi di codice sorgente per la funzione Postba
 seo-title: Esempio di postback
 solution: Experience Cloud,Analytics
 title: Esempio di postback
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
+exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
 ---
-
 
 # Esempio di postback {#postback-example}
 
