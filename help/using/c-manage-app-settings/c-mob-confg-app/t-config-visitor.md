@@ -1,20 +1,20 @@
 ---
 description: Puoi configurare le opzioni del servizio Adobe Experience Platform Identity nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi configurare le opzioni del servizio Adobe Experience Platform Identity nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 seo-title: Configurare le opzioni SDK del servizio ID
 solution: Experience Cloud,Analytics
 title: Configurare le opzioni SDK del servizio ID
-topic: Metrics
+topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
+exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # Configurare le opzioni SDK del servizio ID {#configure-sdk-id-service-options}
 
