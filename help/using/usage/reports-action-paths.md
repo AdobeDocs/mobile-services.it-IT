@@ -1,20 +1,20 @@
 ---
 description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Il rapporto Percorsi azione è basato sull’analisi dei percorsi e visualizza un grafico che rappresenta i percorsi seguiti da uno stato dell’app a un altro stato.
 seo-title: Rapporto Percorsi azione
 solution: Experience Cloud,Analytics
 title: Rapporto Percorsi azione
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
+exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 100%
 
 ---
-
 
 # Rapporto Percorsi azione {#action-paths}
 
