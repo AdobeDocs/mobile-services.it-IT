@@ -1,20 +1,20 @@
 ---
 description: Puoi creare un messaggio in-app da distribuire agli utenti dei dispositivi mobili. Quando crei il messaggio, configurane il tipo, il pubblico, l’esperienza e la pianificazione.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi creare un messaggio in-app da distribuire agli utenti dei dispositivi mobili. Quando crei il messaggio, configurane il tipo, il pubblico, l’esperienza e la pianificazione.
 seo-title: Creare un messaggio in-app
 solution: Experience Cloud,Analytics
 title: Creare un messaggio in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: 15b52713-9ffc-4df9-b21a-6b0576a96a54
+exl-id: 40c5e9b0-9034-4226-9bca-486df8939d02
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
-
 
 # Creare un messaggio in-app {#create-an-in-app-message}
 
