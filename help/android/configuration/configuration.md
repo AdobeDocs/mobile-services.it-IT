@@ -4,16 +4,16 @@ seo-description: 'Queste informazioni sono utili per configurare l''SDK per Andr
 seo-title: Panoramica sulla configurazione
 solution: Experience Cloud,Analytics
 title: Panoramica sulla configurazione
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 207d6eae-7fc5-449d-b92b-c2d83e8e82b4
+exl-id: 6e16f15a-71c9-4f0d-ba45-f6c22e05b9c2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # Panoramica sulla configurazione {#configuration}
 
@@ -27,4 +27,3 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 * Per iniziare, vai su Adobe Experience Platform Launch.
 * Per visualizzare cosa è compreso negli archivi Experience Platform SDK, passa a [Github: SDK di Adobe Experience Platform](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
