@@ -1,20 +1,20 @@
 ---
 description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Crea, gestisci e genera rapporti sui messaggi in-app e push.
 seo-title: Messaggistica
 solution: Experience Cloud,Analytics
 title: Messaggistica
-topic: Metrics
+topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
+exl-id: e6d076fc-3176-4591-8388-314b936c58cd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 100%
 
 ---
-
 
 # Messaggistica {#messaging}
 
