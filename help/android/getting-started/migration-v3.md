@@ -1,20 +1,20 @@
 ---
-description: Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
-keywords: android;library;mobile;sdk
-seo-description: Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
+description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
+keywords: android,libreria,mobile,sdk
+seo-description: Queste informazioni sono utili per passare dalla versione 3.x o 2.x della libreria Android alla versione 4.x.
 seo-title: Migrazione alla libreria Android 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione alla libreria Android 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
+exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '884'
 ht-degree: 100%
 
 ---
-
 
 # Migrazione alla libreria Android 4.x {#migrating-to-the-android-x-library}
 
@@ -22,7 +22,7 @@ Informazioni utili per passare dalla versione 3.x o 2.x della libreria Android a
 
 >[!IMPORTANT]
 >
->L’SDK utilizza `SharedPreferences` per memorizzare i dati che sono necessari per calcolare gli utenti univoci, le metriche del ciclo di vita e altri dati relativi alle funzionalità SDK di base. Se modifichi o rimuovi i valori di `SharedPreferences` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
+>L’SDK utilizza `SharedPreferences` per memorizzare i dati che sono necessari per calcolare gli utenti univoci, le metriche del ciclo di vita e altri dati relativi alle funzionalità SDK di base.  Se modifichi o rimuovi i valori di `SharedPreferences` che sono attesi dall’SDK, si potrebbe determinare un comportamento imprevisto con conseguente incoerenza dei dati.
 
 Nella versione 4.x della libreria, i metodi pubblici sono consolidati in un’unica intestazione. Inoltre, tutte le funzionalità sono ora accessibili tramite metodi di livello di classe; pertanto, non è più necessario tenere traccia di puntatori, istanze o singleton.
 
@@ -190,4 +190,3 @@ Rimuovi le chiamate ai seguenti metodi:
 ## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Per ulteriori informazioni sulla variabile &quot;products&quot;, vedi [Variabile &quot;products&quot;](/help/android/analytics-main/products/products.md).
-
