@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 seo-title: Risoluzione dei problemi dei messaggi push
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
-
 
 # Risoluzione dei problemi dei messaggi push {#troubleshooting-push-messaging}
 
@@ -28,7 +28,7 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    Per ogni suite di rapporti, un’impostazione consente di determinare quando elaborare gli hit di Analytics in arrivo. L’impostazione predefinita è ogni ora.
 
-   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo massimo di elaborazione richiesto (30 minuti), potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente unico tra le 10:15 e le 10:30.
+   L’effettiva elaborazione degli hit di Analytics potrebbe richiedere fino a 30 minuti, ma in genere dura 15-20 minuti. Ad esempio, una suite di rapporti elabora gli hit ogni ora. Considerando il tempo massimo di elaborazione richiesto (30 minuti), potrebbero essere necessari fino a 90 minuti perché un hit in arrivo sia disponibile per un messaggio push. Se un utente ha avviato l’app alle 09:01, l’hit risulterebbe nell’interfaccia di Mobile Services come nuovo utente univoco tra le 10:15 e le 10:30.
 
 * **Attesa del servizio push**
 
