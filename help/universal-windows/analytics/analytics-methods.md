@@ -1,36 +1,36 @@
 ---
-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
-seo-description: Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
+description: Informazioni utili per usare l’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
+seo-description: Informazioni utili per usare l’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
 seo-title: Metodi di Analytics
 solution: Experience Cloud,Analytics
 title: Metodi di Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
+exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 57%
 
 ---
 
-
 # Metodi di Analytics {#analytics-methods}
 
-Informazioni utili per l’utilizzo dell’SDK della piattaforma UWP (Universal Windows Platform) con  Adobe Analytics.
+Informazioni utili per usare l’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
 
-L’SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e  Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Analytics&quot;.
+L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di Analytics hanno il prefisso &quot;Analytics&quot;.
 
 Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di Adobe Analytics.
 
 >[!TIP]
 >
->Quando utilizzi `winmd` metodi da winJS (JavaScript), tutti i metodi hanno automaticamente la prima lettera minuscola.
+>Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 * **TrackState (winJS: trackState)**
 
-   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni dell’app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
-If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell&#39;app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
+Se `state` è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato `state`.
 
    >[!TIP]
    >
@@ -68,7 +68,7 @@ If `state` is empty, it displays as &quot;app name app version (build)&quot; in 
 
 * **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
-   Restituisce l’ID visitatore generato automaticamente per Analytics. Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso alla disinstallazione.
+   Restituisce l&#39;ID visitatore generato automaticamente per Analytics. Si tratta di un ID visitatore univoco specifico per l’app, che viene generato all’avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell’app e rimosso al momento della disinstallazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
