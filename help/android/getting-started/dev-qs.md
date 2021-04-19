@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per implementare la libreria Android e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste informazioni sono utili per implementare la libreria Android e raccogliere metriche sul ciclo di vita, come avvii, aggiornamenti, sessioni, utenti attivi e così via.
 seo-title: Implementazione e ciclo di vita di base
 solution: Experience Cloud,Analytics
 title: Implementazione e ciclo di vita di base
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
+exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '564'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione e ciclo di vita di base {#core-implementation-and-lifecycle}
 
@@ -155,4 +155,3 @@ Completa le attività seguenti:
 
 * [Tracciare gli stati dell’app](/help/android/analytics-main/states.md)
 * [Tracciare le azioni eseguite nell’app](/help/android/analytics-main/actions.md)
-
