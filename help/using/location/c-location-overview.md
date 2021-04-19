@@ -1,20 +1,20 @@
 ---
 description: Il rapporto di panoramica Posizione permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l’app viene utilizzata.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Il rapporto di panoramica Posizione permette di visualizzare vari paesi, aree geografiche e punti di interesse in cui l’app viene utilizzata.
 seo-title: Panoramica (Posizione)
 solution: Experience Cloud,Analytics
 title: Panoramica (Posizione)
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
+exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '579'
 ht-degree: 100%
 
 ---
-
 
 # Panoramica (Posizione) {#overview-location}
 
