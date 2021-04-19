@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni sono utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste informazioni sono utili per inviare i segnali e recuperare i segmenti dei visitatori da Audience Manager.
 seo-title: Panoramica di Audience Manager
 solution: Experience Cloud,Analytics
 title: Panoramica di Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
+exl-id: b6cbe410-3ee4-44d4-a4e6-74291f45be81
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '143'
 ht-degree: 100%
 
 ---
-
 
 # Panoramica di Audience Manager {#audience-manager}
 
