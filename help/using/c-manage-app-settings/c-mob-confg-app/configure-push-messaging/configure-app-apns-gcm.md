@@ -1,20 +1,20 @@
 ---
 description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
 seo-title: Configurare l’app per l’uso di APNS o FCM
 solution: Experience Cloud,Analytics
 title: Configurare l’app per l’uso di APNS o FCM
-topic: Metrics
+topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
+exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 100%
 
 ---
-
 
 # Configurare l’app per l’utilizzo di APNS o FCM {#configure-app-to-use-apns-or-fcm}
 
@@ -126,4 +126,3 @@ Per ottenere il certificato SSL e la chiave privata (APNS):
    Non è necessario digitare una password.
 
 1. In **[!UICONTROL Chiave privata]**, digita il file `.p12`.
-
