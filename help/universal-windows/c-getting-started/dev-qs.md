@@ -4,16 +4,16 @@ seo-description: 'null'
 seo-title: Guida rapida per sviluppatori
 solution: Experience Cloud,Analytics
 title: Guida rapida per sviluppatori
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
+exl-id: 28fc2a96-907e-41fc-a798-3e8d43fc7616
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 4%
 
 ---
-
 
 # Guida rapida per sviluppatori{#developer-quick-start}
 
@@ -21,117 +21,117 @@ Seguono alcune informazioni su come implementare la libreria della piattaforma U
 
 >[!IMPORTANT]
 >
->Per implementare l’SDK, è necessario Visual Studio 2013 o versione successiva.
+>Per implementare l&#39;SDK, è necessario Visual Studio 2013 o versione successiva.
 
 ## Scaricare l&#39;SDK  {#section_99FE1A17A36D4A2C943939023CF6265C}
 
-Dopo aver decompresso il file di download [dell’](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) SDK, avrai una cartella separata per ogni combinazione di architettura e piattaforma supportata. Avrete anche un `ADBMobileConfig.json` file. Per ulteriori informazioni su questo file, consulta il file [di configurazione](/help/universal-windows/c-configuration/c.json.md)ADBMobileConfig.json.
+Dopo aver decompresso il file [Download SDK](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases), avrai a disposizione una cartella separata per ogni architettura e combinazione di piattaforme supportate. Avrai anche un file `ADBMobileConfig.json` . Per ulteriori informazioni su questo file, consulta [File di configurazione ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
-## Selezionate la versione corretta {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Seleziona la versione corretta {#section_E53C5AA7D5474824A89BB32C003865A1}
 
-Vengono forniti `.dll/.winmd` file diversi per ciascuna architettura supportata (x86, x64, ARM).
+Per ogni architettura supportata vengono forniti file `.dll/.winmd` diversi (x86, x64, ARM).
 
 >[!IMPORTANT]
 >
->La versione di `ADBMobile.winmd` non riflette la versione della libreria. Il `.winmd` file contiene solo i metadati e ha un numero di versione `255.255.255.255`, il che è un comportamento accettato secondo Microsoft. Per ulteriori informazioni, vedere [Come si aggiungono le informazioni sull&#39;assembly per una dll componente WinRT C++ / CX?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode). Per verificare la versione della libreria in uso, controllate la versione del `ADBMobile.dll` file sottostante.
+>La versione di `ADBMobile.winmd` non riflette la versione della libreria. Il file `.winmd` contiene solo metadati e ha un numero di versione di `255.255.255.255`, che è accettato il comportamento secondo Microsoft. Per ulteriori informazioni, vedere [Come aggiungere informazioni sull&#39;assembly per una DLL di componenti WinRT C++ / CX?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode). Per controllare la versione della libreria che stai utilizzando, controlla la versione del file `ADBMobile.dll` sottostante.
 
 ## Differenze di sintassi {#section_A02DE120B6D240F5AFFE7509755C4F14}
 
-La libreria della piattaforma UWP (Universal Windows Platform) può essere utilizzata in diversi linguaggi di programmazione. Gli esempi contenuti in questa guida sono in WinJS (JavaScript), se utilizzi un linguaggio diverso, potrebbero dover essere modificati. Quando utilizzi metodi winmd da winJS, tutti i metodi hanno automaticamente la prima lettera minuscola.
+La libreria della piattaforma UWP (Universal Windows Platform) può essere utilizzata in diversi linguaggi di programmazione. Gli esempi contenuti in questa guida sono in WinJS (JavaScript). Se utilizzi un linguaggio diverso, potrebbe essere necessario modificarlo. Quando utilizzi metodi winmd da winJS, la prima lettera viene impostata automaticamente come minuscola per tutti i metodi.
 
-La differenza principale tra le implementazioni è la struttura dati utilizzata per i dati contestuali. Inoltre, quando utilizzi l’SDK in un progetto WinJS, usa una stringa vuota ( `""` o `''`) invece di `null` valori stringa vuoti.
+La differenza principale tra le implementazioni è la struttura dati utilizzata per i dati contestuali. Inoltre, quando utilizzi l&#39;SDK in un progetto WinJS, utilizza una stringa vuota ( `""` o `''`) invece di `null` per valori stringa vuoti.
 
-## Add the library and config File to your project - C# {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## Aggiungi la libreria e il file di configurazione al tuo progetto - C# {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Avviare Visual Studio e aprire la soluzione.
-1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
+1. In **[!UICONTROL Esplora soluzioni]**, fai clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e seleziona **[!UICONTROL Aggiungi riferimento]**.
 
 1. Seleziona la versione corretta della libreria e individua il file ADBMobile.winmd associato.
 
-   Per ulteriori informazioni, consultate *Selezionare la sezione relativa alla versione* corretta in questa pagina.
+   Per ulteriori informazioni, consulta la sezione *Selezionare la versione corretta* in questa pagina.
 
 1. Fai clic su **Aggiungi**.
 
-1. Verifica che il file ADBMobile.winmd sia selezionato nella finestra Gestione **** riferimenti e fai clic su **[!UICONTROL OK]**.
+1. Verifica che il file ADBMobile.winmd sia selezionato nella finestra **[!UICONTROL Gestione riferimenti]** e fai clic su **[!UICONTROL OK]**.
 
-1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
+1. In **[!UICONTROL Esplora soluzioni]**, fai clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e seleziona **[!UICONTROL Aggiungi riferimento]**.
 
-   Se hai anche un progetto C++ nella soluzione, salta questo passaggio.
+   Se hai anche un progetto C++ nella tua soluzione, salta questo passaggio.
 
-1. Nella scheda **[!UICONTROL Windows]** a sinistra, selezionare **[!UICONTROL Estensioni]**, selezionare e aggiungere Runtime **[!UICONTROL Visual C++ 2015 per le app]** della piattaforma UWP (Universal Windows Platform).
+1. Nella scheda **[!UICONTROL Windows]** a sinistra, selezionare **[!UICONTROL Estensioni]**, selezionare e aggiungere **[!UICONTROL Visual C++ 2015 Runtime per le app della piattaforma UWP]**.
 
-1. Aggiungete la riga seguente alla classe:
+1. Aggiungi la riga seguente alla classe:
 
    ```csharp
    using ADBMobile;
    ```
 
-1. Fai clic con il pulsante destro del mouse sul progetto e fai clic su **[!UICONTROL Aggiungi]** > Elemento **** esistente.
+1. Fai clic con il pulsante destro del mouse sul progetto e fai clic su **[!UICONTROL Aggiungi]** > **[!UICONTROL Elemento esistente]**.
 
-1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
+1. Individua il file `ADBMobileConfig.json` e fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
+1. Fai clic con il pulsante destro del mouse sul file `ADBMobileConfig.json` nella soluzione e seleziona **[!UICONTROL Proprietà]**.
 
-1. Cambia Azione **[!UICONTROL di]** compilazione in **[!UICONTROL Contenuto]**.
+1. Cambia **[!UICONTROL Crea azione]** in **[!UICONTROL Contenuto]**.
 
-## Add the library and config file to your project - C++ {#section_A95C1D18F6144F37ADC8F51590F3983E}
+## Aggiungi la libreria e il file di configurazione al tuo progetto - C++ {#section_A95C1D18F6144F37ADC8F51590F3983E}
 
 1. Avviare Visual Studio e aprire la soluzione.
-1. In Esplora **[!UICONTROL soluzioni]**, fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > **[!UICONTROL Riferimenti]**.
+1. In **[!UICONTROL Esplora soluzioni]**, fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > **[!UICONTROL Riferimenti]**.
 
 1. Seleziona la versione corretta della libreria e aggiungi un riferimento al file ADBMobile.winmd associato.
 
-   Per ulteriori informazioni, consultate *Selezionare la sezione relativa alla versione* corretta in questa pagina.
+   Per ulteriori informazioni, consulta la sezione *Selezionare la versione corretta* in questa pagina.
 
 1. Fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Verificare che `ADBMobile.winmd` sia selezionato nella finestra Gestione **** riferimenti e fare clic su **[!UICONTROL OK]**.
+1. Verifica che `ADBMobile.winmd` sia selezionato nella finestra **[!UICONTROL Gestione riferimenti]** e fai clic su **[!UICONTROL OK]**.
 
-1. Aggiungete la riga seguente alla classe:
+1. Aggiungi la riga seguente alla classe:
 
    ```c++
    using namespace ADBMobile;
    ```
 
-1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > Elemento **** esistente.
+1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > **[!UICONTROL Elemento esistente]**.
 
-1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
+1. Individua il file `ADBMobileConfig.json` e fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
+1. Fai clic con il pulsante destro del mouse sul file `ADBMobileConfig.json` nella soluzione e seleziona **[!UICONTROL Proprietà]**.
 
-1. Nella scheda **[!UICONTROL Generale]** , cambiate **[!UICONTROL Contenuto]** in **[!UICONTROL Sì]** e fate clic su **[!UICONTROL OK]**.
+1. Nella scheda **[!UICONTROL Generale]**, cambia **[!UICONTROL Contenuto]** in **[!UICONTROL Sì]** e fai clic su **[!UICONTROL OK]**.
 
-## Add the library and config file to your project - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
+## Aggiungi la libreria e il file di configurazione al tuo progetto - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
 
 1. Avviare Visual Studio e aprire la soluzione.
 
-1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
+1. In **[!UICONTROL Esplora soluzioni]**, fai clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e seleziona **[!UICONTROL Aggiungi riferimento]**.
 
 1. Seleziona la versione corretta della libreria e individua il file ADBMobile.winmd associato.
 
 1. Fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Verifica che il file ADBMobile.winmd sia selezionato nella finestra Gestione **** riferimenti e fai clic su **[!UICONTROL OK]**.
+1. Verifica che il file ADBMobile.winmd sia selezionato nella finestra **[!UICONTROL Gestione riferimenti]** e fai clic su **[!UICONTROL OK]**.
 
-1. In Esplora **[!UICONTROL soluzioni]**, fare clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e selezionare **[!UICONTROL Aggiungi riferimento]**.
+1. In **[!UICONTROL Esplora soluzioni]**, fai clic con il pulsante destro del mouse su **[!UICONTROL Riferimenti]** e seleziona **[!UICONTROL Aggiungi riferimento]**.
 
-   Se hai anche un progetto C++ nella soluzione, salta questo passaggio.
+   Se hai anche un progetto C++ nella tua soluzione, salta questo passaggio.
 
-1. Nella scheda **[!UICONTROL Windows]** a sinistra, selezionare **[!UICONTROL Estensioni]** , quindi selezionare e aggiungere Runtime **[!UICONTROL Visual C++ 2015 per le app]** della piattaforma UWP (Universal Windows Platform).
+1. Nella scheda **[!UICONTROL Windows]** a sinistra, selezionare **[!UICONTROL Estensioni]**, quindi selezionare e aggiungere **[!UICONTROL Visual C++ 2015 Runtime per le app della piattaforma UWP]**.
 
-1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > Elemento **** esistente.
+1. Fai clic con il pulsante destro del mouse sul progetto e seleziona **[!UICONTROL Aggiungi]** > **[!UICONTROL Elemento esistente]**.
 
-1. Individuate il `ADBMobileConfig.json` file e fate clic su **[!UICONTROL Aggiungi]**.
+1. Individua il file `ADBMobileConfig.json` e fai clic su **[!UICONTROL Aggiungi]**.
 
-1. Fare clic con il pulsante destro del mouse sul `ADBMobileConfig.json` file nella soluzione e selezionare **[!UICONTROL Proprietà]**.
+1. Fai clic con il pulsante destro del mouse sul file `ADBMobileConfig.json` nella soluzione e seleziona **[!UICONTROL Proprietà]**.
 
-1. Con Proprietà **** file selezionato, accertati che Azione **** pacchetto sia impostata su **[!UICONTROL Contenuto]**.
+1. Con **[!UICONTROL Proprietà file]** selezionato, assicurati che **[!UICONTROL Azione pacchetto]** sia impostato su **[!UICONTROL Contenuto]**.
 
    Per i progetti JavaScript, il file è impostato su Contenuto per impostazione predefinita.
 
-## Aggiornare il file di configurazione ADBMobileConfig.json {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
+## Aggiorna il file di configurazione ADBMobileConfig.json {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
 
-Il `ADBMobileConfig.json` file contiene impostazioni SDK globali e si trova nella directory principale del progetto dopo aver completato i passaggi descritti nella sezione *Aggiungere la libreria e il file di configurazione alla sezione del progetto* . Se il `ADBMobileConfig.json` file non è stato preconfigurato da  Adobe Mobile Services, devi aggiornare alcuni valori per iniziare.
+Il file `ADBMobileConfig.json` contiene impostazioni SDK globali e si trova nella directory principale del progetto dopo aver completato i passaggi descritti nella sezione *Aggiungi la libreria e il file di configurazione al progetto* . Se il file `ADBMobileConfig.json` non è stato preconfigurato da Adobe Mobile Services, è necessario aggiornare alcuni valori per iniziare.
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 
@@ -161,33 +161,32 @@ Ecco un esempio di file `ADBMobileConfig.json`:
 }
 ```
 
-Come minimo, aggiornate i seguenti valori per le soluzioni in uso:
+Come minimo, aggiorna i seguenti valori per le soluzioni che stai utilizzando:
 
-* **Adobe Analytics**: `rsids` e `server`
+* **Adobe Analytics**:  `rsids` e  `server`
 
 * **Adobe Target**: `clientCode`
 
 * **Adobe Audience Manager**: `server`
 
-For more information, see [SDK methods](/help/universal-windows/c-configuration/methods.md).
+Per ulteriori informazioni, consulta [Metodi SDK](/help/universal-windows/c-configuration/methods.md).
 
 ## Eseguire il debug di {#section_3A10376A60394A15BEE483323E0CD4AA}
 
-Per abilitare il debug per l’SDK, chiama `ADBMobile.Config.setDebugLogging(true);`.
+Per abilitare il debug per l&#39;SDK, chiama `ADBMobile.Config.setDebugLogging(true);`.
 
-Per le app C Sharp e JavaScript, è necessario abilitare il debug del codice nativo eseguendo i passaggi seguenti (il debug del codice nativo è l&#39;impostazione predefinita per le app C++):
+Per le app C Sharp e JavaScript, è necessario abilitare il debug del codice nativo completando i seguenti passaggi (il debug del codice nativo è l&#39;impostazione predefinita per le app C++):
 
-### C Nitido
+### C Sharp
 
-1. Fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **[!UICONTROL Proprietà]** > scheda **** Debug.
+1. Fai clic con il pulsante destro del mouse sul progetto, fai clic su **[!UICONTROL Proprietà]** > **[!UICONTROL Scheda Debug]**.
 
-1. Cambia il tipo di debugger a discesa in Solo **** nativo.
+1. Cambia il menu a discesa del tipo di debugger in **Solo nativo**.
 
 ### JavaScript
 
-1. Fate clic con il pulsante destro del mouse sul progetto, fate clic su **[!UICONTROL Proprietà]** > Proprietà **** configurazione > scheda **** Debug.
+1. Fai clic con il pulsante destro del mouse sul progetto, fai clic su **[!UICONTROL Proprietà]** > **[!UICONTROL Proprietà di configurazione]** > **[!UICONTROL Scheda Debug]**.
 
-1. Cambia il tipo di debugger a discesa in Solo **** nativo.
+1. Cambia il menu a discesa del tipo di debugger in **[!UICONTROL Solo nativo]**.
 
-Tutto qui. Ora sei pronto per implementare Analytics, Target e Gestione dell&#39;audience nella tua app della piattaforma UWP (Universal Windows Platform).
-
+Tutto qui. Ora sei pronto per implementare Analytics, Target e Gestione dell’audience nella tua app della piattaforma UWP (Universal Windows Platform).
