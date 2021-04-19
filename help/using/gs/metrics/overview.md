@@ -1,20 +1,20 @@
 ---
 description: Puoi visualizzare le metriche di prestazione chiave per le app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi visualizzare le metriche di prestazione chiave per le app visualizzate più di recente. Per impostazione predefinita, è possibile visualizzare fino a 12 app. Puoi cambiare l’intervallo di date, creare filtri per segmentare i dati e modificare qualunque app nella pagina Panoramica.
 seo-title: Visualizzare le metriche di Mobile
 solution: Experience Cloud,Analytics
 title: Visualizzare le metriche di Mobile
-topic: Metrics
+topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
+exl-id: aab6448d-4362-4c75-949a-7a519da76606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # Visualizzare le metriche di Mobile {#display-mobile-metrics}
 
