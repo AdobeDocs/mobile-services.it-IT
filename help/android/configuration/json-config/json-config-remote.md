@@ -4,16 +4,16 @@ seo-description: È possibile caricare un diverso file di configurazione ADBMobi
 seo-title: Escludere il percorso del file di configurazione ADBMobile JSON
 solution: Experience Cloud,Analytics
 title: Escludere il percorso del file di configurazione ADBMobile JSON
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
+exl-id: 6ca8e264-af79-4734-aeb9-824582980953
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
 
 ---
-
 
 # Escludere il percorso del file di configurazione ADBMobile JSON {#override-the-adbmobile-json-config-path}
 
@@ -31,4 +31,3 @@ Se si invoca questo metodo con un percorso diverso, si esclude una tantum il fil
    // do something with the exception if needed 
 }
 ```
-
