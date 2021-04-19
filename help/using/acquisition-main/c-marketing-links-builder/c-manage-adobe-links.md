@@ -1,20 +1,20 @@
 ---
 description: Puoi usare la pagina Collegamenti marketing per creare, utilizzare e archiviare i collegamenti di marketing.
-keywords: mobile
+keywords: dispositivi mobili
 seo-description: Puoi usare la pagina Collegamenti marketing per creare, utilizzare e archiviare i collegamenti di marketing.
 seo-title: Gestire i collegamenti di marketing
 solution: Experience Cloud,Analytics
 title: Gestire i collegamenti di marketing
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # Gestire i collegamenti di marketing {#manage-marketing-links}
 
@@ -38,4 +38,3 @@ Nella pagina Collegamenti marketing, completa le attività seguenti:
    * Per annullare l’archiviazione di un collegamento di marketing, fai clic su **[!UICONTROL Visualizza archivio]**, seleziona un collegamento e fai clic su **[!UICONTROL Annulla archiviazione selezionati]**.
 
       Nella pagina Visualizza archivio sono visualizzati solo i collegamenti di marketing che sono stati precedentemente archiviati.
-
