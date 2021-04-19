@@ -1,20 +1,20 @@
 ---
-description: Con la gestione degli hit in batch, le applicazioni possono rimandare l’invio degli hit fino al superamento di un determinato numero di hit in coda.
-keywords: android;library;mobile;sdk
-seo-description: Con la gestione degli hit in batch, le applicazioni possono rimandare l’invio degli hit fino al superamento di un determinato numero di hit in coda.
+description: Con la gestione degli hit in batch, le applicazioni possono rimandare l'invio degli hit fino al superamento di un determinato numero di hit in coda.
+keywords: android,libreria,mobile,sdk
+seo-description: Con la gestione degli hit in batch, le applicazioni possono rimandare l'invio degli hit fino al superamento di un determinato numero di hit in coda.
 seo-title: Gestione degli hit in batch
 solution: Experience Cloud,Analytics
 title: Gestione degli hit in batch
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
+exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # Gestione degli hit in batch {#hit-batching}
 
