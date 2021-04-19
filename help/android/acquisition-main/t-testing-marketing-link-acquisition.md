@@ -1,20 +1,20 @@
 ---
 description: Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
-keywords: android;library;mobile;sdk
-seo-description: Le seguenti istruzioni consentono di eseguire l’intero ciclo di una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
+keywords: android,libreria,mobile,sdk
+seo-description: Le seguenti istruzioni consentono di esplorare una campagna di acquisizione con un collegamento di marketing su un dispositivo Android.
 seo-title: Verifica dell’acquisizione da collegamenti marketing
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione da collegamenti marketing
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 100%
 
 ---
-
 
 # Verifica dell’acquisizione da collegamenti marketing {#testing-marketing-link-acquisition}
 
