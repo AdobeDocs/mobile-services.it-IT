@@ -4,16 +4,16 @@ seo-description: Per "stati" si intendono le diverse schermate o visualizzazioni
 seo-title: Tracciare gli stati dell’app
 solution: Experience Cloud,Analytics
 title: Tracciare gli stati dell’app
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
+exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
 ---
-
 
 # Tracciare gli stati dell’app {#track-app-states}
 
