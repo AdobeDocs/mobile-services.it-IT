@@ -4,16 +4,16 @@ seo-description: La geolocalizzazione permette di misurare i dati relativi alla 
 seo-title: Geolocalizzazione e punti di interesse
 solution: Experience Cloud,Analytics
 title: Geolocalizzazione e punti di interesse
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
 ---
-
 
 # Geolocalizzazione e punti di interesse {#geo-location-and-points-of-interest}
 
@@ -116,4 +116,3 @@ Considerazioni da ricordare:
 * Quando i diametri di due POI si sovrappongono, viene usato il primo POI che contiene la posizione corrente.
 
    Se i punti di interesse si sovrappongono, elencali in ordine dal più dettagliato al meno dettagliato, affinché venga trasmesso il POI più dettagliato.
-
