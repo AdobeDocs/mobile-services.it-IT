@@ -1,25 +1,25 @@
 ---
-description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-description: La variabile "products" non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+description: Impossibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+seo-description: Impossibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 seo-title: 'Variabile "products" '
 solution: Experience Cloud,Analytics
 title: 'Variabile "products" '
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
+exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 13%
 
 ---
 
-
 # Variabile dei prodotti {#products-variable}
 
-La variabile &quot;products&quot; non può essere impostata utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
+Impossibile impostare la variabile &quot;products&quot; utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products`*:
+Per impostare la variabile *`products`*, imposta una chiave di dati contestuali su `"&&products"` e imposta il valore utilizzando la sintassi definita per *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -49,4 +49,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Non è necessario mappare la *`products`* variabile utilizzando le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.
+Non è necessario mappare la variabile *`products`* utilizzando le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.
