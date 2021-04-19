@@ -1,20 +1,20 @@
 ---
 description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-keywords: android;library;mobile;sdk
+keywords: android,libreria,mobile,sdk
 seo-description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
 seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
+exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '885'
 ht-degree: 100%
 
 ---
-
 
 # Analisi dei video {#video-analytics}
 
