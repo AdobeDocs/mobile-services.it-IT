@@ -4,28 +4,28 @@ seo-description: Informazioni utili per l’analisi dei video.
 seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
+exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 67%
 
 ---
 
-
 # Analisi dei video {#video-analytics}
 
 Informazioni utili per l’analisi dei video.
 
-La misurazione dei video è descritta in dettaglio nella guida [Misurazione di video e audio di  Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html) . Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione introduttiva fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione del video è descritta in dettaglio nella guida [Misurazione di video e audio in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
 * **a.media.name**
 
-   (**Obbligatorio**) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Potete aggiungere classificazioni per questa variabile.
+   (**Obbligatorio**) Raccoglie il nome del video, come specificato nell&#39;implementazione, quando un visitatore visualizza il video in qualche modo. È possibile aggiungere classificazioni per questa variabile.
 
    (**Facoltativo**) La variabile Custom Insight fornisce informazioni sul percorso del video.
 
@@ -44,18 +44,18 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video.
 
-   Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
+   Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere quanto segue nell’eVar dei segmenti `1:M:0-25` .
 
-   Il metodo di raccolta dei dati video predefinito raccoglie i dati nei seguenti punti: inizio video (riproduzione), inizio segmento e fine video (interruzione). Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
+   Il metodo predefinito di raccolta dei dati video raccoglie i dati nei seguenti punti: inizio video (play), inizio segmento e fine video (stop). Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti.
 
-   Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e quindi calcolare i tassi di conversione del video.
+   Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e quindi di calcolare i tassi di conversione relativi al video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -83,7 +83,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a .media.complete**
 
-   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
+   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video in diretta e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un periodo di tempo specifico.
 
    * Tipo di variabile: Event
    * Tipo: contatore
@@ -159,9 +159,9 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **Open (winJS: open)**
+* **Apri (winJS: aperto)**
 
-   Tiene traccia dell’apertura di un file multimediale utilizzando le impostazioni definite in `settings`.
+   Tiene traccia dell&#39;apertura di un file multimediale utilizzando le impostazioni definite in `settings`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -175,7 +175,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings);
       ```
 
-* **Close (winJS: close)**
+* **Chiudi (winJS: vicino)**
 
    Tiene traccia della chiusura di un file multimediale per l’elemento multimediale denominato *`name`*.
 
@@ -193,7 +193,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Tiene traccia della riproduzione di un elemento multimediale denominato *`name`* in corrispondenza dell’ *offset* indicato (in secondi).
+   Tiene traccia della riproduzione di un file multimediale per l&#39;elemento multimediale denominato *`name`* in corrispondenza dell&#39; *offset* indicato (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -207,7 +207,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName",  0);
       ```
 
-* **Complete (winJS: complete)**
+* **Completa (winJS: completato)**
 
    Contrassegna manualmente l&#39;elemento multimediale come completato in corrispondenza dell&#39;*offset* indicato (in secondi).
 
@@ -239,7 +239,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName",  4);
       ```
 
-* **Click (winJS: click)**
+* **Fai clic su (winJS: clic)**
 
    Notifica al modulo multimediale l&#39;avvenuto clic sull&#39;elemento multimediale.
 
@@ -255,7 +255,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName",  3); 
       ```
 
-* **Track (winJS: track)**
+* **Track (winJS: binario)**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell&#39;elemento multimediale.
 
