@@ -5,16 +5,16 @@ seo-description: Puoi usare i metodi di plug-in di PhoneGap iOS per eseguire div
 seo-title: Metodi del plug-in PhoneGap
 solution: Experience Cloud,Analytics
 title: Metodi del plug-in PhoneGap
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
+exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1731'
 ht-degree: 100%
 
 ---
-
 
 # Metodi del plug-in PhoneGap {#phonegap-plug-in-methods}
 
@@ -815,4 +815,3 @@ Nel `AppDelegate` generato da Cordova, invoca `[ADBMobile setAdvertisingIdentifi
       ```java
       ADB.visitorGetIDs(function(value){alert(value);},function(value){alert('fail');}); 
       ```
-
