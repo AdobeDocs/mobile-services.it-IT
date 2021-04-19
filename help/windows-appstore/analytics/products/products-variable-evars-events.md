@@ -4,16 +4,16 @@ seo-description: Esempio della variabile "products" con eVar per merchandising e
 seo-title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
 solution: Experience Cloud,Analytics
 title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
+exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 27%
 
 ---
-
 
 # Variabile &quot;products&quot; con eVar per merchandising ed eventi per singoli prodotti{#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -40,5 +40,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Se si attiva un evento specifico per il prodotto utilizzando la *`&&products`* variabile, è necessario impostare tale evento anche nella *`&&events`* variabile, altrimenti l&#39;evento viene escluso durante l&#39;elaborazione.
-
+>Se si attiva un evento specifico per il prodotto utilizzando la variabile *`&&products`*, è necessario impostare tale evento anche nella variabile *`&&events`*, altrimenti l&#39;evento viene escluso durante l&#39;elaborazione.
