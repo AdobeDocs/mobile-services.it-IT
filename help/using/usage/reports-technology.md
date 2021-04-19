@@ -1,20 +1,20 @@
 ---
-description: Il rapporto Tecnologia permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
-keywords: mobile
-seo-description: Il rapporto Tecnologia permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
+description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
+keywords: dispositivi mobili
+seo-description: Il rapporto Tecnologia ti permette di vedere i diversi tipi di dispositivi, sistemi operativi e operatori di telefonia mobile su cui viene utilizzata l’app.
 seo-title: Rapporto Tecnologia
 solution: Experience Cloud,Analytics
 title: Rapporto Tecnologia
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
+exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
-
 
 # Rapporto Tecnologia {#technology}
 
