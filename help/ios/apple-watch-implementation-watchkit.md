@@ -41,7 +41,6 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 >* L’app contenitore
 >* L’app WatchKit
 >* L’estensione WatchKit
-
 >
 
 
