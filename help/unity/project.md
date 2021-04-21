@@ -1,31 +1,29 @@
 ---
-description: 'null'
+description: Creazione di progetti iOS
 keywords: Unity
-seo-description: 'null'
-seo-title: Creazione del progetto
 solution: Experience Cloud
 title: Creazione del progetto
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
+exl-id: 9da99392-b34e-4e36-b255-f3787e26015c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 20%
+source-wordcount: '161'
+ht-degree: 18%
 
 ---
-
 
 # Creazione del progetto{#building-your-project}
 
 ## iOS
 
-Quando create per iOS, viene creato un progetto Xcode. Per impostazione predefinita, i file `ADBMobileWrapper.mm` e `AdobeMobileLibrary.a` saranno inclusi nel gruppo Librerie del nuovo progetto. Per creare l&#39;app, eseguite i seguenti passaggi manuali:
+Quando crei per iOS, viene creato un progetto Xcode. Per impostazione predefinita, i file `ADBMobileWrapper.mm` e `AdobeMobileLibrary.a` si troveranno nel gruppo Librerie del nuovo progetto. Esegui i seguenti passaggi manuali necessari per creare l’app:
 
 1. Aggiungi il file `ADBMobileConfig.json` al progetto.
 
-   Assicurarsi che sia membro della build tutte le destinazioni necessarie.
+   Assicurati che sia membro della build tutte le destinazioni necessarie.
 
-1. Nella scheda Fasi **** build del progetto, aggiungi un collegamento alle seguenti librerie:
+1. Nella scheda **[!UICONTROL Fasi build]** del progetto, aggiungi un collegamento alle seguenti librerie:
 
    * `SystemConfiguration.framework`
 Questa libreria potrebbe essere già collegata.
@@ -34,13 +32,13 @@ Questa libreria potrebbe essere già collegata.
 
 >[!TIP]
 >
->Per utilizzare i messaggi in-app delle notifiche locali dall’SDK, devi chiamare `ADBMobile.EnableLocalNotifications();` dal metodo Start nella prima Unity Scene.
+>Per utilizzare i messaggi in-app di notifica locale dall&#39;SDK, devi chiamare `ADBMobile.EnableLocalNotifications();` dal metodo Start nella tua prima Unity Scene.
 
 ## Android
 
-Quando create per Android, il `apk` file include già il `ADBMobileConfig.json` file nella posizione corretta. Per impostazione predefinita, viene utilizzato anche il `AndroidManifest.xml` file nella `/Plugins/Android` cartella.
+Quando si crea per Android, il file `apk` include già il file `ADBMobileConfig.json` nella posizione corretta. Per impostazione predefinita, viene utilizzato anche il file `AndroidManifest.xml` nella cartella `/Plugins/Android`.
 
-Se devi usare un file manifesto personalizzato, devi aggiungere le seguenti modifiche.
+Se devi utilizzare un file manifesto personalizzato, devi aggiungere le seguenti modifiche.
 
 Aggiungi le autorizzazioni per:
 
