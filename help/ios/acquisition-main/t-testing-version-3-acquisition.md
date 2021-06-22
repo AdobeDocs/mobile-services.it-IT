@@ -5,14 +5,13 @@ seo-title: Verifica dell’acquisizione V3
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 3cf66802-1f2c-428f-86ef-a9afc57e3470
+source-git-commit: 8db8f51a42acbbc0bbc4545b7d97cb214b490ab3
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
 ---
-
 
 # Verifica dell’acquisizione V3 {#testing-v-acquisition}
 
