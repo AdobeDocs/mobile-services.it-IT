@@ -8,11 +8,10 @@ title: 'Pubblico: definire e configurare i segmenti di pubblico per i messaggi p
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +25,7 @@ Quando si crea un segmento di pubblico per i messaggi push, esso può includere 
 
 In Adobe Mobile Services, gli addetti al marketing possono inviare messaggi push a una sola app per piattaforma. Se gli addetti al marketing tentano di inviare messaggi push a segmenti contenenti utenti di più app, viene visualizzato un avviso in cui viene comunicato che procedendo è possibile causare gravi errori di invio push e il potenziale inserimento degli utenti nella blocklist. Se incontri un errore di invio push, vedi *Risoluzione degli errori di invio push* in   [Risoluzione dei problemi dei messaggi push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
-Per utilizzare i dati di Audience Manager nelle tue definizioni di segmenti, vedi [Audience Analytics](https://docs.adobe.com/content/help/it-IT/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Per utilizzare i dati di Audience Manager nelle tue definizioni di segmenti, vedi [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
