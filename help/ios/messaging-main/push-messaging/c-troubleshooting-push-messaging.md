@@ -6,9 +6,9 @@ title: Risoluzione dei problemi dei messaggi push
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -33,11 +33,10 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    >[!TIP]
    >
-   >I servizi push non garantiscono al 100% l&#39;effettivo invio di un messaggio. Per ulteriori informazioni sull’affidabilità dei servizi, consulta la documentazione appropriata:
+   >I servizi push non garantiscono al 100% l’effettivo invio di un messaggio. Per ulteriori informazioni sull’affidabilità dei servizi, consulta la documentazione appropriata:
    >
-   >* **APNS**: [qualità del servizio](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**: [durata di un messaggio](https://developers.google.com/cloud-messaging/concept-options)
+   >* **APNS**: [qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [ciclo di vita di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Come posso rinnovare il certificato Apple Push Service?

@@ -6,7 +6,7 @@ title: Risolvere i problemi dei messaggi push
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
@@ -31,12 +31,11 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    >[!TIP]
    >
-   >I servizi push non garantiscono al 100% l’effettivo invio di un messaggio.
+   >I servizi push non garantiscono al 100% l’effettivo invio di un messaggio. Per ulteriori informazioni sull’affidabilità dei servizi, consulta la documentazione appropriata:
+   >
+   >* **APNS**: [qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [ciclo di vita di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Per ulteriori informazioni sull’affidabilità dei servizi, consulta la documentazione appropriata:
-
-   * **APNS**: [qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: [ciclo di vita di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Perché i miei messaggi push vengono troncati o non si espandono?
 

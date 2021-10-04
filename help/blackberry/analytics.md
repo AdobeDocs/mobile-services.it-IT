@@ -3,10 +3,10 @@ description: Dopo aver aggiunto la libreria al progetto, puoi eseguire qualsiasi
 title: Analytics
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 exl-id: 4cd27e1a-e806-4dbb-84f5-63902ca2003f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 13%
+source-wordcount: '639'
+ht-degree: 12%
 
 ---
 
@@ -62,18 +62,14 @@ Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica.
 
-[Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
-
 [Regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Ottenere l&#39;autorizzazione all&#39;utilizzo delle regole di elaborazione](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
-
-Consigliamo di raggruppare le variabili di dati di contesto utilizzando &quot;namespace&quot;, in quanto consente di mantenere un ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
+Adobe consiglia di raggruppare le variabili di dati di contesto utilizzando &quot;namespace&quot;, in quanto consente di mantenere l’ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Le variabili di dati di contesto sono ordinate alfabeticamente nell’interfaccia delle regole di elaborazione, pertanto gli spazi dei nomi consentono di vedere rapidamente le variabili che si trovano nello stesso spazio dei nomi.
@@ -81,25 +77,25 @@ Le variabili di dati di contesto sono ordinate alfabeticamente nell’interfacci
 Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati di contesto utilizzando il numero di eVar o di proprietà:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Questo potrebbe semplificare leggermente *la mappatura una tantum nelle regole di elaborazione, a scapito però della leggibilità durante il debug e complicando gli aggiornamenti futuri del codice.* Consigliamo piuttosto di utilizzare nomi descrittivi per chiavi e valori:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Le variabili di contesto che definiscono eventi contatore possono avere la stessa chiave e lo stesso valore:
 
 ```js
-"logon":"logon"
+"logon":"logon";
 ```
 
 Le variabili di contesto che definiscono eventi di incremento possono avere l’evento come chiave e la quantità da incrementare come valore:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!TIP]

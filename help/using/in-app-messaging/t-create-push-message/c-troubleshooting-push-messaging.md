@@ -6,9 +6,9 @@ title: Risoluzione dei problemi dei messaggi push
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,11 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 
    >[!TIP]
    >
-   >Questo dato corrisponde al numero di invii ai servizi push con esito positivo. I servizi push non garantiscono al 100% l’effettivo invio di un messaggio.
+   >I servizi push non garantiscono al 100% l’effettivo invio di un messaggio. Per ulteriori informazioni sull’affidabilità dei servizi, consulta la documentazione appropriata:
+   >
+   >* **APNS**: [qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [ciclo di vita di un messaggio](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Per maggiori informazioni sull’affidabilità del servizio, vedi:
-
-   * [Qualità del servizio](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Ciclo di vita del messaggio](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Perché la mia chiave API GCM Android non è valida?
 
@@ -52,8 +51,6 @@ I seguenti tipi di ritardo possono essere associati ai messaggi push per Mobile 
 * **Determinare la validità di una chiave API**
 
    Per determinare la validità di una chiave API, esegui il comando seguente:
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Il certificato APNS potrebbe non essere valido per i motivi seguenti:
 * Stai usando un file `.p8` invece di un file `.p12`.
 
 ## Risoluzione degli errori dei messaggi push
-
-**Un esempio**
 
 L’esempio seguente illustra come risolvere un errore push quando usi una VRS.
 
