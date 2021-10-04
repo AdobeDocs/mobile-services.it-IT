@@ -1,29 +1,26 @@
 ---
-description: Potete allegare file di immagine alle notifiche Apple. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-description: Potete allegare file di immagine alle notifiche Apple. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-title: Ricevi notifiche push potenziate
-title: Ricevi notifiche push potenziate
+description: Puoi allegare file di immagine alle notifiche Apple. L’aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+title: Ricevere notifiche push potenziate
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+exl-id: 1167ae4b-04ad-4c0d-a9db-67d30693f697
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 35%
+source-wordcount: '203'
+ht-degree: 39%
 
 ---
 
-
 # Ricevere notifiche push potenziate {#receive-rich-push-notifications}
 
-Potete allegare file di immagine alle notifiche Apple. L&#39;aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+Puoi allegare file di immagine alle notifiche Apple. L’aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
 
-Per ricevere notifiche push potenziate nell&#39;app iOS:
+Per ricevere notifiche push potenziate nell’app iOS:
 
 1. Implementa i messaggi push per l&#39;app, completando i passaggi descritti in  [Messaggi push](/help/ios/messaging-main/push-messaging/push-messaging.md).
-1. Verifica di poter inviare un messaggio di testo push all&#39;app.
-1. Aggiungete un’estensione del servizio di notifica completando i seguenti passaggi:
+1. Verifica di poter inviare un messaggio push di testo all’app.
+1. Aggiungi un&#39;estensione del servizio di notifica completando i seguenti passaggi:
 
-   1. In your Xcode project, select  **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Target]**.
+   1. Nel progetto Xcode, seleziona **[!UICONTROL File]** > **[!UICONTROL Nuovo]** > **[!UICONTROL Target]**.
    1. Seleziona **[!UICONTROL Estensione servizio notifiche]**.
    1. Verifica che esista il file `NotificationService.m`.
 
@@ -75,4 +72,4 @@ Per ricevere notifiche push potenziate nell&#39;app iOS:
       ```
 
 
-For more information about rich push notifications with iOS, see [UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment).
+Per ulteriori informazioni sulle notifiche push potenziate con iOS, consulta [UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment).

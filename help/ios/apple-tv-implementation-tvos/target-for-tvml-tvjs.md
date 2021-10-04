@@ -1,27 +1,24 @@
 ---
-description: Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
-seo-description: Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
-seo-title: Adobe Target per TVML/TVJS
+description: Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con il contenuto Target, utilizza l’elemento XML personalizzato ADBTarget .
 title: Adobe Target per TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 9348d49c-2a5a-4ea0-b90d-99d446bd336a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 70%
+source-wordcount: '461'
+ht-degree: 75%
 
 ---
 
-
 # Adobe Target per TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
-Potete sfruttare  Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Indicate le aree della pagina da sostituire con il contenuto Target utilizzando l’elemento XML personalizzato ADBTarget.
+Puoi sfruttare Adobe Target nelle app TVML/TVJS effettuando sostituzioni dirette nei file .xml. Per designare le aree della pagina da sostituire con il contenuto Target, utilizza l’elemento XML personalizzato ADBTarget .
 
 >[!IMPORTANT]
 >
 >Prima di usare l&#39;elemento `ADBTarget` nelle pagine TVML, devi configurare l&#39;app TVML/TVJS per l&#39;utilizzo dell&#39;SDK per tvOS. Per ulteriori informazioni, consulta [Implementazione Apple TV con tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
 
-## Guida introduttiva {#section_88445645FD67416EAF6FDC3E3D3F5C33}
+## Introduzione {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
 1. Individua il file `.xml` nel quale desideri usare la posizione Target.
 1. Aggiungi un elemento `ADBTarget` al file come elemento secondario di `<document>`.
@@ -125,7 +122,7 @@ Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impos
    </alertTemplate> 
    ```
 
-* Se la richiesta a Target ha esito positivo e viene restituito il contenuto dell&#39;offerta, il risultato della pagina sarà:
+* Se la richiesta a Target ha esito positivo e viene restituito il contenuto dell’offerta, la pagina risultante sarà:
 
    ```objective-c
    <alertTemplate> 
@@ -134,7 +131,7 @@ Supponiamo di avere una posizione Mbox denominata `landingPage` e di dover impos
    </alertTemplate>
    ```
 
-* Se non è possibile raggiungere il server di Target o se la richiesta non viene soddisfatta, la pagina risultante sarà:
+* Se non è possibile raggiungere il server Target o si verifica un timeout della richiesta, la pagina risultante sarà:
 
    ```objective-c
    <alertTemplate> 

@@ -1,17 +1,14 @@
 ---
 description: Usa l'SDK per Android per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
-seo-description: Usa l'SDK per Android per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
-seo-title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
-translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+exl-id: d8cbc679-a512-44db-8c30-6a029ff738ae
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '495'
 ht-degree: 84%
 
 ---
-
 
 # Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti {#tracking-third-party-deferred-deep-links}
 
@@ -37,13 +34,13 @@ Per prepararsi ad aggiungere il supporto per i collegamenti profondi di Facebook
 
    Per ulteriori informazioni, consulta [Configurazione collegamenti diretti](https://developers.facebook.com/docs/app-ads/deep-linking#os).
 
-Se l&#39;applicazione è configurata correttamente, l&#39;API `trackAdobeDeepLink()` dovrebbe abilitare la raccolta delle informazioni sui collegamenti diretti dalla campagna di acquisizione di Facebook e inviarli ad Adobe Mobile Services. Se l’hit di installazione non è stato inviato a  Adobe Mobile Services al primo avvio, queste informazioni saranno aggiunte all’hit del ciclo di vita. In caso contrario, verrà inviato come hit di collegamento profondo  Adobe.
+Se l&#39;applicazione è configurata correttamente, l&#39;API `trackAdobeDeepLink()` dovrebbe abilitare la raccolta delle informazioni sui collegamenti diretti dalla campagna di acquisizione di Facebook e inviarli ad Adobe Mobile Services. Se l&#39;hit di installazione non è stato inviato ad Adobe Mobile Services al primo avvio, queste informazioni saranno aggiunte all&#39;hit del ciclo di vita. In caso contrario, verrà inviato come hit di collegamento profondo di Adobe.
 
 >[!TIP]
 >
 >Accertati che l&#39;URL del collegamento diretto disponga di una chiave denominata `a.deeplink.id`. Se nell&#39;URL manca il parametro ID del collegamento profondo, i parametri dell&#39;URL non saranno collegati ai dati contestuali.
 
-Se il collegamento può essere attribuito a un&#39;acquisizione, l&#39;SDK Adobe Mobile memorizzerà i dati di acquisizione dai collegamenti profondi di Facebook utilizzati per chiamare `trackAdobeDeepLink()`. Questi dati saranno disponibili per l&#39;SDK Mobile  Adobe negli avvii futuri. Se è stato registrato un callback, il callback del Adobe  verrà utilizzato anche per restituire i dati al client.
+Se il collegamento può essere attribuito a un&#39;acquisizione, l&#39;SDK Adobe Mobile memorizzerà i dati di acquisizione dai collegamenti profondi di Facebook utilizzati per chiamare `trackAdobeDeepLink()`. Questi dati saranno disponibili per Adobe Mobile SDK nei prossimi avvii. Se è stato registrato un callback, il callback Adobe verrà utilizzato anche per inviare i dati al client.
 
 ## Abilitare i collegamenti diretti in un&#39;applicazione Android {#section_64C15E269E89424B8E3D029F88094620}
 
@@ -84,4 +81,3 @@ Se il collegamento può essere attribuito a un&#39;acquisizione, l&#39;SDK Adobe
       ); 
    }
    ```
-

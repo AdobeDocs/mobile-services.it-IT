@@ -1,16 +1,13 @@
 ---
 description: L'SDK di Adobe sfrutta le API di attribuzione app di Apple Search Ads per consentire agli sviluppatori e ai professionisti del marketing di tracciare e attribuire i download delle app derivanti da campagne Search Ads nell'Apple App Store.
-seo-description: L'SDK di Adobe sfrutta le API di attribuzione app di Apple Search Ads per consentire agli sviluppatori e ai professionisti del marketing di tracciare e attribuire i download delle app derivanti da campagne Search Ads nell'Apple App Store.
-seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
@@ -40,7 +37,7 @@ Per abilitare l&#39;app all&#39;attribuzione Search Ad:
 
 1. Aggiungi il framework iAd al file del progetto Xcode per la tua app.
 
-## Generazione di rapporti sull&#39;attribuzione Search Ads    {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Generazione di rapporti sull&#39;attribuzione Search Ads {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. I dati di attribuzione di Apple Search Ads sono forniti nel nome dell&#39;acquisizione, nella sorgente e nei valori dei termini.
 

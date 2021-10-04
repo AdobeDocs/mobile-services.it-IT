@@ -1,21 +1,18 @@
 ---
 description: Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
-seo-description: Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
-seo-title: Migrazione alla libreria iOS 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione alla libreria iOS 4.x
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
 
-# Migrazione alla libreria iOS 4.x {#migrating-to-the-x-ios-library}
+# Migrazione alla libreria iOS 4.x{#migrating-to-the-x-ios-library}
 
 Queste informazioni sono utili per passare dalle versioni 3.x o 2.x della libreria iOS alla versione 4.x.
 
@@ -192,7 +189,7 @@ Nel codice, devi rimuovere le chiamate ai seguenti metodi:
 * `forceOffline`
 * `forceOnline`
 
-## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 

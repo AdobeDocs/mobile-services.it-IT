@@ -1,17 +1,14 @@
 ---
 description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
 keywords: dispositivi mobili
-seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
-seo-title: Aggiungere filtri ai rapporti
 solution: Experience Cloud,Analytics
 title: Aggiungere filtri ai rapporti
 topic-fix: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 exl-id: eb0589e9-668e-42d7-8f7a-00d7f0a2e3ff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '368'
 ht-degree: 100%
 
 ---

@@ -1,21 +1,18 @@
 ---
-description: Potete allegare file di immagine alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-description: Potete allegare file di immagine alle notifiche Android. L'aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
-seo-title: Ricevi notifiche push potenziate
-title: Ricevi notifiche push potenziate
+description: Puoi allegare file di immagine alle notifiche Android. L’aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento dell’utente con le notifiche push.
+title: Ricevere notifiche push potenziate
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
-source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+exl-id: 5776411c-aa0e-4e67-83aa-e78f5d1ed4f7
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 60%
+source-wordcount: '191'
+ht-degree: 68%
 
 ---
 
-
 # Ricevere notifiche push potenziate {#receive-rich-push-notifications}
 
-Potete allegare file di immagine alle notifiche Android. L&#39;aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento degli utenti con le notifiche push.
+Puoi allegare file di immagine alle notifiche Android. L’aggiunta di componenti visivi può aumentare notevolmente il coinvolgimento dell’utente con le notifiche push.
 
 ## Gestire i messaggi push potenziati in ingresso (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
@@ -101,4 +98,4 @@ Esempio di notifica push potenziata con un&#39;immagine:
 
 ![](assets/rich-push-notification_example.png)
 
-For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
+Per ulteriori informazioni sulle notifiche push potenziate con Android, consulta [Coinvolgere con notifiche potenziate](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).

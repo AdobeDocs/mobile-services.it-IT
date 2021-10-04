@@ -1,17 +1,14 @@
 ---
 description: Nella pagina Gestione destinazioni collegamenti puoi creare, modificare, archiviare o annullare l’archiviazione ed eliminare le destinazioni dei collegamenti. Le destinazioni possono essere richiamate in linea quando crei collegamenti di marketing, notifiche push o messaggi in-app.
 keywords: dispositivi mobili
-seo-description: Nella pagina Gestione destinazioni collegamenti puoi creare, modificare, archiviare o annullare l’archiviazione ed eliminare le destinazioni dei collegamenti. Le destinazioni possono essere richiamate in linea quando crei collegamenti di marketing, notifiche push o messaggi in-app.
-seo-title: Creare e gestire le destinazioni dei collegamenti
 solution: Experience Cloud,Analytics
 title: Creare e gestire le destinazioni dei collegamenti
 topic-fix: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
 exl-id: 53e9f970-e53c-4c0d-9214-abb01a9b144b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---

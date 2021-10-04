@@ -1,17 +1,14 @@
 ---
 description: 'Prima di configurare una suite di rapporti e raccogliere dati dell''app Android, completa le seguenti attività di prerequisito '
-seo-description: 'Prima di configurare una suite di rapporti e raccogliere dati dell''app Android, completa le seguenti attività di prerequisito '
-seo-title: Prima di iniziare
 solution: Experience Cloud,Analytics
 title: Prima di iniziare
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -52,7 +49,7 @@ Puoi accedere all’interfaccia utente di Adobe Mobile Services in uno dei segue
 
 ### Experience Cloud
 
-Accedi a [Experience Cloud](https://experiencecloud.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Accedi a [Experience Cloud](https://experiencecloud.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida dei componenti dell’interfaccia centrale di Experience Cloud.
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Fai clic su **[!UICONTROL Accedi con l&#39;account Analytics]** e immetti il no
 
 Per impostare una nuova suite di rapporti per la raccolta dei dati dall&#39;app e definire un&#39;app:
 
-1. Accedi all’interfaccia utente di Mobile Services e digita [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) in un browser.
+1. Accedi a [Adobe Mobile Services](https://mobilemarketing.adobe.com).
 1. Fai clic su **[!UICONTROL Crea un’app]**.
 
    Se non trovi questo pulsante, fai clic su **[!UICONTROL Gestione app]** > **[!UICONTROL Aggiungi]**.
@@ -93,7 +90,7 @@ Puoi anche selezionare l’app nel riquadro a destra.
 
    >[!IMPORTANT]
    >
-   >Per visualizzare l’app nel riquadro a destra, devi prima crearne una. Consulta [Aggiungere una nuova app](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-apps-ug/t-new-app.html) per informazioni sulla creazione di app.
+   >Per visualizzare l’app nel riquadro a destra, devi prima crearne una. Consulta [Aggiungi una nuova app](/help/using/manage-apps/t-new-app.md) per informazioni sulla creazione di app.
 
 1. Nel riquadro a sinistra dell&#39;app, fai clic su **[!UICONTROL Gestione impostazioni app]**.
 

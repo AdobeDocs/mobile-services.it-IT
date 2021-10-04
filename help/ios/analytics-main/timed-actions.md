@@ -1,16 +1,13 @@
 ---
 description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale dall’inizio alla fine di un’azione. L’SDK calcola il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
-seo-description: Le azioni temporizzate consentono di misurare il tempo trascorso in-app e il tempo totale dall’inizio alla fine di un’azione. L’SDK calcola il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Puoi usare le azioni temporizzate per definire i segmenti e confrontare il tempo necessario per effettuare un acquisto, per passare al livello successivo, per le fasi del checkout e così via.
-seo-title: Azioni temporizzate
 solution: Experience Cloud,Analytics
 title: Azioni temporizzate
 topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 exl-id: 3499766b-55f6-4861-8291-2269d56ba983
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '335'
 ht-degree: 100%
 
 ---

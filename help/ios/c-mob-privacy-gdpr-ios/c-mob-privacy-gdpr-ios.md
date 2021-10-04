@@ -1,19 +1,16 @@
 ---
 description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (GDPR) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
-seo-description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (GDPR) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
-seo-title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
-title: Privacy e Regolamento generale sulla protezione dei dati (GDPR)
+title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+exl-id: 8549310d-31b8-49a3-9276-f8e9ab980a10
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 74%
+source-wordcount: '354'
+ht-degree: 71%
 
 ---
 
-
-# Privacy e Regolamento generale sulla protezione dei dati (RGPD){#privacy-and-general-data-protection-regulation}
+# Privacy e Regolamento generale sulla protezione dei dati (GDPR) {#privacy-and-general-data-protection-regulation}
 
 Gli SDK di Experience Cloud Mobile forniscono API che supportano i requisiti del Regolamento generale sulla protezione dei dati (RGPD) per i titolari del trattamento dei dati. Consentono di recuperare le identità memorizzate localmente e impostare il flag per lo stato di consenso o diniego per la raccolta e la trasmissione dei dati.
 
@@ -32,9 +29,9 @@ A settembre 2018 è stata rilasciata una nuova versione principale dell&#39;SDK.
 
 ## Panoramica
 
-Quando  Adobe fornisce software e servizi a un&#39;azienda,  Adobe funge da elaboratore di dati per tutti i dati personali che elabora e archivia nell&#39;ambito della fornitura di tali servizi. In qualità di elaboratore di dati,  Adobe elabora i dati personali in conformità con l&#39;autorizzazione e le istruzioni della tua azienda (ad esempio, come indicato nel tuo contratto con  Adobe).
+Quando Adobe fornisce software e servizi a un&#39;azienda, Adobe agisce come responsabile del trattamento dei dati per tutti i dati personali trattati e memorizzati nell&#39;ambito della fornitura di tali servizi. In qualità di responsabile del trattamento dei dati, Adobe tratta i dati personali in conformità alle autorizzazioni e alle istruzioni della tua azienda (ad esempio, come stabilito nell’accordo con l’Adobe).
 
-Come controller di dati, puoi utilizzare  SDK di Mobile Services per supportare il recupero e l&#39;eliminazione di richieste GDPR dalle tue app mobili.
+In qualità di titolare del trattamento dei dati, puoi utilizzare Adobe Mobile Services SDK per supportare le richieste di recupero ed eliminazione dal RGPD provenienti dalle tue app mobili.
 
 Per le aree delle tue applicazioni mobili gestite tramite l&#39;SDK di Adobe Mobile, puoi utilizzare le seguenti impostazioni e metodi:
 
@@ -51,6 +48,5 @@ Per le aree delle tue applicazioni mobili gestite tramite l&#39;SDK di Adobe Mob
 
 ## Informazioni aggiuntive {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* Per ulteriori informazioni sul GDPR, consulta [GDPR e la sezione dedicata agli affari](https://www.adobe.com/it/privacy/general-data-protection-regulation.html).
-* To see the GDPR API documentation, go to [General Data Protection Regulation API](https://adobe.io/apis/cloudplatform/gdpr.html).
-
+* Per ulteriori informazioni sul RGPD, consulta [RGPD e la tua azienda](https://www.adobe.com/it/privacy/general-data-protection-regulation.html).
+* Per consultare la documentazione relativa alle API RGPD, vai a [API del regolamento generale sulla protezione dei dati](https://adobe.io/apis/cloudplatform/gdpr.html).

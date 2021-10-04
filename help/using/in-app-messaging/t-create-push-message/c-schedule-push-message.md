@@ -1,17 +1,14 @@
 ---
 description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
 keywords: dispositivi mobili
-seo-description: Nell’interfaccia di Adobe Mobile Services puoi pianificare un messaggio push per l’invio immediato, successivo o come evento ricorrente. Questi eventi possono essere pianificati su base giornaliera, settimanale o mensile.
-seo-title: Pianificazione - Messaggi push
 solution: Experience Cloud,Analytics
 title: Pianificazione - Messaggi push
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---

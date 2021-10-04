@@ -1,31 +1,28 @@
 ---
 description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
-seo-description: Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
-seo-title: Experience Cloud ID
 solution: Experience Cloud,Analytics
-title: ID Experience Cloud
+title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 91%
 
 ---
 
-# Experience Cloud ID {#experience-cloud-id}
+# ID Experience Cloud {#experience-cloud-id}
 
 Il servizio Adobe Experience Platform Identity fornisce un ID visitatore universale per le soluzioni Experience Cloud. Il servizio ID è richiesto da Analytics per Target, heartbeat video e integrazioni future di Experience Cloud.
 
 >[!TIP]
 >
->Devi compilare l&#39;Experience Cloud ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/it-IT/id-service/using/home.html).
-
-**Richiede SDK versione 4.3 o successiva**
+>Devi compilare l&#39;Experience Cloud ID solo se utilizzi il servizio Adobe Experience Platform Identity. Per ulteriori informazioni, consulta la documentazione [Servizio Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it) .
 
 ## Attivare l&#39;Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
+
+Questi passaggi richiedono una versione SDK 4.3 o successiva.
 
 1. Aggiungi la libreria al tuo progetto e implementa le funzioni di ciclo di vita (lifecycle).
 

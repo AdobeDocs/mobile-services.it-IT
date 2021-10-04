@@ -1,22 +1,19 @@
 ---
 description: Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 keywords: android,libreria,mobile,sdk
-seo-description: Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
-seo-title: Metriche del ciclo di vita
 solution: Experience Cloud,Analytics
 title: Metriche del ciclo di vita
 topic-fix: Developer and implementation
 uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 exl-id: a1e4eeca-8b8f-47ca-a489-acc338238c42
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 63%
+source-wordcount: '876'
+ht-degree: 64%
 
 ---
 
-# Metriche del ciclo di vita {#lifecycle-metrics}
+# Metriche del ciclo di vita{#lifecycle-metrics}
 
 Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 

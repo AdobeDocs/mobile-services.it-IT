@@ -1,23 +1,20 @@
 ---
 description: Con Anteprima Target puoi eseguire facilmente test di controllo qualità end-to-end per le attività di Target e vedere in anteprima tali attività sul tuo dispositivo.
-seo-description: Con Anteprima Target puoi eseguire facilmente test di controllo qualità end-to-end per le attività di Target e vedere in anteprima tali attività sul tuo dispositivo.
-seo-title: Anteprima Target in iOS
 title: Anteprima Target in iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: d5695156-59cd-42c5-b9a3-d8e0ebbb89d0
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '121'
+ht-degree: 76%
 
 ---
 
-
-# Anteprima Target in iOS {#target-preview-on-ios}
+# Anteprima Target in iOS{#target-preview-on-ios}
 
 Con Anteprima Target puoi eseguire facilmente test di controllo qualità end-to-end per le attività di Target e vedere in anteprima tali attività sul tuo dispositivo.
 
-Per ulteriori informazioni su come impostare e utilizzare la funzione Anteprima Target, consulta [Anteprima mobile di Target](https://docs.adobe.com/content/help/it-IT/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Per ulteriori informazioni su come impostare e utilizzare Anteprima Target, consulta [Anteprima mobile di Target](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) nella documentazione di Adobe Target.
 
 >[!IMPORTANT]
 >
@@ -38,5 +35,5 @@ Per ulteriori informazioni su come impostare e utilizzare la funzione Anteprima 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-      [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
+      [ADBMobile targetPreviewRestartDeepLink:@"myapp://myhost"]; 
       ```

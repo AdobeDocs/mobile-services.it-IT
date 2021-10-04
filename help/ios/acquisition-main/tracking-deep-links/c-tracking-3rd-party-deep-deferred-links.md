@@ -1,19 +1,16 @@
 ---
 description: Usa l'SDK per iOS per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
-seo-description: Usa l'SDK per iOS per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
-seo-title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 title: Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+exl-id: c6d2ec6e-cd2a-4670-96e9-cb5e09f7cc10
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 90%
+source-wordcount: '396'
+ht-degree: 91%
 
 ---
 
-
-# Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti {#tracking-third-party-deferred-deep-links}
+# Tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti  {#tracking-third-party-deferred-deep-links}
 
 Usa l&#39;SDK per iOS per implementare il tracciamento dei collegamenti profondi differiti (deferred deep link) di terze parti.
 
@@ -23,7 +20,7 @@ L&#39;SDK di Adobe Mobile attualmente supporta il deep linking, o creazione di c
 
 ## Collegamenti diretti di Facebook {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-Il creatore di un&#39;inserzione può creare un&#39;inserzione su Facebook come collegamento profondo. Quando l&#39;utente fa clic sull&#39;inserzione su Facebook, passa direttamente alle informazioni di interesse nell&#39;app. Il collegamento profondo **non** è un URL di generazione di impronta digitale. Tuttavia, durante la configurazione dell&#39;annuncio, è disponibile l&#39;opzione per fornire un URL di collegamento profondo di terze parti. Lo sviluppatore di app che utilizza gli SDK e i servizi Mobile  Experience Cloud deve immettere in questo campo l&#39;URL di generazione di impronte digitali configurato da Mobile Services. Se è tutto impostato correttamente, l&#39;SDK di Facebook passa questo URL all&#39;applicazione quando l&#39;app viene installata o avviata.
+Il creatore di un&#39;inserzione può creare un&#39;inserzione su Facebook come collegamento profondo. Quando l&#39;utente fa clic sull&#39;inserzione su Facebook, passa direttamente alle informazioni di interesse nell&#39;app. Il collegamento profondo **non** è un URL di generazione di impronta digitale. Tuttavia, durante la configurazione dell&#39;annuncio, è disponibile l&#39;opzione per fornire un URL di collegamento profondo di terze parti. Lo sviluppatore di app che utilizza Experience Cloud Mobile SDK e servizi deve immettere in questo campo l’URL di generazione di impronte digitali configurato da Mobile Services. Se è tutto impostato correttamente, l&#39;SDK di Facebook passa questo URL all&#39;applicazione quando l&#39;app viene installata o avviata.
 
 ## Configurare gli SDK  {#section_834CD3109175432B8173ECB6EA7DE315}
 
@@ -32,7 +29,7 @@ Il creatore di un&#39;inserzione può creare un&#39;inserzione su Facebook come 
    Per ulteriori informazioni vedi quanto segue:
 
    * [Introduzione all&#39;SDK di Facebook per iOS](https://developers.facebook.com/docs/ios/getting-started)
-   * [Impostazione deep linking](https://developers.facebook.com/docs/app-ads/deep-linking#os)
+   * [Impostazione dei collegamenti profondi](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 1. Per impostare l’SDK, chiama `trackAdobeDeepLink` e passa l’URL agli SDK:
 
@@ -141,4 +138,3 @@ Se l&#39;applicazione è impostata come descritto qui sopra, la versione SDK di 
           return YES; 
       }
       ```
-

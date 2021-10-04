@@ -1,21 +1,18 @@
 ---
 description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-seo-description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-seo-title: File di configurazione ADBMobileConfig.json
 solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 46%
+source-wordcount: '609'
+ht-degree: 45%
 
 ---
 
-# `ADBMobileConfig.json` file di configurazione  {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` file di configurazione {#adbmobileconfig-json-config}
 
 Informazioni utili per usare il file di configurazione `ADBMobile.json`.
 
@@ -43,7 +40,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta [s.charSet](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/config-vars/charset.html).
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta la variabile [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=it) nella documentazione di Adobe Analytics.
 
 * **ssl**
 
@@ -75,7 +72,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
       >[!TIP]
       >
-      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nell&#39;archiviazione locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
+      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nell&#39;archivio locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
 * **poi**
 

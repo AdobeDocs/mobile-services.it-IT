@@ -1,21 +1,18 @@
 ---
 description: Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-description: Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-title: Metodi di Audience Manager
 solution: Experience Cloud,Analytics
 title: Metodi di Audience Manager
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 38%
+source-wordcount: '261'
+ht-degree: 39%
 
 ---
 
-# Metodi di Audience Manager {#audience-manager-methods}
+# Metodi di Audience Manager{#audience-manager-methods}
 
 Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
 

@@ -1,17 +1,14 @@
 ---
 description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
 keywords: dispositivi mobili
-seo-description: Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo serie (metriche) o app supplementari da suite di rapporti diverse per confrontare i dati.
-seo-title: Aggiungere serie (metriche) ai rapporti
 solution: Experience Cloud,Analytics
 title: Aggiungere serie (metriche) ai rapporti
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '285'
 ht-degree: 100%
 
 ---

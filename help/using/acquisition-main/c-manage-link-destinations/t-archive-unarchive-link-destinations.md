@@ -1,17 +1,14 @@
 ---
 description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
 keywords: dispositivi mobili
-seo-description: Puoi usare la pagina Destinazioni collegamenti per creare, modificare, archiviare, rimuovere dall’archivio o eliminare una destinazione esistente.
-seo-title: Gestire le destinazioni dei collegamenti
 solution: Experience Cloud,Analytics
 title: Gestire le destinazioni dei collegamenti
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '279'
 ht-degree: 100%
 
 ---

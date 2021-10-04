@@ -1,16 +1,14 @@
 ---
 description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
 keywords: android,libreria,mobile,sdk
-seo-description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
-seo-title: Panoramica del plug-in PhoneGap
 solution: Experience Cloud,Analytics
 title: Panoramica del plug-in PhoneGap
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '382'
 ht-degree: 97%
 
 ---

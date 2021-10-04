@@ -1,17 +1,14 @@
 ---
 description: Il rapporto Utenti e sessioni visualizza le metriche relative ai visitatori univoci nell’intervallo di tempo selezionato.
 keywords: dispositivi mobili
-seo-description: Il rapporto Utenti e sessioni visualizza le metriche relative ai visitatori univoci nell’intervallo di tempo selezionato.
-seo-title: Rapporto Utenti e sessioni
 solution: Experience Cloud,Analytics
 title: Rapporto Utenti e sessioni
 topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '175'
 ht-degree: 100%
 
 ---

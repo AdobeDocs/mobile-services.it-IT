@@ -1,22 +1,19 @@
 ---
 description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
 keywords: android,libreria,mobile,sdk
-seo-description: Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
-seo-title: Metodi di Adobe Experience Platform Identity
 solution: Experience Cloud,Analytics
 title: Metodi di Adobe Experience Platform Identity
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 95%
 
 ---
 
-# Metodi di Adobe Experience Platform Identity {#experience-cloud-id-service-methods}
+# Metodi di Adobe Experience Platform Identity{#experience-cloud-id-service-methods}
 
 Questi sono i metodi del servizio Experience Cloud ID forniti dalla libreria Android.
 
@@ -26,7 +23,7 @@ I metodi hanno un prefisso in base alla soluzione. Ad esempio, i metodi del serv
 
 * **public static String appendToURL(final String URL)**
 
-   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo, devi disporre dell’SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [Funzione aggiuntiva ID visitatore](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Aggiunge i dati visitatore Adobe a una stringa URL da usare con la libreria Adobe JavaScript. Per utilizzare questo metodo, devi disporre dell’SDK di Mobile versione 4.12 o successiva. Per ulteriori informazioni, consulta [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) nella documentazione del servizio Adobe Experience Cloud Identity.
 
    >[!IMPORTANT]
    >

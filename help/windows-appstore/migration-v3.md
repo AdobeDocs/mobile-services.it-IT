@@ -1,17 +1,14 @@
 ---
 description: Questa sezione descrive come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
-seo-description: Questa sezione descrive come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK Windows 8.1 Universal App Store 4.x per soluzioni Experience Cloud.
-seo-title: Migrazione agli SDK 4.x
 solution: Experience Cloud,Analytics
 title: Migrazione agli SDK 4.x
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 24%
+source-wordcount: '650'
+ht-degree: 25%
 
 ---
 
@@ -125,7 +122,7 @@ In tutto il codice, rimuovi le chiamate ai seguenti metodi:
 * `SetOnline`
 * `SetOffline`
 
-## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 

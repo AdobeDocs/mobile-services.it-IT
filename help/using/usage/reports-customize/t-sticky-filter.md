@@ -1,17 +1,14 @@
 ---
 description: Crea un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
 keywords: dispositivi mobili
-seo-description: Crea un filtro per più rapporti in modo da visualizzare il comportamento di un segmento in tutti i rapporti mobili. Un filtro fisso consente di definire un filtro applicato a tutti i rapporti non di percorso.
-seo-title: Aggiungere un filtro fisso
 solution: Experience Cloud,Analytics
 title: Aggiungere un filtro fisso
 topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '168'
 ht-degree: 100%
 
 ---

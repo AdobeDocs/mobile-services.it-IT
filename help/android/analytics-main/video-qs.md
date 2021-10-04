@@ -1,18 +1,15 @@
 ---
 description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
 keywords: android,libreria,mobile,sdk
-seo-description: Queste informazioni spiegano come misurare i video su Android con la soluzione di misurazione video.
-seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +19,7 @@ Queste informazioni spiegano come misurare i video su Android con la soluzione d
 
 >[!TIP]
 >
->Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate &quot;heartbeat&quot; che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull&#39;abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consulta [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html).
+>Durante la riproduzione di un video, vengono inviate al servizio frequenti chiamate &quot;heartbeat&quot; che consentono di misurare il tempo di riproduzione. Tali chiamate heartbeat sono inviate ogni 10 secondi e consentono di ottenere metriche di coinvolgimento dettagliate e rapporti più precisi sull&#39;abbandono. Per ulteriori informazioni sulla soluzione di misurazione video di Adobe, consulta [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
 
 Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme. Di seguito viene fornita una panoramica di base delle attività di sviluppo, con esempi di codice. Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Le regole di elaborazione vengono utilizzate per mappare i dati contestuali in una variabile Analytics.
 

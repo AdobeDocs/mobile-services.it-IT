@@ -1,16 +1,13 @@
 ---
 description: Se la tua app apre contenuto web per mobile, accertati che i visitatori non vengano identificati separatamente mentre si spostano tra contenuto nativo e web per mobile.
-seo-description: Se la tua app apre contenuto web per mobile, accertati che i visitatori non vengano identificati separatamente mentre si spostano tra contenuto nativo e web per mobile.
-seo-title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 solution: Experience Cloud,Analytics
 title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '477'
 ht-degree: 100%
 
 ---

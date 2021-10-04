@@ -1,16 +1,13 @@
 ---
 description: Il collegamento all'interno di app e siti web è importante per mantenere l'esperienza utente. Scopri come funzionano i collegamenti universali e alle app e le loro differenze.
-seo-description: I collegamenti universali (iOS) e i collegamenti alle app (Android) consentono di connettersi ai collegamenti profondi nelle app iOS o Android.
-seo-title: Collegamenti universali Apple e collegamenti app Android
 solution: Experience Cloud,Analytics
 title: Guida ai collegamenti universali e alle app
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1118'
 ht-degree: 96%
 
 ---

@@ -1,21 +1,18 @@
 ---
-description: Elenco di classi ed enumerazioni da utilizzare nelle applicazioni Xamarin.
-seo-description: Elenco di classi ed enumerazioni da utilizzare nelle applicazioni Xamarin.
-seo-title: Classi, enum e interfacce
+description: Elenco delle classi e delle enumerazioni da utilizzare nelle applicazioni Xamarin.
 title: Classi, enum e interfacce
 uuid: 2527b3ae-a447-4b2e-9e90-b3b8ec8cb47a
-translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+exl-id: 72bc40f6-005c-4fb4-b41d-761d48fe78da
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '42'
+ht-degree: 23%
 
 ---
 
-
 # Classi, enum e interfacce{#classes-enums-and-interfaces}
 
-Elenco di classi ed enumerazioni da utilizzare nelle applicazioni Xamarin.
+Elenco delle classi e delle enumerazioni da utilizzare nelle applicazioni Xamarin.
 
 ## Classi {#section_30E9E14CF38843B5B9792BBEC07667DC}
 
@@ -126,7 +123,7 @@ public sealed class MobilePrivacyStatus : Enum{
 }
 ```
 
-### VisitorIDAuthenticationState
+### VisitorIDAuthAuthenticationState
 
 ```java
 public sealed class VisitorIDAuthenticationState : Enum { 
@@ -144,7 +141,7 @@ public sealed class VisitorIDAuthenticationState : Enum {
 }
 ```
 
-## Interfaces {#section_3316649422F74AF39EF2005EA81D6B11}
+## Interfacce {#section_3316649422F74AF39EF2005EA81D6B11}
 
 ### IAdobeDataCallback
 

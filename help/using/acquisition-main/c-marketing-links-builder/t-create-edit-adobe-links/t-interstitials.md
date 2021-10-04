@@ -1,22 +1,19 @@
 ---
 description: Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store).
 keywords: dispositivi mobili
-seo-description: Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store).
-seo-title: Interstiziali
 solution: Experience Cloud,Analytics
 title: Interstiziali
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---
 
-# Interstiziali {#interstitials}
+# Interstiziali{#interstitials}
 
 Puoi indirizzare gli utenti a una particolare destinazione a seconda che abbiano installato l’app (un collegamento profondo nell’app) o meno (un sito web o un app store). È meglio lasciare agli utenti la scelta del percorso. Gli addetti al marketing possono configurare una pagina interstiziale che presenti agli utenti le opzioni per le destinazioni disponibili.
 

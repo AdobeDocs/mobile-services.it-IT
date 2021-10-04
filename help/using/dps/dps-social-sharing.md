@@ -1,22 +1,19 @@
 ---
 description: Il rapporto Condivisione social fornisce una visualizzazione sunburst per i dati esistenti. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suites (DPS).
 keywords: dispositivi mobili
-seo-description: Il rapporto Condivisione social fornisce una visualizzazione sunburst per i dati esistenti. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Suites (DPS).
-seo-title: Condivisione social
 solution: Experience Cloud,Analytics
 title: Condivisione social
 topic-fix: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 exl-id: 3f396c6d-dae4-4419-84fd-884a9e87dab1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '118'
 ht-degree: 100%
 
 ---
 
-# Condivisione social {#social-sharing}
+# Condivisione social{#social-sharing}
 
 Il rapporto **[!UICONTROL Condivisione social]** fornisce una visualizzazione sunburst per i dati esistenti. Questo rapporto è disponibile solo per i clienti DPS.
 

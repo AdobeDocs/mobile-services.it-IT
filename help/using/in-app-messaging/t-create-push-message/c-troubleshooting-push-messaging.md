@@ -1,22 +1,19 @@
 ---
 description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 keywords: dispositivi mobili
-seo-description: Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
-seo-title: Risoluzione dei problemi dei messaggi push
 solution: Experience Cloud,Analytics
 title: Risoluzione dei problemi dei messaggi push
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
 
-# Risoluzione dei problemi dei messaggi push {#troubleshooting-push-messaging}
+# Risoluzione dei problemi dei messaggi push{#troubleshooting-push-messaging}
 
 Queste informazioni possono essere utili per risolvere eventuali problemi dei messaggi push.
 
@@ -94,13 +91,13 @@ Il cliente seguente ha due app iOS:
 * Nome app: PhotoShop_app_iOS
    * RSID principale: AllAdobe PhotoShop_apps
    * VRSID: PhotoShop_iOS_app_SF
-   * Segmento di definizione VRSID: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * Segmento di definizione VRSID: `a.appid contains "PhotoShop_iOS_app_SF"`
 * Nome app: PhotoShop_app_iOS
    * RSID principale: AllAdobe PhotoShop_apps
    * RSID: PhotoShop_iOS_app_LA
-   * Segmento di definizione VRSID: `a.os contains “iOS”`
+   * Segmento di definizione VRSID: `a.os contains "iOS"`
 
-In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Nonostante venga inviato agli utenti di *PhotoShop_iOS_app_LA*, questo messaggio inserisce nella blocklist gli ID push per gli utenti di *PhotoShop_iOS_app_SF* poiché l’app *PhotoShop_iOS_app_SF* dispone di un certificato diverso. Se il segmento fosse stato definito come `a.os contains “PhotoShop_iOS_app_LA”`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
+In questo esempio, se un dipendente Photoshop invia un messaggio push all’app *PhotoShop_iOS_app_SF*, tutti gli utenti dell’app *PhotoShop_iOS_app_SF* riceveranno normalmente il messaggio push. Tuttavia, se il dipendente invia un messaggio all’app *PhotoShop_iOS_app_LA*, poiché il relativo Segmento di definizione VRSID non è corretto (`iOS` anziché`a.os contains "PhotoShop_iOS_app_LA"`), il messaggio viene inviato a **tutti** gli utenti iOS in *AllAdobe PhotoShop_apps*. Nonostante venga inviato agli utenti di *PhotoShop_iOS_app_LA*, questo messaggio inserisce nella blocklist gli ID push per gli utenti di *PhotoShop_iOS_app_SF* poiché l’app *PhotoShop_iOS_app_SF* dispone di un certificato diverso. Se il segmento fosse stato definito come `a.os contains "PhotoShop_iOS_app_LA"`, il messaggio push sarebbe stato inviato solo agli utenti *PhotoShop_iOS_app_LA*.
 
 Se passati con il certificato push *PhotoShop_IOS_app_LA*, gli identificatori push di *PhotoShop_iOS_app_SF* verrebbero restituiti come `invalid`.
 

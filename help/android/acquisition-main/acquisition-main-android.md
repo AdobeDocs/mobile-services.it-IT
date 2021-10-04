@@ -1,16 +1,13 @@
 ---
 description: Informazioni utili per usare i collegamenti di tracciamento per l’acquisizione nelle app iOS.
-seo-description: Informazioni utili per usare i collegamenti di tracciamento per l’acquisizione nelle app iOS.
-seo-title: Panoramica acquisizione
 solution: Experience Cloud,Analytics
 title: Panoramica acquisizione
 topic-fix: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 exl-id: 0315f8ed-41cb-4a2c-bfe0-56bdebf1af52
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '120'
 ht-degree: 100%
 
 ---

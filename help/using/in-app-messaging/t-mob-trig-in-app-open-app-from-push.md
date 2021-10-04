@@ -1,17 +1,14 @@
 ---
 description: È possibile impostare come attivatore del messaggio in-app l’ID del messaggio push che viene inviato quando un utente apre l’app dal messaggio push.
-seo-description: È possibile impostare come attivatore del messaggio in-app l’ID del messaggio push che viene inviato quando un utente apre l’app dal messaggio push.
-seo-title: Attivare un messaggio in-app quando l’app viene aperta da un messaggio push
 title: Attivare un messaggio in-app quando l’app viene aperta da un messaggio push
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
-source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
+exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 90%
+source-wordcount: '270'
+ht-degree: 89%
 
 ---
-
 
 # Attivare un messaggio in-app quando l’app viene aperta da un messaggio push{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
@@ -27,7 +24,7 @@ ht-degree: 90%
 
 1. Salva e attiva il messaggio in-app con il seguente attivatore:
 
-   `“a.push.payloadID” =`
+   `"a.push.payloadID" =`
 
    >[!TIP]
    >
@@ -40,10 +37,8 @@ ht-degree: 90%
 1. Salva e invia il messaggio push che ha l’ID push individuato al punto 1.
 1. Fai clic sul messaggio push per aprire l’app e verifica che il messaggio in-app sia visualizzato quando l’app si apre.
 
-   Durante il test, tenete presenti le informazioni seguenti:
+   Durante il test, ricorda quanto segue:
 
    * Dopo aver salvato il messaggio in-app, l&#39;aggiornamento del file di configurazione in hosting con il nuovo messaggio richiede circa 45 secondi.
    * L’app cerca gli aggiornamenti del file di configurazione (il nuovo messaggio in-app) quando viene eseguito un **nuovo** avvio, quindi devi assicurarti che l’app attivi un nuovo avvio quando fai clic sul messaggio push.
-
    In genere, questo significa controllare che sia scaduto l’intervallo di timeout della sessione. L’intervallo predefinito è di 5 minuti.
-

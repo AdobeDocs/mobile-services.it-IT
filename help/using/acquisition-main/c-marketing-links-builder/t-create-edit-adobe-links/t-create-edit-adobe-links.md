@@ -1,18 +1,15 @@
 ---
-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti profondi nella tua app mobile o sul tuo sito web.
+description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
 keywords: dispositivi mobili
-seo-description: Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti verso collegamenti diretti nella tua app mobile o sul tuo sito web.
-seo-title: Creare o modificare collegamenti di marketing
 solution: Experience Cloud,Analytics
 title: Creare o modificare collegamenti di marketing
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +40,7 @@ Puoi creare o modificare i collegamenti di marketing per indirizzare gli utenti 
       Sono disponibili i seguenti tag preimpostati:
 
       * **Dati contestuali personalizzati**
-Specifica la chiave e il valore. Se aggiungi dei dati contestuali personalizzati, devi creare una regola di elaborazione. Per ulteriori informazioni, consulta [Panoramica sulle regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Specifica la chiave e il valore. Se aggiungi dei dati contestuali personalizzati, devi creare una regola di elaborazione. Per ulteriori informazioni, consulta [Panoramica delle regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) nella documentazione di Adobe Analytics.
 
       * **Origine**
 Specifica il referente originale, ad esempio “newsletter” o “homepage”.

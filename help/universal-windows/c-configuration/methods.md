@@ -1,17 +1,14 @@
 ---
 description: Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-description: Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-seo-title: Metodi dell’SDK
 solution: Experience Cloud,Analytics
 title: Metodi dell’SDK
 topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 exl-id: 0aac477c-074d-457c-b117-bb205119c475
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 67%
+source-wordcount: '576'
+ht-degree: 68%
 
 ---
 

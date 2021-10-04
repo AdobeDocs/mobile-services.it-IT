@@ -5,11 +5,10 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 20%
+source-wordcount: '948'
+ht-degree: 19%
 
 ---
 
@@ -29,13 +28,13 @@ Prima di aggiungere il codice, chiedi all’amministratore di Analytics di compl
 
 1. Fai clic su **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Gestione mobile]** > **[!UICONTROL Generazione rapporti applicazioni mobili]**.
 
-   ![](assets/mobile-settings.png)
+   ![Impostazioni di Mobile](assets/mobile-settings.png)
 
 1. Fai clic su **[!UICONTROL Abilita rapporti app più recenti]**.
 
    Facoltativamente, puoi anche fare clic su **[!UICONTROL Abilita tracciamento posizione mobile]** o **[!UICONTROL Abilita rapporti legacy e attribuzione per hit di background]**.
 
-   ![](assets/enable-lifecycle.png)
+   ![Attiva ciclo di vita](assets/enable-lifecycle.png)
 
 Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti sulle applicazioni mobili vengono visualizzati nel menu **[!UICONTROL Report]** nell’interfaccia dei rapporti di marketing.
 
@@ -59,7 +58,7 @@ app.onactivated = function (args) {
 }; 
 app.oncheckpoint = function (args) { 
   ADBMobile.Config.pauseCollectingLifecycleData(); 
-}
+};
 ```
 
 ### C# in App.xaml.cs
@@ -139,49 +138,47 @@ Le regole di elaborazione vengono utilizzate per copiare i dati inviati in varia
 
 [Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
-[Guida alle regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Guida alle regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Ottenere l&#39;autorizzazione all&#39;utilizzo delle regole di elaborazione](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
-
-Consigliamo di raggruppare le variabili di dati di contesto utilizzando &quot;namespace&quot;, in quanto consente di mantenere un ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
+Adobe consiglia di raggruppare le variabili di dati di contesto utilizzando &quot;namespace&quot;, in quanto consente di mantenere l’ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
 
 ```javascript
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Le variabili di dati di contesto sono ordinate alfabeticamente nell’interfaccia delle regole di elaborazione, pertanto gli spazi dei nomi consentono di vedere rapidamente le variabili che si trovano nello stesso spazio dei nomi.
 
-Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati di contesto utilizzando il numero evar o prop:
+Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati di contesto utilizzando il numero di eVar o di proprietà:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Questo potrebbe semplificare leggermente *la mappatura una tantum nelle regole di elaborazione, a scapito però della leggibilità durante il debug e complicando gli aggiornamenti futuri del codice.* Consigliamo piuttosto di utilizzare nomi descrittivi per chiavi e valori:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Imposta le variabili di contesto che definiscono eventi contatore su un valore di &quot;1&quot;:
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Le variabili di dati di contesto che definiscono eventi di incremento possono avere il valore da incrementare:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!TIP]
 >
 >Adobe riserva lo spazio dei nomi `a.`. A parte questa restrizione, le variabili di dati di contesto devono essere univoche nella società di accesso per evitare conflitti.
 
-## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Per impostare *`products`* nell’SDK di Mobile, devi usare una sintassi particolare. Per ulteriori informazioni, consulta [Variabile dei prodotti](/help/universal-windows/analytics/products.md).
 

@@ -1,23 +1,20 @@
 ---
-description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
-seo-description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica.
-seo-title: Regole di elaborazione e dati contestuali
+description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica.
 solution: Experience Cloud,Analytics
 title: Regole di elaborazione e dati contestuali
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '242'
+ht-degree: 72%
 
 ---
 
-# Regole di elaborazione e dati contestuali {#processing-rules-and-context-data}
+# Regole di elaborazione e dati contestuali  {#processing-rules-and-context-data}
 
-Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a elementi eVar, prop e ad altre variabili a scopo di reportistica. Per ulteriori informazioni, consulta [Regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica. Per ulteriori informazioni, consulta [Regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 
@@ -31,7 +28,7 @@ Se lavori con le regole di elaborazione, ricorda quanto segue:
 
 * Nell’interfaccia delle regole di elaborazione, le variabili di dati contestuali sono presentate in ordine alfabetico in modo che si possa rapidamente individuare le variabili che si trovano nello stesso spazio dei nomi.
 
-   Evita di denominare le chiavi dei dati contestuali utilizzando il numero evar o prop:
+   Evita di denominare le chiavi dei dati contestuali utilizzando il numero eVar o prop:
 
    ```js
    "eVar1":"jimbo"

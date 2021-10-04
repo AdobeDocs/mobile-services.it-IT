@@ -1,16 +1,13 @@
 ---
 description: La geolocalizzazione permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
-seo-description: La geolocalizzazione permette di misurare i dati relativi alla posizione utilizzando latitudine e longitudine e punti di interesse predefiniti nelle app iOS.
-seo-title: Geolocalizzazione e punti di interesse
 solution: Experience Cloud,Analytics
 title: Geolocalizzazione e punti di interesse
 topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 exl-id: 732c3863-2010-4d04-a17b-a656e857f567
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Ogni chiamata `trackLocation` invia i seguenti dati:
 A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell&#39;app. Tale sincronizzazione richiede un&#39;impostazione `analytics.poi` nel file `ADBMobile.json`:
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).

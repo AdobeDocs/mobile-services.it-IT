@@ -1,17 +1,14 @@
 ---
 description: Informazioni utili per l’analisi dei video.
-seo-description: Informazioni utili per l’analisi dei video.
-seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 67%
+source-wordcount: '888'
+ht-degree: 66%
 
 ---
 
@@ -19,7 +16,7 @@ ht-degree: 67%
 
 Informazioni utili per l’analisi dei video.
 
-La misurazione del video è descritta in dettaglio nella guida [Misurazione di video e audio in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione del video è descritta in dettaglio nella guida [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
@@ -35,7 +32,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.name**
 
-   (**Facoltativo**) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile da ClientCare.
+   (**Facoltativo**) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile dall’assistenza clienti.
 
    * Tipo evento: Custom Insight (s.prop).
    * Tipo evento: Custom Insight (s.prop)
@@ -53,7 +50,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi utilizzare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuto.
 
    Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e quindi di calcolare i tassi di conversione relativi al video.
 

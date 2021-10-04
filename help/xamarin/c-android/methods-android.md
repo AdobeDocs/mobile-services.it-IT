@@ -1,29 +1,26 @@
 ---
-description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-keywords: Xamarin
-seo-description: Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-seo-title: Metodi per Android
+description: Metodi Android per i componenti Xamarin per l'SDK 4.x delle soluzioni Experience Cloud.
+keywords: Xamarina
 solution: Experience Cloud
 title: Metodi per Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 67%
+source-wordcount: '1755'
+ht-degree: 68%
 
 ---
 
-
 # Metodi per Android{#android-methods}
 
-Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
+Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience Cloud.
 
 ## Metodi di configurazione {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   Restituisce la preferenza di accesso di debug corrente e il valore predefinito è false.
+   Restituisce l&#39;attuale preferenza di accesso di debug e l&#39;impostazione predefinita è false.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -61,7 +58,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
    * `ADBMobilePrivacyStatus.Unknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
 
-   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
+   Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) .
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -112,7 +109,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **PauseCollectingLifecycleData**
 
-   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera un timestamp per determinare la durata della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l’app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
+   Indica all&#39;SDK che l&#39;applicazione è in pausa, in modo che le metriche del ciclo di vita vengano calcolate correttamente. Ad esempio, al momento della pausa recupera una marca temporale per determinare la lunghezza della sessione precedente. Inoltre, imposta un flag in modo che il ciclo di vita acquisisca correttamente che l&#39;app non si è bloccata. Per ulteriori informazioni, vedi [Metriche del ciclo di vita](/help/android/metrics.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -163,7 +160,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
+   (4.2 o versioni successive) Consente di caricare un file di configurazione diverso `ADBMobile JSON` all&#39;avvio dell&#39;applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -180,7 +177,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 o versione successiva) Imposta l&#39;icona grande utilizzata per le notifiche create dall&#39;SDK. Questa icona è l&#39;immagine principale visualizzata dall&#39;utente nella notifica completa all&#39;interno del Centro notifiche.
+   (4.2 o versioni successive) Imposta l’icona grande utilizzata per le notifiche create dall’SDK. Questa icona è l&#39;immagine principale visualizzata dall&#39;utente nella notifica completa all&#39;interno del Centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -196,7 +193,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 o versione successiva) Imposta l&#39;icona piccola utilizzata per le notifiche create dall&#39;SDK. Questa icona viene visualizzata nella barra di stato e rappresenta l’immagine secondaria visualizzata dall’utente nella notifica completa nel Centro notifiche.
+   (4.2 o versioni successive) Imposta l’icona piccola utilizzata per le notifiche create dall’SDK. Questa icona viene visualizzata nella barra di stato e rappresenta l’immagine secondaria mostrata quando l’utente visualizza la notifica completa nel centro notifiche.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -214,7 +211,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackingIdentifier**
 
-   Restituisce l’ID generato automaticamente per Analytics. Si tratta di un ID univoco specifico per l&#39;app, che viene generato all&#39;avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell&#39;app e rimosso alla disinstallazione.
+   Restituisce l&#39;ID generato automaticamente per Analytics. Si tratta di un ID univoco specifico per l’app, generato all’avvio iniziale e quindi memorizzato e utilizzato da quel momento in poi. Questo ID viene mantenuto nei successivi aggiornamenti dell’app e rimosso al momento della disinstallazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -230,7 +227,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackState**
 
-   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. `States` sono le visualizzazioni disponibili nell&#39;app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. `States` sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato lo stato .
 
    >[!TIP]
    >
@@ -253,7 +250,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackAction**
 
-   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell&#39;app e che desideri misurare, come &quot;morti&quot;, &quot;livello acquisito&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell’app e che desideri misurare, come &quot;morti&quot;, &quot;livello acquisito&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
 
    >[!TIP]
    >
@@ -277,7 +274,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackLocation**
 
-   Invia le coordinate di latitudine e longitudine correnti. Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `TrackLocation`.
+   Invia le coordinate di latitudine e longitudine correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova nel raggio di riferimento di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `TrackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -366,7 +363,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **TrackTimedActionUpdate**
 
-   Passa i dati per aggiornare i dati contestuali associati all’azione in questione. I dati passati vengono aggiunti in coda ai dati esistenti per l’azione, e li sovrascrivono se per l’azione è già definita la stessa chiave.
+   Passa i dati per aggiornare i dati contestuali associati all’azione in questione. I dati passati vengono aggiunti alla fine dei dati esistenti per l&#39;azione, e li sovrascrivono se per l&#39;azione è già definita la stessa chiave.
 
    >[!TIP]
    >
@@ -428,7 +425,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **SendQueuedHits**
 
-   Forza l’invio da parte della libreria di tutti gli hit nella coda offline, indipendentemente dal numero di hit attualmente presenti nella coda.
+   Forza l&#39;invio da parte della libreria di tutti gli hit nella coda offline, indipendentemente dal numero di hit attualmente presenti nella coda.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -458,7 +455,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
       Analytics.ClearQueue(); 
       ```
 
-* **QueueSize**
+* **DimensioneCoda**
 
    Recupera il numero di hit attualmente presenti nella coda offline.
 
@@ -474,7 +471,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
       var queueSize = Analytics.QueueSize();
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Metodi Experience Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
@@ -494,7 +491,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **SyncIdentifiers**
 
-   Con l&#39;ID Experience Cloud , puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
+   Con l’ID Experience Cloud, puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, con un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a `setCustomerIDs` nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -514,7 +511,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **LoadRequest**
 
-   Sends a request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un callback `Action<NSDictionary>`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -537,7 +534,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **CreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   Costruttore di convenienza per creare un oggetto `ADBTargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -571,7 +568,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **ClearCookies**
 
-   Elimina i cookie di Target dall&#39;app.
+   Elimina i cookie di Target dall’app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -605,7 +602,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **Dpid**
 
-   Returns the current `DPID`.
+   Restituisce il `DPID` corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -621,7 +618,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **Dpuuid**
 
-   Returns the current `DPUUID`.
+   Restituisce il `DPUUID` corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -637,7 +634,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **AudienceSetDpidAndDpuuid**
 
-   Imposta l&#39; `dpid` e `dpuuid`. Se `dpid` e `dpuuid` sono impostati, vengono inviati con ogni segnale.
+   Imposta i valori `dpid` e `dpuuid`. Se sono impostati `dpid` e `dpuuid`, questi vengono inviati con ciascun segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -653,7 +650,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **SignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>` callback.
+   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un callback `Action<NSDictionary>`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -679,7 +676,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 * **Ripristino**
 
-   Resets audience manager `UUID` and purges current visitor profile.
+   Ripristina audience manager `UUID` ed elimina il profilo del visitatore corrente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -695,7 +692,7 @@ Metodi Android per componenti Xamarin per  soluzioni SDK 4.x per Experienci Clou
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/help/android/analytics-main/video-qs.md).
+Per ulteriori informazioni su Video Analytics, consulta [Video Analytics](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 
@@ -769,7 +766,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Close (settings.Name); 
       ```
 
-* **Riproduci**
+* **Play**
 
    Riproduce l&#39;elemento multimediale denominato name in corrispondenza dell&#39;offset indicato (in secondi).
 
@@ -785,7 +782,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Play (settings.Name, 0); 
       ```
 
-* **Complete**
+* **Completa**
 
    Contrassegna manualmente l&#39;elemento multimediale come completato in corrispondenza dell&#39;offset indicato (in secondi).
 
@@ -817,7 +814,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Stop (settings.Name, 3);
       ```
 
-* **Fai clic su**
+* **Click**
 
    Notifica al modulo multimediale l&#39;avvenuto clic sull&#39;elemento multimediale.
 
@@ -833,7 +830,7 @@ Per ulteriori informazioni su Video Analytics, consultate [Video Analytics](/hel
       Media.Click (settings.Name, 3); 
       ```
 
-* **Track**
+* **Traccia**
 
    Invia una chiamata Track Action (senza visualizzazioni pagina) per lo stato corrente dell&#39;elemento multimediale.
 

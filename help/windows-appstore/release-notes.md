@@ -1,21 +1,18 @@
 ---
 description: Note sulla versione e problemi noti per SDK 4.x per Windows 8.1 Universal App Store per le soluzioni Experience Cloud.
-seo-description: Note sulla versione e problemi noti per SDK 4.x per Windows 8.1 Universal App Store per le soluzioni Experience Cloud.
-seo-title: Note sulla versione
 solution: Experience Cloud,Analytics
 title: Note sulla versione
 topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
-# Note sulla versione {#release-notes}
+# Note sulla versione{#release-notes}
 
 Note sulla versione e problemi noti per SDK 4.x per Windows 8.1 Universal App Store per le soluzioni Experience Cloud.
 
@@ -30,5 +27,4 @@ Oltre a un significativo aumento delle prestazioni, la versione 4 aggiunge le se
 | Azione temporizzata | Le azioni temporizzate sono un modo semplice per vedere quanto tempo impiegano gli utenti a completare un processo, dall’inizio alla fine, all’interno dell’app. Le azioni temporizzate consentono di calcolare il tempo di una sessione e il tempo totale (per più sessioni) necessario per completare l’azione. Per ulteriori informazioni, consulta *Azioni temporizzate* in [Analytics](/help/windows-appstore/analytics/analytics.md). |
 | Consenso/rinuncia | Attivazione e disattivazione rapida delle analisi. |
 
-
-Per ulteriori informazioni sulle note sulle versioni di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
+Per ulteriori informazioni sulle note sulle versioni di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).

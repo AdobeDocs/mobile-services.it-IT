@@ -1,18 +1,15 @@
 ---
-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l’SDK di Adobe Mobile per Android.
+description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
 keywords: android,libreria,mobile,sdk
-seo-description: Queste informazioni sono utili per tenere traccia dei collegamenti profondi (deep link) e di quelli profondi differiti (deferred deep link) nelle app mobili, mediante l'SDK di Adobe Mobile per Android.
-seo-title: Tracciamento dei collegamenti profondi in Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Tracciamento dei collegamenti profondi
 topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +52,7 @@ Inoltre, puoi anche aggiungere al collegamento diretto o universale una o più d
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Queste chiavi sono variabili premappate per il reporting in Adobe Analytics. Per maggiori informazioni sulle regole di mappatura ed elaborazione, vedi [Regole di elaborazione e dati contestuali](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Queste chiavi sono variabili premappate per il reporting in Adobe Analytics. Per maggiori informazioni sulle regole di mappatura ed elaborazione, vedi [Regole di elaborazione e dati contestuali](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 ## Tracciamento dei collegamenti profondi differiti (per l&#39;utilizzo con i collegamenti di marketing)
 

@@ -1,17 +1,14 @@
 ---
 description: Note sulla versione e problemi noti per gli SDK 4.x iOS per le soluzioni Experience Cloud.
-seo-description: Note sulla versione e problemi noti per gli SDK 4.x iOS per le soluzioni Experience Cloud.
-seo-title: Note sulla versione
 solution: Experience Cloud,Analytics
 title: Note sulla versione
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-translation-type: tm+mt
-source-git-commit: a6663bf682f0a4283978f2f07277a4d4d43615f6
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '535'
+ht-degree: 99%
 
 ---
 
@@ -19,47 +16,47 @@ ht-degree: 0%
 
 Di seguito sono riportate le note sulla versione, i problemi noti e le informazioni sulle correzioni rapide per gli SDK iOS 4.x per le soluzioni Experience Cloud:
 
-**13 aprile 2021: Versione 4.21.2**
+## 13 aprile 2021: Versione 4.21.2
 
-* Servizio ID visitatore: è stato risolto un problema che causava la sincronizzazione di identificatori pubblicitari vuoti nel servizio ID visitatori.
+* Servizio ID visitatore: è stato risolto un problema a causa del quale identificatori pubblicitari vuoti venivano sincronizzati nel servizio ID visitatore.
 
-**13 gennaio 2021: versione 4.21.1**
+## 13 gennaio 2021: versione 4.21.1
 
 * Generale: è stato risolto un problema che poteva causare eccezioni SQLite durante la chiusura dell’app.
 
-**15 dicembre 2020: versione 4.21.0**
+## 15 dicembre 2020: versione 4.21.0
 
 * Generale - L’SDK è ora distribuito utilizzando XCFrameworks per supportare gli hardware con la nuova architettura Apple M1, mantenendo al contempo il supporto per l’architettura Intel esistente.
    * IMPORTANTE - L’aggiornamento a XCFrameworks per AdobeMobile richiede Xcode 12.0 o versione successiva.
    * IMPORTANTE - Se si utilizza Cocoapods, l’aggiornamento a XCFrameworks per AdobeMobile richiede Cocoapods 1.10.0 o versione successiva.
 
-**4 novembre 2020: versione 4.20.0**
+## 4 novembre 2020: versione 4.20.0
 
 * Servizio ID visitatore: è stato aggiunto il parametro di stato device_consent quando setAdvertisingIdentifier viene chiamato dopo l’abilitazione/disabilitazione del tracciamento degli annunci.
 * Analytics: è stato corretto un bug a causa del quale l’invio degli hit Analytics veniva ritardato in un’installazione quando iAd.framework era collegato e il dispositivo aveva abilitato “Tracciamento annunci limitato”.
 
-**16 luglio 2020: versione 4.19.3**
+## 16 luglio 2020: versione 4.19.3
 
 * Generale: È stato corretto un bug che impediva la gestione corretta degli URL di collegamento profondo contenenti più segni di uguale (=) nei parametri di query.
 
-**24 marzo 2020: versione 4.19.2**
+## 24 marzo 2020: versione 4.19.2
 
 * Generale: sono stati corretti alcuni problemi nel codice di Target.
 
-**12 marzo 2020: versione 4.19.1**
+## 12 marzo 2020: versione 4.19.1
 
 * Generale: è stato risolto un potenziale arresto anomalo provocato dall’inclusione degli enum di Swift nei dati contestuali per il tracciamento delle chiamate.
 * Target: l’ID della sessione di Target verrà ora aggiunto come parametro dei dati contestuali “a.target.sessionId” nel risultato interno di Analytics for Target inviato ad Adobe Analytics.
 
-**4 febbraio 2020: versione 4.19.0**
+## 4 febbraio 2020: versione 4.19.0
 
 * Ciclo di vita: è stata aggiunta la nuova API pauseCollectingLifecycleData per attenuare il problema relativo ai dati anormali della lunghezza di sessione segnalati da alcuni dispositivi iOS precedenti.
 
-**8 novembre 2019: versione 4.18.9**
+## 8 novembre 2019: versione 4.18.9
 
 * Messaggistica in app: è stato corretto un bug che impediva di caricare nei messaggi a schermo intero le immagini memorizzate nella cache o nel bundle.
 
-**20 settembre 2019: versione 4.18.8**
+## 20 settembre 2019: versione 4.18.8
 
 * Messaggistica in-app:
 
@@ -70,13 +67,13 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
 * Generale: è stato corretto un bug a causa del quale i dati dell&#39;SDK venivano sincronizzati con l&#39;app watchOS associata a ogni chiamata di Analytics.
 
-**2 agosto 2019: versione 4.18.7**
+## 2 agosto 2019: versione 4.18.7
 
 * Ripristinato un cambiamento introdotto nella versione 4.18.6 che, in alcuni ambienti, ha causato un arresto anomalo dei dispositivi che utilizzavano una versione iOS più vecchia di 11.0.
 
 * Adobe Target: aggiunta la proprietà `requestLocationParameters` in `ADBTargetRequestObject`, che consente di inviare l&#39;impressionId con le richieste di Target.
 
-**18 luglio 2019: versione 4.18.6**
+## 18 luglio 2019: versione 4.18.6
 
 * Adobe Target: tutte le richieste ora includono il client e il valore `sessionId` nei parametri di query URL.
 * Adobe Target: è stato risolto un problema di perdita di memoria.
@@ -84,15 +81,15 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
    A causa della doppia codifica, i valori restituiti da tali API venivano segnalati da parte di alcuni servizi di sicurezza.
 
-**5 giugno 2019: versione 4.18.5**
+## 5 giugno 2019: versione 4.18.5
 
 * Analytics: aggiungi lo stato di consenso push ai dati del ciclo di vita quando le notifiche push sono abilitate.
 
-**24 maggio 2019: versione 4.18.4**
+## 24 maggio 2019: versione 4.18.4
 
 * Servizio ID visitatore: aumentato il timeout di ritorno per l&#39;API
    `visitorGetUrlVariablesAsync` a 30 secondi.
 
 * Servizio ID visitatore: la chiamata API `setPushIdentifier` ora invia una chiamata di sincronizzazione al servizio ID visitatore ogni volta che viene chiamata.
 
-Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
+Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).

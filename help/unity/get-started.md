@@ -1,19 +1,16 @@
 ---
 description: Questo plug-in consente di inviare chiamate ad Adobe Analytics dalle applicazioni Unity.
 keywords: Unity
-seo-description: Questo plug-in consente di inviare chiamate ad Adobe Analytics dalle applicazioni Unity.
-seo-title: Plug-in di Unity per gli SDK iOS e Android 4.x
 solution: Experience Cloud
 title: Plug-in di Unity per gli SDK iOS e Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: fdb012d0-64f5-4c63-96d7-508fef01041f
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # Plug-in di Unity per gli SDK iOS e Android 4.x {#unity-plug-in-for-the-ios-and-android-x-sdks}
 

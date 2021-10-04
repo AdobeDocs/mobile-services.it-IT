@@ -1,22 +1,19 @@
 ---
 description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 keywords: android,libreria,mobile,sdk
-seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria Android.
-seo-title: Metodi di Target per Android
 solution: Experience Cloud,Analytics
 title: Metodi di Target per Android
 topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 100%
+source-wordcount: '590'
+ht-degree: 95%
 
 ---
 
-# Metodi di Target per Android {#target-methods}
+# Metodi di Target per Android{#target-methods}
 
 Elenco dei metodi di Adobe Target forniti dalla libreria Android.
 
@@ -91,15 +88,15 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
-      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
-      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put(“order-parameter-key”, “order-parameter-value”);
+      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put("profile-parameter-key", "profile-parameter-value"); 
+      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put("order-parameter-key", "order-parameter-value");
       Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); 
-      mboxParameters.put(“mbox-parameter-key”, “mbox-parameter-value”); 
-      Target.loadRequest(“mboxName”, “defaultContent”, profileParameters, orderParameters, mboxParameters
+      mboxParameters.put("mbox-parameter-key", "mbox-parameter-value"); 
+      Target.loadRequest("mboxName", "defaultContent", profileParameters, orderParameters, mboxParameters
       new TargetCallback<String>() {
           @Override
           public void call (String item) {
-             Log.d(“Target Content”, item); 
+             Log.d("Target Content", item); 
           }
       });
       ```
@@ -158,20 +155,20 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Di seguito è riportato un codice di esempio per questo metodo:
 
       ```java
-      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
-      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put(“order-parameter-key”, “order-parameter-value”); 
-      Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); mboxParameters.put(“mbox-parameter-key”, “mbox-parameter-value”); 
-      Map `<String, Object>` requestLocationParameters = new HashMap `<String, Object>`(); requestLocationParameters.put(“request-location-parameter-key”, “request-location-parameter-value”); 
+      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put("profile-parameter-key", "profile-parameter-value"); 
+      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put("order-parameter-key", "order-parameter-value"); 
+      Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); mboxParameters.put("mbox-parameter-key", "mbox-parameter-value"); 
+      Map `<String, Object>` requestLocationParameters = new HashMap `<String, Object>`(); requestLocationParameters.put("request-location-parameter-key", "request-location-parameter-value"); 
       
-      Target.loadRequest(“mboxName”, “defaultContent”, profileParameters, orderParameters, mboxParameters, requestLocationParameters,new TargetCallback<String>() {
+      Target.loadRequest("mboxName", "defaultContent", profileParameters, orderParameters, mboxParameters, requestLocationParameters,new TargetCallback<String>() {
          @Override
          public void call (String item) { 
-            Log.d(“Target Content”, item);
+            Log.d("Target Content", item);
          } 
       });
       ```
 
-      Per ulteriori informazioni sulle API Target sottostanti, consulta [Consegna](https://docs.adobe.com/dev/products/target/reference/delivery.html) nella guida per gli sviluppatori di Target.
+      Per ulteriori informazioni sull&#39;API Target sottostante, consulta [Caricare richieste Target](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests) nel riferimento API di Target.
 
 
 
@@ -273,7 +270,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```java
-      Target.setThirdPartyID(“third-party-id”);
+      Target.setThirdPartyID("third-party-id");
       ```
 
 * **getThirdPartyID**

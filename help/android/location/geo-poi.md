@@ -1,16 +1,13 @@
 ---
 description: La geolocalizzazione consente di misurare i dati sulla posizione mediante latitudine e longitudine e punti di interesse predefiniti nelle app Android.
-seo-description: La geolocalizzazione consente di misurare i dati sulla posizione mediante latitudine e longitudine e punti di interesse predefiniti nelle app Android.
-seo-title: Geolocalizzazione e punti di interesse
 solution: Experience Cloud,Analytics
 title: Geolocalizzazione e punti di interesse
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Ciascuna chiamata `trackLocation` invia le informazioni seguenti:
 A partire della versione 4.2, i POI sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati in modo dinamico con il file di configurazione dell&#39;app. Questa sincronizzazione richiede un’impostazione `analytics.poi` nel [file di configurazione ADBMobile JSON](/help/android/configuration/json-config/json-config.md):
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Se questa configurazione non è presente, devi scaricare una versione aggiornata del file `ADBMobile.json` e aggiungerla all&#39;app. Per ulteriori informazioni, consulta [Scaricare l’SDK e gli strumenti di prova](/help/android/getting-started/requirements.md).

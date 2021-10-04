@@ -1,17 +1,14 @@
 ---
 description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
 keywords: dispositivi mobili
-seo-description: Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluso vista, attivatore e caratteristiche.
-seo-title: Pubblico - Messaggio in-app
 solution: Experience Cloud,Analytics
 title: Pubblico - Messaggio in-app
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -48,7 +45,6 @@ Puoi configurare le opzioni relative al pubblico per i messaggi in-app, incluse 
 
    * **[!UICONTROL Caratteristiche]**
 Puoi scegliere chi deve visualizzare il messaggio in-app quando viene attivato e filtrare (segmentare) il pubblico in base a hit con dati specifici. Ad esempio, puoi definire una regola in cui i punti di interesse contengono Denver. Questo filtro consente di mostrare il messaggio a clienti che rientrano in uno dei tuoi punti di interesse il cui nome contiene Denver, al momento dell’attivazione.
-
 
 
 ## Informazioni aggiuntive su caratteristiche e attivatori {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

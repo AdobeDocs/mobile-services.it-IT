@@ -1,17 +1,14 @@
 ---
 description: Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. In questo modo gli utenti possono mantenere i propri dati in una singola suite di rapporti ma gestirli come se fossero contenuti in suite di rapporti separate.
-seo-description: Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. In questo modo gli utenti possono mantenere i propri dati in una singola suite di rapporti ma gestirli come se fossero contenuti in suite di rapporti separate.
-seo-title: Suite di rapporti virtuali
 title: Suite di rapporti virtuali
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 85%
+source-wordcount: '1006'
+ht-degree: 79%
 
 ---
-
 
 # Suite di rapporti virtuali {#virtual-report-suites}
 
@@ -20,7 +17,7 @@ Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata ap
 Le app che utilizzano le VRS si comportano come quelle che usano le normali suite di rapporti, tranne che per la gestione delle seguenti funzionalità:
 
 * Regole di elaborazione
-* evar/prop/listVar/eventi
+* eVar/prop/listvars/events
 * Opzione con abilitazione Timestamp
 * Flag di Dimension (ciclo di vita, posizione e così via)
 * Classificazioni
@@ -54,17 +51,17 @@ Una VRS può essere utile per completare le seguenti attività:
 
 >[!IMPORTANT]
 >
->Solo gli amministratori di Adobe Analytics possono creare e modificare le suite di rapporti virtuali in Adobe Analytics. Per creare una suite di rapporti virtuale, consulta [Creazione di suite di rapporti virtuale](https://docs.adobe.com/content/help/it-IT/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
+>Solo gli amministratori di Adobe Analytics possono creare e modificare le suite di rapporti virtuali in Adobe Analytics. Per creare una suite di rapporti virtuale, consulta [Creare suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) nella documentazione di Adobe Analytics.
 
 Ogni VRS ha un ID univoco. Per visualizzare l’ID suite di rapporti principali nell’interfaccia utente di Adobe Mobile Services, nella pagina Gestisci impostazioni app, nella sezione **[!UICONTROL Informazioni app]**, fai clic su **[!UICONTROL Maggiori dettagli]**.
 
-Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati rilevanti per un utente aziendale in Giappone.
+Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati relativi a un utente aziendale in Giappone.
 
 >[!TIP]
 >
 >Non è possibile modificare i valori che vengono ereditati dalla suite di rapporti principale.
 
-Una VRS è una definizione di segmento lato server collegata a una suite di rapporti principale. Di conseguenza, non è possibile eseguire attività di raccolta dati su una VRS, poiché l’SDK invia gli hit solo alla suite di rapporti principale, che a sua volta li registra.
+Una VRS è una definizione di segmento lato server associata a una suite di rapporti principale. Di conseguenza, non è possibile eseguire attività di raccolta dati su una VRS, poiché l’SDK invia gli hit solo alla suite di rapporti principale, che a sua volta li registra.
 
 ## Suite di rapporti virtuale in Adobe Mobile Services e raccolta dati {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -74,7 +71,7 @@ In Adobe Mobile Services, è possibile creare un’app basata su una suite di ra
 >
 >Le certificazioni push vengono collegate a livello di app nell’interfaccia utente di Mobile Services.
 
-Per garantire che i messaggi push vengano inviati correttamente, il segmento di pubblico deve essere definito correttamente. For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+Per garantire che i messaggi push vengano inviati correttamente, il segmento di pubblico deve essere definito correttamente. Per ulteriori informazioni, consulta [Pubblico: Definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## Comprensione dei fusi orari {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -113,7 +110,7 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 | `analytics.lifecycleTimeout` | No | Sì | Deve essere la suite di rapporti principale, se gli utenti non desiderano che i loro dati siano incoerenti. |
 | `analytics.privacyDefault` | No | Sì |  |
 | `analytics.batchLimit` | No | Sì |  |
-| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà relativa al fuso orario viene utilizzata per inviare dati a  Adobe Analytics ed è diversa dalla proprietà relativa al fuso orario impostata al momento della creazione di una VRS. |
+| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà relativa al fuso orario viene utilizzata per inviare dati ad Adobe Analytics ed è diversa dalla proprietà relativa al fuso orario impostata al momento della creazione di una VRS. |
 | `analytics.timezoneOffset` | Sì | No |  |
 | `analytics.referrerTimeout` | No | Sì |  |
 | `analytics.backdateSessionInfo` | Sì | Sì |  |
@@ -122,5 +119,5 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 
 Seguono alcune informazioni aggiuntive sulle suite di rapporti virtuali:
 
-* Per ulteriori informazioni sulle VRS, consulta [Virtual Report Suites](https://docs.adobe.com/content/help/it-IT/analytics/components/virtual-report-suites/vrs-about.html) (Suite di rapporti virtuali).
-* Per ulteriori informazioni sulla pianificazione dell’implementazione di una VRS, consulta [Virtual Report Suite Workflow](https://docs.adobe.com/content/help/it-IT/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html) (Flusso di lavoro delle suite di rapporti virtuali).
+* Per ulteriori informazioni sulle VRS, consulta [Panoramica sulle suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Per ulteriori informazioni sulla pianificazione dell’implementazione di una VRS, consulta [Virtual Report Suite Workflow](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html) (Flusso di lavoro delle suite di rapporti virtuali).

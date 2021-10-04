@@ -1,16 +1,13 @@
 ---
 description: Definizione ed esempi di codice sorgente per la funzione Postback.
-seo-description: Definizione ed esempi di codice sorgente per la funzione Postback.
-seo-title: Esempio di postback
 solution: Experience Cloud,Analytics
 title: Esempio di postback
 topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
 exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 100%
 
 ---
@@ -61,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Poiché il suo stato è `“MainMenu”`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L&#39;URL sostituisce tutte le variabili di modello con i valori dell&#39;hit. Presupponendo che la sessione precedente dell&#39;utente sia durata 132 secondi e che l&#39;utente disponga della versione SDK 4.6.0 per iOS, ecco un esempio dell&#39;URL risultante:
+Poiché il suo stato è `"MainMenu"`, questa chiamata di tracciamento attiva il messaggio di postback riportato sopra. L&#39;URL sostituisce tutte le variabili di modello con i valori dell&#39;hit. Presupponendo che la sessione precedente dell&#39;utente sia durata 132 secondi e che l&#39;utente disponga della versione SDK 4.6.0 per iOS, ecco un esempio dell&#39;URL risultante:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`

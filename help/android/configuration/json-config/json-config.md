@@ -1,16 +1,13 @@
 ---
 description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
-seo-description: Queste informazioni sono utili per usare il file di configurazione ADBMobile.json.
-seo-title: File di configurazione ADBMobile JSON
 solution: Experience Cloud,Analytics
 title: File di configurazione ADBMobile JSON
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 100%
 
 ---
@@ -155,8 +152,8 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
       A partire dalla versione 4.2, i punti di interesse (POI) sono definiti nell&#39;interfaccia di Adobe Mobile e sincronizzati dinamicamente con il file di configurazione dell&#39;app. Tale sincronizzazione richiede un&#39;impostazione `analytics.poi`:
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       Se non è configurata, devi aggiornare il file `ADBMobile.json` affinché contenga questa riga. Per scaricare un file di configurazione aggiornato, vedi [Prima di iniziare](/help/android/getting-started/requirements.md).
@@ -242,7 +239,7 @@ Elenco delle variabili nel file JSON e della versione SDK minima necessaria per 
    * Determina per quanto tempo Target può aspettare di ricevere una risposta.
 
 
-## File di esempio `ADBMobileConfig.json` {#section_4655EF79744649E5A5AE19E3224C472C}
+## File di esempio `ADBMobileConfig.json`  {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Ecco un esempio di file `ADBMobileConfig.json`:
 

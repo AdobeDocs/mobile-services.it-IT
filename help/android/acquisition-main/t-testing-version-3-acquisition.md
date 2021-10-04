@@ -1,21 +1,19 @@
 ---
 description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 keywords: android,libreria,mobile,sdk
-seo-description: Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
-seo-title: Verifica dell’acquisizione dalla versione 3
 solution: Experience Cloud,Analytics
 title: Verifica dell’acquisizione dalla versione 3
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
 
-# Verifica dell’acquisizione V3 {#testing-version-acquisition}
+# Verifica dell’acquisizione V3  {#testing-version-acquisition}
 
 Queste informazioni consentono di esplorare un collegamento di campagna di acquisizione versione 3 su un dispositivo Android.
 

@@ -1,16 +1,13 @@
 ---
 description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
-seo-description: Esempio di variabile "products" con eVar per merchandising ed eventi per singoli prodotti.
-seo-title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
 solution: Experience Cloud,Analytics
 title: Variabile "products" con eVar per merchandising ed eventi per singoli prodotti
 topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---

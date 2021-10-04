@@ -1,22 +1,19 @@
 ---
 description: Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
 keywords: dispositivi mobili
-seo-description: Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
-seo-title: Gestire i messaggi
 solution: Experience Cloud,Analytics
 title: Gestire i messaggi
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
 
-# Gestire i messaggi {#manage-messages}
+# Gestire i messaggi{#manage-messages}
 
 Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
 

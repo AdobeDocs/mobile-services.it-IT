@@ -1,17 +1,14 @@
 ---
 description: Il rapporto Mantenimento (precedentemente denominato First Launch Cohorts, Coorti primo avvio) è un rapporto di coorte che indica quanti utenti univoci hanno avviato la tua app per la prima volta e quindi l’hanno avviata di nuovo almeno una volta nei mesi successivi.
 keywords: dispositivi mobili
-seo-description: Il rapporto Mantenimento (precedentemente denominato First Launch Cohorts, Coorti primo avvio) è un rapporto di coorte che indica quanti utenti univoci hanno avviato la tua app per la prima volta e quindi l’hanno avviata di nuovo almeno una volta nei mesi successivi.
-seo-title: Rapporto Mantenimento
 solution: Experience Cloud,Analytics
 title: Rapporto Mantenimento
 topic-fix: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 exl-id: de68f00a-5de0-4e9a-9255-207a1a44df6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '269'
 ht-degree: 100%
 
 ---

@@ -1,18 +1,15 @@
 ---
 description: I postback consentono di inviare i dati raccolti dall’SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l’SDK per l’invio di dati personalizzati a una destinazione terza.
-seo-description: I postback consentono di inviare i dati raccolti dall’SDK a un server di terze parti. Sfruttando le caratteristiche e gli attivatori utilizzati per visualizzare un messaggio in-app, puoi configurare l’SDK per l’invio di dati personalizzati a una destinazione terza.
-seo-title: Postback
 solution: Experience Cloud,Analytics
 title: Panoramica sui postback
 uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: c5aa0b99-2cb3-4dd7-9da8-e573241e864b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # Panoramica sui postback {#postbacks}
 

@@ -1,17 +1,14 @@
 ---
 description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
-seo-description: La serializzazione degli eventi non è supportata dalle regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare gli eventi serializzati direttamente nella chiamata al server.
-seo-title: Serializzazione degli eventi
 solution: Experience Cloud,Analytics
 title: Serializzazione degli eventi
 topic-fix: Developer and implementation
 uuid: 7220a001-1174-4013-91ff-e8603d8ab265
 exl-id: 9cb8d739-8b77-4fe7-8592-22e8cff172d4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 30%
+source-wordcount: '70'
+ht-degree: 31%
 
 ---
 

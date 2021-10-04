@@ -1,16 +1,13 @@
 ---
 description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
-seo-description: A partire dalla versione 4.5 dell'SDK per Android, è stata aggiunta una nuova estensione Android che consente di raccogliere dati dall'applicazione Android Wearable.
-seo-title: Panoramica su Wearable
 solution: Experience Cloud,Analytics
 title: Panoramica su Wearable
 topic-fix: Developer and implementation
 uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
 exl-id: 5b390aa9-5bbd-4f69-9b09-49b9900fa550
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---

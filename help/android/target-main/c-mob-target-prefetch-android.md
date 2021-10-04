@@ -1,17 +1,14 @@
 ---
 description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili Android per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
-seo-description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili Android per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
-seo-title: Preacquisizione del contenuto delle offerte in Android
 title: Preacquisizione del contenuto delle offerte in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: tm+mt
-source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '762'
 ht-degree: 92%
 
 ---
-
 
 # Preacquisizione del contenuto delle offerte in Android {#prefetch-offer-content-in-android}
 
@@ -21,7 +18,7 @@ La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi 
 >
 >La funzionalità di preacquisizione preventiva negli SDK Mobile per Android non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
-Questo processo riduce il tempo di caricamento, impedisce l&#39;esecuzione di più chiamate di rete e consente  ad Adobe Target di ricevere una notifica sulla mbox visitata dall&#39;utente dell&#39;app mobile. Tutto il contenuto verrà recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e questo verrà recuperato dalla cache per tutte le chiamate future che contengono contenuto memorizzato nella cache per il nome mbox specificato.
+Questo processo riduce il tempo di caricamento, evita l’esecuzione di più chiamate di rete e consente ad Adobe Target di notificare quale elemento mbox è stato visitato dall’utente dell’app mobile. Tutto il contenuto verrà recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e lo stesso verrà recuperato dalla cache per tutte le chiamate future che contengono contenuto nella cache per il nome mbox specificato.
 
 Il contenuto di preacquisizione non rimane tra un avvio dell’app e quello successivo. Viene memorizzato nella cache per tutto il tempo in cui l’app rimane attiva oppure fino alla chiamata del metodo `clearPrefetchCache()`.
 

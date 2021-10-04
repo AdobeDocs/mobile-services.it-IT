@@ -1,17 +1,14 @@
 ---
 description: Informazioni utili per l’analisi dei video.
-seo-description: Informazioni utili per l’analisi dei video.
-seo-title: Analisi dei video
 solution: Experience Cloud,Analytics
 title: Analisi dei video
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 69%
+source-wordcount: '887'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +16,7 @@ ht-degree: 69%
 
 Informazioni utili per l’analisi dei video.
 
-La misurazione video è descritta in dettaglio nella guida [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html/) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione del video è descritta in dettaglio nella guida [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
@@ -35,7 +32,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.name**
 
-   (Facoltativo) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile da ClientCare.
+   (Facoltativo) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile dall’assistenza clienti.
 
    Tipo evento: Custom Insight (s.prop)
 
@@ -59,7 +56,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi utilizzare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuto. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e di calcolare i tassi di conversione relativi al video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -91,7 +88,6 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    * Tipo di variabile: Event
    * Tipo: contatore
-
 
 ## Configurare le impostazioni per i file multimediali {#section_929945D4183C428AAF3B983EFD3E2500}
 

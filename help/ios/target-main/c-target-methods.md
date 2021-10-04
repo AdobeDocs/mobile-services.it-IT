@@ -1,17 +1,14 @@
 ---
 description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
-seo-description: Elenco dei metodi di Adobe Target forniti dalla libreria iOS.
-seo-title: Metodi di destinazione iOS per Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Metodi di destinazione per iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '629'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameProfileParametersBoxParametersScalabilità:**
 
    Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in una funzione callback di un blocco.
 
@@ -154,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Per ulteriori informazioni sull&#39;API Target sottostante, consulta [Sviluppatori Adobe Target](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      Per ulteriori informazioni sull&#39;API Target sottostante, consulta [Riferimento API di Target](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -162,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameProfileParametersboxParameters:callback**
 
    Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un callback di un blocco.
 

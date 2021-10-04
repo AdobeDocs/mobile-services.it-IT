@@ -5,11 +5,10 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 20%
+source-wordcount: '952'
+ht-degree: 18%
 
 ---
 
@@ -28,29 +27,25 @@ Prima di aggiungere il codice, chiedi all’amministratore di Analytics di compl
 1. Apri **[!UICONTROL Strumenti di amministrazione]** > **[!UICONTROL Suite di rapporti]** e seleziona le suite di rapporti mobili.
 1. Fai clic su **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Gestione mobile]** > **[!UICONTROL Generazione rapporti applicazioni mobili]**.
 
-   ![](assets/mobile-settings.png)
+   ![Impostazioni di Mobile](assets/mobile-settings.png)
 
 1. Fai clic su **[!UICONTROL Abilita rapporti app più recenti]**.
 
    Facoltativamente, puoi anche fare clic su **[!UICONTROL Abilita tracciamento posizione mobile]** e **[!UICONTROL Abilita rapporti legacy e attribuzione per hit di background]**.
 
-   ![](assets/enable-lifecycle.png)
+   ![Attiva ciclo di vita](assets/enable-lifecycle.png)
 
 Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti sulle applicazioni mobili vengono visualizzati nel menu **[!UICONTROL Report]** nell’interfaccia dei rapporti di marketing.
-
 
 ### Nuove versioni
 
 Periodicamente vengono rilasciate nuove versioni dei rapporti sulle applicazioni mobili. Le nuove versioni non vengono applicate automaticamente alla suite di rapporti, devi ripetere questi passaggi per eseguire l’aggiornamento. Ogni volta che aggiungi nuove funzionalità di Experience Cloud all’app, ti consigliamo di ripetere questi passaggi per assicurarti di disporre della configurazione più recente.
 
-
 ## Metriche del ciclo di vita {#section_532702562A7A43809407C9A2CBA80E1E}
 
 Per raccogliere le metriche del ciclo di vita nell&#39;app, aggiungi chiamate a quando l&#39;applicazione viene attivata, come mostrato negli esempi seguenti.
 
-
 ### WinJS in default.js
-
 
 ```js
 app.onactivated = function (args) { 
@@ -125,9 +120,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 Se `CollectLifecycleData()` viene chiamato due volte nella stessa sessione, l&#39;applicazione segnalerà un arresto anomalo per ogni chiamata successiva alla prima. L&#39;SDK imposta un flag quando l&#39;applicazione viene chiusa che indica una corretta uscita. Se questo flag non è impostato, `CollectLifecyleData()` segnala un arresto anomalo.
 
-
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
-
 
 Se hai esaminato la [Guida di riferimento delle classi e dei metodi ADBMobile](/help/windows-appstore/c-configuration/methods.md), probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non puoi più assegnare direttamente nell’app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
@@ -139,16 +132,13 @@ Le regole di elaborazione offrono diversi vantaggi:
 
 Eventuali valori che venivano assegnati direttamente alle variabili ora dovranno essere aggiunti ai dati contestuali.
 
-
 ## Regole di elaborazione {#section_66EE762EEA5E4728864166201617DEBF}
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica.
 
 [Formazione sulle regole di elaborazione](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
-[Panoramica sulle regole di elaborazione](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/processing-rules/processing-rules.html)
-
-[Ottenere l&#39;autorizzazione all&#39;utilizzo delle regole di elaborazione](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Panoramica sulle regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 Consigliamo di raggruppare le variabili di dati di contesto utilizzando &quot;namespace&quot;, in quanto consente di mantenere un ordine logico. Ad esempio, se desideri raccogliere informazioni su un prodotto, puoi definire le seguenti variabili:
 
@@ -160,7 +150,7 @@ Consigliamo di raggruppare le variabili di dati di contesto utilizzando &quot;na
 
 Le variabili di dati di contesto sono ordinate alfabeticamente nell’interfaccia delle regole di elaborazione, pertanto gli spazi dei nomi consentono di vedere rapidamente le variabili che si trovano nello stesso spazio dei nomi.
 
-Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati di contesto utilizzando il numero evar o prop:
+Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati di contesto utilizzando il numero di eVar o di proprietà:
 
 ```js
 "eVar1":"jimbo"
@@ -188,7 +178,7 @@ Le variabili di dati di contesto che definiscono eventi di incremento possono av
 >
 >Adobe riserva lo spazio dei nomi `a.`. A parte questa piccola restrizione, le variabili di dati di contesto devono essere univoche nella società di accesso per evitare conflitti.
 
-## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Per impostare *`products`* nell’SDK di Mobile, devi usare una sintassi particolare. Vedere [Variabile &quot;products&quot;](/help/windows-appstore/analytics/products/products.md).
 

@@ -1,20 +1,18 @@
 ---
 description: La tabella seguente descrive i diversi identificatori delle app utilizzati dall’SDK per Android e Adobe Mobile Services.
-seo-description: La tabella seguente descrive i diversi identificatori delle app utilizzati dall’SDK per Android e Adobe Mobile Services.
-seo-title: ID delle app
 solution: Experience Cloud,Analytics
 title: ID delle app
 topic-fix: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
 exl-id: 28358dd6-50dd-4ba9-9fb0-5271eae69d28
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '201'
 ht-degree: 100%
 
 ---
 
-# ID delle app {#app-ids}
+# ID delle app{#app-ids}
 
 La tabella seguente descrive i diversi identificatori delle app utilizzati dall’SDK per Android e Adobe Mobile Services.
 

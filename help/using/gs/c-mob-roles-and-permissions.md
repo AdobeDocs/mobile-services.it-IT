@@ -1,17 +1,14 @@
 ---
 description: In Adobe Analytics puoi gestire i ruoli nella home page di Strumenti di amministrazione.
-seo-description: In Adobe Analytics puoi gestire i ruoli nella home page di Strumenti di amministrazione.
-seo-title: Ruoli e autorizzazioni
 title: Ruoli e autorizzazioni
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: tm+mt
-source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 70%
+source-wordcount: '596'
+ht-degree: 56%
 
 ---
-
 
 # Ruoli e autorizzazioni{#roles-and-permissions}
 
@@ -23,17 +20,16 @@ I seguenti ruoli possono gestire le autorizzazioni nell’interfaccia utente di 
 
 ### Amministratore di Analytics
 
-Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. L&#39;Amministratore  Experience Cloud collega l&#39;Adobe ID  al tuo account Adobe Analytics , che ti consente di accedere all&#39;interfaccia utente di Mobile Services utilizzando il tuo Adobe ID . Per ulteriori informazioni sull’amministratore di Experience Cloud, consulta [Amministrazione - Gestione utenti e domande frequenti](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. L’amministratore di Experience Cloud collega il tuo Adobe ID al tuo account Adobe Analytics, che ti consente di accedere all’interfaccia utente di Mobile Services utilizzando il tuo Adobe ID. Per ulteriori informazioni sull&#39;amministratore di Experience Cloud, consulta [Gestire utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida dei componenti dell&#39;interfaccia centrale di Experience Cloud.
 
 >[!TIP]
 >
 >Un amministratore Analytics può assegnare il ruolo di amministratore Analytics a qualsiasi utente.
 
-Per ulteriori informazioni su questo ruolo, consulta gli argomenti seguenti:
+Per ulteriori informazioni su questo ruolo, consulta i seguenti contenuti nella documentazione di Adobe Analytics:
 
-* [Panoramica della gestione utente](https://docs.adobe.com/content/help/it-IT/analytics/admin/user-product-management/user-management/users.html)
-
-* [Modifiche delle autorizzazioni utente e gruppo](https://docs.adobe.com/content/help/it-IT/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Panoramica della gestione utente](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
+* [Modifiche delle autorizzazioni utente e gruppo](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### Amministratori app mobili
 
@@ -59,11 +55,11 @@ Se la tua azienda non ha un contratto Analytics per l’accesso a una determinat
 
 Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, con le relative autorizzazioni disponibili:
 
-### Amministratore di Analytics
+### Amministratore di Analytics permissions
 
 * Tutte le autorizzazioni utente e autorizzazioni dell’amministratore di app mobili
 * Creare app con una nuova suite di rapporti
-* Elimina app da Mobile Services
+* Eliminare app da Mobile Services
 
    >[!IMPORTANT]
    >
@@ -71,14 +67,14 @@ Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, c
 
 * Gestire le impostazioni dell’app
 
-   * Abilita generazione rapporti sul ciclo di vita
-   * Abilita rapporti sulla posizione
+   * Abilitare i rapporti sul ciclo di vita
+   * Abilitare i rapporti sulla posizione
    * Creare/aggiornare/eliminare variabili e metriche
 
-### Amministratori app mobili
+### Amministratori app mobili permissions
 
 * Tutte le autorizzazioni utente
-* Creare app con una suite di rapporti esistente
+* Creare app con suite di rapporti esistente
 * Gestire le impostazioni dell’app
 
    * Configurare le opzioni SDK di Mobile dell’app
@@ -87,18 +83,18 @@ Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, c
    * Configurare le opzioni Collegamento universale dell’app
    * Configurare i certificati Servizi push e le chiavi API
    * Creare/aggiornare/attivare/disattivare/duplicare/archiviare/eliminare postback
-   * Creare/aggiornare/archiviare/eliminare le destinazioni dei collegamenti
+   * Creare/aggiornare/archiviare/eliminare destinazioni collegamenti
 
 * Creare/aggiornare/archiviare collegamenti di marketing
 * Creare/importare/aggiornare/eliminare collegamenti di acquisizione legacy
 * Creare/importare/aggiornare/eliminare la configurazione Luoghi (Punti di interesse)
-* Creare/aggiornare/inviare/pianificare/annullare/duplicare/archiviare/eliminare messaggi push
+* Creare/aggiornare/inviare/programmare/annullare/duplicare/archiviare/eliminare messaggi push
 * Creare/aggiornare/attivare/disattivare/duplicare/archiviare/eliminare messaggi in-app
 
-Per ulteriori informazioni su gruppi e utenti, vedi:
+Per ulteriori informazioni su gruppi e utenti, consulta i seguenti contenuti nella documentazione di Adobe Analytics:
 
-* [Impostazioni gruppo di utenti](https://docs.adobe.com/content/help/it-IT/analytics/admin/user-product-management/user-groups/groups.html)
-* [Aggiungi un utente a un gruppo](https://docs.adobe.com/content/help/it-IT/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Impostazioni gruppo di utenti (legacy)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
+* [Aggiungi un utente a un gruppo](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Utente di Mobile Services
 
@@ -124,4 +120,4 @@ Questo ruolo dispone di autorizzazioni di sola lettura e può fornire un feedbac
 * Visualizzare ed esportare collegamenti di acquisizione legacy
 * Visualizzare ed esportare la configurazione Luoghi (Punti di interesse)
 * Visualizzare i messaggi push
-* Visualizzare i messaggi in-app
+* Visualizzare messaggi in-app

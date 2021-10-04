@@ -1,21 +1,18 @@
 ---
 description: Questa sezione descrive come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK 4.x della piattaforma UWP (Universal Windows Platform) per le soluzioni Experience Cloud.
-seo-description: Questa sezione descrive come migrare dalla versione 3.x di un precedente SDK Windows Mobile all’SDK 4.x della piattaforma UWP (Universal Windows Platform) per le soluzioni Experience Cloud.
-seo-title: Migrare a 4.x
 solution: Experience Cloud,Analytics
 title: Migrare a 4.x
 topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 26%
+source-wordcount: '675'
+ht-degree: 27%
 
 ---
 
-# Migrare agli SDK 4.x{#migrate-to-x}
+# Migrazione agli SDK 4.x{#migrate-to-x}
 
 Questa sezione descrive come migrare dalla versione 3.x dell’SDK per dispositivi mobili Windows all’SDK 4.x della piattaforma UWP (Universal Windows Platform) per le soluzioni Experience Cloud.
 
@@ -127,7 +124,7 @@ In tutto il codice, rimuovi le chiamate ai seguenti metodi:
 * SetOnline
 * SetOffline
 
-## Variabile &quot;products&quot; {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Poiché la variabile &quot;products&quot; non è disponibile nelle regole di elaborazione, puoi usare la sintassi seguente per impostare `products`products:
 

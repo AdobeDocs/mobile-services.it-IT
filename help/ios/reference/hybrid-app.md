@@ -1,21 +1,18 @@
 ---
 description: Se l'app apre contenuti web per dispositivi mobili, è necessario che i visitatori non vengano identificati separatamente quando passano dai contenuti nativi a quelli web.
-seo-description: Se l'app apre contenuti web per dispositivi mobili, è necessario che i visitatori non vengano identificati separatamente quando passano dai contenuti nativi a quelli web.
-seo-title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 solution: Experience Cloud,Analytics
 title: Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
-# Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili {#visitor-tracking-between-an-app-and-mobile-web}
+# Tracciamento dei visitatori tra app e contenuti web per dispositivi mobili  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Se l&#39;app apre contenuti Web per dispositivi mobili, è necessario che i visitatori non vengano identificati separatamente quando passano dai contenuti nativi a quelli Web.
 
@@ -41,7 +38,7 @@ Per usare lo stesso ID visitatore nell&#39;app e nella pagina web per dispositiv
 1. Per aggiungere le informazioni sul visitatore all&#39;URL con cui si apre la visualizzazione Web, invoca `visitorAppendToURL`:
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

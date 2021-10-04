@@ -1,21 +1,18 @@
 ---
 description: Informazioni utili per gestire i messaggi all’interno delle app iOS.
-seo-description: Informazioni utili per gestire i messaggi all’interno delle app iOS.
-seo-title: Messaggistica in-app
 solution: Experience Cloud,Analytics
 title: Messaggistica in-app
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# Messaggistica in-app {#in-app-messaging}
+# Messaggistica in-app  {#in-app-messaging}
 
 Informazioni utili per gestire i messaggi all’interno delle app iOS.
 
@@ -46,25 +43,25 @@ Alcune informazioni da tenere a mente:
 1. Affinché i messaggi in-app possano essere aggiornati all&#39;avvio in modo dinamico, l&#39;oggetto `remotes` deve essere presente e configurato correttamente:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 
@@ -86,7 +83,7 @@ Gli SDK di iOS Mobile Services tengono traccia delle metriche seguenti per i mes
 
 * Per i messaggi in-app personalizzati a schermo intero, nel contenuto HTML del messaggio deve essere presente il codice corretto per trasmettere informazioni alla funzione di tracciamento dell&#39;SDK per i seguenti pulsanti:
 
-   * Esempio di tracciamento **[!UICONTROL Click-through]** (reindirizzamento):  `adbinapp://confirm/?url=https://www.yoursite.com`
+   * Esempio di tracciamento **[!UICONTROL Click-through]** (reindirizzamento):   `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL Esempio di tracciamento per annullamento]** (chiusura): `adbinapp://cancel`
 
 * Per le notifiche locali (remote):

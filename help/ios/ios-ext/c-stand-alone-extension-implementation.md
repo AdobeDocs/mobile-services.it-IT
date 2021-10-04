@@ -1,16 +1,13 @@
 ---
 description: A partire da iOS 10, Apple consente di creare un’estensione autonoma che può essere distribuita senza un’app contenitore. Con questa estensione, non è necessario un gruppo di app, in quanto non esiste un’app contenitore con cui condividere i dati.
-seo-description: A partire da iOS 10, Apple consente di creare un’estensione autonoma che può essere distribuita senza un’app contenitore. Con questa estensione, non è necessario un gruppo di app, in quanto non esiste un’app contenitore con cui condividere i dati.
-seo-title: Implementazione di un’estensione autonoma
 solution: Experience Cloud,Analytics
 title: Implementazione di un’estensione autonoma
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '222'
 ht-degree: 100%
 
 ---

@@ -1,23 +1,20 @@
 ---
-description: Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-keywords: Xamarin
-seo-description: Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
-seo-title: Metodi per iOS
+description: Metodi iOS per i componenti Xamarin per l'SDK 4.x delle soluzioni Experience Cloud.
+keywords: Xamarina
 solution: Experience Cloud
 title: Metodi per iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1737'
 ht-degree: 70%
 
 ---
 
-
 # Metodi per iOS{#ios-methods}
 
-Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
+Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience Cloud.
 
 ## Metodi di configurazione {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -55,7 +52,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **SetDebugLogging**
 
-   Imposta la preferenza di accesso di debug su enabled.
+   Imposta l&#39;abilitazione della preferenza di accesso di debug.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -90,9 +87,9 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
    Restituisce la rappresentazione enum dello stato di privacy per l’utente corrente.
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
-   * ADBMobilePrivacyStatus.Unknown - Se è abilitato il tracciamento offline, gli hit vengono salvati fino alla modifica dello stato di privacy, quando l’utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono scartati). Se il tracciamento offline è disattivato, gli hit vengono scartati fino a quando lo stato di privacy non cambia quando l’utente acconsente.
+   * ADBMobilePrivacyStatus.Unknown : se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se il tracciamento offline è disabilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin.
 
-   The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   Il valore predefinito è impostato in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -109,7 +106,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **SetPrivacyStatus**
 
-   Imposta lo stato di privacy per l’utente corrente su status. Imposta uno dei valori seguenti:
+   Imposta lo stato di privacy per l&#39;utente corrente su status. Imposta uno dei valori seguenti:
    * `ADBMobilePrivacyStatus.OptIn` - gli hit vengono inviati immediatamente.
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
    * `ADBMobilePrivacyStatus.Unknown`  - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
@@ -128,7 +125,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **UserIdentifier**
 
-   Restituisce l’identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Restituisce null se non è impostato un identificatore personalizzato. Il valore predefinito è `null`.
+   Restituisce l&#39;identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Restituisce null se non è impostato un identificatore personalizzato. Il valore predefinito è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -144,7 +141,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **SetUserIdentifier**
 
-   Restituisce l’identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Restituisce null se non è impostato un identificatore personalizzato. Il valore predefinito è `null`.
+   Restituisce l&#39;identificatore utente personalizzato se è stato impostato un identificatore personalizzato. Restituisce null se non è impostato un identificatore personalizzato. Il valore predefinito è `null`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -155,7 +152,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
    * Di seguito è riportato un esempio di codice per questo metodo:
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -180,7 +177,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
    >[!TIP]
    >
-   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background e dovrebbe essere invocato solo dal codice in esecuzione mentre l’app è in background.
+   >Questo metodo è destinato alle app che si registrano per le notifiche mentre sono in background, e dovrebbe essere invocato solo dal codice in esecuzione mentre l&#39;app è in background.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -214,7 +211,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TrackState**
 
-   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e `TrackState` le chiamate incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se lo stato è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato lo stato .
 
    >[!TIP]
    >
@@ -236,7 +233,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TrackAction**
 
-   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell&#39;app e che desideri misurare, come &quot;morti&quot;, &quot;livello acquisito&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
+   Tiene traccia di un&#39;azione nell&#39;applicazione. Le azioni sono gli eventi che avvengono nell’app e che desideri misurare, come &quot;morti&quot;, &quot;livello acquisito&quot;, &quot;abbonamenti ai feed&quot; e altre metriche.
 
    >[!TIP]
    >
@@ -326,11 +323,11 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TrackLifetimeValueIncrease**
 
-   Aggiunge un importo al valore &quot;lifetime&quot; del ciclo di vita dell’utente.
+   Aggiunge un incremento al valore &quot;lifetime&quot; del ciclo di vita dell&#39;utente.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
-      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
+      public nbsp;static void TrackLifetimeValueIncrease(doppio amount, NSDictionary cdata);
 
    * Di seguito è riportato un esempio di codice per questo metodo:
 
@@ -360,7 +357,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TrackTimedActionUpdate**
 
-   Passa i dati per aggiornare i dati contestuali associati all’azione action. I dati passati vengono aggiunti in coda ai dati esistenti per l’azione, e li sovrascrivono se per l’azione è già definita la stessa chiave.
+   Passa i dati per aggiornare i dati contestuali associati all&#39;azione. I dati passati vengono aggiunti alla fine dei dati esistenti per l&#39;azione, e li sovrascrivono se per l&#39;azione è già definita la stessa chiave.
 
    >[!TIP]
    >
@@ -399,7 +396,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TrackingTimedActionExists**
 
-   Restituisce un valore che indica se un’azione temporizzata è in corso o meno.
+   Restituisce un valore che indica se un&#39;azione temporizzata è in corso (o meno).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -464,7 +461,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Metodi Experience Cloud ID {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
@@ -484,7 +481,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **VisitorSyncIdentifiers**
 
-   Con l&#39;ID Experience Cloud , puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L&#39;API Visitor accetta più ID cliente per lo stesso visitatore, insieme a un identificatore del tipo di cliente per separare l&#39;ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
+   Con l’ID Experience Cloud, puoi impostare ID cliente aggiuntivi da associare a ogni visitatore. L’API visitatore accetta più ID cliente per lo stesso visitatore, insieme a un identificatore del tipo di cliente per separare l’ambito dei diversi ID cliente. Questo metodo corrisponde a setCustomerIDs nella libreria JavaScript.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -503,7 +500,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TargetLoadRequest**
 
-   Sends request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un callback `Action<NSDictionary>`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -523,7 +520,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **TargetCreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   Costruttore di convenienza per creare un oggetto `ADBTargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -574,7 +571,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **AudienceVisitorProfile**
 
-   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce nil se non è stato ancora inviato alcun segnale. Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
+   Restituisce il profilo del visitatore ottenuto più di recente. Restituisce nil se non è stato ancora inviato alcun segnale. Il profilo del visitatore viene salvato in `NSUserDefaults` per un accesso facilitato tra più avvii dell’app.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -622,7 +619,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **AudienceSetDpidAndDpuuid**
 
-   Imposta dpid e dpuuid. Se sono impostati dpid e dpuuid, saranno inviati con ogni segnale.
+   Imposta dpid e dpuuid. Se impostati, dpid e dpuuid verranno inviati con ogni segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -638,7 +635,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 * **AudienceSignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>`  callback.
+   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un callback `Action<NSDictionary>`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -673,7 +670,7 @@ Metodi iOS per componenti Xamarin per  soluzioni SDK 4.x per Experienci Cloud.
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Per ulteriori informazioni, consultate Analisi [video](/help/ios/getting-started/dev-qs.md).
+Per ulteriori informazioni, consulta [Analisi video](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

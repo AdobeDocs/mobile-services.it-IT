@@ -1,21 +1,18 @@
 ---
 description: Impossibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-description: Impossibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: 'Variabile "products" '
 solution: Experience Cloud,Analytics
 title: 'Variabile "products" '
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 13%
+source-wordcount: '139'
+ht-degree: 15%
 
 ---
 
-# Variabile dei prodotti {#products-variable}
+# Variabile &quot;products&quot; {#products-variable}
 
 Impossibile impostare la variabile &quot;products&quot; utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 

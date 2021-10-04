@@ -1,17 +1,14 @@
 ---
 description: 'Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifiche '
-seo-description: 'Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifiche '
-seo-title: Configurazione dell’app
 title: Configurazione dell’app
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 58%
+source-wordcount: '351'
+ht-degree: 56%
 
 ---
-
 
 # Configurazione dell’app {#configuring-your-app}
 
@@ -31,7 +28,7 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
       * **Acquisizione**
 
-         Tieni traccia degli URL di provenienza per le campagne di download delle app. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
+         Tieni traccia degli URL di riferimento per le campagne di download delle app. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
       * **Ciclo di vita**
 
@@ -47,16 +44,16 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
       * **Valore del ciclo di vita**
 
-         Scopri in che modo gli utenti maturano valore nel tempo utilizzando KPI per le app quali acquisti, visualizzazioni di annunci pubblicitari, completamenti di video, condivisioni social, caricamenti di foto e altro ancora.
+         Scopri come cresce nel tempo il valore degli utenti utilizzando KPI per le app quali acquisti, visualizzazioni di annunci pubblicitari, visualizzazioni di video completate, condivisioni social, caricamenti di foto e altro ancora.
 
       * **Eventi temporizzati**
 
-         Misura il tempo che trascorre (in-app e totale) tra le azioni chiave dell&#39;app, ad esempio il tempo prima del primo acquisto.
+         Misura quanto tempo (in-app e totale) intercorre tra le azioni chiave dell’app, ad esempio il tempo che trascorre prima del primo acquisto.
 
 
 * **Rapporti sulla posizione**
 
-   Questa opzione consente di abilitare i rapporti per tenere traccia di latitudine e longitudine e identificare punti di interesse specifici. Potete inoltre tenere traccia dei beacon Bluetooth (UUID, principale, secondario e prossimità).
+   Questa opzione consente di abilitare i rapporti per tenere traccia di latitudine e longitudine e identificare punti di interesse specifici. Puoi anche tenere traccia dei beacon Bluetooth (UUID, principale, secondario e prossimità).
 
 * **SDK per app e strumenti per sviluppatori e tester**
 
@@ -66,4 +63,4 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
    Quando sei pronto ad eseguire l’aggiornamento agli SDK 4.x o se lavori su una nuova app, scarica gli SDK e gli strumenti di sviluppo più recenti dalla parte inferiore della pagina Gestione impostazioni app.
 
-   Una volta completata la configurazione, potete inviare il file di configurazione ai vostri sviluppatori in modo che i dati possano essere raccolti correttamente. Se non è ancora il momento di scaricare SDK e strumenti, fai clic su Gestione impostazioni app, quindi fai clic sull’app per visualizzare la pagina Informazioni app in qualsiasi momento.
+   Una volta completata la configurazione, puoi inviare il file di configurazione ai tuoi sviluppatori in modo che i dati possano essere raccolti correttamente. Se non è ancora il momento di scaricare SDK e strumenti, fai clic su Gestione impostazioni app, quindi fai clic sull’app per visualizzare la pagina Informazioni app in qualsiasi momento.

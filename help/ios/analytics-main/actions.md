@@ -1,16 +1,13 @@
 ---
 description: Le azioni sono gli eventi che si verificano nell’app che desideri misurare. Ogni azione ha una o più metriche corrispondenti che vengono incrementate ogni volta che si verifica l’evento. Ad esempio, puoi tenere traccia dei nuovi abbonamenti, di ogni volta che viene visualizzato un articolo oppure ogni volta che viene completato un livello. Le metriche corrispondenti per questi eventi sono configurate come Abbonamenti, Articoli letti e Livelli completati.
-seo-description: Le azioni sono gli eventi che si verificano nell’app che desideri misurare. Ogni azione ha una o più metriche corrispondenti che vengono incrementate ogni volta che si verifica l’evento. Ad esempio, puoi tenere traccia dei nuovi abbonamenti, di ogni volta che viene visualizzato un articolo oppure ogni volta che viene completato un livello. Le metriche corrispondenti per questi eventi sono configurate come Abbonamenti, Articoli letti e Livelli completati.
-seo-title: Tracciare le azioni eseguite nell’app
 solution: Experience Cloud,Analytics
 title: Tracciare le azioni eseguite nell’app
 topic-fix: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 exl-id: ff317eff-1b8e-46e1-a305-a404979447cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '468'
 ht-degree: 100%
 
 ---

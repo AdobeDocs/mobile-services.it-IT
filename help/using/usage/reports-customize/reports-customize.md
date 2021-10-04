@@ -1,17 +1,14 @@
 ---
 description: Queste informazioni sono utili per comprendere e personalizzare i rapporti incorporati.
 keywords: dispositivi mobili
-seo-description: Queste informazioni sono utili per comprendere e personalizzare i rapporti incorporati.
-seo-title: Personalizzare i rapporti
 solution: Experience Cloud,Analytics
 title: Personalizzare i rapporti
 topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
 exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '475'
 ht-degree: 100%
 
 ---

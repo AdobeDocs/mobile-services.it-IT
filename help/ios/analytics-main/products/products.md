@@ -1,21 +1,18 @@
 ---
 description: Non è possibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-description: Non è possibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-seo-title: Variabile "products"
 solution: Experience Cloud,Analytics
 title: Variabile "products"
 topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 exl-id: c945add4-5358-44f6-b445-554b0df056c1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---
 
-# Variabile &quot;products&quot; {#products-variable}
+# Variabile &quot;products&quot;  {#products-variable}
 
 Non è possibile impostare la variabile &quot;products&quot; utilizzando le regole di elaborazione. Nell’SDK iOS 4.x devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 

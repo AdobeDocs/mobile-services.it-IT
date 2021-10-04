@@ -1,17 +1,14 @@
 ---
 description: Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 keywords: dispositivi mobili
-seo-description: Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
-seo-title: Configurare le opzioni SDK acquisizione
 solution: Experience Cloud,Analytics
 title: Configurare le opzioni SDK acquisizione
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---

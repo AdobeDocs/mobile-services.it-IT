@@ -1,39 +1,36 @@
 ---
-description: Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
-seo-description: Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
-seo-title: Analisi dei video
+description: Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 title: Analisi dei video
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: 90da1a9e-2faa-429c-969e-869ebedf08cc
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 64%
+source-wordcount: '835'
+ht-degree: 65%
 
 ---
 
-
 # Analisi dei video {#video-analytics}
 
-Il processo generale per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
-For more information about Video measurement, see the [Measuring audio and video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html) guide.  Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali nella colonna Variabile dati di contesto su una variabile Analytics come descritto nella colonna Tipo di variabile.
+Per ulteriori informazioni sulla misurazione dei video, consulta la guida [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) .  Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali della colonna Variabile dati di contesto su una variabile Analytics come descritto nella colonna Tipo di variabile .
 
 ## Mappare gli eventi del lettore sulle variabili di Analytics
 
 * **a.media.name**
 
-   (Obbligatorio) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Potete aggiungere classificazioni per questa variabile.
+   (Obbligatorio) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Puoi aggiungere classificazioni per questa variabile.
 
    **(Facoltativo)** La variabile Custom Insight fornisce informazioni sul percorso del video.
 
-   * Nome variabile:  eVar
+   * Nome della variabile: eVar
       * Scadenza predefinita: visita
       * Custom Insight (s.prop, utilizzato per il percorso del video)
 
 * **a.media.name**
 
-   (**Facoltativo**) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile da ClientCare.
+   (**Facoltativo**) Fornisce informazioni sul percorso del video. Il percorso deve essere abilitato per questa variabile dall’assistenza clienti.
 
    * Tipo evento: Custom Insight (s.prop)
    * Custom Insight (s.prop)
@@ -42,7 +39,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato.
 
-   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. Il metodo di raccolta dei dati video predefinito raccoglie i dati ai punti di inizio video (riproduzione), inizio segmento e fine video (arresto).
+   Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere `1:M:0-25` nell’eVar Segmenti. Il metodo di raccolta dei dati video predefinito raccoglie i dati ai punti di inizio (riproduzione) del video, inizio del segmento e fine del video (arresto).
 
    Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
@@ -51,7 +48,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.contentType**
 
-   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video viene assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. La presenza di altri contenuti che riportano il tipo di contenuto utilizzando la stessa variabile consente di analizzare la distribuzione dei visitatori tra i diversi tipi di contenuto. Ad esempio, puoi usare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuti. Dal punto di vista della misurazione video, il tipo di contenuto consente di identificare i visitatori del video e quindi calcolare i tassi di conversione del video.
+   Raccoglie dati sul tipo di contenuto visualizzato da un visitatore. Agli hit inviati dalla misurazione video è assegnato il tipo di contenuto &quot;video&quot;. Questa variabile non è riservata esclusivamente al tracciamento dei video. Se altri contenuti segnalano il tipo di contenuto utilizzando la stessa variabile, puoi analizzare la distribuzione dei visitatori per diversi tipi di contenuto. Ad esempio, puoi utilizzare questa variabile per assegnare valori quali &quot;articolo&quot; o &quot;pagina prodotto&quot; ad altri tipi di contenuto. Dal punto di vista della misurazione video, il tipo di contenuto ti consente di identificare i visitatori del video e quindi di calcolare i tassi di conversione relativi al video.
 
    * Tipo di variabile: eVar
    * Scadenza predefinita: visualizzazioni pagina
@@ -79,7 +76,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a .media.complete**
 
-   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video live e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un determinato periodo di tempo.
+   Indica che un utente ha visualizzato un video completo. Per impostazione predefinita, l&#39;evento completo è misurato 1 secondo prima della fine del video. Durante l’implementazione, puoi specificare a quanti secondi dalla fine del video la visualizzazione potrà essere considerata come una visualizzazione completa. Per i video in diretta e altri flussi che non hanno una fine definita, puoi specificare un punto personalizzato per misurare le visualizzazioni complete. Ad esempio, dopo che è stato visualizzato un periodo di tempo specifico.
 
    * Tipo di variabile: Event
    * Tipo: contatore
@@ -92,7 +89,7 @@ Per misurare la riproduzione di un video, è necessario invocare i metodi `media
 
 * **open**
 
-   Consente di aprire un video per il tracciamento.
+   Apre un video per il tracciamento.
 
    * Di seguito è riportata la sintassi per questo metodo:
 

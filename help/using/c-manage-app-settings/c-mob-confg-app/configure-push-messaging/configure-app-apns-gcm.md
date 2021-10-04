@@ -1,17 +1,14 @@
 ---
 description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
 keywords: dispositivi mobili
-seo-description: Puoi configurare l’app per l’uso di APNS (Apple Push Notification Service) o FCM (Firebase Cloud Messaging).
-seo-title: Configurare l’app per l’uso di APNS o FCM
 solution: Experience Cloud,Analytics
 title: Configurare l’app per l’uso di APNS o FCM
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---
@@ -70,7 +67,7 @@ Per configurare la tua app Android per l’utilizzo di FCM in questo scenario:
 
 1. Copia la **[!UICONTROL Server key legacy]** e l’**[!UICONTROL ID mittente]**, da utilizzare in un secondo momento.
 
-   Ad esempio:
+   Esempio:
 
    ```
    - Legacy server key = AIzaSyC6FNgsCOpBL5eXhDvwf8979mWba6x7Roo

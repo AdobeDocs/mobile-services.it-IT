@@ -1,22 +1,19 @@
 ---
 description: Elenco dei metodi di forniti dalla libreria Android.
 keywords: android,libreria,mobile,sdk
-seo-description: Elenco dei metodi di forniti dalla libreria Android.
-seo-title: Metodi di Configurazione
 solution: Experience Cloud,Analytics
 title: Metodi di Configurazione
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '974'
 ht-degree: 100%
 
 ---
 
 
-# Metodi di configurazione {#configuration-methods}
+# Metodi di configurazione{#configuration-methods}
 
 Elenco dei metodi di forniti dalla libreria Android.
 
