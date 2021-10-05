@@ -45,7 +45,6 @@ Anche se questi tre metodi di tracciamento soddisfano le tue esigenze, usa comun
 >
 >* Una destinazione che contenga l’app
 >* Una destinazione per l’estensione
-
 >
 
 
