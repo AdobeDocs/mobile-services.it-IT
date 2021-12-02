@@ -3,10 +3,10 @@ description: In Adobe Analytics puoi gestire i ruoli nella home page di Strument
 title: Ruoli e autorizzazioni
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 56%
+source-wordcount: '592'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ I seguenti ruoli possono gestire le autorizzazioni nell’interfaccia utente di 
 
 ### Amministratore di Analytics
 
-Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. L’amministratore di Experience Cloud collega il tuo Adobe ID al tuo account Adobe Analytics, che ti consente di accedere all’interfaccia utente di Mobile Services utilizzando il tuo Adobe ID. Per ulteriori informazioni sull&#39;amministratore di Experience Cloud, consulta [Gestire utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida dei componenti dell&#39;interfaccia centrale di Experience Cloud.
+Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. L’amministratore di Experience Cloud collega il tuo Adobe ID al tuo account Adobe Analytics, che ti consente di accedere all’interfaccia utente di Mobile Services utilizzando il tuo Adobe ID. Per ulteriori informazioni sull’amministratore di Experience Cloud, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida Experience Cloud Central Interface Components .
 
 >[!TIP]
 >
@@ -28,8 +28,8 @@ Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizz
 
 Per ulteriori informazioni su questo ruolo, consulta i seguenti contenuti nella documentazione di Adobe Analytics:
 
-* [Panoramica della gestione utente](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [Modifiche delle autorizzazioni utente e gruppo](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Panoramica della gestione utente](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=it)
+* [Modifiche delle autorizzazioni utente e gruppo](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Amministratori app mobili
 
@@ -93,8 +93,8 @@ Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, c
 
 Per ulteriori informazioni su gruppi e utenti, consulta i seguenti contenuti nella documentazione di Adobe Analytics:
 
-* [Impostazioni gruppo di utenti (legacy)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [Aggiungi un utente a un gruppo](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Impostazioni gruppo di utenti (legacy)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Aggiungi un utente a un gruppo](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Utente di Mobile Services
 
