@@ -3,10 +3,10 @@ description: Gli SDK di Experience Cloud Mobile forniscono API che supportano i 
 title: Privacy e Regolamento generale sulla protezione dei dati (RGPD)
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 exl-id: 8549310d-31b8-49a3-9276-f8e9ab980a10
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 71%
+source-wordcount: '336'
+ht-degree: 74%
 
 ---
 
@@ -49,4 +49,3 @@ Per le aree delle tue applicazioni mobili gestite tramite l&#39;SDK di Adobe Mob
 ## Informazioni aggiuntive {#section_7C7124C50D85469C8C8714533FB1A37D}
 
 * Per ulteriori informazioni sul RGPD, consulta [RGPD e la tua azienda](https://www.adobe.com/it/privacy/general-data-protection-regulation.html).
-* Per consultare la documentazione relativa alle API RGPD, vai a [API del regolamento generale sulla protezione dei dati](https://adobe.io/apis/cloudplatform/gdpr.html).

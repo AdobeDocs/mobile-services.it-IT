@@ -6,10 +6,10 @@ title: App store
 topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 95%
+source-wordcount: '154'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ L’integrazione del connettore dati `appFigures` combina la potenza delle anali
 >
 >Nell’interfaccia utente di Mobile Services, dopo aver configurato l’integrazione, nel riquadro di navigazione a sinistra vengono visualizzati la voce di menu **[!UICONTROL App Store]** e i relativi rapporti.
 
-Il [connettore dati appFigures per Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/appfigures/appfigures-overview.html) contiene le seguenti informazioni:
+Il connettore dati appFigures per Adobe Analytics contiene le seguenti informazioni:
 
 * Vantaggi e caratteristiche principali dell’integrazione
 * Implementazione dell’integrazione, incluso:
