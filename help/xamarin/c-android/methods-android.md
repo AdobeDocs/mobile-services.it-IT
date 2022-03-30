@@ -1,11 +1,11 @@
 ---
 description: Metodi Android per i componenti Xamarin per l'SDK 4.x delle soluzioni Experience Cloud.
 keywords: Xamarina
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Metodi per Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 68%
@@ -58,7 +58,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
    * `ADBMobilePrivacyStatus.Unknown` - se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati). Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente.
 
-   Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) .
+   Il valore predefinito è impostato nel [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -160,7 +160,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **OverrideConfigStream**
 
-   (4.2 o versioni successive) Consente di caricare un file di configurazione diverso `ADBMobile JSON` all&#39;avvio dell&#39;applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
+   (4.2 o versioni successive) Consente di caricare un `ADBMobile JSON` file di configurazione all&#39;avvio dell&#39;applicazione. La configurazione diversa viene utilizzata fino alla chiusura dell’applicazione.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -227,7 +227,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **TrackState**
 
-   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. `States` sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato lo stato .
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. `States` sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni `TrackState` chiama.
 
    >[!TIP]
    >
@@ -274,7 +274,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **TrackLocation**
 
-   Invia le coordinate di latitudine e longitudine correnti. Utilizza anche i punti di interesse definiti nel file `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova nel raggio di riferimento di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `TrackLocation`.
+   Invia le coordinate di latitudine e longitudine correnti. Utilizza anche i punti di interesse definiti nel `ADBMobileConfig.json` per determinare se la posizione fornita come parametro si trova all&#39;interno di un POI. Se le coordinate correnti si trovano in un POI definito, una variabile di dati di contesto viene compilata e inviata insieme alla chiamata `TrackLocation`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -511,7 +511,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **LoadRequest**
 
-   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un callback `Action<NSDictionary>`.
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un `Action<NSDictionary>` callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -534,7 +534,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **CreateRequest**
 
-   Costruttore di convenienza per creare un oggetto `ADBTargetLocationRequest` con i parametri specificati.
+   Costruttore di convenienza per creare un `ADBTargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -602,7 +602,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **Dpid**
 
-   Restituisce il `DPID` corrente.
+   Restituisce il valore corrente `DPID`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -618,7 +618,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **Dpuuid**
 
-   Restituisce il `DPUUID` corrente.
+   Restituisce il valore corrente `DPUUID`.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -634,7 +634,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **AudienceSetDpidAndDpuuid**
 
-   Imposta i valori `dpid` e `dpuuid`. Se sono impostati `dpid` e `dpuuid`, questi vengono inviati con ciascun segnale.
+   Imposta la `dpid` e `dpuuid`. Se `dpid` e `dpuuid` sono impostati, vengono inviati con ogni segnale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -650,7 +650,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 * **SignalWithData**
 
-   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un callback `Action<NSDictionary>`.
+   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un `Action<NSDictionary>` callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -692,7 +692,7 @@ Metodi Android per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experi
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Per ulteriori informazioni su Video Analytics, consulta [Video Analytics](/help/android/analytics-main/video-qs.md).
+Per ulteriori informazioni su Video Analytics, vedi [Analisi dei video](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 

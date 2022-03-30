@@ -1,11 +1,11 @@
 ---
 description: Queste informazioni sono utili per capire come vengono tracciati gli arresti anomali dell'app e quali best practice adottare per gestire i falsi arresti anomali.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Tracciare gli arresti anomali dell’app
 topic-fix: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 exl-id: d8d59b4e-0231-446d-9ba1-8a9809be9c61
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 100%

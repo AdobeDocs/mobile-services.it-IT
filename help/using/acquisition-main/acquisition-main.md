@@ -1,12 +1,12 @@
 ---
 description: Gli addetti al marketing possono creare collegamenti di tracciamento per promuovere e indirizzare il traffico verso le loro app. Questi collegamenti di tracciamento possono dirigere gli utenti verso app store, collegamenti profondi nelle app e interstiziali, che possono essere correlati a comportamenti in-app. Un esperto di marketing può creare un collegamento per indirizzare gli utenti a iOS, Android o altre piattaforme, a seconda delle necessità.
 keywords: dispositivi mobili
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Acquisizione
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%

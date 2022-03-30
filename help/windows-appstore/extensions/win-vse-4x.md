@@ -1,11 +1,11 @@
 ---
 description: Queste estensioni forniscono un modo molto più semplice per aggiungere il riferimento dell’SDK Windows 4.x delle soluzioni Experience Cloud nel progetto.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Estensioni Windows Visual Studio per l’SDK 4.x delle soluzioni Experience Cloud
 topic-fix: Developer and implementation
 uuid: 7d0ea312-340b-46ea-a737-b70a6766a536
 exl-id: 63e9e5c7-2a12-47b3-a712-bf51e12821aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 13%
@@ -18,7 +18,7 @@ Queste estensioni forniscono un modo molto più semplice per aggiungere il rifer
 
 ## Installare la libreria da GitHub {#section_F55DB6241EF1475286C05FEAEBF996A3}
 
-1. Scarica l&#39;SDK universale di Windows da [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
+1. Scarica l’SDK universale di Windows da [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Estrai il file scaricato localmente.
 1. Fai doppio clic sul file ADBMobileWindowsStoreVSIX.vsix o ADBMobileWindowsPhoneVSIX.vsix per aprire il programma di installazione.
 
@@ -31,9 +31,9 @@ Queste estensioni forniscono un modo molto più semplice per aggiungere il rifer
 
    ![](assets/ref_manager.png)
 
-1. Nella scheda **[!UICONTROL Estensioni]** di Windows 8.1 o Windows Phone 8.1, individua e seleziona **[!UICONTROL Adobe Mobile SDK]**.
-1. Fare clic su **[!UICONTROL OK]** per salvarlo.
+1. Sulla **[!UICONTROL Estensioni]** scheda di Windows 8.1 o Windows Phone 8.1, individuare e selezionare **[!UICONTROL Adobe Mobile SDK]**.
+1. Fai clic su **[!UICONTROL OK]** per salvarlo.
 
-   L’SDK di Adobe Mobile verrà aggiunto al progetto e, se non è già stato aggiunto, viene aggiunto anche il pacchetto **[!UICONTROL Microsoft Visual C++ Runtime]** .
+   L’SDK di Adobe Mobile verrà aggiunto al progetto e, se non è già stato aggiunto, il **[!UICONTROL Runtime di Microsoft Visual C++]** viene aggiunto anche il pacchetto .
 
 1. In Gestione configurazione, seleziona un tipo di piattaforma e inizia a testare l’app.

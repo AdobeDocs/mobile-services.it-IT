@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per usare l’SDK della piattaforma UWP (Universal Windows Platform) con Adobe Analytics.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metodi di Analytics
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 58%
@@ -22,12 +22,12 @@ Ciascuno di questi metodi viene usato per inviare dati alla suite di rapporti di
 
 >[!TIP]
 >
->Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
+>Quando utilizzi `winmd` metodi di winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 * **TrackState (winJS: trackState)**
 
    Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell&#39;app, ad esempio &quot;dashboard iniziale&quot;, &quot;impostazioni app&quot;, &quot;carrello&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
-Se `state` è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato `state`.
+Se `state` è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati di impostare `state` in ciascuno `TrackState` chiama.
 
    >[!TIP]
    >

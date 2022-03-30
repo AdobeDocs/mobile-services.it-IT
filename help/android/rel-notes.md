@@ -1,11 +1,11 @@
 ---
 description: Note sulla versione e problemi noti per gli SDK 4.x per Android per le soluzioni Experience Cloud.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Note sulla versione
 topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 72%
@@ -18,7 +18,7 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
 ## 3 aprile 2020: 4.18.2
 
-* Messaggi in-app: per motivi di sicurezza, WebViews creato dall’SDK ora imposta la proprietà `setAllowFileAccess` su `false`.
+* Messaggistica in-app: per motivi di sicurezza, WebViews creato dall’SDK ora imposta la proprietà `setAllowFileAccess` a `false`.
 
 ## 12 marzo 2020: 4.18.1
 
@@ -49,7 +49,7 @@ Di seguito sono riportate le note sulla versione, i problemi noti e le informazi
 
 ## 24 maggio 2019: versione 4.17.6
 
-* servizio ID visitatore: la chiamata API `setPushIdentifier` ora invia una chiamata di sincronizzazione al servizio ID visitatore ogni volta che viene chiamata.
+* servizio ID visitatore - Il `setPushIdentifier` La chiamata API ora invia una chiamata di sincronizzazione al servizio ID visitatore ogni volta che viene chiamata.
 * Servizio ID visitatore: sono stati aumentati i tempi di connessione e di lettura da 2 a 5 secondi.
 
 Per ulteriori informazioni sulle note sulle versioni attuale e precedenti di tutte le soluzioni, consulta [Note sulla versione di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).

@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per l’analisi dei video.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analisi dei video
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 66%
@@ -16,13 +16,13 @@ ht-degree: 66%
 
 Informazioni utili per l’analisi dei video.
 
-La misurazione del video è descritta in dettaglio nella guida [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione del video è descritta in dettaglio nella sezione [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) guida. Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
 * **a.media.name**
 
-   (**Obbligatorio**) Raccoglie il nome del video, come specificato nell&#39;implementazione, quando un visitatore visualizza il video in qualche modo. È possibile aggiungere classificazioni per questa variabile.
+   (**Obbligatorio**) Raccoglie il nome del video, come specificato nell’implementazione, quando un visitatore visualizza il video in qualche modo. Puoi aggiungere classificazioni per questa variabile.
 
    (**Facoltativo**) La variabile Custom Insight fornisce informazioni sul percorso del video.
 
@@ -41,7 +41,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
    (**Obbligatorio**) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video.
 
-   Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere quanto segue nell’eVar dei segmenti `1:M:0-25` .
+   Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere quanto segue in `1:M:0-25` segmenti eVar.
 
    Il metodo predefinito di raccolta dei dati video raccoglie i dati nei seguenti punti: inizio video (play), inizio segmento e fine video (stop). Analytics conta la visualizzazione del primo segmento all’inizio del segmento, quando il visitatore inizia a guardarlo. Le visualizzazioni dei segmenti successivi vengono contate quando ogni inizia ogni segmento.
 
@@ -174,7 +174,7 @@ property bool isMediaAd;
 
 * **Chiudi (winJS: vicino)**
 
-   Tiene traccia della chiusura di un file multimediale per l’elemento multimediale denominato *`name`*.
+   Tiene traccia della chiusura di un file multimediale per l&#39;elemento multimediale denominato *`name`*.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -190,7 +190,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Tiene traccia della riproduzione di un file multimediale per l&#39;elemento multimediale denominato *`name`* in corrispondenza dell&#39; *offset* indicato (in secondi).
+   Tiene traccia della riproduzione di un file multimediale per l&#39;elemento multimediale denominato *`name`* al *offset* (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 

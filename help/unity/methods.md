@@ -1,12 +1,11 @@
 ---
 description: Metodi di configurazione ADBMobile.cs
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Metodi ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 70%
@@ -88,7 +87,7 @@ ht-degree: 70%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: gli hit vengono scartati.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia quando l&#39;utente acconsente (opt in, gli hit vengono inviati) o rinuncia (opt out, gli hit vengono eliminati).
 
-      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente. Il valore predefinito è impostato nel file [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) .
+      Se il tracciamento offline non è abilitato, gli hit vengono eliminati finché lo stato di privacy non cambia quando l&#39;utente acconsente. Il valore predefinito è impostato nel [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -260,7 +259,7 @@ ht-degree: 70%
 
    Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito Web e le chiamate `TrackState` incrementano le visualizzazioni di pagina.
 
-   Se lo stato è vuoto, nei rapporti viene visualizzato come *`app name app version (build)`* . Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato lo stato .
+   Se lo stato è vuoto, viene visualizzato come *`app name app version (build)`* nei rapporti. Se trovi questo valore nei rapporti, assicurati che in ogni `TrackState` chiama.
 
    >[!TIP]
    >
@@ -538,7 +537,7 @@ ht-degree: 70%
 
 ## Metodi di acquisizione 
 
-* **ProcessGooglePlayInstallReferrerUrl** *(solo Android)*
+* **ProcessGooglePlayInstallReferrerUrl** *(Solo Android)*
 
    Passa l’URL del referente restituito da una chiamata all’API Google Play Install Referrer a questo metodo.
 

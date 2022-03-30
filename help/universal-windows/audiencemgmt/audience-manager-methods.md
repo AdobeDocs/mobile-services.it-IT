@@ -1,11 +1,11 @@
 ---
 description: Elenco di metodi di Audience Manager forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metodi di Audience Manager
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 39%
@@ -20,7 +20,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
 >[!TIP]
 >
->Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
+>Quando utilizzi `winmd` metodi di winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 Se audience manager è configurato nel tuo file JSON, viene inviato un segnale contenente le metriche sul ciclo di vita con l&#39;hit del ciclo di vita.
 

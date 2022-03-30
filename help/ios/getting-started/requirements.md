@@ -1,14 +1,14 @@
 ---
 description: 'Per configurare una suite di rapporti per la raccolta di dati di app iOS, completa questi passaggi:'
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Prima di iniziare
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Puoi accedere ad Adobe Mobile Services in uno dei seguenti modi:
 
    Accedi a [Experience Cloud](https://experience.adobe.com) con il tuo Adobe ID.
 
-   Questo metodo presuppone che sia stato eseguito il provisioning della tua società e che tu abbia collegato il tuo account di Analytics. Per ulteriori informazioni sul provisioning, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida dei componenti dell’interfaccia centrale di Experience Cloud. Per ulteriori informazioni sul collegamento dell&#39;account, consulta [Organizzazioni nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html).
+   Questo metodo presuppone che sia stato eseguito il provisioning della tua società e che tu abbia collegato il tuo account di Analytics. Per ulteriori informazioni sul provisioning, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it) nella guida Experience Cloud Central Interface Components . Per ulteriori informazioni sul collegamento dell&#39;account, consulta [Organizzazioni nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it).
 
    >[!TIP]
    >

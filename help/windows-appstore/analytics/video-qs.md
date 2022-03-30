@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per l’analisi dei video.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analisi dei video
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 68%
@@ -16,7 +16,7 @@ ht-degree: 68%
 
 Informazioni utili per l’analisi dei video.
 
-La misurazione del video è descritta in dettaglio nella guida [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) . Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
+La misurazione del video è descritta in dettaglio nella sezione [Misurazione dei contenuti multimediali in streaming in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it) guida. Il processo generale da seguire per la misurazione dei video è molto simile per tutte le piattaforme AppMeasurement. Questa sezione di avvio rapido fornisce una panoramica di base delle attività di sviluppo, con esempi di codice.
 
 Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. Utilizza le regole di elaborazione per mappare i dati contestuali in una variabile di Analytics.
 
@@ -40,7 +40,7 @@ Nella tabella seguente sono elencati i dati multimediali inviati ad Analytics. U
 
 * **a.media.segment**
 
-   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere quanto segue nell’eVar del segmento `1:M:0-25` .
+   (Obbligatorio) Raccoglie dati sui segmenti video, tra cui il nome del segmento e l’ordine in cui il segmento appare nel video. Quando viene eseguito il tracciamento automatico degli eventi del lettore, questa variabile viene compilata abilitando la variabile `segmentByMilestones`. Quando gli eventi del lettore vengono tracciati manualmente, viene compilata impostando un nome di segmento personalizzato. Ad esempio, quando un visitatore visualizza il primo segmento di un video, il SiteCatalyst potrebbe raccogliere quanto segue in `1:M:0-25` eVar del segmento.
 
    Il metodo predefinito per la raccolta dei dati video raccoglie i dati nei seguenti punti:
 
@@ -194,7 +194,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Tiene traccia della riproduzione di un file multimediale per l&#39;elemento multimediale denominato *`name`* in corrispondenza dell&#39; *offset* indicato (in secondi).
+   Tiene traccia della riproduzione di un file multimediale per l&#39;elemento multimediale denominato *`name`* al *offset* (in secondi).
 
    * Di seguito è riportata la sintassi per questo metodo:
 

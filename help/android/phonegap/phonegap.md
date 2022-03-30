@@ -1,12 +1,12 @@
 ---
 description: Questo plug-in consente di inviare chiamate Android AppMeasurement dal progetto PhoneGap.
 keywords: android,libreria,mobile,sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Panoramica del plug-in PhoneGap
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 97%
@@ -68,7 +68,7 @@ cordova plugin add adobe-mobile-services
 
    Per spostare questo file, fai clic su **[!UICONTROL OK]**.
 
-1. Fai clic con il pulsante destro del mouse sul file `adobeMobileLibrary.jar` e seleziona **[!UICONTROL Aggiungi come libreria]**.
+1. Fai clic con il pulsante destro del mouse sul pulsante `adobeMobileLibrary.jar` e seleziona **[!UICONTROL Aggiungi come libreria]**.
 1. In base ai requisiti del progetto, inserisci nome, livello e posizione della libreria.
 1. Trascina il file `ADBMobileConfig.json` nella cartella `assets` della radice dell&#39;applicazione.
 1. Accertati di aver selezionato l&#39;applicazione radice e **non** un&#39;applicazione in un&#39;applicazione.

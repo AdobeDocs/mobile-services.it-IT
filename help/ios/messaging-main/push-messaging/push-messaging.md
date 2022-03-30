@@ -1,11 +1,11 @@
 ---
 description: ' Adobe Mobile e l’SDK di Adobe Mobile consentono di inviare messaggi push agli utenti. L’SDK consente inoltre di creare un rapporto sugli utenti che hanno aperto l’app facendo clic in un messaggio push.'
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Messaggi push
 topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 100%

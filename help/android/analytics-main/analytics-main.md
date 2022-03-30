@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni sono utili per usare l'SDK per Android con Adobe Analytics.
 keywords: android,libreria,mobile,sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Panoramica di Analytics
 topic-fix: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 exl-id: ed9f55e6-f3ab-4c1e-9a2f-1ee67a7b4c03
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 95%
@@ -40,4 +40,4 @@ Negli SDK, gli identificatori vengono utilizzati per monitorare gli utenti. La g
 
 L’AID, a cui talvolta si fa riferimento come identificativo di monitoraggio, viene generato dall’SDK quando l’applicazione non è configurata per l’utilizzo di un MID. Il valore viene mantenuto tra i lanci e gli aggiornamenti dell’app in `SharedPreferences`: Se l’utente elimina l’app dal proprio dispositivo e successivamente la reinstalla, o se lo sviluppatore dell’app cancella SharedPreferences, un nuovo identificativo viene generato dall’SDK. Questo processo determina un nuovo utente nei rapporti di Analytics.
 
-Per gli utenti di un’app in cui viene introdotto il supporto del servizio di identità (MID), i valori AID esistenti vengono inviati con hit di Analytics contenenti un AID e un MID. Per i nuovi utenti di un’app che supporta il servizio Identità, le richieste di Analytics contengono solo un MID. Per ulteriori informazioni sull&#39;identificazione dei visitatori, consulta [Visitatori unici](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it) nella documentazione di Adobe Analytics.
+Per gli utenti di un’app in cui viene introdotto il supporto del servizio di identità (MID), i valori AID esistenti vengono inviati con hit di Analytics contenenti un AID e un MID. Per i nuovi utenti di un’app che supporta il servizio Identità, le richieste di Analytics contengono solo un MID. Per ulteriori informazioni sull&#39;identificazione dei visitatori, vedi [Visitatori unici](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it) nella documentazione di Adobe Analytics.

@@ -1,12 +1,12 @@
 ---
 description: Queste informazioni sono utili per comprendere e utilizzare Adobe Mobile Services.
 keywords: dispositivi mobili
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Introduzione
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 97%
@@ -111,7 +111,7 @@ Per maggiori informazioni sulla creazione di messaggi in-app, vedi   [Creare un 
 
 In *Ottimizza* puoi ottimizzare le conversioni (abbonamenti, vendite, ricavi da pubblicità e così via) e migliorare la customer retention. L’ottimizzazione della user experience dell’app può aiutarti a personalizzare i contenuti per incrementare la redditività dell’investimento e le conversioni.
 
-Per ulteriori informazioni sui test e su Adobe Target, consulta la documentazione [Adobe Target](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html) .
+Per ulteriori informazioni sui test e su Adobe Target, consulta la [Adobe Target](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html) documentazione.
 
 ### Geotargeting
 

@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per gestire i messaggi all’interno delle app iOS.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Messaggistica in-app
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
@@ -83,7 +83,7 @@ Gli SDK di iOS Mobile Services tengono traccia delle metriche seguenti per i mes
 
 * Per i messaggi in-app personalizzati a schermo intero, nel contenuto HTML del messaggio deve essere presente il codice corretto per trasmettere informazioni alla funzione di tracciamento dell&#39;SDK per i seguenti pulsanti:
 
-   * Esempio di tracciamento **[!UICONTROL Click-through]** (reindirizzamento):   `adbinapp://confirm/?url=https://www.yoursite.com`
+   * Esempio di tracciamento **[!UICONTROL Click-through]** (reindirizzamento):  `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL Esempio di tracciamento per annullamento]** (chiusura): `adbinapp://cancel`
 
 * Per le notifiche locali (remote):

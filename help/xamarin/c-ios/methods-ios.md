@@ -1,11 +1,11 @@
 ---
-description: Metodi iOS per i componenti Xamarin per l'SDK 4.x delle soluzioni Experience Cloud.
+description: Metodi iOS per i componenti Xamarin per l’SDK 4.x delle soluzioni Experience Cloud.
 keywords: Xamarina
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Metodi per iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 70%
@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # Metodi per iOS{#ios-methods}
 
-Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience Cloud.
+Metodi iOS per i componenti Xamarin per l’SDK 4.x delle soluzioni Experience Cloud.
 
 ## Metodi di configurazione {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -89,7 +89,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
    * `ADBMobilePrivacyStatus.OptOut` - gli hit vengono eliminati.
    * ADBMobilePrivacyStatus.Unknown : se è abilitato il tracciamento offline, gli hit vengono salvati finché lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se il tracciamento offline è disabilitato, gli hit vengono scartati finché lo stato di privacy non cambia in optedin.
 
-   Il valore predefinito è impostato in [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   Il valore predefinito è impostato nel [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -211,7 +211,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
 
 * **TrackState**
 
-   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito web e le chiamate `TrackState` incrementano le visualizzazioni di pagina. Se lo stato è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni chiamata `TrackState` sia impostato lo stato .
+   Tiene traccia dello stato di un&#39;app con dati contestuali facoltativi. Gli stati sono le visualizzazioni disponibili nell’app, ad esempio &quot;schermata del titolo&quot;, &quot;livello 1&quot;, &quot;pausa&quot; e così via. Questi stati sono simili alle pagine di un sito web e `TrackState` le chiamate incrementano le visualizzazioni di pagina. Se state è vuoto, nei rapporti viene visualizzato come &quot;app name app version (build)&quot;. Se trovi questo valore nei rapporti, assicurati che in ogni `TrackState` chiama.
 
    >[!TIP]
    >
@@ -500,7 +500,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
 
 * **TargetLoadRequest**
 
-   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un callback `Action<NSDictionary>`.
+   Invia una richiesta al server di Target configurato e restituisce il valore stringa dell&#39;offerta generata in un `Action<NSDictionary>` callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -520,7 +520,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
 
 * **TargetCreateRequest**
 
-   Costruttore di convenienza per creare un oggetto `ADBTargetLocationRequest` con i parametri specificati.
+   Costruttore di convenienza per creare un `ADBTargetLocationRequest` con i parametri specificati.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -635,7 +635,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
 
 * **AudienceSignalWithData**
 
-   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un callback `Action<NSDictionary>`.
+   Invia a Gestione dell&#39;audience un segnale con caratteristiche e fa sì che i segmenti corrispondenti vengano restituiti in un `Action<NSDictionary>`  callback.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -670,7 +670,7 @@ Metodi iOS per i componenti Xamarin per l&#39;SDK 4.x delle soluzioni Experience
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Per ulteriori informazioni, consulta [Analisi video](/help/ios/getting-started/dev-qs.md).
+Per ulteriori informazioni, consulta [Analisi dei video](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

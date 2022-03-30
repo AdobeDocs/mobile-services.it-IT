@@ -1,12 +1,12 @@
 ---
 description: Puoi inviare segnali e recuperare segmenti di visitatori da Gestione dell'audience.
 keywords: android,libreria,mobile,sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Configurazione di Audience Manager
 topic-fix: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
 exl-id: 05033748-5461-482f-a01d-1ba73f64616a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 100%

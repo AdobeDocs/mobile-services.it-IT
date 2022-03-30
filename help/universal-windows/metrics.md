@@ -1,12 +1,12 @@
 ---
 description: Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 keywords: android,libreria,mobile,sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metriche del ciclo di vita
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 84%
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 Elenca le metriche e le dimensioni misurabili automaticamente dalla libreria mobile.
 
-Per ulteriori informazioni, consulta [Risoluzione dei problemi relativi ai dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
+Per ulteriori informazioni, consulta [Risolvere i problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
 ## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -264,14 +264,14 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
 * **Nome del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova in un POI definito.
+   Popolato da `trackLocation` metodi quando il dispositivo si trova in un POI definito.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.loc.poi`
    * Caratteristica di Audience Manager: `c_a_loc_poi`
 
 * **Distanza dal centro del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
+   Popolato da `trackLocation` metodi quando il dispositivo si trova entro un POI definito.
 
    * Dati contestuali di Analytics/Parametro di Target: `a.loc.dist`
    * Caratteristica di Audience Manager: `c_a_loc_dist`
@@ -280,5 +280,5 @@ Le metriche e dimensioni seguenti vengono acquisite nelle variabili di soluzioni
 
    Viene compilata dai metodi `trackLifetimeValue`.
 
-   * Dati contestuali di Analytics/Parametro di Target:  `a.ltv.amount`
+   * Dati contestuali di Analytics/Parametro di Target: `a.ltv.amount`
    * Caratteristica di Audience Manager: `c_a_ltv_amount`

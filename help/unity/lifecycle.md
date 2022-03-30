@@ -1,12 +1,11 @@
 ---
 description: Misura metriche e dimensioni misurabili automaticamente dalla libreria mobile
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Implementare le metriche sul ciclo di vita
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
 exl-id: eca0cebb-6c69-4b0f-b003-c7fc422d0383
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 7%
@@ -15,7 +14,7 @@ ht-degree: 7%
 
 # Implementare le metriche sul ciclo di vita{#implement-lifecycle}
 
-Per ulteriori informazioni sulle metriche e dimensioni misurabili automaticamente dalla libreria mobile dopo l&#39;implementazione del ciclo di vita, consulta [Metriche del ciclo di vita in Android](/help/android/metrics.md) o [Ciclo di vita in iOS](/help/ios/metrics.md).
+Per ulteriori informazioni sulle metriche e dimensioni misurabili automaticamente dalla libreria mobile dopo l&#39;implementazione del ciclo di vita, vedi [Metriche del ciclo di vita in Android](/help/android/metrics.md) o [Ciclo di vita in iOS](/help/ios/metrics.md).
 
 ## iOS
 
@@ -23,7 +22,7 @@ Le metriche del ciclo di vita vengono raccolte automaticamente in iOS.
 
 ## Android
 
-Nello script Unity, imposta il contesto dell&#39;applicazione per l&#39;SDK Android. Aggiungi il codice seguente alla funzione `Awake()` della scena FIRST:
+Nello script Unity, imposta il contesto dell&#39;applicazione per l&#39;SDK Android. Aggiungi il seguente codice al `Awake()` funzione della scena FIRST:
 
 ```java
 void Awake()

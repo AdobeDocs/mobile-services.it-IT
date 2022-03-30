@@ -1,11 +1,11 @@
 ---
 description: Dopo aver aggiunto la libreria al progetto, puoi effettuare una qualsiasi chiamata dei metodi di Analytics ovunque nell'app.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 17%
@@ -18,24 +18,24 @@ Dopo aver aggiunto la libreria al progetto, puoi effettuare una qualsiasi chiama
 
 >[!TIP]
 >
->Assicurati di importare `ADBMobile.h` nella classe.
+>Assicurati di importare `ADBMobile.h` alla tua classe.
 
 ## Abilitare i rapporti sulle applicazioni mobili in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Prima di aggiungere il codice, chiedi all’amministratore di Analytics di completare quanto segue per abilitare il tracciamento del ciclo di vita delle app mobili. In questo modo la suite di rapporti è pronta per acquisire le metriche all’inizio dello sviluppo.
+Prima di aggiungere il codice, chiedi all’amministratore di Analytics di completare quanto segue per abilitare il tracciamento del ciclo di vita delle app Mobile. In questo modo la suite di rapporti è pronta per acquisire le metriche all’inizio dello sviluppo.
 
-1. Apri **[!UICONTROL Strumenti di amministrazione]** > **[!UICONTROL Suite di rapporti]** e seleziona le suite di rapporti mobili.
-1. Fai clic su **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Gestione mobile]** > **[!UICONTROL Generazione rapporti applicazioni mobili]**.
+1. Apri **[!UICONTROL Strumenti di amministrazione]** > **[!UICONTROL Suite di rapporti]** e seleziona le suite di rapporti per dispositivi mobili.
+1. Fai clic su **[!UICONTROL Modifica impostazioni]** > **[!UICONTROL Gestione Mobile]** > **[!UICONTROL Generazione rapporti applicazioni Mobile]**.
 
-   ![Impostazioni di Mobile](assets/mobile-settings.png)
+   ![Impostazioni Mobile](assets/mobile-settings.png)
 
-1. Fai clic su **[!UICONTROL Abilita rapporti app più recenti]**.
+1. Fai clic su **[!UICONTROL Abilitare i report delle app più recenti]**.
 
-   Facoltativamente, puoi anche fare clic su **[!UICONTROL Abilita tracciamento posizione mobile]** e **[!UICONTROL Abilita rapporti legacy e attribuzione per hit di background]**.
+   Facoltativamente, puoi anche fare clic su **[!UICONTROL Abilita tracciamento posizione Mobile]** e **[!UICONTROL Abilita reporting e attribuzione legacy per hit in background]**.
 
    ![Attiva ciclo di vita](assets/enable-lifecycle.png)
 
-Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti sulle applicazioni mobili vengono visualizzati nel menu **[!UICONTROL Report]** nell’interfaccia dei rapporti di marketing.
+Le metriche del ciclo di vita sono ora pronte per essere acquisite e i rapporti delle applicazioni Mobile compaiono nella **[!UICONTROL Rapporti]** nell’interfaccia dei rapporti di marketing.
 
 ### Nuove versioni
 
@@ -118,11 +118,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Se `CollectLifecycleData()` viene chiamato due volte nella stessa sessione, l&#39;applicazione segnalerà un arresto anomalo per ogni chiamata successiva alla prima. L&#39;SDK imposta un flag quando l&#39;applicazione viene chiusa che indica una corretta uscita. Se questo flag non è impostato, `CollectLifecyleData()` segnala un arresto anomalo.
+Se `CollectLifecycleData()` viene chiamato due volte nella stessa sessione, quindi l&#39;applicazione segnalerà un arresto anomalo a ogni chiamata successiva alla prima. L&#39;SDK imposta un flag quando l&#39;applicazione viene chiusa che indica una corretta uscita. Se questo flag non è impostato, `CollectLifecyleData()` segnala un arresto anomalo.
 
 ## Eventi, prop ed eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Se hai esaminato la [Guida di riferimento delle classi e dei metodi ADBMobile](/help/windows-appstore/c-configuration/methods.md), probabilmente ti chiederai dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non puoi più assegnare direttamente nell’app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
+Se hai guardato il [Guida di riferimento delle classi e dei metodi per ADBMobile](/help/windows-appstore/c-configuration/methods.md), probabilmente ti stai chiedendo dove impostare eventi, eVar, prop, eredi ed elenchi. Nella versione 4, non puoi più assegnare direttamente nell’app questi tipi di variabili. L’SDK utilizza invece i dati contestuali e le regole di elaborazione per mappare i dati dell’app sulle variabili di Analytics a scopo di reportistica.
 
 Le regole di elaborazione offrono diversi vantaggi:
 
@@ -154,13 +154,13 @@ Inoltre, abbiamo sentito che alcuni di voi stanno denominando le chiavi dei dati
 "eVar1":"jimbo";
 ```
 
-Questo potrebbe semplificare leggermente *la mappatura una tantum nelle regole di elaborazione, a scapito però della leggibilità durante il debug e complicando gli aggiornamenti futuri del codice.* Consigliamo piuttosto di utilizzare nomi descrittivi per chiavi e valori:
+Questo potrebbe farlo *leggermente* è più facile quando si esegue la mappatura una tantum nelle regole di elaborazione, ma si perde la leggibilità durante il debug e gli aggiornamenti futuri del codice possono essere più difficili. Consigliamo piuttosto di utilizzare nomi descrittivi per chiavi e valori:
 
 ```js
 "username":"jimbo";
 ```
 
-Imposta le variabili di contesto che definiscono eventi contatore su un valore di &quot;1&quot;:
+Imposta le variabili di contesto che definiscono eventi di contatore su un valore di &quot;1&quot;:
 
 ```js
 "logon":"1";
@@ -178,17 +178,17 @@ Le variabili di dati di contesto che definiscono eventi di incremento possono av
 
 ## Variabile &quot;products&quot;  {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Per impostare *`products`* nell’SDK di Mobile, devi usare una sintassi particolare. Vedere [Variabile &quot;products&quot;](/help/windows-appstore/analytics/products/products.md).
+Per impostare *`products`* nell’SDK di Mobile devi usare una sintassi particolare. Vedi [Variabile &quot;products&quot;](/help/windows-appstore/analytics/products/products.md).
 
 ## (Facoltativo) Abilita il tracciamento offline {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Per memorizzare gli hit quando il dispositivo è offline, puoi abilitare il tracciamento offline nella [configurazione ADBMobileConfig.json](/help/windows-appstore/c-configuration/methods.md). Prima di abilitare il tracciamento offline, fai attenzione ai requisiti di marca temporale descritti nel riferimento al file di configurazione.
+Per memorizzare gli hit quando il dispositivo è offline, puoi abilitare il tracciamento offline nel [Configurazione di ADBMobileConfig.json](/help/windows-appstore/c-configuration/methods.md). Prima di abilitare il tracciamento offline, fai attenzione ai requisiti di marca temporale descritti nel riferimento al file di configurazione.
 
 ## Geolocalizzazione e punti di interesse {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-La geolocalizzazione consente di misurare i dati sulla posizione (latitudine/longitudine) e i punti di interesse predefiniti. Ogni chiamata `TrackLocation` invia:
+La geolocalizzazione consente di misurare i dati sulla posizione (latitudine/longitudine) e i punti di interesse predefiniti. Ogni `TrackLocation` invia chiamate:
 
-* Latitudine/longitudine e POI (se all’interno di un POI definito nel file di configurazione `ADBMobileConfig.json`). Questi vengono passati alle variabili della soluzione mobile per il reporting automatico.
+* Latitudine/longitudine e POI (se all’interno di un POI definito in `ADBMobileConfig.json` file di configurazione). Questi vengono passati alle variabili della soluzione mobile per il reporting automatico.
 * Distanza dal centro e precisione passate come dati contestuali. Acquisisci utilizzando una regola di elaborazione.
 
 Per tracciare una posizione:
@@ -198,7 +198,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Se il seguente POI è definito nel file di configurazione `ADBMobileConfig.json`:
+Se il seguente POI è definito nella variabile `ADBMobileConfig.json` file di configurazione:
 
 ```js
 "poi" : [ 
@@ -206,7 +206,7 @@ Se il seguente POI è definito nel file di configurazione `ADBMobileConfig.json`
         ]
 ```
 
-Quando la posizione del dispositivo è determinata entro un raggio di 7000 metri dal punto definito, viene inviata una variabile di dati di contesto `a.loc.poi` con il valore &quot;San Francisco&quot; con l&#39;hit `TrackLocation` . Viene inviata una variabile di contesto `a.loc.dist` con la distanza in metri dalle coordinate definite.
+Quando la posizione del dispositivo è determinata entro un raggio di 7000 metri dal punto definito, `a.loc.poi` la variabile di dati di contesto con il valore &quot;San Francisco&quot; viene inviata con `TrackLocation` colpito. Un `a.loc.dist` la variabile di contesto viene inviata con la distanza in metri dalle coordinate definite.
 
 ## Valore del ciclo di vita {#section_D2C6971545BA4D639FBE07F13EF08895}
 

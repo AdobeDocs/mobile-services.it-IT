@@ -1,12 +1,12 @@
 ---
 description: Il rapporto Panoramica dell’app store fornisce un’istantanea delle metriche dell’app store, con informazioni quali numero di download, acquisti in-app, valutazione media nell’app store, ricavi da download, ricavi in-app, download per paese, download per app store e acquisti in-app per nome.
 keywords: dispositivi mobili
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Rapporto Panoramica dell’app store
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%

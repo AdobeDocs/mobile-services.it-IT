@@ -1,12 +1,12 @@
 ---
 description: Il rapporto Metriche banner fornisce una visualizzazione sunburst per i dati esistenti. Questo rapporto è disponibile solo per i clienti della soluzione Digital Publishing Solution (DPS).
 keywords: dispositivi mobili
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metriche banner
 topic-fix: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
 exl-id: 0383e23f-579e-4177-922d-71f193a3c606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%

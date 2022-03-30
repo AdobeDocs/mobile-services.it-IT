@@ -1,11 +1,11 @@
 ---
 description: Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows Platform).
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metodi dell’SDK
 topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 exl-id: 0aac477c-074d-457c-b117-bb205119c475
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 68%
@@ -18,7 +18,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
 
 >[!TIP]
 >
->Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
+>Quando utilizzi `winmd` metodi di winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Classi e metodi forniti dalla libreria della piattaforma UWP (Universal Windows 
    * `ADBMobilePrivacyStatusOptOut` - gli hit vengono scartati.
    * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      Il valore predefinito è impostato nel file di configurazione `ADBMobileConfig.json`. Per ulteriori informazioni, consulta [File di configurazione ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
+      Il valore predefinito è impostato nel `ADBMobileConfig.json` file di configurazione. Per ulteriori informazioni, consulta [File di configurazione ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
    * Di seguito è riportata la sintassi per questo metodo:
 

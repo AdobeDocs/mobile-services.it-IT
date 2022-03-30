@@ -1,11 +1,11 @@
 ---
 description: Impossibile impostare la variabile "products" utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Variabile "products" '
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Impossibile impostare la variabile &quot;products&quot; utilizzando le regole di elaborazione. Nell’SDK di Mobile devi usare una sintassi particolare nel parametro dei dati contestuali per impostare i prodotti direttamente nella chiamata al server.
 
-Per impostare la variabile *`products`*, imposta una chiave di dati contestuali su `"&&products"` e imposta il valore utilizzando la sintassi definita per *`products`*:
+Per impostare *`products`* imposta una chiave di dati contestuali su `"&&products"`e imposta il valore utilizzando la sintassi definita per la *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Non è necessario mappare la variabile *`products`* utilizzando le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.
+Non è necessario mappare il *`products`* mediante le regole di elaborazione, in quanto viene impostata direttamente nella richiesta dell’immagine dall’SDK.

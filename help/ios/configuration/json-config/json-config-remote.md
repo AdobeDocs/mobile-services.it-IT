@@ -1,11 +1,11 @@
 ---
 description: È possibile caricare un diverso file di configurazione ADBMobile JSON all'avvio dell'applicazione.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Escludere il percorso del file di configurazione ADBMobile JSON
 topic-fix: Developer and implementation
 uuid: 0d1be674-c634-4a48-aa31-5701681911b9
 exl-id: 3a191e9c-905f-4bea-8a6f-5ccf5ea02aff
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%

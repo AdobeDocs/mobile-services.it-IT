@@ -1,11 +1,11 @@
 ---
 description: Informazioni utili per l’utilizzo del file di configurazione ADBMobile JSON.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: File di configurazione ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 45%
@@ -14,7 +14,7 @@ ht-degree: 45%
 
 # `ADBMobileConfig.json` file di configurazione {#adbmobileconfig-json-config}
 
-Informazioni utili per usare il file di configurazione `ADBMobile.json`.
+Informazioni utili per l’utilizzo del `ADBMobile.json` file di configurazione.
 
 L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui Analytics, Target e Audience Manager. Ai metodi è applicato il prefisso della relativa soluzione. I metodi di configurazione hanno il prefisso &quot;Config&quot;.
 
@@ -34,17 +34,17 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
 * **server**
 
-   (Richiesto da Analytics e Gestione dell&#39;audience). Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla variabile `ssl` .
+   (Richiesto da Analytics e Gestione dell&#39;audience). Server di Analytics o Gestione dell&#39;audience, in base al nodo principale. Questa variabile deve essere compilata con il dominio del server, senza il prefisso del protocollo `https://` o `https://`. Il prefisso del protocollo viene gestito automaticamente dalla libreria in base alla `ssl` variabile.
 
    Se `ssl` è `true`, viene eseguita una connessione sicura al server. Se `ssl` è `false`, viene eseguita una connessione non sicura.
 
 * **charset**
 
-   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta la variabile [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=it) nella documentazione di Adobe Analytics.
+   Definisce il set di caratteri utilizzato per i dati inviati ad Analytics. Il set di caratteri serve per convertire i dati in entrata in UTF-8 per l&#39;archiviazione e la generazione di rapporti. Per ulteriori informazioni, consulta la sezione [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=it) nella documentazione di Adobe Analytics.
 
 * **ssl**
 
-   Abilita (`true`) o disabilita (`false`) l&#39;invio dei dati di misurazione tramite SSL (HTTPS). Il valore predefinito è `false`.
+   Abilita (`true`) o disattiva (`false`) invio dei dati di misurazione tramite SSL (HTTPS). Il valore predefinito è `false`.
 
 * **offlineEnabled**
 
@@ -52,7 +52,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
    >[!IMPORTANT]
    >
-   >Se le marche temporali sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve essere true.* Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,   contatta   Assistenza clienti. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che utilizzano la variabile `s.timestamp` .
+   >Se le marche temporali sono abilitate nella suite di rapporti, `offlineEnabled` proprietà di configurazione *deve* sia vero. Se le marche temporali non sono abilitate nella suite di rapporti, la proprietà di configurazione `offlineEnabled` *deve* essere false. Se questo non viene configurato correttamente, i dati andranno perduti. Se non sei sicuro se le marche temporali sono abilitate o meno nella suite di rapporti,   contatta   Assistenza clienti. Se i dati AppMeasurement vengono inviati a una suite di rapporti che raccoglie anche dati da JavaScript, potrebbe essere necessario impostare una suite di rapporti distinta per i dati mobile o includere una marca temporale personalizzata in tutti gli hit JavaScript che utilizzano `s.timestamp` variabile.
 
 * **lifecycleTimeout**
 
@@ -60,7 +60,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
 * **batchLimit**
 
-   Invia gli hit in batch. Ad esempio, se è impostato su 50, gli hit vengono messi in coda fino a memorizzarne 50, dopodiché tutti gli hit in coda vengono inviati. Richiede `offlineEnabled=true`. Il valore predefinito è `0` (nessun invio in batch).
+   Invia gli hit in batch. Ad esempio, se è impostato su 50, gli hit vengono messi in coda fino a memorizzarne 50, dopodiché tutti gli hit in coda vengono inviati. Richiede `offlineEnabled=true`. Il valore predefinito è `0` (Nessun invio in batch).
 
 * **privacyDefault**
 
@@ -72,7 +72,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
       >[!TIP]
       >
-      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nell&#39;archivio locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
+      >Questo imposta solo il valore predefinito. Se questo valore viene impostato o modificato nel codice, il valore impostato dal codice viene salvato nell&#39;archiviazione locale e utilizzato fino a quando non viene modificato oppure finché l&#39;app non viene disinstallata e reinstallata.
 
 * **poi**
 
@@ -95,7 +95,7 @@ L&#39;SDK supporta attualmente più soluzioni Adobe Experience Cloud, tra cui An
 
    Determina per quanto tempo Target può aspettare di ricevere una risposta.
 
-Di seguito è riportato un esempio di file `ADBMobileConfig.json` :
+Di seguito è riportato un esempio di `ADBMobileConfig.json` file:
 
 ```js
 { 

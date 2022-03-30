@@ -1,12 +1,12 @@
 ---
 description: Informazioni su come scaricare gli SDK di Mobile Services e strumenti per facilitare l’implementazione di Mobile Services.
 keywords: dispositivi mobili, android, ios, sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Download di strumenti e SDK per dispositivi mobili
 topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 100%

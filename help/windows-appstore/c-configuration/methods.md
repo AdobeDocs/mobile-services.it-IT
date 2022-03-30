@@ -1,11 +1,11 @@
 ---
 description: Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metodi dell’SDK
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 51%
@@ -18,7 +18,7 @@ Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
 
 >[!TIP]
 >
->Quando utilizzi metodi `winmd` da winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
+>Quando utilizzi `winmd` metodi di winJS (JavaScript), tutti i metodi presentano automaticamente la prima lettera minuscola.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
    * `ADBMobilePrivacyStatusOptOut` - gli hit vengono eliminati.
    * `ADBMobilePrivacyStatusUnknown` - Se le marche temporali sono abilitate nella suite di rapporti, gli hit vengono salvati fino a quando lo stato di privacy non cambia in optedin (gli hit vengono inviati) o optedout (gli hit vengono scartati). Se le marche temporali non sono abilitate nella suite di rapporti, gli hit vengono eliminati fino alla modifica dello stato di privacy, quando l&#39;utente acconsente (optedin).
 
-      Il valore predefinito è impostato nel file di configurazione [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) .
+      Il valore predefinito è impostato nel [Configurazione di ADBMobileConfig.json](/help/windows-appstore/c-configuration/c.json.md) file.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -122,7 +122,7 @@ Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
 
    >[!TIP]
    >
-   >Se l’app viene aggiornata dall’SDK di Experience Cloud 3.x alla versione 4.x, l’ID precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` finché non viene impostato.
+   >Se l’app viene aggiornata dall’SDK di Experience Cloud 3.x alla versione 4.x, l’ID precedente (personalizzato o generato in automatico) viene recuperato e memorizzato come identificatore utente personalizzato. In tal modo i dati del visitatore vengono mantenuti da un aggiornamento all’altro dell’SDK. Per le nuove installazioni con l&#39;SDK 4.x, l&#39;identificatore dell&#39;utente è `null` finché non impostato.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -194,7 +194,7 @@ Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
 
    >[!TIP]
    >
-   >Richiama questo metodo nel metodo `onResume()` in ogni attività all&#39;interno dell&#39;applicazione, come illustrato nell&#39;esempio seguente. È inoltre consigliabile passare l’attività o il servizio come oggetto contestuale invece che come contesto dell’applicazione globale.
+   >Richiama questo metodo nel `onResume()` in ogni attività all&#39;interno dell&#39;applicazione, come illustrato nell&#39;esempio seguente. È inoltre consigliabile passare l’attività o il servizio come oggetto contestuale invece che come contesto dell’applicazione globale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 
@@ -215,7 +215,7 @@ Classi e metodi forniti dalla libreria Windows 8.1 Universal App Store.
 
    >[!TIP]
    >
-   >Richiama questo metodo nei metodi `onPause()` di ogni attività all&#39;interno dell&#39;applicazione, come illustrato nell&#39;esempio. È inoltre consigliabile passare l’attività o il servizio come oggetto contestuale invece che come contesto dell’applicazione globale.
+   >Richiama questo metodo nel `onPause()` metodi in ogni attività all&#39;interno dell&#39;applicazione, come mostrato nell&#39;esempio. È inoltre consigliabile passare l’attività o il servizio come oggetto contestuale invece che come contesto dell’applicazione globale.
 
    * Di seguito è riportata la sintassi per questo metodo:
 

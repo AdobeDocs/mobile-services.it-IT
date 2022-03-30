@@ -1,11 +1,11 @@
 ---
 description: Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Regole di elaborazione e dati contestuali
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 67%
@@ -16,7 +16,7 @@ ht-degree: 67%
 
 Le regole di elaborazione vengono utilizzate per copiare i dati inviati in variabili di dati di contesto a eVar, prop e ad altre variabili a scopo di reportistica.
 
-Per ulteriori informazioni sulle regole di elaborazione, consulta [Panoramica sulle regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) nella documentazione di Adobe Analytics.
+Per ulteriori informazioni sulle regole di elaborazione, vedi [Panoramica sulle regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) nella documentazione di Adobe Analytics.
 
 Se lavori con le regole di elaborazione, ricorda quanto segue:
 

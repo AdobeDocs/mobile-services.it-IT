@@ -1,14 +1,14 @@
 ---
 description: 'Prima di configurare una suite di rapporti e raccogliere dati dell''app Android, completa le seguenti attività di prerequisito '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Prima di iniziare
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Puoi accedere all’interfaccia utente di Adobe Mobile Services in uno dei segue
 
 ### Experience Cloud
 
-Accedi a [Experience Cloud](https://experiencecloud.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) nella guida dei componenti dell’interfaccia centrale di Experience Cloud.
+Accedi a [Experience Cloud](https://experiencecloud.adobe.com) con il tuo Adobe ID. Questo metodo presuppone che tua società abbia eseguito il provisioning della in Experience Cloud e che tu abbia effettuato il collegamento all&#39;account di Analytics. Per ulteriori informazioni, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it) nella guida Experience Cloud Central Interface Components .
 
 >[!TIP]
 >

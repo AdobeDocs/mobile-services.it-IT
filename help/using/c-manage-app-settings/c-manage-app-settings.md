@@ -1,12 +1,12 @@
 ---
 description: La gestione delle app prevede la configurazione di un’app e l’amministrazione di un insieme di variabili e metriche.
 keywords: dispositivi mobili
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Gestire le impostazioni dell’app
 topic-fix: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
 exl-id: ed7b955e-f1db-42e5-95b4-a4fb8f169097
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 100%

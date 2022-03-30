@@ -1,11 +1,11 @@
 ---
 description: L'SDK di Adobe Mobile per iOS può essere integrato direttamente in un progetto Swift mediante la funzione "Mix and Match" della iOS Developer Library.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Integrazione Swift
 topic-fix: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
 exl-id: 3c1a2e28-53b0-4128-a5d9-d2403885098d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 100%

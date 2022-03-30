@@ -1,12 +1,12 @@
 ---
 description: Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
 keywords: android,libreria,mobile,sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Metriche del ciclo di vita
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 77%
@@ -17,7 +17,7 @@ ht-degree: 77%
 
 Queste sono le metriche e le dimensioni che possono essere misurate automaticamente dalla libreria mobile dopo che il ciclo di vita è stato implementato; è presente inoltre un collegamento per la risoluzione dei problemi dei dati del ciclo di vita.
 
-Per ulteriori informazioni, vai alla Knowledge Base all&#39;indirizzo [Risoluzione dei problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
+Per ulteriori informazioni, visitare la Knowledge Base all&#39;indirizzo [Risolvere i problemi dei dati del ciclo di vita](https://helpx.adobe.com/it/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Metriche e dimensioni del ciclo di vita {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -240,7 +240,7 @@ Le metriche e le dimensioni seguenti vengono acquisite nelle variabili di soluzi
 
 * **Nome del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
+   Popolato da `trackLocation` metodi quando il dispositivo si trova entro un POI definito.
 
    * Dati contestuali di Analytics/Parametro di Target:
 
@@ -252,7 +252,7 @@ Le metriche e le dimensioni seguenti vengono acquisite nelle variabili di soluzi
 
 * **Distanza dal centro del punto di interesse**
 
-   Viene compilata dai metodi `trackLocation` quando il dispositivo si trova entro un POI definito.
+   Popolato da `trackLocation` metodi quando il dispositivo si trova entro un POI definito.
 
    * Dati contestuali di Analytics/Parametro di Target:
 
