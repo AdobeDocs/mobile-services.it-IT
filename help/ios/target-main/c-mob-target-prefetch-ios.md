@@ -3,9 +3,9 @@ description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per
 title: Preacquisizione del contenuto delle offerte in iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 85%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 85%
 # Preacquisizione del contenuto delle offerte in iOS {#prefetch-offer-content-in-ios}
 
 La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili iOS per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
-
->[!IMPORTANT]
->
->La funzionalità di preacquisizione preventiva negli SDK Mobile per iOS non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
 Questo processo riduce il tempo di caricamento, evita l’esecuzione di più chiamate di rete e consente ad Adobe Target di notificare quale elemento mbox è stato visitato dall’utente dell’app mobile. Tutto il contenuto verrà recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e lo stesso verrà recuperato dalla cache per tutte le chiamate future che contengono contenuto nella cache per il nome mbox specificato.
 

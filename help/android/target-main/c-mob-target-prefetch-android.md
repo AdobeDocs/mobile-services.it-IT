@@ -3,9 +3,9 @@ description: La funzione di preacquisizione di Adobe Target utilizza gli SDK per
 title: Preacquisizione del contenuto delle offerte in Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '738'
 ht-degree: 92%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 92%
 # Preacquisizione del contenuto delle offerte in Android {#prefetch-offer-content-in-android}
 
 La funzione di preacquisizione di Adobe Target utilizza gli SDK per dispositivi mobili Android per recuperare il contenuto delle offerte il minor numero di volte possibile, memorizzando nella cache le risposte dal server.
-
->[!IMPORTANT]
->
->La funzionalità di preacquisizione preventiva negli SDK Mobile per Android non è supportata per i tipi di attività di destinazione automatica, allocazione automatica e Automated Personalization (Personalizzazione automatica) in Adobe Target.
 
 Questo processo riduce il tempo di caricamento, evita l’esecuzione di più chiamate di rete e consente ad Adobe Target di notificare quale elemento mbox è stato visitato dall’utente dell’app mobile. Tutto il contenuto verrà recuperato e memorizzato nella cache durante la chiamata di preacquisizione, e lo stesso verrà recuperato dalla cache per tutte le chiamate future che contengono contenuto nella cache per il nome mbox specificato.
 
