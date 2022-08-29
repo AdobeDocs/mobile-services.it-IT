@@ -5,9 +5,9 @@ title: File di configurazione ADBMobile JSON
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1591'
 ht-degree: 99%
 
 ---
@@ -83,24 +83,6 @@ Lo stesso file di configurazione può essere utilizzato per l&#39;app su più pi
    >Questa variabile è obbligatoria per Target.
 
    * Versione SDK minima: 4.0
-
-* **coopUnsafe**
-
-   Per i membri Device Co-op che richiedono che questo valore sia impostato come `true`, è necessario collaborare con il team Co-op per richiedere un flag di blocklist per l’account Device Co-op. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
-
-   Considerazioni da ricordare:
-
-   * Quando `coopUnsafe` è impostato su `true`, `coop_unsafe=1` agli hit di Audience Manager e del servizio ID visitatori verrà sempre aggiunto.
-   * Se abiliti l’inoltro lato server da Analytics ad Audience Manager, negli hit di Analytics troverai `coop_unsafe=1`.
-
-   Seguono alcune informazioni aggiuntive:
-
-   * Versione SDK minima: 4.16.1
-   * Proprietà booleana dell’oggetto `marketingCloud` che, se impostata su `true`, determina il rifiuto di partecipazione a Experience Cloud Device Co-op.
-   * Il valore predefinito è `false`.
-   * Questa impostazione è utilizzata **solo** per i clienti abilitati per Device Co-op.
-
-
 
 * **environmentId**
 
