@@ -6,10 +6,10 @@ title: Esperienza - Messaggio push
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -60,6 +60,7 @@ Di seguito sono riportati i requisiti per l’invio di notifiche push potenziate
       >[!IMPORTANT]
       >
       >Considerazioni da ricordare:
+      >
       >* I messaggi push potenziati inviati a versioni precedenti vengono comunque inviati, ma risulterà visibile solo il testo.
       >* Al momento, gli orologi non sono supportati.
 
@@ -75,12 +76,7 @@ Di seguito sono riportati i requisiti per l’invio di notifiche push potenziate
    * Solo HTTPS
 
 * **Ridimensionamento**
-   * Le immagini devono essere in formato 2:1, altrimenti verranno ritagliate.
-
-Per ulteriori informazioni sulla configurazione delle notifiche push potenziate, vedi:
-
-* [Ricevere notifiche push in Android](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Ricevere notifiche push potenziate in iOS](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+   * Le immagini devono essere in formato 2:1 o ritagliate.
 
 Per configurare un messaggio push nella pagina Esperienza:
 
@@ -88,7 +84,7 @@ Per configurare un messaggio push nella pagina Esperienza:
 
    * **[!UICONTROL Payload: Dati]**
 
-      Specifica un payload push personalizzato in JSON da inviare all’app tramite una notifica push o locale. Il limite per Android e iOS è di 4 KB.
+      Specifica un payload push personalizzato in JSON inviato all’app tramite una notifica push o locale. Il limite per Android e iOS è di 4 KB.
 
    * **[!UICONTROL Opzioni Apple: Categoria]**
 
@@ -102,7 +98,7 @@ Per configurare un messaggio push nella pagina Esperienza:
 
       Seleziona questa opzione affinché, all’arrivo del messaggio, iOS riattivi l’app in background e le consenta di eseguire un codice in base al payload del messaggio. Per maggiori informazioni, consulta [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) nella *iOS Developer Library*.
 
-1. (Facoltativo) Per verificare il layout del messaggio, fai clic sulle icone seguenti:
+2. (Facoltativo) Per verificare il layout del messaggio, fai clic sulle icone seguenti:
 
    * **[!UICONTROL x Riepilogo]**
 
@@ -125,11 +121,11 @@ Per configurare un messaggio push nella pagina Esperienza:
       Per visualizzare l’anteprima del messaggio sul tablet di un utente, fai clic sull’icona del ![tablet](assets/icon_tablet.png).
    Nella parte inferiore del riquadro di anteprima puoi visualizzare una descrizione del pubblico che hai selezionato nel passaggio precedente.
 
-1. (**Facoltativo**) Fai clic su **[!UICONTROL Prova]** per inviare in push il messaggio a dispositivi specifici a scopo di test.
-1. Seleziona il servizio e digita i token push per almeno un dispositivo al quale vuoi inviare il messaggio push.
+3. (**Facoltativo**) Fai clic su **[!UICONTROL Prova]** per inviare in push il messaggio a dispositivi specifici a scopo di test.
+4. Seleziona il servizio e digita i token push per almeno un dispositivo al quale vuoi inviare il messaggio push.
 
    Per inviare il messaggio push a più dispositivi, specifica i token in un elenco di voci separate da virgola.
 
-1. Configura le opzioni di pianificazione per il messaggio.
+5. Configura le opzioni di pianificazione per il messaggio.
 
    Per ulteriori informazioni, consulta [Pianificazione: messaggio push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).

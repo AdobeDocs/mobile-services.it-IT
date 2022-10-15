@@ -6,9 +6,9 @@ title: Introduzione
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 97%
 
 ---
@@ -119,11 +119,7 @@ Grazie alla funzionalità di localizzazione GPS, un dispositivo mobile permette 
 
  Adobe Target per le app mobili ora sfrutta appieno la segmentazione avanzata e le funzioni di reporting disponibili tramite Adobe Analytics. Questo significa che Adobe Target è in grado di utilizzare tutte le metriche app chiave elaborate da Analytics per attività di targetizzazione e personalizzazione; inoltre, Target offre un livello di profondità maggiore nei rapporti, consentendo agli esperti di marketing di comprendere meglio le tipiche domande “cosa succede se...”, le cui risposte potrebbero risultare non immediate per un responsabile marketing sotto pressione, con l’esigenza di dimostrare in tempi rapidi la redditività dell’investimento di un’app. L’integrazione di Analytics con Target per app è un’offerta combinata che rappresenta la soluzione di interazione con app più solida attualmente presente sul mercato.
 
-Per ulteriori informazioni sulla localizzazione, consulta:
-
-* [Posizione nella guida utente di Mobile Services](/help/using/location/c-location-overview.md)
-* [Posizione nella guida dell’SDK Android](/help/android/location/location.md)
-* [Posizione nella guida dell’SDK iOS](/help/ios/location/location.md)
+Per ulteriori informazioni sulla posizione, consulta [Posizione](/help/using/location/c-location-overview.md).
 
 ## SDK di Adobe Mobile {#mobile-services-sdk}
 
@@ -157,5 +153,3 @@ L’SDK di Adobe Mobile offre le seguenti caratteristiche:
 
    * Riduce al minimo il carico di elaborazione richiesto per l’invio di dati ai server Adobe e ai sistemi esterni.
    * L’ingombro ridotto limita le dimensioni del pacchetto dell’app che viene inviato agli app store.
-
-Per maggiori informazioni sugli SDK di Adobe Mobile, consulta [SDK 4.x per Android per le soluzioni Experience Cloud](/help/android/overview.md) e [SDK 4.x per iOS per le soluzioni Experience Cloud](/help/ios/overview.md).

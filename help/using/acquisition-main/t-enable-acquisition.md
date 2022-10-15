@@ -6,9 +6,9 @@ title: Configurare l’acquisizione
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
@@ -33,4 +33,3 @@ Per poter tener traccia dei collegamenti di acquisizione e generare i relativi r
 1. Scarica e usa il nuovo file di configurazione SDK nella tua app.
 
    A questo punto hai configurato correttamente l’acquisizione su **iOS**.
-Per attivarla anche su **Android**, completa i passaggi nella sezione [Tracciamento dell’acquisizione mobile](/help/android/acquisition-main/acquisition.md).

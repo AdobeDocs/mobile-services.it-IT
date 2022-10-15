@@ -6,9 +6,9 @@ title: Risoluzione dei problemi dei messaggi in-app
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Hai aggiornato il file manifesto per definire l’attività a schermo intero?
 
 ## Il mio messaggio di notifica locale in Android non funziona.
 
-Verifica che nel file manifesto sia dichiarato il destinatario della trasmissione della notifica locale. Per ulteriori informazioni, vedi il passaggio 1 in [Abilitare i messaggi in-app](/help/android/messaging-main/messaging/messaging.md).
+Verifica che nel file manifesto sia dichiarato il destinatario della trasmissione della notifica locale.
 
 ## Il messaggio è attivo?
 
@@ -43,7 +43,7 @@ Verifica che le seguenti impostazioni siano corrette. Nella pagina Pubblico, con
 
 ## Se utilizzi l’evento di avvio come attivatore...
 
-L’avvio viene attivato solo su una nuova sessione. Per informazioni su quando ha inizio una sessione, vedi   `lifecycleTimeout` nel [file di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
+L’avvio viene attivato solo su una nuova sessione.
 
 ## Ho aggiornato il mio messaggio in remoto, ma l’app visualizza ancora il messaggio precedente.
 

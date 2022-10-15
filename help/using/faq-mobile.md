@@ -6,9 +6,9 @@ title: Domande frequenti
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1013'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ Gli SDK Adobe Mobile utilizzano gli stack di rete standard iOS e Android. Per iO
 
 ### Cosa sono le metriche del ciclo di vita?
 
-Le Metriche del ciclo di vita sono metriche &quot;pronte all’uso&quot; che vengono raccolte automaticamente al momento della prima implementazione dell’SDK nell’app. Per ulteriori informazioni, vedi [Metriche del ciclo di vita (Android)](/help/android/metrics.md) e [Metriche del ciclo di vita (iOS)](/help/ios/metrics.md).
+Le Metriche del ciclo di vita sono metriche &quot;pronte all’uso&quot; che vengono raccolte automaticamente al momento della prima implementazione dell’SDK nell’app.
 
 ### Come posso risolvere i problemi relativi alle regole di elaborazione?
 
@@ -49,7 +49,7 @@ Vedi [Suggerimenti e trucchi per le regole di elaborazione](https://experiencele
 
 ### Posso inviare i miei dati di analisi a più suite di rapporti?
 
-Sì. Gli SDK consentono di inviare dati a più suite di rapporti Adobe Analytics. Per acquisire i dati in più suite di rapporti utilizzando una richiesta di immagine, imposta gli ID suite di rapporti nel campo **[!UICONTROL rsids]** nella sezione **[!UICONTROL anayltics]** del file `ADBMobileConfig.json`, separandoli con virgole e senza usare spazi. Per ulteriori informazioni, vedi [File di configurazione ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
+Sì. Gli SDK consentono di inviare dati a più suite di rapporti Adobe Analytics. Per acquisire i dati in più suite di rapporti utilizzando una richiesta di immagine, imposta gli ID suite di rapporti nel campo **[!UICONTROL rsids]** nella sezione **[!UICONTROL anayltics]** del file `ADBMobileConfig.json`, separandoli con virgole e senza usare spazi.
 
 ### In che modo le visite per dispositivi mobili sono diverse dagli avvii?
 

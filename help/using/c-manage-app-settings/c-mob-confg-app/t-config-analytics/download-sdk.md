@@ -6,9 +6,9 @@ title: Download di strumenti e SDK per dispositivi mobili
 topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -27,9 +27,4 @@ Puoi scaricare un file `ADBMobileConfig.json` personalizzato con le impostazioni
 
 ## Librerie native {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-Configura l’app in Adobe Mobile Services per scaricare un pacchetto personalizzato comprensivo di una versione precompilata del file di configurazione:
-
-* [Istruzioni per iOS](/help/ios/getting-started/requirements.md)
-* [Istruzioni per Android](/help/android/getting-started/requirements.md)
-
-Per visualizzare la documentazione relativa alle librerie native, inclusi Windows Phone 8, Blackberry, Xamarin e altri, consulta la sezione *Documentazione SDK* in [Adobe Mobile Services](/help/using/home.md).
+Configura l’app in Adobe Mobile Services per scaricare un pacchetto personalizzato comprensivo di una versione precompilata del file di configurazione.

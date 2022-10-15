@@ -6,9 +6,9 @@ title: Configurare i messaggi push
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '272'
 ht-degree: 100%
 
 ---
@@ -48,9 +48,4 @@ Prima di configurare i messaggi push, completa i prerequisiti in [Prerequisiti p
 
       Specifica una chiave API valida. Per ulteriori informazioni su come ottenere la chiave API, consulta [Configurare l’app per l’uso di APNS o FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
-      Per maggiori informazioni, vedi i seguenti argomenti:
-
-      * [Messaggi push in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [Messaggi push in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-1. Fai clic su **[!UICONTROL Salva]**.
+2. Fai clic su **[!UICONTROL Salva]**.

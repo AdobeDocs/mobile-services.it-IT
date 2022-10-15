@@ -6,10 +6,10 @@ title: Gestione dell’app
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -22,11 +22,6 @@ Puoi tracciare e gestire i dati che ricevi dall’app configurando una serie di 
 * **Variabili e metriche standard**
 
    Ogni app include variabili e metriche per il tracciamento del carrello e delle attività di acquisto. Poiché alcune informazioni di acquisto non possono essere gestite mediante regole di elaborazione, l’SDK espone i dati contestuali speciali `"&&products"`. Ad esempio, puoi avere variabili quali aggiunte al carrello, rimozioni dal carrello, pagamento, ordini e così via. I dati contestuali devono essere mappati su dati in Adobe Analytics. Se questa variabile viene compilata con una semplice mappatura dai dati di contesto, questa è la chiave che viene mappata su di essa. Lascia vuoto il valore se la variabile viene compilata da regole più complesse in Strumenti di amministrazione di Analytics.
-
-   Per ulteriori informazioni su queste variabili e metriche, vedi:
-
-   * [Variabili di prodotto in Android](/help/android/analytics-main/products/products.md)
-   * [Variabili di prodotto in iOS](/help/ios/analytics-main/products/products.md)
 
 * **Variabili personalizzate**
 
@@ -47,7 +42,7 @@ L’elenco seguente contiene le variabili personalizzate che puoi configurare:
    Quando un valore viene impostato per una proprietà in una chiamata di tracciamento (o hit), viene applicato solo a tale chiamata.
 
 * La **[!UICONTROL Variabili personalizzate]** (o eVar) risponde anche alla domanda &quot;quale?&quot; Tuttavia, un valore eVar può essere applicato non solo all’hit in cui viene inviato, ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all’impostazione di un nuovo valore.
-* Le **[!UICONTROL Variabili di elenco personalizzate (o variabili multivalore)]** si comportano come le normali variabili, ma permettono di acquisire più valori con un solo hit. Per ulteriori informazioni, consulta [elenco](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) nella documentazione di Adobe Analytics.
+* Le **[!UICONTROL Variabili di elenco personalizzate (o variabili multivalore)]** si comportano come le normali variabili, ma permettono di acquisire più valori con un solo hit. Per ulteriori informazioni, consulta [elenco](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=it) nella documentazione di Adobe Analytics.
 
 Le seguenti mappature sono visualizzate in Analytics in quanto create in Mobile Services.
 

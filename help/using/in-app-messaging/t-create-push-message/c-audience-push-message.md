@@ -6,9 +6,9 @@ title: 'Pubblico: definire e configurare i segmenti di pubblico per i messaggi p
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '958'
 ht-degree: 98%
 
 ---
@@ -85,11 +85,6 @@ Di seguito sono riportati alcuni esempi per comprendere come definire correttame
       Questo significa che l’SDK ha inviato un valore `True` per l’eVar Messaggio push di consenso.
 
    * Anche se il dispositivo ha un token dispositivo valido, il messaggio non viene inviato al dispositivo a meno che Adobe Analytics non abbia impostato il flag che indica il consenso prestato.
-
-   * Per ulteriori informazioni sulla risoluzione dei problemi dei messaggi push, vedi:
-
-      * [Messaggi push in iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Messaggi push in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. Digita le informazioni nei campi seguenti:
 
