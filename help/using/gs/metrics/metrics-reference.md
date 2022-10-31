@@ -6,7 +6,7 @@ title: Riferimento per le metriche e le dimensioni di Mobile
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Riferimento per le metriche e le dimensioni di Mobile {#mobile-metrics-and-dimensions-reference}
+
+{#eol}
 
 Queste informazioni sono utili per comprendere meglio le metriche e le dimensioni predefinite di Mobile.
 

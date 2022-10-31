@@ -6,7 +6,7 @@ title: Rapporto Utenti e sessioni
 topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Rapporto Utenti e sessioni {#users-and-sessions}
+
+{#eol}
 
 Il rapporto Utenti e sessioni visualizza le metriche relative ai visitatori univoci nell’intervallo di tempo selezionato.
 

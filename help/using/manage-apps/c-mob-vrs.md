@@ -3,14 +3,16 @@ description: Una suite di rapporti virtuale (VRS) è suite di rapporti che è st
 title: Suite di rapporti virtuali
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
 # Suite di rapporti virtuali {#virtual-report-suites}
+
+{#eol}
 
 Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata applicando una o più definizioni di segmento a una suite di rapporti. In questo modo gli utenti possono mantenere i propri dati in una singola suite di rapporti ma gestirli come se fossero contenuti in suite di rapporti separate.
 
@@ -51,7 +53,7 @@ Una VRS può essere utile per completare le seguenti attività:
 
 >[!IMPORTANT]
 >
->Solo gli amministratori di Adobe Analytics possono creare e modificare le suite di rapporti virtuali in Adobe Analytics. Per creare una suite di rapporti virtuale, consulta [Creare suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) nella documentazione di Adobe Analytics.
+>Solo gli amministratori di Adobe Analytics possono creare e modificare le suite di rapporti virtuali in Adobe Analytics. Per creare una suite di rapporti virtuale, vedi [Creare suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html?lang=it) nella documentazione di Adobe Analytics.
 
 Ogni VRS ha un ID univoco. Per visualizzare l’ID suite di rapporti principali nell’interfaccia utente di Adobe Mobile Services, nella pagina Gestisci impostazioni app, nella sezione **[!UICONTROL Informazioni app]**, fai clic su **[!UICONTROL Maggiori dettagli]**.
 
@@ -119,5 +121,5 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 
 Seguono alcune informazioni aggiuntive sulle suite di rapporti virtuali:
 
-* Per ulteriori informazioni sulle VRS, consulta [Panoramica sulle suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Per ulteriori informazioni sulle VRS, consulta [Panoramica delle suite di rapporti virtuali](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=it).
 * Per ulteriori informazioni sulla pianificazione dell’implementazione di una VRS, consulta [Virtual Report Suite Workflow](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html) (Flusso di lavoro delle suite di rapporti virtuali).

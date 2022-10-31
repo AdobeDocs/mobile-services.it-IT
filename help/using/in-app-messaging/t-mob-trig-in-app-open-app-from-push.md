@@ -3,7 +3,7 @@ description: È possibile impostare come attivatore del messaggio in-app l’ID 
 title: Attivare un messaggio in-app quando l’app viene aperta da un messaggio push
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 89%
@@ -11,6 +11,8 @@ ht-degree: 89%
 ---
 
 # Attivare un messaggio in-app quando l’app viene aperta da un messaggio push{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+
+{#eol}
 
 È possibile impostare come attivatore del messaggio in-app l’ID del messaggio push che viene inviato quando un utente apre l’app dal messaggio push.
 

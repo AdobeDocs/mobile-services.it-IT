@@ -3,7 +3,7 @@ description: In Adobe Analytics puoi gestire i ruoli nella home page di Strument
 title: Ruoli e autorizzazioni
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: 7b26c852dd9dba67a8b5e3228c1fecadfb465dca
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 61%
@@ -11,6 +11,8 @@ ht-degree: 61%
 ---
 
 # Ruoli e autorizzazioni{#roles-and-permissions}
+
+{#eol}
 
 In Adobe Analytics puoi gestire i ruoli nella home page di Strumenti di amministrazione.
 
@@ -20,7 +22,7 @@ I seguenti ruoli possono gestire le autorizzazioni nell’interfaccia utente di 
 
 ### Amministratore di Analytics
 
-Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. The Experience Cloud Admin links your Adobe ID to your Adobe Analytics account, which allows you to log in to the Mobile Services UI by using your Adobe ID. [](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it)
+Un amministratore di Analytics gestisce i gruppi di utenti e assegna le autorizzazioni, tra cui quella denominata Amministratori app mobili. L’amministratore di Experience Cloud collega il tuo Adobe ID al tuo account Adobe Analytics, che ti consente di accedere all’interfaccia utente di Mobile Services utilizzando il tuo Adobe ID. Per ulteriori informazioni sull’amministratore di Experience Cloud, consulta [Gestione di utenti e prodotti Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it) nella guida Experience Cloud Central Interface Components .
 
 >[!TIP]
 >
@@ -40,7 +42,7 @@ Seguono alcune informazioni aggiuntive sulle opzioni di accesso dell’interfacc
 
 ### App e suite di rapporti
 
-All Mobile Service apps are tied to report suites. Se gli utenti non hanno accesso a una suite di rapporti, non possono accedere all’app associata a tale suite di rapporti.
+Tutte le app Mobile Services sono associate a suite di rapporti. Se gli utenti non hanno accesso a una suite di rapporti, non possono accedere all’app associata a tale suite di rapporti.
 
 ### Mobile Services e funzioni di Analytics
 
@@ -53,8 +55,8 @@ Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, c
 ### Amministratore di Analytics permissions
 
 * Tutte le autorizzazioni utente e autorizzazioni dell’amministratore di app mobili
-* Create App with new report suite
-* Delete App from Mobile Services
+* Creare app con una nuova suite di rapporti
+* Eliminare app da Mobile Services
 
    >[!IMPORTANT]
    >
@@ -62,33 +64,33 @@ Di seguito sono elencati i ruoli dell’interfaccia utente di Mobile Services, c
 
 * Gestire le impostazioni dell’app
 
-   * Enable Lifecycle Reporting
-   * Enable Location Reporting
-   * Create/Update/Delete Variables and Metrics
+   * Abilitare i rapporti sul ciclo di vita
+   * Abilitare i rapporti sulla posizione
+   * Creare/aggiornare/eliminare variabili e metriche
 
 ### Amministratori app mobili permissions
 
-* All User Permissions
-* Create App with existing report suite
+* Tutte le autorizzazioni utente
+* Creare app con suite di rapporti esistente
 * Gestire le impostazioni dell’app
 
    * Configurare le opzioni SDK di Mobile dell’app
    * Configurare le impostazioni di interfaccia dell’app
    * Configurare le app dell’app store collegate
    * Configurare le opzioni Collegamento universale dell’app
-   * Configure Push Services certs and API keys
-   * Create/Update/Activate/Deactivate/Duplicate/Archive/Delete Postbacks
-   * Create/Update/Archive/Delete Link Destinations
+   * Configurare i certificati Servizi push e le chiavi API
+   * Creare/aggiornare/attivare/disattivare/duplicare/archiviare/eliminare postback
+   * Creare/aggiornare/archiviare/eliminare destinazioni collegamenti
 
-* Create/Update/Archive Marketing Links
-* Create/Import/Update/Delete Legacy Acquisition Links
-* Create/Import/Update/Delete Places (Points of Interest) configuration
-* Create/Update/Send/Schedule/Cancel/Duplicate/Archive/Delete Push Messages
-* Create/Update/Activate/Deactivate/Duplicate/Archive/Delete In-App Messages
+* Creare/aggiornare/archiviare collegamenti di marketing
+* Creare/importare/aggiornare/eliminare collegamenti di acquisizione legacy
+* Creare/importare/aggiornare/eliminare la configurazione Luoghi (Punti di interesse)
+* Creare/aggiornare/inviare/programmare/annullare/duplicare/archiviare/eliminare messaggi push
+* Creare/aggiornare/attivare/disattivare/duplicare/archiviare/eliminare messaggi in-app
 
-For more information about groups and users, see the following content in the Adobe Analytics documentation:
+Per ulteriori informazioni su gruppi e utenti, consulta i seguenti contenuti nella documentazione di Adobe Analytics:
 
-* [](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=it)
+* [Impostazioni gruppo di utenti (legacy)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=it)
 * [Aggiungi un utente a un gruppo](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Utente di Mobile Services
@@ -96,23 +98,23 @@ For more information about groups and users, see the following content in the Ad
 Questo ruolo dispone di autorizzazioni di sola lettura e può fornire un feedback nell’interfaccia di Mobile Services.
 
 * Fornire un feedback nell’interfaccia di Mobile Services
-* View Apps
+* Visualizza app
 
    >[!IMPORTANT]
    >
    >Gli utenti possono visualizzare solo le suite di rapporti alle quali hanno accesso in Adobe Analytics.
 
-* View App Settings
+* Visualizza impostazioni app
 
    * Scaricare la configurazione dell’SDK per app
    * Visualizzare tutte le impostazioni dell’interfaccia e dell’SDK
-   * View Variables and Metrics configuration
-   * View Postbacks
-   * View Link Destinations
+   * Visualizzare la configurazione di variabili e metriche
+   * Visualizza postback
+   * Visualizzare le destinazioni dei collegamenti
 
 * Visualizzare ed eseguire i rapporti
 * Visualizzare i collegamenti di marketing
-* View and Export Legacy Acquisition Links
-* View and Export Places (Points of Interest) configuration
-* View Push Messages
-* View In-App Messages
+* Visualizzare ed esportare collegamenti di acquisizione legacy
+* Visualizzare ed esportare la configurazione Luoghi (Punti di interesse)
+* Visualizzare i messaggi push
+* Visualizzare messaggi in-app

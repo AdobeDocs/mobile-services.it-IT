@@ -6,7 +6,7 @@ title: Esperienza - Messaggio in-app
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Esperienza: messaggio in-app {#experience-in-app-message}
+
+{#eol}
 
 Configura l’esperienza per i messaggi in-app mediante le opzioni relative al tipo (a schermo intero, avviso o notifica), alla visualizzazione, al testo e ai pulsanti.
 

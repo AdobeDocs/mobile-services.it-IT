@@ -6,7 +6,7 @@ title: Acquisizione
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Acquisizione {#acquisition}
+
+{#eol}
 
 Gli addetti al marketing possono creare collegamenti di tracciamento per promuovere e indirizzare il traffico verso le loro app. Questi collegamenti di tracciamento possono dirigere gli utenti verso app store, collegamenti profondi nelle app e interstiziali, che possono essere correlati a comportamenti in-app. Un esperto di marketing può creare un collegamento per indirizzare gli utenti a iOS, Android o altre piattaforme, a seconda delle necessità.
 

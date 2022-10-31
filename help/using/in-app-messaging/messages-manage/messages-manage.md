@@ -6,7 +6,7 @@ title: Gestire i messaggi
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Gestire i messaggi{#manage-messages}
+
+{#eol}
 
 Visualizza un elenco dei messaggi in-app e push con dettagli sull’ultimo aggiornamento e sullo stato (attivo o disattivato) di ciascuno.
 

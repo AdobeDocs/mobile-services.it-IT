@@ -6,7 +6,7 @@ title: Rapporto Mantenimento
 topic-fix: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 exl-id: de68f00a-5de0-4e9a-9255-207a1a44df6e
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Rapporto Mantenimento {#retention}
+
+{#eol}
 
 Il rapporto **[!UICONTROL Mantenimento]** (precedentemente denominato First Launch Cohorts, Coorti primo avvio) è un rapporto di coorte che indica quanti utenti univoci hanno avviato la tua app per la prima volta e quindi l’hanno avviata di nuovo almeno una volta nei mesi successivi.
 

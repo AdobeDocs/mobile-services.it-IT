@@ -6,7 +6,7 @@ title: Aggiungere filtri ai rapporti
 topic-fix: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 exl-id: eb0589e9-668e-42d7-8f7a-00d7f0a2e3ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Aggiungere filtri ai rapporti {#add-filters-to-reports}
+
+{#eol}
 
 Queste informazioni sono utili per personalizzare i rapporti incorporati aggiungendo altri filtri (segmenti).
 

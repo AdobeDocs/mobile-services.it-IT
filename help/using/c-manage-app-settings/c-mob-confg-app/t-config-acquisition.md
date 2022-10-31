@@ -6,7 +6,7 @@ title: Configurare le opzioni SDK acquisizione
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Configurare le opzioni SDK acquisizione {#configure-sdk-acquisition-options}
+
+{#eol}
 
 Puoi configurare le Opzioni SDK acquisizione nella pagina Gestione impostazioni app quando crei una nuova app o ne modifichi una esistente.
 
