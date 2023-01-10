@@ -6,7 +6,7 @@ user-guide-description: Mobile Services è una soluzione end-to-end che consente
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 # Guida di Mobile Services {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [Annuncio di fine vita](eol.md)
++ [Annuncio sulla fine del ciclo di vita](eol.md)
 + Introduzione {#get-started-ug}
    + [Introduzione](gs/gs.md)
    + [Ruoli e autorizzazioni](gs/c-mob-roles-and-permissions.md)
