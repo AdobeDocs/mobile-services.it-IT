@@ -104,7 +104,7 @@ Di seguito sono riportati alcuni esempi per comprendere come definire correttame
 
    * **[!UICONTROL Segmenti di Analytics]**
 
-      Seleziona un segmento esistente di Adobe Analytics dall’elenco a discesa. Per ulteriori informazioni, consulta la sezione [Generatore di segmenti](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=it) nella documentazione di Adobe Analytics.
+      Seleziona un segmento esistente di Adobe Analytics dall’elenco a discesa. Per ulteriori informazioni, vedere [Generatore di segmenti](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=it) nella documentazione di Adobe Analytics.
 
    * **[!UICONTROL Segmenti personalizzati]**
 

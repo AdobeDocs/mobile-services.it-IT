@@ -39,8 +39,8 @@ ht-degree: 89%
 1. Salva e invia il messaggio push che ha l’ID push individuato al punto 1.
 1. Fai clic sul messaggio push per aprire l’app e verifica che il messaggio in-app sia visualizzato quando l’app si apre.
 
-   Durante il test, ricorda quanto segue:
+   Durante il test, ricorda le seguenti informazioni:
 
-   * Dopo aver salvato il messaggio in-app, l&#39;aggiornamento del file di configurazione in hosting con il nuovo messaggio richiede circa 45 secondi.
+   * Dopo aver salvato il messaggio in-app, occorrono circa 45 secondi prima che il file di configurazione ospitato venga aggiornato con il nuovo messaggio.
    * L’app cerca gli aggiornamenti del file di configurazione (il nuovo messaggio in-app) quando viene eseguito un **nuovo** avvio, quindi devi assicurarti che l’app attivi un nuovo avvio quando fai clic sul messaggio push.
    In genere, questo significa controllare che sia scaduto l’intervallo di timeout della sessione. L’intervallo predefinito è di 5 minuti.

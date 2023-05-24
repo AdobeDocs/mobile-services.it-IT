@@ -33,7 +33,7 @@ Puoi tracciare e gestire i dati che ricevi dall’app configurando una serie di 
 
 Fai clic su **[!UICONTROL Gestione impostazioni app]** > **[!UICONTROL Gestione variabili e metriche]** > **[!UICONTROL Variabili personalizzate]**.
 
-Queste mappature chiamano la stessa API che [Regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) in Adobe Analytics.
+Queste mappature chiamano la stessa API che [Regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) utilizzo in Adobe Analytics.
 
 ![Mappatura dati contestuali](assets/custom_data_content.png)
 
@@ -43,8 +43,8 @@ L’elenco seguente contiene le variabili personalizzate che puoi configurare:
 
    Quando un valore viene impostato per una proprietà in una chiamata di tracciamento (o hit), viene applicato solo a tale chiamata.
 
-* La **[!UICONTROL Variabili personalizzate]** (o eVar) risponde anche alla domanda &quot;quale?&quot; Tuttavia, un valore eVar può essere applicato non solo all’hit in cui viene inviato, ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all’impostazione di un nuovo valore.
-* Le **[!UICONTROL Variabili di elenco personalizzate (o variabili multivalore)]** si comportano come le normali variabili, ma permettono di acquisire più valori con un solo hit. Per ulteriori informazioni, consulta [elenco](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=it) nella documentazione di Adobe Analytics.
+* Il **[!UICONTROL Variabili personalizzate]** (o eVar) rispondi anche alla domanda &quot;quale?&quot; Tuttavia, un valore eVar può essere applicato non solo all’hit in cui viene inviato ma anche alle variabili e alle metriche inviate negli hit successivi, fino alla scadenza del valore o all’impostazione di un nuovo valore.
+* Le **[!UICONTROL Variabili di elenco personalizzate (o variabili multivalore)]** si comportano come le normali variabili, ma permettono di acquisire più valori con un solo hit. Per ulteriori informazioni, consulta [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=it) variabili nella documentazione di Adobe Analytics.
 
 Le seguenti mappature sono visualizzate in Analytics in quanto create in Mobile Services.
 

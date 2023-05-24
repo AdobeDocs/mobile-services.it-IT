@@ -55,7 +55,7 @@ Nella pagina Panoramica puoi effettuare le seguenti operazioni:
 
 * **Visualizzare gli indicatori prestazioni chiave**
 
-   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le linee del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati qualunque per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
+   Fai clic sul nome dell’app per visualizzare i dettagli degli indicatori prestazioni chiave. Le linee del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Per approfondire, fai clic sull’icona accanto a **[!UICONTROL Indicatori prestazioni chiave]**. Le singole righe del grafico hanno colori diversi, e puoi passare il cursore sopra un punto dati per visualizzare le statistiche relative a date specifiche. Fai clic su un’intestazione di colonna nella tabella per disporre i relativi dati in ordine crescente o decrescente.
 
 ## Modificare le impostazioni di un’app {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 

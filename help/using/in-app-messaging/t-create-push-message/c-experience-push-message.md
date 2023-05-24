@@ -78,7 +78,7 @@ Di seguito sono riportati i requisiti per l’invio di notifiche push potenziate
    * Solo HTTPS
 
 * **Ridimensionamento**
-   * Le immagini devono essere in formato 2:1 o ritagliate.
+   * Le immagini devono essere in formato 2:1 oppure vengono ritagliate.
 
 Per configurare un messaggio push nella pagina Esperienza:
 
@@ -86,7 +86,7 @@ Per configurare un messaggio push nella pagina Esperienza:
 
    * **[!UICONTROL Payload: Dati]**
 
-      Specifica un payload push personalizzato in JSON inviato all’app tramite una notifica push o locale. Il limite per Android e iOS è di 4 KB.
+      Specifica un payload push personalizzato in JSON da inviare all’app tramite una notifica push o locale. Il limite per Android e iOS è di 4 KB.
 
    * **[!UICONTROL Opzioni Apple: Categoria]**
 

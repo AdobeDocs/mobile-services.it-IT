@@ -30,7 +30,7 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
       * **Acquisizione**
 
-         Tieni traccia degli URL di riferimento per le campagne di download delle app. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
+         Tracciare gli URL di riferimento per le campagne di download di app. Per ulteriori informazioni, vedi [Acquisizione](/help/using/acquisition-main/acquisition-main.md).
 
       * **Ciclo di vita**
 
@@ -38,21 +38,21 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
       * **Azioni app**
 
-         Abilita rapporti e percorsi basati sulle azioni in-app.
+         Abilita rapporti e percorsi in base alle azioni in-app.
 
       * **Valore del ciclo di vita**
 
-         Scopri come cresce nel tempo il valore degli utenti utilizzando KPI per le app quali acquisti, visualizzazioni di annunci pubblicitari, visualizzazioni di video completate, condivisioni social, caricamenti di foto e altro ancora.
+         Scopri in che modo gli utenti maturano valore nel tempo utilizzando i KPI dell’app, ad esempio acquisti, visualizzazioni di annunci pubblicitari, riproduzioni video completate, condivisioni social, caricamenti di foto e altro ancora.
 
       * **Eventi temporizzati**
 
-         Misura quanto tempo (in-app e totale) intercorre tra le azioni chiave dell’app, ad esempio il tempo che trascorre prima del primo acquisto.
+         Misura quanto tempo (in-app e totale) intercorre tra le azioni in-app principali, ad esempio il tempo che precede il primo acquisto.
 
 * **Rapporti sulla posizione**
 
-   Questa opzione consente di abilitare i rapporti per tenere traccia di latitudine e longitudine e identificare punti di interesse specifici. Puoi anche tenere traccia dei beacon Bluetooth (UUID, principale, secondario e prossimità).
+   Questa opzione consente di abilitare i rapporti per tenere traccia di latitudine e longitudine e identificare punti di interesse (POI) specifici. È inoltre possibile tenere traccia dei beacon Bluetooth (UUID, principale, secondario e prossimità).
 
-* **SDK per app e strumenti per sviluppatori e tester**
+* **SDK per app e strumenti di Tester per sviluppatori**
 
    >[!IMPORTANT]
    >
@@ -60,4 +60,4 @@ Nella pagina Gestione impostazioni app puoi effettuare i seguenti tipi di modifi
 
    Quando sei pronto ad eseguire l’aggiornamento agli SDK 4.x o se lavori su una nuova app, scarica gli SDK e gli strumenti di sviluppo più recenti dalla parte inferiore della pagina Gestione impostazioni app.
 
-   Una volta completata la configurazione, puoi inviare il file di configurazione ai tuoi sviluppatori in modo che i dati possano essere raccolti correttamente. Se non è ancora il momento di scaricare SDK e strumenti, fai clic su Gestione impostazioni app, quindi fai clic sull’app per visualizzare la pagina Informazioni app in qualsiasi momento.
+   Una volta completata la configurazione, puoi inviare il file di configurazione agli sviluppatori in modo che i dati possano essere raccolti correttamente. Se non è ancora il momento di scaricare SDK e strumenti, fai clic su Gestione impostazioni app, quindi fai clic sull’app per visualizzare la pagina Informazioni app in qualsiasi momento.

@@ -69,7 +69,7 @@ Per configurare la tua app Android per l’utilizzo di FCM in questo scenario:
 
 1. Copia la **[!UICONTROL Server key legacy]** e l’**[!UICONTROL ID mittente]**, da utilizzare in un secondo momento.
 
-   Esempio:
+   Ad esempio:
 
    ```
    - Legacy server key = AIzaSyC6FNgsCOpBL5eXhDvwf8979mWba6x7Roo

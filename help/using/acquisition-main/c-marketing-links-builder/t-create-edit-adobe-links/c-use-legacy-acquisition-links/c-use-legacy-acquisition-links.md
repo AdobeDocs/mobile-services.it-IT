@@ -1,5 +1,5 @@
 ---
-description: Queste informazioni sono utili per usare la funzionalità dei collegamenti di acquisizione legacy.
+description: Queste informazioni sono utili per usare la funzionalità legacy di collegamento di acquisizione.
 title: Utilizzare collegamenti di acquisizione legacy
 uuid: cee84d33-e7f9-428e-89a1-83554e7f4c5e
 exl-id: 361ccdac-f1bc-4ff7-bdb6-4bebc92a8404

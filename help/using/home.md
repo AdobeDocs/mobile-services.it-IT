@@ -15,12 +15,12 @@ ht-degree: 46%
 
 Questa guida illustra la documentazione tecnica e il supporto autonomo di Adobe Mobile Services, che riunisce le funzionalità di mobile marketing di applicazioni per dispositivi mobili da Adobe Experience Cloud, consentendoti di comprendere e migliorare il coinvolgimento dell’utente con le applicazioni mobili.
 
-## Terminazione di Mobile Services
+## Fine del ciclo di vita di Mobile Services
 
-Mobile Services raggiunge la fine del ciclo di vita **31 dicembre 2022**. Consulta la sezione [Domande frequenti sulla fine del ciclo di vita di Mobile Services](eol.md).
+Mobile Services raggiunge la fine del ciclo di vita il **31 dicembre 2022**. Consulta la [Domande frequenti sulla fine del ciclo di vita di Mobile Services](eol.md).
 
-## Fine di vita per gli SDK 4.x
+## Fine del ciclo di vita degli SDK 4.x
 
-Fine del supporto per gli SDK 4.x **31 agosto 2021**. Consulta la sezione [Domande frequenti sugli SDK per dispositivi mobili versione 4: fine del supporto](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Se la tua organizzazione richiede ancora gli SDK 4.x, puoi [scarica gli SDK e accedi alla documentazione](https://github.com/Adobe-Marketing-Cloud/mobile-services) su GitHub.
+Termina il supporto per gli SDK 4.x **31 agosto 2021**. Consulta la [Domande frequenti sugli SDK per dispositivi mobili versione 4: fine del supporto](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Se la tua organizzazione richiede ancora gli SDK 4.x, puoi [scaricare gli SDK e accedere alla documentazione](https://github.com/Adobe-Marketing-Cloud/mobile-services) su GitHub.
 
-La soluzione corrente di Adobe per il mobile marketing è l’SDK Adobe Experience Platform. Consulta la sezione [Documentazione di Adobe Experience Platform SDK](https://aep-sdks.gitbook.io/docs/).
+L’attuale soluzione di Adobe per il mobile marketing è l’SDK di Adobe Experience Platform. Consulta la [Documentazione di Adobe Experience Platform SDK](https://aep-sdks.gitbook.io/docs/).

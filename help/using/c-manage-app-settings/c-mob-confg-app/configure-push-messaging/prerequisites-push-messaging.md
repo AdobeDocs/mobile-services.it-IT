@@ -63,7 +63,7 @@ Ogni utente deve collegare l’account della soluzione Analytics dall’organizz
 
    Ora l’Adobe ID è collegato al tuo account Analytics, alla tua società e alle relative credenziali di accesso.
 
-Per ulteriori informazioni, consulta [Organizzazioni nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it) nella guida Experience Cloud Central Interface Components .
+Per ulteriori informazioni, consulta [Organizzazioni nell’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it) nella guida Experience Cloud Central Interface Components.
 
 ## Configurare i servizi push e l’SDK del servizio ID nell’interfaccia utente di Mobile
 

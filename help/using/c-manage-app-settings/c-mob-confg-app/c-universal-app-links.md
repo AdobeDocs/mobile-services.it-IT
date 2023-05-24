@@ -1,5 +1,5 @@
 ---
-description: Il collegamento all'interno di app e siti web è importante per mantenere l'esperienza utente. Scopri come funzionano i collegamenti universali e alle app e le loro differenze.
+description: Il collegamento all’interno di app e siti web è importante per mantenere l’esperienza utente. Scopri come funzionano i collegamenti universali e alle app e le loro differenze.
 solution: Experience Cloud Services,Analytics
 title: Guida ai collegamenti universali e alle app
 topic-fix: Metrics
@@ -12,7 +12,7 @@ ht-degree: 96%
 
 ---
 
-# Collegamenti universali e collegamenti app: Come funzionano? {#universal-links-and-app-links}
+# Collegamenti universali e collegamenti alle app: come funzionano? {#universal-links-and-app-links}
 
 {#eol}
 

@@ -22,8 +22,8 @@ Puoi configurare le opzioni del servizio Adobe Experience Cloud Identity nella p
 1. Compila i seguenti campi nella sezione **[!UICONTROL Servizio ID visitatore]**:
 
    * **[!UICONTROL Abilita]**
-Abilita questa opzione per utilizzare il servizio ID. Per ulteriori informazioni, consulta la sezione [Panoramica del servizio Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=it).
+Abilita questa opzione per utilizzare il servizio ID. Per ulteriori informazioni, vedere [Panoramica del servizio ID Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=it).
 
    * **[!UICONTROL Organizzazione]**
 Seleziona la tua organizzazione dall’elenco a discesa.
-Un’organizzazione [!UICONTROL Experience Cloud] è l’entità che consente all’amministratore di configurare gruppi e utenti e di controllare il single sign-on in [!UICONTROL Experience Cloud]. L’organizzazione funziona come un’azienda che abbraccia tutti i prodotti e le soluzioni Experience Cloud. In genere, l’organizzazione corrisponde al nome dell’azienda, ma una stessa azienda potrebbe avere più organizzazioni. Per ulteriori informazioni, consulta [Organizzazioni nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it) nella guida Experience Cloud Central Interface Components .
+Un’organizzazione [!UICONTROL Experience Cloud] è l’entità che consente all’amministratore di configurare gruppi e utenti e di controllare il single sign-on in [!UICONTROL Experience Cloud]. L’organizzazione funziona come un’azienda che abbraccia tutti i prodotti e le soluzioni Experience Cloud. In genere, l’organizzazione corrisponde al nome dell’azienda, ma una stessa azienda potrebbe avere più organizzazioni. Per ulteriori informazioni, consulta [Organizzazioni nell’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it) nella guida Experience Cloud Central Interface Components.

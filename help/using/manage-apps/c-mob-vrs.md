@@ -19,12 +19,12 @@ Una suite di rapporti virtuale (VRS) è suite di rapporti che è stata creata ap
 Le app che utilizzano le VRS si comportano come quelle che usano le normali suite di rapporti, tranne che per la gestione delle seguenti funzionalità:
 
 * Regole di elaborazione
-* eVar/prop/listvars/events
+* eVar/prop/listvar/events
 * Opzione con abilitazione Timestamp
 * Flag di Dimension (ciclo di vita, posizione e così via)
 * Classificazioni
 
-Questi valori vengono gestiti nella suite di rapporti principale e sono condivisi con le VRS che appartengono alla stessa suite di rapporti principale.
+Questi valori vengono gestiti nella suite di rapporti principale e condivisi con le VRS che appartengono alla stessa suite di rapporti principale.
 
 Le aree seguenti dell’interfaccia utente di Adobe Mobile Services sono sempre accessibili, indipendentemente dalla suite di rapporti principale:
 
@@ -57,7 +57,7 @@ Una VRS può essere utile per completare le seguenti attività:
 
 Ogni VRS ha un ID univoco. Per visualizzare l’ID suite di rapporti principali nell’interfaccia utente di Adobe Mobile Services, nella pagina Gestisci impostazioni app, nella sezione **[!UICONTROL Informazioni app]**, fai clic su **[!UICONTROL Maggiori dettagli]**.
 
-Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati relativi a un utente aziendale in Giappone.
+Nell’interfaccia di Adobe Mobile Services, puoi utilizzare una VRS per creare un’app e segmentare i dati per un gruppo specifico dell’organizzazione. In questo modo, ad esempio, un utente aziendale in Spagna non può visualizzare i dati rilevanti per un utente aziendale in Giappone.
 
 >[!TIP]
 >
@@ -73,7 +73,7 @@ In Adobe Mobile Services, è possibile creare un’app basata su una suite di ra
 >
 >Le certificazioni push vengono collegate a livello di app nell’interfaccia utente di Mobile Services.
 
-Per garantire che i messaggi push vengano inviati correttamente, il segmento di pubblico deve essere definito correttamente. Per ulteriori informazioni, consulta [Pubblico: Definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+Per garantire che i messaggi push vengano inviati correttamente, il segmento di pubblico deve essere definito correttamente. Per ulteriori informazioni, consulta [Pubblico: definire e configurare i segmenti di pubblico per i messaggi push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## Comprensione dei fusi orari {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -109,10 +109,10 @@ Nella tabella seguente sono riportate le proprietà delle VRS:
 | `analytics.ssl` | No | Sì |  |
 | `analytics.offlineEnabled` | Sì |  |  |
 | `analytics.charset` | Sì | No |  |
-| `analytics.lifecycleTimeout` | No | Sì | Deve essere la suite di rapporti principale, se gli utenti non desiderano che i loro dati siano incoerenti. |
+| `analytics.lifecycleTimeout` | No | Sì | Deve essere la suite di rapporti principale, se gli utenti non desiderano che i loro dati non siano coerenti. |
 | `analytics.privacyDefault` | No | Sì |  |
 | `analytics.batchLimit` | No | Sì |  |
-| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà relativa al fuso orario viene utilizzata per inviare dati ad Adobe Analytics ed è diversa dalla proprietà relativa al fuso orario impostata al momento della creazione di una VRS. |
+| `analytics.timezone` | Sì | Sì, quando crei l’app. | Questa proprietà del fuso orario viene utilizzata per inviare dati ad Adobe Analytics ed è diversa dalla proprietà del fuso orario impostata al momento della creazione di una VRS. |
 | `analytics.timezoneOffset` | Sì | No |  |
 | `analytics.referrerTimeout` | No | Sì |  |
 | `analytics.backdateSessionInfo` | Sì | Sì |  |
